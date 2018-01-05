@@ -1,0 +1,4308 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix	categories:	<http://ldf.fi/nbf/categories/> .
+@prefix	occupations: <http://ldf.fi/nbf/occupations/> .
+@prefix	sources:	<http://ldf.fi/nbf/sources/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http:ldf.fi/congress> .
+
+:p1	a schema:Person ;
+	schema:familyName "Brown" ;
+	schema:givenName "Sherrod" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-11-09"^^xsd:date ;
+	:wikipedia_id	"Sherrod Brown" .
+
+
+:p2	a schema:Person ;
+	schema:familyName "Cantwell" ;
+	schema:givenName "Maria" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1958-10-13"^^xsd:date ;
+	:wikipedia_id	"Maria Cantwell" .
+
+
+:p3	a schema:Person ;
+	schema:familyName "Cardin" ;
+	schema:givenName "Benjamin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-10-05"^^xsd:date ;
+	:wikipedia_id	"Ben Cardin" .
+
+
+:p4	a schema:Person ;
+	schema:familyName "Carper" ;
+	schema:givenName "Thomas" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-01-23"^^xsd:date ;
+	:wikipedia_id	"Tom Carper" .
+
+
+:p5	a schema:Person ;
+	schema:familyName "Casey" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-04-13"^^xsd:date ;
+	:wikipedia_id	"Bob Casey Jr." .
+
+
+:p6	a schema:Person ;
+	schema:familyName "Corker" ;
+	schema:givenName "Bob" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-08-24"^^xsd:date ;
+	:wikipedia_id	"Bob Corker" .
+
+
+:p7	a schema:Person ;
+	schema:familyName "Feinstein" ;
+	schema:givenName "Dianne" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1933-06-22"^^xsd:date ;
+	:wikipedia_id	"Dianne Feinstein" .
+
+
+:p8	a schema:Person ;
+	schema:familyName "Hatch" ;
+	schema:givenName "Orrin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1934-03-22"^^xsd:date ;
+	:wikipedia_id	"Orrin Hatch" .
+
+
+:p9	a schema:Person ;
+	schema:familyName "Klobuchar" ;
+	schema:givenName "Amy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1960-05-25"^^xsd:date ;
+	:wikipedia_id	"Amy Klobuchar" .
+
+
+:p10	a schema:Person ;
+	schema:familyName "McCaskill" ;
+	schema:givenName "Claire" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1953-07-24"^^xsd:date ;
+	:wikipedia_id	"Claire McCaskill" .
+
+
+:p11	a schema:Person ;
+	schema:familyName "Menéndez" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-01-01"^^xsd:date ;
+	:wikipedia_id	"Bob Menendez" .
+
+
+:p12	a schema:Person ;
+	schema:familyName "Nelson" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1942-09-29"^^xsd:date ;
+	:wikipedia_id	"Bill Nelson" .
+
+
+:p13	a schema:Person ;
+	schema:familyName "Sanders" ;
+	schema:givenName "Bernard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1941-09-08"^^xsd:date ;
+	:wikipedia_id	"Bernie Sanders" .
+
+
+:p14	a schema:Person ;
+	schema:familyName "Stabenow" ;
+	schema:givenName "Debbie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1950-04-29"^^xsd:date ;
+	:wikipedia_id	"Debbie Stabenow" .
+
+
+:p15	a schema:Person ;
+	schema:familyName "Tester" ;
+	schema:givenName "Jon" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-08-21"^^xsd:date ;
+	:wikipedia_id	"Jon Tester" .
+
+
+:p16	a schema:Person ;
+	schema:familyName "Whitehouse" ;
+	schema:givenName "Sheldon" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-10-20"^^xsd:date ;
+	:wikipedia_id	"Sheldon Whitehouse" .
+
+
+:p17	a schema:Person ;
+	schema:familyName "Barrasso" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-07-21"^^xsd:date ;
+	:wikipedia_id	"John Barrasso" .
+
+
+:p18	a schema:Person ;
+	schema:familyName "Wicker" ;
+	schema:givenName "Roger" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-07-05"^^xsd:date ;
+	:wikipedia_id	"Roger Wicker" .
+
+
+:p19	a schema:Person ;
+	schema:familyName "Alexander" ;
+	schema:givenName "Lamar" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1940-07-03"^^xsd:date ;
+	:wikipedia_id	"Lamar Alexander" .
+
+
+:p20	a schema:Person ;
+	schema:familyName "Cochran" ;
+	schema:givenName "Thad" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1937-12-07"^^xsd:date ;
+	:wikipedia_id	"Thad Cochran" .
+
+
+:p21	a schema:Person ;
+	schema:familyName "Collins" ;
+	schema:givenName "Susan" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1952-12-07"^^xsd:date ;
+	:wikipedia_id	"Susan Collins" .
+
+
+:p22	a schema:Person ;
+	schema:familyName "Cornyn" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-02-02"^^xsd:date ;
+	:wikipedia_id	"John Cornyn" .
+
+
+:p23	a schema:Person ;
+	schema:familyName "Durbin" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-11-21"^^xsd:date ;
+	:wikipedia_id	"Dick Durbin" .
+
+
+:p24	a schema:Person ;
+	schema:familyName "Enzi" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-02-01"^^xsd:date ;
+	:wikipedia_id	"Mike Enzi" .
+
+
+:p25	a schema:Person ;
+	schema:familyName "Graham" ;
+	schema:givenName "Lindsey" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-07-09"^^xsd:date ;
+	:wikipedia_id	"Lindsey Graham" .
+
+
+:p26	a schema:Person ;
+	schema:familyName "Inhofe" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1934-11-17"^^xsd:date ;
+	:wikipedia_id	"Jim Inhofe" .
+
+
+:p27	a schema:Person ;
+	schema:familyName "McConnell" ;
+	schema:givenName "Mitch" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1942-02-20"^^xsd:date ;
+	:wikipedia_id	"Mitch McConnell" .
+
+
+:p28	a schema:Person ;
+	schema:familyName "Merkley" ;
+	schema:givenName "Jeff" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-10-24"^^xsd:date ;
+	:wikipedia_id	"Jeff Merkley" .
+
+
+:p29	a schema:Person ;
+	schema:familyName "Reed" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-11-12"^^xsd:date ;
+	:wikipedia_id	"Jack Reed (Rhode Island politician)" .
+
+
+:p30	a schema:Person ;
+	schema:familyName "Risch" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-05-03"^^xsd:date ;
+	:wikipedia_id	"Jim Risch" .
+
+
+:p31	a schema:Person ;
+	schema:familyName "Roberts" ;
+	schema:givenName "Pat" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1936-04-20"^^xsd:date ;
+	:wikipedia_id	"Pat Roberts" .
+
+
+:p32	a schema:Person ;
+	schema:familyName "Shaheen" ;
+	schema:givenName "Jeanne" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1947-01-28"^^xsd:date ;
+	:wikipedia_id	"Jeanne Shaheen" .
+
+
+:p33	a schema:Person ;
+	schema:familyName "Udall" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-05-18"^^xsd:date ;
+	:wikipedia_id	"Tom Udall" .
+
+
+:p34	a schema:Person ;
+	schema:familyName "Warner" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-12-15"^^xsd:date ;
+	:wikipedia_id	"Mark Warner" .
+
+
+:p35	a schema:Person ;
+	schema:familyName "Gillibrand" ;
+	schema:givenName "Kirsten" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1966-12-09"^^xsd:date ;
+	:wikipedia_id	"Kirsten Gillibrand" .
+
+
+:p36	a schema:Person ;
+	schema:familyName "Coons" ;
+	schema:givenName "Chris" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-09-09"^^xsd:date ;
+	:wikipedia_id	"Chris Coons" .
+
+
+:p37	a schema:Person ;
+	schema:familyName "Manchin" ;
+	schema:givenName "Joe" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-08-24"^^xsd:date ;
+	:wikipedia_id	"Joe Manchin" .
+
+
+:p38	a schema:Person ;
+	schema:familyName "Aderholt" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-07-22"^^xsd:date ;
+	:wikipedia_id	"Robert Aderholt" .
+
+
+:p39	a schema:Person ;
+	schema:familyName "Amash" ;
+	schema:givenName "Justin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-04-18"^^xsd:date ;
+	:wikipedia_id	"Justin Amash" .
+
+
+:p40	a schema:Person ;
+	schema:familyName "Baldwin" ;
+	schema:givenName "Tammy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1962-02-11"^^xsd:date ;
+	:wikipedia_id	"Tammy Baldwin" .
+
+
+:p41	a schema:Person ;
+	schema:familyName "Barletta" ;
+	schema:givenName "Lou" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-01-28"^^xsd:date ;
+	:wikipedia_id	"Lou Barletta" .
+
+
+:p42	a schema:Person ;
+	schema:familyName "Barton" ;
+	schema:givenName "Joe" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-09-15"^^xsd:date ;
+	:wikipedia_id	"Joe Barton" .
+
+
+:p43	a schema:Person ;
+	schema:familyName "Bass" ;
+	schema:givenName "Karen" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1953-10-03"^^xsd:date ;
+	:wikipedia_id	"Karen Bass" .
+
+
+:p44	a schema:Person ;
+	schema:familyName "Bennet" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-11-28"^^xsd:date ;
+	:wikipedia_id	"Michael Bennet" .
+
+
+:p45	a schema:Person ;
+	schema:familyName "Bilirakis" ;
+	schema:givenName "Gus" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-02-08"^^xsd:date ;
+	:wikipedia_id	"Gus Bilirakis" .
+
+
+:p46	a schema:Person ;
+	schema:familyName "Bishop" ;
+	schema:givenName "Rob" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-07-13"^^xsd:date ;
+	:wikipedia_id	"Rob Bishop" .
+
+
+:p47	a schema:Person ;
+	schema:familyName "Bishop" ;
+	schema:givenName "Sanford" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-02-04"^^xsd:date ;
+	:wikipedia_id	"Sanford Bishop" .
+
+
+:p48	a schema:Person ;
+	schema:familyName "Black" ;
+	schema:givenName "Diane" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1951-01-16"^^xsd:date ;
+	:wikipedia_id	"Diane Black" .
+
+
+:p49	a schema:Person ;
+	schema:familyName "Blackburn" ;
+	schema:givenName "Marsha" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1952-06-06"^^xsd:date ;
+	:wikipedia_id	"Marsha Blackburn" .
+
+
+:p50	a schema:Person ;
+	schema:familyName "Blumenauer" ;
+	schema:givenName "Earl" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-08-16"^^xsd:date ;
+	:wikipedia_id	"Earl Blumenauer" .
+
+
+:p51	a schema:Person ;
+	schema:familyName "Blumenthal" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-02-13"^^xsd:date ;
+	:wikipedia_id	"Richard Blumenthal" .
+
+
+:p52	a schema:Person ;
+	schema:familyName "Blunt" ;
+	schema:givenName "Roy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-01-10"^^xsd:date ;
+	:wikipedia_id	"Roy Blunt" .
+
+
+:p53	a schema:Person ;
+	schema:familyName "Boozman" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-12-10"^^xsd:date ;
+	:wikipedia_id	"John Boozman" .
+
+
+:p54	a schema:Person ;
+	schema:familyName "Bordallo" ;
+	schema:givenName "Madeleine" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1933-05-31"^^xsd:date ;
+	:wikipedia_id	"Madeleine Bordallo" .
+
+
+:p55	a schema:Person ;
+	schema:familyName "Brady" ;
+	schema:givenName "Kevin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-04-11"^^xsd:date ;
+	:wikipedia_id	"Kevin Brady" .
+
+
+:p56	a schema:Person ;
+	schema:familyName "Brady" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1945-04-07"^^xsd:date ;
+	:wikipedia_id	"Bob Brady" .
+
+
+:p57	a schema:Person ;
+	schema:familyName "Brooks" ;
+	schema:givenName "Mo" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-04-29"^^xsd:date ;
+	:wikipedia_id	"Mo Brooks" .
+
+
+:p58	a schema:Person ;
+	schema:familyName "Buchanan" ;
+	schema:givenName "Vern" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-05-08"^^xsd:date ;
+	:wikipedia_id	"Vern Buchanan" .
+
+
+:p59	a schema:Person ;
+	schema:familyName "Bucshon" ;
+	schema:givenName "Larry" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-05-31"^^xsd:date ;
+	:wikipedia_id	"Larry Bucshon" .
+
+
+:p60	a schema:Person ;
+	schema:familyName "Burgess" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-12-23"^^xsd:date ;
+	:wikipedia_id	"Michael C. Burgess" .
+
+
+:p61	a schema:Person ;
+	schema:familyName "Burr" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-11-30"^^xsd:date ;
+	:wikipedia_id	"Richard Burr" .
+
+
+:p62	a schema:Person ;
+	schema:familyName "Butterfield" ;
+	schema:givenName "George" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-04-27"^^xsd:date ;
+	:wikipedia_id	"G. K. Butterfield" .
+
+
+:p63	a schema:Person ;
+	schema:familyName "Calvert" ;
+	schema:givenName "Ken" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-06-08"^^xsd:date ;
+	:wikipedia_id	"Ken Calvert" .
+
+
+:p64	a schema:Person ;
+	schema:familyName "Capito" ;
+	schema:givenName "Shelley" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1953-11-26"^^xsd:date ;
+	:wikipedia_id	"Shelley Moore Capito" .
+
+
+:p65	a schema:Person ;
+	schema:familyName "Capuano" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-01-09"^^xsd:date ;
+	:wikipedia_id	"Mike Capuano" .
+
+
+:p66	a schema:Person ;
+	schema:familyName "Carson" ;
+	schema:givenName "André" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1974-10-16"^^xsd:date ;
+	:wikipedia_id	"André Carson" .
+
+
+:p67	a schema:Person ;
+	schema:familyName "Carter" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1941-11-06"^^xsd:date ;
+	:wikipedia_id	"John Carter (Texas politician)" .
+
+
+:p68	a schema:Person ;
+	schema:familyName "Cassidy" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-09-28"^^xsd:date ;
+	:wikipedia_id	"Bill Cassidy" .
+
+
+:p69	a schema:Person ;
+	schema:familyName "Castor" ;
+	schema:givenName "Kathy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1966-08-20"^^xsd:date ;
+	:wikipedia_id	"Kathy Castor" .
+
+
+:p70	a schema:Person ;
+	schema:familyName "Chabot" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-01-22"^^xsd:date ;
+	:wikipedia_id	"Steve Chabot" .
+
+
+:p71	a schema:Person ;
+	schema:familyName "Chu" ;
+	schema:givenName "Judy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1953-07-07"^^xsd:date ;
+	:wikipedia_id	"Judy Chu" .
+
+
+:p72	a schema:Person ;
+	schema:familyName "Cicilline" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-07-15"^^xsd:date ;
+	:wikipedia_id	"David Cicilline" .
+
+
+:p73	a schema:Person ;
+	schema:familyName "Clarke" ;
+	schema:givenName "Yvette" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1964-11-21"^^xsd:date ;
+	:wikipedia_id	"Yvette Clarke" .
+
+
+:p74	a schema:Person ;
+	schema:familyName "Clay" ;
+	schema:givenName "Wm." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-07-27"^^xsd:date ;
+	:wikipedia_id	"Lacy Clay" .
+
+
+:p75	a schema:Person ;
+	schema:familyName "Cleaver" ;
+	schema:givenName "Emanuel" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-10-26"^^xsd:date ;
+	:wikipedia_id	"Emanuel Cleaver" .
+
+
+:p76	a schema:Person ;
+	schema:familyName "Clyburn" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1940-07-21"^^xsd:date ;
+	:wikipedia_id	"Jim Clyburn" .
+
+
+:p77	a schema:Person ;
+	schema:familyName "Coffman" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-03-19"^^xsd:date ;
+	:wikipedia_id	"Mike Coffman" .
+
+
+:p78	a schema:Person ;
+	schema:familyName "Cohen" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-05-24"^^xsd:date ;
+	:wikipedia_id	"Steve Cohen" .
+
+
+:p79	a schema:Person ;
+	schema:familyName "Cole" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-04-28"^^xsd:date ;
+	:wikipedia_id	"Tom Cole" .
+
+
+:p80	a schema:Person ;
+	schema:familyName "Conaway" ;
+	schema:givenName "K." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-06-11"^^xsd:date ;
+	:wikipedia_id	"Mike Conaway" .
+
+
+:p81	a schema:Person ;
+	schema:familyName "Connolly" ;
+	schema:givenName "Gerald" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-03-30"^^xsd:date ;
+	:wikipedia_id	"Gerry Connolly" .
+
+
+:p82	a schema:Person ;
+	schema:familyName "Cooper" ;
+	schema:givenName "Jim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-06-19"^^xsd:date ;
+	:wikipedia_id	"Jim Cooper" .
+
+
+:p83	a schema:Person ;
+	schema:familyName "Costa" ;
+	schema:givenName "Jim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-04-13"^^xsd:date ;
+	:wikipedia_id	"Jim Costa" .
+
+
+:p84	a schema:Person ;
+	schema:familyName "Courtney" ;
+	schema:givenName "Joe" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-04-06"^^xsd:date ;
+	:wikipedia_id	"Joe Courtney (politician)" .
+
+
+:p85	a schema:Person ;
+	schema:familyName "Crapo" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-05-20"^^xsd:date ;
+	:wikipedia_id	"Mike Crapo" .
+
+
+:p86	a schema:Person ;
+	schema:familyName "Crawford" ;
+	schema:givenName "Eric" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-01-22"^^xsd:date ;
+	:wikipedia_id	"Rick Crawford (politician)" .
+
+
+:p87	a schema:Person ;
+	schema:familyName "Crowley" ;
+	schema:givenName "Joseph" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-03-16"^^xsd:date ;
+	:wikipedia_id	"Joseph Crowley" .
+
+
+:p88	a schema:Person ;
+	schema:familyName "Cuellar" ;
+	schema:givenName "Henry" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-09-19"^^xsd:date ;
+	:wikipedia_id	"Henry Cuellar" .
+
+
+:p89	a schema:Person ;
+	schema:familyName "Culberson" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-08-24"^^xsd:date ;
+	:wikipedia_id	"John Culberson" .
+
+
+:p90	a schema:Person ;
+	schema:familyName "Cummings" ;
+	schema:givenName "Elijah" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-01-18"^^xsd:date ;
+	:wikipedia_id	"Elijah Cummings" .
+
+
+:p91	a schema:Person ;
+	schema:familyName "Davis" ;
+	schema:givenName "Danny" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1941-09-06"^^xsd:date ;
+	:wikipedia_id	"Danny K. Davis" .
+
+
+:p92	a schema:Person ;
+	schema:familyName "Davis" ;
+	schema:givenName "Susan" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1944-04-13"^^xsd:date ;
+	:wikipedia_id	"Susan Davis (politician)" .
+
+
+:p93	a schema:Person ;
+	schema:familyName "DeFazio" ;
+	schema:givenName "Peter" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-05-27"^^xsd:date ;
+	:wikipedia_id	"Peter DeFazio" .
+
+
+:p94	a schema:Person ;
+	schema:familyName "DeGette" ;
+	schema:givenName "Diana" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1957-07-29"^^xsd:date ;
+	:wikipedia_id	"Diana DeGette" .
+
+
+:p95	a schema:Person ;
+	schema:familyName "DeLauro" ;
+	schema:givenName "Rosa" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1943-03-02"^^xsd:date ;
+	:wikipedia_id	"Rosa DeLauro" .
+
+
+:p96	a schema:Person ;
+	schema:familyName "Denham" ;
+	schema:givenName "Jeff" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1967-07-29"^^xsd:date ;
+	:wikipedia_id	"Jeff Denham" .
+
+
+:p97	a schema:Person ;
+	schema:familyName "Dent" ;
+	schema:givenName "Charles" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-05-24"^^xsd:date ;
+	:wikipedia_id	"Charlie Dent" .
+
+
+:p98	a schema:Person ;
+	schema:familyName "DesJarlais" ;
+	schema:givenName "Scott" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-02-21"^^xsd:date ;
+	:wikipedia_id	"Scott DesJarlais" .
+
+
+:p99	a schema:Person ;
+	schema:familyName "Deutch" ;
+	schema:givenName "Theodore" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-05-07"^^xsd:date ;
+	:wikipedia_id	"Ted Deutch" .
+
+
+:p100	a schema:Person ;
+	schema:familyName "Diaz-Balart" ;
+	schema:givenName "Mario" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-09-25"^^xsd:date ;
+	:wikipedia_id	"Mario Díaz-Balart" .
+
+
+:p101	a schema:Person ;
+	schema:familyName "Doggett" ;
+	schema:givenName "Lloyd" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-10-06"^^xsd:date ;
+	:wikipedia_id	"Lloyd Doggett" .
+
+
+:p102	a schema:Person ;
+	schema:familyName "Donnelly" ;
+	schema:givenName "Joe" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-09-28"^^xsd:date ;
+	:wikipedia_id	"Joe Donnelly" .
+
+
+:p103	a schema:Person ;
+	schema:familyName "Doyle" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-08-05"^^xsd:date ;
+	:wikipedia_id	"Michael F. Doyle" .
+
+
+:p104	a schema:Person ;
+	schema:familyName "Duffy" ;
+	schema:givenName "Sean" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-10-03"^^xsd:date ;
+	:wikipedia_id	"Sean Duffy" .
+
+
+:p105	a schema:Person ;
+	schema:familyName "Duncan" ;
+	schema:givenName "Jeff" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-01-07"^^xsd:date ;
+	:wikipedia_id	"Jeff Duncan (politician)" .
+
+
+:p106	a schema:Person ;
+	schema:familyName "Duncan" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-07-21"^^xsd:date ;
+	:wikipedia_id	"Jimmy Duncan (politician)" .
+
+
+:p107	a schema:Person ;
+	schema:familyName "Ellison" ;
+	schema:givenName "Keith" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-08-04"^^xsd:date ;
+	:wikipedia_id	"Keith Ellison" .
+
+
+:p108	a schema:Person ;
+	schema:familyName "Engel" ;
+	schema:givenName "Eliot" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-02-18"^^xsd:date ;
+	:wikipedia_id	"Eliot Engel" .
+
+
+:p109	a schema:Person ;
+	schema:familyName "Eshoo" ;
+	schema:givenName "Anna" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1942-12-13"^^xsd:date ;
+	:wikipedia_id	"Anna Eshoo" .
+
+
+:p110	a schema:Person ;
+	schema:familyName "Farenthold" ;
+	schema:givenName "Blake" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-12-12"^^xsd:date ;
+	:wikipedia_id	"Blake Farenthold" .
+
+
+:p111	a schema:Person ;
+	schema:familyName "Flake" ;
+	schema:givenName "Jeff" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-12-31"^^xsd:date ;
+	:wikipedia_id	"Jeff Flake" .
+
+
+:p112	a schema:Person ;
+	schema:familyName "Fleischmann" ;
+	schema:givenName "Charles" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-10-11"^^xsd:date ;
+	:wikipedia_id	"Chuck Fleischmann" .
+
+
+:p113	a schema:Person ;
+	schema:familyName "Flores" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-02-25"^^xsd:date ;
+	:wikipedia_id	"Bill Flores" .
+
+
+:p114	a schema:Person ;
+	schema:familyName "Fortenberry" ;
+	schema:givenName "Jeff" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-12-27"^^xsd:date ;
+	:wikipedia_id	"Jeff Fortenberry" .
+
+
+:p115	a schema:Person ;
+	schema:familyName "Foxx" ;
+	schema:givenName "Virginia" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1943-06-29"^^xsd:date ;
+	:wikipedia_id	"Virginia Foxx" .
+
+
+:p116	a schema:Person ;
+	schema:familyName "Frelinghuysen" ;
+	schema:givenName "Rodney" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-04-29"^^xsd:date ;
+	:wikipedia_id	"Rodney Frelinghuysen" .
+
+
+:p117	a schema:Person ;
+	schema:familyName "Fudge" ;
+	schema:givenName "Marcia" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1952-10-29"^^xsd:date ;
+	:wikipedia_id	"Marcia Fudge" .
+
+
+:p118	a schema:Person ;
+	schema:familyName "Garamendi" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1945-01-24"^^xsd:date ;
+	:wikipedia_id	"John Garamendi" .
+
+
+:p119	a schema:Person ;
+	schema:familyName "Gardner" ;
+	schema:givenName "Cory" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1974-08-22"^^xsd:date ;
+	:wikipedia_id	"Cory Gardner" .
+
+
+:p120	a schema:Person ;
+	schema:familyName "Gibbs" ;
+	schema:givenName "Bob" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-06-14"^^xsd:date ;
+	:wikipedia_id	"Bob Gibbs" .
+
+
+:p121	a schema:Person ;
+	schema:familyName "Gohmert" ;
+	schema:givenName "Louie" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-08-18"^^xsd:date ;
+	:wikipedia_id	"Louie Gohmert" .
+
+
+:p122	a schema:Person ;
+	schema:familyName "Goodlatte" ;
+	schema:givenName "Bob" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-09-22"^^xsd:date ;
+	:wikipedia_id	"Bob Goodlatte" .
+
+
+:p123	a schema:Person ;
+	schema:familyName "Gosar" ;
+	schema:givenName "Paul" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-11-22"^^xsd:date ;
+	:wikipedia_id	"Paul Gosar" .
+
+
+:p124	a schema:Person ;
+	schema:familyName "Gowdy" ;
+	schema:givenName "Trey" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-08-22"^^xsd:date ;
+	:wikipedia_id	"Trey Gowdy" .
+
+
+:p125	a schema:Person ;
+	schema:familyName "Granger" ;
+	schema:givenName "Kay" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1943-01-18"^^xsd:date ;
+	:wikipedia_id	"Kay Granger" .
+
+
+:p126	a schema:Person ;
+	schema:familyName "Grassley" ;
+	schema:givenName "Charles" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1933-09-17"^^xsd:date ;
+	:wikipedia_id	"Chuck Grassley" .
+
+
+:p127	a schema:Person ;
+	schema:familyName "Graves" ;
+	schema:givenName "Sam" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-11-07"^^xsd:date ;
+	:wikipedia_id	"Sam Graves" .
+
+
+:p128	a schema:Person ;
+	schema:familyName "Graves" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-02-03"^^xsd:date ;
+	:wikipedia_id	"Tom Graves" .
+
+
+:p129	a schema:Person ;
+	schema:familyName "Green" ;
+	schema:givenName "Al" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-09-01"^^xsd:date ;
+	:wikipedia_id	"Al Green (politician)" .
+
+
+:p130	a schema:Person ;
+	schema:familyName "Green" ;
+	schema:givenName "Gene" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-10-17"^^xsd:date ;
+	:wikipedia_id	"Gene Green" .
+
+
+:p131	a schema:Person ;
+	schema:familyName "Griffith" ;
+	schema:givenName "H." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-03-15"^^xsd:date ;
+	:wikipedia_id	"Morgan Griffith" .
+
+
+:p132	a schema:Person ;
+	schema:familyName "Grijalva" ;
+	schema:givenName "Raúl" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-02-19"^^xsd:date ;
+	:wikipedia_id	"Raúl Grijalva" .
+
+
+:p133	a schema:Person ;
+	schema:familyName "Guthrie" ;
+	schema:givenName "Brett" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-02-18"^^xsd:date ;
+	:wikipedia_id	"Brett Guthrie" .
+
+
+:p134	a schema:Person ;
+	schema:familyName "Gutiérrez" ;
+	schema:givenName "Luis" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-12-10"^^xsd:date ;
+	:wikipedia_id	"Luis Gutiérrez" .
+
+
+:p135	a schema:Person ;
+	schema:familyName "Harper" ;
+	schema:givenName "Gregg" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-06-01"^^xsd:date ;
+	:wikipedia_id	"Gregg Harper" .
+
+
+:p136	a schema:Person ;
+	schema:familyName "Harris" ;
+	schema:givenName "Andy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-01-25"^^xsd:date ;
+	:wikipedia_id	"Andy Harris (politician)" .
+
+
+:p137	a schema:Person ;
+	schema:familyName "Hartzler" ;
+	schema:givenName "Vicky" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1960-10-13"^^xsd:date ;
+	:wikipedia_id	"Vicky Hartzler" .
+
+
+:p138	a schema:Person ;
+	schema:familyName "Hastings" ;
+	schema:givenName "Alcee" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1936-09-05"^^xsd:date ;
+	:wikipedia_id	"Alcee Hastings" .
+
+
+:p139	a schema:Person ;
+	schema:familyName "Heinrich" ;
+	schema:givenName "Martin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-10-17"^^xsd:date ;
+	:wikipedia_id	"Martin Heinrich" .
+
+
+:p140	a schema:Person ;
+	schema:familyName "Hensarling" ;
+	schema:givenName "Jeb" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-05-29"^^xsd:date ;
+	:wikipedia_id	"Jeb Hensarling" .
+
+
+:p141	a schema:Person ;
+	schema:familyName "Herrera Beutler" ;
+	schema:givenName "Jaime" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1978-11-03"^^xsd:date ;
+	:wikipedia_id	"Jaime Herrera Beutler" .
+
+
+:p142	a schema:Person ;
+	schema:familyName "Higgins" ;
+	schema:givenName "Brian" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-10-06"^^xsd:date ;
+	:wikipedia_id	"Brian Higgins" .
+
+
+:p143	a schema:Person ;
+	schema:familyName "Himes" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-07-05"^^xsd:date ;
+	:wikipedia_id	"Jim Himes" .
+
+
+:p144	a schema:Person ;
+	schema:familyName "Hirono" ;
+	schema:givenName "Mazie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1947-11-03"^^xsd:date ;
+	:wikipedia_id	"Mazie Hirono" .
+
+
+:p145	a schema:Person ;
+	schema:familyName "Hoeven" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-03-13"^^xsd:date ;
+	:wikipedia_id	"John Hoeven" .
+
+
+:p146	a schema:Person ;
+	schema:familyName "Hoyer" ;
+	schema:givenName "Steny" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1939-06-14"^^xsd:date ;
+	:wikipedia_id	"Steny Hoyer" .
+
+
+:p147	a schema:Person ;
+	schema:familyName "Huizenga" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-01-31"^^xsd:date ;
+	:wikipedia_id	"Bill Huizenga" .
+
+
+:p148	a schema:Person ;
+	schema:familyName "Hultgren" ;
+	schema:givenName "Randy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-03-01"^^xsd:date ;
+	:wikipedia_id	"Randy Hultgren" .
+
+
+:p149	a schema:Person ;
+	schema:familyName "Hunter" ;
+	schema:givenName "Duncan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1976-12-07"^^xsd:date ;
+	:wikipedia_id	"Duncan D. Hunter" .
+
+
+:p150	a schema:Person ;
+	schema:familyName "Isakson" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-12-28"^^xsd:date ;
+	:wikipedia_id	"Johnny Isakson" .
+
+
+:p151	a schema:Person ;
+	schema:familyName "Issa" ;
+	schema:givenName "Darrell" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-11-01"^^xsd:date ;
+	:wikipedia_id	"Darrell Issa" .
+
+
+:p152	a schema:Person ;
+	schema:familyName "Jackson Lee" ;
+	schema:givenName "Sheila" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1950-01-12"^^xsd:date ;
+	:wikipedia_id	"Sheila Jackson Lee" .
+
+
+:p153	a schema:Person ;
+	schema:familyName "Jenkins" ;
+	schema:givenName "Lynn" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1963-06-10"^^xsd:date ;
+	:wikipedia_id	"Lynn Jenkins" .
+
+
+:p154	a schema:Person ;
+	schema:familyName "Johnson" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-11-10"^^xsd:date ;
+	:wikipedia_id	"Bill Johnson (Ohio politician)" .
+
+
+:p155	a schema:Person ;
+	schema:familyName "Johnson" ;
+	schema:givenName "Eddie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1935-12-03"^^xsd:date ;
+	:wikipedia_id	"Eddie Bernice Johnson" .
+
+
+:p156	a schema:Person ;
+	schema:familyName "Johnson" ;
+	schema:givenName "Henry" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-10-02"^^xsd:date ;
+	:wikipedia_id	"Hank Johnson" .
+
+
+:p157	a schema:Person ;
+	schema:familyName "Johnson" ;
+	schema:givenName "Ron" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-04-08"^^xsd:date ;
+	:wikipedia_id	"Ron Johnson (American politician)" .
+
+
+:p158	a schema:Person ;
+	schema:familyName "Johnson" ;
+	schema:givenName "Sam" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1930-10-11"^^xsd:date ;
+	:wikipedia_id	"Sam Johnson" .
+
+
+:p159	a schema:Person ;
+	schema:familyName "Jones" ;
+	schema:givenName "Walter" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-02-10"^^xsd:date ;
+	:wikipedia_id	"Walter B. Jones Jr." .
+
+
+:p160	a schema:Person ;
+	schema:familyName "Jordan" ;
+	schema:givenName "Jim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-02-17"^^xsd:date ;
+	:wikipedia_id	"Jim Jordan (American politician)" .
+
+
+:p161	a schema:Person ;
+	schema:familyName "Kaptur" ;
+	schema:givenName "Marcy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1946-06-17"^^xsd:date ;
+	:wikipedia_id	"Marcy Kaptur" .
+
+
+:p162	a schema:Person ;
+	schema:familyName "Keating" ;
+	schema:givenName "William" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-09-06"^^xsd:date ;
+	:wikipedia_id	"Bill Keating (politician)" .
+
+
+:p163	a schema:Person ;
+	schema:familyName "Kelly" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-05-10"^^xsd:date ;
+	:wikipedia_id	"Mike Kelly (Pennsylvania politician)" .
+
+
+:p164	a schema:Person ;
+	schema:familyName "Kind" ;
+	schema:givenName "Ron" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-03-16"^^xsd:date ;
+	:wikipedia_id	"Ron Kind" .
+
+
+:p165	a schema:Person ;
+	schema:familyName "King" ;
+	schema:givenName "Peter" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-04-05"^^xsd:date ;
+	:wikipedia_id	"Peter T. King" .
+
+
+:p166	a schema:Person ;
+	schema:familyName "King" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-05-28"^^xsd:date ;
+	:wikipedia_id	"Steve King" .
+
+
+:p167	a schema:Person ;
+	schema:familyName "Kinzinger" ;
+	schema:givenName "Adam" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1978-02-27"^^xsd:date ;
+	:wikipedia_id	"Adam Kinzinger" .
+
+
+:p168	a schema:Person ;
+	schema:familyName "Labrador" ;
+	schema:givenName "Raúl" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1967-12-08"^^xsd:date ;
+	:wikipedia_id	"Raúl Labrador" .
+
+
+:p169	a schema:Person ;
+	schema:familyName "Lamborn" ;
+	schema:givenName "Doug" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-05-24"^^xsd:date ;
+	:wikipedia_id	"Doug Lamborn" .
+
+
+:p170	a schema:Person ;
+	schema:familyName "Lance" ;
+	schema:givenName "Leonard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-06-25"^^xsd:date ;
+	:wikipedia_id	"Leonard Lance" .
+
+
+:p171	a schema:Person ;
+	schema:familyName "Langevin" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-04-22"^^xsd:date ;
+	:wikipedia_id	"James Langevin" .
+
+
+:p172	a schema:Person ;
+	schema:familyName "Lankford" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1968-03-04"^^xsd:date ;
+	:wikipedia_id	"James Lankford" .
+
+
+:p173	a schema:Person ;
+	schema:familyName "Larsen" ;
+	schema:givenName "Rick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-06-15"^^xsd:date ;
+	:wikipedia_id	"Rick Larsen" .
+
+
+:p174	a schema:Person ;
+	schema:familyName "Larson" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-07-22"^^xsd:date ;
+	:wikipedia_id	"John B. Larson" .
+
+
+:p175	a schema:Person ;
+	schema:familyName "Latta" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-04-18"^^xsd:date ;
+	:wikipedia_id	"Bob Latta" .
+
+
+:p176	a schema:Person ;
+	schema:familyName "Leahy" ;
+	schema:givenName "Patrick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1940-03-31"^^xsd:date ;
+	:wikipedia_id	"Patrick Leahy" .
+
+
+:p177	a schema:Person ;
+	schema:familyName "Lee" ;
+	schema:givenName "Barbara" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1946-07-16"^^xsd:date ;
+	:wikipedia_id	"Barbara Lee" .
+
+
+:p178	a schema:Person ;
+	schema:familyName "Lee" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-06-04"^^xsd:date ;
+	:wikipedia_id	"Mike Lee (American politician)" .
+
+
+:p179	a schema:Person ;
+	schema:familyName "Levin" ;
+	schema:givenName "Sander" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1931-09-06"^^xsd:date ;
+	:wikipedia_id	"Sander Levin" .
+
+
+:p180	a schema:Person ;
+	schema:familyName "Lewis" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1940-02-21"^^xsd:date ;
+	:wikipedia_id	"John Lewis (civil rights leader)" .
+
+
+:p181	a schema:Person ;
+	schema:familyName "Lipinski" ;
+	schema:givenName "Daniel" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-07-15"^^xsd:date ;
+	:wikipedia_id	"Dan Lipinski" .
+
+
+:p182	a schema:Person ;
+	schema:familyName "LoBiondo" ;
+	schema:givenName "Frank" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-05-12"^^xsd:date ;
+	:wikipedia_id	"Frank LoBiondo" .
+
+
+:p183	a schema:Person ;
+	schema:familyName "Loebsack" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-12-23"^^xsd:date ;
+	:wikipedia_id	"Dave Loebsack" .
+
+
+:p184	a schema:Person ;
+	schema:familyName "Lofgren" ;
+	schema:givenName "Zoe" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1947-12-21"^^xsd:date ;
+	:wikipedia_id	"Zoe Lofgren" .
+
+
+:p185	a schema:Person ;
+	schema:familyName "Long" ;
+	schema:givenName "Billy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-08-11"^^xsd:date ;
+	:wikipedia_id	"Billy Long" .
+
+
+:p186	a schema:Person ;
+	schema:familyName "Lowey" ;
+	schema:givenName "Nita" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1937-07-05"^^xsd:date ;
+	:wikipedia_id	"Nita Lowey" .
+
+
+:p187	a schema:Person ;
+	schema:familyName "Lucas" ;
+	schema:givenName "Frank" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-01-06"^^xsd:date ;
+	:wikipedia_id	"Frank Lucas (Oklahoma politician)" .
+
+
+:p188	a schema:Person ;
+	schema:familyName "Luetkemeyer" ;
+	schema:givenName "Blaine" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-05-07"^^xsd:date ;
+	:wikipedia_id	"Blaine Luetkemeyer" .
+
+
+:p189	a schema:Person ;
+	schema:familyName "Luján" ;
+	schema:givenName "Ben" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-06-07"^^xsd:date ;
+	:wikipedia_id	"Ben Ray Luján" .
+
+
+:p190	a schema:Person ;
+	schema:familyName "Lynch" ;
+	schema:givenName "Stephen" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-03-31"^^xsd:date ;
+	:wikipedia_id	"Stephen F. Lynch" .
+
+
+:p191	a schema:Person ;
+	schema:familyName "Maloney" ;
+	schema:givenName "Carolyn" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1946-02-19"^^xsd:date ;
+	:wikipedia_id	"Carolyn Maloney" .
+
+
+:p192	a schema:Person ;
+	schema:familyName "Marchant" ;
+	schema:givenName "Kenny" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-02-23"^^xsd:date ;
+	:wikipedia_id	"Kenny Marchant" .
+
+
+:p193	a schema:Person ;
+	schema:familyName "Marino" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-08-15"^^xsd:date ;
+	:wikipedia_id	"Tom Marino" .
+
+
+:p194	a schema:Person ;
+	schema:familyName "Markey" ;
+	schema:givenName "Edward" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-07-11"^^xsd:date ;
+	:wikipedia_id	"Ed Markey" .
+
+
+:p195	a schema:Person ;
+	schema:familyName "Matsui" ;
+	schema:givenName "Doris" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1944-09-25"^^xsd:date ;
+	:wikipedia_id	"Doris Matsui" .
+
+
+:p196	a schema:Person ;
+	schema:familyName "McCain" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1936-08-29"^^xsd:date ;
+	:wikipedia_id	"John McCain" .
+
+
+:p197	a schema:Person ;
+	schema:familyName "McCarthy" ;
+	schema:givenName "Kevin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-01-26"^^xsd:date ;
+	:wikipedia_id	"Kevin McCarthy (California politician)" .
+
+
+:p198	a schema:Person ;
+	schema:familyName "McCaul" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-01-14"^^xsd:date ;
+	:wikipedia_id	"Michael McCaul" .
+
+
+:p199	a schema:Person ;
+	schema:familyName "McClintock" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-07-10"^^xsd:date ;
+	:wikipedia_id	"Tom McClintock" .
+
+
+:p200	a schema:Person ;
+	schema:familyName "McCollum" ;
+	schema:givenName "Betty" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1954-07-12"^^xsd:date ;
+	:wikipedia_id	"Betty McCollum" .
+
+
+:p201	a schema:Person ;
+	schema:familyName "McGovern" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-11-20"^^xsd:date ;
+	:wikipedia_id	"Jim McGovern (American politician)" .
+
+
+:p202	a schema:Person ;
+	schema:familyName "McHenry" ;
+	schema:givenName "Patrick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1975-10-22"^^xsd:date ;
+	:wikipedia_id	"Patrick McHenry" .
+
+
+:p203	a schema:Person ;
+	schema:familyName "McKinley" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-03-28"^^xsd:date ;
+	:wikipedia_id	"David McKinley" .
+
+
+:p204	a schema:Person ;
+	schema:familyName "McMorris Rodgers" ;
+	schema:givenName "Cathy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1969-05-22"^^xsd:date ;
+	:wikipedia_id	"Cathy McMorris Rodgers" .
+
+
+:p205	a schema:Person ;
+	schema:familyName "McNerney" ;
+	schema:givenName "Jerry" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-06-18"^^xsd:date ;
+	:wikipedia_id	"Jerry McNerney" .
+
+
+:p206	a schema:Person ;
+	schema:familyName "Meehan" ;
+	schema:givenName "Patrick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-10-20"^^xsd:date ;
+	:wikipedia_id	"Pat Meehan" .
+
+
+:p207	a schema:Person ;
+	schema:familyName "Meeks" ;
+	schema:givenName "Gregory" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-09-25"^^xsd:date ;
+	:wikipedia_id	"Gregory Meeks" .
+
+
+:p208	a schema:Person ;
+	schema:familyName "Moore" ;
+	schema:givenName "Gwen" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1951-04-18"^^xsd:date ;
+	:wikipedia_id	"Gwen Moore" .
+
+
+:p209	a schema:Person ;
+	schema:familyName "Moran" ;
+	schema:givenName "Jerry" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-05-29"^^xsd:date ;
+	:wikipedia_id	"Jerry Moran" .
+
+
+:p210	a schema:Person ;
+	schema:familyName "Murkowski" ;
+	schema:givenName "Lisa" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1957-05-22"^^xsd:date ;
+	:wikipedia_id	"Lisa Murkowski" .
+
+
+:p211	a schema:Person ;
+	schema:familyName "Murphy" ;
+	schema:givenName "Christopher" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-08-03"^^xsd:date ;
+	:wikipedia_id	"Chris Murphy (Connecticut politician)" .
+
+
+:p212	a schema:Person ;
+	schema:familyName "Murray" ;
+	schema:givenName "Patty" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1950-10-11"^^xsd:date ;
+	:wikipedia_id	"Patty Murray" .
+
+
+:p213	a schema:Person ;
+	schema:familyName "Nadler" ;
+	schema:givenName "Jerrold" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-06-13"^^xsd:date ;
+	:wikipedia_id	"Jerrold Nadler" .
+
+
+:p214	a schema:Person ;
+	schema:familyName "Napolitano" ;
+	schema:givenName "Grace" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1936-12-04"^^xsd:date ;
+	:wikipedia_id	"Grace Napolitano" .
+
+
+:p215	a schema:Person ;
+	schema:familyName "Neal" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-02-14"^^xsd:date ;
+	:wikipedia_id	"Richard Neal" .
+
+
+:p216	a schema:Person ;
+	schema:familyName "Noem" ;
+	schema:givenName "Kristi" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1971-11-30"^^xsd:date ;
+	:wikipedia_id	"Kristi Noem" .
+
+
+:p217	a schema:Person ;
+	schema:familyName "Norton" ;
+	schema:givenName "Eleanor" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1937-06-13"^^xsd:date ;
+	:wikipedia_id	"Eleanor Holmes Norton" .
+
+
+:p218	a schema:Person ;
+	schema:familyName "Nunes" ;
+	schema:givenName "Devin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-10-01"^^xsd:date ;
+	:wikipedia_id	"Devin Nunes" .
+
+
+:p219	a schema:Person ;
+	schema:familyName "Olson" ;
+	schema:givenName "Pete" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-12-09"^^xsd:date ;
+	:wikipedia_id	"Pete Olson" .
+
+
+:p220	a schema:Person ;
+	schema:familyName "Palazzo" ;
+	schema:givenName "Steven" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-02-21"^^xsd:date ;
+	:wikipedia_id	"Steven Palazzo" .
+
+
+:p221	a schema:Person ;
+	schema:familyName "Pallone" ;
+	schema:givenName "Frank" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-10-30"^^xsd:date ;
+	:wikipedia_id	"Frank Pallone" .
+
+
+:p222	a schema:Person ;
+	schema:familyName "Pascrell" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1937-01-25"^^xsd:date ;
+	:wikipedia_id	"Bill Pascrell" .
+
+
+:p223	a schema:Person ;
+	schema:familyName "Paul" ;
+	schema:givenName "Rand" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-01-07"^^xsd:date ;
+	:wikipedia_id	"Rand Paul" .
+
+
+:p224	a schema:Person ;
+	schema:familyName "Paulsen" ;
+	schema:givenName "Erik" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-05-14"^^xsd:date ;
+	:wikipedia_id	"Erik Paulsen" .
+
+
+:p225	a schema:Person ;
+	schema:familyName "Pearce" ;
+	schema:givenName "Stevan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-08-24"^^xsd:date ;
+	:wikipedia_id	"Steve Pearce (politician)" .
+
+
+:p226	a schema:Person ;
+	schema:familyName "Pelosi" ;
+	schema:givenName "Nancy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1940-03-26"^^xsd:date ;
+	:wikipedia_id	"Nancy Pelosi" .
+
+
+:p227	a schema:Person ;
+	schema:familyName "Perlmutter" ;
+	schema:givenName "Ed" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-05-01"^^xsd:date ;
+	:wikipedia_id	"Ed Perlmutter" .
+
+
+:p228	a schema:Person ;
+	schema:familyName "Peters" ;
+	schema:givenName "Gary" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-12-01"^^xsd:date ;
+	:wikipedia_id	"Gary Peters (politician)" .
+
+
+:p229	a schema:Person ;
+	schema:familyName "Peterson" ;
+	schema:givenName "Collin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-06-29"^^xsd:date ;
+	:wikipedia_id	"Collin Peterson" .
+
+
+:p230	a schema:Person ;
+	schema:familyName "Pingree" ;
+	schema:givenName "Chellie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1955-04-02"^^xsd:date ;
+	:wikipedia_id	"Chellie Pingree" .
+
+
+:p231	a schema:Person ;
+	schema:familyName "Poe" ;
+	schema:givenName "Ted" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-09-10"^^xsd:date ;
+	:wikipedia_id	"Ted Poe" .
+
+
+:p232	a schema:Person ;
+	schema:familyName "Polis" ;
+	schema:givenName "Jared" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1975-05-12"^^xsd:date ;
+	:wikipedia_id	"Jared Polis" .
+
+
+:p233	a schema:Person ;
+	schema:familyName "Portman" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-12-19"^^xsd:date ;
+	:wikipedia_id	"Rob Portman" .
+
+
+:p234	a schema:Person ;
+	schema:familyName "Posey" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-12-18"^^xsd:date ;
+	:wikipedia_id	"Bill Posey" .
+
+
+:p235	a schema:Person ;
+	schema:familyName "Price" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1940-08-17"^^xsd:date ;
+	:wikipedia_id	"David Price (American politician)" .
+
+
+:p236	a schema:Person ;
+	schema:familyName "Quigley" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-10-17"^^xsd:date ;
+	:wikipedia_id	"Mike Quigley (politician)" .
+
+
+:p237	a schema:Person ;
+	schema:familyName "Reed" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-11-18"^^xsd:date ;
+	:wikipedia_id	"Tom Reed (politician)" .
+
+
+:p238	a schema:Person ;
+	schema:familyName "Reichert" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-08-29"^^xsd:date ;
+	:wikipedia_id	"Dave Reichert" .
+
+
+:p239	a schema:Person ;
+	schema:familyName "Renacci" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-12-03"^^xsd:date ;
+	:wikipedia_id	"Jim Renacci" .
+
+
+:p240	a schema:Person ;
+	schema:familyName "Richmond" ;
+	schema:givenName "Cedric" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-09-13"^^xsd:date ;
+	:wikipedia_id	"Cedric Richmond" .
+
+
+:p241	a schema:Person ;
+	schema:familyName "Roby" ;
+	schema:givenName "Martha" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1976-07-27"^^xsd:date ;
+	:wikipedia_id	"Martha Roby" .
+
+
+:p242	a schema:Person ;
+	schema:familyName "Roe" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1945-07-21"^^xsd:date ;
+	:wikipedia_id	"Phil Roe (politician)" .
+
+
+:p243	a schema:Person ;
+	schema:familyName "Rogers" ;
+	schema:givenName "Harold" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1937-12-31"^^xsd:date ;
+	:wikipedia_id	"Hal Rogers" .
+
+
+:p244	a schema:Person ;
+	schema:familyName "Rogers" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-07-16"^^xsd:date ;
+	:wikipedia_id	"Mike Rogers (Alabama politician)" .
+
+
+:p245	a schema:Person ;
+	schema:familyName "Rohrabacher" ;
+	schema:givenName "Dana" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-06-21"^^xsd:date ;
+	:wikipedia_id	"Dana Rohrabacher" .
+
+
+:p246	a schema:Person ;
+	schema:familyName "Rokita" ;
+	schema:givenName "Todd" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-02-09"^^xsd:date ;
+	:wikipedia_id	"Todd Rokita" .
+
+
+:p247	a schema:Person ;
+	schema:familyName "Rooney" ;
+	schema:givenName "Thomas" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-11-21"^^xsd:date ;
+	:wikipedia_id	"Tom Rooney (Florida politician)" .
+
+
+:p248	a schema:Person ;
+	schema:familyName "Ros-Lehtinen" ;
+	schema:givenName "Ileana" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1952-07-15"^^xsd:date ;
+	:wikipedia_id	"Ileana Ros-Lehtinen" .
+
+
+:p249	a schema:Person ;
+	schema:familyName "Roskam" ;
+	schema:givenName "Peter" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-09-13"^^xsd:date ;
+	:wikipedia_id	"Peter Roskam" .
+
+
+:p250	a schema:Person ;
+	schema:familyName "Ross" ;
+	schema:givenName "Dennis" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-10-18"^^xsd:date ;
+	:wikipedia_id	"Dennis A. Ross" .
+
+
+:p251	a schema:Person ;
+	schema:familyName "Roybal-Allard" ;
+	schema:givenName "Lucille" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1941-06-12"^^xsd:date ;
+	:wikipedia_id	"Lucille Roybal-Allard" .
+
+
+:p252	a schema:Person ;
+	schema:familyName "Royce" ;
+	schema:givenName "Edward" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-10-12"^^xsd:date ;
+	:wikipedia_id	"Ed Royce" .
+
+
+:p253	a schema:Person ;
+	schema:familyName "Rubio" ;
+	schema:givenName "Marco" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-05-28"^^xsd:date ;
+	:wikipedia_id	"Marco Rubio" .
+
+
+:p254	a schema:Person ;
+	schema:familyName "Ruppersberger" ;
+	schema:givenName "C." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-01-31"^^xsd:date ;
+	:wikipedia_id	"Dutch Ruppersberger" .
+
+
+:p255	a schema:Person ;
+	schema:familyName "Rush" ;
+	schema:givenName "Bobby" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-11-23"^^xsd:date ;
+	:wikipedia_id	"Bobby Rush" .
+
+
+:p256	a schema:Person ;
+	schema:familyName "Ryan" ;
+	schema:givenName "Paul" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-01-29"^^xsd:date ;
+	:wikipedia_id	"Paul Ryan" .
+
+
+:p257	a schema:Person ;
+	schema:familyName "Ryan" ;
+	schema:givenName "Tim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-07-16"^^xsd:date ;
+	:wikipedia_id	"Tim Ryan (politician)" .
+
+
+:p258	a schema:Person ;
+	schema:familyName "Sablan" ;
+	schema:givenName "Gregorio" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-01-19"^^xsd:date ;
+	:wikipedia_id	"Gregorio Sablan" .
+
+
+:p259	a schema:Person ;
+	schema:familyName "Sarbanes" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-05-22"^^xsd:date ;
+	:wikipedia_id	"John Sarbanes" .
+
+
+:p260	a schema:Person ;
+	schema:familyName "Scalise" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-10-06"^^xsd:date ;
+	:wikipedia_id	"Steve Scalise" .
+
+
+:p261	a schema:Person ;
+	schema:familyName "Schakowsky" ;
+	schema:givenName "Janice" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1944-05-26"^^xsd:date ;
+	:wikipedia_id	"Jan Schakowsky" .
+
+
+:p262	a schema:Person ;
+	schema:familyName "Schiff" ;
+	schema:givenName "Adam" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-06-22"^^xsd:date ;
+	:wikipedia_id	"Adam Schiff" .
+
+
+:p263	a schema:Person ;
+	schema:familyName "Schrader" ;
+	schema:givenName "Kurt" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-10-19"^^xsd:date ;
+	:wikipedia_id	"Kurt Schrader" .
+
+
+:p264	a schema:Person ;
+	schema:familyName "Schumer" ;
+	schema:givenName "Charles" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-11-23"^^xsd:date ;
+	:wikipedia_id	"Chuck Schumer" .
+
+
+:p265	a schema:Person ;
+	schema:familyName "Schweikert" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-03-03"^^xsd:date ;
+	:wikipedia_id	"David Schweikert" .
+
+
+:p266	a schema:Person ;
+	schema:familyName "Scott" ;
+	schema:givenName "Austin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-12-10"^^xsd:date ;
+	:wikipedia_id	"Austin Scott (politician)" .
+
+
+:p267	a schema:Person ;
+	schema:familyName "Scott" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1945-06-27"^^xsd:date ;
+	:wikipedia_id	"David Scott (Georgia politician)" .
+
+
+:p268	a schema:Person ;
+	schema:familyName "Scott" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-04-30"^^xsd:date ;
+	:wikipedia_id	"Bobby Scott (politician)" .
+
+
+:p269	a schema:Person ;
+	schema:familyName "Scott" ;
+	schema:givenName "Tim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-09-19"^^xsd:date ;
+	:wikipedia_id	"Tim Scott" .
+
+
+:p270	a schema:Person ;
+	schema:familyName "Sensenbrenner" ;
+	schema:givenName "F." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-06-14"^^xsd:date ;
+	:wikipedia_id	"Jim Sensenbrenner" .
+
+
+:p271	a schema:Person ;
+	schema:familyName "Serrano" ;
+	schema:givenName "José" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-10-24"^^xsd:date ;
+	:wikipedia_id	"José E. Serrano" .
+
+
+:p272	a schema:Person ;
+	schema:familyName "Sessions" ;
+	schema:givenName "Pete" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-03-22"^^xsd:date ;
+	:wikipedia_id	"Pete Sessions" .
+
+
+:p273	a schema:Person ;
+	schema:familyName "Sewell" ;
+	schema:givenName "Terri" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1965-01-01"^^xsd:date ;
+	:wikipedia_id	"Terri Sewell" .
+
+
+:p274	a schema:Person ;
+	schema:familyName "Shelby" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1934-05-06"^^xsd:date ;
+	:wikipedia_id	"Richard Shelby" .
+
+
+:p275	a schema:Person ;
+	schema:familyName "Sherman" ;
+	schema:givenName "Brad" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-10-24"^^xsd:date ;
+	:wikipedia_id	"Brad Sherman" .
+
+
+:p276	a schema:Person ;
+	schema:familyName "Shimkus" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-02-21"^^xsd:date ;
+	:wikipedia_id	"John Shimkus" .
+
+
+:p277	a schema:Person ;
+	schema:familyName "Shuster" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-01-10"^^xsd:date ;
+	:wikipedia_id	"Bill Shuster" .
+
+
+:p278	a schema:Person ;
+	schema:familyName "Simpson" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-09-08"^^xsd:date ;
+	:wikipedia_id	"Mike Simpson" .
+
+
+:p279	a schema:Person ;
+	schema:familyName "Sires" ;
+	schema:givenName "Albio" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-01-26"^^xsd:date ;
+	:wikipedia_id	"Albio Sires" .
+
+
+:p280	a schema:Person ;
+	schema:familyName "Slaughter" ;
+	schema:givenName "Louise" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1929-08-14"^^xsd:date ;
+	:wikipedia_id	"Louise Slaughter" .
+
+
+:p281	a schema:Person ;
+	schema:familyName "Smith" ;
+	schema:givenName "Adam" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-06-15"^^xsd:date ;
+	:wikipedia_id	"Adam Smith (politician)" .
+
+
+:p282	a schema:Person ;
+	schema:familyName "Smith" ;
+	schema:givenName "Adrian" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-12-19"^^xsd:date ;
+	:wikipedia_id	"Adrian Smith (politician)" .
+
+
+:p283	a schema:Person ;
+	schema:familyName "Smith" ;
+	schema:givenName "Christopher" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-03-04"^^xsd:date ;
+	:wikipedia_id	"Chris Smith (New Jersey politician)" .
+
+
+:p284	a schema:Person ;
+	schema:familyName "Smith" ;
+	schema:givenName "Lamar" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-11-19"^^xsd:date ;
+	:wikipedia_id	"Lamar Smith" .
+
+
+:p285	a schema:Person ;
+	schema:familyName "Speier" ;
+	schema:givenName "Jackie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1950-05-14"^^xsd:date ;
+	:wikipedia_id	"Jackie Speier" .
+
+
+:p286	a schema:Person ;
+	schema:familyName "Stivers" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-03-24"^^xsd:date ;
+	:wikipedia_id	"Steve Stivers" .
+
+
+:p287	a schema:Person ;
+	schema:familyName "Sánchez" ;
+	schema:givenName "Linda" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1969-01-28"^^xsd:date ;
+	:wikipedia_id	"Linda Sánchez" .
+
+
+:p288	a schema:Person ;
+	schema:familyName "Thompson" ;
+	schema:givenName "Bennie" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-01-28"^^xsd:date ;
+	:wikipedia_id	"Bennie Thompson" .
+
+
+:p289	a schema:Person ;
+	schema:familyName "Thompson" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-01-24"^^xsd:date ;
+	:wikipedia_id	"Mike Thompson (California politician)" .
+
+
+:p290	a schema:Person ;
+	schema:familyName "Thompson" ;
+	schema:givenName "Glenn" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-07-27"^^xsd:date ;
+	:wikipedia_id	"Glenn Thompson (politician)" .
+
+
+:p291	a schema:Person ;
+	schema:familyName "Thornberry" ;
+	schema:givenName "Mac" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-07-15"^^xsd:date ;
+	:wikipedia_id	"Mac Thornberry" .
+
+
+:p292	a schema:Person ;
+	schema:familyName "Thune" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-01-07"^^xsd:date ;
+	:wikipedia_id	"John Thune" .
+
+
+:p293	a schema:Person ;
+	schema:familyName "Tiberi" ;
+	schema:givenName "Patrick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-10-21"^^xsd:date ;
+	:wikipedia_id	"Pat Tiberi" .
+
+
+:p294	a schema:Person ;
+	schema:familyName "Tipton" ;
+	schema:givenName "Scott" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-11-09"^^xsd:date ;
+	:wikipedia_id	"Scott Tipton" .
+
+
+:p295	a schema:Person ;
+	schema:familyName "Tonko" ;
+	schema:givenName "Paul" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-06-18"^^xsd:date ;
+	:wikipedia_id	"Paul Tonko" .
+
+
+:p296	a schema:Person ;
+	schema:familyName "Toomey" ;
+	schema:givenName "Patrick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-11-17"^^xsd:date ;
+	:wikipedia_id	"Pat Toomey" .
+
+
+:p297	a schema:Person ;
+	schema:familyName "Tsongas" ;
+	schema:givenName "Niki" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1946-04-26"^^xsd:date ;
+	:wikipedia_id	"Niki Tsongas" .
+
+
+:p298	a schema:Person ;
+	schema:familyName "Turner" ;
+	schema:givenName "Michael" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-01-11"^^xsd:date ;
+	:wikipedia_id	"Mike Turner" .
+
+
+:p299	a schema:Person ;
+	schema:familyName "Upton" ;
+	schema:givenName "Fred" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-04-23"^^xsd:date ;
+	:wikipedia_id	"Fred Upton" .
+
+
+:p300	a schema:Person ;
+	schema:familyName "Van Hollen" ;
+	schema:givenName "Chris" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-01-10"^^xsd:date ;
+	:wikipedia_id	"Chris Van Hollen" .
+
+
+:p301	a schema:Person ;
+	schema:familyName "Velázquez" ;
+	schema:givenName "Nydia" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1953-03-28"^^xsd:date ;
+	:wikipedia_id	"Nydia Velázquez" .
+
+
+:p302	a schema:Person ;
+	schema:familyName "Visclosky" ;
+	schema:givenName "Peter" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-08-13"^^xsd:date ;
+	:wikipedia_id	"Pete Visclosky" .
+
+
+:p303	a schema:Person ;
+	schema:familyName "Walberg" ;
+	schema:givenName "Tim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-04-12"^^xsd:date ;
+	:wikipedia_id	"Tim Walberg" .
+
+
+:p304	a schema:Person ;
+	schema:familyName "Walden" ;
+	schema:givenName "Greg" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-01-10"^^xsd:date ;
+	:wikipedia_id	"Greg Walden" .
+
+
+:p305	a schema:Person ;
+	schema:familyName "Walz" ;
+	schema:givenName "Timothy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-04-06"^^xsd:date ;
+	:wikipedia_id	"Tim Walz" .
+
+
+:p306	a schema:Person ;
+	schema:familyName "Wasserman Schultz" ;
+	schema:givenName "Debbie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1966-09-27"^^xsd:date ;
+	:wikipedia_id	"Debbie Wasserman Schultz" .
+
+
+:p307	a schema:Person ;
+	schema:familyName "Waters" ;
+	schema:givenName "Maxine" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1938-08-15"^^xsd:date ;
+	:wikipedia_id	"Maxine Waters" .
+
+
+:p308	a schema:Person ;
+	schema:familyName "Webster" ;
+	schema:givenName "Daniel" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-04-27"^^xsd:date ;
+	:wikipedia_id	"Daniel Webster (Florida politician)" .
+
+
+:p309	a schema:Person ;
+	schema:familyName "Welch" ;
+	schema:givenName "Peter" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-05-02"^^xsd:date ;
+	:wikipedia_id	"Peter Welch" .
+
+
+:p310	a schema:Person ;
+	schema:familyName "Wilson" ;
+	schema:givenName "Joe" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-07-31"^^xsd:date ;
+	:wikipedia_id	"Joe Wilson (American politician)" .
+
+
+:p311	a schema:Person ;
+	schema:familyName "Wilson" ;
+	schema:givenName "Frederica" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1942-11-05"^^xsd:date ;
+	:wikipedia_id	"Frederica Wilson" .
+
+
+:p312	a schema:Person ;
+	schema:familyName "Wittman" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-02-03"^^xsd:date ;
+	:wikipedia_id	"Rob Wittman" .
+
+
+:p313	a schema:Person ;
+	schema:familyName "Womack" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-02-18"^^xsd:date ;
+	:wikipedia_id	"Steve Womack" .
+
+
+:p314	a schema:Person ;
+	schema:familyName "Woodall" ;
+	schema:givenName "Rob" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-02-11"^^xsd:date ;
+	:wikipedia_id	"Rob Woodall" .
+
+
+:p315	a schema:Person ;
+	schema:familyName "Wyden" ;
+	schema:givenName "Ron" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-05-03"^^xsd:date ;
+	:wikipedia_id	"Ron Wyden" .
+
+
+:p316	a schema:Person ;
+	schema:familyName "Yarmuth" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-11-04"^^xsd:date ;
+	:wikipedia_id	"John Yarmuth" .
+
+
+:p317	a schema:Person ;
+	schema:familyName "Yoder" ;
+	schema:givenName "Kevin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1976-01-08"^^xsd:date ;
+	:wikipedia_id	"Kevin Yoder" .
+
+
+:p318	a schema:Person ;
+	schema:familyName "Young" ;
+	schema:givenName "Don" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1933-06-09"^^xsd:date ;
+	:wikipedia_id	"Don Young" .
+
+
+:p319	a schema:Person ;
+	schema:familyName "Young" ;
+	schema:givenName "Todd" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-08-24"^^xsd:date ;
+	:wikipedia_id	"Todd Young" .
+
+
+:p320	a schema:Person ;
+	schema:familyName "Heller" ;
+	schema:givenName "Dean" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-05-10"^^xsd:date ;
+	:wikipedia_id	"Dean Heller" .
+
+
+:p321	a schema:Person ;
+	schema:familyName "Amodei" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-06-12"^^xsd:date ;
+	:wikipedia_id	"Mark Amodei" .
+
+
+:p322	a schema:Person ;
+	schema:familyName "Bonamici" ;
+	schema:givenName "Suzanne" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1954-10-14"^^xsd:date ;
+	:wikipedia_id	"Suzanne Bonamici" .
+
+
+:p323	a schema:Person ;
+	schema:familyName "DelBene" ;
+	schema:givenName "Suzan" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1962-02-17"^^xsd:date ;
+	:wikipedia_id	"Suzan DelBene" .
+
+
+:p324	a schema:Person ;
+	schema:familyName "Massie" ;
+	schema:givenName "Thomas" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-01-13"^^xsd:date ;
+	:wikipedia_id	"Thomas Massie" .
+
+
+:p325	a schema:Person ;
+	schema:familyName "Payne" ;
+	schema:givenName "Donald" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-12-17"^^xsd:date ;
+	:wikipedia_id	"Donald Payne Jr." .
+
+
+:p326	a schema:Person ;
+	schema:familyName "Schatz" ;
+	schema:givenName "Brian" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-10-20"^^xsd:date ;
+	:wikipedia_id	"Brian Schatz" .
+
+
+:p327	a schema:Person ;
+	schema:familyName "Foster" ;
+	schema:givenName "Bill" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-10-07"^^xsd:date ;
+	:wikipedia_id	"Bill Foster (politician)" .
+
+
+:p328	a schema:Person ;
+	schema:familyName "Titus" ;
+	schema:givenName "Dina" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1950-05-23"^^xsd:date ;
+	:wikipedia_id	"Dina Titus" .
+
+
+:p329	a schema:Person ;
+	schema:familyName "Cotton" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1977-05-13"^^xsd:date ;
+	:wikipedia_id	"Tom Cotton" .
+
+
+:p330	a schema:Person ;
+	schema:familyName "Sinema" ;
+	schema:givenName "Kyrsten" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1976-07-12"^^xsd:date ;
+	:wikipedia_id	"Kyrsten Sinema" .
+
+
+:p331	a schema:Person ;
+	schema:familyName "LaMalfa" ;
+	schema:givenName "Doug" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-07-02"^^xsd:date ;
+	:wikipedia_id	"Doug LaMalfa" .
+
+
+:p332	a schema:Person ;
+	schema:familyName "Huffman" ;
+	schema:givenName "Jared" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-02-18"^^xsd:date ;
+	:wikipedia_id	"Jared Huffman" .
+
+
+:p333	a schema:Person ;
+	schema:familyName "Bera" ;
+	schema:givenName "Ami" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-03-02"^^xsd:date ;
+	:wikipedia_id	"Ami Bera" .
+
+
+:p334	a schema:Person ;
+	schema:familyName "Cook" ;
+	schema:givenName "Paul" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-03-03"^^xsd:date ;
+	:wikipedia_id	"Paul Cook (politician)" .
+
+
+:p335	a schema:Person ;
+	schema:familyName "Swalwell" ;
+	schema:givenName "Eric" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-11-16"^^xsd:date ;
+	:wikipedia_id	"Eric Swalwell" .
+
+
+:p336	a schema:Person ;
+	schema:familyName "Valadao" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1977-04-14"^^xsd:date ;
+	:wikipedia_id	"David Valadao" .
+
+
+:p337	a schema:Person ;
+	schema:familyName "Brownley" ;
+	schema:givenName "Julia" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1952-08-28"^^xsd:date ;
+	:wikipedia_id	"Julia Brownley" .
+
+
+:p338	a schema:Person ;
+	schema:familyName "Cárdenas" ;
+	schema:givenName "Tony" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-03-31"^^xsd:date ;
+	:wikipedia_id	"Tony Cárdenas" .
+
+
+:p339	a schema:Person ;
+	schema:familyName "Ruiz" ;
+	schema:givenName "Raul" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-08-25"^^xsd:date ;
+	:wikipedia_id	"Raul Ruiz (politician)" .
+
+
+:p340	a schema:Person ;
+	schema:familyName "Takano" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-12-10"^^xsd:date ;
+	:wikipedia_id	"Mark Takano" .
+
+
+:p341	a schema:Person ;
+	schema:familyName "Lowenthal" ;
+	schema:givenName "Alan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1941-03-08"^^xsd:date ;
+	:wikipedia_id	"Alan Lowenthal" .
+
+
+:p342	a schema:Person ;
+	schema:familyName "Vargas" ;
+	schema:givenName "Juan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-03-07"^^xsd:date ;
+	:wikipedia_id	"Juan Vargas" .
+
+
+:p343	a schema:Person ;
+	schema:familyName "Peters" ;
+	schema:givenName "Scott" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-06-17"^^xsd:date ;
+	:wikipedia_id	"Scott Peters (politician)" .
+
+
+:p344	a schema:Person ;
+	schema:familyName "Esty" ;
+	schema:givenName "Elizabeth" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1959-08-25"^^xsd:date ;
+	:wikipedia_id	"Elizabeth Esty" .
+
+
+:p345	a schema:Person ;
+	schema:familyName "Yoho" ;
+	schema:givenName "Ted" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-04-13"^^xsd:date ;
+	:wikipedia_id	"Ted Yoho" .
+
+
+:p346	a schema:Person ;
+	schema:familyName "DeSantis" ;
+	schema:givenName "Ron" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1978-09-14"^^xsd:date ;
+	:wikipedia_id	"Ron DeSantis" .
+
+
+:p347	a schema:Person ;
+	schema:familyName "Frankel" ;
+	schema:givenName "Lois" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1948-05-16"^^xsd:date ;
+	:wikipedia_id	"Lois Frankel" .
+
+
+:p348	a schema:Person ;
+	schema:familyName "Collins" ;
+	schema:givenName "Doug" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-08-16"^^xsd:date ;
+	:wikipedia_id	"Doug Collins (politician)" .
+
+
+:p349	a schema:Person ;
+	schema:familyName "Gabbard" ;
+	schema:givenName "Tulsi" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1981-04-12"^^xsd:date ;
+	:wikipedia_id	"Tulsi Gabbard" .
+
+
+:p350	a schema:Person ;
+	schema:familyName "Duckworth" ;
+	schema:givenName "Tammy" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1968-03-12"^^xsd:date ;
+	:wikipedia_id	"Tammy Duckworth" .
+
+
+:p351	a schema:Person ;
+	schema:familyName "Davis" ;
+	schema:givenName "Rodney" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-01-05"^^xsd:date ;
+	:wikipedia_id	"Rodney Davis (politician)" .
+
+
+:p352	a schema:Person ;
+	schema:familyName "Bustos" ;
+	schema:givenName "Cheri" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1961-10-17"^^xsd:date ;
+	:wikipedia_id	"Cheri Bustos" .
+
+
+:p353	a schema:Person ;
+	schema:familyName "Walorski" ;
+	schema:givenName "Jackie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1963-08-17"^^xsd:date ;
+	:wikipedia_id	"Jackie Walorski" .
+
+
+:p354	a schema:Person ;
+	schema:familyName "Brooks" ;
+	schema:givenName "Susan" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1960-08-25"^^xsd:date ;
+	:wikipedia_id	"Susan Brooks" .
+
+
+:p355	a schema:Person ;
+	schema:familyName "Messer" ;
+	schema:givenName "Luke" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-02-27"^^xsd:date ;
+	:wikipedia_id	"Luke Messer" .
+
+
+:p356	a schema:Person ;
+	schema:familyName "Barr" ;
+	schema:givenName "Garland" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-07-24"^^xsd:date ;
+	:wikipedia_id	"Andy Barr (American politician)" .
+
+
+:p357	a schema:Person ;
+	schema:familyName "Warren" ;
+	schema:givenName "Elizabeth" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1949-06-22"^^xsd:date ;
+	:wikipedia_id	"Elizabeth Warren" .
+
+
+:p358	a schema:Person ;
+	schema:familyName "Kennedy" ;
+	schema:givenName "Joseph" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-10-04"^^xsd:date ;
+	:wikipedia_id	"Joe Kennedy III" .
+
+
+:p359	a schema:Person ;
+	schema:familyName "Delaney" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-04-16"^^xsd:date ;
+	:wikipedia_id	"John Delaney (Maryland politician)" .
+
+
+:p360	a schema:Person ;
+	schema:familyName "King" ;
+	schema:givenName "Angus" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1944-03-31"^^xsd:date ;
+	:wikipedia_id	"Angus King" .
+
+
+:p361	a schema:Person ;
+	schema:familyName "Kildee" ;
+	schema:givenName "Daniel" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-08-11"^^xsd:date ;
+	:wikipedia_id	"Dan Kildee" .
+
+
+:p362	a schema:Person ;
+	schema:familyName "Nolan" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1943-12-17"^^xsd:date ;
+	:wikipedia_id	"Rick Nolan" .
+
+
+:p363	a schema:Person ;
+	schema:familyName "Wagner" ;
+	schema:givenName "Ann" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1962-09-13"^^xsd:date ;
+	:wikipedia_id	"Ann Wagner" .
+
+
+:p364	a schema:Person ;
+	schema:familyName "Daines" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-08-20"^^xsd:date ;
+	:wikipedia_id	"Steve Daines" .
+
+
+:p365	a schema:Person ;
+	schema:familyName "Hudson" ;
+	schema:givenName "Richard" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-11-04"^^xsd:date ;
+	:wikipedia_id	"Richard Hudson (American politician)" .
+
+
+:p366	a schema:Person ;
+	schema:familyName "Pittenger" ;
+	schema:givenName "Robert" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-08-15"^^xsd:date ;
+	:wikipedia_id	"Robert Pittenger" .
+
+
+:p367	a schema:Person ;
+	schema:familyName "Meadows" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-07-28"^^xsd:date ;
+	:wikipedia_id	"Mark Meadows (North Carolina politician)" .
+
+
+:p368	a schema:Person ;
+	schema:familyName "Holding" ;
+	schema:givenName "George" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1968-04-17"^^xsd:date ;
+	:wikipedia_id	"George Holding" .
+
+
+:p369	a schema:Person ;
+	schema:familyName "Heitkamp" ;
+	schema:givenName "Heidi" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1955-10-30"^^xsd:date ;
+	:wikipedia_id	"Heidi Heitkamp" .
+
+
+:p370	a schema:Person ;
+	schema:familyName "Cramer" ;
+	schema:givenName "Kevin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-01-21"^^xsd:date ;
+	:wikipedia_id	"Kevin Cramer" .
+
+
+:p371	a schema:Person ;
+	schema:familyName "Fischer" ;
+	schema:givenName "Deb" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1951-03-01"^^xsd:date ;
+	:wikipedia_id	"Deb Fischer" .
+
+
+:p372	a schema:Person ;
+	schema:familyName "Kuster" ;
+	schema:givenName "Ann" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1956-09-05"^^xsd:date ;
+	:wikipedia_id	"Ann McLane Kuster" .
+
+
+:p373	a schema:Person ;
+	schema:familyName "Lujan Grisham" ;
+	schema:givenName "Michelle" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1959-10-24"^^xsd:date ;
+	:wikipedia_id	"Michelle Lujan Grisham" .
+
+
+:p374	a schema:Person ;
+	schema:familyName "Meng" ;
+	schema:givenName "Grace" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1975-10-01"^^xsd:date ;
+	:wikipedia_id	"Grace Meng" .
+
+
+:p375	a schema:Person ;
+	schema:familyName "Jeffries" ;
+	schema:givenName "Hakeem" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-08-04"^^xsd:date ;
+	:wikipedia_id	"Hakeem Jeffries" .
+
+
+:p376	a schema:Person ;
+	schema:familyName "Maloney" ;
+	schema:givenName "Sean" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-07-30"^^xsd:date ;
+	:wikipedia_id	"Sean Patrick Maloney" .
+
+
+:p377	a schema:Person ;
+	schema:familyName "Collins" ;
+	schema:givenName "Chris" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-05-20"^^xsd:date ;
+	:wikipedia_id	"Chris Collins (American politician)" .
+
+
+:p378	a schema:Person ;
+	schema:familyName "Wenstrup" ;
+	schema:givenName "Brad" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-06-17"^^xsd:date ;
+	:wikipedia_id	"Brad Wenstrup" .
+
+
+:p379	a schema:Person ;
+	schema:familyName "Beatty" ;
+	schema:givenName "Joyce" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1950-03-12"^^xsd:date ;
+	:wikipedia_id	"Joyce Beatty" .
+
+
+:p380	a schema:Person ;
+	schema:familyName "Joyce" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-03-17"^^xsd:date ;
+	:wikipedia_id	"David Joyce (politician)" .
+
+
+:p381	a schema:Person ;
+	schema:familyName "Bridenstine" ;
+	schema:givenName "Jim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1975-06-15"^^xsd:date ;
+	:wikipedia_id	"Jim Bridenstine" .
+
+
+:p382	a schema:Person ;
+	schema:familyName "Mullin" ;
+	schema:givenName "Markwayne" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1977-07-26"^^xsd:date ;
+	:wikipedia_id	"Markwayne Mullin" .
+
+
+:p383	a schema:Person ;
+	schema:familyName "Perry" ;
+	schema:givenName "Scott" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-05-27"^^xsd:date ;
+	:wikipedia_id	"Scott Perry (politician)" .
+
+
+:p384	a schema:Person ;
+	schema:familyName "Rothfus" ;
+	schema:givenName "Keith" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-04-25"^^xsd:date ;
+	:wikipedia_id	"Keith Rothfus" .
+
+
+:p385	a schema:Person ;
+	schema:familyName "Cartwright" ;
+	schema:givenName "Matthew" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-05-01"^^xsd:date ;
+	:wikipedia_id	"Matt Cartwright" .
+
+
+:p386	a schema:Person ;
+	schema:familyName "Rice" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-08-04"^^xsd:date ;
+	:wikipedia_id	"Tom Rice" .
+
+
+:p387	a schema:Person ;
+	schema:familyName "Cruz" ;
+	schema:givenName "Ted" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-12-22"^^xsd:date ;
+	:wikipedia_id	"Ted Cruz" .
+
+
+:p388	a schema:Person ;
+	schema:familyName "Weber" ;
+	schema:givenName "Randy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-07-02"^^xsd:date ;
+	:wikipedia_id	"Randy Weber" .
+
+
+:p389	a schema:Person ;
+	schema:familyName "O’Rourke" ;
+	schema:givenName "Beto" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-09-26"^^xsd:date ;
+	:wikipedia_id	"Beto O'Rourke" .
+
+
+:p390	a schema:Person ;
+	schema:familyName "Castro" ;
+	schema:givenName "Joaquin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1974-09-16"^^xsd:date ;
+	:wikipedia_id	"Joaquín Castro" .
+
+
+:p391	a schema:Person ;
+	schema:familyName "Williams" ;
+	schema:givenName "Roger" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-09-13"^^xsd:date ;
+	:wikipedia_id	"Roger Williams (American politician)" .
+
+
+:p392	a schema:Person ;
+	schema:familyName "Veasey" ;
+	schema:givenName "Marc" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-01-03"^^xsd:date ;
+	:wikipedia_id	"Marc Veasey" .
+
+
+:p393	a schema:Person ;
+	schema:familyName "Vela" ;
+	schema:givenName "Filemon" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-02-13"^^xsd:date ;
+	:wikipedia_id	"Filemon Vela Jr." .
+
+
+:p394	a schema:Person ;
+	schema:familyName "Stewart" ;
+	schema:givenName "Chris" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-07-15"^^xsd:date ;
+	:wikipedia_id	"Chris Stewart (politician)" .
+
+
+:p395	a schema:Person ;
+	schema:familyName "Kaine" ;
+	schema:givenName "Timothy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-02-26"^^xsd:date ;
+	:wikipedia_id	"Tim Kaine" .
+
+
+:p396	a schema:Person ;
+	schema:familyName "Kilmer" ;
+	schema:givenName "Derek" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1974-01-01"^^xsd:date ;
+	:wikipedia_id	"Derek Kilmer" .
+
+
+:p397	a schema:Person ;
+	schema:familyName "Heck" ;
+	schema:givenName "Denny" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-07-29"^^xsd:date ;
+	:wikipedia_id	"Dennis Heck" .
+
+
+:p398	a schema:Person ;
+	schema:familyName "Pocan" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-08-14"^^xsd:date ;
+	:wikipedia_id	"Mark Pocan" .
+
+
+:p399	a schema:Person ;
+	schema:familyName "Kelly" ;
+	schema:givenName "Robin" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1956-04-30"^^xsd:date ;
+	:wikipedia_id	"Robin Kelly" .
+
+
+:p400	a schema:Person ;
+	schema:familyName "Sanford" ;
+	schema:givenName "Marshall" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-05-28"^^xsd:date ;
+	:wikipedia_id	"Mark Sanford" .
+
+
+:p401	a schema:Person ;
+	schema:familyName "Smith" ;
+	schema:givenName "Jason" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-06-16"^^xsd:date ;
+	:wikipedia_id	"Jason Smith (politician)" .
+
+
+:p402	a schema:Person ;
+	schema:familyName "Booker" ;
+	schema:givenName "Cory" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-04-27"^^xsd:date ;
+	:wikipedia_id	"Cory Booker" .
+
+
+:p403	a schema:Person ;
+	schema:familyName "Clark" ;
+	schema:givenName "Katherine" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1963-07-17"^^xsd:date ;
+	:wikipedia_id	"Katherine Clark" .
+
+
+:p404	a schema:Person ;
+	schema:familyName "Byrne" ;
+	schema:givenName "Bradley" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-02-16"^^xsd:date ;
+	:wikipedia_id	"Bradley Byrne" .
+
+
+:p405	a schema:Person ;
+	schema:familyName "Brat" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-07-27"^^xsd:date ;
+	:wikipedia_id	"Dave Brat" .
+
+
+:p406	a schema:Person ;
+	schema:familyName "Norcross" ;
+	schema:givenName "Donald" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-12-13"^^xsd:date ;
+	:wikipedia_id	"Donald Norcross" .
+
+
+:p407	a schema:Person ;
+	schema:familyName "Adams" ;
+	schema:givenName "Alma" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1946-05-27"^^xsd:date ;
+	:wikipedia_id	"Alma Adams" .
+
+
+:p408	a schema:Person ;
+	schema:familyName "Palmer" ;
+	schema:givenName "Gary" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-05-14"^^xsd:date ;
+	:wikipedia_id	"Gary Palmer (politician)" .
+
+
+:p409	a schema:Person ;
+	schema:familyName "Hill" ;
+	schema:givenName "French" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-12-05"^^xsd:date ;
+	:wikipedia_id	"French Hill (politician)" .
+
+
+:p410	a schema:Person ;
+	schema:familyName "Westerman" ;
+	schema:givenName "Bruce" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1967-11-18"^^xsd:date ;
+	:wikipedia_id	"Bruce Westerman" .
+
+
+:p411	a schema:Person ;
+	schema:familyName "McSally" ;
+	schema:givenName "Martha" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1966-03-22"^^xsd:date ;
+	:wikipedia_id	"Martha McSally" .
+
+
+:p412	a schema:Person ;
+	schema:familyName "Gallego" ;
+	schema:givenName "Ruben" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1979-11-20"^^xsd:date ;
+	:wikipedia_id	"Ruben Gallego" .
+
+
+:p413	a schema:Person ;
+	schema:familyName "DeSaulnier" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-03-31"^^xsd:date ;
+	:wikipedia_id	"Mark DeSaulnier" .
+
+
+:p414	a schema:Person ;
+	schema:familyName "Knight" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-12-17"^^xsd:date ;
+	:wikipedia_id	"Steve Knight (politician)" .
+
+
+:p415	a schema:Person ;
+	schema:familyName "Aguilar" ;
+	schema:givenName "Pete" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1979-06-19"^^xsd:date ;
+	:wikipedia_id	"Pete Aguilar" .
+
+
+:p416	a schema:Person ;
+	schema:familyName "Lieu" ;
+	schema:givenName "Ted" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-03-29"^^xsd:date ;
+	:wikipedia_id	"Ted Lieu" .
+
+
+:p417	a schema:Person ;
+	schema:familyName "Torres" ;
+	schema:givenName "Norma" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1965-04-04"^^xsd:date ;
+	:wikipedia_id	"Norma Torres" .
+
+
+:p418	a schema:Person ;
+	schema:familyName "Walters" ;
+	schema:givenName "Mimi" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1962-05-14"^^xsd:date ;
+	:wikipedia_id	"Mimi Walters" .
+
+
+:p419	a schema:Person ;
+	schema:familyName "Buck" ;
+	schema:givenName "Ken" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1959-02-16"^^xsd:date ;
+	:wikipedia_id	"Ken Buck" .
+
+
+:p420	a schema:Person ;
+	schema:familyName "Curbelo" ;
+	schema:givenName "Carlos" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-03-01"^^xsd:date ;
+	:wikipedia_id	"Carlos Curbelo" .
+
+
+:p421	a schema:Person ;
+	schema:familyName "Carter" ;
+	schema:givenName "Buddy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1957-09-06"^^xsd:date ;
+	:wikipedia_id	"Buddy Carter" .
+
+
+:p422	a schema:Person ;
+	schema:familyName "Hice" ;
+	schema:givenName "Jody" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-04-22"^^xsd:date ;
+	:wikipedia_id	"Jody Hice" .
+
+
+:p423	a schema:Person ;
+	schema:familyName "Loudermilk" ;
+	schema:givenName "Barry" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-12-22"^^xsd:date ;
+	:wikipedia_id	"Barry Loudermilk" .
+
+
+:p424	a schema:Person ;
+	schema:familyName "Allen" ;
+	schema:givenName "Rick" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-11-07"^^xsd:date ;
+	:wikipedia_id	"Rick W. Allen" .
+
+
+:p425	a schema:Person ;
+	schema:familyName "Blum" ;
+	schema:givenName "Rod" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-04-26"^^xsd:date ;
+	:wikipedia_id	"Rod Blum" .
+
+
+:p426	a schema:Person ;
+	schema:familyName "Young" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1968-05-11"^^xsd:date ;
+	:wikipedia_id	"David Young (Iowa politician)" .
+
+
+:p427	a schema:Person ;
+	schema:familyName "Bost" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-12-30"^^xsd:date ;
+	:wikipedia_id	"Mike Bost" .
+
+
+:p428	a schema:Person ;
+	schema:familyName "Abraham" ;
+	schema:givenName "Ralph" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-09-16"^^xsd:date ;
+	:wikipedia_id	"Ralph Abraham (politician)" .
+
+
+:p429	a schema:Person ;
+	schema:familyName "Graves" ;
+	schema:givenName "Garret" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-01-31"^^xsd:date ;
+	:wikipedia_id	"Garret Graves" .
+
+
+:p430	a schema:Person ;
+	schema:familyName "Moulton" ;
+	schema:givenName "Seth" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1978-10-24"^^xsd:date ;
+	:wikipedia_id	"Seth Moulton" .
+
+
+:p431	a schema:Person ;
+	schema:familyName "Poliquin" ;
+	schema:givenName "Bruce" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-11-01"^^xsd:date ;
+	:wikipedia_id	"Bruce Poliquin" .
+
+
+:p432	a schema:Person ;
+	schema:familyName "Moolenaar" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-05-08"^^xsd:date ;
+	:wikipedia_id	"John Moolenaar" .
+
+
+:p433	a schema:Person ;
+	schema:familyName "Bishop" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1967-03-18"^^xsd:date ;
+	:wikipedia_id	"Mike Bishop (politician)" .
+
+
+:p434	a schema:Person ;
+	schema:familyName "Trott" ;
+	schema:givenName "Dave" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-10-16"^^xsd:date ;
+	:wikipedia_id	"Dave Trott (politician)" .
+
+
+:p435	a schema:Person ;
+	schema:familyName "Dingell" ;
+	schema:givenName "Debbie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1953-11-23"^^xsd:date ;
+	:wikipedia_id	"Debbie Dingell" .
+
+
+:p436	a schema:Person ;
+	schema:familyName "Lawrence" ;
+	schema:givenName "Brenda" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1954-10-18"^^xsd:date ;
+	:wikipedia_id	"Brenda Lawrence" .
+
+
+:p437	a schema:Person ;
+	schema:familyName "Emmer" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-03-03"^^xsd:date ;
+	:wikipedia_id	"Tom Emmer" .
+
+
+:p438	a schema:Person ;
+	schema:familyName "Rouzer" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-02-16"^^xsd:date ;
+	:wikipedia_id	"David Rouzer" .
+
+
+:p439	a schema:Person ;
+	schema:familyName "MacArthur" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-10-16"^^xsd:date ;
+	:wikipedia_id	"Tom MacArthur" .
+
+
+:p440	a schema:Person ;
+	schema:familyName "Watson Coleman" ;
+	schema:givenName "Bonnie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1945-02-06"^^xsd:date ;
+	:wikipedia_id	"Bonnie Watson Coleman" .
+
+
+:p441	a schema:Person ;
+	schema:familyName "Zeldin" ;
+	schema:givenName "Lee" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-01-30"^^xsd:date ;
+	:wikipedia_id	"Lee Zeldin" .
+
+
+:p442	a schema:Person ;
+	schema:familyName "Rice" ;
+	schema:givenName "Kathleen" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1965-02-15"^^xsd:date ;
+	:wikipedia_id	"Kathleen Rice" .
+
+
+:p443	a schema:Person ;
+	schema:familyName "Stefanik" ;
+	schema:givenName "Elise" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1984-07-02"^^xsd:date ;
+	:wikipedia_id	"Elise Stefanik" .
+
+
+:p444	a schema:Person ;
+	schema:familyName "Katko" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-11-09"^^xsd:date ;
+	:wikipedia_id	"John Katko" .
+
+
+:p445	a schema:Person ;
+	schema:familyName "Russell" ;
+	schema:givenName "Steve" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-05-25"^^xsd:date ;
+	:wikipedia_id	"Steve Russell (politician)" .
+
+
+:p446	a schema:Person ;
+	schema:familyName "Costello" ;
+	schema:givenName "Ryan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1976-09-07"^^xsd:date ;
+	:wikipedia_id	"Ryan Costello" .
+
+
+:p447	a schema:Person ;
+	schema:familyName "Boyle" ;
+	schema:givenName "Brendan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1977-02-06"^^xsd:date ;
+	:wikipedia_id	"Brendan Boyle" .
+
+
+:p448	a schema:Person ;
+	schema:familyName "Ratcliffe" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1965-10-20"^^xsd:date ;
+	:wikipedia_id	"John Ratcliffe (American politician)" .
+
+
+:p449	a schema:Person ;
+	schema:familyName "Hurd" ;
+	schema:givenName "Will" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1977-08-19"^^xsd:date ;
+	:wikipedia_id	"Will Hurd" .
+
+
+:p450	a schema:Person ;
+	schema:familyName "Babin" ;
+	schema:givenName "Brian" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-03-23"^^xsd:date ;
+	:wikipedia_id	"Brian Babin" .
+
+
+:p451	a schema:Person ;
+	schema:familyName "Love" ;
+	schema:givenName "Mia" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1975-12-06"^^xsd:date ;
+	:wikipedia_id	"Mia Love" .
+
+
+:p452	a schema:Person ;
+	schema:familyName "Beyer" ;
+	schema:givenName "Donald" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1950-06-20"^^xsd:date ;
+	:wikipedia_id	"Don Beyer" .
+
+
+:p453	a schema:Person ;
+	schema:familyName "Comstock" ;
+	schema:givenName "Barbara" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1959-06-30"^^xsd:date ;
+	:wikipedia_id	"Barbara Comstock" .
+
+
+:p454	a schema:Person ;
+	schema:familyName "Plaskett" ;
+	schema:givenName "Stacey" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1964-05-13"^^xsd:date ;
+	:wikipedia_id	"Stacey Plaskett" .
+
+
+:p455	a schema:Person ;
+	schema:familyName "Newhouse" ;
+	schema:givenName "Dan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-07-10"^^xsd:date ;
+	:wikipedia_id	"Dan Newhouse" .
+
+
+:p456	a schema:Person ;
+	schema:familyName "Grothman" ;
+	schema:givenName "Glenn" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-07-03"^^xsd:date ;
+	:wikipedia_id	"Glenn Grothman" .
+
+
+:p457	a schema:Person ;
+	schema:familyName "Mooney" ;
+	schema:givenName "Alex" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-06-05"^^xsd:date ;
+	:wikipedia_id	"Alex Mooney" .
+
+
+:p458	a schema:Person ;
+	schema:familyName "Jenkins" ;
+	schema:givenName "Evan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-09-12"^^xsd:date ;
+	:wikipedia_id	"Evan Jenkins (politician)" .
+
+
+:p459	a schema:Person ;
+	schema:familyName "Amata" ;
+	schema:givenName "Aumua" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1947-12-29"^^xsd:date ;
+	:wikipedia_id	"Amata Coleman Radewagen" .
+
+
+:p460	a schema:Person ;
+	schema:familyName "Sullivan" ;
+	schema:givenName "Dan" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-11-13"^^xsd:date ;
+	:wikipedia_id	"Dan Sullivan (American senator)" .
+
+
+:p461	a schema:Person ;
+	schema:familyName "Perdue" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1949-12-10"^^xsd:date ;
+	:wikipedia_id	"David Perdue" .
+
+
+:p462	a schema:Person ;
+	schema:familyName "Ernst" ;
+	schema:givenName "Joni" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1970-07-01"^^xsd:date ;
+	:wikipedia_id	"Joni Ernst" .
+
+
+:p463	a schema:Person ;
+	schema:familyName "Tillis" ;
+	schema:givenName "Thom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-08-30"^^xsd:date ;
+	:wikipedia_id	"Thom Tillis" .
+
+
+:p464	a schema:Person ;
+	schema:familyName "Rounds" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-10-24"^^xsd:date ;
+	:wikipedia_id	"Mike Rounds" .
+
+
+:p465	a schema:Person ;
+	schema:familyName "Walker" ;
+	schema:givenName "Mark" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-05-20"^^xsd:date ;
+	:wikipedia_id	"Mark Walker (North Carolina politician)" .
+
+
+:p466	a schema:Person ;
+	schema:familyName "Sasse" ;
+	schema:givenName "Benjamin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-02-22"^^xsd:date ;
+	:wikipedia_id	"Ben Sasse" .
+
+
+:p467	a schema:Person ;
+	schema:familyName "Donovan" ;
+	schema:givenName "Daniel" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-11-06"^^xsd:date ;
+	:wikipedia_id	"Dan Donovan (politician)" .
+
+
+:p468	a schema:Person ;
+	schema:familyName "Kelly" ;
+	schema:givenName "Trent" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-03-01"^^xsd:date ;
+	:wikipedia_id	"Trent Kelly" .
+
+
+:p469	a schema:Person ;
+	schema:familyName "LaHood" ;
+	schema:givenName "Darin" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1968-07-05"^^xsd:date ;
+	:wikipedia_id	"Darin LaHood" .
+
+
+:p470	a schema:Person ;
+	schema:familyName "Davidson" ;
+	schema:givenName "Warren" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1970-03-01"^^xsd:date ;
+	:wikipedia_id	"Warren Davidson" .
+
+
+:p471	a schema:Person ;
+	schema:familyName "Hanabusa" ;
+	schema:givenName "Colleen" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1951-05-04"^^xsd:date ;
+	:wikipedia_id	"Colleen Hanabusa" .
+
+
+:p472	a schema:Person ;
+	schema:familyName "Comer" ;
+	schema:givenName "James" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-08-19"^^xsd:date ;
+	:wikipedia_id	"James Comer (politician)" .
+
+
+:p473	a schema:Person ;
+	schema:familyName "Evans" ;
+	schema:givenName "Dwight" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-05-16"^^xsd:date ;
+	:wikipedia_id	"Dwight Evans (politician)" .
+
+
+:p474	a schema:Person ;
+	schema:familyName "Harris" ;
+	schema:givenName "Kamala" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1964-10-20"^^xsd:date ;
+	:wikipedia_id	"Kamala Harris" .
+
+
+:p475	a schema:Person ;
+	schema:familyName "Kennedy" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1951-11-21"^^xsd:date ;
+	:wikipedia_id	"John Neely Kennedy" .
+
+
+:p476	a schema:Person ;
+	schema:familyName "Hassan" ;
+	schema:givenName "Margaret" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1958-02-27"^^xsd:date ;
+	:wikipedia_id	"Maggie Hassan" .
+
+
+:p477	a schema:Person ;
+	schema:familyName "Cortez Masto" ;
+	schema:givenName "Catherine" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1964-03-29"^^xsd:date ;
+	:wikipedia_id	"Catherine Cortez Masto" .
+
+
+:p478	a schema:Person ;
+	schema:familyName "Schneider" ;
+	schema:givenName "Bradley" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-08-20"^^xsd:date ;
+	:wikipedia_id	"Brad Schneider" .
+
+
+:p479	a schema:Person ;
+	schema:familyName "Shea-Porter" ;
+	schema:givenName "Carol" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1952-12-02"^^xsd:date ;
+	:wikipedia_id	"Carol Shea-Porter" .
+
+
+:p480	a schema:Person ;
+	schema:familyName "O’Halleran" ;
+	schema:givenName "Tom" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1946-01-24"^^xsd:date ;
+	:wikipedia_id	"Tom O'Halleran" .
+
+
+:p481	a schema:Person ;
+	schema:familyName "Biggs" ;
+	schema:givenName "Andy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-11-07"^^xsd:date ;
+	:wikipedia_id	"Andy Biggs" .
+
+
+:p482	a schema:Person ;
+	schema:familyName "Khanna" ;
+	schema:givenName "Ro" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1976-09-13"^^xsd:date ;
+	:wikipedia_id	"Ro Khanna" .
+
+
+:p483	a schema:Person ;
+	schema:familyName "Panetta" ;
+	schema:givenName "Jimmy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1969-10-01"^^xsd:date ;
+	:wikipedia_id	"Jimmy Panetta" .
+
+
+:p484	a schema:Person ;
+	schema:familyName "Carbajal" ;
+	schema:givenName "Salud" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-11-18"^^xsd:date ;
+	:wikipedia_id	"Salud Carbajal" .
+
+
+:p485	a schema:Person ;
+	schema:familyName "Barragán" ;
+	schema:givenName "Nanette" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1976-09-15"^^xsd:date ;
+	:wikipedia_id	"Nanette Barragán" .
+
+
+:p486	a schema:Person ;
+	schema:familyName "Correa" ;
+	schema:givenName "J." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1958-01-24"^^xsd:date ;
+	:wikipedia_id	"Lou Correa" .
+
+
+:p487	a schema:Person ;
+	schema:familyName "Blunt Rochester" ;
+	schema:givenName "Lisa" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1962-02-10"^^xsd:date ;
+	:wikipedia_id	"Lisa Blunt Rochester" .
+
+
+:p488	a schema:Person ;
+	schema:familyName "Gaetz" ;
+	schema:givenName "Matt" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1982-05-07"^^xsd:date ;
+	:wikipedia_id	"Matt Gaetz" .
+
+
+:p489	a schema:Person ;
+	schema:familyName "Dunn" ;
+	schema:givenName "Neal" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-02-16"^^xsd:date ;
+	:wikipedia_id	"Neal Dunn" .
+
+
+:p490	a schema:Person ;
+	schema:familyName "Rutherford" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-09-02"^^xsd:date ;
+	:wikipedia_id	"John Rutherford (Florida politician)" .
+
+
+:p491	a schema:Person ;
+	schema:familyName "Lawson" ;
+	schema:givenName "Al" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1948-09-21"^^xsd:date ;
+	:wikipedia_id	"Al Lawson" .
+
+
+:p492	a schema:Person ;
+	schema:familyName "Murphy" ;
+	schema:givenName "Stephanie" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1978-09-16"^^xsd:date ;
+	:wikipedia_id	"Stephanie Murphy" .
+
+
+:p493	a schema:Person ;
+	schema:familyName "Soto" ;
+	schema:givenName "Darren" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1978-02-25"^^xsd:date ;
+	:wikipedia_id	"Darren Soto" .
+
+
+:p494	a schema:Person ;
+	schema:familyName "Demings" ;
+	schema:givenName "Val" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1957-03-12"^^xsd:date ;
+	:wikipedia_id	"Val Demings" .
+
+
+:p495	a schema:Person ;
+	schema:familyName "Crist" ;
+	schema:givenName "Charlie" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-07-24"^^xsd:date ;
+	:wikipedia_id	"Charlie Crist" .
+
+
+:p496	a schema:Person ;
+	schema:familyName "Mast" ;
+	schema:givenName "Brian" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-07-10"^^xsd:date ;
+	:wikipedia_id	"Brian Mast" .
+
+
+:p497	a schema:Person ;
+	schema:familyName "Rooney" ;
+	schema:givenName "Francis" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-12-04"^^xsd:date ;
+	:wikipedia_id	"Francis Rooney" .
+
+
+:p498	a schema:Person ;
+	schema:familyName "Ferguson" ;
+	schema:givenName "A." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1967-11-15"^^xsd:date ;
+	:wikipedia_id	"Drew Ferguson (politician)" .
+
+
+:p499	a schema:Person ;
+	schema:familyName "Krishnamoorthi" ;
+	schema:givenName "Raja" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-07-19"^^xsd:date ;
+	:wikipedia_id	"Raja Krishnamoorthi" .
+
+
+:p500	a schema:Person ;
+	schema:familyName "Banks" ;
+	schema:givenName "Jim" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1979-07-16"^^xsd:date ;
+	:wikipedia_id	"Jim Banks" .
+
+
+:p501	a schema:Person ;
+	schema:familyName "Hollingsworth" ;
+	schema:givenName "Trey" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1983-09-12"^^xsd:date ;
+	:wikipedia_id	"Trey Hollingsworth" .
+
+
+:p502	a schema:Person ;
+	schema:familyName "Marshall" ;
+	schema:givenName "Roger" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-08-09"^^xsd:date ;
+	:wikipedia_id	"Roger Marshall (politician)" .
+
+
+:p503	a schema:Person ;
+	schema:familyName "Higgins" ;
+	schema:givenName "Clay" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-08-24"^^xsd:date ;
+	:wikipedia_id	"Clay Higgins" .
+
+
+:p504	a schema:Person ;
+	schema:familyName "Johnson" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-01-30"^^xsd:date ;
+	:wikipedia_id	"Mike Johnson (Louisiana politician)" .
+
+
+:p505	a schema:Person ;
+	schema:familyName "Brown" ;
+	schema:givenName "Anthony" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-11-21"^^xsd:date ;
+	:wikipedia_id	"Anthony G. Brown" .
+
+
+:p506	a schema:Person ;
+	schema:familyName "Raskin" ;
+	schema:givenName "Jamie" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-12-13"^^xsd:date ;
+	:wikipedia_id	"Jamie Raskin" .
+
+
+:p507	a schema:Person ;
+	schema:familyName "Bergman" ;
+	schema:givenName "Jack" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1947-02-02"^^xsd:date ;
+	:wikipedia_id	"Jack Bergman" .
+
+
+:p508	a schema:Person ;
+	schema:familyName "Mitchell" ;
+	schema:givenName "Paul" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-05-08"^^xsd:date ;
+	:wikipedia_id	"Paul Mitchell (politician)" .
+
+
+:p509	a schema:Person ;
+	schema:familyName "Lewis" ;
+	schema:givenName "Jason" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1955-09-23"^^xsd:date ;
+	:wikipedia_id	"Jason Lewis (Minnesota politician)" .
+
+
+:p510	a schema:Person ;
+	schema:familyName "Budd" ;
+	schema:givenName "Ted" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1971-10-21"^^xsd:date ;
+	:wikipedia_id	"Ted Budd" .
+
+
+:p511	a schema:Person ;
+	schema:familyName "Bacon" ;
+	schema:givenName "Don" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1963-08-16"^^xsd:date ;
+	:wikipedia_id	"Don Bacon (politician)" .
+
+
+:p512	a schema:Person ;
+	schema:familyName "Gottheimer" ;
+	schema:givenName "Josh" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1975-03-08"^^xsd:date ;
+	:wikipedia_id	"Josh Gottheimer" .
+
+
+:p513	a schema:Person ;
+	schema:familyName "Rosen" ;
+	schema:givenName "Jacky" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1957-08-02"^^xsd:date ;
+	:wikipedia_id	"Jacky Rosen" .
+
+
+:p514	a schema:Person ;
+	schema:familyName "Kihuen" ;
+	schema:givenName "Ruben" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1980-04-25"^^xsd:date ;
+	:wikipedia_id	"Ruben Kihuen" .
+
+
+:p515	a schema:Person ;
+	schema:familyName "Suozzi" ;
+	schema:givenName "Thomas" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1962-08-31"^^xsd:date ;
+	:wikipedia_id	"Thomas Suozzi" .
+
+
+:p516	a schema:Person ;
+	schema:familyName "Espaillat" ;
+	schema:givenName "Adriano" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1954-09-27"^^xsd:date ;
+	:wikipedia_id	"Adriano Espaillat" .
+
+
+:p517	a schema:Person ;
+	schema:familyName "Faso" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1952-08-25"^^xsd:date ;
+	:wikipedia_id	"John Faso" .
+
+
+:p518	a schema:Person ;
+	schema:familyName "Tenney" ;
+	schema:givenName "Claudia" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1961-02-04"^^xsd:date ;
+	:wikipedia_id	"Claudia Tenney" .
+
+
+:p519	a schema:Person ;
+	schema:familyName "Fitzpatrick" ;
+	schema:givenName "Brian" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1973-12-17"^^xsd:date ;
+	:wikipedia_id	"Brian Fitzpatrick (American politician)" .
+
+
+:p520	a schema:Person ;
+	schema:familyName "Smucker" ;
+	schema:givenName "Lloyd" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1964-01-23"^^xsd:date ;
+	:wikipedia_id	"Lloyd Smucker" .
+
+
+:p521	a schema:Person ;
+	schema:familyName "González-Colón" ;
+	schema:givenName "Jenniffer" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1976-08-05"^^xsd:date ;
+	:wikipedia_id	"Jenniffer González" .
+
+
+:p522	a schema:Person ;
+	schema:familyName "Kustoff" ;
+	schema:givenName "David" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1966-10-08"^^xsd:date ;
+	:wikipedia_id	"David Kustoff" .
+
+
+:p523	a schema:Person ;
+	schema:familyName "Gonzalez" ;
+	schema:givenName "Vicente" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1967-09-04"^^xsd:date ;
+	:wikipedia_id	"Vicente González (politician)" .
+
+
+:p524	a schema:Person ;
+	schema:familyName "Arrington" ;
+	schema:givenName "Jodey" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-03-09"^^xsd:date ;
+	:wikipedia_id	"Jodey Arrington" .
+
+
+:p525	a schema:Person ;
+	schema:familyName "Taylor" ;
+	schema:givenName "Scott" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1979-06-27"^^xsd:date ;
+	:wikipedia_id	"Scott Taylor (politician)" .
+
+
+:p526	a schema:Person ;
+	schema:familyName "McEachin" ;
+	schema:givenName "A." ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-10-10"^^xsd:date ;
+	:wikipedia_id	"Donald McEachin" .
+
+
+:p527	a schema:Person ;
+	schema:familyName "Garrett" ;
+	schema:givenName "Thomas" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1972-03-27"^^xsd:date ;
+	:wikipedia_id	"Tom Garrett Jr." .
+
+
+:p528	a schema:Person ;
+	schema:familyName "Jayapal" ;
+	schema:givenName "Pramila" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1965-09-21"^^xsd:date ;
+	:wikipedia_id	"Pramila Jayapal" .
+
+
+:p529	a schema:Person ;
+	schema:familyName "Gallagher" ;
+	schema:givenName "Mike" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1984-03-03"^^xsd:date ;
+	:wikipedia_id	"Mike Gallagher (American politician)" .
+
+
+:p530	a schema:Person ;
+	schema:familyName "Cheney" ;
+	schema:givenName "Liz" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1966-07-28"^^xsd:date ;
+	:wikipedia_id	"Liz Cheney" .
+
+
+:p531	a schema:Person ;
+	schema:familyName "Strange" ;
+	schema:givenName "Luther" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-03-01"^^xsd:date ;
+	:wikipedia_id	"Luther Strange" .
+
+
+:p532	a schema:Person ;
+	schema:familyName "Estes" ;
+	schema:givenName "Ron" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1956-07-19"^^xsd:date ;
+	:wikipedia_id	"Ron Estes" .
+
+
+:p533	a schema:Person ;
+	schema:familyName "Gianforte" ;
+	schema:givenName "Greg" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1961-04-17"^^xsd:date ;
+	:wikipedia_id	"Greg Gianforte" .
+
+
+:p534	a schema:Person ;
+	schema:familyName "Norman" ;
+	schema:givenName "Ralph" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1953-06-20"^^xsd:date ;
+	:wikipedia_id	"Ralph Norman" .
+
+
+:p535	a schema:Person ;
+	schema:familyName "Handel" ;
+	schema:givenName "Karen" ;
+	schema:gender schema:Female ;
+	schema:birthDate "1962-04-18"^^xsd:date ;
+	:wikipedia_id	"Karen Handel" .
+
+
+:p536	a schema:Person ;
+	schema:familyName "Gomez" ;
+	schema:givenName "Jimmy" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1974-11-25"^^xsd:date ;
+	:wikipedia_id	"Jimmy Gomez" .
+
+
+:p537	a schema:Person ;
+	schema:familyName "Curtis" ;
+	schema:givenName "John" ;
+	schema:gender schema:Male ;
+	schema:birthDate "1960-05-10"^^xsd:date ;
+	:wikipedia_id	"John Curtis (American politician)" .
+
