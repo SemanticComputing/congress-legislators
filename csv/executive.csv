@@ -1,0 +1,128 @@
+id__bioguide,id__thomas,id__lis,id__govtrack,id__opensecrets,id__votesmart,id__icpsr,id__wikidata,id__google_entity_id,id__fec__-,id__wikipedia,id__house_history,id__icpsr_prez,name__first,name__middle,name__last,name__nickname,name__suffix,bio__birthday,bio__gender,bio__religion,terms__type,terms__start,terms__end,terms__party,terms__how
+W000178,,,411351,,,,,,,,,99869,George,,Washington,,,1732-02-22,M,,prez,1789-04-30,1793-03-04,no party,election
+W000178,,,411351,,,,,,,,,99869,George,,Washington,,,1732-02-22,M,,prez,1793-03-04,1797-03-04,no party,election
+A000039,,,400699,,,,,,,,,99870,John,,Adams,,,1735-10-19,M,,viceprez,1789-04-21,1793-03-04,Federalist,election
+A000039,,,400699,,,,,,,,,99870,John,,Adams,,,1735-10-19,M,,viceprez,1793-03-04,1797-03-04,Federalist,election
+A000039,,,400699,,,,,,,,,99870,John,,Adams,,,1735-10-19,M,,prez,1797-03-04,1801-03-04,Federalist,election
+J000069,,,405974,,,,,,,,,99871,Thomas,,Jefferson,,,1743-04-13,M,,viceprez,1797-03-04,1801-03-04,Democratic-Republican,election
+J000069,,,405974,,,,,,,,,99871,Thomas,,Jefferson,,,1743-04-13,M,,prez,1801-03-04,1805-03-04,Democratic-Republican,election
+J000069,,,405974,,,,,,,,,99871,Thomas,,Jefferson,,,1743-04-13,M,,prez,1805-03-04,1809-03-04,Democratic-Republican,election
+B001133,,,402077,,,1302,,,,,,,Aaron,,Burr,,Jr.,1756-02-06,M,,viceprez,1801-03-04,1805-03-04,Democratic-Republican,election
+C000527,,,412587,,,,,,,,,,George,,Clinton,,,1739-07-26,M,,viceprez,1805-03-04,1809-03-04,Democratic-Republican,election
+C000527,,,412587,,,,,,,,,,George,,Clinton,,,1739-07-26,M,,viceprez,1809-03-04,1812-04-20,Democratic-Republican,election
+G000139,,,404507,,,3541,,,,,,,Elbridge,,Gerry,,,1744-07-17,M,,viceprez,1813-03-04,1814-11-23,Democratic-Republican,election
+M000043,,,407071,,,5903,,,,,,99872,James,,Madison,,,1751-03-16,M,,prez,1809-03-04,1813-03-04,Democratic-Republican,election
+M000043,,,407071,,,5903,,,,,,99872,James,,Madison,,,1751-03-16,M,,prez,1813-03-04,1817-03-04,Democratic-Republican,election
+T000306,,,412588,,,,,,,,,,Daniel,D.,Tompkins,,,1774-06-21,M,,viceprez,1817-03-04,1821-03-05,Democratic-Republican,election
+T000306,,,412588,,,,,,,,,,Daniel,D.,Tompkins,,,1774-06-21,M,,viceprez,1821-03-05,1825-03-04,Democratic-Republican,election
+M000858,,,407829,,,6594,,,,,,99873,James,,Monroe,,,1758-04-28,M,,prez,1817-03-04,1821-03-05,Democratic-Republican,election
+M000858,,,407829,,,6594,,,,,,99873,James,,Monroe,,,1758-04-28,M,,prez,1821-03-05,1825-03-04,Democratic-Republican,election
+A000041,,,400702,,,34,,,,,,99874,John,Quincy,Adams,,,1767-07-11,M,,prez,1825-03-04,1829-03-04,Democratic-Republican,election
+C000044,,,402205,,,1418,,,,,,,John,Caldwell,Calhoun,,,1782-03-18,M,,viceprez,1825-03-04,1829-03-04,Democratic-Republican,election
+C000044,,,402205,,,1418,,,,,,,John,Caldwell,Calhoun,,,1782-03-18,M,,viceprez,1829-03-04,1832-12-28,Democratic,election
+J000005,,,405913,,,4843,,,,,,99875,Andrew,,Jackson,,,1767-03-15,M,,prez,1829-03-04,1833-03-04,Democratic,election
+J000005,,,405913,,,4843,,,,,,99875,Andrew,,Jackson,,,1767-03-15,M,,prez,1833-03-04,1837-03-04,Democratic,election
+J000170,,,406067,,,4988,,,,,,,Richard,Mentor,Johnson,,,1780-10-17,M,,viceprez,1837-03-04,1841-03-04,Democratic,election
+V000009,,,411074,,,9595,,,,,,99876,Martin,,Van Buren,,,1782-12-05,M,,viceprez,1833-03-04,1837-03-04,Democratic,election
+V000009,,,411074,,,,,,,,,,Martin,,Van Buren,,,1782-12-05,M,,prez,1837-03-04,1841-03-04,Democratic,election
+H000279,,,405153,,,4138,,,,,,99877,William,Henry,Harrison,,,1773-02-09,M,,prez,1841-03-04,1841-04-04,Whig,election
+T000450,,,411018,,,9542,,,,,,99878,John,,Tyler,,,1790-03-29,M,,viceprez,1841-03-04,1841-04-04,Whig,election
+T000450,,,411018,,,,,,,,,,John,,Tyler,,,1790-03-29,M,,prez,1841-04-04,1845-03-04,Whig,succession
+D000011,,,403154,,,2305,,,,,,,George,Mifflin,Dallas,,,1792-07-10,M,,viceprez,1845-03-04,1849-03-04,Democratic,election
+P000409,,,408802,,,7507,,,,,,99879,James,Knox,Polk,,,1795-11-02,M,,prez,1845-03-04,1849-03-04,Democratic,election
+,,,412344,,,,,,,,,99880,Zachary,,Taylor,,,1784-11-24,M,,prez,1849-03-04,1850-07-09,Whig,election
+F000115,,,404072,,,3140,,,,,,99881,Millard,,Fillmore,,,1800-01-07,M,,viceprez,1849-03-04,1850-07-09,Whig,election
+F000115,,,404072,,,3140,,,,,,99881,Millard,,Fillmore,,,1800-01-07,M,,prez,1850-07-09,1853-03-04,Whig,succession
+K000217,,,406377,,,5275,,,,,,,William,Rufus de Vane,King,,,1786-04-07,M,,viceprez,1853-03-04,1853-04-18,Democratic,election
+P000333,,,408730,,,7435,,,,,,99882,Franklin,,Pierce,,,1804-11-23,M,,prez,1853-03-04,1857-03-04,Democratic,election
+B000789,,,401746,,,995,,,,,,99883,John,Cabell,Breckinridge,,,1821-01-16,M,,viceprez,1857-03-04,1861-03-04,Democratic,election
+B001005,,,401954,,,1186,,,,,,99883,James,,Buchanan,,,1791-04-23,M,,prez,1857-03-04,1861-03-04,Democratic,election
+H000121,,,405003,,,4001,,,,,,,Hannibal,,Hamlin,,,1809-08-27,M,,viceprez,1861-03-04,1865-03-04,Republican,election
+L000313,,,406807,,,5666,,,,,,99884,Abraham,,Lincoln,,,1809-02-12,M,,prez,1861-03-04,1865-03-04,Republican,election
+L000313,,,406807,,,5666,,,,,,99884,Abraham,,Lincoln,,,1809-02-12,M,,prez,1865-03-04,1865-04-15,Republican,election
+J000116,,,406017,,,4940,,,,,,99885,Andrew,,Johnson,,,1808-12-29,M,,viceprez,1865-03-04,1865-04-15,Democratic,election
+J000116,,,406017,,,4940,,,,,,99885,Andrew,,Johnson,,,1808-12-29,M,,prez,1865-04-15,1869-03-04,Democratic,succession
+C000626,,,402755,,,1938,,,,,,,Schuyler,,Colfax,,,1823-03-23,M,,viceprez,1869-03-04,1873-03-04,Republican,election
+W000585,,,411739,,,10225,,,,,,,Henry,,Wilson,,,1812-02-16,M,,viceprez,1873-03-04,1875-11-22,Republican,election
+,,,412350,,,,,,,,,99886,Ulysses,Simpson,Grant,,,1822-04-27,M,,prez,1869-03-04,1873-03-04,Republican,election
+,,,412350,,,,,,,,,99886,Ulysses,Simpson,Grant,,,1822-04-27,M,,prez,1873-03-04,1877-03-04,Republican,election
+W000341,,,411503,,,9995,,,,,,,William,Almon,Wheeler,,,1819-06-30,M,,viceprez,1877-03-04,1881-03-04,Republican,election
+H000393,,,405261,,,4232,,,,,,99887,Rutherford,Birchard,Hayes,,,1822-10-04,M,,prez,1877-03-04,1881-03-04,Republican,election
+G000063,,,404436,,,3473,,,,,,99888,James,Abram,Garfield,,,1831-11-19,M,,prez,1881-03-04,1881-09-19,Republican,election
+A000303,,,400945,,,,,,,,,99889,Chester,Alan,Arthur,,,1829-10-05,M,,viceprez,1881-03-04,1881-09-19,Republican,election
+A000303,,,400945,,,,,,,,,99889,Chester,Alan,Arthur,,,1829-10-05,M,,prez,1881-09-19,1885-03-04,Republican,succession
+H000493,,,405356,,,4319,,,,,,,Thomas,Andrews,Hendricks,,,1819-09-07,M,,viceprez,1885-03-04,1885-11-25,Democratic,election
+M001018,,,407985,,,6742,,,,,,,Levi,Parsons,Morton,,,1824-05-16,M,,viceprez,1889-03-04,1893-03-04,Republican,election
+H000263,,,405139,,,4124,,,,,,99891,Benjamin,,Harrison,,,1833-08-20,M,,prez,1889-03-04,1893-03-04,Republican,election
+S000889,,,410350,,,8918,,,,,,,Adlai,Ewing,Stevenson,,,1835-10-23,M,,viceprez,1893-03-04,1897-03-04,Democratic,election
+S000889,,,412354,,,,,,,,,99890,Grover,,Cleveland,,,1837-03-18,M,,prez,1885-03-04,1889-03-04,Democratic,election
+S000889,,,412354,,,,,,,,,99890,Grover,,Cleveland,,,1837-03-18,M,,prez,1893-03-04,1897-03-04,Democratic,election
+H000660,,,412589,,,,,,,,,,Garret,Augustus,Hobart,,,1844-06-03,M,,viceprez,1897-03-04,1899-11-21,Republican,election
+M000522,,,407515,,,6312,,,,,,99892,William,,McKinley,,Jr.,1843-01-29,M,,prez,1897-03-04,1901/03/04,Republican,election
+M000522,,,407515,,,6312,,,,,,99892,William,,McKinley,,Jr.,1843-01-29,M,,prez,1901/03/04,1901/09/14,Republican,election
+F000003,,,403965,,,3046,,,,,,,Charles,Warren,Fairbanks,,,1852-05-11,M,,viceprez,1905/03/04,1909/03/04,Republican,election
+R000429,,,409394,,,,,,,,,99893,Theodore,,Roosevelt,,,1858-10-27,M,,viceprez,1901/03/04,1901/09/14,Republican,election
+R000429,,,409394,,,,,,,,,99893,Theodore,,Roosevelt,,,1858-10-27,M,,prez,1901/09/14,1905/03/04,Republican,succession
+R000429,,,409394,,,,,,,,,99893,Theodore,,Roosevelt,,,1858-10-27,M,,prez,1905/03/04,1909/03/04,Republican,election
+S000345,,,409841,,,8453,,,,,,,James,Schoolcraft,Sherman,,,1855-10-24,M,,viceprez,1909/03/04,1912/10/30,Republican,election
+,,,412359,,,,,,,,,99894,William,Howard,Taft,,,1857-09-15,M,,prez,1909/03/04,1913/03/04,Republican,election
+M000164,,,412590,,,,,,,,,,Thomas,Riley,Marshall,,,1854-03-14,M,,viceprez,1913/03/04,1917/03/04,Democratic,election
+M000164,,,412590,,,,,,,,,,Thomas,Riley,Marshall,,,1854-03-14,M,,viceprez,1917/03/04,1921/03/04,Democratic,election
+,,,412360,,,,,,,,,99895,Woodrow,,Wilson,,,1856-12-28,M,,prez,1913/03/04,1917/03/04,Democratic,election
+,,,412360,,,,,,,,,99895,Woodrow,,Wilson,,,1856-12-28,M,,prez,1917/03/04,1921/03/04,Democratic,election
+H000192,,,405073,,,4059,,,,,,99896,Warren,Gamaliel,Harding,,,1865-11-02,M,,prez,1921/03/04,1923/08/02,Republican,election
+D000147,,,412591,,,,,,,,,,Charles,Gates,Dawes,,,1865-08-27,M,,viceprez,1925/03/04,1929/03/04,Republican,election
+C000738,,,402859,,,,,,,,,99897,Calvin,Gates,Coolidge,,,1872-07-04,M,,viceprez,1921/03/04,1923/08/02,Republican,election
+C000738,,,402859,,,,,,,,,99897,Calvin,Gates,Coolidge,,,1872-07-04,M,,prez,1923/08/02,1925/03/04,Republican,succession
+C000738,,,402859,,,,,,,,,99897,Calvin,Gates,Coolidge,,,1872-07-04,M,,prez,1925/03/04,1929/03/04,Republican,election
+C001008,,,403115,,,2269,,,,,,,Charles,,Curtis,,,1860-01-25,M,,viceprez,1929/03/04,1933/03/04,Republican,election
+,,,412363,,,,,,,,,99898,Herbert,Clark,Hoover,,,1860-01-25,M,,prez,1929/03/04,1933/03/04,Republican,election
+G000074,,,404446,,,3482,,,,,,,John,Nance,Garner,,,1868-11-22,M,,viceprez,1933/03/04,1937/01/20,Democratic,election
+G000074,,,404446,,,3482,,,,,,,John,Nance,Garner,,,1868-11-22,M,,viceprez,1937/01/20,1941/01/20,Democratic,election
+W000077,,,412592,,,,,,,,,,Henry,Agard,Wallace,,,1888-10-07,M,,viceprez,1941/01/20,1945/01/20,Democratic,election
+,,,412364,,,,,,,,,99899,Franklin,Delano,Roosevelt,,,1882-01-30,M,,prez,1933/03/04,1937/01/20,Democratic,election
+,,,412364,,,,,,,,,99899,Franklin,Delano,Roosevelt,,,1882-01-30,M,,prez,1937/01/20,1941/01/20,Democratic,election
+,,,412364,,,,,,,,,99899,Franklin,Delano,Roosevelt,,,1882-01-30,M,,prez,1941/01/20,1945/01/20,Democratic,election
+,,,412364,,,,,,,,,99899,Franklin,Delano,Roosevelt,,,1882-01-30,M,,prez,1945/01/20,1945/04/12,Democratic,election
+B000145,,,401146,,,437,,,,,,,Alben,William,Barkley,,,1877-11-24,M,,viceprez,1949/01/20,1953/01/20,Democratic,election
+T000387,,,410956,,,9487,,,,,,99900,Harry,S.,Truman,,,1884-05-08,M,,viceprez,1945/01/20,1945/04/12,Democratic,election
+T000387,,,410956,,,9487,,,,,,99900,Harry,S.,Truman,,,1884-05-08,M,,prez,1945/04/12,1949/01/20,Democratic,succession
+T000387,,,410956,,,9487,,,,,,99900,Harry,S.,Truman,,,1884-05-08,M,,prez,1949/01/20,1953/01/20,Democratic,election
+,,,412366,,,,,,,,,99901,Dwight,David,Eisenhower,,,1884-05-08,M,,prez,1953/01/20,1957/01/20,Republican,election
+,,,412366,,,,,,,,,99901,Dwight,David,Eisenhower,,,1884-05-08,M,,prez,1957/01/20,1961/01/20,Republican,election
+K000107,,,406274,,,5180,,,,,,99902,John,Fitzgerald,Kennedy,,,1917/05/29,M,,prez,1961/01/20,1963/11/22,Democratic,election
+H000953,01366,,405797,,,4728,,,,,,,Hubert,Horatio,Humphrey,,Jr.,1911/05/27,M,,viceprez,1965/01/20,1969/01/20,Democratic,election
+J000160,,,406058,,,4979,,,,,,99903,Lyndon,Baines,Johnson,,,1908/08/27,M,,viceprez,1961/01/20,1963/11/22,Democratic,election
+J000160,,,406058,,,4979,,,,,,99903,Lyndon,Baines,Johnson,,,1908/08/27,M,,prez,1963/11/22,1965/01/20,Democratic,succession
+J000160,,,406058,,,4979,,,,,,99903,Lyndon,Baines,Johnson,,,1908/08/27,M,,prez,1965/01/20,1969/01/20,Democratic,election
+A000059,,,412593,,,,,,,,,,Spiro,Theodore,Agnew,,,1918/11/09,M,,viceprez,1969/01/20,1973/01/20,Republican,election
+A000059,,,412593,,,,,,,,,,Spiro,Theodore,Agnew,,,1918/11/09,M,,viceprez,1973/01/20,1973/10/10,Republican,election
+N000116,,,408200,,,6939,,,,,,99904,Richard,Milhous,Nixon,,,1913/01/09,M,,viceprez,1953/01/20,1957/01/20,Republican,election
+N000116,,,408200,,,,,,,,,,Richard,,Nixon,,,1913/01/09,M,,viceprez,1957/01/20,1961/01/20,Republican,election
+N000116,,,408200,,,,,,,,,,Richard,Milhous,Nixon,,,1913/01/09,M,,prez,1969/01/20,1973/01/20,Republican,election
+N000116,,,408200,,,,,,,,,,Richard,Milhous,Nixon,,,1913/01/09,M,,prez,1973/01/20,1974/08/09,Republican,election
+F000260,00399,,404212,,,3268,,,,,,99905,Gerald,Rudolph,Ford,,Jr.,1913/07/14,M,,viceprez,1973/12/06,1974/08/09,Republican,appointment
+F000260,00399,,404212,,,3268,,,,,,99905,Gerald,Rudolph,Ford,,Jr.,1913/07/14,M,,prez,1974/08/09,1977/01/20,Republican,succession
+R000363,,,412594,,,,,,,,,,Nelson,Aldrich,Rockefeller,,,1908/07/08,M,,viceprez,1974/12/19,1977/01/20,Republican,appointment
+M000851,01402,,407824,,,10813,,,,,,,Walter,Frederick,Mondale,,,1928/01/05,M,,viceprez,1977/01/20,1981/01/20,Democratic,election
+,,,412371,,,,,,,,,99906,James,Earl,Carter,Jimmy,,1924/10/01,M,,prez,1977/01/20,1981/01/20,Democratic,election
+,,,412372,,,,,,,,,99907,Ronald,Wilson,Reagan,,,1911/02/06,M,,prez,1981/01/20,1985/01/20,Republican,election
+,,,412372,,,,,,,,,99907,Ronald,Wilson,Reagan,,,1911/02/06,M,,prez,1985/01/20,1989/01/20,Republican,election
+Q000007,00935,,408970,,,14447,,,,,,,James,Danforth,Quayle,Dan,,1947/02/04,M,,viceprez,1989/01/20,1993/01/20,Republican,election
+B001166,,,402108,,,11008,,,,,,99908,George,Herbert Walker,Bush,,,1924/06/12,M,,viceprez,1981/01/20,1985/01/20,Republican,election
+B001166,,,402108,,,11008,,,,,,99908,George,Herbert Walker,Bush,,,1924/06/12,M,,viceprez,1985/01/20,1989/01/20,Republican,election
+B001166,,,402108,,,11008,,,,,,99908,George,Herbert Walker,Bush,,,1924/06/12,M,,prez,1989/01/20,1993/01/20,Republican,election
+G000321,00449,S170,404679,,,14423,,,,,,,Albert,Arnold,Gore,Al,Jr.,1948/03/31,M,,viceprez,1993/01/20,1997/01/20,Democrat,election
+G000321,00449,S170,404679,,,14423,,,,,,,Albert,Arnold,Gore,Al,Jr.,1948/03/31,M,,viceprez,1997/01/20,2001/01/20,Democrat,election
+,,,412374,,,,,,,,,99909,William,Jefferson,Clinton,Bill,,1946/08/19,M,,prez,1993/01/20,1997/01/20,Democrat,election
+,,,412374,,,,,,,,,99909,William,Jefferson,Clinton,Bill,,1946/08/19,M,,prez,1997/01/20,2001/01/20,Democrat,election
+C000344,00193,,402484,,,14611,,,,,,,Richard,Bruce,Cheney,Dick,,1941/01/30,M,,viceprez,2001/01/20,2005/01/20,Republican,election
+C000344,00193,,402484,,,14611,,,,,,,Richard,Bruce,Cheney,Dick,,1941/01/30,M,,viceprez,2005/01/20,2009/01/20,Republican,election
+,,,412375,,,,,,,,,,George,Walker,Bush,,,1946/07/06,M,,prez,2001/01/20,2005/01/20,Republican,election
+,,,412375,,,,,,,,,,George,Walker,Bush,,,1946/07/06,M,,prez,2005/01/20,2009/01/20,Republican,election
+B000444,01284,S010,300008,N00001669,53279,14101,,,S8DE00012,,,,Joseph,Robinette,Biden,Joe,Jr.,1942/11/20,M,Roman Catholic,viceprez,2009/01/20,2013/01/20,Democrat,election
+B000444,01284,S010,300008,N00001669,53279,14101,,,S8DE00012,,,,Joseph,Robinette,Biden,Joe,Jr.,1942/11/20,M,Roman Catholic,viceprez,2013/01/20,2017/01/20,Democrat,election
+O000167,01763,S298,400629,N00009638,9490,,,,,,,,Barack,Hussein,Obama,,,1961/08/04,M,,prez,2009/01/20,2013/01/20,Democrat,election
+O000167,01763,S298,400629,N00009638,9490,,,,,,,,Barack,Hussein,Obama,,,1961/08/04,M,,prez,2013/01/20,2017/01/20,Democrat,election
+P000587,01649,,400315,N00003765,34024,20117,Q24313,kg:/m/022r9r,H8IN02060,Mike Pence,20013,,Mike,,Pence,,,1959/06/07,M,,viceprez,2017/01/20,2021/01/20,Republican,election
+,,,412733,N00023864,15723,,,,P80001571,Donald Trump,,,Donald,J.,Trump,,,1946/06/14,M,,prez,2017/01/20,2021/01/20,Republican,election
