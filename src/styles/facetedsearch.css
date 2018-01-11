@@ -1,0 +1,137 @@
+
+.facet-name {
+  font-weight: bold;
+}
+
+.loading-img {
+  display: block;
+  margin: auto;
+}
+
+.link:after {
+  content:"\A";
+  white-space: pre-wrap;
+}
+
+a.no-style {
+  text-decoration: none;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.person-image-container .name-col {
+  padding: 0px;
+}
+
+.popover {
+  max-width: 700px;
+}
+
+.person-img-col {
+  padding: 2px;
+}
+
+.person-img {
+  display: inline-block;
+}
+
+.padded-row {
+  padding-top: 10px;
+}
+
+.navbar-brand {
+  font-size: inherit;
+}
+
+.navbar-brand span {
+  padding-right: 5px;
+}
+
+@media (max-width: 1297px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .navbar-collapse.collapsing {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display:block !important;
+  }
+}
+
+.show-facets {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.person-panel {
+  overflow: hidden;
+
+}
+.person-panel p {
+  margin-bottom: 2px;
+}
+
+.person-profile-img img {
+  height: 250px;
+  max-width: 250px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.sort {
+  display: inline-block;
+  width: 140px;
+}
+
+.icon-menu a {
+  color: inherit;
+  font-size: 150%;
+  padding-right: 5px;
+}
+
+.expanded-facet .facet-wrapper {
+  min-width: 500px;
+  position: relative;
+  z-index: 9999;
+}

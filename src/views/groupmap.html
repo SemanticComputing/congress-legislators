@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12" ng-show="!vm.people && !vm.error">
+      <img class="loading-img" src="images/loading-lg.gif"></img>
+    </div>
+    <div uib-alert ng-if="vm.error">
+      {{ vm.error }}
+    </div>
+    <div class="container-fluid text-center" ng-show="vm.people">
+    Kartalla näytetään henkilöiden <span style="color:#777fff">synnyin-</span> ja <span style="color:#ff4141">kuolin</span>paikat. 
+    Esitys luodaan vasemmanpuoleisissa suodattimissa tehtyjen valintojen perusteella. 
+Lähde: <a href="http://www.kansallisbiografia.fi">Kansallisbiografia</a>
+    <div class="col-md-4 pull-md-4 col-lg-3">
+		<div>
+			<br/>Rajaa henkilöiden syntymäaika
+            <rzslider rz-slider-model="minRangeSlider.minValue" rz-slider-high="minRangeSlider.maxValue" rz-slider-options="minRangeSlider.options"></rzslider>
+        </div>
+
+      <div ng-include="'views/mapfacets.partial.html'"></div>
+    </div>
+    <div class="container-fluid thumbnail">
+    	<div class="col-md-8 col-lg-9">
+    	
+		   <ui-gmap-google-map id="ui-gmap-google-map" center='vm.map.center' zoom='vm.map.zoom'>
+	        	<ui-gmap-marker ng-repeat="marker in vm.markers" 
+	        		coords="marker" 
+	        		idkey="marker.id" 
+	        		options="marker.options" 
+	        	></ui-gmap-marker>
+	        </ui-gmap-google-map>
+	        
+	      </div>
+      </div>
+    </div>
+  </div>
+</div>

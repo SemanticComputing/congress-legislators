@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="facetApp">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+  <title>Congress Legislators</title>
+
+  <!-- build:css(.) styles/vendor.css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/sparql-faceter/dist/semantic-faceted-search.css">
+  <!-- endbuild -->
+  <!-- build:css({.,src}) styles/facetedsearch.css -->
+  <link rel="stylesheet" href="styles/facetedsearch.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+
+  <ws-navbar></ws-navbar>
+
+  <div ui-view></div>
+
+  <script type="text/javascript" src="//www.gstatic.com/charts/loader.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCS7M4hXwmBzV1FwE1p9lIDh1QSPhGqhUU"></script>
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/ng-table-bundle/ng-table.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/angular-paging-sparql-service/dist/sparql-service.js"></script>
+  <script src="bower_components/angular-spinner/dist/angular-spinner.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/checklist-model/checklist-model.js"></script>
+  <script src="bower_components/sparql-faceter/dist/semantic-faceted-search.js"></script>
+  <script src="bower_components/angular-filter/dist/angular-filter.js"></script>
+  <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+  <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+  <script src="bower_components/markerclustererplus/src/markerclusterer.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-infobox/dist/infobox.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js"></script>
+  <script src="bower_components/js-rich-marker/src/richmarker.js"></script>
+  <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+  <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.,src}) scripts/scripts.js -->
+  <script src="scripts/facet-app.module.js"></script>
+  <script src="scripts/authStorage.service.js"></script>
+  <script src="scripts/login.service.js"></script>
+  <script src="scripts/filters.js"></script>
+  <script src="scripts/mapper.js"></script>
+  <script src="scripts/eventMapper.js"></script>
+  <script src="scripts/service.js"></script>
+  <script src="scripts/map.service.js"></script>
+  <script src="scripts/groupmap.service.js"></script>
+  <script src="scripts/navbar.directive.js"></script>
+  <script src="scripts/login.controller.js"></script>
+  <script src="scripts/detail.controller.js"></script>
+  <script src="scripts/table.controller.js"></script>
+  <script src="scripts/map.controller.js"></script>
+  <script src="scripts/groupmap.controller.js"></script>
+  <script src="scripts/cards.controller.js"></script>
+  <script src="scripts/visu.controller.js"></script>
+  <script src="scripts/visu2.controller.js"></script>
+  <script src="scripts/visu.service.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>

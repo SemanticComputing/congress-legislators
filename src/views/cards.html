@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2 vcenter push-xs-2">
+      <!-- <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> --> 
+    </div><!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
+ --><div class="col-xs-9 col-md-8 col-lg-9 vcenter push-xs-9">
+      <div ng-include="'views/description.partial.html'"></div>
+    </div>
+    <div class="col-md-4 pull-md-4 col-lg-3">
+      <div ng-include="'views/facets.partial.html'"></div>
+    </div>
+    <div class="col-md-8 col-lg-9">
+      <b>Order:</b>
+      <span class="sort">
+        <a href="" ng-click="vm.sortBy('?ordinal')">By Time</a>
+        <span ng-class="vm.getSortClass('?ordinal', true)" class="glyphicon" aria-hidden="true"></span>
+      </span>
+      <span class="sort"> 
+        <a href="" ng-click="vm.sortBy('?familyName')">By Family Name</a>
+        <span ng-class="vm.getSortClass('?familyName')" class="glyphicon" aria-hidden="true"></span>
+      </span>
+      <div ng-include="'views/cards.partial.html'"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Kirjaudu</h1>
+      <div ng-show="vm.error" class="alert alert-danger" role="alert">{{ vm.error }}</div>
+      <form>
+        <div class="form-group">
+          <label for="un">Käyttäjätunnus</label>
+          <input ng-model="vm.un" type="text" class="form-control" id="un" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label for="pw">Salasana</label>
+          <input ng-model="vm.pw" type="password" class="form-control" id="pw" placeholder="Password">
+        </div>
+        <button ng-click="vm.login()" type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

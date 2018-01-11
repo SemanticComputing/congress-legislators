@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2 vcenter push-xs-2">
+        <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" />
+    </div><!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
+ --><div class="col-xs-8 col-md-7 col-lg-8 vcenter push-xs-8">
+      <div ng-include="'views/description.partial.html'"></div>
+    </div>
+    <div class="col-md-4 pull-md-4 col-lg-3">
+      <div ng-include="'views/facets.partial.html'"></div>
+    </div>
+    <div class="col-md-8 col-lg-9">
+      Järjestä:
+      <span class="sort">
+        <a href="" ng-click="vm.sortBy('?birthDate')">Birth</a>
+        <span ng-class="vm.getSortClass('?birthDate', true)" class="glyphicon" aria-hidden="true"></span>
+      </span>
+      <span class="sort">
+        <a href="" ng-click="vm.sortBy('?familyName')">Family Name</a>
+        <span ng-class="vm.getSortClass('?familyName')" class="glyphicon" aria-hidden="true"></span>
+      </span>
+      <div ng-include="'views/table.partial.html'"></div>
+    </div>
+  </div>
+</div>

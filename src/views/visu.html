@@ -1,0 +1,26 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2 vcenter push-xs-2">
+      <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> 
+    </div><!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
+ --><div class="col-xs-9 col-md-8 col-lg-9 vcenter push-xs-9">
+      <div ng-include="'views/description.statistics.partial.html'"></div>
+    </div>
+    <div class="col-md-3 pull-md-3 col-lg-2">
+      <div ng-include="'views/facets.partial.html'"></div>
+    </div>
+    <div class="col-md-9 col-lg-10" min-height="500">
+    Työn alla - under construction
+    	 <img class="loading-img" src="images/loading-lg.gif" ng-if="vm.isLoadingResults"></img>
+         
+         <div id="chart_education" style="width: 100%; height: 500px;"></div>
+         <div id="chart_eduorganization" style="width: 100%; height: 500px;"></div>
+         <div id="chart_occupation" style="width: 100%; height: 500px;"></div>
+         <div id="chart_organization" style="width: 100%; height: 500px;"></div>
+         <p style="font-family: Arial; font-size:15px; color:black; "><strong>Oppilaitoksista saatuja oppiarvoja</strong></p>
+         <div id="chart_sankey" style="width: 100%; height: 700px;"></div>
+         
+    </div>
+  </div>
+</div>

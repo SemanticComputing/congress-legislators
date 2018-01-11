@@ -1,0 +1,113 @@
+.angular-google-map-container { width:100%; height: 580px; }
+
+#labelcontainer { height: 550px; max-height: 550px; overflow-y: scroll; text-align: left; }
+
+svg#timelinecontainer {
+	width: 100%;
+	height: 100%;
+	stroke-width: 0px; 
+	background-color: white;
+}
+
+#timelinecontainer path {
+	stroke:#555;
+	stroke-width:0.2;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	fill:#BBB;
+	fill-opacity: 0.36;
+	transition: fill .3s, stroke .2s;
+}
+
+#timelinecontainer path:hover {
+	stroke-width:0.3;
+}
+
+#timelinecontainer line {
+	stroke:#88F;
+	stroke-linecap:none;
+	stroke-width:0.2;
+}
+
+#timelinecontainer .event:hover {
+	fill:#DDD;
+	stroke:#777;
+}
+
+#timelinecontainer .birth {
+	fill:#777fff;
+	stroke:#777fff;
+	stroke-width:0.3;
+}
+
+#labelcontainer p:hover {
+	background-color:#bbb;
+}
+
+#labelcontainer p.birth:hover {
+	background-color:#777fff;
+}
+
+#timelinecontainer .death {
+	fill:#ff4141;
+	stroke:#ff4141;
+	stroke-width:0.3;
+}
+#labelcontainer p.death:hover {
+	background-color:#ff4141;
+}
+
+#timelinecontainer .child {
+	fill:#7f6780;
+	stroke:#7f6780;
+}
+#labelcontainer p.child:hover {
+	background-color:#7f6780;
+}
+
+#timelinecontainer .spouse {
+	fill:#a2d0cd;
+	stroke:#a2d0cd;
+}
+#labelcontainer p.spouse:hover {
+	background-color:#a2d0cd;
+}
+
+#timelinecontainer .career {
+	fill:#999;
+	stroke:#999;
+}
+
+#labelcontainer p.career:hover {
+	background-color:#999;
+}
+
+#timelinecontainer .honour {
+	fill:#ce5c00;
+	stroke:#ce5c00;
+}
+
+#labelcontainer p.honour:hover {
+	background-color:#ce5c00;
+}
+
+
+#timelinecontainer .product {
+	fill:#5fbb57;
+	stroke:#5fbb57;
+}
+#labelcontainer p.product:hover {
+	background-color:#5fbb57;
+}
+
+#timelinecontainer path:hover {
+	fill-opacity:0.6;
+	stroke-opacity:0.9;
+}
+
+#timelinecontainer text {
+	font-family:"Arial";
+	font-size:2px; 
+	text-anchor: middle;
+	fill:#555;
+}

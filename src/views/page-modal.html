@@ -1,0 +1,28 @@
+<div class="modal-header">
+
+  <div class="row">
+    <div class="col-xs-8">
+      <h3 class="modal-title">{{ $ctrl.person.ordinal }} {{ $ctrl.person.givenName }} {{ $ctrl.person.familyName }}</h3>
+    </div>
+    <div class="col-xs-4 text-right">
+      <button class="btn btn-default"
+          ng-click="$ctrl.previousPage()"
+          ng-disabled="$ctrl.pageNo === 1"
+          aria-label="Edellinen sivu">
+        <span class="glyphicon glyphicon-step-backward"></span>
+      </button>
+      <span>{{ $ctrl.pageNo }}</span>
+      <button class="btn btn-default"
+          ng-click="$ctrl.nextPage()"
+          ng-disabled="$ctrl.pageNo === 716"
+          aria-label="Seuraava sivu">
+        <span class="glyphicon glyphicon-step-forward"></span>
+      </button>
+      <button ng-click="$ctrl.close()" class="btn btn-default" aria-label="Sulje">
+        <span aria-hidden="true" class="glyphicon glyphicon-remove"></span>
+      </button>
+    </div>
+  </div>
+</div><div class="modal-body">
+  <img class="img img-responsive" ng-src="{{ $ctrl.pageUrl }}" />
+</div>

@@ -1,0 +1,110 @@
+<img class="loading-img" src="images/loading-lg.gif" ng-if="vm.isLoadingResults"></img>
+<div infinite-scroll='vm.nextPage()'
+  infinite-scroll-disabled='vm.isScrollDisabled()'
+  infinite-scroll-distance='0'>
+  <div class="row">
+    <div ng-repeat="person in vm.people" class="person-container">
+      <div class="col-xs-12 col-sm-12 person-panel col-md-4 col-lg-3">
+        <div class="thumbnail">
+          <a ui-sref="person.detail({ personId: person.id })">
+            <div class="person-profile-img vertical-center">
+              <img class="img img-responsive center-block media-middle" ng-src="{{ ::person.images | first }}" />
+            </div>
+          </a>
+          <div class="caption">
+            <div class="visible-caption">
+              <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-12">
+                  <b><a ui-sref="person.detail({ personId: person.id })">{{ ::person.givenName }} {{ ::person.familyName }}</a></b>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-12">
+                  <p ng-if="::(person.birthPlace || person.birthDate || person.deathDate)">
+                    &#8727;&nbsp;<span ng-if="::person.birthPlace">{{ ::person.birthPlace }}</span>
+                    {{ ::person.birthDate }}
+                    <span ng-if=::person.deathDate>&dagger;&nbsp;{{ ::person.deathPlace }}&nbsp;{{ ::person.deathDate }}</span>
+                  </p>
+                </div>
+                <div ng-if="::person.occupation" class="col-xs-12">
+                  <p>{{ ::person.occupation | castArray | join:', ' }}</p>
+                </div>
+                <div class="col-xs-12 icon-menu">
+                  <a title="Näytä matrikkeliteksti" ng-attr-title="{{ showText ? 'Piilota matrikkeliteksti' : 'Näytä matrikkeliteksti' }}" href=""
+                    ng-click="showText = !showText"><span class="glyphicon" ng-class="{ 'glyphicon-collapse-down': !showText, 'glyphicon-collapse-up': showText }" aria-hidden="true"></span></a>
+                  <a title="Kansallisbiografia" class="" ng-href="{{ ::person.kansallisbiografia }}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
+                  <a title="Data" class="" ng-href="{{ ::person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div ng-if="::person.hasAchievements" class="col-xs-6">
+                  <a href="" class="link" ng-click="vm.getAchievements(person)"
+                    uib-popover-template="'views/achievements-popover.html'"
+                    popover-trigger="'outsideClick'"
+                    popover-append-to-body="true"
+                    popover-placement="auto right">Saavutukset</a>
+                </div>
+                <div ng-if="::person.wikipedia" class="col-xs-6">
+                  <a ng-href="{{ ::person.wikipedia }}">Wikipedia</a>
+                </div>
+                <div ng-if="::person.wikidata" class="col-xs-6">
+                  <a ng-href="{{ ::person.wikidata }}">Wikidata</a>
+                </div>
+                <div ng-if="::person.warsampo" class="col-xs-6">
+                  <a ng-href="http://www.sotasampo.fi/fi/persons/?uri={{ ::person.warsampo }}">Sotasampo</a>
+                </div>
+                <div ng-if="::person.norssi" class="col-xs-6">
+                  <a ng-href="http://www.norssit.fi/semweb/#!/tiedot/http:~2F~2Fldf.fi~2Fnorssit~2F{{ ::person.norssi }}">Norssi</a>
+                </div>
+                <div ng-if="::person.kirjasampo" class="col-xs-6">
+                  <a ng-href="{{ ::person.kirjasampo }}">Kirjasampo</a>
+                </div>
+                <div ng-if="::person.blf" class="col-xs-6">
+                  <a ng-href="{{ ::person.blf }}">BLF</a>
+                </div>
+                <div ng-if="::person.ulan" class="col-xs-6">
+                  <a ng-href="{{ ::person.ulan }}">ULAN</a>
+                </div>
+                <div ng-if="::person.viaf" class="col-xs-6">
+                  <a ng-href="{{ ::person.viaf }}">VIAF</a>
+                </div>
+                <div ng-if="::person.norssit" class="col-xs-6">
+                  <a ng-href="{{ ::person.norssit }}">Norssit</a>
+                </div>
+                <div ng-if="::person.eduskunta" class="col-xs-6">
+                  <a ng-href="{{ ::person.eduskunta }}">Eduskunta</a>
+                </div>
+                <div ng-if="::person.website" class="col-xs-6">
+                  <a ng-href="{{ ::person.website }}">Kotisivu</a>
+                </div>
+                <div ng-if="::person.genicom" class="col-xs-6">
+                  <a ng-href="{{ ::person.genicom }}">Kotisivu (Geni.com)</a>
+                </div>
+                <div ng-if="::person.genitree" class="col-xs-6">
+                  <a ng-href="{{ ::person.genitree }}">Sukupuu (Geni.com)</a>
+                </div>
+              </div>
+              <div ng-if="::person.relative" class="row">
+                <div class="col-xs-12">Sukulaiset:</div>
+                <div class="col-sm-6 col-md-12" ng-repeat="relative in person.relative | castArray">
+                  {{ ::relative.type }} <a ui-sref="person.detail({ personId: relative.id })">{{ ::relative.name }}</a>
+                </div>
+              </div>
+              <div ng-if="::person.hobby" class="row">
+                <div class="col-md-12">
+                  <p>Harrastukset: {{ ::person.hobby | castArray | join: ', ' }}</p>
+                </div>
+              </div>
+              <div uib-collapse="!showText">
+                <hr />
+                <p ng-bind-html="::person.lead_paragraph"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix visible-lg-block" ng-if="($index + 1) % 4 == 0"></div>
+      <div class="clearfix visible-md-block" ng-if="($index + 1) % 3 == 0"></div>
+      <div class="clearfix visible-sm-block" ng-if="($index + 1) % 1 == 0"></div>
+      <div class="clearfix visible-xs-block" ng-if="($index + 1) % 1 == 0"></div>
+    </div>
+  </div>
+</div>
