@@ -32,8 +32,8 @@
 	schema:gender "{bio__gender}" ;
 	:religion "{bio__religion}" ;
 	schema:roleName "{terms__type}" ;
-	schema:startDate "{terms__start}" ;
-	schema:endDate "{terms__end}" ;
+	schema:startDate "{terms__start}"^^xsd:date ;
+	schema:endDate "{terms__end}"^^xsd:date ;
 	schema:memberOf "{terms__party}" ;
 	:how "{terms__how}" ;
 	skos:prefLabel "{name__last}, {name__first}" .
