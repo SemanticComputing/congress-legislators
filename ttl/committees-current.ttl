@@ -6,7 +6,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix : <http:ldf.fi/congress> .
+@prefix : <http://ldf.fi/congress/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :go1	a schema:GovernmentOrganization ;
 	:type "house" ;

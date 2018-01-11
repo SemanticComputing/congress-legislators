@@ -63,10 +63,10 @@ def writeRDF(infilename, templatefilename, num_uri, outfilename):
             if x in row and row[x]!=None and row[x]!='':
                 row[x] = row[x].strip()
         
-        if "bio__gender" in row:
+        if "bio__gender" in row: 
             y = row["bio__gender"]
-            if y =="F": row["bio__gender"] = "Female"
-            if y =="M": row["bio__gender"] = "Male"
+            if y =="F" or y =="Female": row["bio__gender"] = "Female"
+            if y =="M" or y =="Male": row["bio__gender"] = "Male"
             # todo 'suku', 'pariskunta'
       
         if "terms__type" in row:

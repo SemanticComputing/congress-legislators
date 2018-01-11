@@ -6,7 +6,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix : <http:ldf.fi/congress> .
+@prefix : <http://ldf.fi/congress/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :p{puri}	a schema:Person ;
@@ -35,4 +35,5 @@
 	schema:startDate "{terms__start}" ;
 	schema:endDate "{terms__end}" ;
 	schema:memberOf "{terms__party}" ;
-	:how "{terms__how}" .
+	:how "{terms__how}" ;
+	skos:prefLabel "{name__last}, {name__first}" .

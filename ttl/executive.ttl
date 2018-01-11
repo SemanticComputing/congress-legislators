@@ -6,7 +6,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix : <http:ldf.fi/congress> .
+@prefix : <http://ldf.fi/congress/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :p40000	a schema:Person ;
 	:bioguide_id "W000178" ;
@@ -20,7 +21,8 @@
 	schema:startDate "1789-04-30" ;
 	schema:endDate "1793-03-04" ;
 	schema:memberOf "no party" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Washington, George" .
 
 
 :p40001	a schema:Person ;
@@ -35,7 +37,8 @@
 	schema:startDate "1793-03-04" ;
 	schema:endDate "1797-03-04" ;
 	schema:memberOf "no party" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Washington, George" .
 
 
 :p40002	a schema:Person ;
@@ -50,7 +53,8 @@
 	schema:startDate "1789-04-21" ;
 	schema:endDate "1793-03-04" ;
 	schema:memberOf "Federalist" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Adams, John" .
 
 
 :p40003	a schema:Person ;
@@ -65,7 +69,8 @@
 	schema:startDate "1793-03-04" ;
 	schema:endDate "1797-03-04" ;
 	schema:memberOf "Federalist" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Adams, John" .
 
 
 :p40004	a schema:Person ;
@@ -80,7 +85,8 @@
 	schema:startDate "1797-03-04" ;
 	schema:endDate "1801-03-04" ;
 	schema:memberOf "Federalist" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Adams, John" .
 
 
 :p40005	a schema:Person ;
@@ -95,7 +101,8 @@
 	schema:startDate "1797-03-04" ;
 	schema:endDate "1801-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Jefferson, Thomas" .
 
 
 :p40006	a schema:Person ;
@@ -110,7 +117,8 @@
 	schema:startDate "1801-03-04" ;
 	schema:endDate "1805-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Jefferson, Thomas" .
 
 
 :p40007	a schema:Person ;
@@ -125,7 +133,8 @@
 	schema:startDate "1805-03-04" ;
 	schema:endDate "1809-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Jefferson, Thomas" .
 
 
 :p40008	a schema:Person ;
@@ -141,7 +150,8 @@
 	schema:startDate "1801-03-04" ;
 	schema:endDate "1805-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Burr, Aaron" .
 
 
 :p40009	a schema:Person ;
@@ -155,7 +165,8 @@
 	schema:startDate "1805-03-04" ;
 	schema:endDate "1809-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Clinton, George" .
 
 
 :p40010	a schema:Person ;
@@ -169,7 +180,8 @@
 	schema:startDate "1809-03-04" ;
 	schema:endDate "1812-04-20" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Clinton, George" .
 
 
 :p40011	a schema:Person ;
@@ -184,7 +196,8 @@
 	schema:startDate "1813-03-04" ;
 	schema:endDate "1814-11-23" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Gerry, Elbridge" .
 
 
 :p40012	a schema:Person ;
@@ -200,7 +213,8 @@
 	schema:startDate "1809-03-04" ;
 	schema:endDate "1813-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Madison, James" .
 
 
 :p40013	a schema:Person ;
@@ -216,7 +230,8 @@
 	schema:startDate "1813-03-04" ;
 	schema:endDate "1817-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Madison, James" .
 
 
 :p40014	a schema:Person ;
@@ -231,7 +246,8 @@
 	schema:startDate "1817-03-04" ;
 	schema:endDate "1821-03-05" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Tompkins, Daniel" .
 
 
 :p40015	a schema:Person ;
@@ -246,7 +262,8 @@
 	schema:startDate "1821-03-05" ;
 	schema:endDate "1825-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Tompkins, Daniel" .
 
 
 :p40016	a schema:Person ;
@@ -262,7 +279,8 @@
 	schema:startDate "1817-03-04" ;
 	schema:endDate "1821-03-05" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Monroe, James" .
 
 
 :p40017	a schema:Person ;
@@ -278,7 +296,8 @@
 	schema:startDate "1821-03-05" ;
 	schema:endDate "1825-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Monroe, James" .
 
 
 :p40018	a schema:Person ;
@@ -295,7 +314,8 @@
 	schema:startDate "1825-03-04" ;
 	schema:endDate "1829-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Adams, John" .
 
 
 :p40019	a schema:Person ;
@@ -311,7 +331,8 @@
 	schema:startDate "1825-03-04" ;
 	schema:endDate "1829-03-04" ;
 	schema:memberOf "Democratic-Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Calhoun, John" .
 
 
 :p40020	a schema:Person ;
@@ -327,7 +348,8 @@
 	schema:startDate "1829-03-04" ;
 	schema:endDate "1832-12-28" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Calhoun, John" .
 
 
 :p40021	a schema:Person ;
@@ -343,7 +365,8 @@
 	schema:startDate "1829-03-04" ;
 	schema:endDate "1833-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Jackson, Andrew" .
 
 
 :p40022	a schema:Person ;
@@ -359,7 +382,8 @@
 	schema:startDate "1833-03-04" ;
 	schema:endDate "1837-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Jackson, Andrew" .
 
 
 :p40023	a schema:Person ;
@@ -375,7 +399,8 @@
 	schema:startDate "1837-03-04" ;
 	schema:endDate "1841-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Johnson, Richard" .
 
 
 :p40024	a schema:Person ;
@@ -391,7 +416,8 @@
 	schema:startDate "1833-03-04" ;
 	schema:endDate "1837-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Van Buren, Martin" .
 
 
 :p40025	a schema:Person ;
@@ -405,7 +431,8 @@
 	schema:startDate "1837-03-04" ;
 	schema:endDate "1841-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Van Buren, Martin" .
 
 
 :p40026	a schema:Person ;
@@ -422,7 +449,8 @@
 	schema:startDate "1841-03-04" ;
 	schema:endDate "1841-04-04" ;
 	schema:memberOf "Whig" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Harrison, William" .
 
 
 :p40027	a schema:Person ;
@@ -438,7 +466,8 @@
 	schema:startDate "1841-03-04" ;
 	schema:endDate "1841-04-04" ;
 	schema:memberOf "Whig" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Tyler, John" .
 
 
 :p40028	a schema:Person ;
@@ -452,7 +481,8 @@
 	schema:startDate "1841-04-04" ;
 	schema:endDate "1845-03-04" ;
 	schema:memberOf "Whig" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Tyler, John" .
 
 
 :p40029	a schema:Person ;
@@ -468,7 +498,8 @@
 	schema:startDate "1845-03-04" ;
 	schema:endDate "1849-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Dallas, George" .
 
 
 :p40030	a schema:Person ;
@@ -485,7 +516,8 @@
 	schema:startDate "1845-03-04" ;
 	schema:endDate "1849-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Polk, James" .
 
 
 :p40031	a schema:Person ;
@@ -499,7 +531,8 @@
 	schema:startDate "1849-03-04" ;
 	schema:endDate "1850-07-09" ;
 	schema:memberOf "Whig" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Taylor, Zachary" .
 
 
 :p40032	a schema:Person ;
@@ -515,7 +548,8 @@
 	schema:startDate "1849-03-04" ;
 	schema:endDate "1850-07-09" ;
 	schema:memberOf "Whig" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Fillmore, Millard" .
 
 
 :p40033	a schema:Person ;
@@ -531,7 +565,8 @@
 	schema:startDate "1850-07-09" ;
 	schema:endDate "1853-03-04" ;
 	schema:memberOf "Whig" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Fillmore, Millard" .
 
 
 :p40034	a schema:Person ;
@@ -547,7 +582,8 @@
 	schema:startDate "1853-03-04" ;
 	schema:endDate "1853-04-18" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "King, William" .
 
 
 :p40035	a schema:Person ;
@@ -563,7 +599,8 @@
 	schema:startDate "1853-03-04" ;
 	schema:endDate "1857-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Pierce, Franklin" .
 
 
 :p40036	a schema:Person ;
@@ -580,7 +617,8 @@
 	schema:startDate "1857-03-04" ;
 	schema:endDate "1861-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Breckinridge, John" .
 
 
 :p40037	a schema:Person ;
@@ -596,7 +634,8 @@
 	schema:startDate "1857-03-04" ;
 	schema:endDate "1861-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Buchanan, James" .
 
 
 :p40038	a schema:Person ;
@@ -611,7 +650,8 @@
 	schema:startDate "1861-03-04" ;
 	schema:endDate "1865-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Hamlin, Hannibal" .
 
 
 :p40039	a schema:Person ;
@@ -627,7 +667,8 @@
 	schema:startDate "1861-03-04" ;
 	schema:endDate "1865-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Lincoln, Abraham" .
 
 
 :p40040	a schema:Person ;
@@ -643,7 +684,8 @@
 	schema:startDate "1865-03-04" ;
 	schema:endDate "1865-04-15" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Lincoln, Abraham" .
 
 
 :p40041	a schema:Person ;
@@ -659,7 +701,8 @@
 	schema:startDate "1865-03-04" ;
 	schema:endDate "1865-04-15" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Johnson, Andrew" .
 
 
 :p40042	a schema:Person ;
@@ -675,7 +718,8 @@
 	schema:startDate "1865-04-15" ;
 	schema:endDate "1869-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Johnson, Andrew" .
 
 
 :p40043	a schema:Person ;
@@ -690,7 +734,8 @@
 	schema:startDate "1869-03-04" ;
 	schema:endDate "1873-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Colfax, Schuyler" .
 
 
 :p40044	a schema:Person ;
@@ -705,7 +750,8 @@
 	schema:startDate "1873-03-04" ;
 	schema:endDate "1875-11-22" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Wilson, Henry" .
 
 
 :p40045	a schema:Person ;
@@ -720,7 +766,8 @@
 	schema:startDate "1869-03-04" ;
 	schema:endDate "1873-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Grant, Ulysses" .
 
 
 :p40046	a schema:Person ;
@@ -735,7 +782,8 @@
 	schema:startDate "1873-03-04" ;
 	schema:endDate "1877-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Grant, Ulysses" .
 
 
 :p40047	a schema:Person ;
@@ -751,7 +799,8 @@
 	schema:startDate "1877-03-04" ;
 	schema:endDate "1881-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Wheeler, William" .
 
 
 :p40048	a schema:Person ;
@@ -768,7 +817,8 @@
 	schema:startDate "1877-03-04" ;
 	schema:endDate "1881-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Hayes, Rutherford" .
 
 
 :p40049	a schema:Person ;
@@ -785,7 +835,8 @@
 	schema:startDate "1881-03-04" ;
 	schema:endDate "1881-09-19" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Garfield, James" .
 
 
 :p40050	a schema:Person ;
@@ -801,7 +852,8 @@
 	schema:startDate "1881-03-04" ;
 	schema:endDate "1881-09-19" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Arthur, Chester" .
 
 
 :p40051	a schema:Person ;
@@ -817,7 +869,8 @@
 	schema:startDate "1881-09-19" ;
 	schema:endDate "1885-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Arthur, Chester" .
 
 
 :p40052	a schema:Person ;
@@ -833,7 +886,8 @@
 	schema:startDate "1885-03-04" ;
 	schema:endDate "1885-11-25" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Hendricks, Thomas" .
 
 
 :p40053	a schema:Person ;
@@ -849,7 +903,8 @@
 	schema:startDate "1889-03-04" ;
 	schema:endDate "1893-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Morton, Levi" .
 
 
 :p40054	a schema:Person ;
@@ -865,7 +920,8 @@
 	schema:startDate "1889-03-04" ;
 	schema:endDate "1893-03-04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Harrison, Benjamin" .
 
 
 :p40055	a schema:Person ;
@@ -881,7 +937,8 @@
 	schema:startDate "1893-03-04" ;
 	schema:endDate "1897-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Stevenson, Adlai" .
 
 
 :p40056	a schema:Person ;
@@ -896,7 +953,8 @@
 	schema:startDate "1885-03-04" ;
 	schema:endDate "1889-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Cleveland, Grover" .
 
 
 :p40057	a schema:Person ;
@@ -911,7 +969,8 @@
 	schema:startDate "1893-03-04" ;
 	schema:endDate "1897-03-04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Cleveland, Grover" .
 
 
 :p40058	a schema:Person ;
@@ -926,7 +985,8 @@
 	schema:startDate "1897-03-04" ;
 	schema:endDate "1899-11-21" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Hobart, Garret" .
 
 
 :p40059	a schema:Person ;
@@ -943,7 +1003,8 @@
 	schema:startDate "1897-03-04" ;
 	schema:endDate "1901/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "McKinley, William" .
 
 
 :p40060	a schema:Person ;
@@ -960,7 +1021,8 @@
 	schema:startDate "1901/03/04" ;
 	schema:endDate "1901/09/14" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "McKinley, William" .
 
 
 :p40061	a schema:Person ;
@@ -976,7 +1038,8 @@
 	schema:startDate "1905/03/04" ;
 	schema:endDate "1909/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Fairbanks, Charles" .
 
 
 :p40062	a schema:Person ;
@@ -991,7 +1054,8 @@
 	schema:startDate "1901/03/04" ;
 	schema:endDate "1901/09/14" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Roosevelt, Theodore" .
 
 
 :p40063	a schema:Person ;
@@ -1006,7 +1070,8 @@
 	schema:startDate "1901/09/14" ;
 	schema:endDate "1905/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Roosevelt, Theodore" .
 
 
 :p40064	a schema:Person ;
@@ -1021,7 +1086,8 @@
 	schema:startDate "1905/03/04" ;
 	schema:endDate "1909/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Roosevelt, Theodore" .
 
 
 :p40065	a schema:Person ;
@@ -1037,7 +1103,8 @@
 	schema:startDate "1909/03/04" ;
 	schema:endDate "1912/10/30" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Sherman, James" .
 
 
 :p40066	a schema:Person ;
@@ -1052,7 +1119,8 @@
 	schema:startDate "1909/03/04" ;
 	schema:endDate "1913/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Taft, William" .
 
 
 :p40067	a schema:Person ;
@@ -1067,7 +1135,8 @@
 	schema:startDate "1913/03/04" ;
 	schema:endDate "1917/03/04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Marshall, Thomas" .
 
 
 :p40068	a schema:Person ;
@@ -1082,7 +1151,8 @@
 	schema:startDate "1917/03/04" ;
 	schema:endDate "1921/03/04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Marshall, Thomas" .
 
 
 :p40069	a schema:Person ;
@@ -1096,7 +1166,8 @@
 	schema:startDate "1913/03/04" ;
 	schema:endDate "1917/03/04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Wilson, Woodrow" .
 
 
 :p40070	a schema:Person ;
@@ -1110,7 +1181,8 @@
 	schema:startDate "1917/03/04" ;
 	schema:endDate "1921/03/04" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Wilson, Woodrow" .
 
 
 :p40071	a schema:Person ;
@@ -1127,7 +1199,8 @@
 	schema:startDate "1921/03/04" ;
 	schema:endDate "1923/08/02" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Harding, Warren" .
 
 
 :p40072	a schema:Person ;
@@ -1142,7 +1215,8 @@
 	schema:startDate "1925/03/04" ;
 	schema:endDate "1929/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Dawes, Charles" .
 
 
 :p40073	a schema:Person ;
@@ -1158,7 +1232,8 @@
 	schema:startDate "1921/03/04" ;
 	schema:endDate "1923/08/02" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Coolidge, Calvin" .
 
 
 :p40074	a schema:Person ;
@@ -1174,7 +1249,8 @@
 	schema:startDate "1923/08/02" ;
 	schema:endDate "1925/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Coolidge, Calvin" .
 
 
 :p40075	a schema:Person ;
@@ -1190,7 +1266,8 @@
 	schema:startDate "1925/03/04" ;
 	schema:endDate "1929/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Coolidge, Calvin" .
 
 
 :p40076	a schema:Person ;
@@ -1205,7 +1282,8 @@
 	schema:startDate "1929/03/04" ;
 	schema:endDate "1933/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Curtis, Charles" .
 
 
 :p40077	a schema:Person ;
@@ -1220,7 +1298,8 @@
 	schema:startDate "1929/03/04" ;
 	schema:endDate "1933/03/04" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Hoover, Herbert" .
 
 
 :p40078	a schema:Person ;
@@ -1236,7 +1315,8 @@
 	schema:startDate "1933/03/04" ;
 	schema:endDate "1937/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Garner, John" .
 
 
 :p40079	a schema:Person ;
@@ -1252,7 +1332,8 @@
 	schema:startDate "1937/01/20" ;
 	schema:endDate "1941/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Garner, John" .
 
 
 :p40080	a schema:Person ;
@@ -1267,7 +1348,8 @@
 	schema:startDate "1941/01/20" ;
 	schema:endDate "1945/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Wallace, Henry" .
 
 
 :p40081	a schema:Person ;
@@ -1282,7 +1364,8 @@
 	schema:startDate "1933/03/04" ;
 	schema:endDate "1937/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Roosevelt, Franklin" .
 
 
 :p40082	a schema:Person ;
@@ -1297,7 +1380,8 @@
 	schema:startDate "1937/01/20" ;
 	schema:endDate "1941/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Roosevelt, Franklin" .
 
 
 :p40083	a schema:Person ;
@@ -1312,7 +1396,8 @@
 	schema:startDate "1941/01/20" ;
 	schema:endDate "1945/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Roosevelt, Franklin" .
 
 
 :p40084	a schema:Person ;
@@ -1327,7 +1412,8 @@
 	schema:startDate "1945/01/20" ;
 	schema:endDate "1945/04/12" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Roosevelt, Franklin" .
 
 
 :p40085	a schema:Person ;
@@ -1343,7 +1429,8 @@
 	schema:startDate "1949/01/20" ;
 	schema:endDate "1953/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Barkley, Alben" .
 
 
 :p40086	a schema:Person ;
@@ -1360,7 +1447,8 @@
 	schema:startDate "1945/01/20" ;
 	schema:endDate "1945/04/12" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Truman, Harry" .
 
 
 :p40087	a schema:Person ;
@@ -1377,7 +1465,8 @@
 	schema:startDate "1945/04/12" ;
 	schema:endDate "1949/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Truman, Harry" .
 
 
 :p40088	a schema:Person ;
@@ -1394,7 +1483,8 @@
 	schema:startDate "1949/01/20" ;
 	schema:endDate "1953/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Truman, Harry" .
 
 
 :p40089	a schema:Person ;
@@ -1409,7 +1499,8 @@
 	schema:startDate "1953/01/20" ;
 	schema:endDate "1957/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Eisenhower, Dwight" .
 
 
 :p40090	a schema:Person ;
@@ -1424,7 +1515,8 @@
 	schema:startDate "1957/01/20" ;
 	schema:endDate "1961/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Eisenhower, Dwight" .
 
 
 :p40091	a schema:Person ;
@@ -1441,7 +1533,8 @@
 	schema:startDate "1961/01/20" ;
 	schema:endDate "1963/11/22" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Kennedy, John" .
 
 
 :p40092	a schema:Person ;
@@ -1459,7 +1552,8 @@
 	schema:startDate "1965/01/20" ;
 	schema:endDate "1969/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Humphrey, Hubert" .
 
 
 :p40093	a schema:Person ;
@@ -1476,7 +1570,8 @@
 	schema:startDate "1961/01/20" ;
 	schema:endDate "1963/11/22" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Johnson, Lyndon" .
 
 
 :p40094	a schema:Person ;
@@ -1493,7 +1588,8 @@
 	schema:startDate "1963/11/22" ;
 	schema:endDate "1965/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Johnson, Lyndon" .
 
 
 :p40095	a schema:Person ;
@@ -1510,7 +1606,8 @@
 	schema:startDate "1965/01/20" ;
 	schema:endDate "1969/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Johnson, Lyndon" .
 
 
 :p40096	a schema:Person ;
@@ -1525,7 +1622,8 @@
 	schema:startDate "1969/01/20" ;
 	schema:endDate "1973/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Agnew, Spiro" .
 
 
 :p40097	a schema:Person ;
@@ -1540,7 +1638,8 @@
 	schema:startDate "1973/01/20" ;
 	schema:endDate "1973/10/10" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Agnew, Spiro" .
 
 
 :p40098	a schema:Person ;
@@ -1557,7 +1656,8 @@
 	schema:startDate "1953/01/20" ;
 	schema:endDate "1957/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Nixon, Richard" .
 
 
 :p40099	a schema:Person ;
@@ -1571,7 +1671,8 @@
 	schema:startDate "1957/01/20" ;
 	schema:endDate "1961/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Nixon, Richard" .
 
 
 :p40100	a schema:Person ;
@@ -1586,7 +1687,8 @@
 	schema:startDate "1969/01/20" ;
 	schema:endDate "1973/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Nixon, Richard" .
 
 
 :p40101	a schema:Person ;
@@ -1601,7 +1703,8 @@
 	schema:startDate "1973/01/20" ;
 	schema:endDate "1974/08/09" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Nixon, Richard" .
 
 
 :p40102	a schema:Person ;
@@ -1620,7 +1723,8 @@
 	schema:startDate "1973/12/06" ;
 	schema:endDate "1974/08/09" ;
 	schema:memberOf "Republican" ;
-	:how "appointment" .
+	:how "appointment" ;
+	skos:prefLabel "Ford, Gerald" .
 
 
 :p40103	a schema:Person ;
@@ -1639,7 +1743,8 @@
 	schema:startDate "1974/08/09" ;
 	schema:endDate "1977/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "succession" .
+	:how "succession" ;
+	skos:prefLabel "Ford, Gerald" .
 
 
 :p40104	a schema:Person ;
@@ -1654,7 +1759,8 @@
 	schema:startDate "1974/12/19" ;
 	schema:endDate "1977/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "appointment" .
+	:how "appointment" ;
+	skos:prefLabel "Rockefeller, Nelson" .
 
 
 :p40105	a schema:Person ;
@@ -1671,7 +1777,8 @@
 	schema:startDate "1977/01/20" ;
 	schema:endDate "1981/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Mondale, Walter" .
 
 
 :p40106	a schema:Person ;
@@ -1687,7 +1794,8 @@
 	schema:startDate "1977/01/20" ;
 	schema:endDate "1981/01/20" ;
 	schema:memberOf "Democratic" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Carter, James" .
 
 
 :p40107	a schema:Person ;
@@ -1702,7 +1810,8 @@
 	schema:startDate "1981/01/20" ;
 	schema:endDate "1985/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Reagan, Ronald" .
 
 
 :p40108	a schema:Person ;
@@ -1717,7 +1826,8 @@
 	schema:startDate "1985/01/20" ;
 	schema:endDate "1989/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Reagan, Ronald" .
 
 
 :p40109	a schema:Person ;
@@ -1735,7 +1845,8 @@
 	schema:startDate "1989/01/20" ;
 	schema:endDate "1993/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Quayle, James" .
 
 
 :p40110	a schema:Person ;
@@ -1752,7 +1863,8 @@
 	schema:startDate "1981/01/20" ;
 	schema:endDate "1985/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Bush, George" .
 
 
 :p40111	a schema:Person ;
@@ -1769,7 +1881,8 @@
 	schema:startDate "1985/01/20" ;
 	schema:endDate "1989/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Bush, George" .
 
 
 :p40112	a schema:Person ;
@@ -1786,7 +1899,8 @@
 	schema:startDate "1989/01/20" ;
 	schema:endDate "1993/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Bush, George" .
 
 
 :p40113	a schema:Person ;
@@ -1806,7 +1920,8 @@
 	schema:startDate "1993/01/20" ;
 	schema:endDate "1997/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Gore, Albert" .
 
 
 :p40114	a schema:Person ;
@@ -1826,7 +1941,8 @@
 	schema:startDate "1997/01/20" ;
 	schema:endDate "2001/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Gore, Albert" .
 
 
 :p40115	a schema:Person ;
@@ -1842,7 +1958,8 @@
 	schema:startDate "1993/01/20" ;
 	schema:endDate "1997/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Clinton, William" .
 
 
 :p40116	a schema:Person ;
@@ -1858,7 +1975,8 @@
 	schema:startDate "1997/01/20" ;
 	schema:endDate "2001/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Clinton, William" .
 
 
 :p40117	a schema:Person ;
@@ -1876,7 +1994,8 @@
 	schema:startDate "2001/01/20" ;
 	schema:endDate "2005/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Cheney, Richard" .
 
 
 :p40118	a schema:Person ;
@@ -1894,7 +2013,8 @@
 	schema:startDate "2005/01/20" ;
 	schema:endDate "2009/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Cheney, Richard" .
 
 
 :p40119	a schema:Person ;
@@ -1908,7 +2028,8 @@
 	schema:startDate "2001/01/20" ;
 	schema:endDate "2005/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Bush, George" .
 
 
 :p40120	a schema:Person ;
@@ -1922,7 +2043,8 @@
 	schema:startDate "2005/01/20" ;
 	schema:endDate "2009/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Bush, George" .
 
 
 :p40121	a schema:Person ;
@@ -1946,7 +2068,8 @@
 	schema:startDate "2009/01/20" ;
 	schema:endDate "2013/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Biden, Joseph" .
 
 
 :p40122	a schema:Person ;
@@ -1970,7 +2093,8 @@
 	schema:startDate "2013/01/20" ;
 	schema:endDate "2017/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Biden, Joseph" .
 
 
 :p40123	a schema:Person ;
@@ -1989,7 +2113,8 @@
 	schema:startDate "2009/01/20" ;
 	schema:endDate "2013/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Obama, Barack" .
 
 
 :p40124	a schema:Person ;
@@ -2008,7 +2133,8 @@
 	schema:startDate "2013/01/20" ;
 	schema:endDate "2017/01/20" ;
 	schema:memberOf "Democrat" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Obama, Barack" .
 
 
 :p40125	a schema:Person ;
@@ -2031,7 +2157,8 @@
 	schema:startDate "2017/01/20" ;
 	schema:endDate "2021/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Pence, Mike" .
 
 
 :p40126	a schema:Person ;
@@ -2049,5 +2176,6 @@
 	schema:startDate "2017/01/20" ;
 	schema:endDate "2021/01/20" ;
 	schema:memberOf "Republican" ;
-	:how "election" .
+	:how "election" ;
+	skos:prefLabel "Trump, Donald" .
 

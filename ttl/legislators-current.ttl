@@ -6,7 +6,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix : <http:ldf.fi/congress> .
+@prefix : <http://ldf.fi/congress/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :p20000	a schema:Person ;
 	schema:familyName "Brown" ;
@@ -34,7 +35,8 @@
 	:votesmart_id "27018" ;
 	:ballotpedia_id "Sherrod Brown" ;
 	:icpsr_id "29389" ;
-	:wikipedia_id "Sherrod Brown" .
+	:wikipedia_id "Sherrod Brown" ;
+	skos:prefLabel "Brown, Sherrod" .
 
 
 :p20001	a schema:Person ;
@@ -63,7 +65,8 @@
 	:votesmart_id "27122" ;
 	:ballotpedia_id "Maria Cantwell" ;
 	:icpsr_id "39310" ;
-	:wikipedia_id "Maria Cantwell" .
+	:wikipedia_id "Maria Cantwell" ;
+	skos:prefLabel "Cantwell, Maria" .
 
 
 :p20002	a schema:Person ;
@@ -92,7 +95,8 @@
 	:votesmart_id "26888" ;
 	:ballotpedia_id "Ben Cardin" ;
 	:icpsr_id "15408" ;
-	:wikipedia_id "Ben Cardin" .
+	:wikipedia_id "Ben Cardin" ;
+	skos:prefLabel "Cardin, Benjamin" .
 
 
 :p20003	a schema:Person ;
@@ -121,7 +125,8 @@
 	:votesmart_id "22421" ;
 	:ballotpedia_id "Tom Carper" ;
 	:icpsr_id "15015" ;
-	:wikipedia_id "Tom Carper" .
+	:wikipedia_id "Tom Carper" ;
+	skos:prefLabel "Carper, Thomas" .
 
 
 :p20004	a schema:Person ;
@@ -150,7 +155,8 @@
 	:votesmart_id "2541" ;
 	:ballotpedia_id "Bob Casey, Jr." ;
 	:icpsr_id "40703" ;
-	:wikipedia_id "Bob Casey Jr." .
+	:wikipedia_id "Bob Casey Jr." ;
+	skos:prefLabel "Casey, Robert" .
 
 
 :p20005	a schema:Person ;
@@ -179,7 +185,8 @@
 	:votesmart_id "65905" ;
 	:ballotpedia_id "Bob Corker" ;
 	:icpsr_id "40705" ;
-	:wikipedia_id "Bob Corker" .
+	:wikipedia_id "Bob Corker" ;
+	skos:prefLabel "Corker, Bob" .
 
 
 :p20006	a schema:Person ;
@@ -208,7 +215,8 @@
 	:votesmart_id "53273" ;
 	:ballotpedia_id "Dianne Feinstein" ;
 	:icpsr_id "49300" ;
-	:wikipedia_id "Dianne Feinstein" .
+	:wikipedia_id "Dianne Feinstein" ;
+	skos:prefLabel "Feinstein, Dianne" .
 
 
 :p20007	a schema:Person ;
@@ -237,7 +245,8 @@
 	:votesmart_id "53352" ;
 	:ballotpedia_id "Orrin Hatch" ;
 	:icpsr_id "14503" ;
-	:wikipedia_id "Orrin Hatch" .
+	:wikipedia_id "Orrin Hatch" ;
+	skos:prefLabel "Hatch, Orrin" .
 
 
 :p20008	a schema:Person ;
@@ -263,7 +272,8 @@
 	:votesmart_id "65092" ;
 	:ballotpedia_id "Amy Klobuchar" ;
 	:icpsr_id "40700" ;
-	:wikipedia_id "Amy Klobuchar" .
+	:wikipedia_id "Amy Klobuchar" ;
+	skos:prefLabel "Klobuchar, Amy" .
 
 
 :p20009	a schema:Person ;
@@ -292,7 +302,8 @@
 	:votesmart_id "2109" ;
 	:ballotpedia_id "Claire McCaskill" ;
 	:icpsr_id "40701" ;
-	:wikipedia_id "Claire McCaskill" .
+	:wikipedia_id "Claire McCaskill" ;
+	skos:prefLabel "McCaskill, Claire" .
 
 
 :p20010	a schema:Person ;
@@ -321,7 +332,8 @@
 	:votesmart_id "26961" ;
 	:ballotpedia_id "Bob Menendez" ;
 	:icpsr_id "29373" ;
-	:wikipedia_id "Bob Menendez" .
+	:wikipedia_id "Bob Menendez" ;
+	skos:prefLabel "Menéndez, Robert" .
 
 
 :p20011	a schema:Person ;
@@ -348,7 +360,8 @@
 	:votesmart_id "1606" ;
 	:ballotpedia_id "Bill Nelson (Florida)" ;
 	:icpsr_id "14651" ;
-	:wikipedia_id "Bill Nelson" .
+	:wikipedia_id "Bill Nelson" ;
+	skos:prefLabel "Nelson, Bill" .
 
 
 :p20012	a schema:Person ;
@@ -377,7 +390,8 @@
 	:votesmart_id "27110" ;
 	:ballotpedia_id "Bernie Sanders" ;
 	:icpsr_id "29147" ;
-	:wikipedia_id "Bernie Sanders" .
+	:wikipedia_id "Bernie Sanders" ;
+	skos:prefLabel "Sanders, Bernard" .
 
 
 :p20013	a schema:Person ;
@@ -406,7 +420,8 @@
 	:votesmart_id "515" ;
 	:ballotpedia_id "Debbie Stabenow" ;
 	:icpsr_id "29732" ;
-	:wikipedia_id "Debbie Stabenow" .
+	:wikipedia_id "Debbie Stabenow" ;
+	skos:prefLabel "Stabenow, Debbie" .
 
 
 :p20014	a schema:Person ;
@@ -435,7 +450,8 @@
 	:votesmart_id "20928" ;
 	:ballotpedia_id "Jon Tester" ;
 	:icpsr_id "40702" ;
-	:wikipedia_id "Jon Tester" .
+	:wikipedia_id "Jon Tester" ;
+	skos:prefLabel "Tester, Jon" .
 
 
 :p20015	a schema:Person ;
@@ -464,7 +480,8 @@
 	:votesmart_id "2572" ;
 	:ballotpedia_id "Sheldon Whitehouse" ;
 	:icpsr_id "40704" ;
-	:wikipedia_id "Sheldon Whitehouse" .
+	:wikipedia_id "Sheldon Whitehouse" ;
+	skos:prefLabel "Whitehouse, Sheldon" .
 
 
 :p20016	a schema:Person ;
@@ -493,7 +510,8 @@
 	:votesmart_id "52662" ;
 	:ballotpedia_id "John Barrasso" ;
 	:icpsr_id "40707" ;
-	:wikipedia_id "John Barrasso" .
+	:wikipedia_id "John Barrasso" ;
+	skos:prefLabel "Barrasso, John" .
 
 
 :p20017	a schema:Person ;
@@ -521,7 +539,8 @@
 	:votesmart_id "21926" ;
 	:ballotpedia_id "Roger Wicker" ;
 	:icpsr_id "29534" ;
-	:wikipedia_id "Roger Wicker" .
+	:wikipedia_id "Roger Wicker" ;
+	skos:prefLabel "Wicker, Roger" .
 
 
 :p20018	a schema:Person ;
@@ -550,7 +569,8 @@
 	:votesmart_id "15691" ;
 	:ballotpedia_id "Lamar Alexander" ;
 	:icpsr_id "40304" ;
-	:wikipedia_id "Lamar Alexander" .
+	:wikipedia_id "Lamar Alexander" ;
+	skos:prefLabel "Alexander, Lamar" .
 
 
 :p20019	a schema:Person ;
@@ -578,7 +598,8 @@
 	:votesmart_id "53312" ;
 	:ballotpedia_id "Thad Cochran" ;
 	:icpsr_id "14009" ;
-	:wikipedia_id "Thad Cochran" .
+	:wikipedia_id "Thad Cochran" ;
+	skos:prefLabel "Cochran, Thad" .
 
 
 :p20020	a schema:Person ;
@@ -607,7 +628,8 @@
 	:votesmart_id "379" ;
 	:ballotpedia_id "Susan Collins" ;
 	:icpsr_id "49703" ;
-	:wikipedia_id "Susan Collins" .
+	:wikipedia_id "Susan Collins" ;
+	skos:prefLabel "Collins, Susan" .
 
 
 :p20021	a schema:Person ;
@@ -636,7 +658,8 @@
 	:votesmart_id "15375" ;
 	:ballotpedia_id "John Cornyn" ;
 	:icpsr_id "40305" ;
-	:wikipedia_id "John Cornyn" .
+	:wikipedia_id "John Cornyn" ;
+	skos:prefLabel "Cornyn, John" .
 
 
 :p20022	a schema:Person ;
@@ -665,7 +688,8 @@
 	:votesmart_id "26847" ;
 	:ballotpedia_id "Dick Durbin" ;
 	:icpsr_id "15021" ;
-	:wikipedia_id "Dick Durbin" .
+	:wikipedia_id "Dick Durbin" ;
+	skos:prefLabel "Durbin, Richard" .
 
 
 :p20023	a schema:Person ;
@@ -694,7 +718,8 @@
 	:votesmart_id "558" ;
 	:ballotpedia_id "Mike Enzi" ;
 	:icpsr_id "49706" ;
-	:wikipedia_id "Mike Enzi" .
+	:wikipedia_id "Mike Enzi" ;
+	skos:prefLabel "Enzi, Michael" .
 
 
 :p20024	a schema:Person ;
@@ -723,7 +748,8 @@
 	:votesmart_id "21992" ;
 	:ballotpedia_id "Lindsey Graham" ;
 	:icpsr_id "29566" ;
-	:wikipedia_id "Lindsey Graham" .
+	:wikipedia_id "Lindsey Graham" ;
+	skos:prefLabel "Graham, Lindsey" .
 
 
 :p20025	a schema:Person ;
@@ -752,7 +778,8 @@
 	:votesmart_id "27027" ;
 	:ballotpedia_id "Jim Inhofe" ;
 	:icpsr_id "15424" ;
-	:wikipedia_id "Jim Inhofe" .
+	:wikipedia_id "Jim Inhofe" ;
+	skos:prefLabel "Inhofe, James" .
 
 
 :p20026	a schema:Person ;
@@ -779,7 +806,8 @@
 	:votesmart_id "53298" ;
 	:ballotpedia_id "Mitch McConnell" ;
 	:icpsr_id "14921" ;
-	:wikipedia_id "Mitch McConnell" .
+	:wikipedia_id "Mitch McConnell" ;
+	skos:prefLabel "McConnell, Mitch" .
 
 
 :p20027	a schema:Person ;
@@ -808,7 +836,8 @@
 	:votesmart_id "23644" ;
 	:ballotpedia_id "Jeff Merkley" ;
 	:icpsr_id "40908" ;
-	:wikipedia_id "Jeff Merkley" .
+	:wikipedia_id "Jeff Merkley" ;
+	skos:prefLabel "Merkley, Jeff" .
 
 
 :p20028	a schema:Person ;
@@ -837,7 +866,8 @@
 	:votesmart_id "27060" ;
 	:ballotpedia_id "Jack Reed" ;
 	:icpsr_id "29142" ;
-	:wikipedia_id "Jack Reed (Rhode Island politician)" .
+	:wikipedia_id "Jack Reed (Rhode Island politician)" ;
+	skos:prefLabel "Reed, John" .
 
 
 :p20029	a schema:Person ;
@@ -864,7 +894,8 @@
 	:votesmart_id "2919" ;
 	:ballotpedia_id "Jim Risch" ;
 	:icpsr_id "40902" ;
-	:wikipedia_id "Jim Risch" .
+	:wikipedia_id "Jim Risch" ;
+	skos:prefLabel "Risch, James" .
 
 
 :p20030	a schema:Person ;
@@ -893,7 +924,8 @@
 	:votesmart_id "26866" ;
 	:ballotpedia_id "Pat Roberts" ;
 	:icpsr_id "14852" ;
-	:wikipedia_id "Pat Roberts" .
+	:wikipedia_id "Pat Roberts" ;
+	skos:prefLabel "Roberts, Pat" .
 
 
 :p20031	a schema:Person ;
@@ -922,7 +954,8 @@
 	:votesmart_id "1663" ;
 	:ballotpedia_id "Jeanne Shaheen" ;
 	:icpsr_id "40906" ;
-	:wikipedia_id "Jeanne Shaheen" .
+	:wikipedia_id "Jeanne Shaheen" ;
+	skos:prefLabel "Shaheen, Jeanne" .
 
 
 :p20032	a schema:Person ;
@@ -951,7 +984,8 @@
 	:votesmart_id "22658" ;
 	:ballotpedia_id "Tom Udall" ;
 	:icpsr_id "29924" ;
-	:wikipedia_id "Tom Udall" .
+	:wikipedia_id "Tom Udall" ;
+	skos:prefLabel "Udall, Tom" .
 
 
 :p20033	a schema:Person ;
@@ -980,7 +1014,8 @@
 	:votesmart_id "535" ;
 	:ballotpedia_id "Mark Warner" ;
 	:icpsr_id "40909" ;
-	:wikipedia_id "Mark Warner" .
+	:wikipedia_id "Mark Warner" ;
+	skos:prefLabel "Warner, Mark" .
 
 
 :p20034	a schema:Person ;
@@ -1009,7 +1044,8 @@
 	:votesmart_id "65147" ;
 	:ballotpedia_id "Kirsten Gillibrand" ;
 	:icpsr_id "20735" ;
-	:wikipedia_id "Kirsten Gillibrand" .
+	:wikipedia_id "Kirsten Gillibrand" ;
+	skos:prefLabel "Gillibrand, Kirsten" .
 
 
 :p20035	a schema:Person ;
@@ -1038,7 +1074,8 @@
 	:votesmart_id "122834" ;
 	:ballotpedia_id "Chris Coons" ;
 	:icpsr_id "40916" ;
-	:wikipedia_id "Chris Coons" .
+	:wikipedia_id "Chris Coons" ;
+	skos:prefLabel "Coons, Chris" .
 
 
 :p20036	a schema:Person ;
@@ -1067,7 +1104,8 @@
 	:votesmart_id "7547" ;
 	:ballotpedia_id "Joe Manchin III" ;
 	:icpsr_id "40915" ;
-	:wikipedia_id "Joe Manchin" .
+	:wikipedia_id "Joe Manchin" ;
+	skos:prefLabel "Manchin, Joe" .
 
 
 :p20037	a schema:Person ;
@@ -1095,7 +1133,8 @@
 	:votesmart_id "441" ;
 	:ballotpedia_id "Robert B. Aderholt" ;
 	:icpsr_id "29701" ;
-	:wikipedia_id "Robert Aderholt" .
+	:wikipedia_id "Robert Aderholt" ;
+	skos:prefLabel "Aderholt, Robert" .
 
 
 :p20038	a schema:Person ;
@@ -1122,7 +1161,8 @@
 	:votesmart_id "105566" ;
 	:ballotpedia_id "Justin Amash" ;
 	:icpsr_id "21143" ;
-	:wikipedia_id "Justin Amash" .
+	:wikipedia_id "Justin Amash" ;
+	skos:prefLabel "Amash, Justin" .
 
 
 :p20039	a schema:Person ;
@@ -1151,7 +1191,8 @@
 	:votesmart_id "3470" ;
 	:ballotpedia_id "Tammy Baldwin" ;
 	:icpsr_id "29940" ;
-	:wikipedia_id "Tammy Baldwin" .
+	:wikipedia_id "Tammy Baldwin" ;
+	skos:prefLabel "Baldwin, Tammy" .
 
 
 :p20040	a schema:Person ;
@@ -1179,7 +1220,8 @@
 	:votesmart_id "47143" ;
 	:ballotpedia_id "Lou Barletta" ;
 	:icpsr_id "21171" ;
-	:wikipedia_id "Lou Barletta" .
+	:wikipedia_id "Lou Barletta" ;
+	skos:prefLabel "Barletta, Lou" .
 
 
 :p20041	a schema:Person ;
@@ -1206,7 +1248,8 @@
 	:govtrack_id "400018" ;
 	:votesmart_id "27082" ;
 	:icpsr_id "15085" ;
-	:wikipedia_id "Joe Barton" .
+	:wikipedia_id "Joe Barton" ;
+	skos:prefLabel "Barton, Joe" .
 
 
 :p20042	a schema:Person ;
@@ -1233,7 +1276,8 @@
 	:govtrack_id "412404" ;
 	:votesmart_id "28963" ;
 	:icpsr_id "21110" ;
-	:wikipedia_id "Karen Bass" .
+	:wikipedia_id "Karen Bass" ;
+	skos:prefLabel "Bass, Karen" .
 
 
 :p20043	a schema:Person ;
@@ -1262,7 +1306,8 @@
 	:votesmart_id "110942" ;
 	:ballotpedia_id "Michael Bennet" ;
 	:icpsr_id "40910" ;
-	:wikipedia_id "Michael Bennet" .
+	:wikipedia_id "Michael Bennet" ;
+	skos:prefLabel "Bennet, Michael" .
 
 
 :p20044	a schema:Person ;
@@ -1290,7 +1335,8 @@
 	:votesmart_id "17318" ;
 	:ballotpedia_id "Gus M. Bilirakis" ;
 	:icpsr_id "20758" ;
-	:wikipedia_id "Gus Bilirakis" .
+	:wikipedia_id "Gus Bilirakis" ;
+	skos:prefLabel "Bilirakis, Gus" .
 
 
 :p20045	a schema:Person ;
@@ -1318,7 +1364,8 @@
 	:votesmart_id "50544" ;
 	:ballotpedia_id "Rob Bishop" ;
 	:icpsr_id "20357" ;
-	:wikipedia_id "Rob Bishop" .
+	:wikipedia_id "Rob Bishop" ;
+	skos:prefLabel "Bishop, Rob" .
 
 
 :p20046	a schema:Person ;
@@ -1345,7 +1392,8 @@
 	:govtrack_id "400030" ;
 	:votesmart_id "26817" ;
 	:icpsr_id "29339" ;
-	:wikipedia_id "Sanford Bishop" .
+	:wikipedia_id "Sanford Bishop" ;
+	skos:prefLabel "Bishop, Sanford" .
 
 
 :p20047	a schema:Person ;
@@ -1372,7 +1420,8 @@
 	:govtrack_id "412478" ;
 	:votesmart_id "25292" ;
 	:icpsr_id "21180" ;
-	:wikipedia_id "Diane Black" .
+	:wikipedia_id "Diane Black" ;
+	skos:prefLabel "Black, Diane" .
 
 
 :p20048	a schema:Person ;
@@ -1400,7 +1449,8 @@
 	:votesmart_id "25186" ;
 	:ballotpedia_id "Marsha Blackburn" ;
 	:icpsr_id "20351" ;
-	:wikipedia_id "Marsha Blackburn" .
+	:wikipedia_id "Marsha Blackburn" ;
+	skos:prefLabel "Blackburn, Marsha" .
 
 
 :p20049	a schema:Person ;
@@ -1427,7 +1477,8 @@
 	:votesmart_id "367" ;
 	:ballotpedia_id "Earl Blumenauer" ;
 	:icpsr_id "29588" ;
-	:wikipedia_id "Earl Blumenauer" .
+	:wikipedia_id "Earl Blumenauer" ;
+	skos:prefLabel "Blumenauer, Earl" .
 
 
 :p20050	a schema:Person ;
@@ -1456,7 +1507,8 @@
 	:votesmart_id "1568" ;
 	:ballotpedia_id "Richard Blumenthal" ;
 	:icpsr_id "41101" ;
-	:wikipedia_id "Richard Blumenthal" .
+	:wikipedia_id "Richard Blumenthal" ;
+	skos:prefLabel "Blumenthal, Richard" .
 
 
 :p20051	a schema:Person ;
@@ -1485,7 +1537,8 @@
 	:votesmart_id "418" ;
 	:ballotpedia_id "Roy Blunt" ;
 	:icpsr_id "29735" ;
-	:wikipedia_id "Roy Blunt" .
+	:wikipedia_id "Roy Blunt" ;
+	skos:prefLabel "Blunt, Roy" .
 
 
 :p20052	a schema:Person ;
@@ -1514,7 +1567,8 @@
 	:votesmart_id "27958" ;
 	:ballotpedia_id "John Boozman" ;
 	:icpsr_id "20101" ;
-	:wikipedia_id "John Boozman" .
+	:wikipedia_id "John Boozman" ;
+	skos:prefLabel "Boozman, John" .
 
 
 :p20053	a schema:Person ;
@@ -1539,7 +1593,8 @@
 	:cspan_id "1003568" ;
 	:govtrack_id "400041" ;
 	:votesmart_id "1751" ;
-	:wikipedia_id "Madeleine Bordallo" .
+	:wikipedia_id "Madeleine Bordallo" ;
+	skos:prefLabel "Bordallo, Madeleine" .
 
 
 :p20054	a schema:Person ;
@@ -1566,7 +1621,8 @@
 	:govtrack_id "400046" ;
 	:votesmart_id "361" ;
 	:icpsr_id "29760" ;
-	:wikipedia_id "Kevin Brady" .
+	:wikipedia_id "Kevin Brady" ;
+	skos:prefLabel "Brady, Kevin" .
 
 
 :p20055	a schema:Person ;
@@ -1594,7 +1650,8 @@
 	:votesmart_id "2519" ;
 	:ballotpedia_id "Robert A. Brady" ;
 	:icpsr_id "29777" ;
-	:wikipedia_id "Bob Brady" .
+	:wikipedia_id "Bob Brady" ;
+	skos:prefLabel "Brady, Robert" .
 
 
 :p20056	a schema:Person ;
@@ -1622,7 +1679,8 @@
 	:votesmart_id "121610" ;
 	:ballotpedia_id "Mo Brooks" ;
 	:icpsr_id "21193" ;
-	:wikipedia_id "Mo Brooks" .
+	:wikipedia_id "Mo Brooks" ;
+	skos:prefLabel "Brooks, Mo" .
 
 
 :p20057	a schema:Person ;
@@ -1650,7 +1708,8 @@
 	:votesmart_id "66247" ;
 	:ballotpedia_id "Vern Buchanan" ;
 	:icpsr_id "20709" ;
-	:wikipedia_id "Vern Buchanan" .
+	:wikipedia_id "Vern Buchanan" ;
+	skos:prefLabel "Buchanan, Vern" .
 
 
 :p20058	a schema:Person ;
@@ -1678,7 +1737,8 @@
 	:votesmart_id "120335" ;
 	:ballotpedia_id "Larry Bucshon" ;
 	:icpsr_id "21132" ;
-	:wikipedia_id "Larry Bucshon" .
+	:wikipedia_id "Larry Bucshon" ;
+	skos:prefLabel "Bucshon, Larry" .
 
 
 :p20059	a schema:Person ;
@@ -1705,7 +1765,8 @@
 	:govtrack_id "400052" ;
 	:votesmart_id "50120" ;
 	:icpsr_id "20355" ;
-	:wikipedia_id "Michael C. Burgess" .
+	:wikipedia_id "Michael C. Burgess" ;
+	skos:prefLabel "Burgess, Michael" .
 
 
 :p20060	a schema:Person ;
@@ -1734,7 +1795,8 @@
 	:votesmart_id "21787" ;
 	:ballotpedia_id "Richard Burr" ;
 	:icpsr_id "29548" ;
-	:wikipedia_id "Richard Burr" .
+	:wikipedia_id "Richard Burr" ;
+	skos:prefLabel "Burr, Richard" .
 
 
 :p20061	a schema:Person ;
@@ -1762,7 +1824,8 @@
 	:votesmart_id "41077" ;
 	:ballotpedia_id "G.K. Butterfield" ;
 	:icpsr_id "20340" ;
-	:wikipedia_id "G. K. Butterfield" .
+	:wikipedia_id "G. K. Butterfield" ;
+	skos:prefLabel "Butterfield, George" .
 
 
 :p20062	a schema:Person ;
@@ -1789,7 +1852,8 @@
 	:govtrack_id "400057" ;
 	:votesmart_id "26777" ;
 	:icpsr_id "29323" ;
-	:wikipedia_id "Ken Calvert" .
+	:wikipedia_id "Ken Calvert" ;
+	skos:prefLabel "Calvert, Ken" .
 
 
 :p20063	a schema:Person ;
@@ -1816,7 +1880,8 @@
 	:votesmart_id "11701" ;
 	:ballotpedia_id "Shelley Moore Capito" ;
 	:icpsr_id "20146" ;
-	:wikipedia_id "Shelley Moore Capito" .
+	:wikipedia_id "Shelley Moore Capito" ;
+	skos:prefLabel "Capito, Shelley" .
 
 
 :p20064	a schema:Person ;
@@ -1843,7 +1908,8 @@
 	:votesmart_id "18883" ;
 	:ballotpedia_id "Michael Capuano" ;
 	:icpsr_id "29919" ;
-	:wikipedia_id "Mike Capuano" .
+	:wikipedia_id "Mike Capuano" ;
+	skos:prefLabel "Capuano, Michael" .
 
 
 :p20065	a schema:Person ;
@@ -1871,7 +1937,8 @@
 	:votesmart_id "84917" ;
 	:ballotpedia_id "Andre Carson" ;
 	:icpsr_id "20757" ;
-	:wikipedia_id "André Carson" .
+	:wikipedia_id "André Carson" ;
+	skos:prefLabel "Carson, André" .
 
 
 :p20066	a schema:Person ;
@@ -1899,7 +1966,8 @@
 	:votesmart_id "49296" ;
 	:ballotpedia_id "John Carter" ;
 	:icpsr_id "20356" ;
-	:wikipedia_id "John Carter (Texas politician)" .
+	:wikipedia_id "John Carter (Texas politician)" ;
+	skos:prefLabel "Carter, John" .
 
 
 :p20067	a schema:Person ;
@@ -1925,7 +1993,8 @@
 	:votesmart_id "69494" ;
 	:ballotpedia_id "Bill Cassidy" ;
 	:icpsr_id "20919" ;
-	:wikipedia_id "Bill Cassidy" .
+	:wikipedia_id "Bill Cassidy" ;
+	skos:prefLabel "Cassidy, Bill" .
 
 
 :p20068	a schema:Person ;
@@ -1953,7 +2022,8 @@
 	:votesmart_id "53825" ;
 	:ballotpedia_id "Kathy Castor" ;
 	:icpsr_id "20708" ;
-	:wikipedia_id "Kathy Castor" .
+	:wikipedia_id "Kathy Castor" ;
+	skos:prefLabel "Castor, Kathy" .
 
 
 :p20069	a schema:Person ;
@@ -1981,7 +2051,8 @@
 	:votesmart_id "21790" ;
 	:ballotpedia_id "Steve Chabot" ;
 	:icpsr_id "29550" ;
-	:wikipedia_id "Steve Chabot" .
+	:wikipedia_id "Steve Chabot" ;
+	skos:prefLabel "Chabot, Steve" .
 
 
 :p20070	a schema:Person ;
@@ -2009,7 +2080,8 @@
 	:votesmart_id "16539" ;
 	:ballotpedia_id "Judy Chu" ;
 	:icpsr_id "20955" ;
-	:wikipedia_id "Judy Chu" .
+	:wikipedia_id "Judy Chu" ;
+	skos:prefLabel "Chu, Judy" .
 
 
 :p20071	a schema:Person ;
@@ -2037,7 +2109,8 @@
 	:votesmart_id "7349" ;
 	:ballotpedia_id "David N. Cicilline" ;
 	:icpsr_id "21172" ;
-	:wikipedia_id "David Cicilline" .
+	:wikipedia_id "David Cicilline" ;
+	skos:prefLabel "Cicilline, David" .
 
 
 :p20072	a schema:Person ;
@@ -2065,7 +2138,8 @@
 	:votesmart_id "44741" ;
 	:ballotpedia_id "Yvette D. Clarke" ;
 	:icpsr_id "20733" ;
-	:wikipedia_id "Yvette Clarke" .
+	:wikipedia_id "Yvette Clarke" ;
+	skos:prefLabel "Clarke, Yvette" .
 
 
 :p20073	a schema:Person ;
@@ -2091,7 +2165,8 @@
 	:votesmart_id "8967" ;
 	:ballotpedia_id "William Lacy Clay" ;
 	:icpsr_id "20147" ;
-	:wikipedia_id "Lacy Clay" .
+	:wikipedia_id "Lacy Clay" ;
+	skos:prefLabel "Clay, Wm." .
 
 
 :p20074	a schema:Person ;
@@ -2118,7 +2193,8 @@
 	:govtrack_id "400639" ;
 	:votesmart_id "39507" ;
 	:icpsr_id "20517" ;
-	:wikipedia_id "Emanuel Cleaver" .
+	:wikipedia_id "Emanuel Cleaver" ;
+	skos:prefLabel "Cleaver, Emanuel" .
 
 
 :p20075	a schema:Person ;
@@ -2146,7 +2222,8 @@
 	:votesmart_id "27066" ;
 	:ballotpedia_id "James E. Clyburn" ;
 	:icpsr_id "39301" ;
-	:wikipedia_id "Jim Clyburn" .
+	:wikipedia_id "Jim Clyburn" ;
+	skos:prefLabel "Clyburn, James" .
 
 
 :p20076	a schema:Person ;
@@ -2174,7 +2251,8 @@
 	:votesmart_id "1535" ;
 	:ballotpedia_id "Mike Coffman" ;
 	:icpsr_id "20906" ;
-	:wikipedia_id "Mike Coffman" .
+	:wikipedia_id "Mike Coffman" ;
+	skos:prefLabel "Coffman, Mike" .
 
 
 :p20077	a schema:Person ;
@@ -2201,7 +2279,8 @@
 	:govtrack_id "412236" ;
 	:votesmart_id "24340" ;
 	:icpsr_id "20748" ;
-	:wikipedia_id "Steve Cohen" .
+	:wikipedia_id "Steve Cohen" ;
+	skos:prefLabel "Cohen, Steve" .
 
 
 :p20078	a schema:Person ;
@@ -2229,7 +2308,8 @@
 	:votesmart_id "46034" ;
 	:ballotpedia_id "Tom Cole" ;
 	:icpsr_id "20344" ;
-	:wikipedia_id "Tom Cole" .
+	:wikipedia_id "Tom Cole" ;
+	skos:prefLabel "Cole, Tom" .
 
 
 :p20079	a schema:Person ;
@@ -2256,7 +2336,8 @@
 	:votesmart_id "49935" ;
 	:ballotpedia_id "Mike Conaway" ;
 	:icpsr_id "20531" ;
-	:wikipedia_id "Mike Conaway" .
+	:wikipedia_id "Mike Conaway" ;
+	skos:prefLabel "Conaway, K." .
 
 
 :p20080	a schema:Person ;
@@ -2283,7 +2364,8 @@
 	:govtrack_id "412272" ;
 	:votesmart_id "95078" ;
 	:icpsr_id "20952" ;
-	:wikipedia_id "Gerry Connolly" .
+	:wikipedia_id "Gerry Connolly" ;
+	skos:prefLabel "Connolly, Gerald" .
 
 
 :p20081	a schema:Person ;
@@ -2311,7 +2393,8 @@
 	:votesmart_id "48891" ;
 	:ballotpedia_id "Jim Cooper" ;
 	:icpsr_id "15019" ;
-	:wikipedia_id "Jim Cooper" .
+	:wikipedia_id "Jim Cooper" ;
+	skos:prefLabel "Cooper, Jim" .
 
 
 :p20082	a schema:Person ;
@@ -2338,7 +2421,8 @@
 	:govtrack_id "400618" ;
 	:votesmart_id "3577" ;
 	:icpsr_id "20501" ;
-	:wikipedia_id "Jim Costa" .
+	:wikipedia_id "Jim Costa" ;
+	skos:prefLabel "Costa, Jim" .
 
 
 :p20083	a schema:Person ;
@@ -2366,7 +2450,8 @@
 	:votesmart_id "30333" ;
 	:ballotpedia_id "Joe Courtney" ;
 	:icpsr_id "20706" ;
-	:wikipedia_id "Joe Courtney (politician)" .
+	:wikipedia_id "Joe Courtney (politician)" ;
+	skos:prefLabel "Courtney, Joe" .
 
 
 :p20084	a schema:Person ;
@@ -2394,7 +2479,8 @@
 	:votesmart_id "26830" ;
 	:ballotpedia_id "Mike Crapo" ;
 	:icpsr_id "29345" ;
-	:wikipedia_id "Mike Crapo" .
+	:wikipedia_id "Mike Crapo" ;
+	skos:prefLabel "Crapo, Michael" .
 
 
 :p20085	a schema:Person ;
@@ -2422,7 +2508,8 @@
 	:votesmart_id "119208" ;
 	:ballotpedia_id "Rick Crawford" ;
 	:icpsr_id "21106" ;
-	:wikipedia_id "Rick Crawford (politician)" .
+	:wikipedia_id "Rick Crawford (politician)" ;
+	skos:prefLabel "Crawford, Eric" .
 
 
 :p20086	a schema:Person ;
@@ -2450,7 +2537,8 @@
 	:votesmart_id "4295" ;
 	:ballotpedia_id "Joseph Crowley" ;
 	:icpsr_id "29925" ;
-	:wikipedia_id "Joseph Crowley" .
+	:wikipedia_id "Joseph Crowley" ;
+	skos:prefLabel "Crowley, Joseph" .
 
 
 :p20087	a schema:Person ;
@@ -2477,7 +2565,8 @@
 	:govtrack_id "400657" ;
 	:votesmart_id "5486" ;
 	:icpsr_id "20533" ;
-	:wikipedia_id "Henry Cuellar" .
+	:wikipedia_id "Henry Cuellar" ;
+	skos:prefLabel "Cuellar, Henry" .
 
 
 :p20088	a schema:Person ;
@@ -2505,7 +2594,8 @@
 	:votesmart_id "5488" ;
 	:ballotpedia_id "John Culberson" ;
 	:icpsr_id "20139" ;
-	:wikipedia_id "John Culberson" .
+	:wikipedia_id "John Culberson" ;
+	skos:prefLabel "Culberson, John" .
 
 
 :p20089	a schema:Person ;
@@ -2533,7 +2623,8 @@
 	:votesmart_id "345" ;
 	:ballotpedia_id "Elijah Cummings" ;
 	:icpsr_id "29587" ;
-	:wikipedia_id "Elijah Cummings" .
+	:wikipedia_id "Elijah Cummings" ;
+	skos:prefLabel "Cummings, Elijah" .
 
 
 :p20090	a schema:Person ;
@@ -2561,7 +2652,8 @@
 	:votesmart_id "233" ;
 	:ballotpedia_id "Danny K. Davis" ;
 	:icpsr_id "29717" ;
-	:wikipedia_id "Danny K. Davis" .
+	:wikipedia_id "Danny K. Davis" ;
+	skos:prefLabel "Davis, Danny" .
 
 
 :p20091	a schema:Person ;
@@ -2585,7 +2677,8 @@
 	:govtrack_id "400097" ;
 	:votesmart_id "8168" ;
 	:icpsr_id "20108" ;
-	:wikipedia_id "Susan Davis (politician)" .
+	:wikipedia_id "Susan Davis (politician)" ;
+	skos:prefLabel "Davis, Susan" .
 
 
 :p20092	a schema:Person ;
@@ -2613,7 +2706,8 @@
 	:votesmart_id "27037" ;
 	:ballotpedia_id "Peter DeFazio" ;
 	:icpsr_id "15410" ;
-	:wikipedia_id "Peter DeFazio" .
+	:wikipedia_id "Peter DeFazio" ;
+	skos:prefLabel "DeFazio, Peter" .
 
 
 :p20093	a schema:Person ;
@@ -2641,7 +2735,8 @@
 	:votesmart_id "561" ;
 	:ballotpedia_id "Diana DeGette" ;
 	:icpsr_id "29710" ;
-	:wikipedia_id "Diana DeGette" .
+	:wikipedia_id "Diana DeGette" ;
+	skos:prefLabel "DeGette, Diana" .
 
 
 :p20094	a schema:Person ;
@@ -2669,7 +2764,8 @@
 	:votesmart_id "26788" ;
 	:ballotpedia_id "Rosa DeLauro" ;
 	:icpsr_id "29109" ;
-	:wikipedia_id "Rosa DeLauro" .
+	:wikipedia_id "Rosa DeLauro" ;
+	skos:prefLabel "DeLauro, Rosa" .
 
 
 :p20095	a schema:Person ;
@@ -2696,7 +2792,8 @@
 	:govtrack_id "412403" ;
 	:votesmart_id "28769" ;
 	:icpsr_id "21109" ;
-	:wikipedia_id "Jeff Denham" .
+	:wikipedia_id "Jeff Denham" ;
+	skos:prefLabel "Denham, Jeff" .
 
 
 :p20096	a schema:Person ;
@@ -2724,7 +2821,8 @@
 	:votesmart_id "9121" ;
 	:ballotpedia_id "Charles W. Dent" ;
 	:icpsr_id "20526" ;
-	:wikipedia_id "Charlie Dent" .
+	:wikipedia_id "Charlie Dent" ;
+	skos:prefLabel "Dent, Charles" .
 
 
 :p20097	a schema:Person ;
@@ -2751,7 +2849,8 @@
 	:govtrack_id "412477" ;
 	:votesmart_id "123473" ;
 	:icpsr_id "21179" ;
-	:wikipedia_id "Scott DesJarlais" .
+	:wikipedia_id "Scott DesJarlais" ;
+	skos:prefLabel "DesJarlais, Scott" .
 
 
 :p20098	a schema:Person ;
@@ -2779,7 +2878,8 @@
 	:votesmart_id "67151" ;
 	:ballotpedia_id "Theodore E. Deutch" ;
 	:icpsr_id "20959" ;
-	:wikipedia_id "Ted Deutch" .
+	:wikipedia_id "Ted Deutch" ;
+	skos:prefLabel "Deutch, Theodore" .
 
 
 :p20099	a schema:Person ;
@@ -2807,7 +2907,8 @@
 	:votesmart_id "24312" ;
 	:ballotpedia_id "Mario Diaz-Balart" ;
 	:icpsr_id "20316" ;
-	:wikipedia_id "Mario Díaz-Balart" .
+	:wikipedia_id "Mario Díaz-Balart" ;
+	skos:prefLabel "Diaz-Balart, Mario" .
 
 
 :p20100	a schema:Person ;
@@ -2834,7 +2935,8 @@
 	:govtrack_id "400111" ;
 	:votesmart_id "21689" ;
 	:icpsr_id "29571" ;
-	:wikipedia_id "Lloyd Doggett" .
+	:wikipedia_id "Lloyd Doggett" ;
+	skos:prefLabel "Doggett, Lloyd" .
 
 
 :p20101	a schema:Person ;
@@ -2863,7 +2965,8 @@
 	:votesmart_id "34212" ;
 	:ballotpedia_id "Joe Donnelly" ;
 	:icpsr_id "20717" ;
-	:wikipedia_id "Joe Donnelly" .
+	:wikipedia_id "Joe Donnelly" ;
+	skos:prefLabel "Donnelly, Joe" .
 
 
 :p20102	a schema:Person ;
@@ -2891,7 +2994,8 @@
 	:votesmart_id "21853" ;
 	:ballotpedia_id "Michael F. Doyle" ;
 	:icpsr_id "29561" ;
-	:wikipedia_id "Michael F. Doyle" .
+	:wikipedia_id "Michael F. Doyle" ;
+	skos:prefLabel "Doyle, Michael" .
 
 
 :p20103	a schema:Person ;
@@ -2919,7 +3023,8 @@
 	:votesmart_id "126238" ;
 	:ballotpedia_id "Sean Duffy" ;
 	:icpsr_id "21189" ;
-	:wikipedia_id "Sean Duffy" .
+	:wikipedia_id "Sean Duffy" ;
+	skos:prefLabel "Duffy, Sean" .
 
 
 :p20104	a schema:Person ;
@@ -2947,7 +3052,8 @@
 	:votesmart_id "47967" ;
 	:ballotpedia_id "Jeff Duncan" ;
 	:icpsr_id "21174" ;
-	:wikipedia_id "Jeff Duncan (politician)" .
+	:wikipedia_id "Jeff Duncan (politician)" ;
+	skos:prefLabel "Duncan, Jeff" .
 
 
 :p20105	a schema:Person ;
@@ -2974,7 +3080,8 @@
 	:govtrack_id "400116" ;
 	:votesmart_id "27069" ;
 	:icpsr_id "15455" ;
-	:wikipedia_id "Jimmy Duncan (politician)" .
+	:wikipedia_id "Jimmy Duncan (politician)" ;
+	skos:prefLabel "Duncan, John" .
 
 
 :p20106	a schema:Person ;
@@ -3002,7 +3109,8 @@
 	:votesmart_id "38982" ;
 	:ballotpedia_id "Keith Ellison" ;
 	:icpsr_id "20727" ;
-	:wikipedia_id "Keith Ellison" .
+	:wikipedia_id "Keith Ellison" ;
+	skos:prefLabel "Ellison, Keith" .
 
 
 :p20107	a schema:Person ;
@@ -3028,7 +3136,8 @@
 	:govtrack_id "400122" ;
 	:votesmart_id "26972" ;
 	:icpsr_id "15603" ;
-	:wikipedia_id "Eliot Engel" .
+	:wikipedia_id "Eliot Engel" ;
+	skos:prefLabel "Engel, Eliot" .
 
 
 :p20108	a schema:Person ;
@@ -3055,7 +3164,8 @@
 	:govtrack_id "400124" ;
 	:votesmart_id "26741" ;
 	:icpsr_id "29312" ;
-	:wikipedia_id "Anna Eshoo" .
+	:wikipedia_id "Anna Eshoo" ;
+	skos:prefLabel "Eshoo, Anna" .
 
 
 :p20109	a schema:Person ;
@@ -3083,7 +3193,8 @@
 	:votesmart_id "116919" ;
 	:ballotpedia_id "Blake Farenthold" ;
 	:icpsr_id "21184" ;
-	:wikipedia_id "Blake Farenthold" .
+	:wikipedia_id "Blake Farenthold" ;
+	skos:prefLabel "Farenthold, Blake" .
 
 
 :p20110	a schema:Person ;
@@ -3112,7 +3223,8 @@
 	:votesmart_id "28128" ;
 	:ballotpedia_id "Jeff Flake" ;
 	:icpsr_id "20100" ;
-	:wikipedia_id "Jeff Flake" .
+	:wikipedia_id "Jeff Flake" ;
+	skos:prefLabel "Flake, Jeff" .
 
 
 :p20111	a schema:Person ;
@@ -3139,7 +3251,8 @@
 	:govtrack_id "412476" ;
 	:votesmart_id "123456" ;
 	:icpsr_id "21178" ;
-	:wikipedia_id "Chuck Fleischmann" .
+	:wikipedia_id "Chuck Fleischmann" ;
+	skos:prefLabel "Fleischmann, Charles" .
 
 
 :p20112	a schema:Person ;
@@ -3166,7 +3279,8 @@
 	:govtrack_id "412480" ;
 	:votesmart_id "116906" ;
 	:icpsr_id "21182" ;
-	:wikipedia_id "Bill Flores" .
+	:wikipedia_id "Bill Flores" ;
+	skos:prefLabel "Flores, Bill" .
 
 
 :p20113	a schema:Person ;
@@ -3194,7 +3308,8 @@
 	:votesmart_id "41929" ;
 	:ballotpedia_id "Jeff Fortenberry" ;
 	:icpsr_id "20518" ;
-	:wikipedia_id "Jeff Fortenberry" .
+	:wikipedia_id "Jeff Fortenberry" ;
+	skos:prefLabel "Fortenberry, Jeff" .
 
 
 :p20114	a schema:Person ;
@@ -3222,7 +3337,8 @@
 	:votesmart_id "6051" ;
 	:ballotpedia_id "Virginia Foxx" ;
 	:icpsr_id "20521" ;
-	:wikipedia_id "Virginia Foxx" .
+	:wikipedia_id "Virginia Foxx" ;
+	skos:prefLabel "Foxx, Virginia" .
 
 
 :p20115	a schema:Person ;
@@ -3249,7 +3365,8 @@
 	:govtrack_id "400142" ;
 	:votesmart_id "22177" ;
 	:icpsr_id "29541" ;
-	:wikipedia_id "Rodney Frelinghuysen" .
+	:wikipedia_id "Rodney Frelinghuysen" ;
+	skos:prefLabel "Frelinghuysen, Rodney" .
 
 
 :p20116	a schema:Person ;
@@ -3277,7 +3394,8 @@
 	:votesmart_id "110640" ;
 	:ballotpedia_id "Marcia L. Fudge" ;
 	:icpsr_id "20941" ;
-	:wikipedia_id "Marcia Fudge" .
+	:wikipedia_id "Marcia Fudge" ;
+	skos:prefLabel "Fudge, Marcia" .
 
 
 :p20117	a schema:Person ;
@@ -3304,7 +3422,8 @@
 	:govtrack_id "412382" ;
 	:votesmart_id "29664" ;
 	:icpsr_id "20958" ;
-	:wikipedia_id "John Garamendi" .
+	:wikipedia_id "John Garamendi" ;
+	skos:prefLabel "Garamendi, John" .
 
 
 :p20118	a schema:Person ;
@@ -3331,7 +3450,8 @@
 	:votesmart_id "30004" ;
 	:ballotpedia_id "Cory Gardner" ;
 	:icpsr_id "21112" ;
-	:wikipedia_id "Cory Gardner" .
+	:wikipedia_id "Cory Gardner" ;
+	skos:prefLabel "Gardner, Cory" .
 
 
 :p20119	a schema:Person ;
@@ -3359,7 +3479,8 @@
 	:votesmart_id "45466" ;
 	:ballotpedia_id "Bob Gibbs" ;
 	:icpsr_id "21165" ;
-	:wikipedia_id "Bob Gibbs" .
+	:wikipedia_id "Bob Gibbs" ;
+	skos:prefLabel "Gibbs, Bob" .
 
 
 :p20120	a schema:Person ;
@@ -3387,7 +3508,8 @@
 	:votesmart_id "50029" ;
 	:ballotpedia_id "Louie Gohmert" ;
 	:icpsr_id "20527" ;
-	:wikipedia_id "Louie Gohmert" .
+	:wikipedia_id "Louie Gohmert" ;
+	skos:prefLabel "Gohmert, Louie" .
 
 
 :p20121	a schema:Person ;
@@ -3415,7 +3537,8 @@
 	:votesmart_id "27116" ;
 	:ballotpedia_id "Bob Goodlatte" ;
 	:icpsr_id "39308" ;
-	:wikipedia_id "Bob Goodlatte" .
+	:wikipedia_id "Bob Goodlatte" ;
+	skos:prefLabel "Goodlatte, Bob" .
 
 
 :p20122	a schema:Person ;
@@ -3443,7 +3566,8 @@
 	:votesmart_id "123491" ;
 	:ballotpedia_id "Paul Gosar" ;
 	:icpsr_id "21103" ;
-	:wikipedia_id "Paul Gosar" .
+	:wikipedia_id "Paul Gosar" ;
+	skos:prefLabel "Gosar, Paul" .
 
 
 :p20123	a schema:Person ;
@@ -3471,7 +3595,8 @@
 	:votesmart_id "121782" ;
 	:ballotpedia_id "Trey Gowdy" ;
 	:icpsr_id "21175" ;
-	:wikipedia_id "Trey Gowdy" .
+	:wikipedia_id "Trey Gowdy" ;
+	skos:prefLabel "Gowdy, Trey" .
 
 
 :p20124	a schema:Person ;
@@ -3498,7 +3623,8 @@
 	:govtrack_id "400157" ;
 	:votesmart_id "334" ;
 	:icpsr_id "29762" ;
-	:wikipedia_id "Kay Granger" .
+	:wikipedia_id "Kay Granger" ;
+	skos:prefLabel "Granger, Kay" .
 
 
 :p20125	a schema:Person ;
@@ -3527,7 +3653,8 @@
 	:votesmart_id "53293" ;
 	:ballotpedia_id "Chuck Grassley" ;
 	:icpsr_id "14226" ;
-	:wikipedia_id "Chuck Grassley" .
+	:wikipedia_id "Chuck Grassley" ;
+	skos:prefLabel "Grassley, Charles" .
 
 
 :p20126	a schema:Person ;
@@ -3552,7 +3679,8 @@
 	:govtrack_id "400158" ;
 	:votesmart_id "9425" ;
 	:icpsr_id "20124" ;
-	:wikipedia_id "Sam Graves" .
+	:wikipedia_id "Sam Graves" ;
+	skos:prefLabel "Graves, Sam" .
 
 
 :p20127	a schema:Person ;
@@ -3580,7 +3708,8 @@
 	:votesmart_id "31969" ;
 	:ballotpedia_id "Tom Graves" ;
 	:icpsr_id "20962" ;
-	:wikipedia_id "Tom Graves" .
+	:wikipedia_id "Tom Graves" ;
+	skos:prefLabel "Graves, Tom" .
 
 
 :p20128	a schema:Person ;
@@ -3608,7 +3737,8 @@
 	:votesmart_id "49680" ;
 	:ballotpedia_id "Al Green" ;
 	:icpsr_id "20529" ;
-	:wikipedia_id "Al Green (politician)" .
+	:wikipedia_id "Al Green (politician)" ;
+	skos:prefLabel "Green, Al" .
 
 
 :p20129	a schema:Person ;
@@ -3635,7 +3765,8 @@
 	:govtrack_id "400160" ;
 	:votesmart_id "27100" ;
 	:icpsr_id "39304" ;
-	:wikipedia_id "Gene Green" .
+	:wikipedia_id "Gene Green" ;
+	skos:prefLabel "Green, Gene" .
 
 
 :p20130	a schema:Person ;
@@ -3663,7 +3794,8 @@
 	:votesmart_id "5148" ;
 	:ballotpedia_id "Morgan Griffith" ;
 	:icpsr_id "21191" ;
-	:wikipedia_id "Morgan Griffith" .
+	:wikipedia_id "Morgan Griffith" ;
+	skos:prefLabel "Griffith, H." .
 
 
 :p20131	a schema:Person ;
@@ -3691,7 +3823,8 @@
 	:votesmart_id "28253" ;
 	:ballotpedia_id "Raul M. Grijalva" ;
 	:icpsr_id "20305" ;
-	:wikipedia_id "Raúl Grijalva" .
+	:wikipedia_id "Raúl Grijalva" ;
+	skos:prefLabel "Grijalva, Raúl" .
 
 
 :p20132	a schema:Person ;
@@ -3719,7 +3852,8 @@
 	:votesmart_id "18829" ;
 	:ballotpedia_id "Brett Guthrie" ;
 	:icpsr_id "20916" ;
-	:wikipedia_id "Brett Guthrie" .
+	:wikipedia_id "Brett Guthrie" ;
+	skos:prefLabel "Guthrie, Brett" .
 
 
 :p20133	a schema:Person ;
@@ -3747,7 +3881,8 @@
 	:votesmart_id "26841" ;
 	:ballotpedia_id "Luis V. Gutierrez" ;
 	:icpsr_id "29348" ;
-	:wikipedia_id "Luis Gutiérrez" .
+	:wikipedia_id "Luis Gutiérrez" ;
+	skos:prefLabel "Gutiérrez, Luis" .
 
 
 :p20134	a schema:Person ;
@@ -3774,7 +3909,8 @@
 	:govtrack_id "412280" ;
 	:votesmart_id "101985" ;
 	:icpsr_id "20925" ;
-	:wikipedia_id "Gregg Harper" .
+	:wikipedia_id "Gregg Harper" ;
+	skos:prefLabel "Harper, Gregg" .
 
 
 :p20135	a schema:Person ;
@@ -3801,7 +3937,8 @@
 	:govtrack_id "412434" ;
 	:votesmart_id "19157" ;
 	:icpsr_id "21139" ;
-	:wikipedia_id "Andy Harris (politician)" .
+	:wikipedia_id "Andy Harris (politician)" ;
+	skos:prefLabel "Harris, Andy" .
 
 
 :p20136	a schema:Person ;
@@ -3829,7 +3966,8 @@
 	:votesmart_id "8783" ;
 	:ballotpedia_id "Vicky Hartzler" ;
 	:icpsr_id "21149" ;
-	:wikipedia_id "Vicky Hartzler" .
+	:wikipedia_id "Vicky Hartzler" ;
+	skos:prefLabel "Hartzler, Vicky" .
 
 
 :p20137	a schema:Person ;
@@ -3857,7 +3995,8 @@
 	:votesmart_id "26798" ;
 	:ballotpedia_id "Alcee L. Hastings" ;
 	:icpsr_id "29337" ;
-	:wikipedia_id "Alcee Hastings" .
+	:wikipedia_id "Alcee Hastings" ;
+	skos:prefLabel "Hastings, Alcee" .
 
 
 :p20138	a schema:Person ;
@@ -3885,7 +4024,8 @@
 	:votesmart_id "74517" ;
 	:ballotpedia_id "Martin Heinrich" ;
 	:icpsr_id "20930" ;
-	:wikipedia_id "Martin Heinrich" .
+	:wikipedia_id "Martin Heinrich" ;
+	skos:prefLabel "Heinrich, Martin" .
 
 
 :p20139	a schema:Person ;
@@ -3913,7 +4053,8 @@
 	:votesmart_id "49827" ;
 	:ballotpedia_id "Jeb Hensarling" ;
 	:icpsr_id "20352" ;
-	:wikipedia_id "Jeb Hensarling" .
+	:wikipedia_id "Jeb Hensarling" ;
+	skos:prefLabel "Hensarling, Jeb" .
 
 
 :p20140	a schema:Person ;
@@ -3940,7 +4081,8 @@
 	:govtrack_id "412486" ;
 	:votesmart_id "101907" ;
 	:icpsr_id "21187" ;
-	:wikipedia_id "Jaime Herrera Beutler" .
+	:wikipedia_id "Jaime Herrera Beutler" ;
+	skos:prefLabel "Herrera Beutler, Jaime" .
 
 
 :p20141	a schema:Person ;
@@ -3968,7 +4110,8 @@
 	:votesmart_id "23127" ;
 	:ballotpedia_id "Brian Higgins" ;
 	:icpsr_id "20519" ;
-	:wikipedia_id "Brian Higgins" .
+	:wikipedia_id "Brian Higgins" ;
+	skos:prefLabel "Higgins, Brian" .
 
 
 :p20142	a schema:Person ;
@@ -3996,7 +4139,8 @@
 	:votesmart_id "106744" ;
 	:ballotpedia_id "Jim Himes" ;
 	:icpsr_id "20907" ;
-	:wikipedia_id "Jim Himes" .
+	:wikipedia_id "Jim Himes" ;
+	skos:prefLabel "Himes, James" .
 
 
 :p20143	a schema:Person ;
@@ -4025,7 +4169,8 @@
 	:votesmart_id "1677" ;
 	:ballotpedia_id "Mazie K. Hirono" ;
 	:icpsr_id "20713" ;
-	:wikipedia_id "Mazie Hirono" .
+	:wikipedia_id "Mazie Hirono" ;
+	skos:prefLabel "Hirono, Mazie" .
 
 
 :p20144	a schema:Person ;
@@ -4054,7 +4199,8 @@
 	:votesmart_id "41788" ;
 	:ballotpedia_id "John Hoeven" ;
 	:icpsr_id "41107" ;
-	:wikipedia_id "John Hoeven" .
+	:wikipedia_id "John Hoeven" ;
+	skos:prefLabel "Hoeven, John" .
 
 
 :p20145	a schema:Person ;
@@ -4082,7 +4228,8 @@
 	:votesmart_id "26890" ;
 	:ballotpedia_id "Steny Hoyer" ;
 	:icpsr_id "14873" ;
-	:wikipedia_id "Steny Hoyer" .
+	:wikipedia_id "Steny Hoyer" ;
+	skos:prefLabel "Hoyer, Steny" .
 
 
 :p20146	a schema:Person ;
@@ -4110,7 +4257,8 @@
 	:votesmart_id "38351" ;
 	:ballotpedia_id "Bill Huizenga" ;
 	:icpsr_id "21142" ;
-	:wikipedia_id "Bill Huizenga" .
+	:wikipedia_id "Bill Huizenga" ;
+	skos:prefLabel "Huizenga, Bill" .
 
 
 :p20147	a schema:Person ;
@@ -4138,7 +4286,8 @@
 	:votesmart_id "18199" ;
 	:ballotpedia_id "Randy Hultgren" ;
 	:icpsr_id "21129" ;
-	:wikipedia_id "Randy Hultgren" .
+	:wikipedia_id "Randy Hultgren" ;
+	skos:prefLabel "Hultgren, Randy" .
 
 
 :p20148	a schema:Person ;
@@ -4165,7 +4314,8 @@
 	:govtrack_id "412283" ;
 	:votesmart_id "104308" ;
 	:icpsr_id "20963" ;
-	:wikipedia_id "Duncan D. Hunter" .
+	:wikipedia_id "Duncan D. Hunter" ;
+	skos:prefLabel "Hunter, Duncan" .
 
 
 :p20149	a schema:Person ;
@@ -4193,7 +4343,8 @@
 	:votesmart_id "1721" ;
 	:ballotpedia_id "Johnny Isakson" ;
 	:icpsr_id "29909" ;
-	:wikipedia_id "Johnny Isakson" .
+	:wikipedia_id "Johnny Isakson" ;
+	skos:prefLabel "Isakson, John" .
 
 
 :p20150	a schema:Person ;
@@ -4221,7 +4372,8 @@
 	:votesmart_id "16553" ;
 	:ballotpedia_id "Darrell Issa" ;
 	:icpsr_id "20107" ;
-	:wikipedia_id "Darrell Issa" .
+	:wikipedia_id "Darrell Issa" ;
+	skos:prefLabel "Issa, Darrell" .
 
 
 :p20151	a schema:Person ;
@@ -4248,7 +4400,8 @@
 	:govtrack_id "400199" ;
 	:votesmart_id "21692" ;
 	:icpsr_id "29573" ;
-	:wikipedia_id "Sheila Jackson Lee" .
+	:wikipedia_id "Sheila Jackson Lee" ;
+	skos:prefLabel "Jackson Lee, Sheila" .
 
 
 :p20152	a schema:Person ;
@@ -4276,7 +4429,8 @@
 	:votesmart_id "18594" ;
 	:ballotpedia_id "Lynn Jenkins" ;
 	:icpsr_id "20915" ;
-	:wikipedia_id "Lynn Jenkins" .
+	:wikipedia_id "Lynn Jenkins" ;
+	skos:prefLabel "Jenkins, Lynn" .
 
 
 :p20153	a schema:Person ;
@@ -4304,7 +4458,8 @@
 	:votesmart_id "120649" ;
 	:ballotpedia_id "Bill Johnson (Ohio)" ;
 	:icpsr_id "21162" ;
-	:wikipedia_id "Bill Johnson (Ohio politician)" .
+	:wikipedia_id "Bill Johnson (Ohio politician)" ;
+	skos:prefLabel "Johnson, Bill" .
 
 
 :p20154	a schema:Person ;
@@ -4331,7 +4486,8 @@
 	:govtrack_id "400204" ;
 	:votesmart_id "27098" ;
 	:icpsr_id "39305" ;
-	:wikipedia_id "Eddie Bernice Johnson" .
+	:wikipedia_id "Eddie Bernice Johnson" ;
+	skos:prefLabel "Johnson, Eddie" .
 
 
 :p20155	a schema:Person ;
@@ -4359,7 +4515,8 @@
 	:votesmart_id "68070" ;
 	:ballotpedia_id "Henry C. Johnson, Jr." ;
 	:icpsr_id "20712" ;
-	:wikipedia_id "Hank Johnson" .
+	:wikipedia_id "Hank Johnson" ;
+	skos:prefLabel "Johnson, Henry" .
 
 
 :p20156	a schema:Person ;
@@ -4388,7 +4545,8 @@
 	:votesmart_id "126217" ;
 	:ballotpedia_id "Ron Johnson (Wisconsin)" ;
 	:icpsr_id "41111" ;
-	:wikipedia_id "Ron Johnson (American politician)" .
+	:wikipedia_id "Ron Johnson (American politician)" ;
+	skos:prefLabel "Johnson, Ron" .
 
 
 :p20157	a schema:Person ;
@@ -4415,7 +4573,8 @@
 	:govtrack_id "400206" ;
 	:votesmart_id "27079" ;
 	:icpsr_id "29143" ;
-	:wikipedia_id "Sam Johnson" .
+	:wikipedia_id "Sam Johnson" ;
+	skos:prefLabel "Johnson, Sam" .
 
 
 :p20158	a schema:Person ;
@@ -4443,7 +4602,8 @@
 	:votesmart_id "21785" ;
 	:ballotpedia_id "Walter B. Jones" ;
 	:icpsr_id "29546" ;
-	:wikipedia_id "Walter B. Jones Jr." .
+	:wikipedia_id "Walter B. Jones Jr." ;
+	skos:prefLabel "Jones, Walter" .
 
 
 :p20159	a schema:Person ;
@@ -4471,7 +4631,8 @@
 	:votesmart_id "8158" ;
 	:ballotpedia_id "Jim Jordan" ;
 	:icpsr_id "20738" ;
-	:wikipedia_id "Jim Jordan (American politician)" .
+	:wikipedia_id "Jim Jordan (American politician)" ;
+	skos:prefLabel "Jordan, Jim" .
 
 
 :p20160	a schema:Person ;
@@ -4498,7 +4659,8 @@
 	:govtrack_id "400211" ;
 	:votesmart_id "27016" ;
 	:icpsr_id "15029" ;
-	:wikipedia_id "Marcy Kaptur" .
+	:wikipedia_id "Marcy Kaptur" ;
+	skos:prefLabel "Kaptur, Marcy" .
 
 
 :p20161	a schema:Person ;
@@ -4525,7 +4687,8 @@
 	:govtrack_id "412435" ;
 	:votesmart_id "4743" ;
 	:icpsr_id "21140" ;
-	:wikipedia_id "Bill Keating (politician)" .
+	:wikipedia_id "Bill Keating (politician)" ;
+	skos:prefLabel "Keating, William" .
 
 
 :p20162	a schema:Person ;
@@ -4553,7 +4716,8 @@
 	:votesmart_id "119463" ;
 	:ballotpedia_id "Mike Kelly" ;
 	:icpsr_id "21167" ;
-	:wikipedia_id "Mike Kelly (Pennsylvania politician)" .
+	:wikipedia_id "Mike Kelly (Pennsylvania politician)" ;
+	skos:prefLabel "Kelly, Mike" .
 
 
 :p20163	a schema:Person ;
@@ -4581,7 +4745,8 @@
 	:votesmart_id "630" ;
 	:ballotpedia_id "Ron Kind" ;
 	:icpsr_id "29769" ;
-	:wikipedia_id "Ron Kind" .
+	:wikipedia_id "Ron Kind" ;
+	skos:prefLabel "Kind, Ron" .
 
 
 :p20164	a schema:Person ;
@@ -4608,7 +4773,8 @@
 	:votesmart_id "26968" ;
 	:ballotpedia_id "Peter T. King" ;
 	:icpsr_id "29375" ;
-	:wikipedia_id "Peter T. King" .
+	:wikipedia_id "Peter T. King" ;
+	skos:prefLabel "King, Peter" .
 
 
 :p20165	a schema:Person ;
@@ -4636,7 +4802,8 @@
 	:votesmart_id "10853" ;
 	:ballotpedia_id "Steve King" ;
 	:icpsr_id "20325" ;
-	:wikipedia_id "Steve King" .
+	:wikipedia_id "Steve King" ;
+	skos:prefLabel "King, Steve" .
 
 
 :p20166	a schema:Person ;
@@ -4664,7 +4831,8 @@
 	:votesmart_id "116559" ;
 	:ballotpedia_id "Adam Kinzinger" ;
 	:icpsr_id "21128" ;
-	:wikipedia_id "Adam Kinzinger" .
+	:wikipedia_id "Adam Kinzinger" ;
+	skos:prefLabel "Kinzinger, Adam" .
 
 
 :p20167	a schema:Person ;
@@ -4692,7 +4860,8 @@
 	:votesmart_id "57391" ;
 	:ballotpedia_id "Raul Labrador" ;
 	:icpsr_id "21125" ;
-	:wikipedia_id "Raúl Labrador" .
+	:wikipedia_id "Raúl Labrador" ;
+	skos:prefLabel "Labrador, Raúl" .
 
 
 :p20168	a schema:Person ;
@@ -4720,7 +4889,8 @@
 	:votesmart_id "2698" ;
 	:ballotpedia_id "Doug Lamborn" ;
 	:icpsr_id "20704" ;
-	:wikipedia_id "Doug Lamborn" .
+	:wikipedia_id "Doug Lamborn" ;
+	skos:prefLabel "Lamborn, Doug" .
 
 
 :p20169	a schema:Person ;
@@ -4747,7 +4917,8 @@
 	:govtrack_id "412290" ;
 	:votesmart_id "4443" ;
 	:icpsr_id "20929" ;
-	:wikipedia_id "Leonard Lance" .
+	:wikipedia_id "Leonard Lance" ;
+	skos:prefLabel "Lance, Leonard" .
 
 
 :p20170	a schema:Person ;
@@ -4775,7 +4946,8 @@
 	:votesmart_id "55787" ;
 	:ballotpedia_id "Jim Langevin" ;
 	:icpsr_id "20136" ;
-	:wikipedia_id "James Langevin" .
+	:wikipedia_id "James Langevin" ;
+	skos:prefLabel "Langevin, James" .
 
 
 :p20171	a schema:Person ;
@@ -4803,7 +4975,8 @@
 	:votesmart_id "124938" ;
 	:ballotpedia_id "James Lankford" ;
 	:icpsr_id "21166" ;
-	:wikipedia_id "James Lankford" .
+	:wikipedia_id "James Lankford" ;
+	skos:prefLabel "Lankford, James" .
 
 
 :p20172	a schema:Person ;
@@ -4830,7 +5003,8 @@
 	:govtrack_id "400232" ;
 	:votesmart_id "56231" ;
 	:icpsr_id "20145" ;
-	:wikipedia_id "Rick Larsen" .
+	:wikipedia_id "Rick Larsen" ;
+	skos:prefLabel "Larsen, Rick" .
 
 
 :p20173	a schema:Person ;
@@ -4858,7 +5032,8 @@
 	:votesmart_id "17188" ;
 	:ballotpedia_id "John B. Larson" ;
 	:icpsr_id "29908" ;
-	:wikipedia_id "John B. Larson" .
+	:wikipedia_id "John B. Larson" ;
+	skos:prefLabel "Larson, John" .
 
 
 :p20174	a schema:Person ;
@@ -4886,7 +5061,8 @@
 	:votesmart_id "9926" ;
 	:ballotpedia_id "Robert E. Latta" ;
 	:icpsr_id "20755" ;
-	:wikipedia_id "Bob Latta" .
+	:wikipedia_id "Bob Latta" ;
+	skos:prefLabel "Latta, Robert" .
 
 
 :p20175	a schema:Person ;
@@ -4915,7 +5091,8 @@
 	:votesmart_id "53353" ;
 	:ballotpedia_id "Patrick Leahy" ;
 	:icpsr_id "14307" ;
-	:wikipedia_id "Patrick Leahy" .
+	:wikipedia_id "Patrick Leahy" ;
+	skos:prefLabel "Leahy, Patrick" .
 
 
 :p20176	a schema:Person ;
@@ -4942,7 +5119,8 @@
 	:govtrack_id "400237" ;
 	:votesmart_id "8315" ;
 	:icpsr_id "29778" ;
-	:wikipedia_id "Barbara Lee" .
+	:wikipedia_id "Barbara Lee" ;
+	skos:prefLabel "Lee, Barbara" .
 
 
 :p20177	a schema:Person ;
@@ -4971,7 +5149,8 @@
 	:votesmart_id "66395" ;
 	:ballotpedia_id "Mike Lee" ;
 	:icpsr_id "41110" ;
-	:wikipedia_id "Mike Lee (American politician)" .
+	:wikipedia_id "Mike Lee (American politician)" ;
+	skos:prefLabel "Lee, Mike" .
 
 
 :p20178	a schema:Person ;
@@ -4999,7 +5178,8 @@
 	:votesmart_id "26918" ;
 	:ballotpedia_id "Sander Levin" ;
 	:icpsr_id "15033" ;
-	:wikipedia_id "Sander Levin" .
+	:wikipedia_id "Sander Levin" ;
+	skos:prefLabel "Levin, Sander" .
 
 
 :p20179	a schema:Person ;
@@ -5027,7 +5207,8 @@
 	:votesmart_id "26820" ;
 	:ballotpedia_id "John Lewis (Georgia)" ;
 	:icpsr_id "15431" ;
-	:wikipedia_id "John Lewis (civil rights leader)" .
+	:wikipedia_id "John Lewis (civil rights leader)" ;
+	skos:prefLabel "Lewis, John" .
 
 
 :p20180	a schema:Person ;
@@ -5055,7 +5236,8 @@
 	:votesmart_id "33692" ;
 	:ballotpedia_id "Daniel Lipinski" ;
 	:icpsr_id "20508" ;
-	:wikipedia_id "Dan Lipinski" .
+	:wikipedia_id "Dan Lipinski" ;
+	skos:prefLabel "Lipinski, Daniel" .
 
 
 :p20181	a schema:Person ;
@@ -5083,7 +5265,8 @@
 	:votesmart_id "21890" ;
 	:ballotpedia_id "Frank LoBiondo" ;
 	:icpsr_id "29539" ;
-	:wikipedia_id "Frank LoBiondo" .
+	:wikipedia_id "Frank LoBiondo" ;
+	skos:prefLabel "LoBiondo, Frank" .
 
 
 :p20182	a schema:Person ;
@@ -5111,7 +5294,8 @@
 	:votesmart_id "68964" ;
 	:ballotpedia_id "Dave Loebsack" ;
 	:icpsr_id "20720" ;
-	:wikipedia_id "Dave Loebsack" .
+	:wikipedia_id "Dave Loebsack" ;
+	skos:prefLabel "Loebsack, David" .
 
 
 :p20183	a schema:Person ;
@@ -5139,7 +5323,8 @@
 	:votesmart_id "21899" ;
 	:ballotpedia_id "Zoe Lofgren" ;
 	:icpsr_id "29504" ;
-	:wikipedia_id "Zoe Lofgren" .
+	:wikipedia_id "Zoe Lofgren" ;
+	skos:prefLabel "Lofgren, Zoe" .
 
 
 :p20184	a schema:Person ;
@@ -5166,7 +5351,8 @@
 	:govtrack_id "412445" ;
 	:votesmart_id "123401" ;
 	:icpsr_id "21150" ;
-	:wikipedia_id "Billy Long" .
+	:wikipedia_id "Billy Long" ;
+	skos:prefLabel "Long, Billy" .
 
 
 :p20185	a schema:Person ;
@@ -5194,7 +5380,8 @@
 	:votesmart_id "26982" ;
 	:ballotpedia_id "Nita Lowey" ;
 	:icpsr_id "15612" ;
-	:wikipedia_id "Nita Lowey" .
+	:wikipedia_id "Nita Lowey" ;
+	skos:prefLabel "Lowey, Nita" .
 
 
 :p20186	a schema:Person ;
@@ -5222,7 +5409,8 @@
 	:votesmart_id "27032" ;
 	:ballotpedia_id "Frank D. Lucas" ;
 	:icpsr_id "29393" ;
-	:wikipedia_id "Frank Lucas (Oklahoma politician)" .
+	:wikipedia_id "Frank Lucas (Oklahoma politician)" ;
+	skos:prefLabel "Lucas, Frank" .
 
 
 :p20187	a schema:Person ;
@@ -5249,7 +5437,8 @@
 	:govtrack_id "412292" ;
 	:votesmart_id "20400" ;
 	:icpsr_id "20926" ;
-	:wikipedia_id "Blaine Luetkemeyer" .
+	:wikipedia_id "Blaine Luetkemeyer" ;
+	skos:prefLabel "Luetkemeyer, Blaine" .
 
 
 :p20188	a schema:Person ;
@@ -5276,7 +5465,8 @@
 	:govtrack_id "412293" ;
 	:votesmart_id "102842" ;
 	:icpsr_id "20932" ;
-	:wikipedia_id "Ben Ray Luján" .
+	:wikipedia_id "Ben Ray Luján" ;
+	skos:prefLabel "Luján, Ben" .
 
 
 :p20189	a schema:Person ;
@@ -5304,7 +5494,8 @@
 	:votesmart_id "4844" ;
 	:ballotpedia_id "Stephen Lynch" ;
 	:icpsr_id "20119" ;
-	:wikipedia_id "Stephen F. Lynch" .
+	:wikipedia_id "Stephen F. Lynch" ;
+	skos:prefLabel "Lynch, Stephen" .
 
 
 :p20190	a schema:Person ;
@@ -5331,7 +5522,8 @@
 	:votesmart_id "26978" ;
 	:ballotpedia_id "Carolyn B. Maloney" ;
 	:icpsr_id "29379" ;
-	:wikipedia_id "Carolyn Maloney" .
+	:wikipedia_id "Carolyn Maloney" ;
+	skos:prefLabel "Maloney, Carolyn" .
 
 
 :p20191	a schema:Person ;
@@ -5358,7 +5550,8 @@
 	:govtrack_id "400656" ;
 	:votesmart_id "5549" ;
 	:icpsr_id "20532" ;
-	:wikipedia_id "Kenny Marchant" .
+	:wikipedia_id "Kenny Marchant" ;
+	skos:prefLabel "Marchant, Kenny" .
 
 
 :p20192	a schema:Person ;
@@ -5386,7 +5579,8 @@
 	:votesmart_id "119478" ;
 	:ballotpedia_id "Tom Marino" ;
 	:icpsr_id "21170" ;
-	:wikipedia_id "Tom Marino" .
+	:wikipedia_id "Tom Marino" ;
+	skos:prefLabel "Marino, Tom" .
 
 
 :p20193	a schema:Person ;
@@ -5414,7 +5608,8 @@
 	:votesmart_id "26900" ;
 	:ballotpedia_id "Ed Markey" ;
 	:icpsr_id "14435" ;
-	:wikipedia_id "Ed Markey" .
+	:wikipedia_id "Ed Markey" ;
+	skos:prefLabel "Markey, Edward" .
 
 
 :p20194	a schema:Person ;
@@ -5441,7 +5636,8 @@
 	:govtrack_id "400663" ;
 	:votesmart_id "28593" ;
 	:icpsr_id "20538" ;
-	:wikipedia_id "Doris Matsui" .
+	:wikipedia_id "Doris Matsui" ;
+	skos:prefLabel "Matsui, Doris" .
 
 
 :p20195	a schema:Person ;
@@ -5469,7 +5665,8 @@
 	:votesmart_id "53270" ;
 	:ballotpedia_id "John McCain" ;
 	:icpsr_id "15039" ;
-	:wikipedia_id "John McCain" .
+	:wikipedia_id "John McCain" ;
+	skos:prefLabel "McCain, John" .
 
 
 :p20196	a schema:Person ;
@@ -5497,7 +5694,8 @@
 	:votesmart_id "28918" ;
 	:ballotpedia_id "Kevin McCarthy (California)" ;
 	:icpsr_id "20703" ;
-	:wikipedia_id "Kevin McCarthy (California politician)" .
+	:wikipedia_id "Kevin McCarthy (California politician)" ;
+	skos:prefLabel "McCarthy, Kevin" .
 
 
 :p20197	a schema:Person ;
@@ -5524,7 +5722,8 @@
 	:votesmart_id "49210" ;
 	:ballotpedia_id "Michael McCaul" ;
 	:icpsr_id "20530" ;
-	:wikipedia_id "Michael McCaul" .
+	:wikipedia_id "Michael McCaul" ;
+	skos:prefLabel "McCaul, Michael" .
 
 
 :p20198	a schema:Person ;
@@ -5551,7 +5750,8 @@
 	:govtrack_id "412295" ;
 	:votesmart_id "9715" ;
 	:icpsr_id "20903" ;
-	:wikipedia_id "Tom McClintock" .
+	:wikipedia_id "Tom McClintock" ;
+	skos:prefLabel "McClintock, Tom" .
 
 
 :p20199	a schema:Person ;
@@ -5577,7 +5777,8 @@
 	:votesmart_id "3812" ;
 	:ballotpedia_id "Betty McCollum" ;
 	:icpsr_id "20122" ;
-	:wikipedia_id "Betty McCollum" .
+	:wikipedia_id "Betty McCollum" ;
+	skos:prefLabel "McCollum, Betty" .
 
 
 :p20200	a schema:Person ;
@@ -5604,7 +5805,8 @@
 	:govtrack_id "400263" ;
 	:votesmart_id "552" ;
 	:icpsr_id "29729" ;
-	:wikipedia_id "Jim McGovern (American politician)" .
+	:wikipedia_id "Jim McGovern (American politician)" ;
+	skos:prefLabel "McGovern, James" .
 
 
 :p20201	a schema:Person ;
@@ -5632,7 +5834,8 @@
 	:votesmart_id "21031" ;
 	:ballotpedia_id "Patrick T. McHenry" ;
 	:icpsr_id "20522" ;
-	:wikipedia_id "Patrick McHenry" .
+	:wikipedia_id "Patrick McHenry" ;
+	skos:prefLabel "McHenry, Patrick" .
 
 
 :p20202	a schema:Person ;
@@ -5660,7 +5863,8 @@
 	:votesmart_id "117396" ;
 	:ballotpedia_id "David McKinley" ;
 	:icpsr_id "21188" ;
-	:wikipedia_id "David McKinley" .
+	:wikipedia_id "David McKinley" ;
+	skos:prefLabel "McKinley, David" .
 
 
 :p20203	a schema:Person ;
@@ -5688,7 +5892,8 @@
 	:votesmart_id "3217" ;
 	:ballotpedia_id "Cathy McMorris Rodgers" ;
 	:icpsr_id "20535" ;
-	:wikipedia_id "Cathy McMorris Rodgers" .
+	:wikipedia_id "Cathy McMorris Rodgers" ;
+	skos:prefLabel "McMorris Rodgers, Cathy" .
 
 
 :p20204	a schema:Person ;
@@ -5715,7 +5920,8 @@
 	:govtrack_id "412189" ;
 	:votesmart_id "29474" ;
 	:icpsr_id "20702" ;
-	:wikipedia_id "Jerry McNerney" .
+	:wikipedia_id "Jerry McNerney" ;
+	skos:prefLabel "McNerney, Jerry" .
 
 
 :p20205	a schema:Person ;
@@ -5743,7 +5949,8 @@
 	:votesmart_id "119474" ;
 	:ballotpedia_id "Patrick Meehan" ;
 	:icpsr_id "21168" ;
-	:wikipedia_id "Pat Meehan" .
+	:wikipedia_id "Pat Meehan" ;
+	skos:prefLabel "Meehan, Patrick" .
 
 
 :p20206	a schema:Person ;
@@ -5770,7 +5977,8 @@
 	:govtrack_id "400271" ;
 	:votesmart_id "4360" ;
 	:icpsr_id "29776" ;
-	:wikipedia_id "Gregory Meeks" .
+	:wikipedia_id "Gregory Meeks" ;
+	skos:prefLabel "Meeks, Gregory" .
 
 
 :p20207	a schema:Person ;
@@ -5798,7 +6006,8 @@
 	:votesmart_id "3457" ;
 	:ballotpedia_id "Gwen Moore" ;
 	:icpsr_id "20537" ;
-	:wikipedia_id "Gwen Moore" .
+	:wikipedia_id "Gwen Moore" ;
+	skos:prefLabel "Moore, Gwen" .
 
 
 :p20208	a schema:Person ;
@@ -5827,7 +6036,8 @@
 	:votesmart_id "542" ;
 	:ballotpedia_id "Jerry Moran" ;
 	:icpsr_id "29722" ;
-	:wikipedia_id "Jerry Moran" .
+	:wikipedia_id "Jerry Moran" ;
+	skos:prefLabel "Moran, Jerry" .
 
 
 :p20209	a schema:Person ;
@@ -5856,7 +6066,8 @@
 	:votesmart_id "15841" ;
 	:ballotpedia_id "Lisa Murkowski" ;
 	:icpsr_id "40300" ;
-	:wikipedia_id "Lisa Murkowski" .
+	:wikipedia_id "Lisa Murkowski" ;
+	skos:prefLabel "Murkowski, Lisa" .
 
 
 :p20210	a schema:Person ;
@@ -5885,7 +6096,8 @@
 	:votesmart_id "17189" ;
 	:ballotpedia_id "Christopher S. Murphy" ;
 	:icpsr_id "20707" ;
-	:wikipedia_id "Chris Murphy (Connecticut politician)" .
+	:wikipedia_id "Chris Murphy (Connecticut politician)" ;
+	skos:prefLabel "Murphy, Christopher" .
 
 
 :p20211	a schema:Person ;
@@ -5913,7 +6125,8 @@
 	:votesmart_id "53358" ;
 	:ballotpedia_id "Patty Murray" ;
 	:icpsr_id "49308" ;
-	:wikipedia_id "Patty Murray" .
+	:wikipedia_id "Patty Murray" ;
+	skos:prefLabel "Murray, Patty" .
 
 
 :p20212	a schema:Person ;
@@ -5940,7 +6153,8 @@
 	:govtrack_id "400289" ;
 	:votesmart_id "26980" ;
 	:icpsr_id "29377" ;
-	:wikipedia_id "Jerrold Nadler" .
+	:wikipedia_id "Jerrold Nadler" ;
+	skos:prefLabel "Nadler, Jerrold" .
 
 
 :p20213	a schema:Person ;
@@ -5967,7 +6181,8 @@
 	:govtrack_id "400290" ;
 	:votesmart_id "8393" ;
 	:icpsr_id "29903" ;
-	:wikipedia_id "Grace Napolitano" .
+	:wikipedia_id "Grace Napolitano" ;
+	skos:prefLabel "Napolitano, Grace" .
 
 
 :p20214	a schema:Person ;
@@ -5994,7 +6209,8 @@
 	:govtrack_id "400291" ;
 	:votesmart_id "26895" ;
 	:icpsr_id "15616" ;
-	:wikipedia_id "Richard Neal" .
+	:wikipedia_id "Richard Neal" ;
+	skos:prefLabel "Neal, Richard" .
 
 
 :p20215	a schema:Person ;
@@ -6021,7 +6237,8 @@
 	:votesmart_id "58189" ;
 	:ballotpedia_id "Kristi Noem" ;
 	:icpsr_id "21177" ;
-	:wikipedia_id "Kristi Noem" .
+	:wikipedia_id "Kristi Noem" ;
+	skos:prefLabel "Noem, Kristi" .
 
 
 :p20216	a schema:Person ;
@@ -6047,7 +6264,8 @@
 	:cspan_id "882" ;
 	:govtrack_id "400295" ;
 	:votesmart_id "775" ;
-	:wikipedia_id "Eleanor Holmes Norton" .
+	:wikipedia_id "Eleanor Holmes Norton" ;
+	skos:prefLabel "Norton, Eleanor" .
 
 
 :p20217	a schema:Person ;
@@ -6074,7 +6292,8 @@
 	:votesmart_id "16725" ;
 	:ballotpedia_id "Devin Nunes" ;
 	:icpsr_id "20307" ;
-	:wikipedia_id "Devin Nunes" .
+	:wikipedia_id "Devin Nunes" ;
+	skos:prefLabel "Nunes, Devin" .
 
 
 :p20218	a schema:Person ;
@@ -6100,7 +6319,8 @@
 	:votesmart_id "102008" ;
 	:ballotpedia_id "Pete Olson" ;
 	:icpsr_id "20948" ;
-	:wikipedia_id "Pete Olson" .
+	:wikipedia_id "Pete Olson" ;
+	skos:prefLabel "Olson, Pete" .
 
 
 :p20219	a schema:Person ;
@@ -6127,7 +6347,8 @@
 	:govtrack_id "412443" ;
 	:votesmart_id "69521" ;
 	:icpsr_id "21148" ;
-	:wikipedia_id "Steven Palazzo" .
+	:wikipedia_id "Steven Palazzo" ;
+	skos:prefLabel "Palazzo, Steven" .
 
 
 :p20220	a schema:Person ;
@@ -6154,7 +6375,8 @@
 	:govtrack_id "400308" ;
 	:votesmart_id "26951" ;
 	:icpsr_id "15454" ;
-	:wikipedia_id "Frank Pallone" .
+	:wikipedia_id "Frank Pallone" ;
+	skos:prefLabel "Pallone, Frank" .
 
 
 :p20221	a schema:Person ;
@@ -6181,7 +6403,8 @@
 	:govtrack_id "400309" ;
 	:votesmart_id "478" ;
 	:icpsr_id "29741" ;
-	:wikipedia_id "Bill Pascrell" .
+	:wikipedia_id "Bill Pascrell" ;
+	skos:prefLabel "Pascrell, Bill" .
 
 
 :p20222	a schema:Person ;
@@ -6209,7 +6432,8 @@
 	:votesmart_id "117285" ;
 	:ballotpedia_id "Rand Paul" ;
 	:icpsr_id "41104" ;
-	:wikipedia_id "Rand Paul" .
+	:wikipedia_id "Rand Paul" ;
+	skos:prefLabel "Paul, Rand" .
 
 
 :p20223	a schema:Person ;
@@ -6237,7 +6461,8 @@
 	:votesmart_id "3833" ;
 	:ballotpedia_id "Erik Paulsen" ;
 	:icpsr_id "20924" ;
-	:wikipedia_id "Erik Paulsen" .
+	:wikipedia_id "Erik Paulsen" ;
+	skos:prefLabel "Paulsen, Erik" .
 
 
 :p20224	a schema:Person ;
@@ -6265,7 +6490,8 @@
 	:votesmart_id "10655" ;
 	:ballotpedia_id "Steve Pearce" ;
 	:icpsr_id "20337" ;
-	:wikipedia_id "Steve Pearce (politician)" .
+	:wikipedia_id "Steve Pearce (politician)" ;
+	skos:prefLabel "Pearce, Stevan" .
 
 
 :p20225	a schema:Person ;
@@ -6293,7 +6519,8 @@
 	:votesmart_id "26732" ;
 	:ballotpedia_id "Nancy Pelosi" ;
 	:icpsr_id "15448" ;
-	:wikipedia_id "Nancy Pelosi" .
+	:wikipedia_id "Nancy Pelosi" ;
+	skos:prefLabel "Pelosi, Nancy" .
 
 
 :p20226	a schema:Person ;
@@ -6321,7 +6548,8 @@
 	:votesmart_id "2653" ;
 	:ballotpedia_id "Ed Perlmutter" ;
 	:icpsr_id "20705" ;
-	:wikipedia_id "Ed Perlmutter" .
+	:wikipedia_id "Ed Perlmutter" ;
+	skos:prefLabel "Perlmutter, Ed" .
 
 
 :p20227	a schema:Person ;
@@ -6349,7 +6577,8 @@
 	:votesmart_id "8749" ;
 	:ballotpedia_id "Gary Peters" ;
 	:icpsr_id "20923" ;
-	:wikipedia_id "Gary Peters (politician)" .
+	:wikipedia_id "Gary Peters (politician)" ;
+	skos:prefLabel "Peters, Gary" .
 
 
 :p20228	a schema:Person ;
@@ -6373,7 +6602,8 @@
 	:votesmart_id "26926" ;
 	:ballotpedia_id "Collin Peterson" ;
 	:icpsr_id "29127" ;
-	:wikipedia_id "Collin Peterson" .
+	:wikipedia_id "Collin Peterson" ;
+	skos:prefLabel "Peterson, Collin" .
 
 
 :p20229	a schema:Person ;
@@ -6401,7 +6631,8 @@
 	:votesmart_id "6586" ;
 	:ballotpedia_id "Chellie Pingree" ;
 	:icpsr_id "20920" ;
-	:wikipedia_id "Chellie Pingree" .
+	:wikipedia_id "Chellie Pingree" ;
+	skos:prefLabel "Pingree, Chellie" .
 
 
 :p20230	a schema:Person ;
@@ -6429,7 +6660,8 @@
 	:votesmart_id "49198" ;
 	:ballotpedia_id "Ted Poe" ;
 	:icpsr_id "20528" ;
-	:wikipedia_id "Ted Poe" .
+	:wikipedia_id "Ted Poe" ;
+	skos:prefLabel "Poe, Ted" .
 
 
 :p20231	a schema:Person ;
@@ -6457,7 +6689,8 @@
 	:votesmart_id "106220" ;
 	:ballotpedia_id "Jared Polis" ;
 	:icpsr_id "20904" ;
-	:wikipedia_id "Jared Polis" .
+	:wikipedia_id "Jared Polis" ;
+	skos:prefLabel "Polis, Jared" .
 
 
 :p20232	a schema:Person ;
@@ -6486,7 +6719,8 @@
 	:votesmart_id "27008" ;
 	:ballotpedia_id "Rob Portman" ;
 	:icpsr_id "29386" ;
-	:wikipedia_id "Rob Portman" .
+	:wikipedia_id "Rob Portman" ;
+	skos:prefLabel "Portman, Robert" .
 
 
 :p20233	a schema:Person ;
@@ -6514,7 +6748,8 @@
 	:votesmart_id "24280" ;
 	:ballotpedia_id "Bill Posey" ;
 	:icpsr_id "20909" ;
-	:wikipedia_id "Bill Posey" .
+	:wikipedia_id "Bill Posey" ;
+	skos:prefLabel "Posey, Bill" .
 
 
 :p20234	a schema:Person ;
@@ -6542,7 +6777,8 @@
 	:votesmart_id "119" ;
 	:ballotpedia_id "David Price" ;
 	:icpsr_id "15438" ;
-	:wikipedia_id "David Price (American politician)" .
+	:wikipedia_id "David Price (American politician)" ;
+	skos:prefLabel "Price, David" .
 
 
 :p20235	a schema:Person ;
@@ -6570,7 +6806,8 @@
 	:votesmart_id "83310" ;
 	:ballotpedia_id "Michael Quigley" ;
 	:icpsr_id "20954" ;
-	:wikipedia_id "Mike Quigley (politician)" .
+	:wikipedia_id "Mike Quigley (politician)" ;
+	skos:prefLabel "Quigley, Mike" .
 
 
 :p20236	a schema:Person ;
@@ -6597,7 +6834,8 @@
 	:govtrack_id "412393" ;
 	:votesmart_id "127046" ;
 	:icpsr_id "21101" ;
-	:wikipedia_id "Tom Reed (politician)" .
+	:wikipedia_id "Tom Reed (politician)" ;
+	skos:prefLabel "Reed, Tom" .
 
 
 :p20237	a schema:Person ;
@@ -6625,7 +6863,8 @@
 	:votesmart_id "51346" ;
 	:ballotpedia_id "David Reichert" ;
 	:icpsr_id "20536" ;
-	:wikipedia_id "Dave Reichert" .
+	:wikipedia_id "Dave Reichert" ;
+	skos:prefLabel "Reichert, David" .
 
 
 :p20238	a schema:Person ;
@@ -6653,7 +6892,8 @@
 	:votesmart_id "120678" ;
 	:ballotpedia_id "Jim Renacci" ;
 	:icpsr_id "21164" ;
-	:wikipedia_id "Jim Renacci" .
+	:wikipedia_id "Jim Renacci" ;
+	skos:prefLabel "Renacci, James" .
 
 
 :p20239	a schema:Person ;
@@ -6681,7 +6921,8 @@
 	:votesmart_id "35384" ;
 	:ballotpedia_id "Cedric Richmond" ;
 	:icpsr_id "21137" ;
-	:wikipedia_id "Cedric Richmond" .
+	:wikipedia_id "Cedric Richmond" ;
+	skos:prefLabel "Richmond, Cedric" .
 
 
 :p20240	a schema:Person ;
@@ -6709,7 +6950,8 @@
 	:votesmart_id "71604" ;
 	:ballotpedia_id "Martha Roby" ;
 	:icpsr_id "21192" ;
-	:wikipedia_id "Martha Roby" .
+	:wikipedia_id "Martha Roby" ;
+	skos:prefLabel "Roby, Martha" .
 
 
 :p20241	a schema:Person ;
@@ -6735,7 +6977,8 @@
 	:govtrack_id "412310" ;
 	:votesmart_id "65306" ;
 	:icpsr_id "20947" ;
-	:wikipedia_id "Phil Roe (politician)" .
+	:wikipedia_id "Phil Roe (politician)" ;
+	skos:prefLabel "Roe, David" .
 
 
 :p20242	a schema:Person ;
@@ -6763,7 +7006,8 @@
 	:votesmart_id "26875" ;
 	:ballotpedia_id "Harold Rogers" ;
 	:icpsr_id "14854" ;
-	:wikipedia_id "Hal Rogers" .
+	:wikipedia_id "Hal Rogers" ;
+	skos:prefLabel "Rogers, Harold" .
 
 
 :p20243	a schema:Person ;
@@ -6791,7 +7035,8 @@
 	:votesmart_id "5705" ;
 	:ballotpedia_id "Mike Rogers (Alabama)" ;
 	:icpsr_id "20301" ;
-	:wikipedia_id "Mike Rogers (Alabama politician)" .
+	:wikipedia_id "Mike Rogers (Alabama politician)" ;
+	skos:prefLabel "Rogers, Mike" .
 
 
 :p20244	a schema:Person ;
@@ -6818,7 +7063,8 @@
 	:govtrack_id "400343" ;
 	:votesmart_id "26763" ;
 	:icpsr_id "15621" ;
-	:wikipedia_id "Dana Rohrabacher" .
+	:wikipedia_id "Dana Rohrabacher" ;
+	skos:prefLabel "Rohrabacher, Dana" .
 
 
 :p20245	a schema:Person ;
@@ -6846,7 +7092,8 @@
 	:votesmart_id "34167" ;
 	:ballotpedia_id "Todd Rokita" ;
 	:icpsr_id "21131" ;
-	:wikipedia_id "Todd Rokita" .
+	:wikipedia_id "Todd Rokita" ;
+	skos:prefLabel "Rokita, Todd" .
 
 
 :p20246	a schema:Person ;
@@ -6874,7 +7121,8 @@
 	:votesmart_id "107800" ;
 	:ballotpedia_id "Thomas J. Rooney" ;
 	:icpsr_id "20910" ;
-	:wikipedia_id "Tom Rooney (Florida politician)" .
+	:wikipedia_id "Tom Rooney (Florida politician)" ;
+	skos:prefLabel "Rooney, Thomas" .
 
 
 :p20247	a schema:Person ;
@@ -6902,7 +7150,8 @@
 	:votesmart_id "26815" ;
 	:ballotpedia_id "Ileana Ros-Lehtinen" ;
 	:icpsr_id "15634" ;
-	:wikipedia_id "Ileana Ros-Lehtinen" .
+	:wikipedia_id "Ileana Ros-Lehtinen" ;
+	skos:prefLabel "Ros-Lehtinen, Ileana" .
 
 
 :p20248	a schema:Person ;
@@ -6930,7 +7179,8 @@
 	:votesmart_id "6382" ;
 	:ballotpedia_id "Peter Roskam" ;
 	:icpsr_id "20715" ;
-	:wikipedia_id "Peter Roskam" .
+	:wikipedia_id "Peter Roskam" ;
+	skos:prefLabel "Roskam, Peter" .
 
 
 :p20249	a schema:Person ;
@@ -6958,7 +7208,8 @@
 	:votesmart_id "12813" ;
 	:ballotpedia_id "Dennis A. Ross" ;
 	:icpsr_id "21117" ;
-	:wikipedia_id "Dennis A. Ross" .
+	:wikipedia_id "Dennis A. Ross" ;
+	skos:prefLabel "Ross, Dennis" .
 
 
 :p20250	a schema:Person ;
@@ -6985,7 +7236,8 @@
 	:govtrack_id "400347" ;
 	:votesmart_id "26766" ;
 	:icpsr_id "29317" ;
-	:wikipedia_id "Lucille Roybal-Allard" .
+	:wikipedia_id "Lucille Roybal-Allard" ;
+	skos:prefLabel "Roybal-Allard, Lucille" .
 
 
 :p20251	a schema:Person ;
@@ -7012,7 +7264,8 @@
 	:govtrack_id "400348" ;
 	:votesmart_id "26772" ;
 	:icpsr_id "29321" ;
-	:wikipedia_id "Ed Royce" .
+	:wikipedia_id "Ed Royce" ;
+	skos:prefLabel "Royce, Edward" .
 
 
 :p20252	a schema:Person ;
@@ -7041,7 +7294,8 @@
 	:votesmart_id "1601" ;
 	:ballotpedia_id "Marco Rubio" ;
 	:icpsr_id "41102" ;
-	:wikipedia_id "Marco Rubio" .
+	:wikipedia_id "Marco Rubio" ;
+	skos:prefLabel "Rubio, Marco" .
 
 
 :p20253	a schema:Person ;
@@ -7068,7 +7322,8 @@
 	:govtrack_id "400349" ;
 	:votesmart_id "36130" ;
 	:icpsr_id "20329" ;
-	:wikipedia_id "Dutch Ruppersberger" .
+	:wikipedia_id "Dutch Ruppersberger" ;
+	skos:prefLabel "Ruppersberger, C." .
 
 
 :p20254	a schema:Person ;
@@ -7096,7 +7351,8 @@
 	:votesmart_id "26831" ;
 	:ballotpedia_id "Bobby Rush" ;
 	:icpsr_id "29346" ;
-	:wikipedia_id "Bobby Rush" .
+	:wikipedia_id "Bobby Rush" ;
+	skos:prefLabel "Rush, Bobby" .
 
 
 :p20255	a schema:Person ;
@@ -7124,7 +7380,8 @@
 	:votesmart_id "26344" ;
 	:ballotpedia_id "Paul Ryan" ;
 	:icpsr_id "29939" ;
-	:wikipedia_id "Paul Ryan" .
+	:wikipedia_id "Paul Ryan" ;
+	skos:prefLabel "Ryan, Paul" .
 
 
 :p20256	a schema:Person ;
@@ -7152,7 +7409,8 @@
 	:votesmart_id "45638" ;
 	:ballotpedia_id "Tim Ryan (Ohio)" ;
 	:icpsr_id "20343" ;
-	:wikipedia_id "Tim Ryan (politician)" .
+	:wikipedia_id "Tim Ryan (politician)" ;
+	skos:prefLabel "Ryan, Tim" .
 
 
 :p20257	a schema:Person ;
@@ -7177,7 +7435,8 @@
 	:cspan_id "1031366" ;
 	:govtrack_id "412312" ;
 	:votesmart_id "110903" ;
-	:wikipedia_id "Gregorio Sablan" .
+	:wikipedia_id "Gregorio Sablan" ;
+	skos:prefLabel "Sablan, Gregorio" .
 
 
 :p20258	a schema:Person ;
@@ -7202,7 +7461,8 @@
 	:govtrack_id "412212" ;
 	:votesmart_id "66575" ;
 	:icpsr_id "20724" ;
-	:wikipedia_id "John Sarbanes" .
+	:wikipedia_id "John Sarbanes" ;
+	skos:prefLabel "Sarbanes, John" .
 
 
 :p20259	a schema:Person ;
@@ -7230,7 +7490,8 @@
 	:votesmart_id "9026" ;
 	:ballotpedia_id "Steve Scalise" ;
 	:icpsr_id "20759" ;
-	:wikipedia_id "Steve Scalise" .
+	:wikipedia_id "Steve Scalise" ;
+	skos:prefLabel "Scalise, Steve" .
 
 
 :p20260	a schema:Person ;
@@ -7258,7 +7519,8 @@
 	:votesmart_id "6387" ;
 	:ballotpedia_id "Jan Schakowsky" ;
 	:icpsr_id "29911" ;
-	:wikipedia_id "Jan Schakowsky" .
+	:wikipedia_id "Jan Schakowsky" ;
+	skos:prefLabel "Schakowsky, Janice" .
 
 
 :p20261	a schema:Person ;
@@ -7286,7 +7548,8 @@
 	:votesmart_id "9489" ;
 	:ballotpedia_id "Adam Schiff" ;
 	:icpsr_id "20104" ;
-	:wikipedia_id "Adam Schiff" .
+	:wikipedia_id "Adam Schiff" ;
+	skos:prefLabel "Schiff, Adam" .
 
 
 :p20262	a schema:Person ;
@@ -7314,7 +7577,8 @@
 	:votesmart_id "10813" ;
 	:ballotpedia_id "Kurt Schrader" ;
 	:icpsr_id "20944" ;
-	:wikipedia_id "Kurt Schrader" .
+	:wikipedia_id "Kurt Schrader" ;
+	skos:prefLabel "Schrader, Kurt" .
 
 
 :p20263	a schema:Person ;
@@ -7342,7 +7606,8 @@
 	:votesmart_id "26976" ;
 	:ballotpedia_id "Chuck Schumer" ;
 	:icpsr_id "14858" ;
-	:wikipedia_id "Chuck Schumer" .
+	:wikipedia_id "Chuck Schumer" ;
+	skos:prefLabel "Schumer, Charles" .
 
 
 :p20264	a schema:Person ;
@@ -7370,7 +7635,8 @@
 	:votesmart_id "106387" ;
 	:ballotpedia_id "David Schweikert" ;
 	:icpsr_id "21105" ;
-	:wikipedia_id "David Schweikert" .
+	:wikipedia_id "David Schweikert" ;
+	skos:prefLabel "Schweikert, David" .
 
 
 :p20265	a schema:Person ;
@@ -7398,7 +7664,8 @@
 	:votesmart_id "11812" ;
 	:ballotpedia_id "Austin Scott" ;
 	:icpsr_id "21123" ;
-	:wikipedia_id "Austin Scott (politician)" .
+	:wikipedia_id "Austin Scott (politician)" ;
+	skos:prefLabel "Scott, Austin" .
 
 
 :p20266	a schema:Person ;
@@ -7426,7 +7693,8 @@
 	:votesmart_id "7826" ;
 	:ballotpedia_id "David Scott (Georgia)" ;
 	:icpsr_id "20321" ;
-	:wikipedia_id "David Scott (Georgia politician)" .
+	:wikipedia_id "David Scott (Georgia politician)" ;
+	skos:prefLabel "Scott, David" .
 
 
 :p20267	a schema:Person ;
@@ -7454,7 +7722,8 @@
 	:votesmart_id "27117" ;
 	:ballotpedia_id "Robert C. Scott" ;
 	:icpsr_id "39307" ;
-	:wikipedia_id "Bobby Scott (politician)" .
+	:wikipedia_id "Bobby Scott (politician)" ;
+	skos:prefLabel "Scott, Robert" .
 
 
 :p20268	a schema:Person ;
@@ -7483,7 +7752,8 @@
 	:votesmart_id "11940" ;
 	:ballotpedia_id "Tim Scott" ;
 	:icpsr_id "21173" ;
-	:wikipedia_id "Tim Scott" .
+	:wikipedia_id "Tim Scott" ;
+	skos:prefLabel "Scott, Tim" .
 
 
 :p20269	a schema:Person ;
@@ -7511,7 +7781,8 @@
 	:votesmart_id "27142" ;
 	:ballotpedia_id "Jim Sensenbrenner" ;
 	:icpsr_id "14657" ;
-	:wikipedia_id "Jim Sensenbrenner" .
+	:wikipedia_id "Jim Sensenbrenner" ;
+	skos:prefLabel "Sensenbrenner, F." .
 
 
 :p20270	a schema:Person ;
@@ -7537,7 +7808,8 @@
 	:votesmart_id "26981" ;
 	:ballotpedia_id "Jose Serrano" ;
 	:icpsr_id "29134" ;
-	:wikipedia_id "José E. Serrano" .
+	:wikipedia_id "José E. Serrano" ;
+	skos:prefLabel "Serrano, José" .
 
 
 :p20271	a schema:Person ;
@@ -7565,7 +7837,8 @@
 	:votesmart_id "288" ;
 	:ballotpedia_id "Pete Sessions" ;
 	:icpsr_id "29759" ;
-	:wikipedia_id "Pete Sessions" .
+	:wikipedia_id "Pete Sessions" ;
+	skos:prefLabel "Sessions, Pete" .
 
 
 :p20272	a schema:Person ;
@@ -7593,7 +7866,8 @@
 	:votesmart_id "121621" ;
 	:ballotpedia_id "Terri Sewell" ;
 	:icpsr_id "21102" ;
-	:wikipedia_id "Terri Sewell" .
+	:wikipedia_id "Terri Sewell" ;
+	skos:prefLabel "Sewell, Terri" .
 
 
 :p20273	a schema:Person ;
@@ -7622,7 +7896,8 @@
 	:votesmart_id "53266" ;
 	:ballotpedia_id "Richard Shelby" ;
 	:icpsr_id "14659" ;
-	:wikipedia_id "Richard Shelby" .
+	:wikipedia_id "Richard Shelby" ;
+	skos:prefLabel "Shelby, Richard" .
 
 
 :p20274	a schema:Person ;
@@ -7649,7 +7924,8 @@
 	:govtrack_id "400371" ;
 	:votesmart_id "142" ;
 	:icpsr_id "29707" ;
-	:wikipedia_id "Brad Sherman" .
+	:wikipedia_id "Brad Sherman" ;
+	skos:prefLabel "Sherman, Brad" .
 
 
 :p20275	a schema:Person ;
@@ -7677,7 +7953,8 @@
 	:votesmart_id "246" ;
 	:ballotpedia_id "John M. Shimkus" ;
 	:icpsr_id "29718" ;
-	:wikipedia_id "John Shimkus" .
+	:wikipedia_id "John Shimkus" ;
+	skos:prefLabel "Shimkus, John" .
 
 
 :p20276	a schema:Person ;
@@ -7704,7 +7981,8 @@
 	:govtrack_id "409888" ;
 	:votesmart_id "55693" ;
 	:icpsr_id "20134" ;
-	:wikipedia_id "Bill Shuster" .
+	:wikipedia_id "Bill Shuster" ;
+	skos:prefLabel "Shuster, Bill" .
 
 
 :p20277	a schema:Person ;
@@ -7732,7 +8010,8 @@
 	:votesmart_id "2917" ;
 	:ballotpedia_id "Michael K. Simpson" ;
 	:icpsr_id "29910" ;
-	:wikipedia_id "Mike Simpson" .
+	:wikipedia_id "Mike Simpson" ;
+	skos:prefLabel "Simpson, Michael" .
 
 
 :p20278	a schema:Person ;
@@ -7760,7 +8039,8 @@
 	:votesmart_id "22510" ;
 	:ballotpedia_id "Albio Sires" ;
 	:icpsr_id "20542" ;
-	:wikipedia_id "Albio Sires" .
+	:wikipedia_id "Albio Sires" ;
+	skos:prefLabel "Sires, Albio" .
 
 
 :p20279	a schema:Person ;
@@ -7787,7 +8067,8 @@
 	:govtrack_id "400378" ;
 	:votesmart_id "26991" ;
 	:icpsr_id "15444" ;
-	:wikipedia_id "Louise Slaughter" .
+	:wikipedia_id "Louise Slaughter" ;
+	skos:prefLabel "Slaughter, Louise" .
 
 
 :p20280	a schema:Person ;
@@ -7815,7 +8096,8 @@
 	:votesmart_id "845" ;
 	:ballotpedia_id "Adam Smith" ;
 	:icpsr_id "29768" ;
-	:wikipedia_id "Adam Smith (politician)" .
+	:wikipedia_id "Adam Smith (politician)" ;
+	skos:prefLabel "Smith, Adam" .
 
 
 :p20281	a schema:Person ;
@@ -7842,7 +8124,8 @@
 	:votesmart_id "21284" ;
 	:ballotpedia_id "Adrian Smith" ;
 	:icpsr_id "20729" ;
-	:wikipedia_id "Adrian Smith (politician)" .
+	:wikipedia_id "Adrian Smith (politician)" ;
+	skos:prefLabel "Smith, Adrian" .
 
 
 :p20282	a schema:Person ;
@@ -7869,7 +8152,8 @@
 	:govtrack_id "400380" ;
 	:votesmart_id "26952" ;
 	:icpsr_id "14863" ;
-	:wikipedia_id "Chris Smith (New Jersey politician)" .
+	:wikipedia_id "Chris Smith (New Jersey politician)" ;
+	skos:prefLabel "Smith, Christopher" .
 
 
 :p20283	a schema:Person ;
@@ -7897,7 +8181,8 @@
 	:votesmart_id "27097" ;
 	:ballotpedia_id "Lamar Smith" ;
 	:icpsr_id "15445" ;
-	:wikipedia_id "Lamar Smith" .
+	:wikipedia_id "Lamar Smith" ;
+	skos:prefLabel "Smith, Lamar" .
 
 
 :p20284	a schema:Person ;
@@ -7924,7 +8209,8 @@
 	:govtrack_id "412259" ;
 	:votesmart_id "8425" ;
 	:icpsr_id "20762" ;
-	:wikipedia_id "Jackie Speier" .
+	:wikipedia_id "Jackie Speier" ;
+	skos:prefLabel "Speier, Jackie" .
 
 
 :p20285	a schema:Person ;
@@ -7952,7 +8238,8 @@
 	:votesmart_id "45333" ;
 	:ballotpedia_id "Steve Stivers" ;
 	:icpsr_id "21163" ;
-	:wikipedia_id "Steve Stivers" .
+	:wikipedia_id "Steve Stivers" ;
+	skos:prefLabel "Stivers, Steve" .
 
 
 :p20286	a schema:Person ;
@@ -7979,7 +8266,8 @@
 	:govtrack_id "400355" ;
 	:votesmart_id "29674" ;
 	:icpsr_id "20310" ;
-	:wikipedia_id "Linda Sánchez" .
+	:wikipedia_id "Linda Sánchez" ;
+	skos:prefLabel "Sánchez, Linda" .
 
 
 :p20287	a schema:Person ;
@@ -8006,7 +8294,8 @@
 	:govtrack_id "400402" ;
 	:votesmart_id "26929" ;
 	:icpsr_id "29368" ;
-	:wikipedia_id "Bennie Thompson" .
+	:wikipedia_id "Bennie Thompson" ;
+	skos:prefLabel "Thompson, Bennie" .
 
 
 :p20288	a schema:Person ;
@@ -8033,7 +8322,8 @@
 	:govtrack_id "400403" ;
 	:votesmart_id "3564" ;
 	:icpsr_id "29901" ;
-	:wikipedia_id "Mike Thompson (California politician)" .
+	:wikipedia_id "Mike Thompson (California politician)" ;
+	skos:prefLabel "Thompson, Mike" .
 
 
 :p20289	a schema:Person ;
@@ -8060,7 +8350,8 @@
 	:govtrack_id "412317" ;
 	:votesmart_id "24046" ;
 	:icpsr_id "20946" ;
-	:wikipedia_id "Glenn Thompson (politician)" .
+	:wikipedia_id "Glenn Thompson (politician)" ;
+	skos:prefLabel "Thompson, Glenn" .
 
 
 :p20290	a schema:Person ;
@@ -8087,7 +8378,8 @@
 	:votesmart_id "21706" ;
 	:ballotpedia_id "Mac Thornberry" ;
 	:icpsr_id "29572" ;
-	:wikipedia_id "Mac Thornberry" .
+	:wikipedia_id "Mac Thornberry" ;
+	skos:prefLabel "Thornberry, Mac" .
 
 
 :p20291	a schema:Person ;
@@ -8115,7 +8407,8 @@
 	:votesmart_id "398" ;
 	:ballotpedia_id "John Thune" ;
 	:icpsr_id "29754" ;
-	:wikipedia_id "John Thune" .
+	:wikipedia_id "John Thune" ;
+	skos:prefLabel "Thune, John" .
 
 
 :p20292	a schema:Person ;
@@ -8143,7 +8436,8 @@
 	:votesmart_id "8404" ;
 	:ballotpedia_id "Patrick J. Tiberi" ;
 	:icpsr_id "20130" ;
-	:wikipedia_id "Pat Tiberi" .
+	:wikipedia_id "Pat Tiberi" ;
+	skos:prefLabel "Tiberi, Patrick" .
 
 
 :p20293	a schema:Person ;
@@ -8171,7 +8465,8 @@
 	:votesmart_id "65403" ;
 	:ballotpedia_id "Scott Tipton" ;
 	:icpsr_id "21111" ;
-	:wikipedia_id "Scott Tipton" .
+	:wikipedia_id "Scott Tipton" ;
+	skos:prefLabel "Tipton, Scott" .
 
 
 :p20294	a schema:Person ;
@@ -8198,7 +8493,8 @@
 	:govtrack_id "412319" ;
 	:votesmart_id "4403" ;
 	:icpsr_id "20934" ;
-	:wikipedia_id "Paul Tonko" .
+	:wikipedia_id "Paul Tonko" ;
+	skos:prefLabel "Tonko, Paul" .
 
 
 :p20295	a schema:Person ;
@@ -8227,7 +8523,8 @@
 	:votesmart_id "24096" ;
 	:ballotpedia_id "Pat Toomey" ;
 	:icpsr_id "29935" ;
-	:wikipedia_id "Pat Toomey" .
+	:wikipedia_id "Pat Toomey" ;
+	skos:prefLabel "Toomey, Patrick" .
 
 
 :p20296	a schema:Person ;
@@ -8255,7 +8552,8 @@
 	:votesmart_id "89417" ;
 	:ballotpedia_id "Niki Tsongas" ;
 	:icpsr_id "20754" ;
-	:wikipedia_id "Niki Tsongas" .
+	:wikipedia_id "Niki Tsongas" ;
+	skos:prefLabel "Tsongas, Niki" .
 
 
 :p20297	a schema:Person ;
@@ -8283,7 +8581,8 @@
 	:votesmart_id "45519" ;
 	:ballotpedia_id "Michael R. Turner" ;
 	:icpsr_id "20342" ;
-	:wikipedia_id "Mike Turner" .
+	:wikipedia_id "Mike Turner" ;
+	skos:prefLabel "Turner, Michael" .
 
 
 :p20298	a schema:Person ;
@@ -8311,7 +8610,8 @@
 	:votesmart_id "26906" ;
 	:ballotpedia_id "Fred Upton" ;
 	:icpsr_id "15446" ;
-	:wikipedia_id "Fred Upton" .
+	:wikipedia_id "Fred Upton" ;
+	skos:prefLabel "Upton, Fred" .
 
 
 :p20299	a schema:Person ;
@@ -8338,7 +8638,8 @@
 	:govtrack_id "400415" ;
 	:votesmart_id "6098" ;
 	:icpsr_id "20330" ;
-	:wikipedia_id "Chris Van Hollen" .
+	:wikipedia_id "Chris Van Hollen" ;
+	skos:prefLabel "Van Hollen, Chris" .
 
 
 :p20300	a schema:Person ;
@@ -8364,7 +8665,8 @@
 	:govtrack_id "400416" ;
 	:votesmart_id "26975" ;
 	:icpsr_id "29378" ;
-	:wikipedia_id "Nydia Velázquez" .
+	:wikipedia_id "Nydia Velázquez" ;
+	skos:prefLabel "Velázquez, Nydia" .
 
 
 :p20301	a schema:Person ;
@@ -8392,7 +8694,8 @@
 	:votesmart_id "26851" ;
 	:ballotpedia_id "Peter J. Visclosky" ;
 	:icpsr_id "15124" ;
-	:wikipedia_id "Pete Visclosky" .
+	:wikipedia_id "Pete Visclosky" ;
+	skos:prefLabel "Visclosky, Peter" .
 
 
 :p20302	a schema:Person ;
@@ -8420,7 +8723,8 @@
 	:votesmart_id "8618" ;
 	:ballotpedia_id "Tim Walberg" ;
 	:icpsr_id "20725" ;
-	:wikipedia_id "Tim Walberg" .
+	:wikipedia_id "Tim Walberg" ;
+	skos:prefLabel "Walberg, Tim" .
 
 
 :p20303	a schema:Person ;
@@ -8448,7 +8752,8 @@
 	:votesmart_id "2979" ;
 	:ballotpedia_id "Greg Walden" ;
 	:icpsr_id "29932" ;
-	:wikipedia_id "Greg Walden" .
+	:wikipedia_id "Greg Walden" ;
+	skos:prefLabel "Walden, Greg" .
 
 
 :p20304	a schema:Person ;
@@ -8475,7 +8780,8 @@
 	:votesmart_id "65443" ;
 	:ballotpedia_id "Tim Walz" ;
 	:icpsr_id "20726" ;
-	:wikipedia_id "Tim Walz" .
+	:wikipedia_id "Tim Walz" ;
+	skos:prefLabel "Walz, Timothy" .
 
 
 :p20305	a schema:Person ;
@@ -8503,7 +8809,8 @@
 	:votesmart_id "24301" ;
 	:ballotpedia_id "Debbie Wasserman Schultz" ;
 	:icpsr_id "20504" ;
-	:wikipedia_id "Debbie Wasserman Schultz" .
+	:wikipedia_id "Debbie Wasserman Schultz" ;
+	skos:prefLabel "Wasserman Schultz, Debbie" .
 
 
 :p20306	a schema:Person ;
@@ -8531,7 +8838,8 @@
 	:votesmart_id "26759" ;
 	:ballotpedia_id "Maxine Waters" ;
 	:icpsr_id "29106" ;
-	:wikipedia_id "Maxine Waters" .
+	:wikipedia_id "Maxine Waters" ;
+	skos:prefLabel "Waters, Maxine" .
 
 
 :p20307	a schema:Person ;
@@ -8559,7 +8867,8 @@
 	:votesmart_id "24302" ;
 	:ballotpedia_id "Daniel Webster" ;
 	:icpsr_id "21116" ;
-	:wikipedia_id "Daniel Webster (Florida politician)" .
+	:wikipedia_id "Daniel Webster (Florida politician)" ;
+	skos:prefLabel "Webster, Daniel" .
 
 
 :p20308	a schema:Person ;
@@ -8587,7 +8896,8 @@
 	:votesmart_id "51272" ;
 	:ballotpedia_id "Peter Welch" ;
 	:icpsr_id "20750" ;
-	:wikipedia_id "Peter Welch" .
+	:wikipedia_id "Peter Welch" ;
+	skos:prefLabel "Welch, Peter" .
 
 
 :p20309	a schema:Person ;
@@ -8615,7 +8925,8 @@
 	:votesmart_id "3985" ;
 	:ballotpedia_id "Joe Wilson" ;
 	:icpsr_id "20138" ;
-	:wikipedia_id "Joe Wilson (American politician)" .
+	:wikipedia_id "Joe Wilson (American politician)" ;
+	skos:prefLabel "Wilson, Joe" .
 
 
 :p20310	a schema:Person ;
@@ -8643,7 +8954,8 @@
 	:votesmart_id "17319" ;
 	:ballotpedia_id "Frederica Wilson" ;
 	:icpsr_id "21118" ;
-	:wikipedia_id "Frederica Wilson" .
+	:wikipedia_id "Frederica Wilson" ;
+	skos:prefLabel "Wilson, Frederica" .
 
 
 :p20311	a schema:Person ;
@@ -8671,7 +8983,8 @@
 	:votesmart_id "58133" ;
 	:ballotpedia_id "Robert J. Wittman" ;
 	:icpsr_id "20756" ;
-	:wikipedia_id "Rob Wittman" .
+	:wikipedia_id "Rob Wittman" ;
+	skos:prefLabel "Wittman, Robert" .
 
 
 :p20312	a schema:Person ;
@@ -8699,7 +9012,8 @@
 	:votesmart_id "71815" ;
 	:ballotpedia_id "Steve Womack" ;
 	:icpsr_id "21108" ;
-	:wikipedia_id "Steve Womack" .
+	:wikipedia_id "Steve Womack" ;
+	skos:prefLabel "Womack, Steve" .
 
 
 :p20313	a schema:Person ;
@@ -8726,7 +9040,8 @@
 	:govtrack_id "412416" ;
 	:votesmart_id "122251" ;
 	:icpsr_id "21122" ;
-	:wikipedia_id "Rob Woodall" .
+	:wikipedia_id "Rob Woodall" ;
+	skos:prefLabel "Woodall, Rob" .
 
 
 :p20314	a schema:Person ;
@@ -8754,7 +9069,8 @@
 	:votesmart_id "27036" ;
 	:ballotpedia_id "Ron Wyden" ;
 	:icpsr_id "14871" ;
-	:wikipedia_id "Ron Wyden" .
+	:wikipedia_id "Ron Wyden" ;
+	skos:prefLabel "Wyden, Ron" .
 
 
 :p20315	a schema:Person ;
@@ -8781,7 +9097,8 @@
 	:votesmart_id "58579" ;
 	:ballotpedia_id "John Yarmuth" ;
 	:icpsr_id "20723" ;
-	:wikipedia_id "John Yarmuth" .
+	:wikipedia_id "John Yarmuth" ;
+	skos:prefLabel "Yarmuth, John" .
 
 
 :p20316	a schema:Person ;
@@ -8809,7 +9126,8 @@
 	:votesmart_id "34433" ;
 	:ballotpedia_id "Kevin Yoder" ;
 	:icpsr_id "21135" ;
-	:wikipedia_id "Kevin Yoder" .
+	:wikipedia_id "Kevin Yoder" ;
+	skos:prefLabel "Yoder, Kevin" .
 
 
 :p20317	a schema:Person ;
@@ -8837,7 +9155,8 @@
 	:votesmart_id "26717" ;
 	:ballotpedia_id "Don Young" ;
 	:icpsr_id "14066" ;
-	:wikipedia_id "Don Young" .
+	:wikipedia_id "Don Young" ;
+	skos:prefLabel "Young, Don" .
 
 
 :p20318	a schema:Person ;
@@ -8865,7 +9184,8 @@
 	:votesmart_id "120345" ;
 	:ballotpedia_id "Todd Young" ;
 	:icpsr_id "21133" ;
-	:wikipedia_id "Todd Young" .
+	:wikipedia_id "Todd Young" ;
+	skos:prefLabel "Young, Todd" .
 
 
 :p20319	a schema:Person ;
@@ -8894,7 +9214,8 @@
 	:votesmart_id "2291" ;
 	:ballotpedia_id "Dean Heller" ;
 	:icpsr_id "20730" ;
-	:wikipedia_id "Dean Heller" .
+	:wikipedia_id "Dean Heller" ;
+	skos:prefLabel "Heller, Dean" .
 
 
 :p20320	a schema:Person ;
@@ -8922,7 +9243,8 @@
 	:votesmart_id "12537" ;
 	:ballotpedia_id "Mark Amodei" ;
 	:icpsr_id "21196" ;
-	:wikipedia_id "Mark Amodei" .
+	:wikipedia_id "Mark Amodei" ;
+	skos:prefLabel "Amodei, Mark" .
 
 
 :p20321	a schema:Person ;
@@ -8950,7 +9272,8 @@
 	:votesmart_id "59641" ;
 	:ballotpedia_id "Suzanne Bonamici" ;
 	:icpsr_id "21198" ;
-	:wikipedia_id "Suzanne Bonamici" .
+	:wikipedia_id "Suzanne Bonamici" ;
+	skos:prefLabel "Bonamici, Suzanne" .
 
 
 :p20322	a schema:Person ;
@@ -8977,7 +9300,8 @@
 	:votesmart_id "126272" ;
 	:ballotpedia_id "Suzan DelBene" ;
 	:icpsr_id "31101" ;
-	:wikipedia_id "Suzan DelBene" .
+	:wikipedia_id "Suzan DelBene" ;
+	skos:prefLabel "DelBene, Suzan" .
 
 
 :p20323	a schema:Person ;
@@ -9005,7 +9329,8 @@
 	:votesmart_id "132068" ;
 	:ballotpedia_id "Thomas Massie" ;
 	:icpsr_id "31102" ;
-	:wikipedia_id "Thomas Massie" .
+	:wikipedia_id "Thomas Massie" ;
+	skos:prefLabel "Massie, Thomas" .
 
 
 :p20324	a schema:Person ;
@@ -9031,7 +9356,8 @@
 	:govtrack_id "412506" ;
 	:votesmart_id "90668" ;
 	:icpsr_id "31103" ;
-	:wikipedia_id "Donald Payne Jr." .
+	:wikipedia_id "Donald Payne Jr." ;
+	skos:prefLabel "Payne, Donald" .
 
 
 :p20325	a schema:Person ;
@@ -9059,7 +9385,8 @@
 	:votesmart_id "17852" ;
 	:ballotpedia_id "Brian E. Schatz" ;
 	:icpsr_id "41112" ;
-	:wikipedia_id "Brian Schatz" .
+	:wikipedia_id "Brian Schatz" ;
+	skos:prefLabel "Schatz, Brian" .
 
 
 :p20326	a schema:Person ;
@@ -9087,7 +9414,8 @@
 	:votesmart_id "101632" ;
 	:ballotpedia_id "Bill Foster" ;
 	:icpsr_id "20749" ;
-	:wikipedia_id "Bill Foster (politician)" .
+	:wikipedia_id "Bill Foster (politician)" ;
+	skos:prefLabel "Foster, Bill" .
 
 
 :p20327	a schema:Person ;
@@ -9115,7 +9443,8 @@
 	:votesmart_id "2629" ;
 	:ballotpedia_id "Dina Titus" ;
 	:icpsr_id "20927" ;
-	:wikipedia_id "Dina Titus" .
+	:wikipedia_id "Dina Titus" ;
+	skos:prefLabel "Titus, Dina" .
 
 
 :p20328	a schema:Person ;
@@ -9143,7 +9472,8 @@
 	:votesmart_id "135651" ;
 	:ballotpedia_id "Tom Cotton" ;
 	:icpsr_id "21301" ;
-	:wikipedia_id "Tom Cotton" .
+	:wikipedia_id "Tom Cotton" ;
+	skos:prefLabel "Cotton, Tom" .
 
 
 :p20329	a schema:Person ;
@@ -9171,7 +9501,8 @@
 	:votesmart_id "28338" ;
 	:ballotpedia_id "Kyrsten Sinema" ;
 	:icpsr_id "21300" ;
-	:wikipedia_id "Kyrsten Sinema" .
+	:wikipedia_id "Kyrsten Sinema" ;
+	skos:prefLabel "Sinema, Kyrsten" .
 
 
 :p20330	a schema:Person ;
@@ -9199,7 +9530,8 @@
 	:votesmart_id "29713" ;
 	:ballotpedia_id "Doug LaMalfa" ;
 	:icpsr_id "21302" ;
-	:wikipedia_id "Doug LaMalfa" .
+	:wikipedia_id "Doug LaMalfa" ;
+	skos:prefLabel "LaMalfa, Doug" .
 
 
 :p20331	a schema:Person ;
@@ -9227,7 +9559,8 @@
 	:votesmart_id "59849" ;
 	:ballotpedia_id "Jared Huffman" ;
 	:icpsr_id "21303" ;
-	:wikipedia_id "Jared Huffman" .
+	:wikipedia_id "Jared Huffman" ;
+	skos:prefLabel "Huffman, Jared" .
 
 
 :p20332	a schema:Person ;
@@ -9255,7 +9588,8 @@
 	:votesmart_id "120030" ;
 	:ballotpedia_id "Ami Bera" ;
 	:icpsr_id "21304" ;
-	:wikipedia_id "Ami Bera" .
+	:wikipedia_id "Ami Bera" ;
+	skos:prefLabel "Bera, Ami" .
 
 
 :p20333	a schema:Person ;
@@ -9283,7 +9617,8 @@
 	:votesmart_id "58121" ;
 	:ballotpedia_id "Paul Cook" ;
 	:icpsr_id "21305" ;
-	:wikipedia_id "Paul Cook (politician)" .
+	:wikipedia_id "Paul Cook (politician)" ;
+	skos:prefLabel "Cook, Paul" .
 
 
 :p20334	a schema:Person ;
@@ -9310,7 +9645,8 @@
 	:votesmart_id "129529" ;
 	:ballotpedia_id "Eric Swalwell" ;
 	:icpsr_id "21306" ;
-	:wikipedia_id "Eric Swalwell" .
+	:wikipedia_id "Eric Swalwell" ;
+	skos:prefLabel "Swalwell, Eric" .
 
 
 :p20335	a schema:Person ;
@@ -9338,7 +9674,8 @@
 	:votesmart_id "120200" ;
 	:ballotpedia_id "David G. Valadao" ;
 	:icpsr_id "21307" ;
-	:wikipedia_id "David Valadao" .
+	:wikipedia_id "David Valadao" ;
+	skos:prefLabel "Valadao, David" .
 
 
 :p20336	a schema:Person ;
@@ -9366,7 +9703,8 @@
 	:votesmart_id "59904" ;
 	:ballotpedia_id "Julia Brownley" ;
 	:icpsr_id "21308" ;
-	:wikipedia_id "Julia Brownley" .
+	:wikipedia_id "Julia Brownley" ;
+	skos:prefLabel "Brownley, Julia" .
 
 
 :p20337	a schema:Person ;
@@ -9394,7 +9732,8 @@
 	:votesmart_id "9754" ;
 	:ballotpedia_id "Tony Cardenas" ;
 	:icpsr_id "21309" ;
-	:wikipedia_id "Tony Cárdenas" .
+	:wikipedia_id "Tony Cárdenas" ;
+	skos:prefLabel "Cárdenas, Tony" .
 
 
 :p20338	a schema:Person ;
@@ -9422,7 +9761,8 @@
 	:votesmart_id "136407" ;
 	:ballotpedia_id "Raul Ruiz" ;
 	:icpsr_id "21311" ;
-	:wikipedia_id "Raul Ruiz (politician)" .
+	:wikipedia_id "Raul Ruiz (politician)" ;
+	skos:prefLabel "Ruiz, Raul" .
 
 
 :p20339	a schema:Person ;
@@ -9450,7 +9790,8 @@
 	:votesmart_id "22337" ;
 	:ballotpedia_id "Mark Takano" ;
 	:icpsr_id "21312" ;
-	:wikipedia_id "Mark Takano" .
+	:wikipedia_id "Mark Takano" ;
+	skos:prefLabel "Takano, Mark" .
 
 
 :p20340	a schema:Person ;
@@ -9478,7 +9819,8 @@
 	:votesmart_id "16469" ;
 	:ballotpedia_id "Alan Lowenthal" ;
 	:icpsr_id "21313" ;
-	:wikipedia_id "Alan Lowenthal" .
+	:wikipedia_id "Alan Lowenthal" ;
+	skos:prefLabel "Lowenthal, Alan" .
 
 
 :p20341	a schema:Person ;
@@ -9506,7 +9848,8 @@
 	:votesmart_id "29100" ;
 	:ballotpedia_id "Juan Vargas" ;
 	:icpsr_id "21314" ;
-	:wikipedia_id "Juan Vargas" .
+	:wikipedia_id "Juan Vargas" ;
+	skos:prefLabel "Vargas, Juan" .
 
 
 :p20342	a schema:Person ;
@@ -9533,7 +9876,8 @@
 	:votesmart_id "70351" ;
 	:ballotpedia_id "Scott Peters" ;
 	:icpsr_id "21315" ;
-	:wikipedia_id "Scott Peters (politician)" .
+	:wikipedia_id "Scott Peters (politician)" ;
+	skos:prefLabel "Peters, Scott" .
 
 
 :p20343	a schema:Person ;
@@ -9561,7 +9905,8 @@
 	:votesmart_id "72826" ;
 	:ballotpedia_id "Elzabeth Esty" ;
 	:icpsr_id "21316" ;
-	:wikipedia_id "Elizabeth Esty" .
+	:wikipedia_id "Elizabeth Esty" ;
+	skos:prefLabel "Esty, Elizabeth" .
 
 
 :p20344	a schema:Person ;
@@ -9589,7 +9934,8 @@
 	:votesmart_id "137622" ;
 	:ballotpedia_id "Ted Yoho" ;
 	:icpsr_id "21317" ;
-	:wikipedia_id "Ted Yoho" .
+	:wikipedia_id "Ted Yoho" ;
+	skos:prefLabel "Yoho, Ted" .
 
 
 :p20345	a schema:Person ;
@@ -9617,7 +9963,8 @@
 	:votesmart_id "137630" ;
 	:ballotpedia_id "Ron DeSantis" ;
 	:icpsr_id "21318" ;
-	:wikipedia_id "Ron DeSantis" .
+	:wikipedia_id "Ron DeSantis" ;
+	skos:prefLabel "DeSantis, Ron" .
 
 
 :p20346	a schema:Person ;
@@ -9645,7 +9992,8 @@
 	:votesmart_id "8102" ;
 	:ballotpedia_id "Lois Frankel" ;
 	:icpsr_id "21321" ;
-	:wikipedia_id "Lois Frankel" .
+	:wikipedia_id "Lois Frankel" ;
+	skos:prefLabel "Frankel, Lois" .
 
 
 :p20347	a schema:Person ;
@@ -9673,7 +10021,8 @@
 	:votesmart_id "67851" ;
 	:ballotpedia_id "Doug Collins" ;
 	:icpsr_id "21323" ;
-	:wikipedia_id "Doug Collins (politician)" .
+	:wikipedia_id "Doug Collins (politician)" ;
+	skos:prefLabel "Collins, Doug" .
 
 
 :p20348	a schema:Person ;
@@ -9701,7 +10050,8 @@
 	:votesmart_id "129306" ;
 	:ballotpedia_id "Tulsi Gabbard" ;
 	:icpsr_id "21324" ;
-	:wikipedia_id "Tulsi Gabbard" .
+	:wikipedia_id "Tulsi Gabbard" ;
+	skos:prefLabel "Gabbard, Tulsi" .
 
 
 :p20349	a schema:Person ;
@@ -9729,7 +10079,8 @@
 	:votesmart_id "57442" ;
 	:ballotpedia_id "Tammy Duckworth" ;
 	:icpsr_id "21325" ;
-	:wikipedia_id "Tammy Duckworth" .
+	:wikipedia_id "Tammy Duckworth" ;
+	skos:prefLabel "Duckworth, Tammy" .
 
 
 :p20350	a schema:Person ;
@@ -9757,7 +10108,8 @@
 	:votesmart_id "9622" ;
 	:ballotpedia_id "Rodney Davis (Illinois)" ;
 	:icpsr_id "21328" ;
-	:wikipedia_id "Rodney Davis (politician)" .
+	:wikipedia_id "Rodney Davis (politician)" ;
+	skos:prefLabel "Davis, Rodney" .
 
 
 :p20351	a schema:Person ;
@@ -9785,7 +10137,8 @@
 	:votesmart_id "134964" ;
 	:ballotpedia_id "Cheri Bustos" ;
 	:icpsr_id "21329" ;
-	:wikipedia_id "Cheri Bustos" .
+	:wikipedia_id "Cheri Bustos" ;
+	skos:prefLabel "Bustos, Cheri" .
 
 
 :p20352	a schema:Person ;
@@ -9813,7 +10166,8 @@
 	:votesmart_id "34205" ;
 	:ballotpedia_id "Jackie Walorski" ;
 	:icpsr_id "21330" ;
-	:wikipedia_id "Jackie Walorski" .
+	:wikipedia_id "Jackie Walorski" ;
+	skos:prefLabel "Walorski, Jackie" .
 
 
 :p20353	a schema:Person ;
@@ -9841,7 +10195,8 @@
 	:votesmart_id "135988" ;
 	:ballotpedia_id "Susan Brooks" ;
 	:icpsr_id "21331" ;
-	:wikipedia_id "Susan Brooks" .
+	:wikipedia_id "Susan Brooks" ;
+	skos:prefLabel "Brooks, Susan" .
 
 
 :p20354	a schema:Person ;
@@ -9869,7 +10224,8 @@
 	:votesmart_id "33997" ;
 	:ballotpedia_id "Luke Messer" ;
 	:icpsr_id "21332" ;
-	:wikipedia_id "Luke Messer" .
+	:wikipedia_id "Luke Messer" ;
+	skos:prefLabel "Messer, Luke" .
 
 
 :p20355	a schema:Person ;
@@ -9897,7 +10253,8 @@
 	:votesmart_id "117290" ;
 	:ballotpedia_id "Andy Barr" ;
 	:icpsr_id "21333" ;
-	:wikipedia_id "Andy Barr (American politician)" .
+	:wikipedia_id "Andy Barr (American politician)" ;
+	skos:prefLabel "Barr, Garland" .
 
 
 :p20356	a schema:Person ;
@@ -9926,7 +10283,8 @@
 	:votesmart_id "141272" ;
 	:ballotpedia_id "Elizabeth Warren" ;
 	:icpsr_id "41301" ;
-	:wikipedia_id "Elizabeth Warren" .
+	:wikipedia_id "Elizabeth Warren" ;
+	skos:prefLabel "Warren, Elizabeth" .
 
 
 :p20357	a schema:Person ;
@@ -9953,7 +10311,8 @@
 	:votesmart_id "141275" ;
 	:ballotpedia_id "Joseph Kennedy III" ;
 	:icpsr_id "21335" ;
-	:wikipedia_id "Joe Kennedy III" .
+	:wikipedia_id "Joe Kennedy III" ;
+	skos:prefLabel "Kennedy, Joseph" .
 
 
 :p20358	a schema:Person ;
@@ -9981,7 +10340,8 @@
 	:votesmart_id "135143" ;
 	:ballotpedia_id "John Delaney" ;
 	:icpsr_id "21334" ;
-	:wikipedia_id "John Delaney (Maryland politician)" .
+	:wikipedia_id "John Delaney (Maryland politician)" ;
+	skos:prefLabel "Delaney, John" .
 
 
 :p20359	a schema:Person ;
@@ -10010,7 +10370,8 @@
 	:votesmart_id "22381" ;
 	:ballotpedia_id "Angus King" ;
 	:icpsr_id "41300" ;
-	:wikipedia_id "Angus King" .
+	:wikipedia_id "Angus King" ;
+	skos:prefLabel "King, Angus" .
 
 
 :p20360	a schema:Person ;
@@ -10038,7 +10399,8 @@
 	:votesmart_id "136102" ;
 	:ballotpedia_id "Dan Kildee" ;
 	:icpsr_id "21372" ;
-	:wikipedia_id "Dan Kildee" .
+	:wikipedia_id "Dan Kildee" ;
+	skos:prefLabel "Kildee, Daniel" .
 
 
 :p20361	a schema:Person ;
@@ -10066,7 +10428,8 @@
 	:votesmart_id "138505" ;
 	:ballotpedia_id "Rick Nolan" ;
 	:icpsr_id "14263" ;
-	:wikipedia_id "Rick Nolan" .
+	:wikipedia_id "Rick Nolan" ;
+	skos:prefLabel "Nolan, Richard" .
 
 
 :p20362	a schema:Person ;
@@ -10093,7 +10456,8 @@
 	:votesmart_id "136083" ;
 	:ballotpedia_id "Ann Wagner" ;
 	:icpsr_id "21337" ;
-	:wikipedia_id "Ann Wagner" .
+	:wikipedia_id "Ann Wagner" ;
+	skos:prefLabel "Wagner, Ann" .
 
 
 :p20363	a schema:Person ;
@@ -10121,7 +10485,8 @@
 	:votesmart_id "135720" ;
 	:ballotpedia_id "Steve Daines" ;
 	:icpsr_id "21338" ;
-	:wikipedia_id "Steve Daines" .
+	:wikipedia_id "Steve Daines" ;
+	skos:prefLabel "Daines, Steve" .
 
 
 :p20364	a schema:Person ;
@@ -10149,7 +10514,8 @@
 	:votesmart_id "136448" ;
 	:ballotpedia_id "Richard Hudson" ;
 	:icpsr_id "21346" ;
-	:wikipedia_id "Richard Hudson (American politician)" .
+	:wikipedia_id "Richard Hudson (American politician)" ;
+	skos:prefLabel "Hudson, Richard" .
 
 
 :p20365	a schema:Person ;
@@ -10177,7 +10543,8 @@
 	:votesmart_id "41272" ;
 	:ballotpedia_id "Robert Pittenger" ;
 	:icpsr_id "21347" ;
-	:wikipedia_id "Robert Pittenger" .
+	:wikipedia_id "Robert Pittenger" ;
+	skos:prefLabel "Pittenger, Robert" .
 
 
 :p20366	a schema:Person ;
@@ -10205,7 +10572,8 @@
 	:votesmart_id "136459" ;
 	:ballotpedia_id "Mark Meadows, North Carolina" ;
 	:icpsr_id "21348" ;
-	:wikipedia_id "Mark Meadows (North Carolina politician)" .
+	:wikipedia_id "Mark Meadows (North Carolina politician)" ;
+	skos:prefLabel "Meadows, Mark" .
 
 
 :p20367	a schema:Person ;
@@ -10233,7 +10601,8 @@
 	:votesmart_id "136462" ;
 	:ballotpedia_id "George E.B. Holding" ;
 	:icpsr_id "21349" ;
-	:wikipedia_id "George Holding" .
+	:wikipedia_id "George Holding" ;
+	skos:prefLabel "Holding, George" .
 
 
 :p20368	a schema:Person ;
@@ -10262,7 +10631,8 @@
 	:votesmart_id "41716" ;
 	:ballotpedia_id "Heidi Heitkamp" ;
 	:icpsr_id "41303" ;
-	:wikipedia_id "Heidi Heitkamp" .
+	:wikipedia_id "Heidi Heitkamp" ;
+	skos:prefLabel "Heitkamp, Heidi" .
 
 
 :p20369	a schema:Person ;
@@ -10290,7 +10660,8 @@
 	:votesmart_id "444" ;
 	:ballotpedia_id "Kevin Cramer" ;
 	:icpsr_id "21350" ;
-	:wikipedia_id "Kevin Cramer" .
+	:wikipedia_id "Kevin Cramer" ;
+	skos:prefLabel "Cramer, Kevin" .
 
 
 :p20370	a schema:Person ;
@@ -10319,7 +10690,8 @@
 	:votesmart_id "41963" ;
 	:ballotpedia_id "Deb Fischer" ;
 	:icpsr_id "41302" ;
-	:wikipedia_id "Deb Fischer" .
+	:wikipedia_id "Deb Fischer" ;
+	skos:prefLabel "Fischer, Deb" .
 
 
 :p20371	a schema:Person ;
@@ -10347,7 +10719,8 @@
 	:votesmart_id "122256" ;
 	:ballotpedia_id "Annie Kuster" ;
 	:icpsr_id "21340" ;
-	:wikipedia_id "Ann McLane Kuster" .
+	:wikipedia_id "Ann McLane Kuster" ;
+	skos:prefLabel "Kuster, Ann" .
 
 
 :p20372	a schema:Person ;
@@ -10375,7 +10748,8 @@
 	:votesmart_id "102404" ;
 	:ballotpedia_id "Michelle Lujan Grisham" ;
 	:icpsr_id "21341" ;
-	:wikipedia_id "Michelle Lujan Grisham" .
+	:wikipedia_id "Michelle Lujan Grisham" ;
+	skos:prefLabel "Lujan Grisham, Michelle" .
 
 
 :p20373	a schema:Person ;
@@ -10402,7 +10776,8 @@
 	:votesmart_id "69157" ;
 	:ballotpedia_id "Grace Meng" ;
 	:icpsr_id "21342" ;
-	:wikipedia_id "Grace Meng" .
+	:wikipedia_id "Grace Meng" ;
+	skos:prefLabel "Meng, Grace" .
 
 
 :p20374	a schema:Person ;
@@ -10429,7 +10804,8 @@
 	:votesmart_id "55285" ;
 	:ballotpedia_id "Hakeem Jeffries" ;
 	:icpsr_id "21343" ;
-	:wikipedia_id "Hakeem Jeffries" .
+	:wikipedia_id "Hakeem Jeffries" ;
+	skos:prefLabel "Jeffries, Hakeem" .
 
 
 :p20375	a schema:Person ;
@@ -10456,7 +10832,8 @@
 	:votesmart_id "139760" ;
 	:ballotpedia_id "Sean Maloney" ;
 	:icpsr_id "21344" ;
-	:wikipedia_id "Sean Patrick Maloney" .
+	:wikipedia_id "Sean Patrick Maloney" ;
+	skos:prefLabel "Maloney, Sean" .
 
 
 :p20376	a schema:Person ;
@@ -10484,7 +10861,8 @@
 	:votesmart_id "139770" ;
 	:ballotpedia_id "Chris Collins" ;
 	:icpsr_id "21345" ;
-	:wikipedia_id "Chris Collins (American politician)" .
+	:wikipedia_id "Chris Collins (American politician)" ;
+	skos:prefLabel "Collins, Chris" .
 
 
 :p20377	a schema:Person ;
@@ -10511,7 +10889,8 @@
 	:votesmart_id "135326" ;
 	:ballotpedia_id "Brad Wenstrup" ;
 	:icpsr_id "21351" ;
-	:wikipedia_id "Brad Wenstrup" .
+	:wikipedia_id "Brad Wenstrup" ;
+	skos:prefLabel "Wenstrup, Brad" .
 
 
 :p20378	a schema:Person ;
@@ -10538,7 +10917,8 @@
 	:votesmart_id "2427" ;
 	:ballotpedia_id "Joyce Beatty" ;
 	:icpsr_id "21352" ;
-	:wikipedia_id "Joyce Beatty" .
+	:wikipedia_id "Joyce Beatty" ;
+	skos:prefLabel "Beatty, Joyce" .
 
 
 :p20379	a schema:Person ;
@@ -10566,7 +10946,8 @@
 	:votesmart_id "143052" ;
 	:ballotpedia_id "David Joyce" ;
 	:icpsr_id "21353" ;
-	:wikipedia_id "David Joyce (politician)" .
+	:wikipedia_id "David Joyce (politician)" ;
+	skos:prefLabel "Joyce, David" .
 
 
 :p20380	a schema:Person ;
@@ -10594,7 +10975,8 @@
 	:votesmart_id "135894" ;
 	:ballotpedia_id "Jim Bridenstine" ;
 	:icpsr_id "21354" ;
-	:wikipedia_id "Jim Bridenstine" .
+	:wikipedia_id "Jim Bridenstine" ;
+	skos:prefLabel "Bridenstine, Jim" .
 
 
 :p20381	a schema:Person ;
@@ -10621,7 +11003,8 @@
 	:votesmart_id "135898" ;
 	:ballotpedia_id "Markwayne Mullin" ;
 	:icpsr_id "21355" ;
-	:wikipedia_id "Markwayne Mullin" .
+	:wikipedia_id "Markwayne Mullin" ;
+	skos:prefLabel "Mullin, Markwayne" .
 
 
 :p20382	a schema:Person ;
@@ -10649,7 +11032,8 @@
 	:votesmart_id "59980" ;
 	:ballotpedia_id "Scott Perry" ;
 	:icpsr_id "21356" ;
-	:wikipedia_id "Scott Perry (politician)" .
+	:wikipedia_id "Scott Perry (politician)" ;
+	skos:prefLabel "Perry, Scott" .
 
 
 :p20383	a schema:Person ;
@@ -10677,7 +11061,8 @@
 	:votesmart_id "119466" ;
 	:ballotpedia_id "Keith Rothfus" ;
 	:icpsr_id "21357" ;
-	:wikipedia_id "Keith Rothfus" .
+	:wikipedia_id "Keith Rothfus" ;
+	skos:prefLabel "Rothfus, Keith" .
 
 
 :p20384	a schema:Person ;
@@ -10704,7 +11089,8 @@
 	:votesmart_id "136236" ;
 	:ballotpedia_id "Matt Cartwright" ;
 	:icpsr_id "21358" ;
-	:wikipedia_id "Matt Cartwright" .
+	:wikipedia_id "Matt Cartwright" ;
+	skos:prefLabel "Cartwright, Matthew" .
 
 
 :p20385	a schema:Person ;
@@ -10732,7 +11118,8 @@
 	:votesmart_id "132382" ;
 	:ballotpedia_id "Tom Rice (South Carolina)" ;
 	:icpsr_id "21359" ;
-	:wikipedia_id "Tom Rice" .
+	:wikipedia_id "Tom Rice" ;
+	skos:prefLabel "Rice, Tom" .
 
 
 :p20386	a schema:Person ;
@@ -10760,7 +11147,8 @@
 	:votesmart_id "135705" ;
 	:ballotpedia_id "Ted Cruz" ;
 	:icpsr_id "41304" ;
-	:wikipedia_id "Ted Cruz" .
+	:wikipedia_id "Ted Cruz" ;
+	skos:prefLabel "Cruz, Ted" .
 
 
 :p20387	a schema:Person ;
@@ -10788,7 +11176,8 @@
 	:votesmart_id "102026" ;
 	:ballotpedia_id "Randy Weber" ;
 	:icpsr_id "21360" ;
-	:wikipedia_id "Randy Weber" .
+	:wikipedia_id "Randy Weber" ;
+	skos:prefLabel "Weber, Randy" .
 
 
 :p20388	a schema:Person ;
@@ -10816,7 +11205,8 @@
 	:votesmart_id "78533" ;
 	:ballotpedia_id "Beto O'Rourke" ;
 	:icpsr_id "21361" ;
-	:wikipedia_id "Beto O'Rourke" .
+	:wikipedia_id "Beto O'Rourke" ;
+	skos:prefLabel "O’Rourke, Beto" .
 
 
 :p20389	a schema:Person ;
@@ -10844,7 +11234,8 @@
 	:votesmart_id "49227" ;
 	:ballotpedia_id "Joaquin Castro" ;
 	:icpsr_id "21362" ;
-	:wikipedia_id "Joaquín Castro" .
+	:wikipedia_id "Joaquín Castro" ;
+	skos:prefLabel "Castro, Joaquin" .
 
 
 :p20390	a schema:Person ;
@@ -10871,7 +11262,8 @@
 	:votesmart_id "50112" ;
 	:ballotpedia_id "Roger Williams" ;
 	:icpsr_id "21364" ;
-	:wikipedia_id "Roger Williams (American politician)" .
+	:wikipedia_id "Roger Williams (American politician)" ;
+	skos:prefLabel "Williams, Roger" .
 
 
 :p20391	a schema:Person ;
@@ -10899,7 +11291,8 @@
 	:votesmart_id "49671" ;
 	:ballotpedia_id "Mark Veasey" ;
 	:icpsr_id "21365" ;
-	:wikipedia_id "Marc Veasey" .
+	:wikipedia_id "Marc Veasey" ;
+	skos:prefLabel "Veasey, Marc" .
 
 
 :p20392	a schema:Person ;
@@ -10926,7 +11319,8 @@
 	:votesmart_id "137719" ;
 	:ballotpedia_id "Filemon Vela" ;
 	:icpsr_id "21366" ;
-	:wikipedia_id "Filemon Vela Jr." .
+	:wikipedia_id "Filemon Vela Jr." ;
+	skos:prefLabel "Vela, Filemon" .
 
 
 :p20393	a schema:Person ;
@@ -10954,7 +11348,8 @@
 	:votesmart_id "135930" ;
 	:ballotpedia_id "Chris Stewart" ;
 	:icpsr_id "21367" ;
-	:wikipedia_id "Chris Stewart (politician)" .
+	:wikipedia_id "Chris Stewart (politician)" ;
+	skos:prefLabel "Stewart, Chris" .
 
 
 :p20394	a schema:Person ;
@@ -10983,7 +11378,8 @@
 	:votesmart_id "50772" ;
 	:ballotpedia_id "Tim Kaine" ;
 	:icpsr_id "41305" ;
-	:wikipedia_id "Tim Kaine" .
+	:wikipedia_id "Tim Kaine" ;
+	skos:prefLabel "Kaine, Timothy" .
 
 
 :p20395	a schema:Person ;
@@ -11009,7 +11405,8 @@
 	:votesmart_id "51516" ;
 	:ballotpedia_id "Derek Kilmer" ;
 	:icpsr_id "21368" ;
-	:wikipedia_id "Derek Kilmer" .
+	:wikipedia_id "Derek Kilmer" ;
+	skos:prefLabel "Kilmer, Derek" .
 
 
 :p20396	a schema:Person ;
@@ -11037,7 +11434,8 @@
 	:votesmart_id "126058" ;
 	:ballotpedia_id "Denny Heck" ;
 	:icpsr_id "21369" ;
-	:wikipedia_id "Dennis Heck" .
+	:wikipedia_id "Dennis Heck" ;
+	skos:prefLabel "Heck, Denny" .
 
 
 :p20397	a schema:Person ;
@@ -11065,7 +11463,8 @@
 	:votesmart_id "26238" ;
 	:ballotpedia_id "Mark Pocan" ;
 	:icpsr_id "21370" ;
-	:wikipedia_id "Mark Pocan" .
+	:wikipedia_id "Mark Pocan" ;
+	skos:prefLabel "Pocan, Mark" .
 
 
 :p20398	a schema:Person ;
@@ -11092,7 +11491,8 @@
 	:votesmart_id "33384" ;
 	:ballotpedia_id "Robin Kelly" ;
 	:icpsr_id "21371" ;
-	:wikipedia_id "Robin Kelly" .
+	:wikipedia_id "Robin Kelly" ;
+	skos:prefLabel "Kelly, Robin" .
 
 
 :p20399	a schema:Person ;
@@ -11120,7 +11520,8 @@
 	:votesmart_id "21991" ;
 	:ballotpedia_id "Mark Sanford" ;
 	:icpsr_id "29565" ;
-	:wikipedia_id "Mark Sanford" .
+	:wikipedia_id "Mark Sanford" ;
+	skos:prefLabel "Sanford, Marshall" .
 
 
 :p20400	a schema:Person ;
@@ -11148,7 +11549,8 @@
 	:votesmart_id "59318" ;
 	:ballotpedia_id "Jason Smith (Missouri representative)" ;
 	:icpsr_id "21373" ;
-	:wikipedia_id "Jason Smith (politician)" .
+	:wikipedia_id "Jason Smith (politician)" ;
+	skos:prefLabel "Smith, Jason" .
 
 
 :p20401	a schema:Person ;
@@ -11175,7 +11577,8 @@
 	:votesmart_id "76151" ;
 	:ballotpedia_id "Cory Booker" ;
 	:icpsr_id "41308" ;
-	:wikipedia_id "Cory Booker" .
+	:wikipedia_id "Cory Booker" ;
+	skos:prefLabel "Booker, Cory" .
 
 
 :p20402	a schema:Person ;
@@ -11201,7 +11604,8 @@
 	:votesmart_id "35858" ;
 	:ballotpedia_id "Katherine Clark" ;
 	:icpsr_id "21375" ;
-	:wikipedia_id "Katherine Clark" .
+	:wikipedia_id "Katherine Clark" ;
+	skos:prefLabel "Clark, Katherine" .
 
 
 :p20403	a schema:Person ;
@@ -11227,7 +11631,8 @@
 	:votesmart_id "27584" ;
 	:ballotpedia_id "Bradley Byrne" ;
 	:icpsr_id "21376" ;
-	:wikipedia_id "Bradley Byrne" .
+	:wikipedia_id "Bradley Byrne" ;
+	skos:prefLabel "Byrne, Bradley" .
 
 
 :p20404	a schema:Person ;
@@ -11252,7 +11657,8 @@
 	:votesmart_id "152270" ;
 	:ballotpedia_id "David Brat" ;
 	:icpsr_id "21553" ;
-	:wikipedia_id "Dave Brat" .
+	:wikipedia_id "Dave Brat" ;
+	skos:prefLabel "Brat, David" .
 
 
 :p20405	a schema:Person ;
@@ -11278,7 +11684,8 @@
 	:votesmart_id "116277" ;
 	:ballotpedia_id "Donald Norcross" ;
 	:icpsr_id "21536" ;
-	:wikipedia_id "Donald Norcross" .
+	:wikipedia_id "Donald Norcross" ;
+	skos:prefLabel "Norcross, Donald" .
 
 
 :p20406	a schema:Person ;
@@ -11304,7 +11711,8 @@
 	:votesmart_id "5935" ;
 	:ballotpedia_id "Alma Adams" ;
 	:icpsr_id "21545" ;
-	:wikipedia_id "Alma Adams" .
+	:wikipedia_id "Alma Adams" ;
+	skos:prefLabel "Adams, Alma" .
 
 
 :p20407	a schema:Person ;
@@ -11329,7 +11737,8 @@
 	:govtrack_id "412608" ;
 	:votesmart_id "146274" ;
 	:icpsr_id "21500" ;
-	:wikipedia_id "Gary Palmer (politician)" .
+	:wikipedia_id "Gary Palmer (politician)" ;
+	skos:prefLabel "Palmer, Gary" .
 
 
 :p20408	a schema:Person ;
@@ -11354,7 +11763,8 @@
 	:govtrack_id "412609" ;
 	:votesmart_id "146290" ;
 	:icpsr_id "21503" ;
-	:wikipedia_id "French Hill (politician)" .
+	:wikipedia_id "French Hill (politician)" ;
+	skos:prefLabel "Hill, French" .
 
 
 :p20409	a schema:Person ;
@@ -11379,7 +11789,8 @@
 	:govtrack_id "412610" ;
 	:votesmart_id "119120" ;
 	:icpsr_id "21563" ;
-	:wikipedia_id "Bruce Westerman" .
+	:wikipedia_id "Bruce Westerman" ;
+	skos:prefLabel "Westerman, Bruce" .
 
 
 :p20410	a schema:Person ;
@@ -11404,7 +11815,8 @@
 	:govtrack_id "412611" ;
 	:votesmart_id "137299" ;
 	:icpsr_id "21501" ;
-	:wikipedia_id "Martha McSally" .
+	:wikipedia_id "Martha McSally" ;
+	skos:prefLabel "McSally, Martha" .
 
 
 :p20411	a schema:Person ;
@@ -11428,7 +11840,8 @@
 	:govtrack_id "412612" ;
 	:votesmart_id "123732" ;
 	:icpsr_id "21502" ;
-	:wikipedia_id "Ruben Gallego" .
+	:wikipedia_id "Ruben Gallego" ;
+	skos:prefLabel "Gallego, Ruben" .
 
 
 :p20412	a schema:Person ;
@@ -11452,7 +11865,8 @@
 	:govtrack_id "412613" ;
 	:votesmart_id "69477" ;
 	:icpsr_id "21504" ;
-	:wikipedia_id "Mark DeSaulnier" .
+	:wikipedia_id "Mark DeSaulnier" ;
+	skos:prefLabel "DeSaulnier, Mark" .
 
 
 :p20413	a schema:Person ;
@@ -11478,7 +11892,8 @@
 	:votesmart_id "71098" ;
 	:ballotpedia_id "Stephen Knight" ;
 	:icpsr_id "21505" ;
-	:wikipedia_id "Steve Knight (politician)" .
+	:wikipedia_id "Steve Knight (politician)" ;
+	skos:prefLabel "Knight, Steve" .
 
 
 :p20414	a schema:Person ;
@@ -11503,7 +11918,8 @@
 	:govtrack_id "412615" ;
 	:votesmart_id "70114" ;
 	:icpsr_id "21506" ;
-	:wikipedia_id "Pete Aguilar" .
+	:wikipedia_id "Pete Aguilar" ;
+	skos:prefLabel "Aguilar, Pete" .
 
 
 :p20415	a schema:Person ;
@@ -11529,7 +11945,8 @@
 	:votesmart_id "1516" ;
 	:ballotpedia_id "Ted Lieu" ;
 	:icpsr_id "21507" ;
-	:wikipedia_id "Ted Lieu" .
+	:wikipedia_id "Ted Lieu" ;
+	skos:prefLabel "Lieu, Ted" .
 
 
 :p20416	a schema:Person ;
@@ -11554,7 +11971,8 @@
 	:govtrack_id "412617" ;
 	:votesmart_id "71284" ;
 	:icpsr_id "21508" ;
-	:wikipedia_id "Norma Torres" .
+	:wikipedia_id "Norma Torres" ;
+	skos:prefLabel "Torres, Norma" .
 
 
 :p20417	a schema:Person ;
@@ -11579,7 +11997,8 @@
 	:govtrack_id "412618" ;
 	:votesmart_id "29346" ;
 	:icpsr_id "21509" ;
-	:wikipedia_id "Mimi Walters" .
+	:wikipedia_id "Mimi Walters" ;
+	skos:prefLabel "Walters, Mimi" .
 
 
 :p20418	a schema:Person ;
@@ -11604,7 +12023,8 @@
 	:govtrack_id "412619" ;
 	:votesmart_id "125319" ;
 	:icpsr_id "21510" ;
-	:wikipedia_id "Ken Buck" .
+	:wikipedia_id "Ken Buck" ;
+	skos:prefLabel "Buck, Ken" .
 
 
 :p20419	a schema:Person ;
@@ -11629,7 +12049,8 @@
 	:govtrack_id "412621" ;
 	:votesmart_id "137676" ;
 	:icpsr_id "21512" ;
-	:wikipedia_id "Carlos Curbelo" .
+	:wikipedia_id "Carlos Curbelo" ;
+	skos:prefLabel "Curbelo, Carlos" .
 
 
 :p20420	a schema:Person ;
@@ -11654,7 +12075,8 @@
 	:govtrack_id "412622" ;
 	:votesmart_id "32085" ;
 	:icpsr_id "21513" ;
-	:wikipedia_id "Buddy Carter" .
+	:wikipedia_id "Buddy Carter" ;
+	skos:prefLabel "Carter, Buddy" .
 
 
 :p20421	a schema:Person ;
@@ -11679,7 +12101,8 @@
 	:govtrack_id "412623" ;
 	:votesmart_id "122246" ;
 	:icpsr_id "21514" ;
-	:wikipedia_id "Jody Hice" .
+	:wikipedia_id "Jody Hice" ;
+	skos:prefLabel "Hice, Jody" .
 
 
 :p20422	a schema:Person ;
@@ -11704,7 +12127,8 @@
 	:govtrack_id "412624" ;
 	:votesmart_id "31618" ;
 	:icpsr_id "21515" ;
-	:wikipedia_id "Barry Loudermilk" .
+	:wikipedia_id "Barry Loudermilk" ;
+	skos:prefLabel "Loudermilk, Barry" .
 
 
 :p20423	a schema:Person ;
@@ -11729,7 +12153,8 @@
 	:govtrack_id "412625" ;
 	:votesmart_id "136062" ;
 	:icpsr_id "21516" ;
-	:wikipedia_id "Rick W. Allen" .
+	:wikipedia_id "Rick W. Allen" ;
+	skos:prefLabel "Allen, Rick" .
 
 
 :p20424	a schema:Person ;
@@ -11755,7 +12180,8 @@
 	:votesmart_id "135714" ;
 	:ballotpedia_id "Rod Blum" ;
 	:icpsr_id "21520" ;
-	:wikipedia_id "Rod Blum" .
+	:wikipedia_id "Rod Blum" ;
+	skos:prefLabel "Blum, Rod" .
 
 
 :p20425	a schema:Person ;
@@ -11780,7 +12206,8 @@
 	:govtrack_id "412628" ;
 	:votesmart_id "155218" ;
 	:icpsr_id "21521" ;
-	:wikipedia_id "David Young (Iowa politician)" .
+	:wikipedia_id "David Young (Iowa politician)" ;
+	skos:prefLabel "Young, David" .
 
 
 :p20426	a schema:Person ;
@@ -11805,7 +12232,8 @@
 	:govtrack_id "412629" ;
 	:votesmart_id "6302" ;
 	:icpsr_id "21519" ;
-	:wikipedia_id "Mike Bost" .
+	:wikipedia_id "Mike Bost" ;
+	skos:prefLabel "Bost, Mike" .
 
 
 :p20427	a schema:Person ;
@@ -11830,7 +12258,8 @@
 	:votesmart_id "155414" ;
 	:ballotpedia_id "Ralph Abraham" ;
 	:icpsr_id "21522" ;
-	:wikipedia_id "Ralph Abraham (politician)" .
+	:wikipedia_id "Ralph Abraham (politician)" ;
+	skos:prefLabel "Abraham, Ralph" .
 
 
 :p20428	a schema:Person ;
@@ -11855,7 +12284,8 @@
 	:govtrack_id "412631" ;
 	:votesmart_id "155424" ;
 	:icpsr_id "21523" ;
-	:wikipedia_id "Garret Graves" .
+	:wikipedia_id "Garret Graves" ;
+	skos:prefLabel "Graves, Garret" .
 
 
 :p20429	a schema:Person ;
@@ -11881,7 +12311,8 @@
 	:votesmart_id "146299" ;
 	:ballotpedia_id "Seth Moulton" ;
 	:icpsr_id "21525" ;
-	:wikipedia_id "Seth Moulton" .
+	:wikipedia_id "Seth Moulton" ;
+	skos:prefLabel "Moulton, Seth" .
 
 
 :p20430	a schema:Person ;
@@ -11906,7 +12337,8 @@
 	:govtrack_id "412633" ;
 	:votesmart_id "120909" ;
 	:icpsr_id "21524" ;
-	:wikipedia_id "Bruce Poliquin" .
+	:wikipedia_id "Bruce Poliquin" ;
+	skos:prefLabel "Poliquin, Bruce" .
 
 
 :p20431	a schema:Person ;
@@ -11931,7 +12363,8 @@
 	:govtrack_id "412634" ;
 	:votesmart_id "37676" ;
 	:icpsr_id "21526" ;
-	:wikipedia_id "John Moolenaar" .
+	:wikipedia_id "John Moolenaar" ;
+	skos:prefLabel "Moolenaar, John" .
 
 
 :p20432	a schema:Person ;
@@ -11956,7 +12389,8 @@
 	:govtrack_id "412635" ;
 	:votesmart_id "20157" ;
 	:icpsr_id "21527" ;
-	:wikipedia_id "Mike Bishop (politician)" .
+	:wikipedia_id "Mike Bishop (politician)" ;
+	skos:prefLabel "Bishop, Mike" .
 
 
 :p20433	a schema:Person ;
@@ -11981,7 +12415,8 @@
 	:govtrack_id "412636" ;
 	:votesmart_id "152477" ;
 	:icpsr_id "21528" ;
-	:wikipedia_id "Dave Trott (politician)" .
+	:wikipedia_id "Dave Trott (politician)" ;
+	skos:prefLabel "Trott, Dave" .
 
 
 :p20434	a schema:Person ;
@@ -12006,7 +12441,8 @@
 	:govtrack_id "412637" ;
 	:votesmart_id "152482" ;
 	:icpsr_id "21529" ;
-	:wikipedia_id "Debbie Dingell" .
+	:wikipedia_id "Debbie Dingell" ;
+	skos:prefLabel "Dingell, Debbie" .
 
 
 :p20435	a schema:Person ;
@@ -12031,7 +12467,8 @@
 	:govtrack_id "412638" ;
 	:votesmart_id "78851" ;
 	:icpsr_id "21530" ;
-	:wikipedia_id "Brenda Lawrence" .
+	:wikipedia_id "Brenda Lawrence" ;
+	skos:prefLabel "Lawrence, Brenda" .
 
 
 :p20436	a schema:Person ;
@@ -12056,7 +12493,8 @@
 	:govtrack_id "412639" ;
 	:votesmart_id "38894" ;
 	:icpsr_id "21531" ;
-	:wikipedia_id "Tom Emmer" .
+	:wikipedia_id "Tom Emmer" ;
+	skos:prefLabel "Emmer, Tom" .
 
 
 :p20437	a schema:Person ;
@@ -12081,7 +12519,8 @@
 	:govtrack_id "412641" ;
 	:votesmart_id "102964" ;
 	:icpsr_id "21544" ;
-	:wikipedia_id "David Rouzer" .
+	:wikipedia_id "David Rouzer" ;
+	skos:prefLabel "Rouzer, David" .
 
 
 :p20438	a schema:Person ;
@@ -12106,7 +12545,8 @@
 	:govtrack_id "412643" ;
 	:votesmart_id "152113" ;
 	:icpsr_id "21537" ;
-	:wikipedia_id "Tom MacArthur" .
+	:wikipedia_id "Tom MacArthur" ;
+	skos:prefLabel "MacArthur, Tom" .
 
 
 :p20439	a schema:Person ;
@@ -12131,7 +12571,8 @@
 	:govtrack_id "412644" ;
 	:votesmart_id "24799" ;
 	:icpsr_id "21538" ;
-	:wikipedia_id "Bonnie Watson Coleman" .
+	:wikipedia_id "Bonnie Watson Coleman" ;
+	skos:prefLabel "Watson Coleman, Bonnie" .
 
 
 :p20440	a schema:Person ;
@@ -12156,7 +12597,8 @@
 	:govtrack_id "412646" ;
 	:votesmart_id "110252" ;
 	:icpsr_id "21539" ;
-	:wikipedia_id "Lee Zeldin" .
+	:wikipedia_id "Lee Zeldin" ;
+	skos:prefLabel "Zeldin, Lee" .
 
 
 :p20441	a schema:Person ;
@@ -12181,7 +12623,8 @@
 	:govtrack_id "412647" ;
 	:votesmart_id "127653" ;
 	:icpsr_id "21540" ;
-	:wikipedia_id "Kathleen Rice" .
+	:wikipedia_id "Kathleen Rice" ;
+	skos:prefLabel "Rice, Kathleen" .
 
 
 :p20442	a schema:Person ;
@@ -12206,7 +12649,8 @@
 	:govtrack_id "412648" ;
 	:votesmart_id "152539" ;
 	:icpsr_id "21541" ;
-	:wikipedia_id "Elise Stefanik" .
+	:wikipedia_id "Elise Stefanik" ;
+	skos:prefLabel "Stefanik, Elise" .
 
 
 :p20443	a schema:Person ;
@@ -12230,7 +12674,8 @@
 	:govtrack_id "412649" ;
 	:votesmart_id "152546" ;
 	:icpsr_id "21542" ;
-	:wikipedia_id "John Katko" .
+	:wikipedia_id "John Katko" ;
+	skos:prefLabel "Katko, John" .
 
 
 :p20444	a schema:Person ;
@@ -12255,7 +12700,8 @@
 	:govtrack_id "412650" ;
 	:votesmart_id "106528" ;
 	:icpsr_id "21546" ;
-	:wikipedia_id "Steve Russell (politician)" .
+	:wikipedia_id "Steve Russell (politician)" ;
+	skos:prefLabel "Russell, Steve" .
 
 
 :p20445	a schema:Person ;
@@ -12280,7 +12726,8 @@
 	:govtrack_id "412651" ;
 	:votesmart_id "133557" ;
 	:icpsr_id "21547" ;
-	:wikipedia_id "Ryan Costello" .
+	:wikipedia_id "Ryan Costello" ;
+	skos:prefLabel "Costello, Ryan" .
 
 
 :p20446	a schema:Person ;
@@ -12305,7 +12752,8 @@
 	:govtrack_id "412652" ;
 	:votesmart_id "47357" ;
 	:icpsr_id "21548" ;
-	:wikipedia_id "Brendan Boyle" .
+	:wikipedia_id "Brendan Boyle" ;
+	skos:prefLabel "Boyle, Brendan" .
 
 
 :p20447	a schema:Person ;
@@ -12330,7 +12778,8 @@
 	:govtrack_id "412653" ;
 	:votesmart_id "147381" ;
 	:icpsr_id "21549" ;
-	:wikipedia_id "John Ratcliffe (American politician)" .
+	:wikipedia_id "John Ratcliffe (American politician)" ;
+	skos:prefLabel "Ratcliffe, John" .
 
 
 :p20448	a schema:Person ;
@@ -12355,7 +12804,8 @@
 	:govtrack_id "412654" ;
 	:votesmart_id "116911" ;
 	:icpsr_id "21550" ;
-	:wikipedia_id "Will Hurd" .
+	:wikipedia_id "Will Hurd" ;
+	skos:prefLabel "Hurd, Will" .
 
 
 :p20449	a schema:Person ;
@@ -12380,7 +12830,8 @@
 	:govtrack_id "412655" ;
 	:votesmart_id "360" ;
 	:icpsr_id "21551" ;
-	:wikipedia_id "Brian Babin" .
+	:wikipedia_id "Brian Babin" ;
+	skos:prefLabel "Babin, Brian" .
 
 
 :p20450	a schema:Person ;
@@ -12405,7 +12856,8 @@
 	:govtrack_id "412656" ;
 	:votesmart_id "135957" ;
 	:icpsr_id "21552" ;
-	:wikipedia_id "Mia Love" .
+	:wikipedia_id "Mia Love" ;
+	skos:prefLabel "Love, Mia" .
 
 
 :p20451	a schema:Person ;
@@ -12430,7 +12882,8 @@
 	:govtrack_id "412657" ;
 	:votesmart_id "1707" ;
 	:icpsr_id "21554" ;
-	:wikipedia_id "Don Beyer" .
+	:wikipedia_id "Don Beyer" ;
+	skos:prefLabel "Beyer, Donald" .
 
 
 :p20452	a schema:Person ;
@@ -12456,7 +12909,8 @@
 	:votesmart_id "112252" ;
 	:ballotpedia_id "Barbara Comstock" ;
 	:icpsr_id "21555" ;
-	:wikipedia_id "Barbara Comstock" .
+	:wikipedia_id "Barbara Comstock" ;
+	skos:prefLabel "Comstock, Barbara" .
 
 
 :p20453	a schema:Person ;
@@ -12479,7 +12933,8 @@
 	:opensecrets_id "N00035000" ;
 	:cspan_id "79090" ;
 	:govtrack_id "412659" ;
-	:wikipedia_id "Stacey Plaskett" .
+	:wikipedia_id "Stacey Plaskett" ;
+	skos:prefLabel "Plaskett, Stacey" .
 
 
 :p20454	a schema:Person ;
@@ -12504,7 +12959,8 @@
 	:govtrack_id "412660" ;
 	:votesmart_id "51522" ;
 	:icpsr_id "21556" ;
-	:wikipedia_id "Dan Newhouse" .
+	:wikipedia_id "Dan Newhouse" ;
+	skos:prefLabel "Newhouse, Dan" .
 
 
 :p20455	a schema:Person ;
@@ -12529,7 +12985,8 @@
 	:govtrack_id "412661" ;
 	:votesmart_id "3493" ;
 	:icpsr_id "21559" ;
-	:wikipedia_id "Glenn Grothman" .
+	:wikipedia_id "Glenn Grothman" ;
+	skos:prefLabel "Grothman, Glenn" .
 
 
 :p20456	a schema:Person ;
@@ -12554,7 +13011,8 @@
 	:govtrack_id "412662" ;
 	:votesmart_id "145943" ;
 	:icpsr_id "21557" ;
-	:wikipedia_id "Alex Mooney" .
+	:wikipedia_id "Alex Mooney" ;
+	skos:prefLabel "Mooney, Alex" .
 
 
 :p20457	a schema:Person ;
@@ -12579,7 +13037,8 @@
 	:govtrack_id "412663" ;
 	:votesmart_id "8297" ;
 	:icpsr_id "21558" ;
-	:wikipedia_id "Evan Jenkins (politician)" .
+	:wikipedia_id "Evan Jenkins (politician)" ;
+	skos:prefLabel "Jenkins, Evan" .
 
 
 :p20458	a schema:Person ;
@@ -12602,7 +13061,8 @@
 	:opensecrets_id "N00007635" ;
 	:cspan_id "5188" ;
 	:govtrack_id "412664" ;
-	:wikipedia_id "Amata Coleman Radewagen" .
+	:wikipedia_id "Amata Coleman Radewagen" ;
+	skos:prefLabel "Amata, Aumua" .
 
 
 :p20459	a schema:Person ;
@@ -12628,7 +13088,8 @@
 	:govtrack_id "412665" ;
 	:votesmart_id "114964" ;
 	:icpsr_id "41500" ;
-	:wikipedia_id "Dan Sullivan (American senator)" .
+	:wikipedia_id "Dan Sullivan (American senator)" ;
+	skos:prefLabel "Sullivan, Dan" .
 
 
 :p20460	a schema:Person ;
@@ -12654,7 +13115,8 @@
 	:govtrack_id "412666" ;
 	:votesmart_id "151330" ;
 	:icpsr_id "41501" ;
-	:wikipedia_id "David Perdue" .
+	:wikipedia_id "David Perdue" ;
+	skos:prefLabel "Perdue, David" .
 
 
 :p20461	a schema:Person ;
@@ -12680,7 +13142,8 @@
 	:govtrack_id "412667" ;
 	:votesmart_id "128583" ;
 	:icpsr_id "41502" ;
-	:wikipedia_id "Joni Ernst" .
+	:wikipedia_id "Joni Ernst" ;
+	skos:prefLabel "Ernst, Joni" .
 
 
 :p20462	a schema:Person ;
@@ -12706,7 +13169,8 @@
 	:govtrack_id "412668" ;
 	:votesmart_id "57717" ;
 	:icpsr_id "41504" ;
-	:wikipedia_id "Thom Tillis" .
+	:wikipedia_id "Thom Tillis" ;
+	skos:prefLabel "Tillis, Thom" .
 
 
 :p20463	a schema:Person ;
@@ -12732,7 +13196,8 @@
 	:govtrack_id "412669" ;
 	:votesmart_id "7455" ;
 	:icpsr_id "41505" ;
-	:wikipedia_id "Mike Rounds" .
+	:wikipedia_id "Mike Rounds" ;
+	skos:prefLabel "Rounds, Mike" .
 
 
 :p20464	a schema:Person ;
@@ -12757,7 +13222,8 @@
 	:govtrack_id "412670" ;
 	:votesmart_id "146255" ;
 	:icpsr_id "21543" ;
-	:wikipedia_id "Mark Walker (North Carolina politician)" .
+	:wikipedia_id "Mark Walker (North Carolina politician)" ;
+	skos:prefLabel "Walker, Mark" .
 
 
 :p20465	a schema:Person ;
@@ -12783,7 +13249,8 @@
 	:govtrack_id "412671" ;
 	:votesmart_id "150182" ;
 	:icpsr_id "41503" ;
-	:wikipedia_id "Ben Sasse" .
+	:wikipedia_id "Ben Sasse" ;
+	skos:prefLabel "Sasse, Benjamin" .
 
 
 :p20466	a schema:Person ;
@@ -12809,7 +13276,8 @@
 	:votesmart_id "127760" ;
 	:ballotpedia_id "Daniel Donovan (New York)" ;
 	:icpsr_id "21560" ;
-	:wikipedia_id "Dan Donovan (politician)" .
+	:wikipedia_id "Dan Donovan (politician)" ;
+	skos:prefLabel "Donovan, Daniel" .
 
 
 :p20467	a schema:Person ;
@@ -12835,7 +13303,8 @@
 	:votesmart_id "156389" ;
 	:ballotpedia_id "Trent Kelly" ;
 	:icpsr_id "21561" ;
-	:wikipedia_id "Trent Kelly" .
+	:wikipedia_id "Trent Kelly" ;
+	skos:prefLabel "Kelly, Trent" .
 
 
 :p20468	a schema:Person ;
@@ -12861,7 +13330,8 @@
 	:votesmart_id "128760" ;
 	:ballotpedia_id "Darin LaHood" ;
 	:icpsr_id "21562" ;
-	:wikipedia_id "Darin LaHood" .
+	:wikipedia_id "Darin LaHood" ;
+	skos:prefLabel "LaHood, Darin" .
 
 
 :p20469	a schema:Person ;
@@ -12887,7 +13357,8 @@
 	:votesmart_id "166760" ;
 	:ballotpedia_id "Warren Davidson" ;
 	:icpsr_id "21564" ;
-	:wikipedia_id "Warren Davidson" .
+	:wikipedia_id "Warren Davidson" ;
+	skos:prefLabel "Davidson, Warren" .
 
 
 :p20470	a schema:Person ;
@@ -12913,7 +13384,8 @@
 	:votesmart_id "17745" ;
 	:ballotpedia_id "Colleen Hanabusa" ;
 	:icpsr_id "21124" ;
-	:wikipedia_id "Colleen Hanabusa" .
+	:wikipedia_id "Colleen Hanabusa" ;
+	skos:prefLabel "Hanabusa, Colleen" .
 
 
 :p20471	a schema:Person ;
@@ -12937,7 +13409,8 @@
 	:votesmart_id "35169" ;
 	:ballotpedia_id "James Comer Jr." ;
 	:icpsr_id "21565" ;
-	:wikipedia_id "James Comer (politician)" .
+	:wikipedia_id "James Comer (politician)" ;
+	skos:prefLabel "Comer, James" .
 
 
 :p20472	a schema:Person ;
@@ -12962,7 +13435,8 @@
 	:votesmart_id "9128" ;
 	:ballotpedia_id "Dwight Evans" ;
 	:icpsr_id "21566" ;
-	:wikipedia_id "Dwight Evans (politician)" .
+	:wikipedia_id "Dwight Evans (politician)" ;
+	skos:prefLabel "Evans, Dwight" .
 
 
 :p20473	a schema:Person ;
@@ -12987,7 +13461,8 @@
 	:votesmart_id "120012" ;
 	:ballotpedia_id "Kamala Harris" ;
 	:icpsr_id "41701" ;
-	:wikipedia_id "Kamala Harris" .
+	:wikipedia_id "Kamala Harris" ;
+	skos:prefLabel "Harris, Kamala" .
 
 
 :p20474	a schema:Person ;
@@ -13012,7 +13487,8 @@
 	:votesmart_id "35496" ;
 	:ballotpedia_id "John Neely Kennedy" ;
 	:icpsr_id "41703" ;
-	:wikipedia_id "John Neely Kennedy" .
+	:wikipedia_id "John Neely Kennedy" ;
+	skos:prefLabel "Kennedy, John" .
 
 
 :p20475	a schema:Person ;
@@ -13037,7 +13513,8 @@
 	:votesmart_id "42552" ;
 	:ballotpedia_id "Maggie Hassan" ;
 	:icpsr_id "41702" ;
-	:wikipedia_id "Maggie Hassan" .
+	:wikipedia_id "Maggie Hassan" ;
+	skos:prefLabel "Hassan, Margaret" .
 
 
 :p20476	a schema:Person ;
@@ -13063,7 +13540,8 @@
 	:votesmart_id "69579" ;
 	:ballotpedia_id "Catherine Cortez Masto" ;
 	:icpsr_id "41700" ;
-	:wikipedia_id "Catherine Cortez Masto" .
+	:wikipedia_id "Catherine Cortez Masto" ;
+	skos:prefLabel "Cortez Masto, Catherine" .
 
 
 :p20477	a schema:Person ;
@@ -13090,7 +13568,8 @@
 	:votesmart_id "134948" ;
 	:ballotpedia_id "Brad Schneider" ;
 	:icpsr_id "21326" ;
-	:wikipedia_id "Brad Schneider" .
+	:wikipedia_id "Brad Schneider" ;
+	skos:prefLabel "Schneider, Bradley" .
 
 
 :p20478	a schema:Person ;
@@ -13116,7 +13595,8 @@
 	:votesmart_id "65891" ;
 	:ballotpedia_id "Carol Shea-Porter" ;
 	:icpsr_id "20731" ;
-	:wikipedia_id "Carol Shea-Porter" .
+	:wikipedia_id "Carol Shea-Porter" ;
+	skos:prefLabel "Shea-Porter, Carol" .
 
 
 :p20479	a schema:Person ;
@@ -13139,7 +13619,8 @@
 	:govtrack_id "412682" ;
 	:votesmart_id "28499" ;
 	:icpsr_id "21739" ;
-	:wikipedia_id "Tom O'Halleran" .
+	:wikipedia_id "Tom O'Halleran" ;
+	skos:prefLabel "O’Halleran, Tom" .
 
 
 :p20480	a schema:Person ;
@@ -13163,7 +13644,8 @@
 	:govtrack_id "412683" ;
 	:votesmart_id "28088" ;
 	:icpsr_id "21705" ;
-	:wikipedia_id "Andy Biggs" .
+	:wikipedia_id "Andy Biggs" ;
+	skos:prefLabel "Biggs, Andy" .
 
 
 :p20481	a schema:Person ;
@@ -13187,7 +13669,8 @@
 	:govtrack_id "412684" ;
 	:votesmart_id "29473" ;
 	:icpsr_id "21728" ;
-	:wikipedia_id "Ro Khanna" .
+	:wikipedia_id "Ro Khanna" ;
+	skos:prefLabel "Khanna, Ro" .
 
 
 :p20482	a schema:Person ;
@@ -13211,7 +13694,8 @@
 	:govtrack_id "412685" ;
 	:votesmart_id "169078" ;
 	:icpsr_id "21740" ;
-	:wikipedia_id "Jimmy Panetta" .
+	:wikipedia_id "Jimmy Panetta" ;
+	skos:prefLabel "Panetta, Jimmy" .
 
 
 :p20483	a schema:Person ;
@@ -13235,7 +13719,8 @@
 	:govtrack_id "412686" ;
 	:votesmart_id "81569" ;
 	:icpsr_id "21709" ;
-	:wikipedia_id "Salud Carbajal" .
+	:wikipedia_id "Salud Carbajal" ;
+	skos:prefLabel "Carbajal, Salud" .
 
 
 :p20484	a schema:Person ;
@@ -13258,7 +13743,8 @@
 	:govtrack_id "412687" ;
 	:votesmart_id "166270" ;
 	:icpsr_id "21703" ;
-	:wikipedia_id "Nanette Barragán" .
+	:wikipedia_id "Nanette Barragán" ;
+	skos:prefLabel "Barragán, Nanette" .
 
 
 :p20485	a schema:Person ;
@@ -13282,7 +13768,8 @@
 	:govtrack_id "412688" ;
 	:votesmart_id "9732" ;
 	:icpsr_id "21711" ;
-	:wikipedia_id "Lou Correa" .
+	:wikipedia_id "Lou Correa" ;
+	skos:prefLabel "Correa, J." .
 
 
 :p20486	a schema:Person ;
@@ -13305,7 +13792,8 @@
 	:govtrack_id "412689" ;
 	:votesmart_id "173249" ;
 	:icpsr_id "21706" ;
-	:wikipedia_id "Lisa Blunt Rochester" .
+	:wikipedia_id "Lisa Blunt Rochester" ;
+	skos:prefLabel "Blunt Rochester, Lisa" .
 
 
 :p20487	a schema:Person ;
@@ -13329,7 +13817,8 @@
 	:govtrack_id "412690" ;
 	:votesmart_id "117101" ;
 	:icpsr_id "21719" ;
-	:wikipedia_id "Matt Gaetz" .
+	:wikipedia_id "Matt Gaetz" ;
+	skos:prefLabel "Gaetz, Matt" .
 
 
 :p20488	a schema:Person ;
@@ -13353,7 +13842,8 @@
 	:govtrack_id "412691" ;
 	:votesmart_id "166297" ;
 	:icpsr_id "21714" ;
-	:wikipedia_id "Neal Dunn" .
+	:wikipedia_id "Neal Dunn" ;
+	skos:prefLabel "Dunn, Neal" .
 
 
 :p20489	a schema:Person ;
@@ -13376,7 +13866,8 @@
 	:govtrack_id "412692" ;
 	:votesmart_id "172542" ;
 	:icpsr_id "21744" ;
-	:wikipedia_id "John Rutherford (Florida politician)" .
+	:wikipedia_id "John Rutherford (Florida politician)" ;
+	skos:prefLabel "Rutherford, John" .
 
 
 :p20490	a schema:Person ;
@@ -13399,7 +13890,8 @@
 	:govtrack_id "412693" ;
 	:votesmart_id "24263" ;
 	:icpsr_id "21732" ;
-	:wikipedia_id "Al Lawson" .
+	:wikipedia_id "Al Lawson" ;
+	skos:prefLabel "Lawson, Al" .
 
 
 :p20491	a schema:Person ;
@@ -13423,7 +13915,8 @@
 	:govtrack_id "412694" ;
 	:votesmart_id "173426" ;
 	:icpsr_id "21738" ;
-	:wikipedia_id "Stephanie Murphy" .
+	:wikipedia_id "Stephanie Murphy" ;
+	skos:prefLabel "Murphy, Stephanie" .
 
 
 :p20492	a schema:Person ;
@@ -13447,7 +13940,8 @@
 	:govtrack_id "412695" ;
 	:votesmart_id "67618" ;
 	:icpsr_id "21746" ;
-	:wikipedia_id "Darren Soto" .
+	:wikipedia_id "Darren Soto" ;
+	skos:prefLabel "Soto, Darren" .
 
 
 :p20493	a schema:Person ;
@@ -13471,7 +13965,8 @@
 	:govtrack_id "412696" ;
 	:votesmart_id "137637" ;
 	:icpsr_id "21713" ;
-	:wikipedia_id "Val Demings" .
+	:wikipedia_id "Val Demings" ;
+	skos:prefLabel "Demings, Val" .
 
 
 :p20494	a schema:Person ;
@@ -13494,7 +13989,8 @@
 	:govtrack_id "412697" ;
 	:votesmart_id "24311" ;
 	:icpsr_id "21712" ;
-	:wikipedia_id "Charlie Crist" .
+	:wikipedia_id "Charlie Crist" ;
+	skos:prefLabel "Crist, Charlie" .
 
 
 :p20495	a schema:Person ;
@@ -13519,7 +14015,8 @@
 	:votesmart_id "166245" ;
 	:ballotpedia_id "Brian Mast" ;
 	:icpsr_id "21735" ;
-	:wikipedia_id "Brian Mast" .
+	:wikipedia_id "Brian Mast" ;
+	skos:prefLabel "Mast, Brian" .
 
 
 :p20496	a schema:Person ;
@@ -13543,7 +14040,8 @@
 	:govtrack_id "412699" ;
 	:votesmart_id "172678" ;
 	:icpsr_id "21742" ;
-	:wikipedia_id "Francis Rooney" .
+	:wikipedia_id "Francis Rooney" ;
+	skos:prefLabel "Rooney, Francis" .
 
 
 :p20497	a schema:Person ;
@@ -13568,7 +14066,8 @@
 	:votesmart_id "168132" ;
 	:ballotpedia_id "Drew Ferguson" ;
 	:icpsr_id "21717" ;
-	:wikipedia_id "Drew Ferguson (politician)" .
+	:wikipedia_id "Drew Ferguson (politician)" ;
+	skos:prefLabel "Ferguson, A." .
 
 
 :p20498	a schema:Person ;
@@ -13591,7 +14090,8 @@
 	:govtrack_id "412701" ;
 	:votesmart_id "117519" ;
 	:icpsr_id "21730" ;
-	:wikipedia_id "Raja Krishnamoorthi" .
+	:wikipedia_id "Raja Krishnamoorthi" ;
+	skos:prefLabel "Krishnamoorthi, Raja" .
 
 
 :p20499	a schema:Person ;
@@ -13616,7 +14116,8 @@
 	:votesmart_id "116801" ;
 	:ballotpedia_id "Jim Banks" ;
 	:icpsr_id "21702" ;
-	:wikipedia_id "Jim Banks" .
+	:wikipedia_id "Jim Banks" ;
+	skos:prefLabel "Banks, Jim" .
 
 
 :p20500	a schema:Person ;
@@ -13641,7 +14142,8 @@
 	:votesmart_id "167423" ;
 	:ballotpedia_id "Trey Hollingsworth" ;
 	:icpsr_id "21725" ;
-	:wikipedia_id "Trey Hollingsworth" .
+	:wikipedia_id "Trey Hollingsworth" ;
+	skos:prefLabel "Hollingsworth, Trey" .
 
 
 :p20501	a schema:Person ;
@@ -13664,7 +14166,8 @@
 	:govtrack_id "412704" ;
 	:votesmart_id "172080" ;
 	:icpsr_id "21734" ;
-	:wikipedia_id "Roger Marshall (politician)" .
+	:wikipedia_id "Roger Marshall (politician)" ;
+	skos:prefLabel "Marshall, Roger" .
 
 
 :p20502	a schema:Person ;
@@ -13687,7 +14190,8 @@
 	:govtrack_id "412705" ;
 	:votesmart_id "174484" ;
 	:icpsr_id "21724" ;
-	:wikipedia_id "Clay Higgins" .
+	:wikipedia_id "Clay Higgins" ;
+	skos:prefLabel "Higgins, Clay" .
 
 
 :p20503	a schema:Person ;
@@ -13711,7 +14215,8 @@
 	:govtrack_id "412706" ;
 	:votesmart_id "156097" ;
 	:icpsr_id "21727" ;
-	:wikipedia_id "Mike Johnson (Louisiana politician)" .
+	:wikipedia_id "Mike Johnson (Louisiana politician)" ;
+	skos:prefLabel "Johnson, Mike" .
 
 
 :p20504	a schema:Person ;
@@ -13735,7 +14240,8 @@
 	:govtrack_id "412707" ;
 	:votesmart_id "19344" ;
 	:icpsr_id "21707" ;
-	:wikipedia_id "Anthony G. Brown" .
+	:wikipedia_id "Anthony G. Brown" ;
+	skos:prefLabel "Brown, Anthony" .
 
 
 :p20505	a schema:Person ;
@@ -13759,7 +14265,8 @@
 	:govtrack_id "412708" ;
 	:votesmart_id "65904" ;
 	:icpsr_id "21741" ;
-	:wikipedia_id "Jamie Raskin" .
+	:wikipedia_id "Jamie Raskin" ;
+	skos:prefLabel "Raskin, Jamie" .
 
 
 :p20506	a schema:Person ;
@@ -13783,7 +14290,8 @@
 	:govtrack_id "412709" ;
 	:votesmart_id "170172" ;
 	:icpsr_id "21704" ;
-	:wikipedia_id "Jack Bergman" .
+	:wikipedia_id "Jack Bergman" ;
+	skos:prefLabel "Bergman, Jack" .
 
 
 :p20507	a schema:Person ;
@@ -13807,7 +14315,8 @@
 	:govtrack_id "412710" ;
 	:votesmart_id "152464" ;
 	:icpsr_id "21737" ;
-	:wikipedia_id "Paul Mitchell (politician)" .
+	:wikipedia_id "Paul Mitchell (politician)" ;
+	skos:prefLabel "Mitchell, Paul" .
 
 
 :p20508	a schema:Person ;
@@ -13830,7 +14339,8 @@
 	:govtrack_id "412711" ;
 	:votesmart_id "171558" ;
 	:icpsr_id "21733" ;
-	:wikipedia_id "Jason Lewis (Minnesota politician)" .
+	:wikipedia_id "Jason Lewis (Minnesota politician)" ;
+	skos:prefLabel "Lewis, Jason" .
 
 
 :p20509	a schema:Person ;
@@ -13854,7 +14364,8 @@
 	:votesmart_id "171489" ;
 	:ballotpedia_id "Ted Budd" ;
 	:icpsr_id "21708" ;
-	:wikipedia_id "Ted Budd" .
+	:wikipedia_id "Ted Budd" ;
+	skos:prefLabel "Budd, Ted" .
 
 
 :p20510	a schema:Person ;
@@ -13878,7 +14389,8 @@
 	:govtrack_id "412713" ;
 	:votesmart_id "166299" ;
 	:icpsr_id "21701" ;
-	:wikipedia_id "Don Bacon (politician)" .
+	:wikipedia_id "Don Bacon (politician)" ;
+	skos:prefLabel "Bacon, Don" .
 
 
 :p20511	a schema:Person ;
@@ -13901,7 +14413,8 @@
 	:govtrack_id "412714" ;
 	:votesmart_id "169202" ;
 	:icpsr_id "21723" ;
-	:wikipedia_id "Josh Gottheimer" .
+	:wikipedia_id "Josh Gottheimer" ;
+	skos:prefLabel "Gottheimer, Josh" .
 
 
 :p20512	a schema:Person ;
@@ -13924,7 +14437,8 @@
 	:govtrack_id "412715" ;
 	:votesmart_id "169471" ;
 	:icpsr_id "21743" ;
-	:wikipedia_id "Jacky Rosen" .
+	:wikipedia_id "Jacky Rosen" ;
+	skos:prefLabel "Rosen, Jacky" .
 
 
 :p20513	a schema:Person ;
@@ -13947,7 +14461,8 @@
 	:govtrack_id "412716" ;
 	:votesmart_id "66851" ;
 	:icpsr_id "21729" ;
-	:wikipedia_id "Ruben Kihuen" .
+	:wikipedia_id "Ruben Kihuen" ;
+	skos:prefLabel "Kihuen, Ruben" .
 
 
 :p20514	a schema:Person ;
@@ -13970,7 +14485,8 @@
 	:govtrack_id "412717" ;
 	:votesmart_id "92111" ;
 	:icpsr_id "21747" ;
-	:wikipedia_id "Thomas Suozzi" .
+	:wikipedia_id "Thomas Suozzi" ;
+	skos:prefLabel "Suozzi, Thomas" .
 
 
 :p20515	a schema:Person ;
@@ -13994,7 +14510,8 @@
 	:govtrack_id "412718" ;
 	:votesmart_id "14379" ;
 	:icpsr_id "21715" ;
-	:wikipedia_id "Adriano Espaillat" .
+	:wikipedia_id "Adriano Espaillat" ;
+	skos:prefLabel "Espaillat, Adriano" .
 
 
 :p20516	a schema:Person ;
@@ -14017,7 +14534,8 @@
 	:govtrack_id "412719" ;
 	:votesmart_id "4311" ;
 	:icpsr_id "21716" ;
-	:wikipedia_id "John Faso" .
+	:wikipedia_id "John Faso" ;
+	skos:prefLabel "Faso, John" .
 
 
 :p20517	a schema:Person ;
@@ -14040,7 +14558,8 @@
 	:govtrack_id "412720" ;
 	:votesmart_id "127668" ;
 	:icpsr_id "21749" ;
-	:wikipedia_id "Claudia Tenney" .
+	:wikipedia_id "Claudia Tenney" ;
+	skos:prefLabel "Tenney, Claudia" .
 
 
 :p20518	a schema:Person ;
@@ -14064,7 +14583,8 @@
 	:govtrack_id "412721" ;
 	:votesmart_id "167708" ;
 	:icpsr_id "21718" ;
-	:wikipedia_id "Brian Fitzpatrick (American politician)" .
+	:wikipedia_id "Brian Fitzpatrick (American politician)" ;
+	skos:prefLabel "Fitzpatrick, Brian" .
 
 
 :p20519	a schema:Person ;
@@ -14088,7 +14608,8 @@
 	:govtrack_id "412722" ;
 	:votesmart_id "102454" ;
 	:icpsr_id "21745" ;
-	:wikipedia_id "Lloyd Smucker" .
+	:wikipedia_id "Lloyd Smucker" ;
+	skos:prefLabel "Smucker, Lloyd" .
 
 
 :p20520	a schema:Person ;
@@ -14110,7 +14631,8 @@
 	:opensecrets_id "N00037615" ;
 	:cspan_id "67353" ;
 	:govtrack_id "412723" ;
-	:wikipedia_id "Jenniffer González" .
+	:wikipedia_id "Jenniffer González" ;
+	skos:prefLabel "González-Colón, Jenniffer" .
 
 
 :p20521	a schema:Person ;
@@ -14134,7 +14656,8 @@
 	:govtrack_id "412724" ;
 	:votesmart_id "48997" ;
 	:icpsr_id "21731" ;
-	:wikipedia_id "David Kustoff" .
+	:wikipedia_id "David Kustoff" ;
+	skos:prefLabel "Kustoff, David" .
 
 
 :p20522	a schema:Person ;
@@ -14158,7 +14681,8 @@
 	:govtrack_id "412725" ;
 	:votesmart_id "166483" ;
 	:icpsr_id "21722" ;
-	:wikipedia_id "Vicente González (politician)" .
+	:wikipedia_id "Vicente González (politician)" ;
+	skos:prefLabel "Gonzalez, Vicente" .
 
 
 :p20523	a schema:Person ;
@@ -14181,7 +14705,8 @@
 	:govtrack_id "412726" ;
 	:votesmart_id "155685" ;
 	:icpsr_id "21700" ;
-	:wikipedia_id "Jodey Arrington" .
+	:wikipedia_id "Jodey Arrington" ;
+	skos:prefLabel "Arrington, Jodey" .
 
 
 :p20524	a schema:Person ;
@@ -14205,7 +14730,8 @@
 	:govtrack_id "412727" ;
 	:votesmart_id "144514" ;
 	:icpsr_id "21748" ;
-	:wikipedia_id "Scott Taylor (politician)" .
+	:wikipedia_id "Scott Taylor (politician)" ;
+	skos:prefLabel "Taylor, Scott" .
 
 
 :p20525	a schema:Person ;
@@ -14229,7 +14755,8 @@
 	:govtrack_id "412728" ;
 	:votesmart_id "8230" ;
 	:icpsr_id "21736" ;
-	:wikipedia_id "Donald McEachin" .
+	:wikipedia_id "Donald McEachin" ;
+	skos:prefLabel "McEachin, A." .
 
 
 :p20526	a schema:Person ;
@@ -14253,7 +14780,8 @@
 	:govtrack_id "412729" ;
 	:votesmart_id "134493" ;
 	:icpsr_id "21721" ;
-	:wikipedia_id "Tom Garrett Jr." .
+	:wikipedia_id "Tom Garrett Jr." ;
+	skos:prefLabel "Garrett, Thomas" .
 
 
 :p20527	a schema:Person ;
@@ -14277,7 +14805,8 @@
 	:govtrack_id "412730" ;
 	:votesmart_id "153141" ;
 	:icpsr_id "21726" ;
-	:wikipedia_id "Pramila Jayapal" .
+	:wikipedia_id "Pramila Jayapal" ;
+	skos:prefLabel "Jayapal, Pramila" .
 
 
 :p20528	a schema:Person ;
@@ -14300,7 +14829,8 @@
 	:govtrack_id "412731" ;
 	:votesmart_id "171843" ;
 	:icpsr_id "21720" ;
-	:wikipedia_id "Mike Gallagher (American politician)" .
+	:wikipedia_id "Mike Gallagher (American politician)" ;
+	skos:prefLabel "Gallagher, Mike" .
 
 
 :p20529	a schema:Person ;
@@ -14323,7 +14853,8 @@
 	:govtrack_id "412732" ;
 	:votesmart_id "145932" ;
 	:icpsr_id "21710" ;
-	:wikipedia_id "Liz Cheney" .
+	:wikipedia_id "Liz Cheney" ;
+	skos:prefLabel "Cheney, Liz" .
 
 
 :p20530	a schema:Person ;
@@ -14347,7 +14878,8 @@
 	:govtrack_id "412735" ;
 	:votesmart_id "125031" ;
 	:ballotpedia_id "Ron Estes" ;
-	:wikipedia_id "Ron Estes" .
+	:wikipedia_id "Ron Estes" ;
+	skos:prefLabel "Estes, Ron" .
 
 
 :p20531	a schema:Person ;
@@ -14368,7 +14900,8 @@
 	:govtrack_id "412736" ;
 	:votesmart_id "168594" ;
 	:ballotpedia_id "Greg Gianforte" ;
-	:wikipedia_id "Greg Gianforte" .
+	:wikipedia_id "Greg Gianforte" ;
+	skos:prefLabel "Gianforte, Greg" .
 
 
 :p20532	a schema:Person ;
@@ -14391,7 +14924,8 @@
 	:govtrack_id "412738" ;
 	:votesmart_id "47930" ;
 	:ballotpedia_id "Ralph W. Norman" ;
-	:wikipedia_id "Ralph Norman" .
+	:wikipedia_id "Ralph Norman" ;
+	skos:prefLabel "Norman, Ralph" .
 
 
 :p20533	a schema:Person ;
@@ -14412,7 +14946,8 @@
 	:govtrack_id "412737" ;
 	:votesmart_id "69553" ;
 	:ballotpedia_id "Karen Handel" ;
-	:wikipedia_id "Karen Handel" .
+	:wikipedia_id "Karen Handel" ;
+	skos:prefLabel "Handel, Karen" .
 
 
 :p20534	a schema:Person ;
@@ -14435,7 +14970,8 @@
 	:govtrack_id "412739" ;
 	:votesmart_id "138524" ;
 	:ballotpedia_id "Jimmy Gomez" ;
-	:wikipedia_id "Jimmy Gomez" .
+	:wikipedia_id "Jimmy Gomez" ;
+	skos:prefLabel "Gomez, Jimmy" .
 
 
 :p20535	a schema:Person ;
@@ -14455,7 +14991,8 @@
 	:govtrack_id "412740" ;
 	:votesmart_id "123390" ;
 	:ballotpedia_id "John Curtis (Utah)" ;
-	:wikipedia_id "John Curtis (American politician)" .
+	:wikipedia_id "John Curtis (American politician)" ;
+	skos:prefLabel "Curtis, John" .
 
 
 :p20536	a schema:Person ;
@@ -14474,7 +15011,8 @@
 	:govtrack_id "412741" ;
 	:votesmart_id "176464" ;
 	:ballotpedia_id "Doug Jones (Alabama)" ;
-	:wikipedia_id "Doug Jones (politician)" .
+	:wikipedia_id "Doug Jones (politician)" ;
+	skos:prefLabel "Jones, Doug" .
 
 
 :p20537	a schema:Person ;
@@ -14493,5 +15031,6 @@
 	:govtrack_id "412742" ;
 	:votesmart_id "152968" ;
 	:ballotpedia_id "Tina Smith" ;
-	:wikipedia_id "Tina Smith" .
+	:wikipedia_id "Tina Smith" ;
+	skos:prefLabel "Smith, Tina" .
 

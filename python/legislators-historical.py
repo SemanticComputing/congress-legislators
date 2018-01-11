@@ -12,7 +12,7 @@ from urllib.parse import quote
 
 def main():
     infilename = "../csv/legislators-historical.csv"
-    num_uri = 1000
+    num_uri = 1
     
     
     writeRDF(infilename,
@@ -78,7 +78,7 @@ def writeRDF(infilename, templatefilename, num_uri, outfilename):
             if row[f]==None or row[f].strip()=="": row[f]="0qqq0"
         
         # print(row[fields[0]],row[fields[1]])
-        print(row)
+        # print(row)
         entry=template.format(row=row)
         entry=re.sub(r'\n.*0qqq0.*(?=\n)','',entry).rstrip()
         entry=entry[:-1]+".\n"
