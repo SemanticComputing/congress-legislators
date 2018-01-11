@@ -12,7 +12,7 @@ from urllib.parse import quote
 
 def main():
     infilename = "../csv/legislators-historical.csv"
-    num_uri = 1
+    num_uri = 1000
     
     
     writeRDF(infilename,
