@@ -9,7 +9,7 @@
 @prefix : <http://ldf.fi/congress/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:p{puri}	a schema:Person ;
+:p{puri}	a :CommitteeMembership ;
 	:committee "{committee}" ;
 	skos:prefLabel """{name}""" ;
 	schema:memberOf "{party}" ;
