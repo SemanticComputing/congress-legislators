@@ -31,6 +31,8 @@
             <div class="row">
               <div ng-if="vm.person.wikipedia" class="col-xs-6 col-xs-offset-3">
                 <a ng-href="{{ vm.person.wikipedia }}">Wikipedia</a>
+              </div><div ng-if="vm.person.wikidata" class="col-xs-6 col-xs-offset-3">
+                <a ng-href="{{ vm.person.wikidata }}">Wikidata</a> 
               </div>
              </div>
              <div ng-if="vm.person.committee" class="row padded-row">

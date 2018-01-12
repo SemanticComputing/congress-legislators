@@ -97,10 +97,14 @@
         '  	?id schema:familyName ?familyName . ' +
         '  	OPTIONAL { ?id schema:givenName ?givenName . }' +
         ' ' +
-        '	OPTIONAL { ?id schema:birthDate ?birthDate . }' +
+        '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
+        '  OPTIONAL { ?id schema:birthPlace ?birthPlace . }   ' +
+        '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
+        '  OPTIONAL { ?id schema:deathPlace ?deathPlace . }   ' +
         '   OPTIONAL { ?id congress:twitter ?twitter . }' +
         '   OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }' +
         '  	OPTIONAL { ?id schema:gender ?gender . }' +
+        '  	OPTIONAL { ?id schema:image ?images . }' +
         ' }';
         
         //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
@@ -112,8 +116,14 @@
             '  ?id schema:familyName ?familyName .   	' +
             '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
             '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
+            '  OPTIONAL { ?id schema:birthPlace ?birthPlace . }   ' +
+            '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
+            '  OPTIONAL { ?id schema:deathPlace ?deathPlace . }   ' +
             '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
+            '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
             '  OPTIONAL { ?id schema:gender ?gender . }' +
+            '  	OPTIONAL { ?id schema:image ?images . }' +
+            '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
             '  OPTIONAL { ?id congress:bioguide_id ?committee__id .' +
             '    	?mship congress:bioguide_id ?committee__id ;' +
             '            congress:committee ?committee__label ;' +
