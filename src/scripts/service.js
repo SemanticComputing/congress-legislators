@@ -87,7 +87,7 @@
         ' PREFIX foaf: <http://xmlns.com/foaf/0.1/> ' +
         ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ';
         
-        // The query for the results.
+        // The query for the results on grid and list pages.
         // ?id is bound to the person URI.
         var query =
         ' SELECT DISTINCT * WHERE {' +
@@ -103,18 +103,23 @@
         '  	OPTIONAL { ?id schema:gender ?gender . }' +
         ' }';
         
+        //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
         var detailQuery =
-        	' SELECT DISTINCT * WHERE {' +
+            'SELECT DISTINCT * WHERE {' +
             '  { ' +
             '    <RESULT_SET> ' +
             '  } ' +
-            '  	?id schema:familyName ?familyName . ' +
-            '  	OPTIONAL { ?id schema:givenName ?givenName . }' +
-            ' ' +
-            '	OPTIONAL { ?id schema:birthDate ?birthDate . }'
-            '   OPTIONAL { ?id congress:wikipedia ?wikipedia . }' +
-            '  	OPTIONAL { ?id schema:gender ?gender . }' +
-            ' }';
+            '  ?id schema:familyName ?familyName .   	' +
+            '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
+            '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
+            '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
+            '  OPTIONAL { ?id schema:gender ?gender . }' +
+            '  OPTIONAL { ?id congress:bioguide_id ?committee__id .' +
+            '    	?mship congress:bioguide_id ?committee__id ;' +
+            '            congress:committee ?committee__label ;' +
+            '            schema:memberOf ?committee__memberOf .' +
+            '  }' +
+            '}';
         
         
         // The SPARQL endpoint URL
@@ -126,7 +131,7 @@
         var facetOptions = {
             endpointUrl: endpointConfig.endpointUrl,
             rdfClass: '<http://schema.org/Person>',
-            constraint: '',
+            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/birthDate> ?birthDate . ',
             preferredLang : 'en',
             noSelectionString: '-- No selection --'
         };
@@ -153,7 +158,6 @@
         function getPerson(id) {
         	var qry = prefixes + detailQuery;
             var constraint = 'VALUES ?id { <' + id + '> } . ';
-            console.log(qry.replace('<RESULT_SET>', constraint));
             return endpoint.getObjects(qry.replace('<RESULT_SET>', constraint))
             .then(function(person) {
                 if (person.length) {

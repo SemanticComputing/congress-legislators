@@ -25,7 +25,6 @@
                 <p>{{ vm.person.occupation | castArray | join:', ' }}</p>
               </div>
               <div class="col-xs-12 icon-menu">
-                <a ng-if="vm.person.kansallisbiografia" title="Kansallisbiografia" class="" ng-href="{{ vm.person.kansallisbiografia }}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
                 <a title="Data" class="" ng-href="{{ vm.person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
               </div>
             </div>
@@ -33,54 +32,13 @@
               <div ng-if="vm.person.wikipedia" class="col-xs-6 col-xs-offset-3">
                 <a ng-href="{{ vm.person.wikipedia }}">Wikipedia</a>
               </div>
-              <div ng-if="vm.person.wikidata" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.wikidata }}">Wikidata</a>
-              </div>
-              <div ng-if="vm.person.warsa" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="http://www.sotasampo.fi/fi/persons/?uri={{ vm.person.warsa }}">Sotasampo</a>
-              </div>
-              <div ng-if="vm.person.kirjasampo" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.kirjasampo }}">Kirjasampo</a>
-              </div>
-              <div ng-if="vm.person.kulttuurisampo" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.kulttuurisampo }}">Kulttuurisampo</a>
-              </div>
-              <div ng-if="vm.person.blf" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.blf }}">BLF</a>
-              </div>
-              <div ng-if="vm.person.ulan" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.ulan }}">ULAN</a>
-              </div>
-              <div ng-if="vm.person.viaf" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.viaf }}">VIAF</a>
-              </div>
-              <div ng-if="vm.person.eduskunta" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.eduskunta }}">Eduskunta</a>
-              </div>
-              <div ng-if="vm.person.norssi" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.norssi }}">Norssi</a>
-              </div>
-              <div ng-if="vm.person.website" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.website }}">Kotisivu</a>
-              </div>
-              <div ng-if="vm.person.genicom" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.genicom }}">Kotisivu (Geni.com)</a>
-              </div>
-              <div ng-if="vm.person.genitree" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.genitree }}">Sukupuu (Geni.com)</a>
-              </div>
+             </div>
+             <div ng-if="vm.person.committee" class="row padded-row">
+              <div class="col-xs-12"><h4>Member of committees:</h4></div>
+              <p>{{ vm.person.committee.label | castArray | join:', ' }}</p>
             </div>
-            <div ng-if="vm.person.relative" class="row padded-row">
-              <div class="col-xs-12"><h4>Sukulaiset:</h4></div>
-              <div class="col-sm-6 col-md-12" ng-repeat="relative in vm.person.relative | castArray">
-                {{ relative.type }}<a ui-sref="person.detail({ personId: relative.id })"> {{ relative.name }}</a>
-              </div>
-            </div>
-            <div ng-if="vm.person.hobby" class="row padded-row">
-              <div class="col-md-12">
-                <p><b>Harrastukset:</b> {{ vm.person.hobby | castArray | join: ', ' }}</p>
-              </div>
-            </div>
+            
+            
             <div class="entry-text text-left">
               <hr />
               <p ng-bind-html="vm.person.lead_paragraph"></p>
@@ -90,42 +48,12 @@
               <p ng-bind-html="vm.person.description"></p>
             </div>
             
-            <div ng-if="vm.person.family_paragraph" class="entry-text text-left">
-              <hr />
-              <p>{{ vm.person.family_paragraph }}</p>
-            </div>
-            
-             <div ng-if="vm.person.parent_paragraph" class="entry-text text-left">
-              <hr />
-              <h4>Vanhemmat</h4>
-              <p>{{ vm.person.parent_paragraph }}</p>
-            </div>
-            <div ng-if="vm.person.spouse_paragraph" class="entry-text text-left">
-              <hr />
-              <h4>Puoliso(t) vanhempineen</h4>
-              <p>{{ vm.person.spouse_paragraph }}</p>
-            </div>
-            <div ng-if="vm.person.child_paragraph" class="entry-text text-left">
-              <hr />
-              <h4>Lapset</h4>
-              <p>{{ vm.person.child_paragraph }}</p>
-            </div>
-            
-            <div ng-if="vm.person.medal_paragraph" class="entry-text text-left">
-              <hr />
-              <h4>Kunniamerkit</h4>
-              <p>{{ vm.person.medal_paragraph }}</p>
-            </div>
-            <div ng-if="vm.person.source_paragraph" class="entry-text text-left">
-              <hr />
-              <p ng-bind-html="vm.person.source_paragraph"></p>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-4 text-left" ng-if="vm.person.similar">
-      <h3>Samankaltaisia henkilöitä</h3>
+      <h3>Similar persons</h3>
       <img ng-if="!vm.person.similar" class="loading-img" src="images/loading-lg.gif"></img>
       <div class="col-sm-6" ng-repeat="person in vm.person.similar">
       	<a ui-sref="person.detail({ personId: person.prs })">{{ person.label }}</a>

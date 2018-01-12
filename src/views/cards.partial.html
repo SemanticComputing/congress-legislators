@@ -28,9 +28,6 @@
                   <p>{{ ::person.occupation | castArray | join:', ' }}</p>
                 </div>
                 <div class="col-xs-12 icon-menu">
-                  <a title="Näytä matrikkeliteksti" ng-attr-title="{{ showText ? 'Piilota matrikkeliteksti' : 'Näytä matrikkeliteksti' }}" href=""
-                    ng-click="showText = !showText"><span class="glyphicon" ng-class="{ 'glyphicon-collapse-down': !showText, 'glyphicon-collapse-up': showText }" aria-hidden="true"></span></a>
-                  <a title="Kansallisbiografia" class="" ng-href="{{ ::person.kansallisbiografia }}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
                   <a title="Data" class="" ng-href="{{ ::person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
                 </div>
               </div>

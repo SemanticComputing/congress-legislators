@@ -31,7 +31,7 @@
     })
 
     .config(function($urlRouterProvider){
-        $urlRouterProvider.when('', '/ruudukko');
+        $urlRouterProvider.when('', '/grid');
     })
 
     .service('authInterceptor', function ($q, $state) {
@@ -73,7 +73,7 @@
             controllerAs: 'vm'
         })
         .state('table', {
-            url: '/lista',
+            url: '/list',
             templateUrl: 'views/table.html',
             controller: 'TableController',
             controllerAs: 'vm'
@@ -85,7 +85,7 @@
             controllerAs: 'vm',
         })
         .state('cards', {
-            url: '/ruudukko',
+            url: '/grid',
             templateUrl: 'views/cards.html',
             controller: 'CardsController',
             controllerAs: 'vm',

@@ -1,11 +1,11 @@
 <table class="table table-striped norssi-table ng-table-responsive" ng-table="vm.tableParams">
   <thead>
     <tr>
-      <th class="col-xs-4">Nimi</th>
-      <th class="col-xs-1">Henkilö</th>
-      <th class="col-xs-1">Linkit</th>
-      <th class="col-xs-3"><span class="hidden-xs hidden-sm">Muuta</span></th>
-      <th class="col-xs-3 hidden-xs hidden-sm">Matrikkeliteksti</th>
+      <th class="col-xs-4">Name</th>
+      <th class="col-xs-1">Person</th>
+      <th class="col-xs-1">Links</th>
+      <th class="col-xs-3"><span class="hidden-xs hidden-sm">Else</span></th>
+      <th class="col-xs-3 hidden-xs hidden-sm">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -18,7 +18,6 @@
           <br />
 
         <span class="icon-menu">
-          <a title="Kansallisbiografia" class="" ng-href="{{ ::person.kansallisbiografia }}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
           <a title="Data" class="" ng-href="{{ ::person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
         </span>
       </div>
@@ -40,36 +39,19 @@
              </div>
     </td>
     <td class="links" data-title="'Linkit'">
-      <div ng-if="::person.achievement">
-        <a href=""
-          uib-popover-template="'views/achievements-popover.html'"
-          popover-trigger="'outsideClick'"
-          popover-append-to-body="true"
-          popover-placement="auto top">Saavutukset</a>
-      </div>
       <a class="link" ng-if="::person.wikipedia" ng-href="{{ ::person.wikipedia }}">Wikipedia</a>
-      <a class="link" ng-if="::person.warsa" ng-href="http://www.sotasampo.fi/fi/persons/?uri={{ ::person.warsa }}">Sotasampo</a>
-      <a class="link" ng-if="::person.kirjasampo" ng-href="{{ ::person.kirjasampo }}">Kirjasampo</a>
-      <a class="link" ng-if="::person.kulttuurisampo" ng-href="{{ ::person.kulttuurisampo }}">Kulttuurisampo</a>
-      <a class="link" ng-if="::person.blf" ng-href="{{ ::person.blf }}">BLF</a>
-      <a class="link" ng-if="::person.ulan" ng-href="{{ ::person.ulan }}">ULAN</a>
-      <a class="link" ng-if="::person.viaf" ng-href="{{ ::person.viaf }}">VIAF</a>
-      <a class="link" ng-if="::person.norssi" ng-href="http://www.norssit.fi/semweb/#!/tiedot/http:~2F~2Fldf.fi~2Fnorssit~2F{{ ::person.norssi }}">Norssi</a>
-      <a class="link" ng-if="::person.eduskunta" ng-href="{{ ::person.eduskunta }}">Eduskunta</a>
-      <a class="link" ng-if="::person.website" ng-href="{{ ::person.website }}">Kotisivu</a>
       <a class="link" ng-if="::person.genicom" ng-href="{{ ::person.genicom }}">Kotisivu (Geni.com)</a>
       <a class="link" ng-if="::person.genitree" ng-href="{{ ::person.genitree }}">Sukupuu (Geni.com)</a>
     </td>
-    <td data-title="'Muuta'">
+    <td data-title="'Else'">
       <div ng-if="::person.relative">
-      	<span>Sukulaiset: </span><br>
+      	<span>Relatives: </span><br>
       	<span ng-repeat="relative in person.relative | castArray">
           {{ ::relative.type }} <a ui-sref="person.detail({ personId: relative.id })">{{ ::relative.name }}</a>
       	</span>
       </div>
-      <div ng-if="::person.hobby"><span>Harrastukset: </span><br>{{ ::person.hobby | join:', ' }}</div>
     </td>
-    <td data-title="'Matrikkeliteksti'"
+    <td data-title="'Description'"
       class="hidden-xs hidden-sm"><p ng-bind-html="::person.lead_paragraph"></p></td>
   </tr>
   </tbody>

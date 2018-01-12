@@ -22,10 +22,13 @@
         }
 
         function postProcess(objects) {
-        	console.log(objects);
             objects.forEach(function(person) {
                 person.hasImage = !!person.images;
                 person.images = person.images ? _.castArray(person.images) : ['images/person_placeholder.svg'];
+                
+                if (person.hasOwnProperty('wikipedia')) {
+                	person.wikipedia = 'https://en.wikipedia.org/wiki/' + person.wikipedia;
+                }
             });
             return objects;
         }
