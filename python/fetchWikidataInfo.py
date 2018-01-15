@@ -15,16 +15,20 @@ outfilename = "../ttl/extractsFromWikidata.ttl"
 def main():
     
     arr = getCongressWikilinks()
+    print("Query ready.")
+    
     res = """@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix : <http://ldf.fi/congress/> .
-
 """
     count = 0
+    outfile = codecs.open(outfilename, encoding='utf-8', mode='wb')
+    
     for uri, entity in arr:
-        res += '<{}>\t :wikidata\t <http://www.wikidata.org/entity/{}> .\n'.format(uri, entity)
+        res += '\n<{}>\t :wikidata\t <http://www.wikidata.org/entity/{}> .\n'.format(uri, entity)
         
         wfields = getWikidataFields(entity)
+        
         S = set()
         for field in wfields:
             for prop in field:
@@ -39,26 +43,25 @@ def main():
         count += 1
         if count%20==0:
             print("Processing {}".format(count))
-    
-    outfile = codecs.open(outfilename, encoding='utf-8', mode='wb')
+        
+        outfile.write(str(res))
+        res=""
     #for row in arr:
-    outfile.write(str(res))
+    
     outfile.close()
     print("Results written to {}".format(outfilename))  
     return
 
 
 def getCongressWikilinks():
-    query = """
-PREFIX schema: <http://schema.org/>  
+    query = """PREFIX schema: <http://schema.org/>  
 PREFIX congress: <http://ldf.fi/congress/>  
 
 SELECT DISTINCT * WHERE {
   ?id a schema:Person ;
       congress:wikipedia_id ?wiki_id .
   BIND (concat('https://en.wikipedia.org/wiki/', replace(?wiki_id, ' ','_')) AS ?wikipedia)
-} LIMIT 250
-    """
+} """
     endpoint = "http://ldf.fi/congress/sparql"
     res=makeSparqlQuery(query, endpoint)
     arr=[]
@@ -68,7 +71,7 @@ SELECT DISTINCT * WHERE {
             html = getWikipage(wikilink)
             # print(html)
             wikidatas = re.findall(r'"https://www.wikidata.*?(Q\d+)',html)
-            for w in wikidatas:
+            for w in wikidatas[:1]:
                 arr.append((r['id'], w))
     return arr
     
