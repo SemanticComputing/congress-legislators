@@ -29,6 +29,11 @@
                 if (person.hasOwnProperty('wikipedia')) {
                 	person.wikipedia = 'https://en.wikipedia.org/wiki/' + person.wikipedia;
                 }
+                
+                if (person.hasOwnProperty('twitter')) {
+                	person.twitter = 'https://twitter.com/' + person.twitter;
+                }
+                
             });
             return objects;
         }
