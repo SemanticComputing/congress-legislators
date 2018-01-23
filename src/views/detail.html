@@ -32,22 +32,26 @@
               <div ng-if="vm.person.wikipedia" class="col-xs-6 col-xs-offset-3">
                 <a ng-href="{{ vm.person.wikipedia }}">Wikipedia</a>
               </div><div ng-if="vm.person.wikidata" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.wikidata }}">Wikidata</a> 
+                <a ng-href="{{ vm.person.wikidata }}">Wikidata</a>
               </div>
-              </div><div ng-if="vm.person.dbpedia" class="col-xs-6 col-xs-offset-3">
-                <a ng-href="{{ vm.person.dbpedia }}">DBpedia</a> 
+              <div ng-if="vm.person.dbpedia" class="col-xs-6 col-xs-offset-3">
+                <a ng-href="{{ vm.person.dbpedia }}">DBpedia</a>
               </div>
+              <div ng-if="vm.person.twitter" class="col-xs-6 col-xs-offset-3">
+                <a ng-href="{{ vm.person.twitter }}">Twitter</a>
+              </div>
+            </div>
              </div>
              <div ng-if="vm.person.committee" class="row padded-row">
               <div class="col-xs-12"><h4>Member of committees:</h4></div>
               <p>{{ vm.person.committee.label | castArray | join:', ' }}</p>
             </div>
-            
+
             <div ng-if="vm.person.description" class="entry-text text-left">
               <hr />
               <p>{{ vm.person.description }}</p>
             </div>
-            
+
           </div>
         </div>
       </div>

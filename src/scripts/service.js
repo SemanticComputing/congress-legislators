@@ -64,6 +64,11 @@
                 predicate: '<http://schema.org/familyName>',
                 name: 'Family Name'
             },
+            givenName: {
+                facetId: 'givenName',
+                predicate: '<http://schema.org/givenName>',
+                name: 'First Name'
+            },
             birthYear: {
                 facetId: 'birthYear',
                 predicate: '<http://schema.org/birthDate>',
@@ -74,6 +79,18 @@
                 facetId: 'gender',
                 predicate: '<http://schema.org/gender>',
                 name: 'Gender',
+                enabled: true
+            },
+              state: {
+                facetId: 'state',
+                predicate: '<http://schema.org/state>',
+                name: 'State',
+                enabled: true
+            },
+            memberOf: {
+                facetId: 'memberOf',
+                predicate: '<http://schema.org/memberOf>',
+                name: 'Political Party',
                 enabled: true
             }
         };
@@ -129,6 +146,7 @@
             '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
             '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
             '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
+            '   OPTIONAL { ?id congress:twitter ?twitter . }' +
             '  OPTIONAL { ?id schema:gender ?gender . }' +
             '  	OPTIONAL { ?id schema:image ?images . }' +
             '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
@@ -149,7 +167,7 @@
         var facetOptions = {
             endpointUrl: endpointConfig.endpointUrl,
             rdfClass: '<http://schema.org/Person>',
-            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/birthDate> ?birthDate . ',
+            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/givenName> ?givenName . ?id <http://schema.org/birthDate> ?birthDate . ',
             preferredLang : 'en',
             noSelectionString: '-- No selection --'
         };

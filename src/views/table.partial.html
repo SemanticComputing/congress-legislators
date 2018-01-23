@@ -40,9 +40,8 @@
     </td>
     <td class="links" data-title="'Linkit'">
       <a class="link" ng-if="::person.wikipedia" ng-href="{{ ::person.wikipedia }}">Wikipedia</a>
-      <a class="link" ng-if="::person.genicom" ng-href="{{ ::person.genicom }}">Kotisivu (Geni.com)</a>
-      <a class="link" ng-if="::person.genitree" ng-href="{{ ::person.genitree }}">Sukupuu (Geni.com)</a>
-    </td>
+      <a class="link" ng-if="::person.dbpedia" ng-href="{{ ::person.dbpedia }}">DBpedia</a>
+      <a class="link" ng-if="::person.twitter" ng-href="{{ ::person.twitter }}">Twitter</a>
     <td data-title="'Else'">
       <div ng-if="::person.relative">
       	<span>Relatives: </span><br>
