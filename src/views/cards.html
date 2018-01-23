@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-2 col-sm-2 col-xs-2 vcenter push-xs-2">
-      <!-- <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> --> 
+      <!-- <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> -->
     </div><!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
  --><div class="col-xs-9 col-md-8 col-lg-9 vcenter push-xs-9">
       <div ng-include="'views/description.partial.html'"></div>
@@ -15,9 +15,13 @@
         <a href="" ng-click="vm.sortBy('?birthDate')">By Time</a>
         <span ng-class="vm.getSortClass('?birthDate', true)" class="glyphicon" aria-hidden="true"></span>
       </span>
-      <span class="sort"> 
+      <span class="sort">
         <a href="" ng-click="vm.sortBy('?familyName')">By Family Name</a>
         <span ng-class="vm.getSortClass('?familyName')" class="glyphicon" aria-hidden="true"></span>
+      </span>
+      <span class="sort">
+        <a href="" ng-click="vm.sortBy('?givenName')">By First Name</a>
+        <span ng-class="vm.getSortClass('?givenName')" class="glyphicon" aria-hidden="true"></span>
       </span>
       <div ng-include="'views/cards.partial.html'"></div>
     </div>

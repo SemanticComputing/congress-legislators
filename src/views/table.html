@@ -19,6 +19,10 @@
         <a href="" ng-click="vm.sortBy('?familyName')">By Family Name</a>
         <span ng-class="vm.getSortClass('?familyName')" class="glyphicon" aria-hidden="true"></span>
       </span>
+      <span class="sort">
+        <a href="" ng-click="vm.sortBy('?givenName')">By First Name</a>
+        <span ng-class="vm.getSortClass('?givenName')" class="glyphicon" aria-hidden="true"></span>
+      </span>
       <div ng-include="'views/table.partial.html'"></div>
     </div>
   </div>
