@@ -45,6 +45,10 @@
                         id: 'wikipedia',
                         pattern: '?id <http://ldf.fi/congress/wikipedia_id> [] .',
                         label: 'Wikipedia'
+                    },{
+                        id: 'dbpedia',
+                        pattern: '?id <http://ldf.fi/congress/dbpedia_id> [] .',
+                        label: 'DBpedia'
                     },
                     {
                         id: 'twitter',
@@ -94,8 +98,9 @@
         '  { ' +
         '    <RESULT_SET> ' +
         '  } ' +
-        '  	?id schema:familyName ?familyName . ' +
+        '  	OPTIONAL { ?id schema:familyName ?familyName . }' +
         '  	OPTIONAL { ?id schema:givenName ?givenName . }' +
+        '  	OPTIONAL { ?id rdfs:comment ?short_description . }' +
         ' ' +
         '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
         '  OPTIONAL { ?id schema:birthPlace ?birthPlace . }   ' +
@@ -103,6 +108,7 @@
         '  OPTIONAL { ?id schema:deathPlace ?deathPlace . }   ' +
         '   OPTIONAL { ?id congress:twitter ?twitter . }' +
         '   OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }' +
+        '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
         '  	OPTIONAL { ?id schema:gender ?gender . }' +
         '  	OPTIONAL { ?id schema:image ?images . }' +
         ' }';
@@ -113,14 +119,16 @@
             '  { ' +
             '    <RESULT_SET> ' +
             '  } ' +
-            '  ?id schema:familyName ?familyName .   	' +
+            '  	OPTIONAL { ?id schema:familyName ?familyName . }' +
             '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
+            '  	OPTIONAL { ?id schema:description ?description . }' +
             '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
             '  OPTIONAL { ?id schema:birthPlace ?birthPlace . }   ' +
             '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
             '  OPTIONAL { ?id schema:deathPlace ?deathPlace . }   ' +
             '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
             '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
+            '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
             '  OPTIONAL { ?id schema:gender ?gender . }' +
             '  	OPTIONAL { ?id schema:image ?images . }' +
             '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +

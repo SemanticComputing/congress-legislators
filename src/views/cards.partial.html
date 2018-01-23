@@ -28,6 +28,9 @@
                   <p>{{ ::person.occupation | castArray | join:', ' }}</p>
                 </div>
                 <div class="col-xs-12 icon-menu">
+                	<a title="Näytä matrikkeliteksti" ng-attr-title="{{ showText ? 'Piilota matrikkeliteksti' : 'Näytä matrikkeliteksti' }}" href=""
+                    ng-click="showText = !showText"><span class="glyphicon" ng-class="{ 'glyphicon-collapse-down': !showText, 'glyphicon-collapse-up': showText }" aria-hidden="true"></span></a>
+                  
                   <a title="Data" class="" ng-href="{{ ::person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
                 </div>
               </div>
@@ -45,8 +48,8 @@
                 <div ng-if="::person.wikidata" class="col-xs-6">
                   <a ng-href="{{ ::person.wikidata }}">Wikidata</a>
                 </div>
-                <div ng-if="::person.warsampo" class="col-xs-6">
-                  <a ng-href="http://www.sotasampo.fi/fi/persons/?uri={{ ::person.warsampo }}">Sotasampo</a>
+                <div ng-if="::person.dbpedia" class="col-xs-6">
+                  <a ng-href="{{ ::person.dbpedia }}">DBpedia</a>
                 </div>
                 <div ng-if="::person.norssi" class="col-xs-6">
                   <a ng-href="http://www.norssit.fi/semweb/#!/tiedot/http:~2F~2Fldf.fi~2Fnorssit~2F{{ ::person.norssi }}">Norssi</a>
@@ -92,7 +95,7 @@
               </div>
               <div uib-collapse="!showText">
                 <hr />
-                <p ng-bind-html="::person.lead_paragraph"></p>
+                <p>{{ ::person.short_description }}</p>
               </div>
             </div>
           </div>

@@ -14,7 +14,8 @@ outfilename = "../ttl/extractsFromDBpedia.ttl"
 
 PREFICES =  ['@prefix schema: <http://schema.org/> .',
            '@prefix : <http://ldf.fi/congress/> .',
-           '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .']
+           '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .',
+           '@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .']
 
 
 def main():
@@ -42,6 +43,12 @@ def main():
                         'schema:description',
                         entry['description']))
             
+            if 'comment' in entry:
+                arr.append('{} \t{} \t"""{} """ .'.format(
+                        entry_id,
+                        'rdfs:comment',
+                        entry['comment']))
+            
             #    values of children can either be an integer "3" or a string "Mary"
             '''
             if 'children' in entry:
@@ -52,8 +59,9 @@ def main():
             '''    
             arr.append('')
         
-        for x in arr:
-            outfile.write("{}\n".format(x))
+        if len(arr)>1:
+            for x in arr:
+                outfile.write("{}\n".format(x))
         arr = []
     
     outfile.close()
@@ -82,16 +90,18 @@ def makeDBpediaQuery(uri):
     
     dbpedia_id = "http://dbpedia.org/resource/{}".format(uri)
     
-    #    example of a query: http://yasgui.org/short/SykgyFVrf
+    #    example of a query: http://yasgui.org/short/BJfr7iNrM
     query = """
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT * where {
   values ?dbpedia_id { <"""+dbpedia_id+"""> }
   
   OPTIONAL { ?dbpedia_id dbo:abstract ?description . FILTER (lang(?description)='en')}
   OPTIONAL { ?dbpedia_id dbp:children ?children }
+  OPTIONAL { ?dbpedia_id rdfs:comment ?comment . FILTER (lang(?comment)='en') }
 }    """
     
     res = makeSparqlQuery(query, endpoint)
