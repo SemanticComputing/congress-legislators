@@ -39,11 +39,11 @@ CONSTRUCT {
     geo:long ?long .
 }
 WHERE {
-  { SELECT DISTINCT * WHERE { ?id :wikidata ?sub . } LIMIT 1000 }
+  { SELECT DISTINCT * WHERE { ?id :wikidata ?sub . } }
   SERVICE <https://query.wikidata.org/sparql> {
     SELECT * WHERE {
-      ?sub wdt:P19|wdt:P20|(wdt:P19/wdt:P131)|(wdt:P19/wdt:P131/wdt:P131)|(wdt:P20/wdt:P131) ?place .
-      OPTIONAL { ?place rdfs:label ?label . FILTER (lang(?label)='en') }
+      ?sub wdt:P19|wdt:P20|(wdt:P19/wdt:P131)|(wdt:P19/wdt:P131/wdt:P131)|(wdt:P20/wdt:P131)|(wdt:P20/wdt:P131/wdt:P131) ?place .
+      ?place rdfs:label ?label . FILTER (lang(?label)='en')
     OPTIONAL { ?place wdt:P625 ?coords .
         BIND (replace(str(?coords), '[a-zA-Z()]', '') AS ?coords2)
       BIND (xsd:decimal(STRBEFORE(?coords2,' ')) AS ?long)

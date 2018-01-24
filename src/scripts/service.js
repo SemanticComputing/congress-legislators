@@ -68,11 +68,19 @@
                 facetId: 'givenName',
                 predicate: '<http://schema.org/givenName>',
                 name: 'First Name'
-            },
+            }, /**
             birthYear: {
                 facetId: 'birthYear',
                 predicate: '<http://schema.org/birthDate>',
                 name: 'Date of Birth',
+                enabled: true
+            }, */
+            birthPlace: {
+                facetId: 'birthPlace',
+                predicate: '<http://schema.org/birthPlace>',
+                name: 'Place of Birth',
+                hierarchy: '<http://schema.org/containedInPlace>',
+                depth: 3,
                 enabled: true
             },
             gender: {
