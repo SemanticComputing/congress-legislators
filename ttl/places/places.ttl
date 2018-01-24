@@ -1,0 +1,2240 @@
+@prefix schema: <http://schema.org/> .
+@prefix congress: <http://ldf.fi/congress/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix entity: <http://www.wikidata.org/entity/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+entity:Q271915  a                schema:Place ;
+        rdfs:label               "Fresno County"@en ;
+        schema:containedInPlace  entity:Q99 ;
+        geo:lat                  36.75 ;
+        geo:long                 -119.65 .
+
+entity:Q1454  a                  schema:Place ;
+        rdfs:label               "North Carolina"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  35.5 ;
+        geo:long                 "-80"^^xsd:decimal .
+
+entity:Q502257  a                schema:Place ;
+        rdfs:label               "Guilford County"@en ;
+        schema:containedInPlace  entity:Q1454 ;
+        geo:lat                  36.08 ;
+        geo:long                 -79.79 .
+
+entity:Q506220  a                schema:Place ;
+        rdfs:label               "Pitt County"@en ;
+        schema:containedInPlace  entity:Q1454 ;
+        geo:lat                  35.59 ;
+        geo:long                 -77.38 .
+
+entity:Q49238  a                 schema:Place ;
+        rdfs:label               "Greensboro"@en ;
+        schema:containedInPlace  entity:Q502257 ;
+        geo:lat                  36.08 ;
+        geo:long                 -79.819444444 .
+
+entity:Q16551  a                 schema:Place ;
+        rdfs:label               "Vermont"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "44"^^xsd:decimal ;
+        geo:long                 -72.7 .
+
+entity:Q1180427  a               schema:Place ;
+        rdfs:label               "Swissvale"@en ;
+        schema:containedInPlace  entity:Q156291 ;
+        geo:lat                  40.422222222 ;
+        geo:long                 -79.886111111 .
+
+entity:Q28180  a                 schema:Place ;
+        rdfs:label               "Jefferson City"@en ;
+        schema:containedInPlace  entity:Q485213 , entity:Q484493 ;
+        geo:lat                  38.576666666 ;
+        geo:long                 -92.173611111 .
+
+entity:Q1012644  a               schema:Place ;
+        rdfs:label               "Snowflake"@en ;
+        schema:containedInPlace  entity:Q58694 ;
+        geo:lat                  34.511111111 ;
+        geo:long                 -110.083055555 .
+
+entity:Q104994  a                schema:Place ;
+        rdfs:label               "Los Angeles County"@en ;
+        schema:containedInPlace  entity:Q99 ;
+        geo:lat                  34.05 ;
+        geo:long                 -118.25 .
+
+entity:Q1581  a                  schema:Place ;
+        rdfs:label               "Missouri"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  38.5 ;
+        geo:long                 -92.5 .
+
+entity:Q419  a      schema:Place ;
+        rdfs:label  "Peru"@en ;
+        geo:lat     "-8"^^xsd:decimal ;
+        geo:long    "-78"^^xsd:decimal .
+
+entity:Q513905  a                schema:Place ;
+        rdfs:label               "Pickens County"@en ;
+        schema:containedInPlace  entity:Q1456 ;
+        geo:lat                  34.89 ;
+        geo:long                 -82.72 .
+
+entity:Q1370  a                  schema:Place ;
+        rdfs:label               "Virginia"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  37.5 ;
+        geo:long                 "-79"^^xsd:decimal .
+
+entity:Q1762867  a               schema:Place ;
+        rdfs:label               "Leavenworth"@en ;
+        schema:containedInPlace  entity:Q379660 ;
+        geo:lat                  39.3111 ;
+        geo:long                 -94.9225 .
+
+entity:Q62  a                    schema:Place ;
+        rdfs:label               "San Francisco"@en ;
+        schema:containedInPlace  entity:Q13188841 ;
+        geo:lat                  37.766667 ;
+        geo:long                 -122.433333 .
+
+entity:Q1664345  a               schema:Place ;
+        rdfs:label               "Needham"@en ;
+        schema:containedInPlace  entity:Q54079 ;
+        geo:lat                  42.283333333 ;
+        geo:long                 -71.233333333 .
+
+entity:Q389573  a                schema:Place ;
+        rdfs:label               "Champaign County"@en ;
+        schema:containedInPlace  entity:Q1397 ;
+        geo:lat                  40.14 ;
+        geo:long                 -83.77 .
+
+entity:Q16563  a                 schema:Place ;
+        rdfs:label               "Memphis"@en ;
+        schema:containedInPlace  entity:Q501602 ;
+        geo:lat                  35.1175 ;
+        geo:long                 -89.971111111 .
+
+entity:Q812  a                   schema:Place ;
+        rdfs:label               "Florida"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  28.133333333 ;
+        geo:long                 -81.631666666 .
+
+entity:Q110130  a                schema:Place ;
+        rdfs:label               "Ellis County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  32.35 ;
+        geo:long                 -96.79 .
+
+entity:Q152891  a                schema:Place ;
+        rdfs:label               "Hamilton County"@en ;
+        schema:containedInPlace  entity:Q1397 ;
+        geo:lat                  39.2 ;
+        geo:long                 -84.54 .
+
+entity:Q913243  a                schema:Place ;
+        rdfs:label               "Mankato"@en ;
+        schema:containedInPlace  entity:Q491288 , entity:Q490409 , entity:Q110340 ;
+        geo:lat                  44.167666666 ;
+        geo:long                 -94.0034 .
+
+entity:Q54234  a                 schema:Place ;
+        rdfs:label               "New Haven County"@en ;
+        schema:containedInPlace  entity:Q779 ;
+        geo:lat                  41.35 ;
+        geo:long                 -72.9 .
+
+entity:Q54149  a                 schema:Place ;
+        rdfs:label               "Malden"@en ;
+        schema:containedInPlace  entity:Q54073 ;
+        geo:lat                  42.425 ;
+        geo:long                 -71.066666666 .
+
+entity:Q1145983  a               schema:Place ;
+        rdfs:label               "Farmington"@en ;
+        schema:containedInPlace  entity:Q504846 ;
+        geo:lat                  39.513055555 ;
+        geo:long                 -80.251944444 .
+
+entity:Q500871  a                schema:Place ;
+        rdfs:label               "La Crosse County"@en ;
+        schema:containedInPlace  entity:Q1537 ;
+        geo:lat                  43.91 ;
+        geo:long                 -91.11 .
+
+entity:Q1297  a                  schema:Place ;
+        rdfs:label               "Chicago"@en ;
+        schema:containedInPlace  entity:Q108418 ;
+        geo:lat                  41.9 ;
+        geo:long                 -87.65 .
+
+entity:Q58691  a                 schema:Place ;
+        rdfs:label               "Maricopa County"@en ;
+        schema:containedInPlace  entity:Q816 ;
+        geo:lat                  33.513888888 ;
+        geo:long                 -112.475833333 .
+
+entity:Q113783  a                schema:Place ;
+        rdfs:label               "Butler County"@en ;
+        schema:containedInPlace  entity:Q1546 ;
+        geo:lat                  42.731666666 ;
+        geo:long                 -92.791388888 .
+
+entity:Q976490  a                schema:Place ;
+        rdfs:label               "Greenville"@en ;
+        schema:containedInPlace  entity:Q111729 ;
+        geo:lat                  33.1261 ;
+        geo:long                 -96.1097 .
+
+entity:Q507722  a                schema:Place ;
+        rdfs:label               "Sampson County"@en ;
+        schema:containedInPlace  entity:Q1454 ;
+        geo:lat                  34.99 ;
+        geo:long                 -78.37 .
+
+entity:Q2415892  a               schema:Place ;
+        rdfs:label               "Norwood"@en ;
+        schema:containedInPlace  entity:Q54079 ;
+        geo:lat                  42.194444444 ;
+        geo:long                 -71.2 .
+
+entity:Q824  a                   schema:Place ;
+        rdfs:label               "Oregon"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  43.935833 ;
+        geo:long                 -120.575 .
+
+entity:Q2029703  a               schema:Place ;
+        rdfs:label               "Roseboro"@en ;
+        schema:containedInPlace  entity:Q507722 ;
+        geo:lat                  34.9525 ;
+        geo:long                 -78.510555555 .
+
+entity:Q7503629  a               schema:Place ;
+        rdfs:label               "Shreveport-Bossier City-Minden Combined Statistical Area"@en ;
+        schema:containedInPlace  entity:Q1588 .
+
+entity:Q23556  a                 schema:Place ;
+        rdfs:label               "Atlanta"@en ;
+        schema:containedInPlace  entity:Q486633 , entity:Q486398 ;
+        geo:lat                  33.756944444 ;
+        geo:long                 -84.390277777 .
+
+entity:Q1207  a                  schema:Place ;
+        rdfs:label               "North Dakota"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  47.5 ;
+        geo:long                 -100.5 .
+
+entity:Q494556  a                schema:Place ;
+        rdfs:label               "Pinellas County"@en ;
+        schema:containedInPlace  entity:Q812 ;
+        geo:lat                  27.9 ;
+        geo:long                 -82.74 .
+
+entity:Q195664  a                schema:Place ;
+        rdfs:label               "Wayne County"@en ;
+        schema:containedInPlace  entity:Q1166 ;
+        geo:lat                  42.28 ;
+        geo:long                 -83.26 .
+
+entity:Q498042  a                schema:Place ;
+        rdfs:label               "Bossier Parish"@en ;
+        schema:containedInPlace  entity:Q7503629 , entity:Q7503628 , entity:Q1588 ;
+        geo:lat                  32.68 ;
+        geo:long                 -93.6 .
+
+entity:Q495738  a                schema:Place ;
+        rdfs:label               "Mobile County"@en ;
+        schema:containedInPlace  entity:Q173 ;
+        geo:lat                  30.786388888 ;
+        geo:long                 -88.213888888 .
+
+entity:Q491046  a                schema:Place ;
+        rdfs:label               "Aroostook County"@en ;
+        schema:containedInPlace  entity:Q724 ;
+        geo:lat                  46.637363 ;
+        geo:long                 -68.261665 .
+
+entity:Q494707  a                schema:Place ;
+        rdfs:label               "Corona"@en ;
+        schema:containedInPlace  entity:Q108111 ;
+        geo:lat                  33.866666666 ;
+        geo:long                 -117.566666666 .
+
+entity:Q982452  a                schema:Place ;
+        rdfs:label               "Pittsburg"@en ;
+        schema:containedInPlace  entity:Q108837 ;
+        geo:lat                  32.996944444 ;
+        geo:long                 -94.968055555 .
+
+entity:Q16557  a                 schema:Place ;
+        rdfs:label               "Dallas"@en ;
+        schema:containedInPlace  entity:Q111391 , entity:Q111174 , entity:Q111168 , entity:Q110486 , entity:Q109265 ;
+        geo:lat                  32.7825 ;
+        geo:long                 -96.7975 .
+
+entity:Q434355  a                schema:Place ;
+        rdfs:label               "Altamonte Springs"@en ;
+        schema:containedInPlace  entity:Q280596 ;
+        geo:lat                  28.661388888 ;
+        geo:long                 -81.391944444 .
+
+entity:Q489332  a                schema:Place ;
+        rdfs:label               "Roger Mills County"@en ;
+        schema:containedInPlace  entity:Q1649 ;
+        geo:lat                  35.69 ;
+        geo:long                 -99.7 .
+
+entity:Q79255  a                 schema:Place ;
+        rdfs:label               "Haleyville"@en ;
+        schema:containedInPlace  entity:Q502739 ;
+        geo:lat                  34.230131 ;
+        geo:long                 -87.618978 .
+
+entity:Q502294  a                schema:Place ;
+        rdfs:label               "Milwaukee County"@en ;
+        schema:containedInPlace  entity:Q1537 ;
+        geo:lat                  "43"^^xsd:decimal ;
+        geo:long                 -87.96713 .
+
+entity:Q156291  a                schema:Place ;
+        rdfs:label               "Allegheny County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.47 ;
+        geo:long                 -79.98 .
+
+entity:Q26631  a                 schema:Place ;
+        rdfs:label               "Davis County"@en ;
+        schema:containedInPlace  entity:Q829 ;
+        geo:lat                  41.01 ;
+        geo:long                 -112.12 .
+
+entity:Q485213  a                schema:Place ;
+        rdfs:label               "Callaway County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  38.84 ;
+        geo:long                 -91.92 .
+
+entity:Q378071  a                schema:Place ;
+        rdfs:label               "Rock Springs"@en ;
+        schema:containedInPlace  entity:Q484194 ;
+        geo:lat                  41.585 ;
+        geo:long                 -109.221388888 .
+
+entity:Q5027012  a               schema:Place ;
+        rdfs:label               "Camp Blanding"@en ;
+        schema:containedInPlace  entity:Q812 ;
+        geo:lat                  29.9519 ;
+        geo:long                 -81.9799 .
+
+entity:Q142811  a                schema:Place ;
+        rdfs:label               "Allentown"@en ;
+        schema:containedInPlace  entity:Q494117 ;
+        geo:lat                  40.6 ;
+        geo:long                 -75.483333333 .
+
+entity:Q1612  a                  schema:Place ;
+        rdfs:label               "Arkansas"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  34.8 ;
+        geo:long                 -92.2 .
+
+entity:Q1527  a                  schema:Place ;
+        rdfs:label               "Minnesota"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "46"^^xsd:decimal ;
+        geo:long                 "-94"^^xsd:decimal .
+
+entity:Q28283  a                 schema:Place ;
+        rdfs:label               "Burleigh County"@en ;
+        schema:containedInPlace  entity:Q1207 ;
+        geo:lat                  46.98 ;
+        geo:long                 -100.47 .
+
+entity:Q28198  a                 schema:Place ;
+        rdfs:label               "Jackson"@en ;
+        schema:containedInPlace  entity:Q486538 , entity:Q1494 ;
+        geo:lat                  32.298888888 ;
+        geo:long                 -90.184722222 .
+
+entity:Q1105400  a  schema:Place ;
+        rdfs:label  "Coco Solo"@en ;
+        geo:lat     9.372619444 ;
+        geo:long    -79.8812 .
+
+entity:Q43196  a                 schema:Place ;
+        rdfs:label               "Cincinnati"@en ;
+        schema:containedInPlace  entity:Q152891 ;
+        geo:lat                  39.133333333 ;
+        geo:long                 -84.5 .
+
+entity:Q975  a                   schema:Place ;
+        rdfs:label               "San Antonio"@en ;
+        schema:containedInPlace  entity:Q16861 ;
+        geo:lat                  29.428611111 ;
+        geo:long                 -98.493333333 .
+
+entity:Q312744  a                schema:Place ;
+        rdfs:label               "Yuma County"@en ;
+        schema:containedInPlace  entity:Q1261 ;
+        geo:lat                  "40"^^xsd:decimal ;
+        geo:long                 -102.42 .
+
+entity:Q403310  a                schema:Place ;
+        rdfs:label               "Richland County"@en ;
+        schema:containedInPlace  entity:Q1397 ;
+        geo:lat                  40.78 ;
+        geo:long                 -82.54 .
+
+entity:Q847676  a                schema:Place ;
+        rdfs:label               "Ohio County"@en ;
+        schema:containedInPlace  entity:Q1371 ;
+        geo:lat                  40.1 ;
+        geo:long                 -80.62 .
+
+entity:Q486479  a                schema:Place ;
+        rdfs:label               "Rochester"@en ;
+        schema:containedInPlace  entity:Q485656 ;
+        geo:lat                  44.0234 ;
+        geo:long                 -92.46295 .
+
+entity:Q108101  a                schema:Place ;
+        rdfs:label               "San Mateo County"@en ;
+        schema:containedInPlace  entity:Q99 ;
+        geo:lat                  37.44 ;
+        geo:long                 -122.36 .
+
+entity:Q1509  a                  schema:Place ;
+        rdfs:label               "Tennessee"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "36"^^xsd:decimal ;
+        geo:long                 "-86"^^xsd:decimal .
+
+entity:Q108408  a                schema:Place ;
+        rdfs:label               "Albany County"@en ;
+        schema:containedInPlace  entity:Q1384 ;
+        geo:lat                  42.662094 ;
+        geo:long                 -73.849075 .
+
+entity:Q987  a                   schema:Place ;
+        rdfs:label               "New Delhi"@en ;
+        schema:containedInPlace  entity:Q1353 ;
+        geo:lat                  28.7 ;
+        geo:long                 77.2 .
+
+entity:Q110486  a                schema:Place ;
+        rdfs:label               "Kaufman County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  32.6 ;
+        geo:long                 -96.28 .
+
+entity:Q173  a                   schema:Place ;
+        rdfs:label               "Alabama"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  32.7 ;
+        geo:long                 -86.7 .
+
+entity:Q487999  a                schema:Place ;
+        rdfs:label               "Gainesville"@en ;
+        schema:containedInPlace  entity:Q488826 ;
+        geo:lat                  29.665277777 ;
+        geo:long                 -82.336111111 .
+
+entity:Q54072  a                 schema:Place ;
+        rdfs:label               "Suffolk County"@en ;
+        schema:containedInPlace  entity:Q771 ;
+        geo:lat                  42.334949 ;
+        geo:long                 -71.073494 .
+
+entity:Q985208  a                schema:Place ;
+        rdfs:label               "Pontotoc"@en ;
+        schema:containedInPlace  entity:Q490259 ;
+        geo:lat                  34.2486 ;
+        geo:long                 -89.0067 .
+
+entity:Q108143  a                schema:Place ;
+        rdfs:label               "San Diego County"@en ;
+        schema:containedInPlace  entity:Q99 ;
+        geo:lat                  33.02 ;
+        geo:long                 -116.77 .
+
+entity:Q54253  a                 schema:Place ;
+        rdfs:label               "Providence County"@en ;
+        schema:containedInPlace  entity:Q1387 ;
+        geo:lat                  41.852848 ;
+        geo:long                 -71.456161 .
+
+entity:Q16552  a                 schema:Place ;
+        rdfs:label               "San Diego"@en ;
+        schema:containedInPlace  entity:Q108143 ;
+        geo:lat                  32.715 ;
+        geo:long                 -117.1625 .
+
+entity:Q251267  a                schema:Place ;
+        rdfs:label               "Cuyahoga County"@en ;
+        schema:containedInPlace  entity:Q1397 ;
+        geo:lat                  41.54 ;
+        geo:long                 -81.66 .
+
+entity:Q1214  a                  schema:Place ;
+        rdfs:label               "Wyoming"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "43"^^xsd:decimal ;
+        geo:long                 -107.5 .
+
+entity:Q49239  a                 schema:Place ;
+        rdfs:label               "Toledo"@en ;
+        schema:containedInPlace  entity:Q112107 ;
+        geo:lat                  41.666666666 ;
+        geo:long                 -83.583333333 .
+
+entity:Q110426  a                schema:Place ;
+        rdfs:label               "Travis County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  30.33 ;
+        geo:long                 -97.78 .
+
+entity:Q1855103  a               schema:Place ;
+        rdfs:label               "Poston"@en ;
+        schema:containedInPlace  entity:Q58759 ;
+        geo:lat                  33.9903 ;
+        geo:long                 -114.401 .
+
+entity:Q1371  a                  schema:Place ;
+        rdfs:label               "West Virginia"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "39"^^xsd:decimal ;
+        geo:long                 -80.5 .
+
+entity:Q156297  a                schema:Place ;
+        rdfs:label               "Bernalillo County"@en ;
+        schema:containedInPlace  entity:Q1522 ;
+        geo:lat                  35.05 ;
+        geo:long                 -106.67 .
+
+entity:Q112107  a                schema:Place ;
+        rdfs:label               "Lucas County"@en ;
+        schema:containedInPlace  entity:Q1397 ;
+        geo:lat                  41.68 ;
+        geo:long                 -83.5 .
+
+entity:Q26426  a                 schema:Place ;
+        rdfs:label               "Montpelier"@en ;
+        schema:containedInPlace  entity:Q505380 ;
+        geo:lat                  44.2658586 ;
+        geo:long                 -72.5717415 .
+
+entity:Q490409  a                schema:Place ;
+        rdfs:label               "Nicollet County"@en ;
+        schema:containedInPlace  entity:Q1527 ;
+        geo:lat                  44.34 ;
+        geo:long                 -94.25 .
+
+entity:Q468557  a                schema:Place ;
+        rdfs:label               "Miami-Dade County"@en ;
+        schema:containedInPlace  entity:Q812 ;
+        geo:lat                  25.774167 ;
+        geo:long                 -80.193611 .
+
+entity:Q484194  a                schema:Place ;
+        rdfs:label               "Sweetwater County"@en ;
+        schema:containedInPlace  entity:Q1214 ;
+        geo:lat                  41.66 ;
+        geo:long                 -108.89 .
+
+entity:Q6346  a                  schema:Place ;
+        rdfs:label               "Indianapolis"@en ;
+        schema:containedInPlace  entity:Q506230 ;
+        geo:lat                  39.767777777 ;
+        geo:long                 -86.158055555 .
+
+entity:Q1522  a                  schema:Place ;
+        rdfs:label               "New Mexico"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "34"^^xsd:decimal ;
+        geo:long                 "-106"^^xsd:decimal .
+
+entity:Q377046  a                schema:Place ;
+        rdfs:label               "Jackson County"@en ;
+        schema:containedInPlace  entity:Q1558 ;
+        geo:lat                  39.4 ;
+        geo:long                 -95.8333 .
+
+entity:Q39709  a                 schema:Place ;
+        rdfs:label               "Des Moines"@en ;
+        schema:containedInPlace  entity:Q485808 , entity:Q112737 ;
+        geo:lat                  41.590833333 ;
+        geo:long                 -93.620833333 .
+
+entity:Q280596  a                schema:Place ;
+        rdfs:label               "Seminole County"@en ;
+        schema:containedInPlace  entity:Q812 ;
+        geo:lat                  28.71 ;
+        geo:long                 -81.23 .
+
+entity:Q488826  a                schema:Place ;
+        rdfs:label               "Alachua County"@en ;
+        schema:containedInPlace  entity:Q812 ;
+        geo:lat                  29.683333333 ;
+        geo:long                 -82.366666666 .
+
+entity:Q695417  a                schema:Place ;
+        rdfs:label               "Bremerton"@en ;
+        schema:containedInPlace  entity:Q484159 ;
+        geo:lat                  47.57 ;
+        geo:long                 -122.6525 .
+
+entity:Q49197  a                 schema:Place ;
+        rdfs:label               "Cranston"@en ;
+        schema:containedInPlace  entity:Q54253 ;
+        geo:lat                  41.783333333 ;
+        geo:long                 -71.441666666 .
+
+entity:Q483893  a                schema:Place ;
+        rdfs:label               "Nueces County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  27.74 ;
+        geo:long                 -97.52 .
+
+entity:Q1055866  a               schema:Place ;
+        rdfs:label               "Arlington"@en ;
+        schema:containedInPlace  entity:Q110403 ;
+        geo:lat                  48.1811 ;
+        geo:long                 -122.139 .
+
+entity:Q1353  a                  schema:Place ;
+        rdfs:label               "Delhi"@en ;
+        schema:containedInPlace  entity:Q668 ;
+        geo:lat                  28.666666666 ;
+        geo:long                 77.216666666 .
+
+entity:Q504846  a                schema:Place ;
+        rdfs:label               "Marion County"@en ;
+        schema:containedInPlace  entity:Q1371 ;
+        geo:lat                  39.51 ;
+        geo:long                 -80.24 .
+
+entity:Q169943  a                schema:Place ;
+        rdfs:label               "San Mateo"@en ;
+        schema:containedInPlace  entity:Q108101 ;
+        geo:lat                  37.554166666 ;
+        geo:long                 -122.313055555 .
+
+entity:Q40435  a                 schema:Place ;
+        rdfs:label               "Buffalo"@en ;
+        schema:containedInPlace  entity:Q114843 ;
+        geo:lat                  42.904722222 ;
+        geo:long                 -78.849444444 .
+
+entity:Q54066  a                 schema:Place ;
+        rdfs:label               "Westchester County"@en ;
+        schema:containedInPlace  entity:Q1384 ;
+        geo:lat                  41.15 ;
+        geo:long                 -73.775 .
+
+entity:Q501602  a                schema:Place ;
+        rdfs:label               "Shelby County"@en ;
+        schema:containedInPlace  entity:Q1509 ;
+        geo:lat                  35.18 ;
+        geo:long                 -89.89 .
+
+entity:Q36091  a                 schema:Place ;
+        rdfs:label               "Minneapolis"@en ;
+        schema:containedInPlace  entity:Q486229 ;
+        geo:lat                  44.980277777 ;
+        geo:long                 -93.264166666 .
+
+entity:Q496589  a                schema:Place ;
+        rdfs:label               "Hill County"@en ;
+        schema:containedInPlace  entity:Q1212 ;
+        geo:lat                  48.63 ;
+        geo:long                 -110.11 .
+
+entity:Q491288  a                schema:Place ;
+        rdfs:label               "Le Sueur County"@en ;
+        schema:containedInPlace  entity:Q1527 ;
+        geo:lat                  44.37 ;
+        geo:long                 -93.73 .
+
+entity:Q893540  a                schema:Place ;
+        rdfs:label               "Borger"@en ;
+        schema:containedInPlace  entity:Q484542 ;
+        geo:lat                  35.662777777 ;
+        geo:long                 -101.401666666 .
+
+entity:Q5092  a                  schema:Place ;
+        rdfs:label               "Baltimore"@en ;
+        schema:containedInPlace  entity:Q1391 ;
+        geo:lat                  39.286388888 ;
+        geo:long                 -76.615 .
+
+entity:Q771  a                   schema:Place ;
+        rdfs:label               "Massachusetts"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  42.3 ;
+        geo:long                 -71.8 .
+
+entity:Q49179  a                 schema:Place ;
+        rdfs:label               "Worcester"@en ;
+        schema:containedInPlace  entity:Q54093 ;
+        geo:lat                  42.266666666 ;
+        geo:long                 -71.8 .
+
+entity:Q981114  a                schema:Place ;
+        rdfs:label               "Myrtle Creek"@en ;
+        schema:containedInPlace  entity:Q484395 ;
+        geo:lat                  43.026944444 ;
+        geo:long                 -123.282222222 .
+
+entity:Q109265  a                schema:Place ;
+        rdfs:label               "Denton County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  33.2 ;
+        geo:long                 -97.12 .
+
+entity:Q1546  a                  schema:Place ;
+        rdfs:label               "Iowa"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "42"^^xsd:decimal ;
+        geo:long                 "-93"^^xsd:decimal .
+
+entity:Q79606  a                 schema:Place ;
+        rdfs:label               "Tuscumbia"@en ;
+        schema:containedInPlace  entity:Q487731 ;
+        geo:lat                  34.730839 ;
+        geo:long                 -87.702854 .
+
+entity:Q108837  a                schema:Place ;
+        rdfs:label               "Camp County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  32.97 ;
+        geo:long                 -94.98 .
+
+entity:Q989284  a                schema:Place ;
+        rdfs:label               "Vermillion"@en ;
+        schema:containedInPlace  entity:Q489273 ;
+        geo:lat                  42.781111111 ;
+        geo:long                 -96.926944444 .
+
+entity:Q579240  a                schema:Place ;
+        rdfs:label               "Lima Province"@en ;
+        schema:containedInPlace  entity:Q419 ;
+        geo:lat                  -12.035 ;
+        geo:long                 -77.018611111 .
+
+entity:Q99  a                    schema:Place ;
+        rdfs:label               "California"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "37"^^xsd:decimal ;
+        geo:long                 "-120"^^xsd:decimal .
+
+entity:Q1588  a                  schema:Place ;
+        rdfs:label               "Louisiana"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "31"^^xsd:decimal ;
+        geo:long                 "-92"^^xsd:decimal .
+
+entity:Q43788  a                 schema:Place ;
+        rdfs:label               "Madison"@en ;
+        schema:containedInPlace  entity:Q502200 ;
+        geo:lat                  43.074722222 ;
+        geo:long                 -89.384444444 .
+
+entity:Q12439  a                 schema:Place ;
+        rdfs:label               "Detroit"@en ;
+        schema:containedInPlace  entity:Q195664 ;
+        geo:lat                  42.331666666 ;
+        geo:long                 -83.0475 .
+
+entity:Q135615  a                schema:Place ;
+        rdfs:label               "Springfield"@en ;
+        schema:containedInPlace  entity:Q490357 ;
+        geo:lat                  37.195 ;
+        geo:long                 -93.286111111 .
+
+entity:Q1166  a                  schema:Place ;
+        rdfs:label               "Michigan"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  44.34 ;
+        geo:long                 -85.58 .
+
+entity:Q1558  a                  schema:Place ;
+        rdfs:label               "Kansas"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  38.5 ;
+        geo:long                 "-98"^^xsd:decimal .
+
+entity:Q668  a      schema:Place ;
+        rdfs:label  "India"@en ;
+        geo:lat     "21"^^xsd:decimal ;
+        geo:long    "77"^^xsd:decimal .
+
+entity:Q574192  a                schema:Place ;
+        rdfs:label               "Greenville"@en ;
+        schema:containedInPlace  entity:Q502273 ;
+        geo:lat                  34.844444444 ;
+        geo:long                 -82.385555555 .
+
+entity:Q576671  a                schema:Place ;
+        rdfs:label               "Highland Park"@en ;
+        schema:containedInPlace  entity:Q484263 ;
+        geo:lat                  42.1825 ;
+        geo:long                 -87.806944444 .
+
+entity:Q494117  a                schema:Place ;
+        rdfs:label               "Lehigh County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.61 ;
+        geo:long                 -75.59 .
+
+entity:Q1221  a                  schema:Place ;
+        rdfs:label               "Idaho"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "45"^^xsd:decimal ;
+        geo:long                 "-114"^^xsd:decimal .
+
+entity:Q111957  a                schema:Place ;
+        rdfs:label               "Buena Vista County"@en ;
+        schema:containedInPlace  entity:Q1546 ;
+        geo:lat                  42.735 ;
+        geo:long                 -95.150277777 .
+
+entity:Q177562  a                schema:Place ;
+        rdfs:label               "Caddo Parish"@en ;
+        schema:containedInPlace  entity:Q1588 ;
+        geo:lat                  32.58 ;
+        geo:long                 -93.88 .
+
+entity:Q1520670  a               schema:Place ;
+        rdfs:label               "Lebanon"@en ;
+        schema:containedInPlace  entity:Q501606 ;
+        geo:lat                  36.2081 ;
+        geo:long                 -86.3264 .
+
+entity:Q494485  a                schema:Place ;
+        rdfs:label               "Kankakee County"@en ;
+        schema:containedInPlace  entity:Q1204 ;
+        geo:lat                  41.14 ;
+        geo:long                 -87.86 .
+
+entity:Q959425  a                schema:Place ;
+        rdfs:label               "Havre"@en ;
+        schema:containedInPlace  entity:Q496589 ;
+        geo:lat                  48.545277777 ;
+        geo:long                 -109.6775 .
+
+entity:Q2272340  a               schema:Place ;
+        rdfs:label               "Yuma"@en ;
+        schema:containedInPlace  entity:Q312744 ;
+        geo:lat                  40.122777777 ;
+        geo:long                 -102.725 .
+
+entity:Q110403  a                schema:Place ;
+        rdfs:label               "Snohomish County"@en ;
+        schema:containedInPlace  entity:Q1223 ;
+        geo:lat                  48.04 ;
+        geo:long                 -121.71 .
+
+entity:Q144856  a                schema:Place ;
+        rdfs:label               "Bonham"@en ;
+        schema:containedInPlace  entity:Q111593 ;
+        geo:lat                  33.583888888 ;
+        geo:long                 -96.181666666 .
+
+entity:Q108047  a                schema:Place ;
+        rdfs:label               "Kern County"@en ;
+        schema:containedInPlace  entity:Q99 ;
+        geo:lat                  35.34 ;
+        geo:long                 -118.72 .
+
+entity:Q110500  a                schema:Place ;
+        rdfs:label               "Erath County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  32.23 ;
+        geo:long                 -98.22 .
+
+entity:Q33486  a                 schema:Place ;
+        rdfs:label               "Hartford"@en ;
+        schema:containedInPlace  entity:Q54236 ;
+        geo:lat                  41.763333333 ;
+        geo:long                 -72.685 .
+
+entity:Q269634  a                schema:Place ;
+        rdfs:label               "Tachikawa"@en ;
+        schema:containedInPlace  entity:Q1323122 ;
+        geo:lat                  35.693888888 ;
+        geo:long                 139.419444444 .
+
+entity:Q3551781  a               schema:Place ;
+        rdfs:label               "District of Columbia"@en ;
+        schema:containedInPlace  entity:Q30 .
+
+entity:Q1010699  a               schema:Place ;
+        rdfs:label               "Caribou"@en ;
+        schema:containedInPlace  entity:Q491046 ;
+        geo:lat                  46.863611111 ;
+        geo:long                 -67.998055555 .
+
+entity:Q1456  a                  schema:Place ;
+        rdfs:label               "South Carolina"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "34"^^xsd:decimal ;
+        geo:long                 "-81"^^xsd:decimal .
+
+entity:Q181015  a                schema:Place ;
+        rdfs:label               "Charleston County"@en ;
+        schema:containedInPlace  entity:Q1456 ;
+        geo:lat                  32.82 ;
+        geo:long                 -79.9 .
+
+entity:Q24861  a                 schema:Place ;
+        rdfs:label               "Albany"@en ;
+        schema:containedInPlace  entity:Q108408 ;
+        geo:lat                  42.65 ;
+        geo:long                 -73.766666666 .
+
+entity:Q484183  a                schema:Place ;
+        rdfs:label               "Webb County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  27.77 ;
+        geo:long                 -99.33 .
+
+entity:Q54073  a                 schema:Place ;
+        rdfs:label               "Middlesex County"@en ;
+        schema:containedInPlace  entity:Q771 ;
+        geo:lat                  42.459084 ;
+        geo:long                 -71.275566 .
+
+entity:Q489273  a                schema:Place ;
+        rdfs:label               "Clay County"@en ;
+        schema:containedInPlace  entity:Q1211 ;
+        geo:lat                  42.92 ;
+        geo:long                 -96.97 .
+
+entity:Q578486  a                schema:Place ;
+        rdfs:label               "Taylorville"@en ;
+        schema:containedInPlace  entity:Q111686 ;
+        geo:lat                  39.540833333 ;
+        geo:long                 -89.288055555 .
+
+entity:Q2092188  a               schema:Place ;
+        rdfs:label               "Gladwin"@en ;
+        schema:containedInPlace  entity:Q490642 ;
+        geo:lat                  43.980833333 ;
+        geo:long                 -84.486388888 .
+
+entity:Q576273  a                schema:Place ;
+        rdfs:label               "Park Ridge"@en ;
+        schema:containedInPlace  entity:Q108418 , entity:Q1204 ;
+        geo:lat                  42.011666666 ;
+        geo:long                 -87.841388888 .
+
+entity:Q485631  a                schema:Place ;
+        rdfs:label               "Phelps County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  37.88 ;
+        geo:long                 -91.79 .
+
+entity:Q2276157  a               schema:Place ;
+        rdfs:label               "Orangeburg"@en ;
+        schema:containedInPlace  entity:Q506068 ;
+        geo:lat                  33.496944444 ;
+        geo:long                 -80.862222222 .
+
+entity:Q490259  a                schema:Place ;
+        rdfs:label               "Pontotoc County"@en ;
+        schema:containedInPlace  entity:Q1494 ;
+        geo:lat                  34.23 ;
+        geo:long                 -89.04 .
+
+entity:Q955386  a                schema:Place ;
+        rdfs:label               "Rolla"@en ;
+        schema:containedInPlace  entity:Q485631 ;
+        geo:lat                  37.948888888 ;
+        geo:long                 -91.763055555 .
+
+entity:Q484304  a                schema:Place ;
+        rdfs:label               "Atchison County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  40.43 ;
+        geo:long                 -95.43 .
+
+entity:Q1342  a                  schema:Place ;
+        rdfs:label               "Pittsburgh"@en ;
+        schema:containedInPlace  entity:Q156291 ;
+        geo:lat                  40.45 ;
+        geo:long                 "-80"^^xsd:decimal .
+
+entity:Q111686  a                schema:Place ;
+        rdfs:label               "Christian County"@en ;
+        schema:containedInPlace  entity:Q1204 ;
+        geo:lat                  39.55 ;
+        geo:long                 -89.28 .
+
+entity:Q1649  a                  schema:Place ;
+        rdfs:label               "Oklahoma"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  35.5 ;
+        geo:long                 "-98"^^xsd:decimal .
+
+entity:Q16861  a                 schema:Place ;
+        rdfs:label               "Bexar County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  29.45 ;
+        geo:long                 -98.52 .
+
+entity:Q28218  a                 schema:Place ;
+        rdfs:label               "Baton Rouge"@en ;
+        schema:containedInPlace  entity:Q491949 ;
+        geo:lat                  30.416666666 ;
+        geo:long                 -91.1 .
+
+entity:Q510900  a                schema:Place ;
+        rdfs:label               "Wilson County"@en ;
+        schema:containedInPlace  entity:Q1454 ;
+        geo:lat                  35.7 ;
+        geo:long                 -77.92 .
+
+entity:Q928168  a                schema:Place ;
+        rdfs:label               "Bronxville"@en ;
+        schema:containedInPlace  entity:Q3709365 ;
+        geo:lat                  40.94 ;
+        geo:long                 -73.826111111 .
+
+entity:Q1227  a                  schema:Place ;
+        rdfs:label               "Nevada"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "39"^^xsd:decimal ;
+        geo:long                 "-117"^^xsd:decimal .
+
+entity:Q489255  a                schema:Place ;
+        rdfs:label               "Sioux City"@en ;
+        schema:containedInPlace  entity:Q486006 , entity:Q485710 ;
+        geo:lat                  42.498055555 ;
+        geo:long                 -96.395555555 .
+
+entity:Q43301  a                 schema:Place ;
+        rdfs:label               "Fresno"@en ;
+        schema:containedInPlace  entity:Q271915 ;
+        geo:lat                  36.781666666 ;
+        geo:long                 -119.792222222 .
+
+entity:Q502200  a                schema:Place ;
+        rdfs:label               "Dane County"@en ;
+        schema:containedInPlace  entity:Q1537 ;
+        geo:lat                  43.07 ;
+        geo:long                 -89.42 .
+
+entity:Q1408  a                  schema:Place ;
+        rdfs:label               "New Jersey"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "40"^^xsd:decimal ;
+        geo:long                 -74.5 .
+
+entity:Q6106  a                  schema:Place ;
+        rdfs:label               "Portland"@en ;
+        schema:containedInPlace  entity:Q450374 ;
+        geo:lat                  45.516666666 ;
+        geo:long                 -122.666666666 .
+
+entity:Q54236  a                 schema:Place ;
+        rdfs:label               "Hartford County"@en ;
+        schema:containedInPlace  entity:Q779 ;
+        geo:lat                  41.81 ;
+        geo:long                 -72.73 .
+
+entity:Q497845  a                schema:Place ;
+        rdfs:label               "Cumberland County"@en ;
+        schema:containedInPlace  entity:Q1408 ;
+        geo:lat                  39.33 ;
+        geo:long                 -75.13 .
+
+entity:Q108494  a                schema:Place ;
+        rdfs:label               "El Paso County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  31.77 ;
+        geo:long                 -106.24 .
+
+entity:Q1384  a                  schema:Place ;
+        rdfs:label               "New York"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "43"^^xsd:decimal ;
+        geo:long                 "-75"^^xsd:decimal .
+
+entity:Q981525  a                schema:Place ;
+        rdfs:label               "Stephenville"@en ;
+        schema:containedInPlace  entity:Q110500 , entity:Q1439 ;
+        geo:lat                  32.2206958 ;
+        geo:long                 -98.2022633 .
+
+entity:Q111391  a                schema:Place ;
+        rdfs:label               "Rockwall County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  32.89 ;
+        geo:long                 -96.41 .
+
+entity:Q38022  a                 schema:Place ;
+        rdfs:label               "St. Louis"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  38.616666666 ;
+        geo:long                 -90.2 .
+
+entity:Q58759  a                 schema:Place ;
+        rdfs:label               "La Paz County"@en ;
+        schema:containedInPlace  entity:Q816 ;
+        geo:lat                  33.840277777 ;
+        geo:long                 -113.942777777 .
+
+entity:Q485710  a                schema:Place ;
+        rdfs:label               "Plymouth County"@en ;
+        schema:containedInPlace  entity:Q1546 ;
+        geo:lat                  42.738333333 ;
+        geo:long                 -96.220277777 .
+
+entity:Q1914054  a               schema:Place ;
+        rdfs:label               "New Hartford"@en ;
+        schema:containedInPlace  entity:Q113783 ;
+        geo:lat                  42.567222222 ;
+        geo:long                 -92.621388888 .
+
+entity:Q450374  a                schema:Place ;
+        rdfs:label               "Multnomah County"@en ;
+        schema:containedInPlace  entity:Q824 ;
+        geo:lat                  45.54 ;
+        geo:long                 -122.41 .
+
+entity:Q485571  a                schema:Place ;
+        rdfs:label               "Wood County"@en ;
+        schema:containedInPlace  entity:Q1397 ;
+        geo:lat                  41.36 ;
+        geo:long                 -83.62 .
+
+entity:Q1186937  a               schema:Place ;
+        rdfs:label               "Hazleton"@en ;
+        schema:containedInPlace  entity:Q501292 ;
+        geo:lat                  40.9589 ;
+        geo:long                 -75.9744 .
+
+entity:Q41057  a                 schema:Place ;
+        rdfs:label               "Topeka"@en ;
+        schema:containedInPlace  entity:Q374410 ;
+        geo:lat                  39.033333333 ;
+        geo:long                 -95.683333333 .
+
+entity:Q54079  a                 schema:Place ;
+        rdfs:label               "Norfolk County"@en ;
+        schema:containedInPlace  entity:Q771 ;
+        geo:lat                  42.199158 ;
+        geo:long                 -71.154442 .
+
+entity:Q16559  a                 schema:Place ;
+        rdfs:label               "Austin"@en ;
+        schema:containedInPlace  entity:Q110426 ;
+        geo:lat                  30.3 ;
+        geo:long                 -97.733333333 .
+
+entity:Q13188841  a              schema:Place ;
+        rdfs:label               "San Francisco County"@en ;
+        schema:containedInPlace  entity:Q99 .
+
+entity:Q484159  a                schema:Place ;
+        rdfs:label               "Kitsap County"@en ;
+        schema:containedInPlace  entity:Q1223 ;
+        geo:lat                  47.64 ;
+        geo:long                 -122.65 .
+
+entity:Q501350  a                schema:Place ;
+        rdfs:label               "Lackawanna County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  41.44 ;
+        geo:long                 -75.61 .
+
+entity:Q510840  a                schema:Place ;
+        rdfs:label               "Storm Lake"@en ;
+        schema:containedInPlace  entity:Q111957 ;
+        geo:lat                  42.643611111 ;
+        geo:long                 -95.201944444 .
+
+entity:Q71707  a                 schema:Place ;
+        rdfs:label               "Fukushima Prefecture"@en ;
+        schema:containedInPlace  entity:Q17 ;
+        geo:lat                  37.4 ;
+        geo:long                 140.466666666 .
+
+entity:Q111174  a                schema:Place ;
+        rdfs:label               "Collin County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  33.18 ;
+        geo:long                 -96.58 .
+
+entity:Q34404  a                 schema:Place ;
+        rdfs:label               "New Orleans"@en ;
+        schema:containedInPlace  entity:Q486231 ;
+        geo:lat                  29.966666666 ;
+        geo:long                 -90.05 .
+
+entity:Q724  a                   schema:Place ;
+        rdfs:label               "Maine"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  45.5 ;
+        geo:long                 "-69"^^xsd:decimal .
+
+entity:Q936753  a                schema:Place ;
+        rdfs:label               "Plymouth"@en ;
+        schema:containedInPlace  entity:Q486229 ;
+        geo:lat                  45.010555555 ;
+        geo:long                 -93.455555555 .
+
+entity:Q1132270  a               schema:Place ;
+        rdfs:label               "Cheltenham"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.060833333 ;
+        geo:long                 -75.094166666 .
+
+entity:Q1840466  a               schema:Place ;
+        rdfs:label               "Zeeland"@en ;
+        schema:containedInPlace  entity:Q94673 ;
+        geo:lat                  42.8125 ;
+        geo:long                 -86.018611111 .
+
+entity:Q2231733  a               schema:Place ;
+        rdfs:label               "Graceville"@en ;
+        schema:containedInPlace  entity:Q113255 ;
+        geo:lat                  45.569166666 ;
+        geo:long                 -96.434444444 .
+
+entity:Q985524  a                schema:Place ;
+        rdfs:label               "Fallon"@en ;
+        schema:containedInPlace  entity:Q1227 ;
+        geo:lat                  39.4728 ;
+        geo:long                 -118.779 .
+
+entity:Q489980  a                schema:Place ;
+        rdfs:label               "Pulaski County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  37.82 ;
+        geo:long                 -92.21 .
+
+entity:Q8652  a                  schema:Place ;
+        rdfs:label               "Miami"@en ;
+        schema:containedInPlace  entity:Q468557 ;
+        geo:lat                  25.783333333 ;
+        geo:long                 -80.216666666 .
+
+entity:Q2868  a                  schema:Place ;
+        rdfs:label               "Lima"@en ;
+        schema:containedInPlace  entity:Q579240 ;
+        geo:lat                  -12.045833333 ;
+        geo:long                 -77.030555555 .
+
+entity:Q954277  a                schema:Place ;
+        rdfs:label               "Niangua"@en ;
+        schema:containedInPlace  entity:Q497979 ;
+        geo:lat                  37.3889 ;
+        geo:long                 -92.8311 .
+
+entity:Q595348  a                schema:Place ;
+        rdfs:label               "Wilson"@en ;
+        schema:containedInPlace  entity:Q510900 ;
+        geo:lat                  35.731111111 ;
+        geo:long                 -77.923611111 .
+
+entity:Q1056542  a               schema:Place ;
+        rdfs:label               "Easton, Pennsylvania"@en ;
+        schema:containedInPlace  entity:Q495658 ;
+        geo:lat                  40.688333333 ;
+        geo:long                 -75.216388888 .
+
+entity:Q1762816  a               schema:Place ;
+        rdfs:label               "Urbana"@en ;
+        schema:containedInPlace  entity:Q389573 ;
+        geo:lat                  40.1108 ;
+        geo:long                 -83.7514 .
+
+entity:Q488653  a                schema:Place ;
+        rdfs:label               "Albemarle County"@en ;
+        schema:containedInPlace  entity:Q1370 ;
+        geo:lat                  38.03 ;
+        geo:long                 -78.56 .
+
+entity:Q492888  a                schema:Place ;
+        rdfs:label               "Pike County"@en ;
+        schema:containedInPlace  entity:Q173 ;
+        geo:lat                  31.799166666 ;
+        geo:long                 -85.938611111 .
+
+entity:Q1415  a                  schema:Place ;
+        rdfs:label               "Indiana"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  39.933333333 ;
+        geo:long                 -86.216666666 .
+
+entity:Q1391  a                  schema:Place ;
+        rdfs:label               "Maryland"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "39"^^xsd:decimal ;
+        geo:long                 -76.7 .
+
+entity:Q1204  a                  schema:Place ;
+        rdfs:label               "Illinois"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "40"^^xsd:decimal ;
+        geo:long                 "-89"^^xsd:decimal .
+
+entity:Q688596  a                schema:Place ;
+        rdfs:label               "Hawthorne"@en ;
+        schema:containedInPlace  entity:Q104994 ;
+        geo:lat                  33.917214 ;
+        geo:long                 -118.348607 .
+
+entity:Q111729  a                schema:Place ;
+        rdfs:label               "Hunt County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  33.12 ;
+        geo:long                 -96.09 .
+
+entity:Q379660  a                schema:Place ;
+        rdfs:label               "Leavenworth County"@en ;
+        schema:containedInPlace  entity:Q1558 ;
+        geo:lat                  39.268611111 ;
+        geo:long                 -95.125555555 .
+
+entity:Q485716  a                schema:Place ;
+        rdfs:label               "Glendale"@en ;
+        schema:containedInPlace  entity:Q104994 ;
+        geo:lat                  34.170833333 ;
+        geo:long                 -118.25 .
+
+entity:Q484395  a                schema:Place ;
+        rdfs:label               "Douglas County"@en ;
+        schema:containedInPlace  entity:Q824 ;
+        geo:lat                  43.29 ;
+        geo:long                 -123.18 .
+
+entity:Q386657  a                schema:Place ;
+        rdfs:label               "Peru"@en ;
+        schema:containedInPlace  entity:Q304289 ;
+        geo:lat                  40.7578 ;
+        geo:long                 -86.0678 .
+
+entity:Q49145  a                 schema:Place ;
+        rdfs:label               "New Haven"@en ;
+        schema:containedInPlace  entity:Q54234 ;
+        geo:lat                  41.308333333 ;
+        geo:long                 -72.925 .
+
+entity:Q47716  a                 schema:Place ;
+        rdfs:label               "Charleston"@en ;
+        schema:containedInPlace  entity:Q181015 ;
+        geo:lat                  32.776111111 ;
+        geo:long                 -79.9325 .
+
+entity:Q1017948  a               schema:Place ;
+        rdfs:label               "Butler"@en ;
+        schema:containedInPlace  entity:Q488672 ;
+        geo:lat                  40.860555555 ;
+        geo:long                 -79.894722222 .
+
+entity:Q113255  a                schema:Place ;
+        rdfs:label               "Big Stone County"@en ;
+        schema:containedInPlace  entity:Q1527 ;
+        geo:lat                  45.43 ;
+        geo:long                 -96.41 .
+
+entity:Q111168  a                schema:Place ;
+        rdfs:label               "Dallas County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  32.77 ;
+        geo:long                 -96.78 .
+
+entity:Q486633  a                schema:Place ;
+        rdfs:label               "Fulton County"@en ;
+        schema:containedInPlace  entity:Q1428 ;
+        geo:lat                  33.79 ;
+        geo:long                 -84.47 .
+
+entity:Q1323122  a               schema:Place ;
+        rdfs:label               "Western Tokyo"@en ;
+        schema:containedInPlace  entity:Q1490 .
+
+entity:Q777750  a                schema:Place ;
+        rdfs:label               "Tarkio"@en ;
+        schema:containedInPlace  entity:Q484304 ;
+        geo:lat                  40.4411 ;
+        geo:long                 -95.3828 .
+
+entity:Q39042  a                 schema:Place ;
+        rdfs:label               "Cheyenne"@en ;
+        schema:containedInPlace  entity:Q483982 ;
+        geo:lat                  41.145555555 ;
+        geo:long                 -104.801944444 .
+
+entity:Q65  a                    schema:Place ;
+        rdfs:label               "Los Angeles"@en ;
+        schema:containedInPlace  entity:Q104994 ;
+        geo:lat                  34.05 ;
+        geo:long                 -118.25 .
+
+entity:Q49242  a                 schema:Place ;
+        rdfs:label               "Corpus Christi"@en ;
+        schema:containedInPlace  entity:Q483893 ;
+        geo:lat                  27.742777777 ;
+        geo:long                 -97.401944444 .
+
+entity:Q2709188  a               schema:Place ;
+        rdfs:label               "Glen Dale"@en ;
+        schema:containedInPlace  entity:Q504838 , entity:Q1371 ;
+        geo:lat                  39.948611111 ;
+        geo:long                 -80.755 .
+
+entity:Q1439  a                  schema:Place ;
+        rdfs:label               "Texas"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "31"^^xsd:decimal ;
+        geo:long                 "-100"^^xsd:decimal .
+
+entity:Q487731  a                schema:Place ;
+        rdfs:label               "Colbert County"@en ;
+        schema:containedInPlace  entity:Q173 ;
+        geo:lat                  34.676666666 , 34.70043 ;
+        geo:long                 -87.817222222 , -87.80498 .
+
+entity:Q943775  a                schema:Place ;
+        rdfs:label               "Gastonia"@en ;
+        schema:containedInPlace  entity:Q511849 ;
+        geo:lat                  35.255277777 ;
+        geo:long                 -81.180277777 .
+
+entity:Q490357  a                schema:Place ;
+        rdfs:label               "Greene County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  37.26 ;
+        geo:long                 -93.34 .
+
+entity:Q3709365  a               schema:Place ;
+        rdfs:label               "Eastchester (town), New York"@en ;
+        schema:containedInPlace  entity:Q54066 ;
+        geo:lat                  40.9583 ;
+        geo:long                 -73.8086 .
+
+entity:Q495633  a                schema:Place ;
+        rdfs:label               "Lycoming County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  41.35 ;
+        geo:long                 -77.06 .
+
+entity:Q502273  a                schema:Place ;
+        rdfs:label               "Greenville County"@en ;
+        schema:containedInPlace  entity:Q1456 ;
+        geo:lat                  34.89 ;
+        geo:long                 -82.37 .
+
+entity:Q496900  a                schema:Place ;
+        rdfs:label               "Philadelphia County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.01 ;
+        geo:long                 -75.13 .
+
+entity:Q58694  a                 schema:Place ;
+        rdfs:label               "Navajo County"@en ;
+        schema:containedInPlace  entity:Q816 ;
+        geo:lat                  35.497777777 ;
+        geo:long                 -110.289722222 .
+
+entity:Q577891  a                schema:Place ;
+        rdfs:label               "East St. Louis"@en ;
+        schema:containedInPlace  entity:Q486507 , entity:Q1204 ;
+        geo:lat                  38.615555555 ;
+        geo:long                 -90.127777777 .
+
+entity:Q49199  a                 schema:Place ;
+        rdfs:label               "Somerville"@en ;
+        schema:containedInPlace  entity:Q54073 ;
+        geo:lat                  42.3875 ;
+        geo:long                 -71.1 .
+
+entity:Q37836  a                 schema:Place ;
+        rdfs:label               "Milwaukee"@en ;
+        schema:containedInPlace  entity:Q502294 ;
+        geo:lat                  43.05 ;
+        geo:long                 -87.95 .
+
+entity:Q486380  a                schema:Place ;
+        rdfs:label               "Bonneville County"@en ;
+        schema:containedInPlace  entity:Q1221 ;
+        geo:lat                  43.38 ;
+        geo:long                 -111.6 .
+
+entity:Q773432  a                schema:Place ;
+        rdfs:label               "St. Charles"@en ;
+        schema:containedInPlace  entity:Q489873 ;
+        geo:lat                  38.788611111 ;
+        geo:long                 -90.511666666 .
+
+entity:Q23197  a                 schema:Place ;
+        rdfs:label               "Nashville"@en ;
+        schema:containedInPlace  entity:Q1177705 ;
+        geo:lat                  36.165 ;
+        geo:long                 -86.783888888 .
+
+entity:Q501815  a                schema:Place ;
+        rdfs:label               "Raleigh County"@en ;
+        schema:containedInPlace  entity:Q1371 ;
+        geo:lat                  37.78 ;
+        geo:long                 -81.26 .
+
+entity:Q484263  a                schema:Place ;
+        rdfs:label               "Lake County"@en ;
+        schema:containedInPlace  entity:Q1204 ;
+        geo:lat                  42.43 ;
+        geo:long                 -87.78 .
+
+entity:Q485656  a                schema:Place ;
+        rdfs:label               "Olmsted County"@en ;
+        schema:containedInPlace  entity:Q1527 ;
+        geo:lat                  "44"^^xsd:decimal ;
+        geo:long                 -92.4 .
+
+entity:Q304289  a                schema:Place ;
+        rdfs:label               "Miami County"@en ;
+        schema:containedInPlace  entity:Q1415 ;
+        geo:lat                  40.77 ;
+        geo:long                 -86.05 .
+
+entity:Q17  a       schema:Place ;
+        rdfs:label  "Japan"@en ;
+        geo:lat     "35"^^xsd:decimal ;
+        geo:long    "136"^^xsd:decimal .
+
+entity:Q1397  a                  schema:Place ;
+        rdfs:label               "Ohio"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  40.5 ;
+        geo:long                 -82.5 .
+
+entity:Q895459  a                schema:Place ;
+        rdfs:label               "Bowling Green"@en ;
+        schema:containedInPlace  entity:Q485571 ;
+        geo:lat                  41.373888888 ;
+        geo:long                 -83.650833333 .
+
+entity:Q485204  a                schema:Place ;
+        rdfs:label               "Cass County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  38.65 ;
+        geo:long                 -94.35 .
+
+entity:Q964399  a                schema:Place ;
+        rdfs:label               "Fort Leonard Wood"@en ;
+        schema:containedInPlace  entity:Q489980 ;
+        geo:lat                  37.738055555 ;
+        geo:long                 -92.117222222 .
+
+entity:Q2190705  a               schema:Place ;
+        rdfs:label               "Central"@en ;
+        schema:containedInPlace  entity:Q513905 ;
+        geo:lat                  34.723888888 ;
+        geo:long                 -82.779722222 .
+
+entity:Q1019287  a               schema:Place ;
+        rdfs:label               "Cheyenne"@en ;
+        schema:containedInPlace  entity:Q489332 ;
+        geo:lat                  35.6125 ;
+        geo:long                 -99.673888888 .
+
+entity:Q161176  a                schema:Place ;
+        rdfs:label               "Fukushima"@en ;
+        schema:containedInPlace  entity:Q71707 ;
+        geo:lat                  37.760833333 ;
+        geo:long                 140.473333333 .
+
+entity:Q513933  a                schema:Place ;
+        rdfs:label               "Sumter County"@en ;
+        schema:containedInPlace  entity:Q1456 ;
+        geo:lat                  33.92 ;
+        geo:long                 -80.38 .
+
+entity:Q1211  a                  schema:Place ;
+        rdfs:label               "South Dakota"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  44.5 ;
+        geo:long                 "-100"^^xsd:decimal .
+
+entity:Q49236  a                 schema:Place ;
+        rdfs:label               "St. Petersburg"@en ;
+        schema:containedInPlace  entity:Q494556 ;
+        geo:lat                  27.773055555 ;
+        geo:long                 -82.64 .
+
+entity:Q130008  a                schema:Place ;
+        rdfs:label               "Jones County"@en ;
+        schema:containedInPlace  entity:Q1494 ;
+        geo:lat                  31.62 ;
+        geo:long                 -89.17 .
+
+entity:Q112737  a                schema:Place ;
+        rdfs:label               "Warren County"@en ;
+        schema:containedInPlace  entity:Q1546 ;
+        geo:lat                  41.33 ;
+        geo:long                 -93.56 .
+
+entity:Q1494  a                  schema:Place ;
+        rdfs:label               "Mississippi"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "33"^^xsd:decimal ;
+        geo:long                 "-90"^^xsd:decimal .
+
+entity:Q128244  a                schema:Place ;
+        rdfs:label               "Waco"@en ;
+        schema:containedInPlace  entity:Q111368 ;
+        geo:lat                  31.551388888 ;
+        geo:long                 -97.155833333 .
+
+entity:Q60  a                    schema:Place ;
+        rdfs:label               "New York City"@en ;
+        schema:containedInPlace  entity:Q1384 ;
+        geo:lat                  40.67 ;
+        geo:long                 -73.94 .
+
+entity:Q486006  a                schema:Place ;
+        rdfs:label               "Woodbury County"@en ;
+        schema:containedInPlace  entity:Q1546 ;
+        geo:lat                  42.391388888 ;
+        geo:long                 -96.050833333 .
+
+entity:Q289042  a                schema:Place ;
+        rdfs:label               "Hayward"@en ;
+        schema:containedInPlace  entity:Q500784 ;
+        geo:lat                  46.01 ;
+        geo:long                 -91.480555555 .
+
+entity:Q58688  a                 schema:Place ;
+        rdfs:label               "Pima County"@en ;
+        schema:containedInPlace  entity:Q816 ;
+        geo:lat                  32.065277777 ;
+        geo:long                 -111.820833333 .
+
+entity:Q488672  a                schema:Place ;
+        rdfs:label               "Butler County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.91 ;
+        geo:long                 -79.91 .
+
+entity:Q30  a       schema:Place ;
+        rdfs:label  "United States of America"@en ;
+        geo:lat     "40"^^xsd:decimal ;
+        geo:long    "-100"^^xsd:decimal .
+
+entity:Q506230  a                schema:Place ;
+        rdfs:label               "Marion County"@en ;
+        schema:containedInPlace  entity:Q1415 ;
+        geo:lat                  39.78 ;
+        geo:long                 -86.14 .
+
+entity:Q1223  a                  schema:Place ;
+        rdfs:label               "Washington"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  47.5 ;
+        geo:long                 -120.5 .
+
+entity:Q79862  a                 schema:Place ;
+        rdfs:label               "Troy"@en ;
+        schema:containedInPlace  entity:Q492888 ;
+        geo:lat                  31.80196 ;
+        geo:long                 -85.967317 .
+
+entity:Q16868  a                 schema:Place ;
+        rdfs:label               "Laredo"@en ;
+        schema:containedInPlace  entity:Q484183 ;
+        geo:lat                  27.506111111 ;
+        geo:long                 -99.507222222 .
+
+entity:Q26676  a                 schema:Place ;
+        rdfs:label               "Harris County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  29.86 ;
+        geo:long                 -95.39 .
+
+entity:Q500784  a                schema:Place ;
+        rdfs:label               "Sawyer County"@en ;
+        schema:containedInPlace  entity:Q1537 ;
+        geo:lat                  45.9 ;
+        geo:long                 -91.14 .
+
+entity:Q486229  a                schema:Place ;
+        rdfs:label               "Hennepin County"@en ;
+        schema:containedInPlace  entity:Q1527 ;
+        geo:lat                  "45"^^xsd:decimal ;
+        geo:long                 -93.47 .
+
+entity:Q484408  a                schema:Place ;
+        rdfs:label               "Marion County"@en ;
+        schema:containedInPlace  entity:Q824 ;
+        geo:lat                  44.91 ;
+        geo:long                 -122.58 .
+
+entity:Q54093  a                 schema:Place ;
+        rdfs:label               "Worcester County"@en ;
+        schema:containedInPlace  entity:Q771 ;
+        geo:lat                  42.329643 ;
+        geo:long                 -71.84021 .
+
+entity:Q18575  a                 schema:Place ;
+        rdfs:label               "Tucson"@en ;
+        schema:containedInPlace  entity:Q58688 ;
+        geo:lat                  32.221666666 ;
+        geo:long                 -110.926388888 .
+
+entity:Q111368  a                schema:Place ;
+        rdfs:label               "McLennan County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  31.55 ;
+        geo:long                 -97.2 .
+
+entity:Q497979  a                schema:Place ;
+        rdfs:label               "Webster County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  37.28 ;
+        geo:long                 -92.87 .
+
+entity:Q49261  a                 schema:Place ;
+        rdfs:label               "Mesa"@en ;
+        schema:containedInPlace  entity:Q58691 ;
+        geo:lat                  33.415 ;
+        geo:long                 -111.831388888 .
+
+entity:Q486507  a                schema:Place ;
+        rdfs:label               "St. Clair County"@en ;
+        schema:containedInPlace  entity:Q1204 ;
+        geo:lat                  38.47 ;
+        geo:long                 -89.93 .
+
+entity:Q779  a                   schema:Place ;
+        rdfs:label               "Connecticut"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  41.6 ;
+        geo:long                 -72.7 .
+
+entity:Q486398  a                schema:Place ;
+        rdfs:label               "DeKalb County"@en ;
+        schema:containedInPlace  entity:Q1428 ;
+        geo:lat                  33.77 ;
+        geo:long                 -84.23 .
+
+entity:Q54160  a                 schema:Place ;
+        rdfs:label               "Hampden County"@en ;
+        schema:containedInPlace  entity:Q771 ;
+        geo:lat                  42.12756 ;
+        geo:long                 -72.571312 .
+
+entity:Q934987  a                schema:Place ;
+        rdfs:label               "Laurel"@en ;
+        schema:containedInPlace  entity:Q130008 ;
+        geo:lat                  31.6975 ;
+        geo:long                 -89.139444444 .
+
+entity:Q1428  a                  schema:Place ;
+        rdfs:label               "Georgia"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "33"^^xsd:decimal ;
+        geo:long                 -83.5 .
+
+entity:Q16555  a                 schema:Place ;
+        rdfs:label               "Houston"@en ;
+        schema:containedInPlace  entity:Q26676 ;
+        geo:lat                  29.762777777 ;
+        geo:long                 -95.383055555 .
+
+entity:Q490642  a                schema:Place ;
+        rdfs:label               "Gladwin County"@en ;
+        schema:containedInPlace  entity:Q1166 ;
+        geo:lat                  43.99 ;
+        geo:long                 -84.39 .
+
+entity:Q505380  a                schema:Place ;
+        rdfs:label               "Washington County"@en ;
+        schema:containedInPlace  entity:Q16551 ;
+        geo:lat                  44.249287 ;
+        geo:long                 -72.580894 .
+
+entity:Q94673  a                 schema:Place ;
+        rdfs:label               "Ottawa County"@en ;
+        schema:containedInPlace  entity:Q1166 ;
+        geo:lat                  42.92 ;
+        geo:long                 -86.23 .
+
+entity:Q61026  a                 schema:Place ;
+        rdfs:label               "Ashley County"@en ;
+        schema:containedInPlace  entity:Q1612 ;
+        geo:lat                  33.208888888 ;
+        geo:long                 -91.795277777 .
+
+entity:Q484493  a                schema:Place ;
+        rdfs:label               "Cole County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  38.51 ;
+        geo:long                 -92.28 .
+
+entity:Q280557  a                schema:Place ;
+        rdfs:label               "Homestead"@en ;
+        schema:containedInPlace  entity:Q468557 ;
+        geo:lat                  25.4687224 ;
+        geo:long                 -80.4775569 .
+
+entity:Q816  a                   schema:Place ;
+        rdfs:label               "Arizona"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  34.286667 ;
+        geo:long                 -111.656944 .
+
+entity:Q490920  a                schema:Place ;
+        rdfs:label               "Berks County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.42 ;
+        geo:long                 -75.93 .
+
+entity:Q82499  a                 schema:Place ;
+        rdfs:label               "Kent County"@en ;
+        schema:containedInPlace  entity:Q1166 ;
+        geo:lat                  43.03 ;
+        geo:long                 -85.55 .
+
+entity:Q79320  a                 schema:Place ;
+        rdfs:label               "Parkdale"@en ;
+        schema:containedInPlace  entity:Q61026 ;
+        geo:lat                  33.121666666 ;
+        geo:long                 -91.5475 .
+
+entity:Q838112  a                schema:Place ;
+        rdfs:label               "Wheeling"@en ;
+        schema:containedInPlace  entity:Q847676 ;
+        geo:lat                  40.070277777 ;
+        geo:long                 -80.698611111 .
+
+entity:Q936604  a   schema:Place ;
+        rdfs:label  "Japanese American internment"@en .
+
+entity:Q34804  a                 schema:Place ;
+        rdfs:label               "Albuquerque"@en ;
+        schema:containedInPlace  entity:Q156297 ;
+        geo:lat                  35.116666666 ;
+        geo:long                 -106.616666666 .
+
+entity:Q80517  a                 schema:Place ;
+        rdfs:label               "Shreveport"@en ;
+        schema:containedInPlace  entity:Q177562 , entity:Q498042 ;
+        geo:lat                  32.5082078 ;
+        geo:long                 -93.7629569 .
+
+entity:Q1537  a                  schema:Place ;
+        rdfs:label               "Wisconsin"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  44.5 ;
+        geo:long                 -89.5 .
+
+entity:Q1094500  a               schema:Place ;
+        rdfs:label               "Maryville"@en ;
+        schema:containedInPlace  entity:Q475301 ;
+        geo:lat                  35.74972 ;
+        geo:long                 -83.97556 .
+
+entity:Q114843  a                schema:Place ;
+        rdfs:label               "Erie County"@en ;
+        schema:containedInPlace  entity:Q1384 ;
+        geo:lat                  42.75 ;
+        geo:long                 -78.78 .
+
+entity:Q475301  a                schema:Place ;
+        rdfs:label               "Blount County"@en ;
+        schema:containedInPlace  entity:Q1509 ;
+        geo:lat                  35.69 ;
+        geo:long                 -83.93 .
+
+entity:Q491949  a                schema:Place ;
+        rdfs:label               "East Baton Rouge Parish"@en ;
+        schema:containedInPlace  entity:Q1588 ;
+        geo:lat                  30.54 ;
+        geo:long                 -91.09 .
+
+entity:Q164380  a                schema:Place ;
+        rdfs:label               "Bethlehem"@en ;
+        schema:containedInPlace  entity:Q495658 , entity:Q494117 ;
+        geo:lat                  40.626111111 ;
+        geo:long                 -75.375555555 .
+
+entity:Q645475  a                schema:Place ;
+        rdfs:label               "Waxahachie"@en ;
+        schema:containedInPlace  entity:Q110130 , entity:Q1439 ;
+        geo:lat                  32.399722222 ;
+        geo:long                 -96.847222222 .
+
+entity:Q485808  a                schema:Place ;
+        rdfs:label               "Polk County"@en ;
+        schema:containedInPlace  entity:Q1546 ;
+        geo:lat                  41.685 ;
+        geo:long                 -93.570277777 .
+
+entity:Q489873  a                schema:Place ;
+        rdfs:label               "St. Charles County"@en ;
+        schema:containedInPlace  entity:Q1581 ;
+        geo:lat                  38.76 ;
+        geo:long                 -90.616666666 .
+
+entity:Q983698  a                schema:Place ;
+        rdfs:label               "Mansfield"@en ;
+        schema:containedInPlace  entity:Q403310 ;
+        geo:lat                  40.754856 ;
+        geo:long                 -82.522855 .
+
+entity:Q1212  a                  schema:Place ;
+        rdfs:label               "Montana"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "47"^^xsd:decimal ;
+        geo:long                 "-110"^^xsd:decimal .
+
+entity:Q484542  a                schema:Place ;
+        rdfs:label               "Hutchinson County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  35.84 ;
+        geo:long                 -101.36 .
+
+entity:Q49111  a                 schema:Place ;
+        rdfs:label               "Cambridge"@en ;
+        schema:containedInPlace  entity:Q54073 ;
+        geo:lat                  42.375 ;
+        geo:long                 -71.106111111 .
+
+entity:Q108111  a                schema:Place ;
+        rdfs:label               "Riverside County"@en ;
+        schema:containedInPlace  entity:Q99 ;
+        geo:lat                  33.73 ;
+        geo:long                 -115.98 .
+
+entity:Q108418  a                schema:Place ;
+        rdfs:label               "Cook County"@en ;
+        schema:containedInPlace  entity:Q1204 ;
+        geo:lat                  41.8 ;
+        geo:long                 -87.716666666 .
+
+entity:Q495658  a                schema:Place ;
+        rdfs:label               "Northampton County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  40.75 ;
+        geo:long                 -75.31 .
+
+entity:Q61  a                    schema:Place ;
+        rdfs:label               "Washington, D.C."@en ;
+        schema:containedInPlace  entity:Q3551781 ;
+        geo:lat                  38.895 ;
+        geo:long                 -77.036666666 .
+
+entity:Q261672  a                schema:Place ;
+        rdfs:label               "Lauderdale County"@en ;
+        schema:containedInPlace  entity:Q173 ;
+        geo:lat                  34.899166666 ;
+        geo:long                 -87.650277777 .
+
+entity:Q18383  a                 schema:Place ;
+        rdfs:label               "Providence"@en ;
+        schema:containedInPlace  entity:Q54253 ;
+        geo:lat                  41.830833333 ;
+        geo:long                 -71.415 .
+
+entity:Q110340  a                schema:Place ;
+        rdfs:label               "Blue Earth County"@en ;
+        schema:containedInPlace  entity:Q1527 ;
+        geo:lat                  44.03 ;
+        geo:long                 -94.06 .
+
+entity:Q495393  a                schema:Place ;
+        rdfs:label               "Polk County"@en ;
+        schema:containedInPlace  entity:Q824 ;
+        geo:lat                  44.91 ;
+        geo:long                 -123.42 .
+
+entity:Q16562  a                 schema:Place ;
+        rdfs:label               "El Paso"@en ;
+        schema:containedInPlace  entity:Q108494 ;
+        geo:lat                  31.790277777 ;
+        geo:long                 -106.423333333 .
+
+entity:Q271395  a                schema:Place ;
+        rdfs:label               "Scranton"@en ;
+        schema:containedInPlace  entity:Q501350 ;
+        geo:lat                  41.408969 ;
+        geo:long                 -75.6624122 .
+
+entity:Q1637790  a               schema:Place ;
+        rdfs:label               "Holyoke"@en ;
+        schema:containedInPlace  entity:Q54160 ;
+        geo:lat                  42.204166666 ;
+        geo:long                 -72.618055555 .
+
+entity:Q913887  a                schema:Place ;
+        rdfs:label               "Bridgeton"@en ;
+        schema:containedInPlace  entity:Q497845 ;
+        geo:lat                  39.4275 ;
+        geo:long                 -75.228 .
+
+entity:Q18419  a                 schema:Place ;
+        rdfs:label               "Brooklyn"@en ;
+        schema:containedInPlace  entity:Q60 ;
+        geo:lat                  40.692777777 ;
+        geo:long                 -73.990277777 .
+
+entity:Q123766  a                schema:Place ;
+        rdfs:label               "Charlottesville"@en ;
+        schema:containedInPlace  entity:Q488653 ;
+        geo:lat                  38.0299 ;
+        geo:long                 -78.479 .
+
+entity:Q79875  a                 schema:Place ;
+        rdfs:label               "Mobile"@en ;
+        schema:containedInPlace  entity:Q495738 ;
+        geo:lat                  30.727669444 ;
+        geo:long                 -88.052672222 .
+
+entity:Q7503628  a               schema:Place ;
+        rdfs:label               "Shreveport – Bossier City metropolitan area"@en ;
+        schema:containedInPlace  entity:Q7503629 , entity:Q1588 .
+
+entity:Q578351  a                schema:Place ;
+        rdfs:label               "Kankakee"@en ;
+        schema:containedInPlace  entity:Q494485 , entity:Q1204 ;
+        geo:lat                  41.12 ;
+        geo:long                 -87.86 .
+
+entity:Q237896  a                schema:Place ;
+        rdfs:label               "Reading"@en ;
+        schema:containedInPlace  entity:Q490920 ;
+        geo:lat                  40.341666666 ;
+        geo:long                 -75.926111111 .
+
+entity:Q486231  a                schema:Place ;
+        rdfs:label               "Orleans Parish"@en ;
+        schema:containedInPlace  entity:Q1588 ;
+        geo:lat                  29.96666667 ;
+        geo:long                 -90.05 .
+
+entity:Q486538  a                schema:Place ;
+        rdfs:label               "Hinds County"@en ;
+        schema:containedInPlace  entity:Q1494 ;
+        geo:lat                  32.26 ;
+        geo:long                 -90.44 .
+
+entity:Q1177705  a               schema:Place ;
+        rdfs:label               "Davidson County"@en ;
+        schema:containedInPlace  entity:Q1509 ;
+        geo:lat                  36.17 ;
+        geo:long                 -86.78 .
+
+entity:Q502739  a                schema:Place ;
+        rdfs:label               "Marion County"@en ;
+        schema:containedInPlace  entity:Q173 ;
+        geo:lat                  34.136388888 ;
+        geo:long                 -87.884166666 .
+
+entity:Q1490  a                  schema:Place ;
+        rdfs:label               "Tokyo"@en ;
+        schema:containedInPlace  entity:Q17 ;
+        geo:lat                  35.68 ;
+        geo:long                 139.77 .
+
+entity:Q49202  a                 schema:Place ;
+        rdfs:label               "Greenwich"@en ;
+        schema:containedInPlace  entity:Q779 ;
+        geo:lat                  41.038888888 ;
+        geo:long                 -73.613888888 .
+
+entity:Q501292  a                schema:Place ;
+        rdfs:label               "Luzerne County"@en ;
+        schema:containedInPlace  entity:Q1400 ;
+        geo:lat                  41.18 ;
+        geo:long                 -75.99 .
+
+entity:Q482516  a                schema:Place ;
+        rdfs:label               "Kaysville"@en ;
+        schema:containedInPlace  entity:Q26631 ;
+        geo:lat                  41.033055555 ;
+        geo:long                 -111.936111111 .
+
+entity:Q2864332  a               schema:Place ;
+        rdfs:label               "Ware Shoals"@en ;
+        schema:containedInPlace  entity:Q1456 ;
+        geo:lat                  34.396666666 ;
+        geo:long                 -82.245 .
+
+entity:Q111593  a                schema:Place ;
+        rdfs:label               "Fannin County"@en ;
+        schema:containedInPlace  entity:Q1439 ;
+        geo:lat                  33.59 ;
+        geo:long                 -96.11 .
+
+entity:Q936780  a                schema:Place ;
+        rdfs:label               "La Crosse"@en ;
+        schema:containedInPlace  entity:Q500871 ;
+        geo:lat                  43.813333333 ;
+        geo:long                 -91.233055555 .
+
+entity:Q1345  a                  schema:Place ;
+        rdfs:label               "Philadelphia"@en ;
+        schema:containedInPlace  entity:Q496900 ;
+        geo:lat                  39.953055555 ;
+        geo:long                 -75.163333333 .
+
+entity:Q504838  a                schema:Place ;
+        rdfs:label               "Marshall County"@en ;
+        schema:containedInPlace  entity:Q1371 ;
+        geo:lat                  39.87 ;
+        geo:long                 -80.67 .
+
+entity:Q511849  a                schema:Place ;
+        rdfs:label               "Gaston County"@en ;
+        schema:containedInPlace  entity:Q1454 ;
+        geo:lat                  35.3 ;
+        geo:long                 -81.18 .
+
+entity:Q1400  a                  schema:Place ;
+        rdfs:label               "Pennsylvania"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "41"^^xsd:decimal ;
+        geo:long                 -77.5 .
+
+entity:Q184587  a                schema:Place ;
+        rdfs:label               "Grand Rapids"@en ;
+        schema:containedInPlace  entity:Q82499 ;
+        geo:lat                  42.96125 ;
+        geo:long                 -85.655719444 .
+
+entity:Q79743  a                 schema:Place ;
+        rdfs:label               "Florence"@en ;
+        schema:containedInPlace  entity:Q261672 ;
+        geo:lat                  34.820277777 ;
+        geo:long                 -87.662777777 .
+
+entity:Q1387  a                  schema:Place ;
+        rdfs:label               "Rhode Island"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  41.7 ;
+        geo:long                 -71.5 .
+
+entity:Q1261  a                  schema:Place ;
+        rdfs:label               "Colorado"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  "39"^^xsd:decimal ;
+        geo:long                 -105.5 .
+
+entity:Q483982  a                schema:Place ;
+        rdfs:label               "Laramie County"@en ;
+        schema:containedInPlace  entity:Q1214 ;
+        geo:lat                  41.32 ;
+        geo:long                 -104.69 .
+
+entity:Q813745  a                schema:Place ;
+        rdfs:label               "Beckley"@en ;
+        schema:containedInPlace  entity:Q501815 ;
+        geo:lat                  37.779722222 ;
+        geo:long                 -81.183055555 .
+
+entity:Q37320  a                 schema:Place ;
+        rdfs:label               "Cleveland"@en ;
+        schema:containedInPlace  entity:Q251267 ;
+        geo:lat                  41.482222222 ;
+        geo:long                 -81.669722222 .
+
+entity:Q49256  a                 schema:Place ;
+        rdfs:label               "Bakersfield"@en ;
+        schema:containedInPlace  entity:Q108047 ;
+        geo:lat                  35.405833333 ;
+        geo:long                 -119.018611111 .
+
+entity:Q506068  a                schema:Place ;
+        rdfs:label               "Orangeburg County"@en ;
+        schema:containedInPlace  entity:Q1456 ;
+        geo:lat                  33.44 ;
+        geo:long                 -80.8 .
+
+entity:Q374410  a                schema:Place ;
+        rdfs:label               "Shawnee County"@en ;
+        schema:containedInPlace  entity:Q1558 ;
+        geo:lat                  38.903333333 ;
+        geo:long                 -95.831388888 .
+
+entity:Q372715  a                schema:Place ;
+        rdfs:label               "Farmville"@en ;
+        schema:containedInPlace  entity:Q506220 ;
+        geo:lat                  35.5942 ;
+        geo:long                 -77.5872 .
+
+entity:Q2901483  a               schema:Place ;
+        rdfs:label               "Holton"@en ;
+        schema:containedInPlace  entity:Q377046 ;
+        geo:lat                  39.4669 ;
+        geo:long                 -95.7369 .
+
+entity:Q43919  a                 schema:Place ;
+        rdfs:label               "Salem"@en ;
+        schema:containedInPlace  entity:Q484408 , entity:Q495393 ;
+        geo:lat                  44.930833333 ;
+        geo:long                 -123.028888888 .
+
+entity:Q829  a                   schema:Place ;
+        rdfs:label               "Utah"@en ;
+        schema:containedInPlace  entity:Q30 ;
+        geo:lat                  39.5 ;
+        geo:long                 -111.5 .
+
+entity:Q501606  a                schema:Place ;
+        rdfs:label               "Wilson County"@en ;
+        schema:containedInPlace  entity:Q1509 ;
+        geo:lat                  36.16 ;
+        geo:long                 -86.3 .
+
+entity:Q100  a                   schema:Place ;
+        rdfs:label               "Boston"@en ;
+        schema:containedInPlace  entity:Q54072 ;
+        geo:lat                  42.357777777 ;
+        geo:long                 -71.061666666 .
+
+entity:Q1016159  a               schema:Place ;
+        rdfs:label               "Williamsport"@en ;
+        schema:containedInPlace  entity:Q495633 ;
+        geo:lat                  41.2444 ;
+        geo:long                 -77.0186 .
+
+entity:Q965391  a                schema:Place ;
+        rdfs:label               "Archie"@en ;
+        schema:containedInPlace  entity:Q485204 ;
+        geo:lat                  38.4825 ;
+        geo:long                 -94.3525 .
+
+entity:Q1010203  a               schema:Place ;
+        rdfs:label               "Sumter"@en ;
+        schema:containedInPlace  entity:Q513933 ;
+        geo:lat                  33.920555555 ;
+        geo:long                 -80.344722222 .
+
+entity:Q37066  a                 schema:Place ;
+        rdfs:label               "Bismarck"@en ;
+        schema:containedInPlace  entity:Q28283 ;
+        geo:lat                  46.813333333 ;
+        geo:long                 -100.778888888 .
+
+entity:Q49172  a                 schema:Place ;
+        rdfs:label               "New Britain"@en ;
+        schema:containedInPlace  entity:Q779 ;
+        geo:lat                  41.675 ;
+        geo:long                 -72.787222222 .

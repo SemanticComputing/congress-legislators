@@ -120,9 +120,9 @@
         '  	OPTIONAL { ?id rdfs:comment ?short_description . }' +
         ' ' +
         '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
-        '  OPTIONAL { ?id schema:birthPlace ?birthPlace . }   ' +
+        '  OPTIONAL { ?id schema:birthPlace/rdfs:label ?birthPlace . }   ' +
         '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
-        '  OPTIONAL { ?id schema:deathPlace ?deathPlace . }   ' +
+        '  OPTIONAL { ?id schema:deathPlace/rdfs:label ?deathPlace . }   ' +
         '   OPTIONAL { ?id congress:twitter ?twitter . }' +
         '   OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }' +
         '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
@@ -140,9 +140,9 @@
             '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
             '  	OPTIONAL { ?id schema:description ?description . }' +
             '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
-            '  OPTIONAL { ?id schema:birthPlace ?birthPlace . }   ' +
+            '  OPTIONAL { ?id schema:birthPlace/rdfs:label ?birthPlace . }   ' +
             '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
-            '  OPTIONAL { ?id schema:deathPlace ?deathPlace . }   ' +
+            '  OPTIONAL { ?id schema:deathPlace/rdfs:label ?deathPlace . }   ' +
             '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
             '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
             '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +

@@ -1,0 +1,5895 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://ldf.fi/congress/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:r1	a rdfs:Resource ;
+	:bioguide_id "R000600" ;
+	:thomas_id "02222" ;
+	:govtrack_id "412664" ;
+	:twitter "RepAmata" ;
+	:twitter_id "3026622545" ;
+	:facebook "aumuaamata" ;
+	:youtube_id "UCGdrLQbt1PYDTPsampx4t1A" .
+
+
+:r2	a rdfs:Resource ;
+	:bioguide_id "Y000064" ;
+	:thomas_id "02019" ;
+	:govtrack_id "412428" ;
+	:twitter "SenToddYoung" ;
+	:twitter_id "234128524" ;
+	:facebook "SenatorToddYoung" ;
+	schema:VideoObject "RepToddYoung" ;
+	:youtube_id "UCuknj4PGn91gHDNAfboZEgQ" ;
+	:instgram "sentoddyoung" .
+
+
+:r3	a rdfs:Resource ;
+	:bioguide_id "E000295" ;
+	:thomas_id "02283" ;
+	:govtrack_id "412667" ;
+	:twitter "SenJoniErnst" ;
+	:twitter_id "2856787757" ;
+	:facebook "senjoniernst" ;
+	:youtube_id "UCLwrmtF_84FIcK3TyMs4MIw" ;
+	:instgram "senjoniernst" ;
+	:instgram_id "1582702853" .
+
+
+:r4	a rdfs:Resource ;
+	:bioguide_id "T000476" ;
+	:thomas_id "02291" ;
+	:govtrack_id "412668" ;
+	:twitter "senthomtillis" ;
+	:twitter_id "2964174789" ;
+	:facebook "SenatorThomTillis" ;
+	:youtube_id "UCUD9VGV4SSGWjGdbn37Ea2w" ;
+	:instgram "senthomtillis" .
+
+
+:r5	a rdfs:Resource ;
+	:bioguide_id "Y000063" ;
+	:thomas_id "02021" ;
+	:govtrack_id "412430" ;
+	:twitter "RepKevinYoder" ;
+	:twitter_id "252819642" ;
+	:facebook "CongressmanKevinYoder" ;
+	schema:VideoObject "RepYoder" ;
+	:youtube_id "UCCeYmn4A8kZEHCcAfeUW9lQ" ;
+	:instgram "repkevinyoder" .
+
+
+:r6	a rdfs:Resource ;
+	:bioguide_id "Y000062" ;
+	:thomas_id "01853" ;
+	:govtrack_id "412211" ;
+	:twitter "RepJohnYarmuth" ;
+	:twitter_id "384913290" ;
+	:facebook "214258646163" ;
+	schema:VideoObject "RepJohnYarmuth" ;
+	:youtube_id "UCy5KW4yrEfEiyZRX45Eoxkg" .
+
+
+:r7	a rdfs:Resource ;
+	:bioguide_id "Y000033" ;
+	:thomas_id "01256" ;
+	:govtrack_id "400440" ;
+	:twitter "RepDonYoung" ;
+	:twitter_id "37007274" ;
+	:facebook "RepDonYoung" ;
+	schema:VideoObject "RepDonYoung" ;
+	:youtube_id "UCg5ZIR5-82EbJiNeI1bqT-A" .
+
+
+:r8	a rdfs:Resource ;
+	:bioguide_id "W000809" ;
+	:thomas_id "01991" ;
+	:govtrack_id "412402" ;
+	:twitter "Rep_SteveWomack" ;
+	:twitter_id "234469322" ;
+	:facebook "RepSteveWomack" ;
+	schema:VideoObject "CongressmanWomack" ;
+	:youtube_id "UCXJbUDLYX-wGIhRuN66hqZw" .
+
+
+:r9	a rdfs:Resource ;
+	:bioguide_id "W000808" ;
+	:thomas_id "02004" ;
+	:govtrack_id "412412" ;
+	:twitter "RepWilson" ;
+	:twitter_id "234014087" ;
+	:facebook "RepWilson" ;
+	schema:VideoObject "repfredericawilson" ;
+	:youtube_id "UCP5QBhng_lHv-vJgE_h7lpA" .
+
+
+:r10	a rdfs:Resource ;
+	:bioguide_id "W000806" ;
+	:thomas_id "02002" ;
+	:govtrack_id "412410" ;
+	:twitter "RepWebster" ;
+	:twitter_id "281540744" ;
+	:facebook "RepWebster" ;
+	schema:VideoObject "repdanwebster" ;
+	:youtube_id "UCCoX4VdU7U11eGEA0lbRtLw" .
+
+
+:r11	a rdfs:Resource ;
+	:bioguide_id "W000805" ;
+	:thomas_id "01897" ;
+	:govtrack_id "412321" ;
+	:twitter "MarkWarner" ;
+	:twitter_id "7429102" ;
+	:facebook "MarkRWarner" ;
+	schema:VideoObject "SenatorMarkWarner" ;
+	:youtube_id "UCwyivNlEGf4sGd1oDLfY5jw" ;
+	:instgram "senatorwarner" ;
+	:instgram_id "515327940" .
+
+
+:r12	a rdfs:Resource ;
+	:bioguide_id "W000804" ;
+	:thomas_id "01886" ;
+	:govtrack_id "412255" ;
+	:twitter "RobWittman" ;
+	:twitter_id "15356407" ;
+	:facebook "RepRobWittman" ;
+	schema:VideoObject "RobWittman" ;
+	:youtube_id "UCIqIb-OaTbkIdU426eYIdPg" ;
+	:instgram "reprobwittman" .
+
+
+:r13	a rdfs:Resource ;
+	:bioguide_id "W000802" ;
+	:thomas_id "01823" ;
+	:govtrack_id "412247" ;
+	:twitter "SenWhitehouse" ;
+	:twitter_id "242555999" ;
+	:facebook "SenatorWhitehouse" ;
+	schema:VideoObject "SenatorWhitehouse" ;
+	:youtube_id "UCnG0N70SNBkNqvIMLodPTIA" ;
+	:instgram "SenWhitehouse" .
+
+
+:r14	a rdfs:Resource ;
+	:bioguide_id "W000800" ;
+	:thomas_id "01879" ;
+	:govtrack_id "412239" ;
+	:twitter "PeterWelch" ;
+	:twitter_id "1410590874" ;
+	:facebook "PeterWelch" ;
+	schema:VideoObject "reppeterwelch" ;
+	:youtube_id "UC0YfApJx6qNaAQ-ir93U8xA" ;
+	:instgram "reppeterwelch" ;
+	:instgram_id "1559860900" .
+
+
+:r15	a rdfs:Resource ;
+	:bioguide_id "W000798" ;
+	:thomas_id "01855" ;
+	:govtrack_id "412213" ;
+	:twitter "RepWalberg" ;
+	:twitter_id "237862972" ;
+	:facebook "RepWalberg" ;
+	schema:VideoObject "RepWalberg" ;
+	:youtube_id "UChpf3_3Wn8f3qSJbsYXrhvg" ;
+	:instgram "repwalberg" .
+
+
+:r16	a rdfs:Resource ;
+	:bioguide_id "W000797" ;
+	:thomas_id "01777" ;
+	:govtrack_id "400623" ;
+	:twitter "RepDWStweets" ;
+	:twitter_id "1140648348" ;
+	:facebook "RepDWS" ;
+	schema:VideoObject "RepWassermanSchultz" ;
+	:youtube_id "UCfHQiJVvMlYbVAxrMSLdO4w" ;
+	:instgram "RepDWSTweets" .
+
+
+:r17	a rdfs:Resource ;
+	:bioguide_id "W000795" ;
+	:thomas_id "01688" ;
+	:govtrack_id "400433" ;
+	:twitter "RepJoeWilson" ;
+	:twitter_id "254082173" ;
+	:facebook "JoeWilson" ;
+	schema:VideoObject "RepJoeWilson" ;
+	:youtube_id "UC3aR1B8m7Z1uycO65yDnpCg" ;
+	:instgram "repjoewilson" ;
+	:instgram_id "519685522" .
+
+
+:r18	a rdfs:Resource ;
+	:bioguide_id "W000791" ;
+	:thomas_id "01596" ;
+	:govtrack_id "400419" ;
+	:twitter "RepGregWalden" ;
+	:twitter_id "32010840" ;
+	:facebook "repgregwalden" ;
+	schema:VideoObject "RepGregWalden" ;
+	:youtube_id "UCyaDp6ANSM9tvW7Y3LT_4KQ" ;
+	:instgram "repgregwalden" ;
+	:instgram_id "382962594" .
+
+
+:r19	a rdfs:Resource ;
+	:bioguide_id "W000779" ;
+	:thomas_id "01247" ;
+	:govtrack_id "300100" ;
+	:twitter "RonWyden" ;
+	:twitter_id "250188760" ;
+	schema:VideoObject "senronwyden" ;
+	:youtube_id "UCsd3UEaoLoqX60P88BdpGGw" ;
+	:instgram "wydenpress" ;
+	:instgram_id "9443881" .
+
+
+:r20	a rdfs:Resource ;
+	:bioguide_id "W000437" ;
+	:thomas_id "01226" ;
+	:govtrack_id "400432" ;
+	:twitter "SenatorWicker" ;
+	:twitter_id "264219447" ;
+	:facebook "SenatorWicker" ;
+	schema:VideoObject "SenatorWicker" ;
+	:youtube_id "UCIlKHiTjSkcQP_knBcXHWSg" ;
+	:instgram "senatorwicker" ;
+	:instgram_id "367948073" .
+
+
+:r21	a rdfs:Resource ;
+	:bioguide_id "W000187" ;
+	:thomas_id "01205" ;
+	:govtrack_id "400422" ;
+	:twitter "RepMaxineWaters" ;
+	:twitter_id "36686040" ;
+	:facebook "MaxineWaters" ;
+	schema:VideoObject "MaxineWaters" ;
+	:youtube_id "UCOQ2js1VYFlo74n7Ns8WsLQ" ;
+	:instgram "repmaxinewaters" .
+
+
+:r22	a rdfs:Resource ;
+	:bioguide_id "V000128" ;
+	:thomas_id "01729" ;
+	:govtrack_id "400415" ;
+	:twitter "ChrisVanHollen" ;
+	:twitter_id "18137749" ;
+	:facebook "chrisvanhollen" ;
+	schema:VideoObject "RepChrisVanHollen" ;
+	:youtube_id "UCkpfJWu1N9Okd6PE_NidtBQ" ;
+	:instgram "chrisvanhollen" ;
+	:instgram_id "268595235" .
+
+
+:r23	a rdfs:Resource ;
+	:bioguide_id "V000108" ;
+	:thomas_id "01188" ;
+	:govtrack_id "400417" ;
+	:twitter "RepVisclosky" ;
+	:twitter_id "193872188" ;
+	:facebook "repvisclosky" ;
+	schema:VideoObject "PeteVisclosky1" ;
+	:youtube_id "UC9njNo6tTComo9Kn7imz7Mg" .
+
+
+:r24	a rdfs:Resource ;
+	:bioguide_id "V000081" ;
+	:thomas_id "01184" ;
+	:govtrack_id "400416" ;
+	:twitter "NydiaVelazquez" ;
+	:twitter_id "164369297" ;
+	:facebook "8037068318" ;
+	schema:VideoObject "nydiavelazquez" ;
+	:youtube_id "UCqMKPkKeeHFOOiZ9vxhXGVg" .
+
+
+:r25	a rdfs:Resource ;
+	:bioguide_id "U000039" ;
+	:thomas_id "01567" ;
+	:govtrack_id "400413" ;
+	:twitter "SenatorTomUdall" ;
+	:twitter_id "60828944" ;
+	:facebook "senatortomudall" ;
+	schema:VideoObject "senatortomudall" ;
+	:youtube_id "UCADpIVS6bxOcr-uWnJCC9pQ" .
+
+
+:r26	a rdfs:Resource ;
+	:bioguide_id "U000031" ;
+	:thomas_id "01177" ;
+	:govtrack_id "400414" ;
+	:twitter "RepFredUpton" ;
+	:twitter_id "124224165" ;
+	:facebook "RepFredUpton" ;
+	schema:VideoObject "RepFredUpton" ;
+	:youtube_id "UCsN16IzEo4ViZNEMgeCrQ7w" .
+
+
+:r27	a rdfs:Resource ;
+	:bioguide_id "T000470" ;
+	:thomas_id "01997" ;
+	:govtrack_id "412405" ;
+	:twitter "RepTipton" ;
+	:twitter_id "242873057" ;
+	:facebook "CongressmanScottTipton" ;
+	schema:VideoObject "RepScottTipton" ;
+	:youtube_id "UCh9ssh1dvzpr1HOWaFm8rcg" ;
+	:instgram "repscotttipton" .
+
+
+:r28	a rdfs:Resource ;
+	:bioguide_id "T000469" ;
+	:thomas_id "01942" ;
+	:govtrack_id "412319" ;
+	:twitter "RepPaulTonko" ;
+	:twitter_id "84119348" ;
+	:facebook "reppaultonko" ;
+	schema:VideoObject "reppaultonko" ;
+	:youtube_id "UC3P2SGFmmuCYRsjeso0hOQQ" ;
+	:instgram "reppaultonko" .
+
+
+:r29	a rdfs:Resource ;
+	:bioguide_id "T000468" ;
+	:thomas_id "01940" ;
+	:govtrack_id "412318" ;
+	:twitter "RepDinaTitus" ;
+	:twitter_id "122174004" ;
+	:facebook "CongresswomanTitus" ;
+	schema:VideoObject "CongresswomanTitus" ;
+	:youtube_id "UC_US4jNqECuMSNrB7yVCbbw" ;
+	:instgram "dinatitusnv" ;
+	:instgram_id "1110185253" .
+
+
+:r30	a rdfs:Resource ;
+	:bioguide_id "T000467" ;
+	:thomas_id "01952" ;
+	:govtrack_id "412317" ;
+	:twitter "CongressmanGT" ;
+	:twitter_id "18967498" ;
+	:facebook "CongressmanGT" ;
+	schema:VideoObject "CongressmanGT" ;
+	:youtube_id "UCNWX7lbWWvnNdzVMFI9DRiQ" ;
+	:instgram "congressman_gt" .
+
+
+:r31	a rdfs:Resource ;
+	:bioguide_id "T000465" ;
+	:thomas_id "01884" ;
+	:govtrack_id "412254" ;
+	:twitter "NikiInTheHouse" ;
+	:twitter_id "242892689" ;
+	:facebook "RepTsongas" ;
+	schema:VideoObject "RepTsongas" ;
+	:youtube_id "UCVyHRbyMpIF3_Xfl4LzumCA" .
+
+
+:r32	a rdfs:Resource ;
+	:bioguide_id "T000464" ;
+	:thomas_id "01829" ;
+	:govtrack_id "412244" ;
+	:twitter "SenatorTester" ;
+	:twitter_id "515822213" ;
+	:facebook "senatortester" ;
+	schema:VideoObject "senatorjontester" ;
+	:youtube_id "UCgXAF-CON1coZFMxQkfj0fg" .
+
+
+:r33	a rdfs:Resource ;
+	:bioguide_id "T000463" ;
+	:thomas_id "01741" ;
+	:govtrack_id "400411" ;
+	:twitter "RepMikeTurner" ;
+	:twitter_id "51228911" ;
+	:facebook "RepMikeTurner" ;
+	schema:VideoObject "CongressmanTurner" ;
+	:youtube_id "UC-6Ss-aZ3OPisf9GdVGtN8g" ;
+	:instgram "repmiketurner" .
+
+
+:r34	a rdfs:Resource ;
+	:bioguide_id "T000462" ;
+	:thomas_id "01664" ;
+	:govtrack_id "400406" ;
+	:twitter "pattiberi" ;
+	:twitter_id "912608010" ;
+	:facebook "RepPatTiberi" ;
+	schema:VideoObject "PatTiberi" ;
+	:youtube_id "UCr9reyLip23im9SVDJ9IGAg" ;
+	:instgram "pattiberi" ;
+	:instgram_id "1213878120" .
+
+
+:r35	a rdfs:Resource ;
+	:bioguide_id "T000461" ;
+	:thomas_id "02085" ;
+	:govtrack_id "400408" ;
+	:twitter "SenToomey" ;
+	:twitter_id "221162525" ;
+	:facebook "senatortoomey" ;
+	schema:VideoObject "sentoomey" ;
+	:youtube_id "UCDUM4FFU1p-_YuHqmBglyXw" .
+
+
+:r36	a rdfs:Resource ;
+	:bioguide_id "T000460" ;
+	:thomas_id "01593" ;
+	:govtrack_id "400403" ;
+	:twitter "RepThompson" ;
+	:twitter_id "303861808" ;
+	:facebook "RepMikeThompson" ;
+	schema:VideoObject "CongressmanMThompson" ;
+	:youtube_id "UC6pGbtqHZYZmScFGSz5bbdg" .
+
+
+:r37	a rdfs:Resource ;
+	:bioguide_id "T000250" ;
+	:thomas_id "01534" ;
+	:govtrack_id "400546" ;
+	:twitter "SenJohnThune" ;
+	:twitter_id "296361085" ;
+	schema:VideoObject "johnthune" ;
+	:youtube_id "UCRu6lpRfxhkDGUrKDgQNZYQ" ;
+	:instgram "senjohnthune" .
+
+
+:r38	a rdfs:Resource ;
+	:bioguide_id "T000238" ;
+	:thomas_id "01155" ;
+	:govtrack_id "400404" ;
+	:twitter "MacTXPress" ;
+	:twitter_id "377534571" ;
+	:facebook "repmacthornberry" ;
+	schema:VideoObject "RepMacThornberry" ;
+	:youtube_id "UCIfCqubtIZnQDwDS8YNmL2A" .
+
+
+:r39	a rdfs:Resource ;
+	:bioguide_id "T000193" ;
+	:thomas_id "01151" ;
+	:govtrack_id "400402" ;
+	:twitter "BennieGThompson" ;
+	:twitter_id "82453460" ;
+	:facebook "CongressmanBennieGThompson" ;
+	schema:VideoObject "RepBennieThompson" ;
+	:youtube_id "UCzt2pBxh0dI24kYrWretXRw" ;
+	:instgram "benniegthompson" ;
+	:instgram_id "347410575" .
+
+
+:r40	a rdfs:Resource ;
+	:bioguide_id "S001189" ;
+	:thomas_id "02009" ;
+	:govtrack_id "412417" ;
+	:twitter "AustinScottGA08" ;
+	:twitter_id "234797704" ;
+	:facebook "RepAustinScott" ;
+	schema:VideoObject "RepAustinScott" ;
+	:youtube_id "UC5M7eKHKQStktMyjieiHYZQ" .
+
+
+:r41	a rdfs:Resource ;
+	:bioguide_id "S001187" ;
+	:thomas_id "02047" ;
+	:govtrack_id "412461" ;
+	:twitter "RepSteveStivers" ;
+	:twitter_id "211420609" ;
+	:facebook "116058275133542" ;
+	schema:VideoObject "RepSteveStivers" ;
+	:youtube_id "UCfZrE20pIcR-LeFUV7r2Ixw" ;
+	:instgram "RepSteveStivers" .
+
+
+:r42	a rdfs:Resource ;
+	:bioguide_id "S001185" ;
+	:thomas_id "01988" ;
+	:govtrack_id "412396" ;
+	:twitter "RepTerriSewell" ;
+	:twitter_id "381152398" ;
+	:facebook "RepSewell" ;
+	schema:VideoObject "RepSewell" ;
+	:youtube_id "UCHkEHtfrfUWOFtbUFQTQH7Q" .
+
+
+:r43	a rdfs:Resource ;
+	:bioguide_id "S001184" ;
+	:thomas_id "02056" ;
+	:govtrack_id "412471" ;
+	:twitter "SenatorTimScott" ;
+	:twitter_id "217543151" ;
+	:facebook "SenatorTimScott" ;
+	schema:VideoObject "SenatorTimScott" ;
+	:youtube_id "UCSfAsbG80CNInSKrtpKoL-w" ;
+	:instgram "SenatorTimScott" .
+
+
+:r44	a rdfs:Resource ;
+	:bioguide_id "S001183" ;
+	:thomas_id "01994" ;
+	:govtrack_id "412399" ;
+	:twitter "RepDavid" ;
+	:twitter_id "229197216" ;
+	:facebook "repdavidschweikert" ;
+	schema:VideoObject "RepDavidSchweikert" ;
+	:youtube_id "UCVvuNVzkOUp7p_Pzkc6Zuvw" ;
+	:instgram "repdavid" ;
+	:instgram_id "181147397" .
+
+
+:r45	a rdfs:Resource ;
+	:bioguide_id "S001181" ;
+	:thomas_id "01901" ;
+	:govtrack_id "412323" ;
+	:twitter "SenatorShaheen" ;
+	:twitter_id "109287731" ;
+	:facebook "SenatorShaheen" ;
+	schema:VideoObject "senatorshaheen" ;
+	:youtube_id "UCjLZAZMbDrybHyttdEC9LFA" ;
+	:instgram "senatorshaheen" .
+
+
+:r46	a rdfs:Resource ;
+	:bioguide_id "S001180" ;
+	:thomas_id "01950" ;
+	:govtrack_id "412315" ;
+	:twitter "RepSchrader" ;
+	:twitter_id "20545793" ;
+	:facebook "repschrader" ;
+	schema:VideoObject "repkurtschrader" ;
+	:youtube_id "UCrWRXVaGJtcImc_kknuDsAw" .
+
+
+:r47	a rdfs:Resource ;
+	:bioguide_id "S001177" ;
+	:thomas_id "01962" ;
+	:govtrack_id "412312" ;
+	:facebook "153423912663" ;
+	schema:VideoObject "CongressmanSablan" ;
+	:youtube_id "UC-fbzxBSiC98eAE2goaANVQ" ;
+	:instgram "kilili_sablan" .
+
+
+:r48	a rdfs:Resource ;
+	:bioguide_id "S001176" ;
+	:thomas_id "01892" ;
+	:govtrack_id "412261" ;
+	:twitter "SteveScalise" ;
+	:twitter_id "1209417007" ;
+	:facebook "RepSteveScalise" ;
+	schema:VideoObject "RepSteveScalise" ;
+	:youtube_id "UCmYveHBVXVBRxl7GiCL-gjw" ;
+	:instgram "stevescalise" ;
+	:instgram_id "1210937919" .
+
+
+:r49	a rdfs:Resource ;
+	:bioguide_id "S001175" ;
+	:thomas_id "01890" ;
+	:govtrack_id "412259" ;
+	:twitter "RepSpeier" ;
+	:twitter_id "24913074" ;
+	:facebook "JackieSpeier" ;
+	schema:VideoObject "jackiespeierca12" ;
+	:youtube_id "UCevmyTb0HSO8irVaR2gYyoA" ;
+	:instgram "jackiespeier" .
+
+
+:r50	a rdfs:Resource ;
+	:bioguide_id "S001172" ;
+	:thomas_id "01860" ;
+	:govtrack_id "412217" ;
+	:twitter "RepAdrianSmith" ;
+	:twitter_id "296245061" ;
+	schema:VideoObject "RepAdrianSmith" ;
+	:youtube_id "UCIgn2z-hwxx_aeggnyhv54Q" .
+
+
+:r51	a rdfs:Resource ;
+	:bioguide_id "S001165" ;
+	:thomas_id "01818" ;
+	:govtrack_id "412186" ;
+	:twitter "RepSires" ;
+	:twitter_id "18696134" ;
+	:facebook "81058818750" ;
+	schema:VideoObject "RepSiresNJ13" ;
+	:youtube_id "UCfdEcWPNGoIxpYoTANF4PBA" .
+
+
+:r52	a rdfs:Resource ;
+	:bioguide_id "S001157" ;
+	:thomas_id "01722" ;
+	:govtrack_id "400363" ;
+	:twitter "RepDavidScott" ;
+	:twitter_id "168673083" ;
+	:facebook "113303673339" ;
+	schema:VideoObject "RepDavidScott" ;
+	:youtube_id "UCgf28zRkLSqAUiPuJhGdF0w" .
+
+
+:r53	a rdfs:Resource ;
+	:bioguide_id "S001156" ;
+	:thomas_id "01757" ;
+	:govtrack_id "400355" ;
+	:twitter "RepLindaSanchez" ;
+	:twitter_id "312134473" ;
+	:facebook "CongresswomanLindaSanchez" ;
+	schema:VideoObject "LindaTSanchez" ;
+	:youtube_id "UCu1K6uHxjMgj2mvzM7O9-ow" .
+
+
+:r54	a rdfs:Resource ;
+	:bioguide_id "S001154" ;
+	:thomas_id "01681" ;
+	:govtrack_id "409888" ;
+	:twitter "RepBillShuster" ;
+	:twitter_id "22527499" ;
+	:facebook "Rep.Shuster" ;
+	schema:VideoObject "repshuster" ;
+	:youtube_id "UCEfLAXoX-pV3ETccADGOdXg" .
+
+
+:r55	a rdfs:Resource ;
+	:bioguide_id "S001150" ;
+	:thomas_id "01635" ;
+	:govtrack_id "400361" ;
+	:twitter "RepAdamSchiff" ;
+	:twitter_id "29501253" ;
+	:facebook "RepAdamSchiff" ;
+	schema:VideoObject "adamschiff" ;
+	:youtube_id "UCadiUi-KZoFk1K5ZDsluLcA" ;
+	:instgram "RepAdamSchiff" .
+
+
+:r56	a rdfs:Resource ;
+	:bioguide_id "S001148" ;
+	:thomas_id "01590" ;
+	:govtrack_id "400376" ;
+	:twitter "CongMikeSimpson" ;
+	:twitter_id "76132891" ;
+	:facebook "96007744606" ;
+	schema:VideoObject "CongMikeSimpson" ;
+	:youtube_id "UCNXe0rJJeULTAP_7oyQNw8g" .
+
+
+:r57	a rdfs:Resource ;
+	:bioguide_id "S001145" ;
+	:thomas_id "01588" ;
+	:govtrack_id "400360" ;
+	:twitter "JanSchakowsky" ;
+	:twitter_id "24195214" ;
+	:facebook "janschakowsky" ;
+	schema:VideoObject "repschakowsky" ;
+	:youtube_id "UCuCHHPSENUEaaeH8n_CYDXQ" .
+
+
+:r58	a rdfs:Resource ;
+	:bioguide_id "S000770" ;
+	:thomas_id "01531" ;
+	:govtrack_id "300093" ;
+	:twitter "SenStabenow" ;
+	:twitter_id "76456274" ;
+	:facebook "SenatorStabenow" ;
+	schema:VideoObject "senatorstabenow" ;
+	:youtube_id "UCFoDKCvxSwCUfDv-4Eg4K5A" .
+
+
+:r59	a rdfs:Resource ;
+	:bioguide_id "S000583" ;
+	:thomas_id "01075" ;
+	:govtrack_id "400381" ;
+	:twitter "LamarSmithTX21" ;
+	:twitter_id "15856366" ;
+	:facebook "LamarSmithTX21" ;
+	schema:VideoObject "lamarsmithtexas21" ;
+	:youtube_id "UCc2q5flh9dSoyg4W9osGW8Q" .
+
+
+:r60	a rdfs:Resource ;
+	:bioguide_id "S000510" ;
+	:thomas_id "01528" ;
+	:govtrack_id "400379" ;
+	:twitter "RepAdamSmith" ;
+	:twitter_id "58928690" ;
+	:facebook "RepAdamSmith" ;
+	schema:VideoObject "CongressmanAdamSmith" ;
+	:youtube_id "UCcrHso483LOfC6WwDnzAh-g" .
+
+
+:r61	a rdfs:Resource ;
+	:bioguide_id "S000480" ;
+	:thomas_id "01069" ;
+	:govtrack_id "400378" ;
+	:twitter "LouiseSlaughter" ;
+	:twitter_id "63169388" ;
+	:facebook "RepLouiseSlaughter" ;
+	schema:VideoObject "louiseslaughter" ;
+	:youtube_id "UCm9G5-ikIk62LgZxRnlB7fg" ;
+	:instgram "louisemslaughter" .
+
+
+:r62	a rdfs:Resource ;
+	:bioguide_id "S000364" ;
+	:thomas_id "01527" ;
+	:govtrack_id "400373" ;
+	:twitter "RepShimkus" ;
+	:twitter_id "15600527" ;
+	:facebook "repshimkus" ;
+	schema:VideoObject "repshimkus" ;
+	:youtube_id "UCVXSvuk-csQRKBI0oPzcEnw" .
+
+
+:r63	a rdfs:Resource ;
+	:bioguide_id "S000344" ;
+	:thomas_id "01526" ;
+	:govtrack_id "400371" ;
+	:twitter "BradSherman" ;
+	:twitter_id "30216513" ;
+	:facebook "63158229861" ;
+	schema:VideoObject "shermanca27" ;
+	:youtube_id "UCPisrz6-SLwVy2l9Mcy8kug" .
+
+
+:r64	a rdfs:Resource ;
+	:bioguide_id "S000320" ;
+	:thomas_id "01049" ;
+	:govtrack_id "300089" ;
+	:twitter "SenShelby" ;
+	:twitter_id "21111098" ;
+	:facebook "RichardShelby" ;
+	schema:VideoObject "SenatorRichardShelby" ;
+	:youtube_id "UCyMzDCRZrmhr_OGDjVuAeJw" .
+
+
+:r65	a rdfs:Resource ;
+	:bioguide_id "S000250" ;
+	:thomas_id "01525" ;
+	:govtrack_id "400367" ;
+	:twitter "PeteSessions" ;
+	:twitter_id "24735461" ;
+	:facebook "petesessions" ;
+	schema:VideoObject "PeteSessions" ;
+	:youtube_id "UCDSBWdAlrCZq2W8P3wR_LCg" .
+
+
+:r66	a rdfs:Resource ;
+	:bioguide_id "S000248" ;
+	:thomas_id "01042" ;
+	:govtrack_id "400366" ;
+	:twitter "RepJoseSerrano" ;
+	:twitter_id "33563161" ;
+	:facebook "RepJoseSerrano" ;
+	:instgram "repjoseserrano" ;
+	:instgram_id "1422526654" .
+
+
+:r67	a rdfs:Resource ;
+	:bioguide_id "S000244" ;
+	:thomas_id "01041" ;
+	:govtrack_id "400365" ;
+	:twitter "JimPressOffice" ;
+	:twitter_id "851621377" ;
+	:facebook "RepSensenbrenner" ;
+	schema:VideoObject "RepSensenbrenner" ;
+	:youtube_id "UCUNfNsc2CVsqivJ2wThQF6A" .
+
+
+:r68	a rdfs:Resource ;
+	:bioguide_id "S000185" ;
+	:thomas_id "01037" ;
+	:govtrack_id "400364" ;
+	:twitter "BobbyScott" ;
+	:twitter_id "161791703" ;
+	:facebook "RepBobbyScott" ;
+	schema:VideoObject "repbobbyscott" ;
+	:youtube_id "UCdNNcpw8arCsUp55JwK_QAA" ;
+	:instgram "repbobbyscott" ;
+	:instgram_id "1173348983" .
+
+
+:r69	a rdfs:Resource ;
+	:bioguide_id "S000148" ;
+	:thomas_id "01036" ;
+	:govtrack_id "300087" ;
+	:twitter "SenSchumer" ;
+	:twitter_id "17494010" ;
+	:facebook "senschumer" ;
+	schema:VideoObject "SenatorSchumer" ;
+	:youtube_id "UC-ABttxh8uQv_10qmwGaidw" .
+
+
+:r70	a rdfs:Resource ;
+	:bioguide_id "S000033" ;
+	:thomas_id "01010" ;
+	:govtrack_id "400357" ;
+	:twitter "SenSanders" ;
+	:twitter_id "29442313" ;
+	:facebook "senatorsanders" ;
+	schema:VideoObject "senatorsanders" ;
+	:youtube_id "UCD_DaKNac0Ta-2PeHuoQ1uA" .
+
+
+:r71	a rdfs:Resource ;
+	:bioguide_id "R000595" ;
+	:thomas_id "02084" ;
+	:govtrack_id "412491" ;
+	:twitter "SenRubioPress" ;
+	:twitter_id "229966028" ;
+	:facebook "SenatorMarcoRubio" ;
+	schema:VideoObject "SenatorMarcoRubio" ;
+	:youtube_id "UCh8t7sV_DBKz4A-RkL9feyg" .
+
+
+:r72	a rdfs:Resource ;
+	:bioguide_id "R000593" ;
+	:thomas_id "02003" ;
+	:govtrack_id "412411" ;
+	:twitter "RepDennisRoss" ;
+	:twitter_id "33655490" ;
+	:facebook "dennis.ross.376" ;
+	schema:VideoObject "RepDennisRoss" ;
+	:youtube_id "UCSjZ4oRWi_sO-aGM9CUBOJQ" .
+
+
+:r73	a rdfs:Resource ;
+	:bioguide_id "R000592" ;
+	:thomas_id "02017" ;
+	:govtrack_id "412426" ;
+	:twitter "ToddRokita" ;
+	:twitter_id "17544524" ;
+	:facebook "RepToddRokita" ;
+	schema:VideoObject "reptoddrokita" ;
+	:youtube_id "UCl_wYwGYw1AXiUoqNmwLxzA" ;
+	:instgram "RepToddRokita" .
+
+
+:r74	a rdfs:Resource ;
+	:bioguide_id "R000591" ;
+	:thomas_id "01986" ;
+	:govtrack_id "412394" ;
+	:twitter "RepMarthaRoby" ;
+	:twitter_id "224294785" ;
+	:facebook "Representative.Martha.Roby" ;
+	schema:VideoObject "reproby" ;
+	:youtube_id "UCeAWQdcSTlwv2vDGz0TQOxQ" .
+
+
+:r75	a rdfs:Resource ;
+	:bioguide_id "R000588" ;
+	:thomas_id "02023" ;
+	:govtrack_id "412432" ;
+	:twitter "RepRichmond" ;
+	:twitter_id "267854863" ;
+	:facebook "RepRichmond" ;
+	schema:VideoObject "RepCedricRichmond" ;
+	:youtube_id "UCsB66Dq8sCGwr5K3g1kqTrA" .
+
+
+:r76	a rdfs:Resource ;
+	:bioguide_id "R000586" ;
+	:thomas_id "02048" ;
+	:govtrack_id "412462" ;
+	:twitter "RepJimRenacci" ;
+	:twitter_id "236916916" ;
+	:facebook "repjimrenacci" ;
+	schema:VideoObject "repjimrenacci" ;
+	:youtube_id "UCHTvP1X0dgUU1lrMub4hbLw" ;
+	:instgram "repjimrenacci" .
+
+
+:r77	a rdfs:Resource ;
+	:bioguide_id "R000585" ;
+	:thomas_id "01982" ;
+	:govtrack_id "412393" ;
+	:twitter "RepTomReed" ;
+	:twitter_id "252819323" ;
+	:facebook "RepTomReed" ;
+	schema:VideoObject "CongressmanTomReed" ;
+	:youtube_id "UC-HFEKIHC7ydVUkxkZOLqTg" .
+
+
+:r78	a rdfs:Resource ;
+	:bioguide_id "R000583" ;
+	:thomas_id "01916" ;
+	:govtrack_id "412311" ;
+	:twitter "TomRooney" ;
+	:twitter_id "23970171" ;
+	:facebook "reptomrooney" ;
+	schema:VideoObject "CongressmanRooney" ;
+	:youtube_id "UCHuDkMfCK3kmCpso7LyI3zA" .
+
+
+:r79	a rdfs:Resource ;
+	:bioguide_id "R000582" ;
+	:thomas_id "01954" ;
+	:govtrack_id "412310" ;
+	:twitter "DrPhilRoe" ;
+	:twitter_id "52503751" ;
+	:facebook "DrPhilRoe" ;
+	schema:VideoObject "drphilroe" ;
+	:youtube_id "UC8muYurPSNO8x2Qqk40mVOA" ;
+	:instgram "drphilroe" .
+
+
+:r80	a rdfs:Resource ;
+	:bioguide_id "R000580" ;
+	:thomas_id "01848" ;
+	:govtrack_id "412202" ;
+	:twitter "PeterRoskam" ;
+	:twitter_id "20015903" ;
+	:facebook "PeterRoskam" ;
+	schema:VideoObject "RoskamIL06" ;
+	:youtube_id "UCk8IZKV_RC1Wr-dh09kzVTw" .
+
+
+:r81	a rdfs:Resource ;
+	:bioguide_id "R000578" ;
+	:thomas_id "01810" ;
+	:govtrack_id "400660" ;
+	:twitter "DaveReichert" ;
+	:twitter_id "16102244" ;
+	:facebook "repdavereichert" ;
+	schema:VideoObject "repdavereichert" ;
+	:youtube_id "UC_Qs1fzY8WlHv6wJ1x7Hotg" ;
+	:instgram "repdavereichert" .
+
+
+:r82	a rdfs:Resource ;
+	:bioguide_id "R000577" ;
+	:thomas_id "01756" ;
+	:govtrack_id "400352" ;
+	:twitter "RepTimRyan" ;
+	:twitter_id "13491312" ;
+	:facebook "timryan" ;
+	schema:VideoObject "timryanvision" ;
+	:youtube_id "UCjAFlYCheFKjGg_Pxc2VOFA" .
+
+
+:r83	a rdfs:Resource ;
+	:bioguide_id "R000576" ;
+	:thomas_id "01728" ;
+	:govtrack_id "400349" ;
+	:twitter "Call_Me_Dutch" ;
+	:twitter_id "305620929" ;
+	:facebook "DutchRupp" ;
+	schema:VideoObject "ruppersberger" ;
+	:youtube_id "UCk2S9iSHNpo1E1A7qZ0SPIw" .
+
+
+:r84	a rdfs:Resource ;
+	:bioguide_id "R000575" ;
+	:thomas_id "01704" ;
+	:govtrack_id "400341" ;
+	:twitter "RepMikeRogersAL" ;
+	:twitter_id "33977070" ;
+	:facebook "CongressmanMikeDRogers" ;
+	schema:VideoObject "MikeRogersAL03" ;
+	:youtube_id "UCH-WUWuY0_dlKwJDSqKTJsg" ;
+	:instgram "repmikerogersal" ;
+	:instgram_id "259435765" .
+
+
+:r85	a rdfs:Resource ;
+	:bioguide_id "R000570" ;
+	:thomas_id "01560" ;
+	:govtrack_id "400351" ;
+	:twitter "SpeakerRyan" ;
+	:twitter_id "18916432" ;
+	:facebook "speakerryan" ;
+	schema:VideoObject "reppaulryan" ;
+	:youtube_id "UC8nMpZAuz-gitzb2icE15Qw" ;
+	:instgram "SpeakerRyan" .
+
+
+:r86	a rdfs:Resource ;
+	:bioguide_id "R000515" ;
+	:thomas_id "01003" ;
+	:govtrack_id "400350" ;
+	:twitter "RepBobbyRush" ;
+	:twitter_id "305216911" ;
+	:facebook "congressmanbobbyrush" ;
+	schema:VideoObject "CongressmanRush" ;
+	:youtube_id "UCbWqxBnS_w_uFTdQAL0YH5g" .
+
+
+:r87	a rdfs:Resource ;
+	:bioguide_id "R000487" ;
+	:thomas_id "00998" ;
+	:govtrack_id "400348" ;
+	:twitter "RepEdRoyce" ;
+	:twitter_id "246769138" ;
+	:facebook "EdRoyce" ;
+	schema:VideoObject "RepEdRoyce" ;
+	:youtube_id "UC9DUiRouRl6Rz6PEvQ4jRPw" .
+
+
+:r88	a rdfs:Resource ;
+	:bioguide_id "R000486" ;
+	:thomas_id "00997" ;
+	:govtrack_id "400347" ;
+	:twitter "RepRoybalAllard" ;
+	:twitter_id "479872233" ;
+	:facebook "RepRoybalAllard" ;
+	schema:VideoObject "RepRoybalAllard" ;
+	:youtube_id "UC_T_RXWeJ-smmpjdNLOaMcg" ;
+	:instgram "RepRoybalAllard" .
+
+
+:r89	a rdfs:Resource ;
+	:bioguide_id "R000435" ;
+	:thomas_id "00985" ;
+	:govtrack_id "400344" ;
+	:twitter "RosLehtinen" ;
+	:twitter_id "14275291" ;
+	:facebook "iroslehtinen" ;
+	schema:VideoObject "IleanaRosLehtinen" ;
+	:youtube_id "UCf6XrWGZHjC7KgRd9JCAuBA" .
+
+
+:r90	a rdfs:Resource ;
+	:bioguide_id "R000395" ;
+	:thomas_id "00977" ;
+	:govtrack_id "400340" ;
+	:twitter "RepHalRogers" ;
+	:twitter_id "550401754" ;
+	:facebook "CongressmanHalRogers" ;
+	schema:VideoObject "RepHalRogers" ;
+	:youtube_id "UChVFKLZkRoHQDhp4zNvEezQ" .
+
+
+:r91	a rdfs:Resource ;
+	:bioguide_id "R000307" ;
+	:thomas_id "00968" ;
+	:govtrack_id "300083" ;
+	:twitter "SenPatRoberts" ;
+	:twitter_id "75364211" ;
+	:facebook "SenPatRoberts" ;
+	schema:VideoObject "SenPatRoberts" ;
+	:youtube_id "UCRpswvC8LgxzE9AYSFpqUgw" .
+
+
+:r92	a rdfs:Resource ;
+	:bioguide_id "R000122" ;
+	:thomas_id "00949" ;
+	:govtrack_id "300081" ;
+	:twitter "SenJackReed" ;
+	:twitter_id "486694111" ;
+	:facebook "SenJackReed" ;
+	schema:VideoObject "SenatorReed" ;
+	:youtube_id "UCT_aFVtsjxPwWKfO-PW_hPw" .
+
+
+:r93	a rdfs:Resource ;
+	:bioguide_id "Q000023" ;
+	:thomas_id "01967" ;
+	:govtrack_id "412331" ;
+	:twitter "RepMikeQuigley" ;
+	:twitter_id "56864092" ;
+	:facebook "repmikequigley" ;
+	schema:VideoObject "RepMikeQuigley" ;
+	:youtube_id "UCDP13XegdoZ4bxYHxM34yAA" ;
+	:instgram "repmikequigley" ;
+	:instgram_id "1403659583" .
+
+
+:r94	a rdfs:Resource ;
+	:bioguide_id "P000603" ;
+	:thomas_id "02082" ;
+	:govtrack_id "412492" ;
+	:facebook "SenatorRandPaul" ;
+	schema:VideoObject "SenatorRandPaul" ;
+	:youtube_id "UCeM9I-20oWUs8daIIpsNHoQ" ;
+	:instgram "senatorrandpaul" ;
+	:instgram_id "541357095" .
+
+
+:r95	a rdfs:Resource ;
+	:bioguide_id "P000601" ;
+	:thomas_id "02035" ;
+	:govtrack_id "412443" ;
+	:twitter "CongPalazzo" ;
+	:twitter_id "299883942" ;
+	:facebook "stevenpalazzo" ;
+	schema:VideoObject "CongressmanPalazzo" ;
+	:youtube_id "UCtPOy2vRbN2nD8dQPSOTXeA" .
+
+
+:r96	a rdfs:Resource ;
+	:bioguide_id "P000599" ;
+	:thomas_id "01915" ;
+	:govtrack_id "412309" ;
+	:twitter "CongBillPosey" ;
+	:twitter_id "25086658" ;
+	:facebook "bill.posey15" ;
+	schema:VideoObject "CongressmanPosey" ;
+	:youtube_id "UCoUwUkDpe1ZYd6tiaZfiMuA" .
+
+
+:r97	a rdfs:Resource ;
+	:bioguide_id "P000598" ;
+	:thomas_id "01910" ;
+	:govtrack_id "412308" ;
+	:twitter "RepJaredPolis" ;
+	:twitter_id "463132556" ;
+	:facebook "jaredpolis" ;
+	schema:VideoObject "JaredPolis31275" ;
+	:youtube_id "UCJJ1Ye0mOzqZh1_GErFUISw" ;
+	:instgram "repjaredpolis" .
+
+
+:r98	a rdfs:Resource ;
+	:bioguide_id "P000597" ;
+	:thomas_id "01927" ;
+	:govtrack_id "412307" ;
+	:twitter "ChelliePingree" ;
+	:twitter_id "14984637" ;
+	:facebook "ChelliePingree" ;
+	schema:VideoObject "congresswomanpingree" ;
+	:youtube_id "UCLKaWFM7I84WcreDRhhhkVg" .
+
+
+:r99	a rdfs:Resource ;
+	:bioguide_id "P000595" ;
+	:thomas_id "01929" ;
+	:govtrack_id "412305" ;
+	:twitter "SenGaryPeters" ;
+	:twitter_id "236511574" ;
+	:facebook "SenGaryPeters" ;
+	schema:VideoObject "RepGaryPeters" ;
+	:youtube_id "UC7LYNbnKSK2VZqQ98YROWHQ" ;
+	:instgram "sengarypeters" ;
+	:instgram_id "1640246681" .
+
+
+:r100	a rdfs:Resource ;
+	:bioguide_id "P000594" ;
+	:thomas_id "01930" ;
+	:govtrack_id "412303" ;
+	:twitter "RepErikPaulsen" ;
+	:twitter_id "17513304" ;
+	:facebook "CongressmanErikPaulsen" ;
+	schema:VideoObject "reperikpaulsen" ;
+	:youtube_id "UC1IOW4Wqox-6gmZbjjGvzLg" .
+
+
+:r101	a rdfs:Resource ;
+	:bioguide_id "P000593" ;
+	:thomas_id "01835" ;
+	:govtrack_id "412192" ;
+	:twitter "RepPerlmutter" ;
+	:twitter_id "20552026" ;
+	:facebook "RepPerlmutter" ;
+	schema:VideoObject "RepPerlmutter" ;
+	:youtube_id "UCJXuMAzxngpEvDdvlE6wS5g" .
+
+
+:r102	a rdfs:Resource ;
+	:bioguide_id "P000592" ;
+	:thomas_id "01802" ;
+	:govtrack_id "400652" ;
+	:twitter "JudgeTedPoe" ;
+	:twitter_id "74198348" ;
+	:facebook "106631626049851" ;
+	schema:VideoObject "CongressmanTedPoe" ;
+	:youtube_id "UCGdNUkVP16hOyL-fUDV1Knw" ;
+	:instgram "judgetedpoe" ;
+	:instgram_id "438265816" .
+
+
+:r103	a rdfs:Resource ;
+	:bioguide_id "P000588" ;
+	:thomas_id "01738" ;
+	:govtrack_id "400313" ;
+	:twitter "RepStevePearce" ;
+	:twitter_id "235271965" ;
+	:facebook "RepStevePearce" ;
+	schema:VideoObject "NMStevePearce" ;
+	:youtube_id "UCaT7jt_M86sDK50eaaVsFvQ" .
+
+
+:r104	a rdfs:Resource ;
+	:bioguide_id "P000523" ;
+	:thomas_id "00930" ;
+	:govtrack_id "400326" ;
+	:twitter "RepDavidEPrice" ;
+	:twitter_id "155669457" ;
+	:facebook "RepDavidEPrice" ;
+	schema:VideoObject "RepDavidPrice" ;
+	:youtube_id "UCtX7bSXBLF9ge-Q955n5Vqw" .
+
+
+:r105	a rdfs:Resource ;
+	:bioguide_id "P000449" ;
+	:thomas_id "00924" ;
+	:govtrack_id "400325" ;
+	:twitter "SenRobPortman" ;
+	:twitter_id "18915145" ;
+	:facebook "senrobportman" ;
+	schema:VideoObject "SenRobPortman" ;
+	:youtube_id "UCwunkd8Zs-yAWKQwnwBp7ew" ;
+	:instgram "senrobportman" ;
+	:instgram_id "370356159" .
+
+
+:r106	a rdfs:Resource ;
+	:bioguide_id "P000197" ;
+	:thomas_id "00905" ;
+	:govtrack_id "400314" ;
+	:twitter "NancyPelosi" ;
+	:twitter_id "15764644" ;
+	:facebook "NancyPelosi" ;
+	schema:VideoObject "nancypelosi" ;
+	:youtube_id "UCxPeEcH0xaCK9nBK98EFhDg" .
+
+
+:r107	a rdfs:Resource ;
+	:bioguide_id "P000096" ;
+	:thomas_id "01510" ;
+	:govtrack_id "400309" ;
+	:twitter "BillPascrell" ;
+	:twitter_id "74508260" ;
+	:facebook "pascrell" ;
+	schema:VideoObject "RepPascrell" ;
+	:youtube_id "UCIy1Ru8oA14aRjpq6L3i-EQ" .
+
+
+:r108	a rdfs:Resource ;
+	:bioguide_id "P000034" ;
+	:thomas_id "00887" ;
+	:govtrack_id "400308" ;
+	:twitter "FrankPallone" ;
+	:twitter_id "31801993" ;
+	:facebook "repfrankpallone" ;
+	schema:VideoObject "repfrankpallone" ;
+	:youtube_id "UCN0_wn9hs1LI3UKkji2PP2A" ;
+	:instgram "repfrankpallone" .
+
+
+:r109	a rdfs:Resource ;
+	:bioguide_id "O000168" ;
+	:thomas_id "01955" ;
+	:govtrack_id "412302" ;
+	:twitter "RepPeteOlson" ;
+	:twitter_id "20053279" ;
+	:facebook "Rep.PeteOlson" ;
+	:instgram "reppeteolson" .
+
+
+:r110	a rdfs:Resource ;
+	:bioguide_id "N000184" ;
+	:thomas_id "02060" ;
+	:govtrack_id "412475" ;
+	:twitter "RepKristiNoem" ;
+	:twitter_id "235251868" ;
+	schema:VideoObject "RepKristiNoem" ;
+	:youtube_id "UCZPzuVONjRwo5TsrKzbYRVA" ;
+	:instgram "repkristinoem" .
+
+
+:r111	a rdfs:Resource ;
+	:bioguide_id "N000181" ;
+	:thomas_id "01710" ;
+	:govtrack_id "400297" ;
+	:twitter "RepDevinNunes" ;
+	:twitter_id "344972339" ;
+	schema:VideoObject "RepDevinNunes" ;
+	:youtube_id "UCtbArL6CmOfFqgmpuRjLp3w" .
+
+
+:r112	a rdfs:Resource ;
+	:bioguide_id "N000179" ;
+	:thomas_id "01602" ;
+	:govtrack_id "400290" ;
+	:twitter "GraceNapolitano" ;
+	:twitter_id "161411080" ;
+	:facebook "RepGraceNapolitano" ;
+	schema:VideoObject "RepGraceNapolitano" ;
+	:youtube_id "UCPWjmiAIR04oQ8QMoOWcDtA" .
+
+
+:r113	a rdfs:Resource ;
+	:bioguide_id "N000147" ;
+	:thomas_id "00868" ;
+	:govtrack_id "400295" ;
+	:twitter "EleanorNorton" ;
+	:twitter_id "23600262" ;
+	:facebook "CongresswomanNorton" ;
+	schema:VideoObject "EleanorHNorton" ;
+	:youtube_id "UChRrAXUGylfxJjbquC6aUjQ" .
+
+
+:r114	a rdfs:Resource ;
+	:bioguide_id "N000032" ;
+	:thomas_id "00859" ;
+	:govtrack_id "300078" ;
+	:twitter "SenBillNelson" ;
+	:twitter_id "20597460" ;
+	schema:VideoObject "senbillnelson" ;
+	:youtube_id "UC1Iir7_h98mI9-hHzrDJWpw" .
+
+
+:r115	a rdfs:Resource ;
+	:bioguide_id "N000015" ;
+	:thomas_id "00854" ;
+	:govtrack_id "400291" ;
+	:twitter "RepRichardNeal" ;
+	:twitter_id "442824717" ;
+	:facebook "reprichardneal" ;
+	schema:VideoObject "RepRichardENeal" ;
+	:youtube_id "UCZVtTydu0-MSK6G12GaKA4g" .
+
+
+:r116	a rdfs:Resource ;
+	:bioguide_id "N000002" ;
+	:thomas_id "00850" ;
+	:govtrack_id "400289" ;
+	:twitter "RepJerryNadler" ;
+	:twitter_id "40302336" ;
+	:facebook "CongressmanNadler" ;
+	schema:VideoObject "congressmannadler" ;
+	:youtube_id "UCQKj0qU1e7o2f5ftSh-c9aQ" .
+
+
+:r117	a rdfs:Resource ;
+	:bioguide_id "M001183" ;
+	:thomas_id "01983" ;
+	:govtrack_id "412391" ;
+	:twitter "Sen_JoeManchin" ;
+	:twitter_id "234374703" ;
+	:facebook "JoeManchinIII" ;
+	schema:VideoObject "SenatorJoeManchin" ;
+	:youtube_id "UCGyPK_ye2ptpzQgOjKIn7ag" .
+
+
+:r118	a rdfs:Resource ;
+	:bioguide_id "M001181" ;
+	:thomas_id "02052" ;
+	:govtrack_id "412466" ;
+	:twitter "RepMeehan" ;
+	:twitter_id "248850174" ;
+	:facebook "CongressmanPatrickMeehan" ;
+	schema:VideoObject "repmeehan" ;
+	:youtube_id "UCfOy3eW-KIg4aI3w_azyY6g" .
+
+
+:r119	a rdfs:Resource ;
+	:bioguide_id "M001180" ;
+	:thomas_id "02074" ;
+	:govtrack_id "412487" ;
+	:twitter "RepMcKinley" ;
+	:twitter_id "240427862" ;
+	:facebook "RepMcKinley" ;
+	schema:VideoObject "RepDavidMcKinley" ;
+	:youtube_id "UCt7BWx4b8ubXa-PneAu103g" .
+
+
+:r120	a rdfs:Resource ;
+	:bioguide_id "M001179" ;
+	:thomas_id "02053" ;
+	:govtrack_id "412468" ;
+	:twitter "RepTomMarino" ;
+	:twitter_id "240363117" ;
+	:facebook "CongressmanMarino" ;
+	schema:VideoObject "RepMarino" ;
+	:youtube_id "UCL8AvZKY5KuPk0T7G0jv7HA" ;
+	:instgram "reptommarino" ;
+	:instgram_id "1395145806" .
+
+
+:r121	a rdfs:Resource ;
+	:bioguide_id "M001177" ;
+	:thomas_id "01908" ;
+	:govtrack_id "412295" ;
+	:twitter "RepMcClintock" ;
+	:twitter_id "50152441" ;
+	:facebook "81125319109" ;
+	schema:VideoObject "McClintockCA04" ;
+	:youtube_id "UCMh04KC4LfIzKoXh2Xws_pw" .
+
+
+:r122	a rdfs:Resource ;
+	:bioguide_id "M001176" ;
+	:thomas_id "01900" ;
+	:govtrack_id "412325" ;
+	:twitter "SenJeffMerkley" ;
+	:twitter_id "29201047" ;
+	:facebook "jeffmerkley" ;
+	schema:VideoObject "SenatorJeffMerkley" ;
+	:youtube_id "UCRoXttCJhMnLVCxCaa6VnNQ" ;
+	:instgram "senjeffmerkley" ;
+	:instgram_id "501463589" .
+
+
+:r123	a rdfs:Resource ;
+	:bioguide_id "M001170" ;
+	:thomas_id "01820" ;
+	:govtrack_id "412243" ;
+	:twitter "McCaskillOffice" ;
+	:twitter_id "57065141" ;
+	:facebook "senatormccaskill" ;
+	schema:VideoObject "SenatorMcCaskill" ;
+	:youtube_id "UCnarZ9jmNhI-eDcEPBwqMFw" ;
+	:instgram "clairecmc" ;
+	:instgram_id "182810702" .
+
+
+:r124	a rdfs:Resource ;
+	:bioguide_id "M001166" ;
+	:thomas_id "01832" ;
+	:govtrack_id "412189" ;
+	:twitter "RepMcNerney" ;
+	:twitter_id "385429543" ;
+	:facebook "jerrymcnerney" ;
+	schema:VideoObject "RepJerryMcNerney" ;
+	:youtube_id "UClUOx6F8GKshxGBUBLkisug" .
+
+
+:r125	a rdfs:Resource ;
+	:bioguide_id "M001165" ;
+	:thomas_id "01833" ;
+	:govtrack_id "412190" ;
+	:twitter "GOPLeader" ;
+	:twitter_id "19739126" ;
+	:facebook "CongressmanKevinMcCarthy" ;
+	schema:VideoObject "repkevinmccarthy" ;
+	:youtube_id "UCdJUZUFSLJRlUpE-91-6DsA" ;
+	:instgram "RepKevinMcCarthy" .
+
+
+:r126	a rdfs:Resource ;
+	:bioguide_id "M001163" ;
+	:thomas_id "01814" ;
+	:govtrack_id "400663" ;
+	:twitter "DorisMatsui" ;
+	:twitter_id "38254095" ;
+	:facebook "doris.matsui" ;
+	schema:VideoObject "RepDorisMatsui" ;
+	:youtube_id "UCSqqxVkvskHq3cY2MCbTZsw" .
+
+
+:r127	a rdfs:Resource ;
+	:bioguide_id "M001160" ;
+	:thomas_id "01811" ;
+	:govtrack_id "400661" ;
+	:twitter "RepGwenMoore" ;
+	:twitter_id "22669526" ;
+	:facebook "GwenSMoore" ;
+	schema:VideoObject "RepGwenMoore" ;
+	:youtube_id "UCCs9o1XaSsCsqNpO0iO0_Ew" .
+
+
+:r128	a rdfs:Resource ;
+	:bioguide_id "M001159" ;
+	:thomas_id "01809" ;
+	:govtrack_id "400659" ;
+	:twitter "CathyMcMorris" ;
+	:twitter_id "17976923" ;
+	:facebook "mcmorrisrodgers" ;
+	schema:VideoObject "mcmorrisrodgers" ;
+	:youtube_id "UCRp0lwIxAhq2Ia9_YgRWUkg" ;
+	:instgram "cathymcmorris" .
+
+
+:r129	a rdfs:Resource ;
+	:bioguide_id "M001158" ;
+	:thomas_id "01806" ;
+	:govtrack_id "400656" ;
+	:twitter "RepKenMarchant" ;
+	:twitter_id "23976316" ;
+	:facebook "RepKennyMarchant" ;
+	schema:VideoObject "RepKennyMarchant" ;
+	:youtube_id "UCQpnTMp5TdTRWEes8cjIfyQ" .
+
+
+:r130	a rdfs:Resource ;
+	:bioguide_id "M001157" ;
+	:thomas_id "01804" ;
+	:govtrack_id "400654" ;
+	:twitter "RepMcCaul" ;
+	:twitter_id "26424123" ;
+	:facebook "michaeltmccaul" ;
+	schema:VideoObject "MichaelTMcCaul" ;
+	:youtube_id "UCRw6sGE0PH7_FCeTT3PQRaA" ;
+	:instgram "congressman_mccaul" .
+
+
+:r131	a rdfs:Resource ;
+	:bioguide_id "M001156" ;
+	:thomas_id "01792" ;
+	:govtrack_id "400644" ;
+	:twitter "PatrickMcHenry" ;
+	:twitter_id "27676828" ;
+	:facebook "CongressmanMcHenry" ;
+	schema:VideoObject "CongressmanMcHenry" ;
+	:youtube_id "UCY3PTRhkSH-eoltxPVZKD-w" ;
+	:instgram "reppatrickmchenry" ;
+	:instgram_id "353406473" .
+
+
+:r132	a rdfs:Resource ;
+	:bioguide_id "M001153" ;
+	:thomas_id "01694" ;
+	:govtrack_id "300075" ;
+	:twitter "LisaMurkowski" ;
+	:twitter_id "18061669" ;
+	:facebook "SenLisaMurkowski" ;
+	schema:VideoObject "senatormurkowski" ;
+	:youtube_id "UCaigku16AErqvD0wRuwGb9A" ;
+	:instgram "senlisamurkowski" .
+
+
+:r133	a rdfs:Resource ;
+	:bioguide_id "M001143" ;
+	:thomas_id "01653" ;
+	:govtrack_id "400259" ;
+	:twitter "BettyMcCollum04" ;
+	:twitter_id "516880804" ;
+	:facebook "repbettymccollum" .
+
+
+:r134	a rdfs:Resource ;
+	:bioguide_id "M001137" ;
+	:thomas_id "01506" ;
+	:govtrack_id "400271" ;
+	:twitter "RepGregoryMeeks" ;
+	:twitter_id "22812754" ;
+	:facebook "gregorymeeksny05" ;
+	schema:VideoObject "gwmeeks" ;
+	:youtube_id "UCljJnwgQS6Z6-NypDyqKJZQ" ;
+	:instgram "repgregorymeeks" .
+
+
+:r135	a rdfs:Resource ;
+	:bioguide_id "M001111" ;
+	:thomas_id "01409" ;
+	:govtrack_id "300076" ;
+	:twitter "PattyMurray" ;
+	:twitter_id "293131808" ;
+	schema:VideoObject "SenatorPattyMurray" ;
+	:youtube_id "UCb8jq3TvQ3AzKsexhWfFLoA" ;
+	:instgram "senpattymurray" ;
+	:instgram_id "426137845" .
+
+
+:r136	a rdfs:Resource ;
+	:bioguide_id "M000934" ;
+	:thomas_id "01507" ;
+	:govtrack_id "400284" ;
+	:twitter "JerryMoran" ;
+	:twitter_id "18632666" ;
+	:facebook "jerrymoran" ;
+	schema:VideoObject "senatorjerrymoran" ;
+	:youtube_id "UC1oRxeUPam6-53wPBZ3N02A" ;
+	:instgram "senjerrymoran" ;
+	:instgram_id "298271065" .
+
+
+:r137	a rdfs:Resource ;
+	:bioguide_id "M000639" ;
+	:thomas_id "00791" ;
+	:govtrack_id "400272" ;
+	:twitter "SenatorMenendez" ;
+	:twitter_id "18695134" ;
+	:facebook "senatormenendez" ;
+	schema:VideoObject "SenatorMenendezNJ" ;
+	:youtube_id "UC0PV0K9Z5a9p3D5917KF5fw" ;
+	:instgram "senatormenendez" ;
+	:instgram_id "433044338" .
+
+
+:r138	a rdfs:Resource ;
+	:bioguide_id "M000355" ;
+	:thomas_id "01395" ;
+	:govtrack_id "300072" ;
+	:twitter "McConnellPress" ;
+	:twitter_id "339822881" ;
+	:facebook "mitchmcconnell" ;
+	:instgram "mcconnellpress" .
+
+
+:r139	a rdfs:Resource ;
+	:bioguide_id "M000312" ;
+	:thomas_id "01504" ;
+	:govtrack_id "400263" ;
+	:twitter "RepMcGovern" ;
+	:twitter_id "242426145" ;
+	:facebook "RepJimMcGovern" ;
+	schema:VideoObject "repjimmcgovern" ;
+	:youtube_id "UCpiUqp2ZF64tXqgR_EQo27g" .
+
+
+:r140	a rdfs:Resource ;
+	:bioguide_id "M000303" ;
+	:thomas_id "00754" ;
+	:govtrack_id "300071" ;
+	:twitter "SenJohnMcCain" ;
+	:twitter_id "19394188" ;
+	:facebook "johnmccain" ;
+	schema:VideoObject "SenatorJohnMcCain" ;
+	:youtube_id "UC9IJssXDUaKHzwx6gW4wEoA" ;
+	:instgram "senjohnmccain" ;
+	:instgram_id "44979810" .
+
+
+:r141	a rdfs:Resource ;
+	:bioguide_id "M000133" ;
+	:thomas_id "00735" ;
+	:govtrack_id "400253" ;
+	:twitter "SenMarkey" ;
+	:twitter_id "21406834" ;
+	:facebook "EdJMarkey" ;
+	schema:VideoObject "RepMarkey" ;
+	:youtube_id "UCT1ujew5yQy2uMhGrjiKHoA" .
+
+
+:r142	a rdfs:Resource ;
+	:bioguide_id "M000087" ;
+	:thomas_id "00729" ;
+	:govtrack_id "400251" ;
+	:twitter "RepMaloney" ;
+	:twitter_id "258900199" ;
+	:facebook "RepCarolynMaloney" ;
+	schema:VideoObject "carolynbmaloney" .
+
+
+:r143	a rdfs:Resource ;
+	:bioguide_id "L000577" ;
+	:thomas_id "02080" ;
+	:govtrack_id "412495" ;
+	:twitter "SenMikeLee" ;
+	:twitter_id "88784440" ;
+	:facebook "senatormikelee" ;
+	schema:VideoObject "senatormikelee" ;
+	:youtube_id "UCplVxs_j_sLAt0fkplXcl4A" ;
+	:instgram "senmikelee" ;
+	:instgram_id "391361701" .
+
+
+:r144	a rdfs:Resource ;
+	:bioguide_id "L000576" ;
+	:thomas_id "02033" ;
+	:govtrack_id "412445" ;
+	:twitter "USRepLong" ;
+	:twitter_id "1444015610" ;
+	:facebook "Rep.Billy.Long" ;
+	schema:VideoObject "MOdistrict7" ;
+	:youtube_id "UCLQcbyxpHXXAsUJckscQY8g" .
+
+
+:r145	a rdfs:Resource ;
+	:bioguide_id "L000575" ;
+	:thomas_id "02050" ;
+	:govtrack_id "412464" ;
+	:twitter "SenatorLankford" ;
+	:twitter_id "225921757" ;
+	:facebook "SenatorLankford" ;
+	schema:VideoObject "SenatorLankford" ;
+	:youtube_id "UCz8T6sK5fEycyWmVz6Vpe5Q" ;
+	:instgram "senatorlankford" ;
+	:instgram_id "1552251018" .
+
+
+:r146	a rdfs:Resource ;
+	:bioguide_id "L000573" ;
+	:thomas_id "02011" ;
+	:govtrack_id "412419" ;
+	:twitter "Raul_Labrador" ;
+	:twitter_id "246341769" ;
+	:facebook "raul.r.labrador" ;
+	schema:VideoObject "RepLabrador" ;
+	:youtube_id "UC1KKgNc0j8CoAGnWEJfhxJA" .
+
+
+:r147	a rdfs:Resource ;
+	:bioguide_id "L000570" ;
+	:thomas_id "01939" ;
+	:govtrack_id "412293" ;
+	:twitter "RepBenRayLujan" ;
+	:twitter_id "19318314" ;
+	:facebook "RepBenRayLujan" ;
+	schema:VideoObject "Repbenraylujan" ;
+	:youtube_id "UCcO5AmF8HuJo4d0awEbst7Q" ;
+	:instgram "repbenraylujan" ;
+	:instgram_id "1409819789" .
+
+
+:r148	a rdfs:Resource ;
+	:bioguide_id "L000569" ;
+	:thomas_id "01931" ;
+	:govtrack_id "412292" ;
+	:twitter "RepBlainePress" ;
+	:twitter_id "1849261916" ;
+	:facebook "BlaineLuetkemeyer" ;
+	schema:VideoObject "BLuetkemeyer" ;
+	:youtube_id "UCifiiQclKbBBrkSbCnN6REg" .
+
+
+:r149	a rdfs:Resource ;
+	:bioguide_id "L000567" ;
+	:thomas_id "01936" ;
+	:govtrack_id "412290" ;
+	:twitter "RepLanceNJ7" ;
+	:twitter_id "613725908" ;
+	:facebook "CongressmanLance" ;
+	schema:VideoObject "CongressmanLance" ;
+	:youtube_id "UCASO5iqjLfU4jo8xKKZIq8g" .
+
+
+:r150	a rdfs:Resource ;
+	:bioguide_id "L000566" ;
+	:thomas_id "01885" ;
+	:govtrack_id "412256" ;
+	:twitter "BobLatta" ;
+	:twitter_id "15394954" ;
+	:facebook "boblatta" ;
+	schema:VideoObject "CongressmanBobLatta" ;
+	:youtube_id "UCVSBVHoWu-eWnBBQaMKZ_sQ" ;
+	:instgram "boblatta" ;
+	:instgram_id "26367713" .
+
+
+:r151	a rdfs:Resource ;
+	:bioguide_id "L000565" ;
+	:thomas_id "01846" ;
+	:govtrack_id "412209" ;
+	:twitter "DaveLoebsack" ;
+	:twitter_id "510516465" ;
+	:facebook "DaveLoebsack" ;
+	schema:VideoObject "congressmanloebsack" ;
+	:youtube_id "UC0biZWEJAKHctxbmXfXJnOg" .
+
+
+:r152	a rdfs:Resource ;
+	:bioguide_id "L000564" ;
+	:thomas_id "01834" ;
+	:govtrack_id "412191" ;
+	:twitter "RepDLamborn" ;
+	:twitter_id "584012853" ;
+	:facebook "CongressmanDougLamborn" ;
+	schema:VideoObject "CongressmanLamborn" ;
+	:youtube_id "UCaYsGYMniq4nwBBMKFIwsow" .
+
+
+:r153	a rdfs:Resource ;
+	:bioguide_id "L000563" ;
+	:thomas_id "01781" ;
+	:govtrack_id "400630" ;
+	:twitter "RepLipinski" ;
+	:twitter_id "1009269193" ;
+	:facebook "repdanlipinski" ;
+	schema:VideoObject "lipinski03" ;
+	:youtube_id "UC4-dyxzIODTMk1-12QPEpoQ" .
+
+
+:r154	a rdfs:Resource ;
+	:bioguide_id "L000562" ;
+	:thomas_id "01686" ;
+	:govtrack_id "400249" ;
+	:twitter "RepStephenLynch" ;
+	:twitter_id "310310133" ;
+	:facebook "repstephenlynch" ;
+	schema:VideoObject "RepLynch" ;
+	:youtube_id "UCxL4zG0YWqC5XTO4af_FOgw" ;
+	:instgram "repstephenlynch" .
+
+
+:r155	a rdfs:Resource ;
+	:bioguide_id "L000560" ;
+	:thomas_id "01675" ;
+	:govtrack_id "400232" ;
+	:twitter "RepRickLarsen" ;
+	:twitter_id "404132211" ;
+	:facebook "RepRickLarsen" ;
+	schema:VideoObject "congressmanlarsen" ;
+	:youtube_id "UCMv7LsJtiyO4AJcbRux5CxQ" ;
+	:instgram "repricklarsen" .
+
+
+:r156	a rdfs:Resource ;
+	:bioguide_id "L000559" ;
+	:thomas_id "01668" ;
+	:govtrack_id "400230" ;
+	:twitter "JimLangevin" ;
+	:twitter_id "18909919" ;
+	:facebook "CongressmanJimLangevin" ;
+	schema:VideoObject "jimlangevin" ;
+	:youtube_id "UCQ1sth-7umw1k-fSVqdfRTg" .
+
+
+:r157	a rdfs:Resource ;
+	:bioguide_id "L000557" ;
+	:thomas_id "01583" ;
+	:govtrack_id "400233" ;
+	:twitter "RepJohnLarson" ;
+	:twitter_id "50452197" ;
+	:facebook "RepJohnLarson" ;
+	schema:VideoObject "RepJohnLarson" ;
+	:youtube_id "UCGPsvFF-9WfpdRSCcCrPLiQ" ;
+	:instgram "RepJohnBLarson" .
+
+
+:r158	a rdfs:Resource ;
+	:bioguide_id "L000554" ;
+	:thomas_id "00699" ;
+	:govtrack_id "400244" ;
+	:twitter "RepLoBiondo" ;
+	:twitter_id "241207373" ;
+	:facebook "FrankLoBiondo" ;
+	schema:VideoObject "USRepFrankLoBiondo" ;
+	:youtube_id "UCXBUOE1MAEUMNIg67sivY9Q" ;
+	:instgram "repfranklobiondo" .
+
+
+:r159	a rdfs:Resource ;
+	:bioguide_id "L000551" ;
+	:thomas_id "01501" ;
+	:govtrack_id "400237" ;
+	:twitter "RepBarbaraLee" ;
+	:twitter_id "248735463" ;
+	:facebook "RepBarbaraLee" ;
+	schema:VideoObject "RepLee" ;
+	:youtube_id "UCnRgK2MXAQOUau0JXqseeNA" ;
+	:instgram "repbarbaralee" ;
+	:instgram_id "1415801245" .
+
+
+:r160	a rdfs:Resource ;
+	:bioguide_id "L000491" ;
+	:thomas_id "00711" ;
+	:govtrack_id "400247" ;
+	:twitter "RepFrankLucas" ;
+	:twitter_id "242772524" ;
+	:facebook "RepFrankLucas" ;
+	schema:VideoObject "RepFrankLucas" ;
+	:youtube_id "UCdYZbKY8pkWAThqwC3fdVMg" .
+
+
+:r161	a rdfs:Resource ;
+	:bioguide_id "L000480" ;
+	:thomas_id "00709" ;
+	:govtrack_id "400246" ;
+	:twitter "NitaLowey" ;
+	:twitter_id "221792092" ;
+	:facebook "RepLowey" ;
+	schema:VideoObject "nitalowey" ;
+	:youtube_id "UCkmeBYqhbomcWNNWzQCqcbg" ;
+	:instgram "nitalowey" .
+
+
+:r162	a rdfs:Resource ;
+	:bioguide_id "L000397" ;
+	:thomas_id "00701" ;
+	:govtrack_id "400245" ;
+	:twitter "RepZoeLofgren" ;
+	:twitter_id "267938462" ;
+	:facebook "zoelofgren" ;
+	schema:VideoObject "RepZoeLofgren" ;
+	:youtube_id "UCOaQ79adORFcaTuJZoIFuZQ" .
+
+
+:r163	a rdfs:Resource ;
+	:bioguide_id "L000287" ;
+	:thomas_id "00688" ;
+	:govtrack_id "400240" ;
+	:twitter "RepJohnLewis" ;
+	:twitter_id "29450962" ;
+	:facebook "RepJohnLewis" ;
+	schema:VideoObject "repjohnlewis" ;
+	:youtube_id "UC_jpkZzdyGhTBGBZ3UTNwjA" ;
+	:instgram "RepJohnLewis" .
+
+
+:r164	a rdfs:Resource ;
+	:bioguide_id "L000263" ;
+	:thomas_id "00683" ;
+	:govtrack_id "400238" ;
+	:twitter "RepSandyLevin" ;
+	:twitter_id "25781141" ;
+	:facebook "RepSandyLevin" ;
+	schema:VideoObject "mi12yes" ;
+	:youtube_id "UCkVlSO4vhgPTgWYzY29Z7Gg" .
+
+
+:r165	a rdfs:Resource ;
+	:bioguide_id "L000174" ;
+	:thomas_id "01383" ;
+	:govtrack_id "300065" ;
+	:twitter "SenatorLeahy" ;
+	:twitter_id "242836537" ;
+	:facebook "SenatorPatrickLeahy" ;
+	schema:VideoObject "SenatorPatrickLeahy" ;
+	:youtube_id "UC46QHVobf7FO-tWehsRoDog" ;
+	:instgram "senatorleahy" .
+
+
+:r166	a rdfs:Resource ;
+	:bioguide_id "K000378" ;
+	:thomas_id "02014" ;
+	:govtrack_id "412421" ;
+	:twitter "RepKinzinger" ;
+	:twitter_id "219429281" ;
+	:facebook "RepKinzinger" ;
+	schema:VideoObject "RepAdamKinzinger" ;
+	:youtube_id "UCjDHxyjndxxhjuPWyEBc7UA" .
+
+
+:r167	a rdfs:Resource ;
+	:bioguide_id "K000376" ;
+	:thomas_id "02051" ;
+	:govtrack_id "412465" ;
+	:twitter "MikeKellyPA" ;
+	:twitter_id "935368364" ;
+	:facebook "191056827594903" ;
+	schema:VideoObject "repmikekelly" ;
+	:youtube_id "UCoz6u3ooQxoijsWvhoQ0D-A" .
+
+
+:r168	a rdfs:Resource ;
+	:bioguide_id "K000375" ;
+	:thomas_id "02025" ;
+	:govtrack_id "412435" ;
+	:twitter "USRepKeating" ;
+	:twitter_id "232992031" ;
+	:facebook "Congressman.Keating" ;
+	schema:VideoObject "RepBillKeating" ;
+	:youtube_id "UC7KPV4xdxO2dms9vl6tETmg" .
+
+
+:r169	a rdfs:Resource ;
+	:bioguide_id "K000362" ;
+	:thomas_id "01724" ;
+	:govtrack_id "400220" ;
+	:twitter "SteveKingIA" ;
+	:twitter_id "48117116" ;
+	:facebook "stevekingia" ;
+	schema:VideoObject "stevekingia" ;
+	:youtube_id "UCvdJ--cxsVyght3ZDise0mw" .
+
+
+:r170	a rdfs:Resource ;
+	:bioguide_id "K000210" ;
+	:thomas_id "00635" ;
+	:govtrack_id "400219" ;
+	:twitter "RepPeteKing" ;
+	:twitter_id "18277655" ;
+	schema:VideoObject "RepPeterKing" ;
+	:youtube_id "UCbyQC19DsAq01oDBfZn_diw" .
+
+
+:r171	a rdfs:Resource ;
+	:bioguide_id "K000188" ;
+	:thomas_id "01498" ;
+	:govtrack_id "400218" ;
+	:twitter "RepRonKind" ;
+	:twitter_id "112740986" ;
+	:facebook "repronkind" ;
+	schema:VideoObject "RepRonKind" ;
+	:youtube_id "UC0_BilariURHwSHf9baGykg" .
+
+
+:r172	a rdfs:Resource ;
+	:bioguide_id "K000009" ;
+	:thomas_id "00616" ;
+	:govtrack_id "400211" ;
+	:twitter "RepMarcyKaptur" ;
+	:twitter_id "581141508" ;
+	:facebook "RepresentativeMarcyKaptur" ;
+	schema:VideoObject "USRepMarcyKaptur" ;
+	:youtube_id "UCIJUNf22o09nO02oQPLKQ6w" ;
+	:instgram "repmarcykaptur" .
+
+
+:r173	a rdfs:Resource ;
+	:bioguide_id "J000293" ;
+	:thomas_id "02086" ;
+	:govtrack_id "412496" ;
+	:twitter "SenRonJohnson" ;
+	:twitter_id "233737858" ;
+	:facebook "senronjohnson" ;
+	schema:VideoObject "SenatorRonJohnson" ;
+	:youtube_id "UCG9XyTVtOAs7VX_q_QVHoaw" ;
+	:instgram "senronjohnson" .
+
+
+:r174	a rdfs:Resource ;
+	:bioguide_id "J000292" ;
+	:thomas_id "02046" ;
+	:govtrack_id "412460" ;
+	:twitter "RepBillJohnson" ;
+	:twitter_id "211530910" ;
+	:facebook "RepBillJohnson" ;
+	schema:VideoObject "RepBillJohnson" ;
+	:youtube_id "UCtF08Ay71haDRoJosRN2P_Q" ;
+	:instgram "repbilljohnson" ;
+	:instgram_id "763495818" .
+
+
+:r175	a rdfs:Resource ;
+	:bioguide_id "J000290" ;
+	:thomas_id "01921" ;
+	:govtrack_id "412284" ;
+	:twitter "RepLynnJenkins" ;
+	:twitter_id "19658173" ;
+	:facebook "replynnjenkins" ;
+	schema:VideoObject "RepLynnJenkins" ;
+	:youtube_id "UCBW06VosGJtZ_wCyGKET5KQ" ;
+	:instgram "replynnjenkins" .
+
+
+:r176	a rdfs:Resource ;
+	:bioguide_id "J000289" ;
+	:thomas_id "01868" ;
+	:govtrack_id "412226" ;
+	:twitter "Jim_Jordan" ;
+	:twitter_id "18166778" ;
+	:facebook "repjimjordan" ;
+	schema:VideoObject "RepJimJordan" ;
+	:youtube_id "UCPFBhS00ivPV585GlnNlyqA" .
+
+
+:r177	a rdfs:Resource ;
+	:bioguide_id "J000288" ;
+	:thomas_id "01843" ;
+	:govtrack_id "412199" ;
+	:twitter "RepHankJohnson" ;
+	:twitter_id "24745957" ;
+	:facebook "115356957005" ;
+	schema:VideoObject "RepHankJohnson" ;
+	:youtube_id "UCqMici9I7nz_i-PN7eSYjwQ" ;
+	:instgram "rephankjohnson" .
+
+
+:r178	a rdfs:Resource ;
+	:bioguide_id "J000255" ;
+	:thomas_id "00612" ;
+	:govtrack_id "400209" ;
+	:twitter "RepWalterJones" ;
+	:twitter_id "26778110" ;
+	:facebook "15083070102" ;
+	schema:VideoObject "RepWalterJones" ;
+	:youtube_id "UCZdvBD1F5FXAQyJFD2aTiWA" ;
+	:instgram "repwalterbjones" .
+
+
+:r179	a rdfs:Resource ;
+	:bioguide_id "J000174" ;
+	:thomas_id "00603" ;
+	:govtrack_id "400206" ;
+	:twitter "SamsPressShop" ;
+	:twitter_id "249288197" ;
+	:facebook "RepSamJohnson" ;
+	schema:VideoObject "RepSamJohnson" ;
+	:youtube_id "UCmzL7gzMX6-bgS9HNt8a8TA" ;
+	:instgram "samjohnsontx03" .
+
+
+:r180	a rdfs:Resource ;
+	:bioguide_id "J000126" ;
+	:thomas_id "00599" ;
+	:govtrack_id "400204" ;
+	:twitter "RepEBJ" ;
+	:twitter_id "168502762" ;
+	:facebook "CongresswomanEBJtx30" ;
+	schema:VideoObject "RepEddieBJohnson" ;
+	:youtube_id "UCVKp8BtjW708H4eXJJQgUYw" .
+
+
+:r181	a rdfs:Resource ;
+	:bioguide_id "J000032" ;
+	:thomas_id "00588" ;
+	:govtrack_id "400199" ;
+	:twitter "JacksonLeeTX18" ;
+	:twitter_id "80612021" ;
+	:facebook "CongresswomanSheilaJacksonLee" ;
+	schema:VideoObject "TX18SJL" ;
+	:youtube_id "UCi_S-mOZaEco2Zb9guf_8Iw" .
+
+
+:r182	a rdfs:Resource ;
+	:bioguide_id "I000056" ;
+	:thomas_id "01640" ;
+	:govtrack_id "400196" ;
+	:twitter "DarrellIssa" ;
+	:twitter_id "22509548" ;
+	:facebook "darrellissa" ;
+	schema:VideoObject "repdarrellissa" ;
+	:youtube_id "UCIGKQn89GEpNJ6fDhXGauyw" .
+
+
+:r183	a rdfs:Resource ;
+	:bioguide_id "I000024" ;
+	:thomas_id "00583" ;
+	:govtrack_id "300055" ;
+	:twitter "InhofePress" ;
+	:twitter_id "20546536" ;
+	:facebook "jiminhofe" ;
+	schema:VideoObject "jiminhofepressoffice" ;
+	:youtube_id "UCk3W3ilX8vGG-300qzNpG7w" .
+
+
+:r184	a rdfs:Resource ;
+	:bioguide_id "H001061" ;
+	:thomas_id "02079" ;
+	:govtrack_id "412494" ;
+	:twitter "SenJohnHoeven" ;
+	:twitter_id "382791093" ;
+	:facebook "SenatorJohnHoeven" ;
+	schema:VideoObject "senatorjohnhoevennd" ;
+	:youtube_id "UC1kQIC2Q_Fq9_NRqdb6eHiw" ;
+	:instgram "senjohnhoeven" ;
+	:instgram_id "1237544252" .
+
+
+:r185	a rdfs:Resource ;
+	:bioguide_id "H001059" ;
+	:thomas_id "02015" ;
+	:govtrack_id "412422" ;
+	:twitter "RepHultgren" ;
+	:twitter_id "237814920" ;
+	:facebook "RepHultgren" ;
+	schema:VideoObject "rephultgren" ;
+	:youtube_id "UCJ6Gvza8hdNmUfoaJEN8dbg" .
+
+
+:r186	a rdfs:Resource ;
+	:bioguide_id "H001058" ;
+	:thomas_id "02028" ;
+	:govtrack_id "412437" ;
+	:twitter "RepHuizenga" ;
+	:twitter_id "233949261" ;
+	:facebook "RepHuizenga" ;
+	schema:VideoObject "RepHuizenga" ;
+	:youtube_id "UCQPlLLiMnysMmeJ5qUSSjQg" ;
+	:instgram "RepHuizenga" .
+
+
+:r187	a rdfs:Resource ;
+	:bioguide_id "H001056" ;
+	:thomas_id "02071" ;
+	:govtrack_id "412486" ;
+	:twitter "HerreraBeutler" ;
+	:twitter_id "242926427" ;
+	:facebook "herrerabeutler" ;
+	schema:VideoObject "RepHerreraBeutler" ;
+	:youtube_id "UCJEgiA9clfx0amrQUj0aBTQ" .
+
+
+:r188	a rdfs:Resource ;
+	:bioguide_id "H001053" ;
+	:thomas_id "02032" ;
+	:govtrack_id "412444" ;
+	:twitter "RepHartzler" ;
+	:twitter_id "237763317" ;
+	:facebook "Congresswoman.Hartzler" ;
+	schema:VideoObject "repvickyhartzler" ;
+	:youtube_id "UCAvttUz6qBVEJiFt7p_MZxw" ;
+	:instgram "rephartzler" ;
+	:instgram_id "787899303" .
+
+
+:r189	a rdfs:Resource ;
+	:bioguide_id "H001048" ;
+	:thomas_id "01909" ;
+	:govtrack_id "412283" ;
+	:twitter "Rep_Hunter" ;
+	:twitter_id "1305596696" ;
+	:facebook "DuncanHunter" ;
+	schema:VideoObject "CongressmanHunter" ;
+	:youtube_id "UCV9GfB1e4RILcqb_zXYCDSA" .
+
+
+:r190	a rdfs:Resource ;
+	:bioguide_id "H001047" ;
+	:thomas_id "01913" ;
+	:govtrack_id "412282" ;
+	:twitter "JAHimes" ;
+	:twitter_id "31611298" ;
+	:facebook "CongressmanJimHimes" ;
+	schema:VideoObject "congressmanhimes" ;
+	:youtube_id "UCCeB6czh6nhCHxOMCk_V4yA" .
+
+
+:r191	a rdfs:Resource ;
+	:bioguide_id "H001046" ;
+	:thomas_id "01937" ;
+	:govtrack_id "412281" ;
+	:twitter "MartinHeinrich" ;
+	:twitter_id "1099199839" ;
+	:facebook "MartinHeinrich" ;
+	schema:VideoObject "SenMartinHeinrich" ;
+	:youtube_id "UCBxh8IK5sMxY0Ln_0G2NYcg" ;
+	:instgram "senatormartinheinrich" ;
+	:instgram_id "285288987" .
+
+
+:r192	a rdfs:Resource ;
+	:bioguide_id "H001045" ;
+	:thomas_id "01933" ;
+	:govtrack_id "412280" ;
+	:twitter "GreggHarper" ;
+	:twitter_id "23712174" ;
+	:facebook "GreggHarper" ;
+	schema:VideoObject "congressmanharper" ;
+	:youtube_id "UC9UIowW9bhstVTiMX8znppQ" .
+
+
+:r193	a rdfs:Resource ;
+	:bioguide_id "H001042" ;
+	:thomas_id "01844" ;
+	:govtrack_id "412200" ;
+	:twitter "MazieHirono" ;
+	:twitter_id "92186819" ;
+	:facebook "senatorhirono" ;
+	schema:VideoObject "CongresswomanHirono" ;
+	:youtube_id "UCcoKhxad156flzPYJ8JMFOA" ;
+	:instgram "maziehirono" ;
+	:instgram_id "304094084" .
+
+
+:r194	a rdfs:Resource ;
+	:bioguide_id "H001041" ;
+	:thomas_id "01863" ;
+	:govtrack_id "412218" ;
+	:twitter "SenDeanHeller" ;
+	:twitter_id "266133081" ;
+	:facebook "SenDeanHeller" ;
+	schema:VideoObject "SenDeanHeller" ;
+	:youtube_id "UCTS6f940sIirkO6ICyx4ksw" .
+
+
+:r195	a rdfs:Resource ;
+	:bioguide_id "H001038" ;
+	:thomas_id "01794" ;
+	:govtrack_id "400641" ;
+	:twitter "RepBrianHiggins" ;
+	:twitter_id "33576489" ;
+	:facebook "RepBrianHiggins" ;
+	schema:VideoObject "CongressmanHiggins" ;
+	:youtube_id "UCSGbv85HaaYYOrPGePtxwag" ;
+	:instgram "repbrianhiggins" .
+
+
+:r196	a rdfs:Resource ;
+	:bioguide_id "H001036" ;
+	:thomas_id "01749" ;
+	:govtrack_id "400175" ;
+	:twitter "RepHensarling" ;
+	:twitter_id "18566912" ;
+	:facebook "RepHensarling" ;
+	schema:VideoObject "repjebhensarling" ;
+	:youtube_id "UCjZWXpz6wypzbL8nK0JNEvg" .
+
+
+:r197	a rdfs:Resource ;
+	:bioguide_id "H000874" ;
+	:thomas_id "00566" ;
+	:govtrack_id "400189" ;
+	:twitter "WhipHoyer" ;
+	:twitter_id "22012091" ;
+	:facebook "WhipHoyer" ;
+	schema:VideoObject "LeaderHoyer" ;
+	:youtube_id "UCvxgqX65cdhHNjJn64cgY9g" ;
+	:instgram "repstenyhoyer" ;
+	:instgram_id "51616645" .
+
+
+:r198	a rdfs:Resource ;
+	:bioguide_id "H000338" ;
+	:thomas_id "01351" ;
+	:govtrack_id "300052" ;
+	:twitter "SenOrrinHatch" ;
+	:twitter_id "262756641" ;
+	:facebook "senatororrinhatch" ;
+	schema:VideoObject "SenatorOrrinHatch" ;
+	:youtube_id "UCQUPyPV_SR435OsPiFNIWPQ" .
+
+
+:r199	a rdfs:Resource ;
+	:bioguide_id "H000324" ;
+	:thomas_id "00511" ;
+	:govtrack_id "400170" ;
+	:twitter "RepHastingsFL" ;
+	:twitter_id "2433737761" ;
+	:facebook "95696782238" ;
+	schema:VideoObject "RepAlceeHastings" ;
+	:youtube_id "UCaXXiR3YjMuPIlIGRGNnm8A" .
+
+
+:r200	a rdfs:Resource ;
+	:bioguide_id "G000568" ;
+	:thomas_id "02070" ;
+	:govtrack_id "412485" ;
+	:twitter "RepMGriffith" ;
+	:twitter_id "234057152" ;
+	:facebook "RepMorganGriffith" ;
+	schema:VideoObject "RepMorganGriffith" ;
+	:youtube_id "UCzxqD7EY_Rdvbc0spbaYkJA" ;
+	:instgram "hmorgangriffith" .
+
+
+:r201	a rdfs:Resource ;
+	:bioguide_id "G000566" ;
+	:thomas_id "02058" ;
+	:govtrack_id "412473" ;
+	:twitter "TGowdySC" ;
+	:twitter_id "237348797" ;
+	:facebook "RepTreyGowdy" ;
+	schema:VideoObject "TGowdySC" ;
+	:youtube_id "UCVvxvugtuNZSygB4z4aVfsg" ;
+	:instgram "tgowdysc" .
+
+
+:r202	a rdfs:Resource ;
+	:bioguide_id "G000565" ;
+	:thomas_id "01992" ;
+	:govtrack_id "412397" ;
+	:twitter "RepGosar" ;
+	:twitter_id "240760644" ;
+	:facebook "repgosar" ;
+	schema:VideoObject "repgosar" ;
+	:youtube_id "UC5orqw_9acsKWSRbrqTDXBw" .
+
+
+:r203	a rdfs:Resource ;
+	:bioguide_id "G000563" ;
+	:thomas_id "02049" ;
+	:govtrack_id "412463" ;
+	:twitter "RepBobGibbs" ;
+	:twitter_id "234822928" ;
+	:facebook "RepBobGibbs" ;
+	schema:VideoObject "RepBobGibbs" ;
+	:youtube_id "UC4J-kVbeE32Up-b_wTLEUmA" ;
+	:instgram "repbobgibbs" .
+
+
+:r204	a rdfs:Resource ;
+	:bioguide_id "G000562" ;
+	:thomas_id "01998" ;
+	:govtrack_id "412406" ;
+	:twitter "SenCoryGardner" ;
+	:twitter_id "235217558" ;
+	:facebook "SenCoryGardner" ;
+	:youtube_id "UC7Vi5vAFb7piu_BNwrYDBxQ" ;
+	:instgram "sencorygardner" ;
+	:instgram_id "1643152643" .
+
+
+:r205	a rdfs:Resource ;
+	:bioguide_id "G000560" ;
+	:thomas_id "01979" ;
+	:govtrack_id "412388" ;
+	:twitter "RepTomGraves" ;
+	:twitter_id "190328374" ;
+	:facebook "reptomgraves" ;
+	schema:VideoObject "CongressmanGraves" ;
+	:youtube_id "UCBxeA4MWCmfUox57bUTEH0g" ;
+	:instgram "reptomgraves" ;
+	:instgram_id "241591770" .
+
+
+:r206	a rdfs:Resource ;
+	:bioguide_id "G000559" ;
+	:thomas_id "01973" ;
+	:govtrack_id "412382" ;
+	:twitter "RepGaramendi" ;
+	:twitter_id "88806753" ;
+	:facebook "repgaramendi" ;
+	schema:VideoObject "garamendiCA10" ;
+	:youtube_id "UCRym1qsO72C39gX6pBu4icg" .
+
+
+:r207	a rdfs:Resource ;
+	:bioguide_id "G000553" ;
+	:thomas_id "01803" ;
+	:govtrack_id "400653" ;
+	:twitter "RepAlGreen" ;
+	:twitter_id "156333623" ;
+	:facebook "repalgreen" ;
+	schema:VideoObject "RepAlGreen" ;
+	:youtube_id "UCFtgMZm1YUXaZ8OtOj-GDjA" .
+
+
+:r208	a rdfs:Resource ;
+	:bioguide_id "G000552" ;
+	:thomas_id "01801" ;
+	:govtrack_id "400651" ;
+	:twitter "RepLouieGohmert" ;
+	:twitter_id "22055226" ;
+	:facebook "50375006903" ;
+	schema:VideoObject "GohmertTX01" ;
+	:youtube_id "UC0HMa6X3iMhMq96kkRLLTog" .
+
+
+:r209	a rdfs:Resource ;
+	:bioguide_id "G000551" ;
+	:thomas_id "01708" ;
+	:govtrack_id "400162" ;
+	:twitter "RepraulGrijalva" ;
+	:twitter_id "28602948" ;
+	:facebook "Rep.Grijalva" ;
+	schema:VideoObject "raulgrijalvaaz07" ;
+	:youtube_id "UC8JZLnXS21bhNbcvpoM8O7g" .
+
+
+:r210	a rdfs:Resource ;
+	:bioguide_id "G000535" ;
+	:thomas_id "00478" ;
+	:govtrack_id "400163" ;
+	:twitter "RepGutierrez" ;
+	:twitter_id "36948268" ;
+	:facebook "RepGutierrez" ;
+	schema:VideoObject "repluisgutierrez" ;
+	:youtube_id "UCLooufcInrRP1FQn_WY9yDA" .
+
+
+:r211	a rdfs:Resource ;
+	:bioguide_id "G000410" ;
+	:thomas_id "00462" ;
+	:govtrack_id "400160" ;
+	:twitter "RepGeneGreen" ;
+	:twitter_id "111635527" ;
+	:facebook "RepGeneGreen" ;
+	schema:VideoObject "RepGeneGreen" ;
+	:youtube_id "UCc6B7e8ontd_yKsPt_6w2oA" .
+
+
+:r212	a rdfs:Resource ;
+	:bioguide_id "G000386" ;
+	:thomas_id "00457" ;
+	:govtrack_id "300048" ;
+	:twitter "ChuckGrassley" ;
+	:twitter_id "10615232" ;
+	:facebook "grassley" ;
+	schema:VideoObject "senchuckgrassley" ;
+	:youtube_id "UCiCPRkcLMInpDeOqGkMTt4w" ;
+	:instgram "senatorchuckgrassley" .
+
+
+:r213	a rdfs:Resource ;
+	:bioguide_id "G000377" ;
+	:thomas_id "01487" ;
+	:govtrack_id "400157" ;
+	:twitter "RepKayGranger" ;
+	:twitter_id "161743731" ;
+	:facebook "RepKayGranger" ;
+	schema:VideoObject "RepKayGranger" ;
+	:youtube_id "UCsRMtemAkyLh78MPES6gMVQ" .
+
+
+:r214	a rdfs:Resource ;
+	:bioguide_id "G000359" ;
+	:thomas_id "00452" ;
+	:govtrack_id "300047" ;
+	:twitter "GrahamBlog" ;
+	:twitter_id "14845376" ;
+	:facebook "USSenatorLindseyGraham" ;
+	schema:VideoObject "USSenLindseyGraham" ;
+	:youtube_id "UClLGZMA5Ei2Z8fR1PLEx6yQ" .
+
+
+:r215	a rdfs:Resource ;
+	:bioguide_id "G000289" ;
+	:thomas_id "00446" ;
+	:govtrack_id "400154" ;
+	:twitter "RepGoodlatte" ;
+	:twitter_id "37920978" ;
+	:facebook "BobGoodlatte" ;
+	schema:VideoObject "RepBobGoodlatte" ;
+	:youtube_id "UCvjZ1XhXidxiyfm2ICEbNKg" ;
+	:instgram "bobgoodlatte" .
+
+
+:r216	a rdfs:Resource ;
+	:bioguide_id "F000461" ;
+	:thomas_id "02065" ;
+	:govtrack_id "412480" ;
+	:twitter "RepBillFlores" ;
+	:twitter_id "237312687" ;
+	:facebook "RepBillFlores" ;
+	schema:VideoObject "RepBillFlores" ;
+	:youtube_id "UCA7MgQ_ccBlCqoxV56B6nmA" ;
+	:instgram "repbillflores" .
+
+
+:r217	a rdfs:Resource ;
+	:bioguide_id "F000460" ;
+	:thomas_id "02067" ;
+	:govtrack_id "412482" ;
+	:twitter "Farenthold" ;
+	:twitter_id "17896154" ;
+	:facebook "BlakeFarenthold" ;
+	schema:VideoObject "BlakeFarenthold" ;
+	:youtube_id "UC-xQNCjaivVnqozyXtjcqww" ;
+	:instgram "Farenthold" .
+
+
+:r218	a rdfs:Resource ;
+	:bioguide_id "F000459" ;
+	:thomas_id "02061" ;
+	:govtrack_id "412476" ;
+	:twitter "RepChuck" ;
+	:twitter_id "235190657" ;
+	:facebook "repchuck" ;
+	schema:VideoObject "repchuck" ;
+	:youtube_id "UCTtRrJkM-R-f2K0byCMvHgw" .
+
+
+:r219	a rdfs:Resource ;
+	:bioguide_id "F000455" ;
+	:thomas_id "01895" ;
+	:govtrack_id "412327" ;
+	:twitter "RepMarciaFudge" ;
+	:twitter_id "153486399" ;
+	:facebook "RepMarciaLFudge" ;
+	schema:VideoObject "marcialfudge" ;
+	:youtube_id "UClmYIIhIcL-WwtBAy1Dhokg" ;
+	:instgram "repmarciafudge" ;
+	:instgram_id "1395168201" .
+
+
+:r220	a rdfs:Resource ;
+	:bioguide_id "F000450" ;
+	:thomas_id "01791" ;
+	:govtrack_id "400643" ;
+	:twitter "VirginiaFoxx" ;
+	:twitter_id "16256269" ;
+	:facebook "RepVirginiaFoxx" ;
+	schema:VideoObject "repvirginiafoxx" ;
+	:youtube_id "UCggineJcxJn80TRXxdQbx6w" ;
+	:instgram "repvirginiafoxx" .
+
+
+:r221	a rdfs:Resource ;
+	:bioguide_id "F000449" ;
+	:thomas_id "01793" ;
+	:govtrack_id "400640" ;
+	:twitter "JeffFortenberry" ;
+	:twitter_id "18805303" ;
+	:facebook "jefffortenberry" ;
+	schema:VideoObject "JeffFortenberry" ;
+	:youtube_id "UCbWUvw3gQhbFyJzt1Nh6cAA" .
+
+
+:r222	a rdfs:Resource ;
+	:bioguide_id "F000444" ;
+	:thomas_id "01633" ;
+	:govtrack_id "400134" ;
+	:twitter "JeffFlake" ;
+	:twitter_id "16056306" ;
+	:facebook "senatorjeffflake" ;
+	schema:VideoObject "flakeoffice" ;
+	:youtube_id "UCPSnRxko_G21KzwgXmOZaeQ" ;
+	:instgram "jeffflake" .
+
+
+:r223	a rdfs:Resource ;
+	:bioguide_id "F000062" ;
+	:thomas_id "01332" ;
+	:govtrack_id "300043" ;
+	:twitter "SenFeinstein" ;
+	:twitter_id "476256944" ;
+	:facebook "senatorfeinstein" ;
+	schema:VideoObject "SenatorFeinstein" ;
+	:youtube_id "UCtVC--6LR0ff2aOP8THpuEw" .
+
+
+:r224	a rdfs:Resource ;
+	:bioguide_id "E000288" ;
+	:thomas_id "01857" ;
+	:govtrack_id "412215" ;
+	:twitter "KeithEllison" ;
+	:twitter_id "14135426" ;
+	:facebook "Keith.Ellison" ;
+	schema:VideoObject "RepKeithEllison" ;
+	:youtube_id "UCR_QMi3wGy7xPUZxaIRi9QA" .
+
+
+:r225	a rdfs:Resource ;
+	:bioguide_id "E000285" ;
+	:thomas_id "01542" ;
+	:govtrack_id "300041" ;
+	:twitter "SenatorEnzi" ;
+	:twitter_id "291756142" ;
+	:facebook "mikeenzi" ;
+	schema:VideoObject "senatorenzi" ;
+	:youtube_id "UCipEXEDAKVPj_B0cQjaikEA" .
+
+
+:r226	a rdfs:Resource ;
+	:bioguide_id "E000215" ;
+	:thomas_id "00355" ;
+	:govtrack_id "400124" ;
+	:twitter "RepAnnaEshoo" ;
+	:twitter_id "249348006" ;
+	:facebook "RepAnnaEshoo" ;
+	schema:VideoObject "RepAnnaEshoo" ;
+	:youtube_id "UCjRvhco2d59GBgA78IIIaYQ" ;
+	:instgram "RepAnnaEshoo" .
+
+
+:r227	a rdfs:Resource ;
+	:bioguide_id "E000179" ;
+	:thomas_id "00344" ;
+	:govtrack_id "400122" ;
+	:twitter "RepEliotEngel" ;
+	:twitter_id "164007407" ;
+	:facebook "RepEliotLEngel" ;
+	schema:VideoObject "engel2161" ;
+	:youtube_id "UCZ-ctBF-a6CYPJWDoBV_JyA" .
+
+
+:r228	a rdfs:Resource ;
+	:bioguide_id "D000616" ;
+	:thomas_id "02062" ;
+	:govtrack_id "412477" ;
+	:twitter "DesJarlaisTN04" ;
+	:twitter_id "235312723" ;
+	:facebook "ScottDesJarlaisTN04" ;
+	schema:VideoObject "ScottDesJarlaisTN04" ;
+	:youtube_id "UCvjuSLoi3hS0ECQvJLhwOkA" ;
+	:instgram "desjarlaistn04" ;
+	:instgram_id "260930821" .
+
+
+:r229	a rdfs:Resource ;
+	:bioguide_id "D000615" ;
+	:thomas_id "02057" ;
+	:govtrack_id "412472" ;
+	:twitter "RepJeffDuncan" ;
+	:twitter_id "240393970" ;
+	:facebook "RepJeffDuncan" ;
+	schema:VideoObject "congjeffduncan" ;
+	:youtube_id "UC1tuXL6ymImdpKYGEAH83QA" ;
+	:instgram "repjeffduncan" ;
+	:instgram_id "382897929" .
+
+
+:r230	a rdfs:Resource ;
+	:bioguide_id "D000614" ;
+	:thomas_id "02072" ;
+	:govtrack_id "412488" ;
+	:twitter "RepSeanDuffy" ;
+	:twitter_id "234022257" ;
+	:facebook "RepSeanDuffy" ;
+	schema:VideoObject "RepSeanDuffy" ;
+	:youtube_id "UChq-eV2HnV7Kr2zmj0yua7g" ;
+	:instgram "repseanduffy" ;
+	:instgram_id "367550700" .
+
+
+:r231	a rdfs:Resource ;
+	:bioguide_id "D000612" ;
+	:thomas_id "01995" ;
+	:govtrack_id "412403" ;
+	:twitter "RepJeffDenham" ;
+	:twitter_id "248699486" ;
+	:facebook "RepJeffDenham" ;
+	schema:VideoObject "repjeffdenham" ;
+	:youtube_id "UCm59PEM_tgTvhm5-wIfnrRg" ;
+	:instgram "repjeffdenham" ;
+	:instgram_id "380008060" .
+
+
+:r232	a rdfs:Resource ;
+	:bioguide_id "D000610" ;
+	:thomas_id "01976" ;
+	:govtrack_id "412385" ;
+	:twitter "RepTedDeutch" ;
+	:twitter_id "137794015" ;
+	:facebook "CongressmanTedDeutch" ;
+	schema:VideoObject "congressmanteddeutch" ;
+	:youtube_id "UC1JlTLRUDkzhM2htvI9QJTA" ;
+	:instgram "repteddeutch" .
+
+
+:r233	a rdfs:Resource ;
+	:bioguide_id "D000607" ;
+	:thomas_id "01850" ;
+	:govtrack_id "412205" ;
+	:twitter "SenDonnelly" ;
+	:twitter_id "216503958" ;
+	:facebook "senatordonnelly" ;
+	schema:VideoObject "sendonnelly" ;
+	:youtube_id "UC7H5Lz0BUaTRlWXk9QsIwsg" ;
+	:instgram "sendonnelly" ;
+	:instgram_id "280911627" .
+
+
+:r234	a rdfs:Resource ;
+	:bioguide_id "D000604" ;
+	:thomas_id "01799" ;
+	:govtrack_id "400648" ;
+	:twitter "RepCharlieDent" ;
+	:twitter_id "242376736" ;
+	:facebook "CongressmanDent" ;
+	schema:VideoObject "CongressmanDent" ;
+	:youtube_id "UCoC_r0R2M_74UVrH4A44awQ" .
+
+
+:r235	a rdfs:Resource ;
+	:bioguide_id "D000600" ;
+	:thomas_id "01717" ;
+	:govtrack_id "400108" ;
+	:twitter "MarioDB" ;
+	:twitter_id "37094727" ;
+	:facebook "mdiazbalart" ;
+	schema:VideoObject "MarioDiazBalart" ;
+	:youtube_id "UCpEEd0Plxx5D78pI4a4mFTQ" ;
+	:instgram "repmariodb" ;
+	:instgram_id "316477657" .
+
+
+:r236	a rdfs:Resource ;
+	:bioguide_id "D000563" ;
+	:thomas_id "00326" ;
+	:govtrack_id "300038" ;
+	:twitter "SenatorDurbin" ;
+	:twitter_id "247334603" ;
+	:facebook "SenatorDurbin" ;
+	schema:VideoObject "SenatorDurbin" ;
+	:youtube_id "UCkbixlNCxcKAffEhe3X5-lw" .
+
+
+:r237	a rdfs:Resource ;
+	:bioguide_id "D000533" ;
+	:thomas_id "00322" ;
+	:govtrack_id "400116" ;
+	:twitter "RepJohnDuncanJr" ;
+	:twitter_id "1883356866" ;
+	:facebook "CongressmanDuncan" ;
+	schema:VideoObject "RepJohnDuncan" ;
+	:youtube_id "UCCpcKqQfp9gVkeD1t7uYLKQ" .
+
+
+:r238	a rdfs:Resource ;
+	:bioguide_id "D000482" ;
+	:thomas_id "00316" ;
+	:govtrack_id "400114" ;
+	:twitter "USRepMikeDoyle" ;
+	:twitter_id "39249305" ;
+	:facebook "usrepmikedoyle" ;
+	schema:VideoObject "CongressmanDoyle" ;
+	:youtube_id "UCni9vINmgerEeVXhKCC9qbA" .
+
+
+:r239	a rdfs:Resource ;
+	:bioguide_id "D000399" ;
+	:thomas_id "00303" ;
+	:govtrack_id "400111" ;
+	:twitter "RepLloydDoggett" ;
+	:twitter_id "153944899" ;
+	:facebook "lloyddoggett" ;
+	schema:VideoObject "doggett" ;
+	:youtube_id "UCN-kiLKyHPcfRVZ28sAHS_g" ;
+	:instgram "replloyddoggett" .
+
+
+:r240	a rdfs:Resource ;
+	:bioguide_id "D000216" ;
+	:thomas_id "00281" ;
+	:govtrack_id "400103" ;
+	:twitter "RosaDeLauro" ;
+	:twitter_id "140519774" ;
+	:facebook "CongresswomanRosaDeLauro" ;
+	schema:VideoObject "rosadelauro" ;
+	:youtube_id "UC9ROfGBm7kSLCEDYwFF6McQ" .
+
+
+:r241	a rdfs:Resource ;
+	:bioguide_id "D000197" ;
+	:thomas_id "01479" ;
+	:govtrack_id "400101" ;
+	:twitter "RepDianaDeGette" ;
+	:twitter_id "28599820" ;
+	:facebook "DianaDeGette" ;
+	schema:VideoObject "RepDianaDeGette" ;
+	:youtube_id "UCWFQCRTHwsHg9P1Hf-EQtew" .
+
+
+:r242	a rdfs:Resource ;
+	:bioguide_id "D000191" ;
+	:thomas_id "00279" ;
+	:govtrack_id "400100" ;
+	:twitter "RepPeterDeFazio" ;
+	:twitter_id "252249233" ;
+	:facebook "RepPeterDeFazio" ;
+	schema:VideoObject "PeterDeFazio" ;
+	:youtube_id "UCIF3HunhsVgTv7L2grnq2Rg" .
+
+
+:r243	a rdfs:Resource ;
+	:bioguide_id "C001088" ;
+	:thomas_id "01984" ;
+	:govtrack_id "412390" ;
+	:twitter "SenCoonsOffice" ;
+	:twitter_id "435500714" ;
+	:facebook "senatorchriscoons" ;
+	schema:VideoObject "senatorchriscoons" ;
+	:youtube_id "UC2lOVbsddn1HIkcDnmCw6tA" ;
+	:instgram "senatorchriscoons" ;
+	:instgram_id "25194715" .
+
+
+:r244	a rdfs:Resource ;
+	:bioguide_id "C001087" ;
+	:thomas_id "01989" ;
+	:govtrack_id "412400" ;
+	:twitter "RepRickCrawford" ;
+	:twitter_id "233693291" ;
+	:facebook "RepRickCrawford" ;
+	schema:VideoObject "RepRickCrawford" ;
+	:youtube_id "UCLKAkVl4BHRK73lmDiIgPYg" ;
+	:instgram "reprickcrawford" ;
+	:instgram_id "389864684" .
+
+
+:r245	a rdfs:Resource ;
+	:bioguide_id "C001084" ;
+	:thomas_id "02055" ;
+	:govtrack_id "412470" ;
+	:twitter "RepCicilline" ;
+	:twitter_id "462143773" ;
+	:facebook "CongressmanDavidCicilline" ;
+	schema:VideoObject "RepDavidCicilline" ;
+	:youtube_id "UC3sCl46o8hYP69LnidNltuw" .
+
+
+:r246	a rdfs:Resource ;
+	:bioguide_id "C001080" ;
+	:thomas_id "01970" ;
+	:govtrack_id "412379" ;
+	:twitter "RepJudyChu" ;
+	:twitter_id "193732179" ;
+	:facebook "RepJudyChu" ;
+	schema:VideoObject "RepJudyChu" ;
+	:youtube_id "UCfcbYOvdEXZNelM8T05nK-w" .
+
+
+:r247	a rdfs:Resource ;
+	:bioguide_id "C001078" ;
+	:thomas_id "01959" ;
+	:govtrack_id "412272" ;
+	:twitter "GerryConnolly" ;
+	:twitter_id "78445977" ;
+	:facebook "CongressmanGerryConnolly" ;
+	schema:VideoObject "repconnolly" ;
+	:youtube_id "UC4WG9PlmoOeSLIuyVjs-RSA" .
+
+
+:r248	a rdfs:Resource ;
+	:bioguide_id "C001077" ;
+	:thomas_id "01912" ;
+	:govtrack_id "412271" ;
+	:twitter "RepMikeCoffman" ;
+	:twitter_id "19407835" ;
+	:facebook "repmikecoffman" ;
+	schema:VideoObject "CongressmanCoffman" ;
+	:youtube_id "UCBCe9Os3VRutyBw3aLhYq5g" .
+
+
+:r249	a rdfs:Resource ;
+	:bioguide_id "C001072" ;
+	:thomas_id "01889" ;
+	:govtrack_id "412258" ;
+	:twitter "RepAndreCarson" ;
+	:twitter_id "199325935" ;
+	:facebook "CongressmanAndreCarson" ;
+	schema:VideoObject "repandrecarson" ;
+	:youtube_id "UCprUnnEgM2VUGmAKSaZXCSw" ;
+	:instgram "repandrecarson" .
+
+
+:r250	a rdfs:Resource ;
+	:bioguide_id "C001071" ;
+	:thomas_id "01825" ;
+	:govtrack_id "412248" ;
+	:twitter "SenBobCorker" ;
+	:twitter_id "73303753" ;
+	:facebook "bobcorker" ;
+	schema:VideoObject "senatorcorker" ;
+	:youtube_id "UCm7if_szz7DxfcdYGrywHSA" ;
+	:instgram "senbobcorker" ;
+	:instgram_id "390025816" .
+
+
+:r251	a rdfs:Resource ;
+	:bioguide_id "C001070" ;
+	:thomas_id "01828" ;
+	:govtrack_id "412246" ;
+	:twitter "SenBobCasey" ;
+	:twitter_id "171598736" ;
+	:facebook "SenatorBobCasey" ;
+	schema:VideoObject "SenatorBobCasey" ;
+	:youtube_id "UCtVssXhx-KuZa-hSvnsnJ0A" ;
+	:instgram "senbobcasey" .
+
+
+:r252	a rdfs:Resource ;
+	:bioguide_id "C001069" ;
+	:thomas_id "01836" ;
+	:govtrack_id "412193" ;
+	:twitter "RepJoeCourtney" ;
+	:twitter_id "85396297" ;
+	:facebook "joecourtney" ;
+	schema:VideoObject "repcourtney" ;
+	:youtube_id "UCGVIfe1T2hO1Lx7ap5Wkv1w" ;
+	:instgram "repjoecourtney" .
+
+
+:r253	a rdfs:Resource ;
+	:bioguide_id "C001068" ;
+	:thomas_id "01878" ;
+	:govtrack_id "412236" ;
+	:twitter "RepCohen" ;
+	:twitter_id "162069635" ;
+	:facebook "CongressmanSteveCohen" ;
+	schema:VideoObject "repcohen" ;
+	:youtube_id "UC_NJlnsOBjOameUwZk0rvsA" .
+
+
+:r254	a rdfs:Resource ;
+	:bioguide_id "C001067" ;
+	:thomas_id "01864" ;
+	:govtrack_id "412221" ;
+	:twitter "RepYvetteClarke" ;
+	:twitter_id "240812994" ;
+	:facebook "repyvettedclarke" ;
+	schema:VideoObject "repyvetteclarke" ;
+	:youtube_id "UC8SuQiuL2P9fUHAxuRoTdUQ" .
+
+
+:r255	a rdfs:Resource ;
+	:bioguide_id "C001063" ;
+	:thomas_id "01807" ;
+	:govtrack_id "400657" ;
+	:twitter "RepCuellar" ;
+	:twitter_id "210926192" ;
+	:facebook "152569121550" ;
+	schema:VideoObject "henrycuellar" ;
+	:youtube_id "UCVgEOdJx3tyILO9EjZ-heEQ" .
+
+
+:r256	a rdfs:Resource ;
+	:bioguide_id "C001062" ;
+	:thomas_id "01805" ;
+	:govtrack_id "400655" ;
+	:twitter "ConawayTX11" ;
+	:twitter_id "295685416" ;
+	:facebook "mike.conaway" ;
+	schema:VideoObject "mikeconaway11" ;
+	:youtube_id "UCR3dhwhVfxmmqv6ct2Xa1-g" .
+
+
+:r257	a rdfs:Resource ;
+	:bioguide_id "C001061" ;
+	:thomas_id "01790" ;
+	:govtrack_id "400639" ;
+	:twitter "RepCleaver" ;
+	:twitter_id "163570705" ;
+	:facebook "emanuelcleaverii" ;
+	schema:VideoObject "repcleaver" ;
+	:youtube_id "UCVC-7CLFjXczoihr5FxDLsw" .
+
+
+:r258	a rdfs:Resource ;
+	:bioguide_id "C001059" ;
+	:thomas_id "01774" ;
+	:govtrack_id "400618" ;
+	:twitter "RepJimCosta" ;
+	:twitter_id "245451804" ;
+	:facebook "RepJimCosta" ;
+	schema:VideoObject "RepJimCostaCA20" ;
+	:youtube_id "UCVgXX23eJEai6GiBOKO6dvA" .
+
+
+:r259	a rdfs:Resource ;
+	:bioguide_id "C001056" ;
+	:thomas_id "01692" ;
+	:govtrack_id "300027" ;
+	:twitter "JohnCornyn" ;
+	:twitter_id "13218102" ;
+	:facebook "sen.johncornyn" ;
+	schema:VideoObject "senjohncornyn" ;
+	:youtube_id "UCyQwLQavlOaJ64YuY_VMtiQ" .
+
+
+:r260	a rdfs:Resource ;
+	:bioguide_id "C001053" ;
+	:thomas_id "01742" ;
+	:govtrack_id "400077" ;
+	:twitter "TomColeOK04" ;
+	:twitter_id "23124635" ;
+	:facebook "TomColeOK04" ;
+	schema:VideoObject "reptomcole" ;
+	:youtube_id "UCvqzPm_YnNkfEHpm3SEMJMQ" ;
+	:instgram "TomColeOK04" .
+
+
+:r261	a rdfs:Resource ;
+	:bioguide_id "C001051" ;
+	:thomas_id "01752" ;
+	:govtrack_id "400068" ;
+	:twitter "JudgeCarter" ;
+	:twitter_id "18030431" ;
+	:facebook "judgecarter" ;
+	schema:VideoObject "repjohncarter" ;
+	:youtube_id "UC9pkaOrhPfouzkJ8oAdI-1w" ;
+	:instgram "repcarter" ;
+	:instgram_id "456560563" .
+
+
+:r262	a rdfs:Resource ;
+	:bioguide_id "C001049" ;
+	:thomas_id "01654" ;
+	:govtrack_id "400074" ;
+	:facebook "109135405838588" ;
+	schema:VideoObject "WilliamLacyClay" ;
+	:youtube_id "UCB3yVQzlxhx3brOwaWtiXoQ" .
+
+
+:r263	a rdfs:Resource ;
+	:bioguide_id "C001048" ;
+	:thomas_id "01670" ;
+	:govtrack_id "400089" ;
+	:twitter "CongCulberson" ;
+	:twitter_id "24183358" ;
+	:facebook "CongressmanCulberson" ;
+	schema:VideoObject "johnculbersontx07" ;
+	:youtube_id "UCv9NX2RA2jQQniHohgqy_KQ" ;
+	:instgram "repjculberson" .
+
+
+:r264	a rdfs:Resource ;
+	:bioguide_id "C001047" ;
+	:thomas_id "01676" ;
+	:govtrack_id "400061" ;
+	:twitter "SenCapito" ;
+	:twitter_id "193794406" ;
+	:facebook "senshelley" ;
+	:youtube_id "UCbiXdR4XQ3vD9Xp5lfR9QXw" ;
+	:instgram "sencapito" ;
+	:instgram_id "1640447624" .
+
+
+:r265	a rdfs:Resource ;
+	:bioguide_id "C001038" ;
+	:thomas_id "01604" ;
+	:govtrack_id "400087" ;
+	:twitter "RepJoeCrowley" ;
+	:twitter_id "111635980" ;
+	:facebook "repjoecrowley" ;
+	schema:VideoObject "RepJoeCrowley" ;
+	:youtube_id "UCni23wivejzkS9G1L_XEBQw" .
+
+
+:r266	a rdfs:Resource ;
+	:bioguide_id "C001037" ;
+	:thomas_id "01564" ;
+	:govtrack_id "400063" ;
+	:twitter "RepMikeCapuano" ;
+	:twitter_id "747806211983179008" ;
+	:facebook "RepMichaelCapuano" ;
+	schema:VideoObject "RepMikeCapuano" ;
+	:youtube_id "UCvzAdbimlJksgZjEMQn0kuw" .
+
+
+:r267	a rdfs:Resource ;
+	:bioguide_id "C001035" ;
+	:thomas_id "01541" ;
+	:govtrack_id "300025" ;
+	:twitter "SenatorCollins" ;
+	:twitter_id "19726613" ;
+	:facebook "susancollins" ;
+	schema:VideoObject "SenatorSusanCollins" ;
+	:youtube_id "UC6GYaBx5kT2r4PN8KENxC-w" ;
+	:instgram "sensusancollins" .
+
+
+:r268	a rdfs:Resource ;
+	:bioguide_id "C000984" ;
+	:thomas_id "00256" ;
+	:govtrack_id "400090" ;
+	:twitter "RepCummings" ;
+	:twitter_id "787373558" ;
+	:facebook "elijahcummings" ;
+	schema:VideoObject "ElijahECummings" ;
+	:youtube_id "UCMasH4jR80RdkqyuF0neFZg" .
+
+
+:r269	a rdfs:Resource ;
+	:bioguide_id "C000880" ;
+	:thomas_id "00250" ;
+	:govtrack_id "300030" ;
+	:twitter "MikeCrapo" ;
+	:twitter_id "600463589" ;
+	:facebook "mikecrapo" ;
+	schema:VideoObject "senatorcrapo" ;
+	:youtube_id "UCMHzKHg1BE7dEcFjnayw1lA" ;
+	:instgram "mikecrapo" ;
+	:instgram_id "329357214" .
+
+
+:r270	a rdfs:Resource ;
+	:bioguide_id "C000754" ;
+	:thomas_id "00231" ;
+	:govtrack_id "400081" ;
+	:twitter "RepJimCooper" ;
+	:twitter_id "22523087" ;
+	:facebook "JimCooper" ;
+	schema:VideoObject "RepJimCooper" ;
+	:youtube_id "UCjplyIIQbNZcl013AyDfPNg" ;
+	:instgram "repjimcooper" ;
+	:instgram_id "1037212884" .
+
+
+:r271	a rdfs:Resource ;
+	:bioguide_id "C000537" ;
+	:thomas_id "00208" ;
+	:govtrack_id "400075" ;
+	:twitter "Clyburn" ;
+	:twitter_id "188019606" ;
+	:facebook "jameseclyburn" ;
+	schema:VideoObject "repjamesclyburn" ;
+	:youtube_id "UCIyU_UA_JEa14gvAwhquKqg" .
+
+
+:r272	a rdfs:Resource ;
+	:bioguide_id "C000266" ;
+	:thomas_id "00186" ;
+	:govtrack_id "400071" ;
+	:twitter "RepSteveChabot" ;
+	:twitter_id "237750442" ;
+	:facebook "RepSteveChabot" ;
+	schema:VideoObject "congressmanchabot" ;
+	:youtube_id "UCJpzm2DZDE1B6ruQLQc7q4g" ;
+	:instgram "repstevechabot" ;
+	:instgram_id "481906395" .
+
+
+:r273	a rdfs:Resource ;
+	:bioguide_id "C000174" ;
+	:thomas_id "00179" ;
+	:govtrack_id "300019" ;
+	:twitter "SenatorCarper" ;
+	:twitter_id "249787913" ;
+	:facebook "tomcarper" ;
+	schema:VideoObject "senatorcarper" ;
+	:youtube_id "UCgLnvbKwu4B3navofj6Qvvw" .
+
+
+:r274	a rdfs:Resource ;
+	:bioguide_id "C000141" ;
+	:thomas_id "00174" ;
+	:govtrack_id "400064" ;
+	:twitter "SenatorCardin" ;
+	:twitter_id "109071031" ;
+	:facebook "senatorbencardin" ;
+	schema:VideoObject "senatorcardin" ;
+	:youtube_id "UCiQaJnMzlfzzG3VESgyZChA" ;
+	:instgram "senatorcardin" .
+
+
+:r275	a rdfs:Resource ;
+	:bioguide_id "C000127" ;
+	:thomas_id "00172" ;
+	:govtrack_id "300018" ;
+	:twitter "SenatorCantwell" ;
+	:twitter_id "117501995" ;
+	:facebook "senatorcantwell" ;
+	schema:VideoObject "SenatorCantwell" ;
+	:youtube_id "UCN52UDqKgvHRk39ncySrIMw" .
+
+
+:r276	a rdfs:Resource ;
+	:bioguide_id "C000059" ;
+	:thomas_id "00165" ;
+	:govtrack_id "400057" ;
+	:twitter "KenCalvert" ;
+	:twitter_id "22545491" ;
+	:facebook "70063393423" ;
+	schema:VideoObject "RepKenCalvert" ;
+	:youtube_id "UC5MEj7YOX_QdKoqD_HRxP3A" .
+
+
+:r277	a rdfs:Resource ;
+	:bioguide_id "B001277" ;
+	:thomas_id "02076" ;
+	:govtrack_id "412490" ;
+	:twitter "SenBlumenthal" ;
+	:twitter_id "278124059" ;
+	:facebook "SenBlumenthal" ;
+	schema:VideoObject "SenatorBlumenthal" ;
+	:youtube_id "UCHH-fn3_LVt0Q4od56rOi5g" .
+
+
+:r278	a rdfs:Resource ;
+	:bioguide_id "B001275" ;
+	:thomas_id "02018" ;
+	:govtrack_id "412427" ;
+	:twitter "RepLarryBucshon" ;
+	:twitter_id "234812598" ;
+	:facebook "RepLarryBucshon" ;
+	schema:VideoObject "RepLarryBucshon" ;
+	:youtube_id "UC0bIliQs0LKZabNwvZ3gnhQ" .
+
+
+:r279	a rdfs:Resource ;
+	:bioguide_id "B001274" ;
+	:thomas_id "01987" ;
+	:govtrack_id "412395" ;
+	:twitter "RepMoBrooks" ;
+	:twitter_id "237299871" ;
+	:facebook "RepMoBrooks" ;
+	schema:VideoObject "RepMoBrooks" ;
+	:youtube_id "UCgsPSY0MpuQJq8vEqYUSt-g" .
+
+
+:r280	a rdfs:Resource ;
+	:bioguide_id "B001273" ;
+	:thomas_id "02063" ;
+	:govtrack_id "412478" ;
+	:twitter "RepDianeBlack" ;
+	:twitter_id "110545675" ;
+	:facebook "DianeBlackTN06" ;
+	schema:VideoObject "RepDianeBlack" ;
+	:youtube_id "UCREZGYWeFh6-gfodmoWVUFg" ;
+	:instgram "repdianeblack" ;
+	:instgram_id "371192551" .
+
+
+:r281	a rdfs:Resource ;
+	:bioguide_id "B001270" ;
+	:thomas_id "01996" ;
+	:govtrack_id "412404" ;
+	:twitter "RepKarenBass" ;
+	:twitter_id "239949176" ;
+	:facebook "RepKarenBass" ;
+	schema:VideoObject "RepKarenBass" ;
+	:youtube_id "UCQZg7oxkV3Yag2emYPLhT2g" .
+
+
+:r282	a rdfs:Resource ;
+	:bioguide_id "B001269" ;
+	:thomas_id "02054" ;
+	:govtrack_id "412469" ;
+	:twitter "RepLouBarletta" ;
+	:twitter_id "239871673" ;
+	:facebook "CongressmanLouBarletta" ;
+	schema:VideoObject "reploubarletta" ;
+	:youtube_id "UChViw1Iv0nY1b3Qq9Q0vDBQ" .
+
+
+:r283	a rdfs:Resource ;
+	:bioguide_id "B001267" ;
+	:thomas_id "01965" ;
+	:govtrack_id "412330" ;
+	:twitter "SenBennetCo" ;
+	:twitter_id "224285242" ;
+	:facebook "senbennetco" ;
+	schema:VideoObject "SenatorBennet" ;
+	:youtube_id "UCXB3cljpMwTyCUyLr2ZVLow" .
+
+
+:r284	a rdfs:Resource ;
+	:bioguide_id "B001261" ;
+	:thomas_id "01881" ;
+	:govtrack_id "412251" ;
+	:twitter "SenJohnBarrasso" ;
+	:twitter_id "202206694" ;
+	:facebook "johnbarrasso" ;
+	schema:VideoObject "barrassowyo" ;
+	:youtube_id "UC80PfiCAB2Fe1MFayWlR6GQ" .
+
+
+:r285	a rdfs:Resource ;
+	:bioguide_id "B001260" ;
+	:thomas_id "01840" ;
+	:govtrack_id "412196" ;
+	:twitter "VernBuchanan" ;
+	:twitter_id "20467163" ;
+	:facebook "CongressmanBuchanan" ;
+	schema:VideoObject "vernbuchanan" ;
+	:youtube_id "UCY4DEy41NxOTdcF8_XAVZvw" ;
+	:instgram "repvern" ;
+	:instgram_id "344865327" .
+
+
+:r286	a rdfs:Resource ;
+	:bioguide_id "B001257" ;
+	:thomas_id "01838" ;
+	:govtrack_id "412250" ;
+	:twitter "RepGusBilirakis" ;
+	:twitter_id "26051676" ;
+	:facebook "GusBilirakis" ;
+	schema:VideoObject "RepGusBilirakis" ;
+	:youtube_id "UC2z1uu1n4-60xXs5x1mvLJw" ;
+	:instgram "gusbilirakis" .
+
+
+:r287	a rdfs:Resource ;
+	:bioguide_id "B001251" ;
+	:thomas_id "01761" ;
+	:govtrack_id "400616" ;
+	:twitter "GKButterfield" ;
+	:twitter_id "432676344" ;
+	:facebook "congressmangkbutterfield" ;
+	schema:VideoObject "GKBNC01" ;
+	:youtube_id "UCbodCVgLfcbaep49L1M-mqA" .
+
+
+:r288	a rdfs:Resource ;
+	:bioguide_id "B001250" ;
+	:thomas_id "01753" ;
+	:govtrack_id "400029" ;
+	:twitter "RepRobBishop" ;
+	:twitter_id "148006729" ;
+	:facebook "RepRobBishop" ;
+	schema:VideoObject "CongressmanBishop" ;
+	:youtube_id "UCJC2BXNGQEUom7Tp7FKfxlQ" .
+
+
+:r289	a rdfs:Resource ;
+	:bioguide_id "B001248" ;
+	:thomas_id "01751" ;
+	:govtrack_id "400052" ;
+	:twitter "MichaelCBurgess" ;
+	:twitter_id "15751083" ;
+	:facebook "michaelcburgess" ;
+	schema:VideoObject "michaelcburgessmd" ;
+	:youtube_id "UCvvO8lo-Nkc31cEEElqQvQw" ;
+	:instgram "repmichaelburgess" .
+
+
+:r290	a rdfs:Resource ;
+	:bioguide_id "B001243" ;
+	:thomas_id "01748" ;
+	:govtrack_id "400032" ;
+	:twitter "MarshaBlackburn" ;
+	:twitter_id "278145569" ;
+	:facebook "marshablackburn" ;
+	schema:VideoObject "RepMarshaBlackburn" ;
+	:youtube_id "UCvNnmu5mUm7xr8QXBlbtQ9w" ;
+	:instgram "marshablackburn" .
+
+
+:r291	a rdfs:Resource ;
+	:bioguide_id "B001236" ;
+	:thomas_id "01687" ;
+	:govtrack_id "400040" ;
+	:twitter "JohnBoozman" ;
+	:twitter_id "5558312" ;
+	:facebook "JohnBoozman" ;
+	schema:VideoObject "BoozmanPressOffice" ;
+	:youtube_id "UC9vWHKL5OfIYh6kIV0rF2yw" .
+
+
+:r292	a rdfs:Resource ;
+	:bioguide_id "B001227" ;
+	:thomas_id "01469" ;
+	:govtrack_id "400047" ;
+	:twitter "RepBrady" ;
+	:twitter_id "148453195" ;
+	:facebook "RepRobertBrady" ;
+	schema:VideoObject "BradyPA01" ;
+	:youtube_id "UCHbTbPH6iCtaA_AKPwDy04A" ;
+	:instgram "repbrady" ;
+	:instgram_id "1405678385" .
+
+
+:r293	a rdfs:Resource ;
+	:bioguide_id "B001135" ;
+	:thomas_id "00153" ;
+	:govtrack_id "400054" ;
+	:twitter "SenatorBurr" ;
+	:twitter_id "21157904" ;
+	:facebook "SenatorRichardBurr" ;
+	schema:VideoObject "SenatorRichardBurr" ;
+	:youtube_id "UCOLLZpp-1womBSFDV2uLfag" .
+
+
+:r294	a rdfs:Resource ;
+	:bioguide_id "B000944" ;
+	:thomas_id "00136" ;
+	:govtrack_id "400050" ;
+	:twitter "SenSherrodBrown" ;
+	:twitter_id "43910797" ;
+	:facebook "SenatorSherrodBrown" ;
+	schema:VideoObject "SherrodBrownOhio" ;
+	:youtube_id "UCgy8jfERh-t_ixkKKoCmglQ" .
+
+
+:r295	a rdfs:Resource ;
+	:bioguide_id "B000755" ;
+	:thomas_id "01468" ;
+	:govtrack_id "400046" ;
+	:twitter "RepKevinBrady" ;
+	:twitter_id "19926675" ;
+	:facebook "kevinbrady" ;
+	schema:VideoObject "KBrady8" ;
+	:youtube_id "UC6Ng0uMQEBVgXO_HF0NbfXA" ;
+	:instgram "repkevinbrady" ;
+	:instgram_id "337613850" .
+
+
+:r296	a rdfs:Resource ;
+	:bioguide_id "B000575" ;
+	:thomas_id "01464" ;
+	:govtrack_id "400034" ;
+	:twitter "RoyBlunt" ;
+	:twitter_id "21269970" ;
+	:facebook "SenatorBlunt" ;
+	schema:VideoObject "SenatorBlunt" ;
+	:youtube_id "UCFeLRzjhThTmaWzuh5qjpGA" ;
+	:instgram "royblunt" ;
+	:instgram_id "21185436" .
+
+
+:r297	a rdfs:Resource ;
+	:bioguide_id "B000574" ;
+	:thomas_id "00099" ;
+	:govtrack_id "400033" ;
+	:twitter "BlumenauerMedia" ;
+	:twitter_id "137823987" ;
+	schema:VideoObject "RepBlumenauer" ;
+	:youtube_id "UCuziVoKuGn7feNA5VrpxsBQ" .
+
+
+:r298	a rdfs:Resource ;
+	:bioguide_id "B000490" ;
+	:thomas_id "00091" ;
+	:govtrack_id "400030" ;
+	:twitter "SanfordBishop" ;
+	:twitter_id "249410485" ;
+	:facebook "sanfordbishop" ;
+	schema:VideoObject "RepSanfordBishop" ;
+	:youtube_id "UCxF9veLBrkr_CqVq5eFYVGg" .
+
+
+:r299	a rdfs:Resource ;
+	:bioguide_id "B000213" ;
+	:thomas_id "00062" ;
+	:govtrack_id "400018" ;
+	:twitter "RepJoeBarton" ;
+	:twitter_id "19929362" ;
+	:facebook "RepJoeBarton" ;
+	schema:VideoObject "repjoebarton" ;
+	:youtube_id "UC9zg5RmxfNdBfz4iZuzvWXg" .
+
+
+:r300	a rdfs:Resource ;
+	:bioguide_id "A000367" ;
+	:thomas_id "02029" ;
+	:govtrack_id "412438" ;
+	:facebook "repjustinamash" ;
+	schema:VideoObject "repjustinamash" ;
+	:youtube_id "UCeg6HhoCXrS8xpON9dxtZgA" .
+
+
+:r301	a rdfs:Resource ;
+	:bioguide_id "A000360" ;
+	:thomas_id "01695" ;
+	:govtrack_id "300002" ;
+	:twitter "SenAlexander" ;
+	:twitter_id "76649729" ;
+	:facebook "senatorlamaralexander" ;
+	schema:VideoObject "lamaralexander" ;
+	:youtube_id "UChDLBjn5RWqgMmCSswT05IQ" ;
+	:instgram "senlamaralexander" ;
+	:instgram_id "1156775647" .
+
+
+:r302	a rdfs:Resource ;
+	:bioguide_id "A000055" ;
+	:thomas_id "01460" ;
+	:govtrack_id "400004" ;
+	:twitter "Robert_Aderholt" ;
+	:twitter_id "76452765" ;
+	:facebook "RobertAderholt" ;
+	schema:VideoObject "RobertAderholt" ;
+	:youtube_id "UC71CAgpg1gbLTew_pfTneGA" .
+
+
+:r303	a rdfs:Resource ;
+	:bioguide_id "B001245" ;
+	:thomas_id "01723" ;
+	:govtrack_id "400041" ;
+	:facebook "madeleine.bordallo" ;
+	schema:VideoObject "RepMadeleineBordallo" ;
+	:youtube_id "UCmHdfm0Nyslc8LOoq3KIATg" .
+
+
+:r304	a rdfs:Resource ;
+	:bioguide_id "D000617" ;
+	:thomas_id "02096" ;
+	:govtrack_id "412505" ;
+	:twitter "RepDelBene" ;
+	:twitter_id "995193054" ;
+	:facebook "RepDelBene" ;
+	:youtube_id "UCd00b7TpKDZIr-Ujhaktvjg" ;
+	:instgram "repdelbene" .
+
+
+:r305	a rdfs:Resource ;
+	:bioguide_id "B001278" ;
+	:thomas_id "02092" ;
+	:govtrack_id "412501" ;
+	:twitter "RepBonamici" ;
+	:twitter_id "558769636" ;
+	:facebook "congresswomanbonamici" ;
+	schema:VideoObject "RepSuzanneBonamici" ;
+	:youtube_id "UC0IkAeEiwgzSRTD1TDSvuBw" .
+
+
+:r306	a rdfs:Resource ;
+	:bioguide_id "C000567" ;
+	:thomas_id "00213" ;
+	:govtrack_id "300023" ;
+	:twitter "SenThadCochran" ;
+	:twitter_id "555474658" ;
+	schema:VideoObject "sencochran" ;
+	:youtube_id "UCTnKP_ye7nI5DEn_zreaa3g" .
+
+
+:r307	a rdfs:Resource ;
+	:bioguide_id "K000383" ;
+	:govtrack_id "412545" ;
+	:twitter "SenAngusKing" ;
+	:twitter_id "1068481578" ;
+	:facebook "SenatorAngusSKingJr" ;
+	schema:VideoObject "SenatorAngusKing" ;
+	:youtube_id "UCpp6lGvrmt0XU_lnD4Ak0gA" .
+
+
+:r308	a rdfs:Resource ;
+	:bioguide_id "A000369" ;
+	:thomas_id "02090" ;
+	:govtrack_id "412500" ;
+	:twitter "MarkAmodeiNV2" ;
+	:twitter_id "402719755" ;
+	:facebook "MarkAmodeiNV2" ;
+	schema:VideoObject "markamodeinv2" ;
+	:youtube_id "UCjOGx2iqSn1r3BQxaVgYhYw" ;
+	:instgram "MarkAmodeiNV2" .
+
+
+:r309	a rdfs:Resource ;
+	:bioguide_id "L000580" ;
+	:thomas_id "02146" ;
+	:govtrack_id "412558" ;
+	:twitter "RepLujanGrisham" ;
+	:twitter_id "1061385474" ;
+	:facebook "RepLujanGrisham" ;
+	schema:VideoObject "RepLujanGrisham" ;
+	:youtube_id "UCS_N-wEnUBEbVYCD-CXpNjw" ;
+	:instgram "replujangrisham" ;
+	:instgram_id "379143191" .
+
+
+:r310	a rdfs:Resource ;
+	:bioguide_id "D000621" ;
+	:thomas_id "02116" ;
+	:govtrack_id "412526" ;
+	:twitter "RepDeSantis" ;
+	:twitter_id "1058807868" ;
+	:facebook "RepDeSantis" ;
+	schema:VideoObject "RepRonDeSantis" ;
+	:youtube_id "UCRM1qBatq45tZxRqYeUa02g" .
+
+
+:r311	a rdfs:Resource ;
+	:bioguide_id "D000620" ;
+	:thomas_id "02133" ;
+	:govtrack_id "412544" ;
+	:twitter "RepJohnDelaney" ;
+	:twitter_id "937723303" ;
+	:facebook "congressmanjohndelaney" ;
+	schema:VideoObject "repjohndelaney" ;
+	:youtube_id "UC-Sz2M53ZYi_8MvapFKZJiw" .
+
+
+:r312	a rdfs:Resource ;
+	:bioguide_id "S001193" ;
+	:thomas_id "02104" ;
+	:govtrack_id "412514" ;
+	:twitter "RepSwalwell" ;
+	:twitter_id "942156122" ;
+	:facebook "CongressmanEricSwalwell" ;
+	schema:VideoObject "ericswalwell" ;
+	:youtube_id "UCKvwsFNGD4sDkE_9g-2ft0w" ;
+	:instgram "repswalwell" ;
+	:instgram_id "338799200" .
+
+
+:r313	a rdfs:Resource ;
+	:bioguide_id "M001190" ;
+	:thomas_id "02156" ;
+	:govtrack_id "412568" ;
+	:twitter "RepMullin" ;
+	:twitter_id "1060370282" ;
+	:facebook "RepMullin" ;
+	:youtube_id "UCLQlm-cbGbJj9baZC6oFsag" .
+
+
+:r314	a rdfs:Resource ;
+	:bioguide_id "K000379" ;
+	:thomas_id "02172" ;
+	:govtrack_id "412543" ;
+	:twitter "RepJoeKennedy" ;
+	:twitter_id "1055907624" ;
+	:facebook "301936109927957" ;
+	:youtube_id "UCgfHlaGqxD8p-2V_YlNIqrA" ;
+	:instgram "repkennedy" ;
+	:instgram_id "1328567154" .
+
+
+:r315	a rdfs:Resource ;
+	:bioguide_id "B001284" ;
+	:thomas_id "02129" ;
+	:govtrack_id "412539" ;
+	:twitter "SusanWBrooks" ;
+	:twitter_id "1074101017" ;
+	:facebook "congresswomansusanwbrooks" ;
+	schema:VideoObject "SusanWBrooks" ;
+	:youtube_id "UCMd7LzaBcbQ06aKHoj9KkSQ" ;
+	:instgram "susanwbrooks" ;
+	:instgram_id "365798183" .
+
+
+:r316	a rdfs:Resource ;
+	:bioguide_id "W000813" ;
+	:thomas_id "02128" ;
+	:govtrack_id "412538" ;
+	:twitter "RepWalorski" ;
+	:twitter_id "1065995022" ;
+	:facebook "RepJackieWalorski" ;
+	schema:VideoObject "repwalorski" ;
+	:youtube_id "UC8fsSDjVJ_VnCF3ccx3Lkng" ;
+	:instgram "jackiewalorski" .
+
+
+:r317	a rdfs:Resource ;
+	:bioguide_id "R000597" ;
+	:thomas_id "02160" ;
+	:govtrack_id "412572" ;
+	:twitter "RepTomRice" ;
+	:twitter_id "1058345042" ;
+	:facebook "reptomrice" ;
+	schema:VideoObject "RepTomRice" ;
+	:youtube_id "UCEmPVQphMGoXAfWJli68BEw" ;
+	:instgram "reptomrice" .
+
+
+:r318	a rdfs:Resource ;
+	:bioguide_id "M001188" ;
+	:thomas_id "02148" ;
+	:govtrack_id "412560" ;
+	:twitter "RepGraceMeng" ;
+	:twitter_id "1051127714" ;
+	:facebook "repgracemeng" ;
+	:youtube_id "UCHg516zJKbIBtXFAJ0nu3XQ" .
+
+
+:r319	a rdfs:Resource ;
+	:bioguide_id "M001189" ;
+	:thomas_id "02130" ;
+	:govtrack_id "412540" ;
+	:twitter "RepLukeMesser" ;
+	:twitter_id "1045853744" ;
+	:facebook "RepLukeMesser" ;
+	schema:VideoObject "RepLukeMesser" ;
+	:youtube_id "UC9NKMvZuY2koTf1iVurxicw" .
+
+
+:r320	a rdfs:Resource ;
+	:bioguide_id "M001185" ;
+	:thomas_id "02150" ;
+	:govtrack_id "412562" ;
+	:twitter "RepSeanMaloney" ;
+	:twitter_id "1072467470" ;
+	:facebook "RepSeanMaloney" ;
+	:youtube_id "UCNiVzzf4Vz-vCMPBcnjGuXQ" .
+
+
+:r321	a rdfs:Resource ;
+	:bioguide_id "H001064" ;
+	:thomas_id "02170" ;
+	:govtrack_id "412584" ;
+	:twitter "RepDennyHeck" ;
+	:twitter_id "1068499286" ;
+	:facebook "CongressmanDennyHeck" ;
+	schema:VideoObject "RepDennyHeck" ;
+	:youtube_id "UCU89cl5_yhHzo-oTHiEyaRg" .
+
+
+:r322	a rdfs:Resource ;
+	:bioguide_id "H001065" ;
+	:thomas_id "02143" ;
+	:govtrack_id "412553" ;
+	:twitter "RepHolding" ;
+	:twitter_id "1058460818" ;
+	:facebook "CongressmanGeorgeHolding" ;
+	schema:VideoObject "repholding" ;
+	:youtube_id "UCx6IgBfJmIhXSXymnPr78hw" ;
+	:instgram "repholding" .
+
+
+:r323	a rdfs:Resource ;
+	:bioguide_id "N000127" ;
+	:thomas_id "00867" ;
+	:govtrack_id "408211" ;
+	:twitter "USRepRickNolan" ;
+	:twitter_id "1055685948" ;
+	:facebook "UsRepRickNolan" ;
+	schema:VideoObject "USRepRickNolan" ;
+	:youtube_id "UCmGkPQXVR8GzVAPXN54AoXg" .
+
+
+:r324	a rdfs:Resource ;
+	:bioguide_id "T000472" ;
+	:thomas_id "02110" ;
+	:govtrack_id "412520" ;
+	:twitter "RepMarkTakano" ;
+	:twitter_id "1037321378" ;
+	:facebook "RepMarkTakano" ;
+	schema:VideoObject "RepMarkTakano" ;
+	:youtube_id "UCJg4F1irmSFeKoXZBaZbX2w" ;
+	:instgram "repmarktakano" .
+
+
+:r325	a rdfs:Resource ;
+	:bioguide_id "J000294" ;
+	:thomas_id "02149" ;
+	:govtrack_id "412561" ;
+	:twitter "RepJeffries" ;
+	:twitter_id "467823431" ;
+	:facebook "RepHakeemJeffries" ;
+	:youtube_id "UCYVmbsjoNbQ4j-PCQIYgpWQ" .
+
+
+:r326	a rdfs:Resource ;
+	:bioguide_id "J000295" ;
+	:thomas_id "02154" ;
+	:govtrack_id "412566" ;
+	:twitter "RepDaveJoyce" ;
+	:twitter_id "976969338" ;
+	:facebook "RepDaveJoyce" ;
+	schema:VideoObject "repdavejoyce" ;
+	:youtube_id "UCTu9xz2VYk-jtQv0TVsLyYA" ;
+	:instgram "repdavejoyce" ;
+	:instgram_id "360743678" .
+
+
+:r327	a rdfs:Resource ;
+	:bioguide_id "L000579" ;
+	:thomas_id "02111" ;
+	:govtrack_id "412521" ;
+	:twitter "RepLowenthal" ;
+	:twitter_id "1055730738" ;
+	:facebook "RepLowenthal" ;
+	schema:VideoObject "RepLowenthal" ;
+	:youtube_id "UC-GgROtn5Hxm1H9a6qvy_Wg" .
+
+
+:r328	a rdfs:Resource ;
+	:bioguide_id "C001093" ;
+	:thomas_id "02121" ;
+	:govtrack_id "412531" ;
+	:twitter "RepDougCollins" ;
+	:twitter_id "1060487274" ;
+	:facebook "RepresentativeDougCollins" ;
+	schema:VideoObject "repdougcollins" ;
+	:youtube_id "UCgKTZXOJX2UwAdLNZ4MQdig" .
+
+
+:r329	a rdfs:Resource ;
+	:bioguide_id "W000814" ;
+	:thomas_id "02161" ;
+	:govtrack_id "412574" ;
+	:twitter "TXRandy14" ;
+	:twitter_id "1058051748" ;
+	:facebook "TXRandy14" ;
+	schema:VideoObject "TXRandy14" ;
+	:youtube_id "UCJSZRrAcd5i1bHLjR66PZdg" .
+
+
+:r330	a rdfs:Resource ;
+	:bioguide_id "K000381" ;
+	:thomas_id "02169" ;
+	:govtrack_id "412583" ;
+	:twitter "RepDerekKilmer" ;
+	:twitter_id "1058917562" ;
+	:facebook "derek.kilmer" .
+
+
+:r331	a rdfs:Resource ;
+	:bioguide_id "G000571" ;
+	:thomas_id "02122" ;
+	:govtrack_id "412532" ;
+	:twitter "TulsiPress" ;
+	:twitter_id "1064206014" ;
+	:facebook "RepTulsiGabbard" ;
+	schema:VideoObject "tulsipress" ;
+	:youtube_id "UCkQmC0YfIU4388Tu0_k4esA" .
+
+
+:r332	a rdfs:Resource ;
+	:bioguide_id "D000618" ;
+	:thomas_id "02138" ;
+	:govtrack_id "412549" ;
+	:twitter "SteveDaines" ;
+	:twitter_id "11651202" ;
+	:facebook "SteveDainesMT" ;
+	schema:VideoObject "SteveDainesMT" ;
+	:youtube_id "UC-ny-W5mEUGytiyMdXbQ20Q" ;
+	:instgram "stevedaines" ;
+	:instgram_id "371125857" .
+
+
+:r333	a rdfs:Resource ;
+	:bioguide_id "Y000065" ;
+	:thomas_id "02115" ;
+	:govtrack_id "412525" ;
+	:twitter "RepTedYoho" ;
+	:twitter_id "1071900114" ;
+	:facebook "CongressmanTedYoho" ;
+	schema:VideoObject "RepTedYoho" ;
+	:youtube_id "UCGmDQgEgP2Z0NjavmnS9Hwg" .
+
+
+:r334	a rdfs:Resource ;
+	:bioguide_id "E000293" ;
+	:thomas_id "02114" ;
+	:govtrack_id "412524" ;
+	:twitter "RepEsty" ;
+	:twitter_id "1060984272" ;
+	:facebook "RepEsty" ;
+	schema:VideoObject "RepEsty" ;
+	:youtube_id "UCJoc9OfUHVbx0Z7V055sbCA" ;
+	:instgram "repesty" .
+
+
+:r335	a rdfs:Resource ;
+	:bioguide_id "K000382" ;
+	:thomas_id "02145" ;
+	:govtrack_id "412557" ;
+	:twitter "RepAnnieKuster" ;
+	:twitter_id "1058717720" ;
+	:facebook "CongresswomanAnnieKuster" ;
+	schema:VideoObject "RepKuster" ;
+	:youtube_id "UCYAD_Eti2b5gXSicbgPsBYA" .
+
+
+:r336	a rdfs:Resource ;
+	:bioguide_id "K000380" ;
+	:thomas_id "02134" ;
+	:govtrack_id "412546" ;
+	:twitter "RepDanKildee" ;
+	:twitter_id "1045110018" ;
+	:facebook "RepDanKildee" ;
+	schema:VideoObject "RepDanKildee" ;
+	:youtube_id "UC_KpQ-n3IT5dL5ul21XA9Yw" ;
+	:instgram "repdankildee" ;
+	:instgram_id "582887115" .
+
+
+:r337	a rdfs:Resource ;
+	:bioguide_id "C001090" ;
+	:thomas_id "02159" ;
+	:govtrack_id "412571" ;
+	:twitter "RepCartwright" ;
+	:twitter_id "776664410" ;
+	:facebook "CongressmanMattCartwright" ;
+	:youtube_id "UCnAOvexSGLBnYidaFzguhTQ" .
+
+
+:r338	a rdfs:Resource ;
+	:bioguide_id "C001095" ;
+	:thomas_id "02098" ;
+	:govtrack_id "412508" ;
+	:twitter "SenTomCotton" ;
+	:twitter_id "968650362" ;
+	:facebook "SenatorTomCotton" ;
+	schema:VideoObject "RepTomCotton" ;
+	:youtube_id "UCXEk6mokWBajIpNatbjnwSg" .
+
+
+:r339	a rdfs:Resource ;
+	:bioguide_id "B001286" ;
+	:thomas_id "02127" ;
+	:govtrack_id "412537" ;
+	:twitter "RepCheri" ;
+	:twitter_id "1092979962" ;
+	:facebook "RepCheri" ;
+	schema:VideoObject "RepCheri" ;
+	:youtube_id "UCrkOYuIsVeb4dvKeeO7jnaA" .
+
+
+:r340	a rdfs:Resource ;
+	:bioguide_id "B001287" ;
+	:thomas_id "02102" ;
+	:govtrack_id "412512" ;
+	:twitter "RepBera" ;
+	:twitter_id "950783972" ;
+	:facebook "RepAmiBera" ;
+	schema:VideoObject "repamibera" ;
+	:youtube_id "UClJCTCo53Zk6b4kUL-bbdzg" .
+
+
+:r341	a rdfs:Resource ;
+	:bioguide_id "F000454" ;
+	:thomas_id "01888" ;
+	:govtrack_id "412257" ;
+	:twitter "RepBillFoster" ;
+	:twitter_id "1080509366" ;
+	:facebook "CongressmanBillFoster" ;
+	schema:VideoObject "RepBillFoster" ;
+	:youtube_id "UCicixINQr_-3cFHI2bJzFpQ" .
+
+
+:r342	a rdfs:Resource ;
+	:bioguide_id "P000606" ;
+	:thomas_id "02141" ;
+	:govtrack_id "412551" ;
+	:twitter "RepPittenger" ;
+	:twitter_id "950328072" ;
+	:facebook "congressmanpittenger" ;
+	schema:VideoObject "CongressmanPittenger" ;
+	:youtube_id "UCPr1MiyBx6K6wH3zgMWFtMQ" .
+
+
+:r343	a rdfs:Resource ;
+	:bioguide_id "M001187" ;
+	:thomas_id "02142" ;
+	:govtrack_id "412552" ;
+	:twitter "RepMarkMeadows" ;
+	:twitter_id "963480595" ;
+	:facebook "Repmarkmeadows" ;
+	schema:VideoObject "RepMarkMeadows" ;
+	:youtube_id "UCu1unBO6gQdCz3qok5LPFGQ" ;
+	:instgram "repmarkmeadows" .
+
+
+:r344	a rdfs:Resource ;
+	:bioguide_id "F000462" ;
+	:thomas_id "02119" ;
+	:govtrack_id "412529" ;
+	:twitter "RepLoisFrankel" ;
+	:twitter_id "1077121945" ;
+	:facebook "RepLoisFrankel" ;
+	schema:VideoObject "reploisfrankel" ;
+	:youtube_id "UCEk5viAhxaW_2OK20-yBwzQ" ;
+	:instgram "reploisfrankel" .
+
+
+:r345	a rdfs:Resource ;
+	:bioguide_id "H001067" ;
+	:thomas_id "02140" ;
+	:govtrack_id "412550" ;
+	:twitter "RepRichHudson" ;
+	:twitter_id "935033864" ;
+	:facebook "RepRichHudson" ;
+	schema:VideoObject "RepRichHudson" ;
+	:youtube_id "UC9Q1qCvnQR7rHERjTjJl5Pg" .
+
+
+:r346	a rdfs:Resource ;
+	:bioguide_id "V000131" ;
+	:thomas_id "02166" ;
+	:govtrack_id "412579" ;
+	:twitter "RepVeasey" ;
+	:twitter_id "1074129612" ;
+	:facebook "CongressmanMarcVeasey" ;
+	schema:VideoObject "marcveasey" ;
+	:youtube_id "UC2CRp1KF5uljZyhDRPR-72Q" ;
+	:instgram "repveasey" ;
+	:instgram_id "676925345" .
+
+
+:r347	a rdfs:Resource ;
+	:bioguide_id "V000132" ;
+	:thomas_id "02167" ;
+	:govtrack_id "412580" ;
+	:twitter "RepFilemonVela" ;
+	:twitter_id "1083448909" ;
+	:facebook "USCongressmanFilemonVela" ;
+	schema:VideoObject "RepFilemonVela" .
+
+
+:r348	a rdfs:Resource ;
+	:bioguide_id "P000605" ;
+	:thomas_id "02157" ;
+	:govtrack_id "412569" ;
+	:twitter "RepScottPerry" ;
+	:twitter_id "18773159" ;
+	:facebook "repscottperry" ;
+	schema:VideoObject "RepScottPerry" ;
+	:youtube_id "UCzgrU5PT_HHRgf5hXPen4dQ" ;
+	:instgram "repscottperry" ;
+	:instgram_id "519463466" .
+
+
+:r349	a rdfs:Resource ;
+	:bioguide_id "R000599" ;
+	:thomas_id "02109" ;
+	:govtrack_id "412519" ;
+	:twitter "CongressmanRuiz" ;
+	:twitter_id "1089859058" ;
+	:facebook "CongressmanRaulRuizMD" ;
+	schema:VideoObject "repraulruiz" ;
+	:youtube_id "UCSDk-cyNPCo1iy6rweSPmBw" .
+
+
+:r350	a rdfs:Resource ;
+	:bioguide_id "C001094" ;
+	:thomas_id "02103" ;
+	:govtrack_id "412513" ;
+	:twitter "RepPaulCook" ;
+	:twitter_id "1074412920" ;
+	:facebook "RepPaulCook" ;
+	schema:VideoObject "RepPaulCook" ;
+	:youtube_id "UCqK--hf5cuvg7BR_oisyRiA" .
+
+
+:r351	a rdfs:Resource ;
+	:bioguide_id "C001096" ;
+	:thomas_id "02144" ;
+	:govtrack_id "412555" ;
+	:twitter "RepKevinCramer" ;
+	:twitter_id "1048784496" ;
+	:facebook "CongressmanKevinCramer" ;
+	schema:VideoObject "kevincramer" ;
+	:youtube_id "UCqUPdO9XaAW-dvwwXKbIVdA" ;
+	:instgram "repkevincramer" .
+
+
+:r352	a rdfs:Resource ;
+	:bioguide_id "C001092" ;
+	:thomas_id "02151" ;
+	:govtrack_id "412563" ;
+	:twitter "RepChrisCollins" ;
+	:twitter_id "1058256326" ;
+	:facebook "RepChrisCollins" ;
+	schema:VideoObject "RepChrisCollins" ;
+	:youtube_id "UCSwQQJaKI4TzuYDUwHwwnxQ" ;
+	:instgram "repchriscollins" ;
+	:instgram_id "379808544" .
+
+
+:r353	a rdfs:Resource ;
+	:bioguide_id "W000812" ;
+	:thomas_id "02137" ;
+	:govtrack_id "412548" ;
+	:twitter "RepAnnWagner" ;
+	:twitter_id "1051446626" ;
+	:facebook "RepAnnWagner" ;
+	:youtube_id "UCy2v2DXXvQnbRc8Zx77Dnsg" .
+
+
+:r354	a rdfs:Resource ;
+	:bioguide_id "W000817" ;
+	:thomas_id "02182" ;
+	:govtrack_id "412542" ;
+	:twitter "SenWarren" ;
+	:twitter_id "970207298" ;
+	:facebook "senatorelizabethwarren" ;
+	schema:VideoObject "senelizabethwarren" ;
+	:youtube_id "UCTH9zV8Imw09J5bOoTR18_A" .
+
+
+:r355	a rdfs:Resource ;
+	:bioguide_id "D000619" ;
+	:thomas_id "02126" ;
+	:govtrack_id "412536" ;
+	:twitter "RodneyDavis" ;
+	:twitter_id "993153006" ;
+	:facebook "RepRodneyDavis" ;
+	schema:VideoObject "RepRodneyDavis" ;
+	:youtube_id "UCiGPTfpwRxqQp0Bam5S8zwA" ;
+	:instgram "reprodneydavis" .
+
+
+:r356	a rdfs:Resource ;
+	:bioguide_id "S001192" ;
+	:thomas_id "02168" ;
+	:govtrack_id "412581" ;
+	:twitter "RepChrisStewart" ;
+	:twitter_id "1072008757" ;
+	:facebook "RepChrisStewart" ;
+	schema:VideoObject "repchrisstewart" ;
+	:youtube_id "UCKYqzTvmQVWys-WhrCkbyPw" ;
+	:instgram "repChrisStewart" .
+
+
+:r357	a rdfs:Resource ;
+	:bioguide_id "B001282" ;
+	:thomas_id "02131" ;
+	:govtrack_id "412541" ;
+	:twitter "RepAndyBarr" ;
+	:twitter_id "1089334250" ;
+	:facebook "RepAndyBarr" ;
+	schema:VideoObject "RepAndyBarr" ;
+	:youtube_id "UCVL2s6x7f7H0ZJ-uwU0pQ6Q" .
+
+
+:r358	a rdfs:Resource ;
+	:bioguide_id "C001098" ;
+	:thomas_id "02175" ;
+	:govtrack_id "412573" ;
+	:twitter "SenTedCruz" ;
+	:twitter_id "1074480192" ;
+	:facebook "SenatorTedCruz" ;
+	schema:VideoObject "sentedcruz" ;
+	:youtube_id "UCOTZ-6H1rri1lSsj6IzhUyw" .
+
+
+:r359	a rdfs:Resource ;
+	:bioguide_id "D000096" ;
+	:thomas_id "01477" ;
+	:govtrack_id "400093" ;
+	:twitter "RepDannyDavis" ;
+	:twitter_id "789244177" ;
+	:facebook "CongressmanDKDavis" ;
+	schema:VideoObject "dannykdavis07" ;
+	:youtube_id "UCdhrT09_XMr31tuI8OcKsjQ" .
+
+
+:r360	a rdfs:Resource ;
+	:bioguide_id "G000546" ;
+	:thomas_id "01656" ;
+	:govtrack_id "400158" ;
+	:twitter "RepSamGraves" ;
+	:twitter_id "29766367" ;
+	:facebook "118514606128" .
+
+
+:r361	a rdfs:Resource ;
+	:bioguide_id "B001283" ;
+	:thomas_id "02155" ;
+	:govtrack_id "412567" ;
+	:twitter "RepJBridenstine" ;
+	:twitter_id "1092757885" ;
+	:facebook "CongressmanJimBridenstine" ;
+	schema:VideoObject "RepJimBridenstine" ;
+	:youtube_id "UC4uUpWvIK-fiOfTG_D3rX8g" ;
+	:instgram "repjbridenstine" ;
+	:instgram_id "295797332" .
+
+
+:r362	a rdfs:Resource ;
+	:bioguide_id "B001230" ;
+	:thomas_id "01558" ;
+	:govtrack_id "400013" ;
+	:twitter "SenatorBaldwin" ;
+	:twitter_id "1074518754" ;
+	:facebook "senatortammybaldwin" ;
+	schema:VideoObject "witammybaldwin" ;
+	:youtube_id "UC_XjYCRbbI2_TDDjJidwk0Q" ;
+	:instgram "senatorbaldwin" .
+
+
+:r363	a rdfs:Resource ;
+	:bioguide_id "W000810" ;
+	:thomas_id "02008" ;
+	:govtrack_id "412416" ;
+	:twitter "RepRobWoodall" ;
+	:twitter_id "2382685057" ;
+	:facebook "RepRobWoodall" ;
+	schema:VideoObject "RobWoodallGA07" ;
+	:youtube_id "UC7MSlu8zV6Mf8wYzek2Cb-w" ;
+	:instgram "reprobwoodall" .
+
+
+:r364	a rdfs:Resource ;
+	:bioguide_id "W000816" ;
+	:thomas_id "02165" ;
+	:govtrack_id "412578" ;
+	:twitter "RepRWilliams" ;
+	:twitter_id "1077446982" ;
+	:facebook "RepRogerWilliams" ;
+	:youtube_id "UCBtfmMMQarjtLB9U_pWMOhw" .
+
+
+:r365	a rdfs:Resource ;
+	:bioguide_id "D000598" ;
+	:thomas_id "01641" ;
+	:govtrack_id "400097" ;
+	:twitter "RepSusanDavis" ;
+	:twitter_id "432771620" ;
+	:facebook "RepSusanDavis" .
+
+
+:r366	a rdfs:Resource ;
+	:bioguide_id "D000622" ;
+	:thomas_id "02123" ;
+	:govtrack_id "412533" ;
+	:twitter "SenDuckworth" ;
+	:twitter_id "1058520120" ;
+	:facebook "SenDuckworth" ;
+	schema:VideoObject "repduckworth" ;
+	:youtube_id "UCYRWRvUxtjaHnFMCbdd94tg" ;
+	:instgram "repduckworth" ;
+	:instgram_id "1387939090" .
+
+
+:r367	a rdfs:Resource ;
+	:bioguide_id "O000170" ;
+	:thomas_id "02162" ;
+	:govtrack_id "412575" ;
+	:twitter "RepBetoORourke" ;
+	:twitter_id "1134292500" ;
+	:facebook "betoorourketx16" ;
+	schema:VideoObject "betoorourketx16" ;
+	:youtube_id "UClxfjz6tgqTbwYwQNy0VURg" .
+
+
+:r368	a rdfs:Resource ;
+	:bioguide_id "F000463" ;
+	:thomas_id "02179" ;
+	:govtrack_id "412556" ;
+	:twitter "SenatorFischer" ;
+	:twitter_id "1071402577" ;
+	:facebook "senatordebfischer" ;
+	schema:VideoObject "senatordebfischer" ;
+	:youtube_id "UCrbEfZaG_WhB0PBHI1hefPQ" ;
+	:instgram "senatorfischer" .
+
+
+:r369	a rdfs:Resource ;
+	:bioguide_id "H001068" ;
+	:thomas_id "02101" ;
+	:govtrack_id "412511" ;
+	:twitter "RepHuffman" ;
+	:twitter_id "1071102246" ;
+	:facebook "RepHuffman" ;
+	schema:VideoObject "rephuffman" ;
+	:youtube_id "UCJU6SP1ppp1ZhSiqZLiFgDA" ;
+	:instgram "rephuffman" .
+
+
+:r370	a rdfs:Resource ;
+	:bioguide_id "H001069" ;
+	:thomas_id "02174" ;
+	:govtrack_id "412554" ;
+	:twitter "SenatorHeitkamp" ;
+	:twitter_id "1061029050" ;
+	:facebook "SenatorHeidiHeitkamp" ;
+	schema:VideoObject "senatorheidiheitkamp" ;
+	:youtube_id "UCsIiu6s5KJ_VYzpT_b1Jh4g" ;
+	:instgram "senatorheitkamp" ;
+	:instgram_id "1146260729" .
+
+
+:r371	a rdfs:Resource ;
+	:bioguide_id "H001052" ;
+	:thomas_id "02026" ;
+	:govtrack_id "412434" ;
+	:twitter "RepAndyHarrisMD" ;
+	:twitter_id "960962340" ;
+	:facebook "AndyHarrisMD" ;
+	schema:VideoObject "RepAndyHarris" ;
+	:youtube_id "UCvUuV7FiJfJi1yux4qozgMg" .
+
+
+:r372	a rdfs:Resource ;
+	:bioguide_id "P000604" ;
+	:thomas_id "02097" ;
+	:govtrack_id "412506" ;
+	:twitter "RepDonaldPayne" ;
+	:twitter_id "1155335864" ;
+	:facebook "DonaldPayneJr" ;
+	:youtube_id "UCTG_SeYsOgbngjv1Donyu0w" ;
+	:instgram "repdonaldpaynejr" .
+
+
+:r373	a rdfs:Resource ;
+	:bioguide_id "P000608" ;
+	:thomas_id "02113" ;
+	:govtrack_id "412523" ;
+	:twitter "RepScottPeters" ;
+	:twitter_id "1135486501" ;
+	:facebook "RepScottPeters" ;
+	:youtube_id "UCQK77QJxW7Xr-S3zqeMd-0g" ;
+	:instgram "repscottpeters" .
+
+
+:r374	a rdfs:Resource ;
+	:bioguide_id "R000598" ;
+	:thomas_id "02158" ;
+	:govtrack_id "412570" ;
+	:twitter "KeithRothfus" ;
+	:twitter_id "1155212191" ;
+	:facebook "keithrothfus" ;
+	schema:VideoObject "reprothfus" ;
+	:youtube_id "UCPe5SCZKXEyUAMNUprj46Pg" .
+
+
+:r375	a rdfs:Resource ;
+	:bioguide_id "C001091" ;
+	:thomas_id "02163" ;
+	:govtrack_id "412576" ;
+	:twitter "JoaquinCastrotx" ;
+	:twitter_id "231510077" ;
+	:facebook "326420614138023" ;
+	schema:VideoObject "JoaquinCastroTX" ;
+	:youtube_id "UCsRxWnFdRiV2od1O5v5nEeQ" ;
+	:instgram "joaquincastrotx" ;
+	:instgram_id "378492005" .
+
+
+:r376	a rdfs:Resource ;
+	:bioguide_id "W000815" ;
+	:thomas_id "02152" ;
+	:govtrack_id "412564" ;
+	:twitter "RepBradWenstrup" ;
+	:twitter_id "518644221" ;
+	:facebook "RepBradWenstrup" ;
+	schema:VideoObject "repbradwenstrup" ;
+	:youtube_id "UCaK7SeUvmHdHTMtF3HXb-jA" ;
+	:instgram "repbradwenstrup" ;
+	:instgram_id "305496379" .
+
+
+:r377	a rdfs:Resource ;
+	:bioguide_id "V000129" ;
+	:thomas_id "02105" ;
+	:govtrack_id "412515" ;
+	:twitter "RepDavidValadao" ;
+	:twitter_id "1128514404" ;
+	:facebook "CongressmanDavidValadao" ;
+	schema:VideoObject "congressmanvaladao" ;
+	:youtube_id "UCWqOVVxQd6IV4mfYMi95LqA" .
+
+
+:r378	a rdfs:Resource ;
+	:bioguide_id "S001191" ;
+	:thomas_id "02099" ;
+	:govtrack_id "412509" ;
+	:twitter "RepSinema" ;
+	:twitter_id "1080844782" ;
+	:facebook "CongresswomanSinema" ;
+	schema:VideoObject "repsinema" ;
+	:youtube_id "UC4NzhW7D4lQdukSGWmFnK9w" .
+
+
+:r379	a rdfs:Resource ;
+	:bioguide_id "C001075" ;
+	:thomas_id "01925" ;
+	:govtrack_id "412269" ;
+	schema:VideoObject "SenatorBillCassidy" ;
+	:youtube_id "UCCEyGhUzxgkxFzWCY-rxz8g" .
+
+
+:r380	a rdfs:Resource ;
+	:bioguide_id "F000372" ;
+	:thomas_id "00414" ;
+	:govtrack_id "400142" ;
+	:twitter "USRepRodney" ;
+	:twitter_id "1382011333" ;
+	:facebook "rfrelinghuysen" ;
+	schema:VideoObject "RepFrelinghuysen" ;
+	:youtube_id "UCePp5KwEKTtu3GM6gkVIkmg" ;
+	:instgram "usreprodney" .
+
+
+:r381	a rdfs:Resource ;
+	:bioguide_id "G000558" ;
+	:thomas_id "01922" ;
+	:govtrack_id "412278" ;
+	:twitter "RepGuthrie" ;
+	:twitter_id "1908143071" ;
+	:facebook "CongressmanGuthrie" ;
+	schema:VideoObject "BrettGuthrie" ;
+	:youtube_id "UCdJhDw-YbdH0RHfWK0sIfiw" .
+
+
+:r382	a rdfs:Resource ;
+	:bioguide_id "L000578" ;
+	:thomas_id "02100" ;
+	:govtrack_id "412510" ;
+	:twitter "RepLaMalfa" ;
+	:twitter_id "1069124515" ;
+	:facebook "RepLaMalfa" ;
+	schema:VideoObject "RepLaMalfa" ;
+	:youtube_id "UCUzz1XDn862fxirervSB2Yw" ;
+	:instgram "repdouglamalfa" .
+
+
+:r383	a rdfs:Resource ;
+	:bioguide_id "C001066" ;
+	:thomas_id "01839" ;
+	:govtrack_id "412195" ;
+	:twitter "USRepKCastor" ;
+	:twitter_id "1880674038" ;
+	:facebook "USRepKathyCastor" ;
+	schema:VideoObject "RepKathyCastor" ;
+	:youtube_id "UC_irxhmLqVenTFPxDxznG6g" .
+
+
+:r384	a rdfs:Resource ;
+	:bioguide_id "K000367" ;
+	:thomas_id "01826" ;
+	:govtrack_id "412242" ;
+	schema:VideoObject "senatorklobuchar" ;
+	:youtube_id "UCvdeJsDsV51tFb_hVqvtYGA" .
+
+
+:r385	a rdfs:Resource ;
+	:bioguide_id "I000055" ;
+	:thomas_id "01608" ;
+	:govtrack_id "400194" ;
+	:twitter "SenatorIsakson" ;
+	:twitter_id "78403308" ;
+	schema:VideoObject "SenatorIsakson" ;
+	:youtube_id "UCO80zDwuLZHtGr-KOfl_XCQ" ;
+	:instgram "senatorisakson" .
+
+
+:r386	a rdfs:Resource ;
+	:bioguide_id "C001097" ;
+	:thomas_id "02107" ;
+	:govtrack_id "412517" ;
+	:twitter "RepCardenas" ;
+	:twitter_id "1222257180" ;
+	:facebook "repcardenas" ;
+	schema:VideoObject "repcardenas" ;
+	:youtube_id "UCm6ug1-yvYGL0F6DvYxfFBA" ;
+	:instgram "repcardenas" ;
+	:instgram_id "1483357690" .
+
+
+:r387	a rdfs:Resource ;
+	:bioguide_id "W000799" ;
+	:thomas_id "01856" ;
+	:govtrack_id "412214" ;
+	:twitter "RepTimWalz" ;
+	:twitter_id "1262814457" ;
+	schema:VideoObject "1529tjw" ;
+	:youtube_id "UCAaYwb6XgcSVZ-5s3ei2g6g" .
+
+
+:r388	a rdfs:Resource ;
+	:bioguide_id "P000607" ;
+	:thomas_id "02171" ;
+	:govtrack_id "412585" ;
+	:twitter "RepMarkPocan" ;
+	:twitter_id "1206227149" ;
+	:facebook "repmarkpocan" ;
+	schema:VideoObject "repmarkpocan" ;
+	:youtube_id "UCz5b47WER_u3dUGV_Zi70dQ" ;
+	:instgram "repmarkpocan" ;
+	:instgram_id "1422301608" .
+
+
+:r389	a rdfs:Resource ;
+	:bioguide_id "V000130" ;
+	:thomas_id "02112" ;
+	:govtrack_id "412522" ;
+	:twitter "RepJuanVargas" ;
+	:twitter_id "1260172386" ;
+	:facebook "RepJuanVargas" ;
+	schema:VideoObject "RepJuanVargas" ;
+	:youtube_id "UCpMthf8y7bEMJH_td0dznRQ" .
+
+
+:r390	a rdfs:Resource ;
+	:bioguide_id "K000384" ;
+	:thomas_id "02176" ;
+	:govtrack_id "412582" ;
+	:twitter "SenKaineOffice" ;
+	:twitter_id "1267940407" ;
+	:facebook "SenatorKaine" ;
+	schema:VideoObject "SenatorTimKaine" ;
+	:youtube_id "UC27LgTZlUnBQoNEQFZdn9LA" .
+
+
+:r391	a rdfs:Resource ;
+	:bioguide_id "S001194" ;
+	:thomas_id "02173" ;
+	:govtrack_id "412507" ;
+	:twitter "SenBrianSchatz" ;
+	:twitter_id "1262099252" ;
+	:facebook "SenBrianSchatz" ;
+	schema:VideoObject "senbrianschatz" ;
+	:youtube_id "UC8-mSYp2WqBiB_5iwtwKfow" .
+
+
+:r392	a rdfs:Resource ;
+	:bioguide_id "S001168" ;
+	:govtrack_id "412212" ;
+	:twitter "RepSarbanes" ;
+	:twitter_id "364415553" ;
+	:facebook "RepSarbanes" .
+
+
+:r393	a rdfs:Resource ;
+	:bioguide_id "B001285" ;
+	:govtrack_id "412516" ;
+	:twitter "JuliaBrownley26" ;
+	:twitter_id "1243902714" ;
+	:facebook "RepJuliaBrownley" ;
+	schema:VideoObject "RepJuliaBrownley" ;
+	:youtube_id "UCFrC4Ouk5R6xQztS9PZin_A" .
+
+
+:r394	a rdfs:Resource ;
+	:bioguide_id "M001184" ;
+	:thomas_id "02094" ;
+	:twitter "RepThomasMassie" ;
+	:twitter_id "975200486" ;
+	:facebook "RepThomasMassie" ;
+	schema:VideoObject "repthomasmassie" ;
+	:youtube_id "UCpmXOtvvXC3GE8o9VxYNK7g" .
+
+
+:r395	a rdfs:Resource ;
+	:bioguide_id "K000385" ;
+	:thomas_id "02190" ;
+	:twitter "RepRobinKelly" ;
+	:twitter_id "1339931490" ;
+	:facebook "reprobinkelly" ;
+	:youtube_id "UCLhcNPX2nNQLNzwKW0nEykg" .
+
+
+:r396	a rdfs:Resource ;
+	:bioguide_id "G000555" ;
+	:thomas_id "01866" ;
+	:twitter "SenGillibrand" ;
+	:twitter_id "72198806" ;
+	:facebook "SenKirstenGillibrand" ;
+	schema:VideoObject "KirstenEGillibrand" ;
+	:youtube_id "UCVEloQogVsmnkd5vxJInmYg" .
+
+
+:r397	a rdfs:Resource ;
+	:bioguide_id "R000584" ;
+	:thomas_id "01896" ;
+	:govtrack_id "412322" ;
+	:twitter "SenatorRisch" ;
+	:twitter_id "1096059529" ;
+	schema:VideoObject "SenatorJamesRisch" ;
+	:youtube_id "UCncKW8xyT5UbPNO27YuQnBA" .
+
+
+:r398	a rdfs:Resource ;
+	:bioguide_id "B001281" ;
+	:thomas_id "02153" ;
+	:govtrack_id "412565" ;
+	:twitter "RepBeatty" ;
+	:twitter_id "1531521632" ;
+	:facebook "RepJoyceBeatty" ;
+	:youtube_id "UCtVl3kb7Xvt3pY7l6x-M6LA" ;
+	:instgram "repbeatty" ;
+	:instgram_id "554027718" .
+
+
+:r399	a rdfs:Resource ;
+	:bioguide_id "S000051" ;
+	:thomas_id "01012" ;
+	:govtrack_id "400607" ;
+	:twitter "RepSanfordSC" ;
+	:twitter_id "1499993378" ;
+	:facebook "RepSanfordSC" ;
+	schema:VideoObject "RepSanfordSC" ;
+	:youtube_id "UCS33edNAxXe2pyFbnUUcZWA" .
+
+
+:r400	a rdfs:Resource ;
+	:bioguide_id "S001195" ;
+	:thomas_id "02191" ;
+	:govtrack_id "412596" ;
+	:twitter "RepJasonSmith" ;
+	:twitter_id "1623308912" ;
+	:facebook "repjasonsmith" ;
+	schema:VideoObject "RepJasonSmith" ;
+	:youtube_id "UCzj9-27Lr4gcqopmZAobXXg" .
+
+
+:r401	a rdfs:Resource ;
+	:bioguide_id "S000522" ;
+	:thomas_id "01071" ;
+	:govtrack_id "400380" ;
+	:twitter "RepChrisSmith" ;
+	:twitter_id "1289319271" ;
+	:facebook "RepChrisSmith" ;
+	schema:VideoObject "USRepChrisSmith" ;
+	:youtube_id "UCtCNUDo3-I1gsd_03ppDfZg" .
+
+
+:r402	a rdfs:Resource ;
+	:bioguide_id "M001169" ;
+	:thomas_id "01837" ;
+	:govtrack_id "412194" ;
+	:twitter "senmurphyoffice" ;
+	:twitter_id "2853793517" ;
+	:facebook "chrismurphyct" ;
+	schema:VideoObject "senchrismurphy" ;
+	:youtube_id "UCbcEa40PIFpLpdDe06n3F3Q" .
+
+
+:r403	a rdfs:Resource ;
+	:bioguide_id "B001288" ;
+	:thomas_id "02194" ;
+	:govtrack_id "412598" ;
+	:twitter "SenBooker" ;
+	:twitter_id "2167097881" ;
+	schema:VideoObject "SenCoryBooker" ;
+	:youtube_id "UC6FlymqNS1VettnVZa7goPA" .
+
+
+:r404	a rdfs:Resource ;
+	:bioguide_id "C001101" ;
+	:thomas_id "02196" ;
+	:govtrack_id "412600" ;
+	:twitter "RepKClark" ;
+	:twitter_id "2293131060" ;
+	:facebook "CongresswomanClark" ;
+	:youtube_id "UCgaI52w7QKI8LtkSeCCmSuw" .
+
+
+:r405	a rdfs:Resource ;
+	:bioguide_id "B001289" ;
+	:thomas_id "02197" ;
+	:govtrack_id "412601" ;
+	:twitter "RepByrne" ;
+	:twitter_id "2253968388" ;
+	:facebook "RepByrne" ;
+	:youtube_id "UCRUXmqQbrKo0T6xi_GT7TEA" ;
+	:instgram "repbyrne" ;
+	:instgram_id "944262792" .
+
+
+:r406	a rdfs:Resource ;
+	:bioguide_id "N000189" ;
+	:thomas_id "02275" ;
+	:govtrack_id "412660" ;
+	:twitter "RepNewhouse" ;
+	:twitter_id "2930635215" ;
+	:facebook "RepNewhouse" ;
+	:youtube_id "UCllbsv_aoIaPS6W3aSonZlw" .
+
+
+:r407	a rdfs:Resource ;
+	:bioguide_id "J000297" ;
+	:thomas_id "02278" ;
+	:govtrack_id "412663" ;
+	:twitter "RepEvanJenkins" ;
+	:twitter_id "2953713339" ;
+	:facebook "RepEvanJenkins" ;
+	:youtube_id "UCSy2mmlbZCv0p07KOw8-m7Q" ;
+	:instgram "RepEvanJenkins" .
+
+
+:r408	a rdfs:Resource ;
+	:bioguide_id "R000601" ;
+	:thomas_id "02268" ;
+	:govtrack_id "412653" ;
+	:twitter "RepRatcliffe" ;
+	:twitter_id "2847221717" ;
+	:facebook "RepRatcliffe" ;
+	:youtube_id "UCo37eRsRga4fUYijDa6j6oA" ;
+	:instgram "rep_ratcliffe" ;
+	:instgram_id "1679501092" .
+
+
+:r409	a rdfs:Resource ;
+	:bioguide_id "L000583" ;
+	:thomas_id "02238" ;
+	:govtrack_id "412624" ;
+	:twitter "RepLoudermilk" ;
+	:twitter_id "2914163523" ;
+	:facebook "reploudermilk" ;
+	:youtube_id "UC2Kfw8fjca8k3w3KpzL5tNg" ;
+	:instgram "RepLoudermilk" .
+
+
+:r410	a rdfs:Resource ;
+	:bioguide_id "C001103" ;
+	:thomas_id "02236" ;
+	:govtrack_id "412622" ;
+	:twitter "RepBuddyCarter" ;
+	:twitter_id "2973870195" ;
+	:facebook "congressmanbuddycarter" ;
+	:youtube_id "UCHQm49T6ikD_ioMAt50AwKQ" .
+
+
+:r411	a rdfs:Resource ;
+	:bioguide_id "C001107" ;
+	:thomas_id "02235" ;
+	:govtrack_id "412621" ;
+	:twitter "RepCurbelo" ;
+	:twitter_id "2853309155" ;
+	:facebook "repcurbelo" ;
+	:youtube_id "UC6SRoWRNiv5U4a7ovRICwaw" ;
+	:instgram "repcurbelo" .
+
+
+:r412	a rdfs:Resource ;
+	:bioguide_id "M001193" ;
+	:thomas_id "02258" ;
+	:govtrack_id "412643" ;
+	:twitter "RepTomMacArthur" ;
+	:twitter_id "2962994194" ;
+	:facebook "CongressmanTomMacArthur" ;
+	:youtube_id "UCLD7s-g8XgSd_wvuUWATKkQ" ;
+	:instgram "reptmac" .
+
+
+:r413	a rdfs:Resource ;
+	:bioguide_id "B001295" ;
+	:thomas_id "02243" ;
+	:govtrack_id "412629" ;
+	:twitter "RepBost" ;
+	:twitter_id "2964877294" ;
+	:facebook "RepBost" ;
+	:youtube_id "UCYA1psY06vSf3QadHuCrmjQ" .
+
+
+:r414	a rdfs:Resource ;
+	:bioguide_id "A000370" ;
+	:thomas_id "02201" ;
+	:govtrack_id "412607" ;
+	:twitter "RepAdams" ;
+	:twitter_id "2916086925" ;
+	:facebook "CongresswomanAdams" ;
+	:youtube_id "UCPI9ao1Cr1nxEUD2r-usRjQ" ;
+	:instgram "repadams" .
+
+
+:r415	a rdfs:Resource ;
+	:bioguide_id "C001105" ;
+	:thomas_id "02273" ;
+	:govtrack_id "412658" ;
+	:twitter "RepComstock" ;
+	:twitter_id "2933760046" ;
+	:facebook "RepBarbaraComstock" ;
+	:youtube_id "UC2IBUvBd51zgaE56fPcZeVA" ;
+	:instgram "repbarbaracomstock" .
+
+
+:r416	a rdfs:Resource ;
+	:bioguide_id "P000611" ;
+	:thomas_id "02247" ;
+	:govtrack_id "412633" ;
+	:twitter "RepPoliquin" ;
+	:twitter_id "2932617195" ;
+	:facebook "RepPoliquin" ;
+	:youtube_id "UCFk3paQ30PAME40YgJkuH4Q" .
+
+
+:r417	a rdfs:Resource ;
+	:bioguide_id "M001194" ;
+	:thomas_id "02248" ;
+	:govtrack_id "412634" ;
+	:twitter "RepMoolenaar" ;
+	:twitter_id "2696643955" ;
+	:facebook "RepMoolenaar" ;
+	:youtube_id "UCnMvVN4a8roZu4crE0UW2DA" ;
+	:instgram "RepMoolenaar" .
+
+
+:r418	a rdfs:Resource ;
+	:bioguide_id "S001196" ;
+	:thomas_id "02263" ;
+	:govtrack_id "412648" ;
+	:twitter "RepStefanik" ;
+	:twitter_id "2962813893" ;
+	:facebook "RepEliseStefanik" ;
+	:youtube_id "UCHvf42C8Vw6QnjwO2L2ukKA" .
+
+
+:r419	a rdfs:Resource ;
+	:bioguide_id "C001106" ;
+	:thomas_id "02266" ;
+	:govtrack_id "412651" ;
+	:twitter "RepRyanCostello" ;
+	:twitter_id "2953922782" ;
+	:facebook "CongressmanRyanCostello" ;
+	:youtube_id "UCJzU_8Bwz1lUyP1qz84L5jw" ;
+	:instgram "RepRyanCostello" .
+
+
+:r420	a rdfs:Resource ;
+	:bioguide_id "R000603" ;
+	:thomas_id "02256" ;
+	:govtrack_id "412641" ;
+	:twitter "RepDavidRouzer" ;
+	:twitter_id "834069080" ;
+	:facebook "RepRouzer" ;
+	:youtube_id "UCBvOxpqoGi1HlHjX9v_gHZw" ;
+	:instgram "repdavidrouzer" .
+
+
+:r421	a rdfs:Resource ;
+	:bioguide_id "P000609" ;
+	:thomas_id "02221" ;
+	:govtrack_id "412608" ;
+	:twitter "USRepGaryPalmer" ;
+	:twitter_id "2861616083" ;
+	:facebook "CongressmanGaryPalmer" ;
+	:youtube_id "UCYZfP-cNIvlJY3AcAc9OPpQ" ;
+	:instgram "usrepgarypalmer" ;
+	:instgram_id "1551536636" .
+
+
+:r422	a rdfs:Resource ;
+	:bioguide_id "M001197" ;
+	:thomas_id "02225" ;
+	:govtrack_id "412611" ;
+	:twitter "RepMcSally" ;
+	:twitter_id "2964949642" ;
+	:facebook "RepMcSally" ;
+	:youtube_id "UCfHMG2Db0TJ_RatSBHuH8NA" ;
+	:instgram "repmcsally" .
+
+
+:r423	a rdfs:Resource ;
+	:bioguide_id "E000294" ;
+	:thomas_id "02253" ;
+	:govtrack_id "412639" ;
+	:twitter "RepTomEmmer" ;
+	:twitter_id "2914515430" ;
+	:facebook "reptomemmer" ;
+	schema:VideoObject "RepTomEmmer" ;
+	:instgram "reptomemmer" ;
+	:instgram_id "1565640999" .
+
+
+:r424	a rdfs:Resource ;
+	:bioguide_id "R000604" ;
+	:thomas_id "02265" ;
+	:govtrack_id "412650" ;
+	:twitter "RepRussell" ;
+	:twitter_id "2966758114" ;
+	:facebook "reprussell" ;
+	:youtube_id "UC2z7ACZuDophcPphXdJfbZQ" .
+
+
+:r425	a rdfs:Resource ;
+	:bioguide_id "A000374" ;
+	:thomas_id "02244" ;
+	:govtrack_id "412630" ;
+	:twitter "RepAbraham" ;
+	:twitter_id "2962891515" ;
+	:facebook "CongressmanRalphAbraham" .
+
+
+:r426	a rdfs:Resource ;
+	:bioguide_id "Y000066" ;
+	:thomas_id "02242" ;
+	:govtrack_id "412628" ;
+	:twitter "RepDavidYoung" ;
+	:twitter_id "314205957" ;
+	:facebook "RepDavidYoung" ;
+	:youtube_id "UCD2SzM1kn4iZfHccN4bocQA" ;
+	:instgram "repdavidyoung" .
+
+
+:r427	a rdfs:Resource ;
+	:bioguide_id "Z000017" ;
+	:thomas_id "02261" ;
+	:govtrack_id "412646" ;
+	:twitter "RepLeeZeldin" ;
+	:twitter_id "2750127259" ;
+	:facebook "RepLeeZeldin" ;
+	:youtube_id "UCHzZuesCPDka2NhZO8icqzA" .
+
+
+:r428	a rdfs:Resource ;
+	:bioguide_id "K000386" ;
+	:thomas_id "02264" ;
+	:govtrack_id "412649" ;
+	:twitter "RepJohnKatko" ;
+	:twitter_id "2966765501" ;
+	:facebook "RepJohnKatko" .
+
+
+:r429	a rdfs:Resource ;
+	:bioguide_id "W000821" ;
+	:thomas_id "02224" ;
+	:govtrack_id "412610" ;
+	:twitter "RepWesterman" ;
+	:twitter_id "2852998461" ;
+	:facebook "RepWesterman" ;
+	:youtube_id "UCNshPbmupCwP5a7Hi79jETQ" .
+
+
+:r430	a rdfs:Resource ;
+	:bioguide_id "H001072" ;
+	:thomas_id "02223" ;
+	:govtrack_id "412609" ;
+	:twitter "RepFrenchHill" ;
+	:twitter_id "2953974395" ;
+	:facebook "RepFrenchHill" ;
+	:youtube_id "UCT8uWroJtkwSsCJlVg0IKvQ" ;
+	:instgram "repfrenchhill" .
+
+
+:r431	a rdfs:Resource ;
+	:bioguide_id "B001291" ;
+	:thomas_id "02270" ;
+	:govtrack_id "412655" ;
+	:twitter "RepBrianBabin" ;
+	:twitter_id "2929491549" ;
+	:facebook "RepBrianBabin" ;
+	:youtube_id "UCPVEZgw-VbDRbLV1MRGVQNQ" .
+
+
+:r432	a rdfs:Resource ;
+	:bioguide_id "M001195" ;
+	:thomas_id "02277" ;
+	:govtrack_id "412662" ;
+	:twitter "RepAlexMooney" ;
+	:twitter_id "2964526557" ;
+	:facebook "CongressmanAlexMooney" ;
+	:youtube_id "UCw9CGkF4Re3areluI43TGyA" ;
+	:instgram "repalexmooney" .
+
+
+:r433	a rdfs:Resource ;
+	:bioguide_id "T000475" ;
+	:thomas_id "02250" ;
+	:govtrack_id "412636" ;
+	:twitter "repdavetrott" ;
+	:twitter_id "2869746172" ;
+	:facebook "RepDaveTrott" ;
+	:youtube_id "UCkIE7mLSCRV6QidM2fuil4w" .
+
+
+:r434	a rdfs:Resource ;
+	:bioguide_id "B001297" ;
+	:thomas_id "02233" ;
+	:govtrack_id "412619" ;
+	:twitter "RepKenBuck" ;
+	:twitter_id "2862577383" ;
+	:facebook "repkenbuck" ;
+	:youtube_id "UCHK7Wcwij7NoxXGTeSHUWzg" .
+
+
+:r435	a rdfs:Resource ;
+	:bioguide_id "B001294" ;
+	:thomas_id "02241" ;
+	:govtrack_id "412627" ;
+	:twitter "RepRodBlum" ;
+	:twitter_id "2965083477" ;
+	:facebook "congressmanrodblum" ;
+	:youtube_id "UCACYUrK1zFAZzKcmz9ibEAg" .
+
+
+:r436	a rdfs:Resource ;
+	:bioguide_id "B001293" ;
+	:thomas_id "02249" ;
+	:govtrack_id "412635" ;
+	:twitter "RepMikeBishop" ;
+	:twitter_id "2914571740" ;
+	:facebook "RepMikeBishop" ;
+	:youtube_id "UCeG5_Zwq-4KXnGWufThSKRQ" .
+
+
+:r437	a rdfs:Resource ;
+	:bioguide_id "R000602" ;
+	:thomas_id "02262" ;
+	:govtrack_id "412647" ;
+	:twitter "RepKathleenRice" ;
+	:twitter_id "2970462034" ;
+	:facebook "RepKathleenRice" ;
+	:youtube_id "UCLYLmjrGtzzCFXMWPBxHAug" .
+
+
+:r438	a rdfs:Resource ;
+	:bioguide_id "D000624" ;
+	:thomas_id "02251" ;
+	:govtrack_id "412637" ;
+	:twitter "RepDebDingell" ;
+	:twitter_id "2970279814" ;
+	:facebook "RepDebbieDingell" ;
+	:youtube_id "UCnoP3KLT-HOvzDfC1-I-9lQ" ;
+	:instgram "repdingell" .
+
+
+:r439	a rdfs:Resource ;
+	:bioguide_id "T000474" ;
+	:thomas_id "02231" ;
+	:govtrack_id "412617" ;
+	:twitter "NormaJTorres" ;
+	:twitter_id "236279233" ;
+	:facebook "RepNormaTorres" ;
+	:youtube_id "UCvWY4qKP6--o3pIJY7hhKDg" .
+
+
+:r440	a rdfs:Resource ;
+	:bioguide_id "S001197" ;
+	:thomas_id "02289" ;
+	:govtrack_id "412671" ;
+	:twitter "SenSasse" ;
+	:twitter_id "2962923040" ;
+	:facebook "SenatorSasse" ;
+	:youtube_id "UCYaNGwcM2Dl5yDcDqS6xV2g" ;
+	:instgram "senatorsasse" ;
+	:instgram_id "1636974433" .
+
+
+:r441	a rdfs:Resource ;
+	:bioguide_id "K000387" ;
+	:thomas_id "02228" ;
+	:govtrack_id "412614" ;
+	:twitter "SteveKnight25" ;
+	:twitter_id "2974648323" ;
+	:facebook "RepresentativeSteveKnight" ;
+	:youtube_id "UCNfnbtkP6hGUq1TLFQ3fD5Q" ;
+	:instgram "repsteveknight" .
+
+
+:r442	a rdfs:Resource ;
+	:bioguide_id "S001198" ;
+	:thomas_id "02290" ;
+	:govtrack_id "412665" ;
+	:twitter "SenDanSullivan" ;
+	:twitter_id "2891210047" ;
+	:facebook "SenDanSullivan" ;
+	:youtube_id "UC7tXCm8gKlAhTFo2kuf5ylw" ;
+	:instgram "sen_dansullivan" ;
+	:instgram_id "1660873387" .
+
+
+:r443	a rdfs:Resource ;
+	:bioguide_id "L000584" ;
+	:thomas_id "02271" ;
+	:govtrack_id "412656" ;
+	:twitter "repmialove" ;
+	:twitter_id "2976598347" ;
+	:facebook "repmialove" ;
+	:youtube_id "UCqHVv1qerDPYaH9NbyWyxtg" .
+
+
+:r444	a rdfs:Resource ;
+	:bioguide_id "A000372" ;
+	:thomas_id "02239" ;
+	:govtrack_id "412625" ;
+	:twitter "reprickallen" ;
+	:twitter_id "2964287128" ;
+	:facebook "CongressmanRickAllen" ;
+	:youtube_id "UCZPoYXHFDAV17BGLMzGAmpg" ;
+	:instgram "reprickallen" ;
+	:instgram_id "1666787116" .
+
+
+:r445	a rdfs:Resource ;
+	:bioguide_id "R000605" ;
+	:thomas_id "02288" ;
+	:govtrack_id "412669" ;
+	:twitter "SenatorRounds" ;
+	:twitter_id "2955485182" ;
+	:facebook "SenatorMikeRounds" ;
+	:youtube_id "UC-pvzimyBdpdkcIfsicrfrQ" .
+
+
+:r446	a rdfs:Resource ;
+	:bioguide_id "W000820" ;
+	:thomas_id "02232" ;
+	:govtrack_id "412618" ;
+	:twitter "RepMimiWalters" ;
+	:twitter_id "47798449" ;
+	:facebook "RepMimiWalters" ;
+	:youtube_id "UCyFubcwlZVLVLg-T-2PuooQ" ;
+	:instgram "rep_mimiwalters" ;
+	:instgram_id "301820337" .
+
+
+:r447	a rdfs:Resource ;
+	:bioguide_id "B001296" ;
+	:thomas_id "02267" ;
+	:govtrack_id "412652" ;
+	:twitter "CongBoyle" ;
+	:twitter_id "4304448314" ;
+	:facebook "CongressmanBoyle" ;
+	:youtube_id "UCMP_Anj7lz4eZuSh8GwFqQQ" .
+
+
+:r448	a rdfs:Resource ;
+	:bioguide_id "H001071" ;
+	:thomas_id "02237" ;
+	:govtrack_id "412623" ;
+	:twitter "congressmanhice" ;
+	:twitter_id "2975091705" ;
+	:facebook "CongressmanJodyHice" ;
+	:youtube_id "UCzUMsS8DusN2QLpgweFthgQ" .
+
+
+:r449	a rdfs:Resource ;
+	:bioguide_id "A000371" ;
+	:thomas_id "02229" ;
+	:govtrack_id "412615" ;
+	:twitter "reppeteaguilar" ;
+	:twitter_id "3018670151" ;
+	:facebook "reppeteaguilar" ;
+	:youtube_id "UCxwbFLOlKDsXrwizV5jah7g" .
+
+
+:r450	a rdfs:Resource ;
+	:bioguide_id "G000574" ;
+	:thomas_id "02226" ;
+	:govtrack_id "412612" ;
+	:twitter "RepRubenGallego" ;
+	:twitter_id "2966570782" ;
+	:facebook "RepRubenGallego" ;
+	:instgram "reprubengallego" .
+
+
+:r451	a rdfs:Resource ;
+	:bioguide_id "P000612" ;
+	:thomas_id "02286" ;
+	:govtrack_id "412666" ;
+	:twitter "sendavidperdue" ;
+	:twitter_id "2863210809" ;
+	:facebook "SenatorDavidPerdue" ;
+	:youtube_id "UCXHsrkPP4TAm0s0qB1C31Lw" ;
+	:instgram "sendavidperdue" ;
+	:instgram_id "1650058430" .
+
+
+:r452	a rdfs:Resource ;
+	:bioguide_id "P000610" ;
+	:thomas_id "02274" ;
+	:govtrack_id "412659" ;
+	:twitter "staceyplaskett" ;
+	:twitter_id "2724095695" ;
+	:facebook "repstaceyplaskett" ;
+	:youtube_id "UC3V7biFZHDFHDFZy6cCSZUA" .
+
+
+:r453	a rdfs:Resource ;
+	:bioguide_id "W000822" ;
+	:thomas_id "02259" ;
+	:govtrack_id "412644" ;
+	:twitter "RepBonnie" ;
+	:twitter_id "2968451607" ;
+	:facebook "RepBonnie" ;
+	:youtube_id "UCrxEaX0VKZKwg3930du2D5A" ;
+	:instgram "repbonnie" .
+
+
+:r454	a rdfs:Resource ;
+	:bioguide_id "H001073" ;
+	:thomas_id "02269" ;
+	:govtrack_id "412654" ;
+	:twitter "hurdonthehill" ;
+	:twitter_id "2963445730" ;
+	:facebook "HurdOnTheHill" ;
+	:youtube_id "UCjWcn2lgGCZbwPs6lKxlziQ" ;
+	:instgram "hurdonthehill" .
+
+
+:r455	a rdfs:Resource ;
+	:bioguide_id "L000582" ;
+	:thomas_id "02230" ;
+	:govtrack_id "412616" ;
+	:twitter "RepTedLieu" ;
+	:twitter_id "3044993235" ;
+	:facebook "RepTedLieu" ;
+	:youtube_id "UC9qcJxTqfDNBnVul1IojlFg" ;
+	:instgram "RepTedLieu" .
+
+
+:r456	a rdfs:Resource ;
+	:bioguide_id "G000577" ;
+	:thomas_id "02245" ;
+	:govtrack_id "412631" ;
+	:twitter "RepGarretGraves" ;
+	:twitter_id "2951574214" ;
+	:facebook "CongressmanGarretGraves" ;
+	:youtube_id "UCQLg9GGwTDluEFJtXf8seTA" ;
+	:instgram "instagravesla" .
+
+
+:r457	a rdfs:Resource ;
+	:bioguide_id "D000623" ;
+	:thomas_id "02227" ;
+	:govtrack_id "412613" ;
+	:twitter "RepDeSaulnier" ;
+	:twitter_id "2968007206" ;
+	:facebook "RepMarkDeSaulnier" ;
+	:instgram "repdesaulnier" .
+
+
+:r458	a rdfs:Resource ;
+	:bioguide_id "W000819" ;
+	:thomas_id "02255" ;
+	:govtrack_id "412670" ;
+	:twitter "RepMarkWalker" ;
+	:twitter_id "2966205003" ;
+	:facebook "RepMarkWalker" ;
+	:youtube_id "UC2w0KJe43jr0Hlhi6J5smhg" ;
+	:instgram "repmarkwalker" ;
+	:instgram_id "1638422078" .
+
+
+:r459	a rdfs:Resource ;
+	:bioguide_id "M001196" ;
+	:thomas_id "02246" ;
+	:govtrack_id "412632" ;
+	:twitter "teammoulton" ;
+	:twitter_id "3091316093" ;
+	:facebook "CongressmanSethMoulton" ;
+	:youtube_id "UC5w5qn7nj5Ljy69LTV7a_fQ" ;
+	:instgram "repmoulton" .
+
+
+:r460	a rdfs:Resource ;
+	:bioguide_id "B001292" ;
+	:thomas_id "02272" ;
+	:govtrack_id "412657" ;
+	:twitter "repdonbeyer" ;
+	:twitter_id "2962868158" ;
+	:facebook "repdonbeyer" ;
+	:youtube_id "UCPJGVbOVcAVGiBwq8qr_T9w" ;
+	:instgram "repdonbeyer" .
+
+
+:r461	a rdfs:Resource ;
+	:bioguide_id "G000576" ;
+	:thomas_id "02276" ;
+	:govtrack_id "412661" ;
+	:twitter "RepGrothman" ;
+	:twitter_id "2976606250" ;
+	:facebook "RepGrothman" ;
+	:youtube_id "UCui4k83Cot4aeVW_8T33fgg" .
+
+
+:r462	a rdfs:Resource ;
+	:bioguide_id "N000188" ;
+	:thomas_id "02202" ;
+	:govtrack_id "412606" ;
+	:twitter "DonaldNorcross" ;
+	:twitter_id "3122099613" ;
+	:facebook "DonaldNorcrossNJ" ;
+	:youtube_id "UC7kXK_PyDiOT8YrdP0jYZHw" ;
+	:instgram "donald_norcross" .
+
+
+:r463	a rdfs:Resource ;
+	:bioguide_id "L000581" ;
+	:thomas_id "02252" ;
+	:govtrack_id "412638" ;
+	:twitter "RepLawrence" ;
+	:twitter_id "2863006655" ;
+	:facebook "395759603917487" ;
+	:youtube_id "UCf0USy9GNigkB8O9sS1dodw" ;
+	:instgram "repbrendalawrence" .
+
+
+:r464	a rdfs:Resource ;
+	:bioguide_id "B001290" ;
+	:thomas_id "02203" ;
+	:govtrack_id "412605" ;
+	:twitter "RepDaveBrat" ;
+	:twitter_id "2560169238" ;
+	:facebook "RepDaveBrat" .
+
+
+:r465	a rdfs:Resource ;
+	:bioguide_id "K000388" ;
+	:govtrack_id "412673" ;
+	:twitter "reptrentkelly" ;
+	:twitter_id "3317799825" ;
+	:facebook "reptrentkelly" ;
+	:youtube_id "UCtDrz-8tdg4ZgOAQHToSWaQ" ;
+	:instgram "reptrentkelly" .
+
+
+:r466	a rdfs:Resource ;
+	:bioguide_id "R000409" ;
+	:thomas_id "00979" ;
+	:govtrack_id "400343" ;
+	:twitter "reprohrabacher" ;
+	:twitter_id "831483464" ;
+	:facebook "RepRohrabacher" ;
+	schema:VideoObject "RepDanaRohrabacher" ;
+	:youtube_id "UCFr7qO61vGJyyBJ7B_gB1_Q" .
+
+
+:r467	a rdfs:Resource ;
+	:bioguide_id "D000625" ;
+	:thomas_id "02293" ;
+	:govtrack_id "412672" ;
+	:twitter "RepDanDonovan" ;
+	:twitter_id "3353670647" ;
+	:facebook "RepDanDonovan" ;
+	:youtube_id "UCT8-VskXvxCqDuSGzR5sWWg" .
+
+
+:r468	a rdfs:Resource ;
+	:bioguide_id "L000585" ;
+	:thomas_id "02295" ;
+	:govtrack_id "412674" ;
+	:twitter "RepLaHood" ;
+	:twitter_id "3686482216" ;
+	:facebook "replahood" ;
+	:youtube_id "UCVRbtFwaBGcixZIkygtalRw" .
+
+
+:r469	a rdfs:Resource ;
+	:bioguide_id "B001299" ;
+	:govtrack_id "412702" ;
+	:twitter "RepJimBanks" ;
+	:twitter_id "816131319033949952" ;
+	:facebook "RepJimBanks" ;
+	:youtube_id "UC_FR6TySW9uxvhjozkis6Xg" ;
+	:instgram "repjimbanks" .
+
+
+:r470	a rdfs:Resource ;
+	:bioguide_id "D000627" ;
+	:govtrack_id "412696" ;
+	:twitter "RepValDemings" ;
+	:twitter_id "798973032362605952" ;
+	:facebook "RepresentativeValDemings" ;
+	:youtube_id "UCkcshqwFNJG6XeduOforhig" ;
+	:instgram "repvaldemings" .
+
+
+:r471	a rdfs:Resource ;
+	:bioguide_id "B001303" ;
+	:govtrack_id "412689" ;
+	:twitter "RepBRochester" ;
+	:twitter_id "817050219007328000" ;
+	:facebook "Rep.BluntRochester" .
+
+
+:r472	a rdfs:Resource ;
+	:bioguide_id "R000606" ;
+	:govtrack_id "412708" ;
+	:twitter "repraskin" ;
+	:twitter_id "806906355214851968" ;
+	:facebook "repraskin" ;
+	:youtube_id "UChxDE6vho5BfBTOqiBsDmKg" ;
+	:instgram "repraskin" .
+
+
+:r473	a rdfs:Resource ;
+	:bioguide_id "P000613" ;
+	:govtrack_id "412685" ;
+	:twitter "RepJimmyPanetta" ;
+	:twitter_id "796736612554116992" ;
+	:facebook "RepJimmyPanetta" ;
+	:youtube_id "UCmw-aERG51C96edMDPN7fXQ" ;
+	:instgram "repjimmypanetta" .
+
+
+:r474	a rdfs:Resource ;
+	:bioguide_id "C001111" ;
+	:govtrack_id "412697" ;
+	:twitter "repcharliecrist" ;
+	:twitter_id "816030424778542976" ;
+	:facebook "RepCharlieCrist" ;
+	:instgram "repcharliecrist" .
+
+
+:r475	a rdfs:Resource ;
+	:bioguide_id "D000628" ;
+	:govtrack_id "412691" ;
+	:twitter "drnealdunnfl2" ;
+	:twitter_id "815952318487298048" ;
+	:facebook "drnealdunnfl2" ;
+	:youtube_id "UCRTGfrYP-RuDzJ2KGok7TRA" .
+
+
+:r476	a rdfs:Resource ;
+	:bioguide_id "B001300" ;
+	:govtrack_id "412687" ;
+	:twitter "RepBarragan" ;
+	:twitter_id "816833925456788992" ;
+	:facebook "CongresswomanBarragan" .
+
+
+:r477	a rdfs:Resource ;
+	:bioguide_id "B001302" ;
+	:govtrack_id "412683" ;
+	:twitter "RepAndyBiggsAZ" ;
+	:twitter_id "816652616625168000" ;
+	:facebook "RepAndyBiggs" ;
+	:youtube_id "UCqSq9kWOxk9yNTeILBCVC1w" ;
+	:instgram "repandybiggs" .
+
+
+:r478	a rdfs:Resource ;
+	:bioguide_id "M001199" ;
+	:govtrack_id "412698" ;
+	:twitter "repbrianmast" ;
+	:twitter_id "814103950404238976" ;
+	:facebook "repbrianmast" ;
+	schema:VideoObject "repbrianmast" .
+
+
+:r479	a rdfs:Resource ;
+	:bioguide_id "M001200" ;
+	:govtrack_id "412728" ;
+	:twitter "RepMcEachin" ;
+	:twitter_id "816181091673447936" ;
+	:facebook "RepMcEachin" ;
+	:youtube_id "UCMoPYHuZ3fZho0ZixZCfiFg" ;
+	:instgram "repmceachin" .
+
+
+:r480	a rdfs:Resource ;
+	:bioguide_id "D000626" ;
+	:thomas_id "02296" ;
+	:govtrack_id "412675" ;
+	:twitter "WarrenDavidson" ;
+	:twitter_id "742735530287303936" ;
+	:facebook "CongressmanWarrenDavidson" ;
+	:youtube_id "UCMzuyZWzk44YRNesFzPTeUw" .
+
+
+:r481	a rdfs:Resource ;
+	:bioguide_id "F000465" ;
+	:govtrack_id "412700" ;
+	:twitter "RepDrewFerguson" ;
+	:twitter_id "806583915012045952" ;
+	:facebook "RepDrewFerguson" ;
+	:youtube_id "UCuK7_j2sREWi_7wBAN477bg" ;
+	:instgram "repdrewferguson" .
+
+
+:r482	a rdfs:Resource ;
+	:bioguide_id "G000581" ;
+	:govtrack_id "412725" ;
+	:twitter "RepGonzalez" ;
+	:twitter_id "818536152588237952" ;
+	:facebook "USCongressmanVicenteGonzalez" ;
+	:youtube_id "UC5H6oYLKQ_xIXO5CG7fh4hw" ;
+	:instgram "repvicentegonzaleztx" .
+
+
+:r483	a rdfs:Resource ;
+	:bioguide_id "G000583" ;
+	:govtrack_id "412714" ;
+	:twitter "RepJoshG" ;
+	:twitter_id "815310506596690944" ;
+	:facebook "RepJoshG" ;
+	:instgram "RepJoshG" .
+
+
+:r484	a rdfs:Resource ;
+	:bioguide_id "G000580" ;
+	:govtrack_id "412729" ;
+	:twitter "RepTomGarrett" ;
+	:twitter_id "818460870573441024" ;
+	:facebook "congressman-Tom-Garrett-1835767753333490" ;
+	:youtube_id "UC_lWS6tnQPcBPlmD2e99zKw" .
+
+
+:r485	a rdfs:Resource ;
+	:bioguide_id "C001113" ;
+	:govtrack_id "412681" ;
+	:twitter "sencortezmasto" ;
+	:twitter_id "811313565760162944" ;
+	:facebook "SenatorCortezMasto" ;
+	:youtube_id "UCip_83SiKUqwnUT57VOXrCg" ;
+	:instgram "catherinecortezmastofornv" .
+
+
+:r486	a rdfs:Resource ;
+	:bioguide_id "K000389" ;
+	:govtrack_id "412684" ;
+	:twitter "RepRoKhanna" ;
+	:twitter_id "816298918468258944" ;
+	:facebook "RepRoKhanna" ;
+	:youtube_id "UCr4KOYv1o1oEQhy1jhhm3pQ" ;
+	:instgram "reprokhanna" .
+
+
+:r487	a rdfs:Resource ;
+	:bioguide_id "S001170" ;
+	:thomas_id "01861" ;
+	:govtrack_id "412219" ;
+	:twitter "repsheaporter" ;
+	:twitter_id "126171100" ;
+	:facebook "repsheaporter" .
+
+
+:r488	a rdfs:Resource ;
+	:bioguide_id "G000582" ;
+	:govtrack_id "412723" ;
+	:twitter "repjenniffer" ;
+	:twitter_id "819744763020775040" ;
+	:facebook "RepJennifferGonzalezColon" ;
+	:youtube_id "UCZj99h3-GNKjGGeyp7AJeXw" .
+
+
+:r489	a rdfs:Resource ;
+	:bioguide_id "M001202" ;
+	:govtrack_id "412694" ;
+	:twitter "RepStephMurphy" ;
+	:twitter_id "796183515998067968" ;
+	:facebook "RepStephMurphy" ;
+	schema:VideoObject "RepStephMurphy" ;
+	:instgram "RepStephMurphy" .
+
+
+:r490	a rdfs:Resource ;
+	:bioguide_id "H001074" ;
+	:govtrack_id "412703" ;
+	:twitter "reptrey" ;
+	:twitter_id "811986281177772032" ;
+	:facebook "reptrey" ;
+	:youtube_id "UCTgS8a_zLg8HpUnk5WXY5ag" .
+
+
+:r491	a rdfs:Resource ;
+	:bioguide_id "A000375" ;
+	:govtrack_id "412726" ;
+	:twitter "RepArrington" ;
+	:twitter_id "816284664658873984" ;
+	:facebook "JodeyArrington" .
+
+
+:r492	a rdfs:Resource ;
+	:bioguide_id "C001109" ;
+	:govtrack_id "412732" ;
+	:twitter "RepLizCheney" ;
+	:twitter_id "816719802328715008" ;
+	:facebook "replizcheney" .
+
+
+:r493	a rdfs:Resource ;
+	:bioguide_id "C001112" ;
+	:govtrack_id "412686" ;
+	:twitter "RepCarbajal" ;
+	:twitter_id "816157667882372992" ;
+	:facebook "repsaludcarbajal" ;
+	schema:VideoObject "repcarbajal" ;
+	:instgram "repcarbajal" .
+
+
+:r494	a rdfs:Resource ;
+	:bioguide_id "S001201" ;
+	:govtrack_id "412717" ;
+	:twitter "RepTomSuozzi" ;
+	:twitter_id "816705409486617984" ;
+	:facebook "RepTomSuozzi" .
+
+
+:r495	a rdfs:Resource ;
+	:bioguide_id "S001190" ;
+	:thomas_id "02124" ;
+	:govtrack_id "412534" ;
+	:twitter "repschneider" ;
+	:twitter_id "1071840474" ;
+	:facebook "CongressmanBradSchneider" ;
+	schema:VideoObject "RepBradSchneider" ;
+	:instgram "repschneider" .
+
+
+:r496	a rdfs:Resource ;
+	:bioguide_id "F000464" ;
+	:govtrack_id "412719" ;
+	:twitter "RepJohnFaso" ;
+	:twitter_id "815931811348017024" ;
+	:facebook "RepJohnFaso" ;
+	:instgram "RepJohnFaso" .
+
+
+:r497	a rdfs:Resource ;
+	:bioguide_id "T000478" ;
+	:govtrack_id "412720" ;
+	:twitter "RepTenney" ;
+	:twitter_id "797201048490429952" ;
+	:facebook "RepClaudiaTenney" ;
+	:instgram "repclaudiatenney" .
+
+
+:r498	a rdfs:Resource ;
+	:bioguide_id "B001305" ;
+	:govtrack_id "412712" ;
+	:twitter "RepTedBudd" ;
+	:twitter_id "817138492614524032" ;
+	:facebook "RepTedBudd" .
+
+
+:r499	a rdfs:Resource ;
+	:bioguide_id "J000298" ;
+	:govtrack_id "412730" ;
+	:twitter "RepJayapal" ;
+	:twitter_id "815733290955111936" ;
+	:facebook "RepJayapal" ;
+	:youtube_id "UCmyD0_-2Oowkfwc_Raghclw" ;
+	:instgram "repjayapal" .
+
+
+:r500	a rdfs:Resource ;
+	:bioguide_id "F000466" ;
+	:govtrack_id "412721" ;
+	:twitter "repbrianfitz" ;
+	:twitter_id "816303263586914048" ;
+	:facebook "repbrianfitzpatrick" ;
+	:youtube_id "UCYMNcgHss4_Q5JY2vSvMpgw" ;
+	:instgram "repbrianfitz" .
+
+
+:r501	a rdfs:Resource ;
+	:bioguide_id "O000171" ;
+	:govtrack_id "412682" ;
+	:twitter "repohalleran" ;
+	:twitter_id "808416682972770048" ;
+	:facebook "repohalleran" ;
+	:instgram "repohalleran" .
+
+
+:r502	a rdfs:Resource ;
+	:bioguide_id "R000607" ;
+	:govtrack_id "412699" ;
+	:twitter "RepRooney" ;
+	:twitter_id "816111677917851008" ;
+	:facebook "RepRooney" ;
+	:youtube_id "UC5dLBbrW1JwIGs9h248lk6g" ;
+	:instgram "RepFrancisRooney" .
+
+
+:r503	a rdfs:Resource ;
+	:bioguide_id "K000390" ;
+	:govtrack_id "412716" ;
+	:twitter "RepKihuen" ;
+	:twitter_id "816282029276937984" ;
+	:facebook "RepKihuen" ;
+	:instgram "RepKihuen" .
+
+
+:r504	a rdfs:Resource ;
+	:bioguide_id "K000393" ;
+	:govtrack_id "412679" ;
+	:twitter "SenJohnKennedy" ;
+	:twitter_id "816683274076614016" ;
+	:facebook "JohnKennedyLouisiana" .
+
+
+:r505	a rdfs:Resource ;
+	:bioguide_id "L000586" ;
+	:govtrack_id "412693" ;
+	:twitter "RepAlLawsonJr" ;
+	:twitter_id "818472418620608000" ;
+	:facebook "RepAlLawsonJr" .
+
+
+:r506	a rdfs:Resource ;
+	:bioguide_id "M001201" ;
+	:govtrack_id "412710" ;
+	:twitter "RepPaulMitchell" ;
+	:twitter_id "811632636598909952" ;
+	:facebook "reppaulmitchell" ;
+	:youtube_id "UCisQXodHJRZDaLtFMq_TzWg" ;
+	:instgram "reppaulmitchell" .
+
+
+:r507	a rdfs:Resource ;
+	:bioguide_id "K000391" ;
+	:govtrack_id "412701" ;
+	:twitter "congressmanraja" ;
+	:twitter_id "814179031956487936" ;
+	:facebook "congressmanraja" ;
+	:instgram "congressmanraja" .
+
+
+:r508	a rdfs:Resource ;
+	:bioguide_id "H001076" ;
+	:govtrack_id "412680" ;
+	:twitter "Senatorhassan" ;
+	:twitter_id "946549322" ;
+	:facebook "SenatorHassan" .
+
+
+:r509	a rdfs:Resource ;
+	:bioguide_id "E000297" ;
+	:govtrack_id "412718" ;
+	:twitter "RepEspaillat" ;
+	:twitter_id "817076257770834944" ;
+	:facebook "RepEspaillat" ;
+	:youtube_id "UCi0niBYFhEY70Dz8InbX5OQ" .
+
+
+:r510	a rdfs:Resource ;
+	:bioguide_id "K000392" ;
+	:govtrack_id "412724" ;
+	:twitter "repdavidkustoff" ;
+	:twitter_id "816012124505931008" ;
+	:facebook "RepDavidKustoff" ;
+	:youtube_id "UCK6U4plOKKMrCjv_h59spGQ" ;
+	:instgram "repdavidkustoff" .
+
+
+:r511	a rdfs:Resource ;
+	:bioguide_id "L000587" ;
+	:govtrack_id "412711" ;
+	:twitter "RepJasonLewis" ;
+	:twitter_id "816047090849746048" ;
+	:facebook "RepJasonLewis" .
+
+
+:r512	a rdfs:Resource ;
+	:bioguide_id "G000578" ;
+	:govtrack_id "412690" ;
+	:twitter "RepMattGaetz" ;
+	:twitter_id "818948638890216960" ;
+	:facebook "CongressmanMattGaetz" ;
+	:youtube_id "UClqXcJew_A3s8qiX-T4a9CA" ;
+	:instgram "Congressman_Matt_Gaetz" .
+
+
+:r513	a rdfs:Resource ;
+	:bioguide_id "S001200" ;
+	:govtrack_id "412695" ;
+	:twitter "RepDarrenSoto" ;
+	:twitter_id "818713465653051008" ;
+	:facebook "CongressmanDarrenSoto" ;
+	schema:VideoObject "repdarrensoto" .
+
+
+:r514	a rdfs:Resource ;
+	:bioguide_id "B001301" ;
+	:govtrack_id "412709" ;
+	:twitter "RepJackBergman" ;
+	:twitter_id "815241612154417024" ;
+	:facebook "RepJackBergman" ;
+	schema:VideoObject "RepJackBergman" ;
+	:instgram "RepJackBergman" .
+
+
+:r515	a rdfs:Resource ;
+	:bioguide_id "G000579" ;
+	:govtrack_id "412731" ;
+	:twitter "RepGallagher" ;
+	:twitter_id "815966620300480000" ;
+	:facebook "RepMikeGallagher" .
+
+
+:r516	a rdfs:Resource ;
+	:bioguide_id "C001108" ;
+	:govtrack_id "412676" ;
+	:facebook "congressmancomer" ;
+	:instgram "congressmancomer" .
+
+
+:r517	a rdfs:Resource ;
+	:bioguide_id "M001198" ;
+	:govtrack_id "412704" ;
+	:twitter "RepMarshall" ;
+	:twitter_id "752364246218861952" ;
+	:facebook "rogermarshallmd" .
+
+
+:r518	a rdfs:Resource ;
+	:bioguide_id "E000296" ;
+	:govtrack_id "412677" ;
+	:twitter "RepDwightEvans" ;
+	:twitter_id "90639372" ;
+	:facebook "RepDwightEvans" .
+
+
+:r519	a rdfs:Resource ;
+	:bioguide_id "R000609" ;
+	:govtrack_id "412692" ;
+	:twitter "RepRutherfordFL" ;
+	:twitter_id "828977216595848960" ;
+	:facebook "RepRutherfordFL" .
+
+
+:r520	a rdfs:Resource ;
+	:bioguide_id "J000299" ;
+	:govtrack_id "412706" ;
+	:twitter "RepMikeJohnson" ;
+	:twitter_id "827279765287559040" ;
+	:facebook "RepMikeJohnson" ;
+	:youtube_id "UCzqBEpeIaDEfvAtsA53Fx2Q" ;
+	:instgram "RepMikeJohnson" .
+
+
+:r521	a rdfs:Resource ;
+	:bioguide_id "R000608" ;
+	:govtrack_id "412715" ;
+	:twitter "repjackyrosen" ;
+	:twitter_id "818554054309714944" ;
+	:facebook "RepJackyRosen" .
+
+
+:r522	a rdfs:Resource ;
+	:bioguide_id "C001110" ;
+	:govtrack_id "412688" ;
+	:twitter "reploucorrea" ;
+	:twitter_id "815985039485837056" ;
+	:facebook "RepLouCorrea" ;
+	:youtube_id "UCIKJJp4QJIDjnjodc23qKkw" .
+
+
+:r523	a rdfs:Resource ;
+	:bioguide_id "B001298" ;
+	:govtrack_id "412713" ;
+	:twitter "repdonbacon" ;
+	:twitter_id "818975124460334976" ;
+	:facebook "RepDonBacon" ;
+	:youtube_id "UCR9abI1lZzAZ6HwQXc-dLFQ" ;
+	:instgram "RepDonBacon" .
+
+
+:r524	a rdfs:Resource ;
+	:bioguide_id "S001199" ;
+	:govtrack_id "412722" ;
+	:twitter "RepSmucker" ;
+	:twitter_id "41417564" ;
+	:facebook "RepSmucker" ;
+	:youtube_id "UCs5iMvWy-oTHyf5HuwB7FCg" .
+
+
+:r525	a rdfs:Resource ;
+	:bioguide_id "H001050" ;
+	:govtrack_id "412418" ;
+	:twitter "RepHanabusa" ;
+	:twitter_id "235373000" ;
+	:facebook "RepColleenHanabusa" .
+
+
+:r526	a rdfs:Resource ;
+	:bioguide_id "H001075" ;
+	:govtrack_id "412678" ;
+	:twitter "SenKamalaHarris" ;
+	:twitter_id "803694179079458048" ;
+	:facebook "SenatorKamalaHarris" .
+
+
+:r527	a rdfs:Resource ;
+	:bioguide_id "H001077" ;
+	:govtrack_id "412705" ;
+	:twitter "RepClayHiggins" ;
+	:twitter_id "843636970538617984" ;
+	:facebook "CongressmanClayHiggins" .
+
+
+:r528	a rdfs:Resource ;
+	:bioguide_id "B001304" ;
+	:govtrack_id "412707" ;
+	:twitter "RepAnthonyBrown" ;
+	:twitter_id "823552974253341952" ;
+	:facebook "RepAnthonyBrown" ;
+	schema:VideoObject "RepAnthonyBrown" .
+
+
+:r529	a rdfs:Resource ;
+	:bioguide_id "T000477" ;
+	:govtrack_id "412727" ;
+	:twitter "RepScottTaylor" ;
+	:twitter_id "837722935095929984" ;
+	:facebook "RepScottTaylor" ;
+	:youtube_id "UCL_UCG7VqJRfneFTwg8UVmg" .
+
+
+:r530	a rdfs:Resource ;
+	:bioguide_id "E000298" ;
+	:govtrack_id "412735" ;
+	:twitter "RepRonEstes" ;
+	:twitter_id "854715071116849024" ;
+	:facebook "RepRonEstes" .
+
+
+:r531	a rdfs:Resource ;
+	:bioguide_id "G000585" ;
+	:govtrack_id "412739" ;
+	:twitter "RepJimmyGomez" ;
+	:twitter_id "2371339658" ;
+	:facebook "RepJimmyGomez" .
+
+
+:r532	a rdfs:Resource ;
+	:bioguide_id "N000190" ;
+	:govtrack_id "412738" ;
+	:twitter "RepRalphNorman" ;
+	:twitter_id "880480631108643968" ;
+	:facebook "RepRalphNorman" .
+
