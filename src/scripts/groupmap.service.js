@@ -32,180 +32,117 @@
         /* Implementation */
 
         var facets = {
-            entryText: {
-                facetId: 'entryText',
-                graph: '<http://ldf.fi/nbf/people>',
-                name: 'Haku',
-                enabled: true
-            },
-            link: {
-                facetId: 'link',
-                choices: [
-                    {
-                        id: 'wikipedia',
-                        pattern: '?id <http://ldf.fi/nbf/wikipedia> [] .',
-                        label: 'Wikipedia'
-                    },
-                    {
-                        id: 'wikidata',
-                        pattern: '?id <http://ldf.fi/nbf/wikidata> [] .',
-                        label: 'Wikidata'
-                    },
-                    {
-                        id: 'sotasampo',
-                        pattern: '?id <http://ldf.fi/nbf/warsampo> [] .',
-                        label: 'Sotasampo'
-                    },
-                    {
-                        id: 'norssit',
-                        pattern: '?id <http://ldf.fi/nbf/norssi> [] .',
-                        label: 'Norssit'
-                    },
-                    {
-                        id: 'kirjasampo',
-                        pattern: '?id <http://ldf.fi/nbf/kirjasampo> [] . ',
-                        label: 'Kirjasampo'
-                    },
-                    {
-                        id: 'blf',
-                        pattern: '?id <http://ldf.fi/nbf/blf> [] .',
-                        label: 'BLF'
-                    },
-                    {
-                        id: 'ulan',
-                        pattern: '?id <http://ldf.fi/nbf/ulan> [] .',
-                        label: 'ULAN'
-                    },
-                    {
-                        id: 'viaf',
-                        pattern: '?id <http://ldf.fi/nbf/viaf> [] .',
-                        label: 'VIAF'
-                    },
-                    {
-                        id: 'genicom',
-                        pattern: '?id <http://ldf.fi/nbf/genicom> [] .',
-                        label: 'Geni.com'
-                    },
-                    {
-                        id: 'website',
-                        pattern: '?id <http://ldf.fi/nbf/website> [] .',
-                        label: 'Kotisivu'
-                    },
-                    {
-                        id: 'eduskunta',
-                        pattern: '?id <http://ldf.fi/nbf/eduskunta> [] .',
-                        label: 'Eduskunta'
-                    }
-                ],
-                enabled: true,
-                name: 'Linkit'
-            },
-            period: {
-                facetId: 'period',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/<http://ldf.fi/nbf/has_period>/<http://www.w3.org/2004/02/skos/core#prefLabel>',
-                name: 'Ajanjakso',
-                enabled: true
-            },
-            dataset: {
-                facetId: 'dataset',
-                predicate: '<http://purl.org/dc/terms/source>',
-                name: 'Tietokanta'
-            },
-            birthYear: {
-                facetId: 'birthYear',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life>/<http://ldf.fi/nbf/time>',
-                name: 'Synnyinaika',
-                enabled: true
-            },
-            place: {
-                facetId: 'place',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/(^<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life>|^<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of>)/<http://ldf.fi/nbf/place>/<http://www.w3.org/2004/02/skos/core#prefLabel>',
-                name: 'Paikkakunta',
-                enabled: true
-            },
-            deathYear: {
-                facetId: 'birthYear',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of>/<http://ldf.fi/nbf/time>',
-                name: 'Kuolinaika',
-                enabled: true
-            },
-            title: {
-                facetId: 'title',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://ldf.fi/schema/bioc/inheres_in>/<http://ldf.fi/nbf/has_title>',
-                name: 'Arvo tai ammatti',
-                hierarchy: '<http://www.w3.org/2004/02/skos/core#broader>',
-                depth: 3,
-                enabled: true
-            },
-            company: {
-                facetId: 'company',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://ldf.fi/schema/bioc/inheres_in>/<http://ldf.fi/nbf/related_company>',
-                name: 'Yritys tai yhteisö',
-                enabled: true
-            },
-            category: {
-                facetId: 'category',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/<http://ldf.fi/nbf/has_category>',
-                name: 'Kategoria',
-                enabled: true
-            },
-            gender: {
-                facetId: 'gender',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/<http://ldf.fi/nbf/sukupuoli>',
-                name: 'Sukupuoli',
-                enabled: true
-            }
-        };
+                entryText: {
+                    facetId: 'entryText',
+                    graph: '<http://ldf.fi/congress/people>',
+                    name: 'Search',
+                    enabled: true
+                },
+                link: {
+                    facetId: 'link',
+                    choices: [
+                        {
+                            id: 'wikipedia',
+                            pattern: '?id <http://ldf.fi/congress/wikipedia_id> [] .',
+                            label: 'Wikipedia'
+                        },{
+                            id: 'dbpedia',
+                            pattern: '?id <http://ldf.fi/congress/dbpedia_id> [] .',
+                            label: 'DBpedia'
+                        },
+                        {
+                            id: 'twitter',
+                            pattern: '?id <http://ldf.fi/congress/twitter> [] .',
+                            label: 'Twitter'
+                        }
+                    ],
+                    enabled: true,
+                    name: 'Links'
+                },
+                familyName: {
+                    facetId: 'familyName',
+                    predicate: '<http://schema.org/familyName>',
+                    name: 'Family Name'
+                },
+                givenName: {
+                    facetId: 'givenName',
+                    predicate: '<http://schema.org/givenName>',
+                    name: 'First Name'
+                }, /**
+                birthYear: {
+                    facetId: 'birthYear',
+                    predicate: '<http://schema.org/birthDate>',
+                    name: 'Date of Birth',
+                    enabled: true
+                }, */
+                birthPlace: {
+                    facetId: 'birthPlace',
+                    predicate: '<http://schema.org/birthPlace>',
+                    name: 'Place of Birth',
+                    hierarchy: '<http://schema.org/containedInPlace>',
+                    depth: 5,
+                    enabled: true
+                },
+                gender: {
+                    facetId: 'gender',
+                    predicate: '<http://schema.org/gender>',
+                    name: 'Gender',
+                    enabled: true 
+                },
+                occupation: {
+                    facetId: 'occupation',
+                    predicate: '<http://schema.org/hasOccupation>',
+                    name: 'Occupation',
+                    enabled: true
+                },
+               state: {
+                    facetId: 'state',
+                    predicate: '<http://schema.org/state>',
+                    name: 'State',
+                    enabled: true
+                },
+                memberOf: {
+                    facetId: 'memberOf',
+                    predicate: '<http://schema.org/memberOf>',
+                    name: 'Political Party',
+                    enabled: true
+                }
+            };
 
         var prefixes =
-        ' PREFIX owl: <http://www.w3.org/2002/07/owl#> ' +
-        ' PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ' +
-        ' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ' +
-        ' PREFIX schema: <http://schema.org/> ' +
-        ' PREFIX dct: <http://purl.org/dc/terms/> ' +
-        ' PREFIX skos: <http://www.w3.org/2004/02/skos/core#> ' +
-        ' PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#> ' +
-        ' PREFIX xml: <http://www.w3.org/XML/1998/namespace> ' +
-        ' PREFIX bioc: <http://ldf.fi/schema/bioc/> ' +
-        ' PREFIX nbf: <http://ldf.fi/nbf/> ' +
-        ' PREFIX categories:	<http://ldf.fi/nbf/categories/> ' +
-        ' PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> ' +
-        ' PREFIX foaf: <http://xmlns.com/foaf/0.1/> ' +
-        ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ' +
-        ' PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ' +
-        ' PREFIX gvp: <http://vocab.getty.edu/ontology#> ';
+    		'PREFIX owl: <http://www.w3.org/2002/07/owl#>   ' +
+    		'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ' +
+    		'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>   ' +
+    		'PREFIX schema: <http://schema.org/>   ' +
+    		'PREFIX dct: <http://purl.org/dc/terms/>   ' +
+    		'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>   ' +
+    		'PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>   ' +
+    		'PREFIX xml: <http://www.w3.org/XML/1998/namespace>   ' +
+    		'PREFIX congress: <http://ldf.fi/congress/>   ' +
+    		'PREFIX foaf: <http://xmlns.com/foaf/0.1/>   ' +
+    		'PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>   ' +
+    		'PREFIX wdt: <http://www.wikidata.org/prop/direct/> ' +
+    		'PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> ' +
+    		'PREFIX wd_ent: <http://www.wikidata.org/entity/> ';
 
         // The query for the results.
         // ?id is bound to the person URI.
         var query = 
-        	'SELECT DISTINCT ?id ?evt ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude WHERE { ' +
-        	'  { SELECT DISTINCT ?id WHERE { ' +
-        	'  { <RESULT_SET> } ' +
-        	'	?id foaf:focus ?prs . ' +
-        	'  	?prs ^crm:P98_brought_into_life/nbf:time/gvp:estStart ?time__birth . ' +
-        	'  	?prs ^crm:P100_was_death_of/nbf:time/gvp:estStart ?time__death . ' +
-        	'  	FILTER (<STARTYEAR><=year(?time__birth) && year(?time__birth)<=<ENDYEAR>) ' +
-        	'	} LIMIT 2500 } ' +
-        	'  ' +
-        	'	?id foaf:focus ?prs . ' +
-        	'  { ?evt crm:P100_was_death_of ?prs . } ' +
-        	'  UNION ' +  
-        	'  { ?evt crm:P98_brought_into_life ?prs . } ' +
-        	// '  UNION ' + 
-        	// '  { ?evt bioc:inheres_in ?prs . } ' +
-        	'  ' +
-        	'  ?evt nbf:time ?time . ' +
-        	'  OPTIONAL { ?time gvp:estStart ?time__start. } ' +
-        	'  OPTIONAL { ?time gvp:estEnd ?time__end. } ' +
-        	'  FILTER (BOUND(?time__start) || BOUND(?time__end)) ' +
-        	'   ' +
-        	'  ?evt a/skos:prefLabel ?class . ' +
-        	'  FILTER (lang(?class)="en") ' +
-        	'  ' +
-        	'  ?evt nbf:place ?place__uri .  ' +
-        	'    ?place__uri geo:lat ?place__latitude ;  ' +
-        	'           geo:long ?place__longitude .  ' +
-        	'} LIMIT 1500 ';
+    		'SELECT DISTINCT ?id ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude WHERE { ' +
+    		'  { <RESULT_SET> } ' +
+    		'  VALUES (?evt_place ?evt_time ?class) { ' +
+    		'  	(schema:deathPlace schema:deathDate "Birth"@en) ' +
+    		'  	(schema:deathPlace schema:deathDate "Death"@en) ' +
+    		'	} ' +
+    		' ' +
+    		'   ?id ?evt_place ?place__uri ; ' +
+    		'  		?evt_time ?time__start ; ' +
+    		'    	?evt_time ?time__end . ' +
+    		'  	FILTER (<STARTYEAR><=year(?time__start) && year(?time__start)<=<ENDYEAR>) ' +
+    		'  BIND (RAND() AS ?rand) ' +
+    		'  ?place__uri geo:lat ?place__latitude ; geo:long ?place__longitude . ' +
+    		'} ORDER BY ?rand ' +
+    		'LIMIT 1000 ';
 
         // The SPARQL endpoint URL
         var endpointConfig = {
@@ -215,10 +152,10 @@
 
         var facetOptions = {
             endpointUrl: endpointConfig.endpointUrl,
-            rdfClass: '<http://ldf.fi/nbf/PersonConcept>',
-            constraint: '?id <http://ldf.fi/nbf/ordinal> ?ordinal . ',
-            preferredLang : 'fi',
-            noSelectionString: '-- Ei valintaa --'
+            rdfClass: '<http://schema.org/Person>',
+            constraint: '',
+            preferredLang : 'en',
+            noSelectionString: '-- no selection --'
         };
 
         var resultOptions = {
@@ -240,7 +177,6 @@
         	var q = prefixes+query.replace("<RESULT_SET>", facetSelections.constraint.join(' '))
         		.replace("<STARTYEAR>",facetSelections.minYear)
         		.replace("<ENDYEAR>",facetSelections.maxYear);
-        	
         	return endpoint.getObjectsNoGrouping(q);
         }
 

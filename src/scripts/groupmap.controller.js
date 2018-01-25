@@ -21,10 +21,10 @@
 
     	// Range slider config
         $scope.minRangeSlider = {
-            minValue: (new Date()).getFullYear()-100,
+            minValue: (new Date()).getFullYear()-50,
             maxValue: (new Date()).getFullYear(),
             options: {
-                floor: 1000,
+                floor: 1720,
                 ceil: (new Date()).getFullYear(),
                 step: 10,
                 draggableRange: true,
@@ -36,7 +36,7 @@
         
         
         var vm = this;
-        vm.map = { center: { latitude: 62, longitude: 24 }, zoom: 6 };
+        vm.map = { center: { latitude: 40, longitude: -90 }, zoom: 4 };
         vm.markers = [];
 
         vm.isScrollDisabled = isScrollDisabled;
@@ -155,7 +155,6 @@
         	
         	var map = document.getElementById('ui-gmap-google-map');
         	if (map && map.fitBounds) { map.fitBounds(bounds); }
-        	
         	return events;
         }
         

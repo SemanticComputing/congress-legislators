@@ -13,7 +13,8 @@
         'ngAnimate',
         'ui.bootstrap',
         'infinite-scroll',
-        'uiGmapgoogle-maps'
+        'uiGmapgoogle-maps',
+        'rzModule'
     ])
 
     .constant('_', _) // eslint-disable-line no-undef
@@ -79,7 +80,7 @@
             controllerAs: 'vm'
         })
         .state('groupmap', {
-            url: '/joukkokartta',
+            url: '/groupmap',
             templateUrl: 'views/groupmap.html',
             controller: 'GroupmapController',
             controllerAs: 'vm',

@@ -12,6 +12,7 @@ import urllib.parse
 import urllib.request
 from urllib.error import HTTPError
 
+#    the data set was further enriched with the results of query http://yasgui.org/short/BJo0aNPSz
 outfilename = "../ttl/places/places.ttl"
 
 def main():
