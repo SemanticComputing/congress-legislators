@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 from urllib.error import HTTPError
 
-outfilename = "../ttl/places.ttl"
+outfilename = "../ttl/places/places.ttl"
 
 def main():
     
@@ -53,7 +53,8 @@ WHERE {
       }
   }
 }"""
-    endpoint = "http://ldf.fi/congress/sparql"
+    # endpoint = "http://ldf.fi/congress/sparql"
+    endpoint = "http://localhost:3030/ds/query"
     
     arr = makeSparqlConstruct(query, endpoint).decode("utf-8")
     

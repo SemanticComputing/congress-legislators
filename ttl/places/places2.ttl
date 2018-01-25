@@ -1,0 +1,181 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix congress: <http://ldf.fi/congress/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wd_ent: <http://www.wikidata.org/entity/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix gas: <http://www.bigdata.com/rdf/gas#> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix wds: <http://www.wikidata.org/entity/statement/> .
+@prefix wdv: <http://www.wikidata.org/value/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix geof: <http://www.opengis.net/def/geosparql/function/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+
+wd_ent:Q214041 a schema:Place ;
+	schema:containedInPlace wd_ent:Q20 ;
+	rdfs:label "Northern Norway"@en ;
+	geo:lat "69.666666666"^^xsd:decimal ;
+	geo:long "19"^^xsd:decimal .
+
+wd_ent:Q54159 a schema:Place ;
+	schema:containedInPlace wd_ent:Q36 ;
+	rdfs:label "Lesser Poland Voivodeship"@en ;
+	geo:lat "49.85"^^xsd:decimal ;
+	geo:long "20.266666666"^^xsd:decimal .
+
+wd_ent:Q1273 a schema:Place ;
+	schema:containedInPlace wd_ent:Q38 ;
+	rdfs:label "Tuscany"@en ;
+	geo:lat "43.35"^^xsd:decimal ;
+	geo:long "11.016666666"^^xsd:decimal .
+
+wd_ent:Q1061480 a schema:Place ;
+	schema:containedInPlace wd_ent:Q114 ;
+	geo:lat "-1.28333334"^^xsd:decimal ;
+	geo:long "36.81666668"^^xsd:decimal .
+
+wd_ent:Q1682363 a schema:Place ;
+	schema:containedInPlace wd_ent:Q1720 ;
+	geo:lat "49.9608"^^xsd:decimal ;
+	geo:long "8.22944"^^xsd:decimal .
+
+wd_ent:Q448731 a schema:Place ;
+	schema:containedInPlace wd_ent:Q8165 .
+
+wd_ent:Q23140 a schema:Place ;
+	schema:containedInPlace wd_ent:Q48038 ;
+	rdfs:label "Warwickshire"@en ;
+	geo:lat "52.333333333"^^xsd:decimal ;
+	geo:long "-1.583333333"^^xsd:decimal .
+
+wd_ent:Q23165 a schema:Place ;
+	schema:containedInPlace wd_ent:Q48026 ;
+	rdfs:label "Gloucestershire"@en ;
+	geo:lat "51.833333333"^^xsd:decimal ;
+	geo:long "-2.166666666"^^xsd:decimal .
+
+wd_ent:Q23159 a schema:Place ;
+	schema:containedInPlace wd_ent:Q48026 ;
+	rdfs:label "Dorset"@en ;
+	geo:lat "50.833333333"^^xsd:decimal ;
+	geo:long "-2.333333333"^^xsd:decimal .
+
+wd_ent:Q23298 a schema:Place ;
+	schema:containedInPlace wd_ent:Q48015 ;
+	rdfs:label "Kent"@en ;
+	geo:lat "51.19"^^xsd:decimal ;
+	geo:long "0.73"^^xsd:decimal .
+
+wd_ent:Q23106 a schema:Place ;
+	schema:containedInPlace wd_ent:Q47994 ;
+	rdfs:label "Leicestershire"@en ;
+	geo:lat "52.716666666"^^xsd:decimal ;
+	geo:long "-1.183333333"^^xsd:decimal .
+
+wd_ent:Q23204 a schema:Place ;
+	schema:containedInPlace wd_ent:Q48015 ;
+	rdfs:label "Hampshire"@en ;
+	geo:lat "51.083333333"^^xsd:decimal ;
+	geo:long "-1.25"^^xsd:decimal .
+
+wd_ent:Q2429850 a schema:Place ;
+	schema:containedInPlace wd_ent:Q199988 ;
+	geo:lat "50.7044"^^xsd:decimal ;
+	geo:long "6.52028"^^xsd:decimal .
+
+wd_ent:Q2323198 a schema:Place ;
+	geo:lat "31.16111111"^^xsd:decimal ;
+	geo:long "-81.38694444"^^xsd:decimal .
+
+wd_ent:Q717 a schema:Place ;
+	rdfs:label "Venezuela"@en ;
+	geo:lat "8"^^xsd:decimal ;
+	geo:long "-65"^^xsd:decimal .
+
+wd_ent:Q16052362 a schema:Place ;
+	geo:lat "37.98277778"^^xsd:decimal ;
+	geo:long "-87.55055556"^^xsd:decimal .
+
+wd_ent:Q219 a schema:Place ;
+	rdfs:label "Bulgaria"@en ;
+	geo:lat "42.75"^^xsd:decimal ;
+	geo:long "25.5"^^xsd:decimal .
+
+wd_ent:Q15180 a schema:Place ;
+	rdfs:label "Soviet Union"@en ;
+	geo:lat "55.75"^^xsd:decimal ;
+	geo:long "37.616666666"^^xsd:decimal .
+
+wd_ent:Q62589 a schema:Place ;
+	rdfs:label "Union between Sweden and Norway"@en .
+
+wd_ent:Q32 a schema:Place ;
+	rdfs:label "Luxembourg"@en ;
+	geo:lat "49.77"^^xsd:decimal ;
+	geo:long "6.13"^^xsd:decimal .
+
+wd_ent:Q37 a schema:Place ;
+	rdfs:label "Lithuania"@en ;
+	geo:lat "55.5"^^xsd:decimal ;
+	geo:long "24"^^xsd:decimal .
+
+wd_ent:Q38 a schema:Place ;
+	rdfs:label "Italy"@en ;
+	geo:lat "43"^^xsd:decimal ;
+	geo:long "12"^^xsd:decimal .
+
+wd_ent:Q62651 a schema:Place ;
+	rdfs:label "Denmark-Norway"@en ;
+	geo:lat "55.66666667"^^xsd:decimal ;
+	geo:long "12.56666667"^^xsd:decimal .
+
+wd_ent:Q41 a schema:Place ;
+	rdfs:label "Greece"@en ;
+	geo:lat "39"^^xsd:decimal ;
+	geo:long "22"^^xsd:decimal .
+
+wd_ent:Q33 a schema:Place ;
+	rdfs:label "Finland"@en ;
+	geo:lat "64"^^xsd:decimal ;
+	geo:long "26"^^xsd:decimal .
+
+wd_ent:Q756617 a schema:Place ;
+	rdfs:label "Kingdom of Denmark"@en ;
+	geo:lat "56"^^xsd:decimal ;
+	geo:long "10"^^xsd:decimal .
+
+wd_ent:Q29999 a schema:Place ;
+	rdfs:label "Kingdom of the Netherlands"@en ;
+	geo:lat "52.366666666"^^xsd:decimal ;
+	geo:long "4.883333333"^^xsd:decimal .
+

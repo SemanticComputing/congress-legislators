@@ -1,21 +1,22 @@
-<a href="" ng-click="vm.removeFacetSelections()">Poista kaikki valinnat</a>
+<a href="" ng-click="vm.removeFacetSelections()">Remove all selections</a>
 <div class="facets">
   <seco-jena-text-facet data-options="vm.facets.entryText"></seco-jena-text-facet>
   <div class="show-facets row">
     <div class="col-xs-12">
       <button class="btn btn-default pull-right visible-xs-block visible-sm-block"
-        ng-click="show = !show">{{ show ? 'Piilota fasetit' : 'Näytä fasetit' }}</button>
+        ng-click="show = !show">{{ show ? 'Hide the facets' : 'Show the facets' }}</button>
     </div>
   </div>
   <div class="hideable-facets" ng-class="{ 'hidden-sm hidden-xs': !show }">
     <seco-checkbox-facet data-options="vm.facets.link"></seco-checkbox-facet>
-    <!--  <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet> 
-    <seco-basic-facet data-options="vm.facets.period"></seco-basic-facet> -->
-    <seco-basic-facet data-options="vm.facets.gender"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.dataset"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.category"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.company"></seco-basic-facet>
-    <seco-hierarchy-facet data-options="vm.facets.title"></seco-hierarchy-facet>
-    <seco-basic-facet data-options="vm.facets.place"></seco-basic-facet>
+    <!--  <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet> -->
+    <seco-basic-facet data-options="vm.facets.familyName"></seco-basic-facet>
+    <seco-basic-facet data-options="vm.facets.givenName"></seco-basic-facet>
+    <seco-basic-facets data-options="vm.facets.gender"></seco-basic-facet>
+    <seco-basic-facet data-options="vm.facets.memberOf"></seco-basic-facet>
+    <seco-basic-facet data-options="vm.facets.state"></seco-basic-facet>
+    <seco-basic-facet data-options="vm.facets.birthYear"></seco-basic-facet>
+    <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet>
+    <seco-hierarchy-facet data-options="vm.facets.birthPlace"></seco-hierarchy-facet>
      </div>
 </div>

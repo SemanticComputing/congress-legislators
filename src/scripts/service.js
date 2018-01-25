@@ -80,16 +80,22 @@
                 predicate: '<http://schema.org/birthPlace>',
                 name: 'Place of Birth',
                 hierarchy: '<http://schema.org/containedInPlace>',
-                depth: 3,
+                depth: 5,
                 enabled: true
             },
             gender: {
                 facetId: 'gender',
                 predicate: '<http://schema.org/gender>',
                 name: 'Gender',
+                enabled: true 
+            },
+            occupation: {
+                facetId: 'occupation',
+                predicate: '<http://schema.org/hasOccupation>',
+                name: 'Occupation',
                 enabled: true
             },
-              state: {
+           state: {
                 facetId: 'state',
                 predicate: '<http://schema.org/state>',
                 name: 'State',
