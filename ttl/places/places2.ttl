@@ -60,16 +60,22 @@ wd_ent:Q1273 a schema:Place ;
 	geo:long "11.016666666"^^xsd:decimal .
 
 wd_ent:Q1061480 a schema:Place ;
+	rdfs:label "Province of Nairobi"@en ;
 	schema:containedInPlace wd_ent:Q114 ;
 	geo:lat "-1.28333334"^^xsd:decimal ;
 	geo:long "36.81666668"^^xsd:decimal .
 
+wd_ent:Q114 a schema:Place ;
+	rdfs:label "Kenya"@en  .
+	
 wd_ent:Q1682363 a schema:Place ;
 	schema:containedInPlace wd_ent:Q1720 ;
+	rdfs:label "Mainz-Marienborn"@en ;
 	geo:lat "49.9608"^^xsd:decimal ;
 	geo:long "8.22944"^^xsd:decimal .
 
 wd_ent:Q448731 a schema:Place ;
+	rdfs:label "Region Mittlerer Oberrhein"@en ;
 	schema:containedInPlace wd_ent:Q8165 .
 
 wd_ent:Q23140 a schema:Place ;
@@ -109,11 +115,13 @@ wd_ent:Q23204 a schema:Place ;
 	geo:long "-1.25"^^xsd:decimal .
 
 wd_ent:Q2429850 a schema:Place ;
+	rdfs:label "Thum (Kreuzau)"@en ;
 	schema:containedInPlace wd_ent:Q199988 ;
 	geo:lat "50.7044"^^xsd:decimal ;
 	geo:long "6.52028"^^xsd:decimal .
 
 wd_ent:Q2323198 a schema:Place ;
+	rdfs:label "St. Simons"@en ;
 	geo:lat "31.16111111"^^xsd:decimal ;
 	geo:long "-81.38694444"^^xsd:decimal .
 
@@ -123,6 +131,7 @@ wd_ent:Q717 a schema:Place ;
 	geo:long "-65"^^xsd:decimal .
 
 wd_ent:Q16052362 a schema:Place ;
+	rdfs:label "Riverside Historic District"@en ;
 	geo:lat "37.98277778"^^xsd:decimal ;
 	geo:long "-87.55055556"^^xsd:decimal .
 

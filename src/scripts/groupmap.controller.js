@@ -118,7 +118,7 @@
             	vm.events = processEvents(res, vm);
             }).catch(handleError);
         }
-
+        
         function handleError(error) {
             vm.isLoadingResults = false;
             vm.error = error;
