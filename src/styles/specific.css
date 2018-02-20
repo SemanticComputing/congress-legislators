@@ -1,3 +1,18 @@
+/* Navigation bar */
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
+/* HEIGHTs and top text*/
+.col-md-12, .pull-md-12, .col-lg-12 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 h1,
 .h1,
 h2,
@@ -5,4 +20,205 @@ h2,
 h3,
 .h3 {
   margin-top: 10px;
+}
+
+.toptext{
+margin: 0 auto;
+padding-top: 5px;
+padding-bottom: 10px;
+}
+
+/* FACET COLOR *also changed the glyphicon icon "×" to "-" at: bower_components/sparql-faceter/dist/semantic-faceted-search.js* */
+.btn-danger {
+    color: #fff;
+    background-color: #999999;
+    border-color: #adadad;
+}
+
+.btn.btn-default  {
+  margin-bottom: 0px !important;
+}
+
+.input-group-btn > .btn{
+  background-color: #FFF !important;
+  border-color: #CCC !important;
+  margin:top: -4px;
+}
+
+.input-group-btn > .btn-default {
+    color: #333 !important;
+}
+
+.input-group-btn > .btn-default > .glyphicon.glyphicon-remove{
+   top: 1px;
+    }
+
+.btn-default {
+    color: #fff;
+    background-color: #325286;
+    border-color: #325286;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #002868;
+  border-color: #761c19
+}
+
+.btn-danger.active, .btn-danger:active, .open>.dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #002868;
+  border-color: #761c19
+}
+
+.btn-danger.focus, .btn-danger:focus, .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover {
+  color: #fff;
+  background-color: #002868;
+  border-color: #761c19
+}
+
+.btn-danger.disabled.focus, .btn-danger.disabled:focus, .btn-danger.disabled:hover, .btn-danger[disabled].focus, .btn-danger[disabled]:focus, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:hover {
+  background-color: #002868;
+  border-color: #761c19
+}
+
+.btn-danger .badge {
+  background-color: #002868;
+  background-color: #fff
+}
+
+/* Adjusted TEXT SEARCH FACET */
+.show-facets {
+    margin-top: -10px;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: 65%;
+    margin-top: -33px;
+}
+
+.input-group-btn > .btn {
+    position: relative;
+    margin-top: -33px;
+}
+
+p {
+    margin: 0 0 0px;
+}
+
+select[multiple], select[size] {
+    height: 90px;
+}
+
+
+/* POSITION OF THE BUTTON ---*/
+.btn-group-xs > .btn, .btn-xs {
+    margin-top: 6px;
+}
+
+/* FACET BACKGROUND ---*/
+.well {
+  min-height: 20px;
+  margin-bottom: 10px ;
+  background-color: @well-bg;
+  border: 0px solid @well-border !important;
+  -webkit-box-shadow: none !important;
+  border-radius: @border-radius-base;
+  box-shadow:  none !important;
+  border-color: none !important;
+  border-color: rgba(0,0,0,.0) !important;
+  }
+}
+
+.well-sm {
+  padding: 8px;
+  border-radius: @border-radius-small;
+}
+
+/* SORT */
+.sort-custom {
+  width: 100%;
+  min-height: 20px;
+  padding: 9px;
+  margin-top:10px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  }
+
+.subject {
+    text-align: left;
+    font-size: 14px;
+}
+
+.sort {
+  position: absolute;
+  text-align: center;
+  width: 88%;
+}
+
+/* MEMO: To add new glyphicons,
+  1) Create SVG (by using illustrator, etc.)
+  2) Generate all font files (by using fontello.com, etc.)
+  Then, you must change the codes at
+  3) bower_components/bootstrap/dist/css/bootstrap.min.css
+     ---> change/add all details here
+  4) bower_components/bootstrap/less/glyphicons.less
+     ---> add individual icon(s) here
+*/
+
+.icon-menu a {
+  color: #555555;
+  font-size: 150%;
+  padding-right: 3px;
+}
+
+/* Go back to top ankor link (html/js script implemented in index.html) */
+#page-top {
+    font-size: 0;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    opacity: 0;
+}
+#page-top.fade-in {
+    color: #000;
+    font-size: 60px;
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+
+
+.sort > a {
+    color: #002868;
+    text-decoration: none;
+}
+
+ a {
+    color: #3D6199;
+    text-decoration: none;
+}
+
+.container{
+   margin-top: -10px;
+}
+
+.toptext
+{
+   margin-top: 5px;
+}
+
+.pre-line {
+    white-space: pre-line;
+}
+
+.angular-with-newlines {
+    white-space: pre-wrap;
+}
+
+.entry-text.text-left.ng-scope{
+    margin-left: 10px;
+    margin-right: 10px;
 }

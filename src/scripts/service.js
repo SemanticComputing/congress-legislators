@@ -68,13 +68,15 @@
                 facetId: 'givenName',
                 predicate: '<http://schema.org/givenName>',
                 name: 'First Name'
-            }, /**
-            birthYear: {
-                facetId: 'birthYear',
+            },
+            birthDate: {
+                facetId: 'birthDate',
                 predicate: '<http://schema.org/birthDate>',
-                name: 'Date of Birth',
-                enabled: true
-            }, */
+            },
+            deathDate: {
+                facetId: 'deathDate',
+                predicate: '<http://schema.org/deathDate>',
+            },
             birthPlace: {
                 facetId: 'birthPlace',
                 predicate: '<http://schema.org/birthPlace>',
@@ -86,8 +88,7 @@
             gender: {
                 facetId: 'gender',
                 predicate: '<http://schema.org/gender>',
-                name: 'Gender',
-                enabled: true 
+                name: 'Gender'
             },
             occupation: {
                 facetId: 'occupation',
@@ -120,8 +121,11 @@
         ' PREFIX xml: <http://www.w3.org/XML/1998/namespace> ' +
         ' PREFIX congress: <http://ldf.fi/congress/> ' +
         ' PREFIX foaf: <http://xmlns.com/foaf/0.1/> ' +
-        ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ';
-        
+        ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ' +
+        ' PREFIX wdt: <http://www.wikidata.org/prop/direct/> ' +
+        ' PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> ' +
+        ' PREFIX wd_ent: <http://www.wikidata.org/entity/> ';
+
         // The query for the results on grid and list pages.
         // ?id is bound to the person URI.
         var query =
@@ -142,8 +146,9 @@
         '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
         '  	OPTIONAL { ?id schema:gender ?gender . }' +
         '  	OPTIONAL { ?id schema:image ?images . }' +
+        '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
         ' }';
-        
+
         //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
         var detailQuery =
             'SELECT DISTINCT * WHERE {' +
@@ -165,13 +170,17 @@
             '  	OPTIONAL { ?id schema:image ?images . }' +
             '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
             '  OPTIONAL { ?id congress:bioguide_id ?committee__id .' +
-            '    	?mship congress:bioguide_id ?committee__id ;' +
-            '            congress:committee ?committee__label ;' +
-            '            schema:memberOf ?committee__memberOf .' +
-            '  }' +
+            '  ?mship congress:bioguide_id ?committee__id ;' +
+            '  congress:committee ?committee__label ;' +
+            '  schema:memberOf ?committee__memberOf. ' +
+            '  ?congress skos:prefLabel ?prefLabel;' +
+            '  skos:altLabel ?altLabel.' +
+            '  FILTER regex(str(?congress), "/go").' +
+            '  FILTER (str(?altLabel) = str(?committee__label)). ' +
+              '}'+
             '}';
-        
-        
+
+
         // The SPARQL endpoint URL
         var endpointConfig = {
             'endpointUrl': SPARQL_ENDPOINT_URL,
@@ -205,6 +214,18 @@
             return resultHandler.getResults(facetSelections, getSortBy());
         }
 
+      /*
+          function getResults(facetSelections) {
+          console.log(facetSelections.constraint)
+          var dateConstraint = ' OPTIONAL { ?id schema:birthDate ?date .}  FILTER (<STARTYEAR><=year(?date) && year(?date)<=<ENDYEAR>) '
+          .replace("<STARTYEAR>",facetSelections.minYear)
+          .replace("<ENDYEAR>",facetSelections.maxYear);
+
+         facetSelections.constraint.push(dateConstraint);
+         return resultHandler.getResults(facetSelections, getSortBy());
+         }
+      */
+
         function getPerson(id) {
         	var qry = prefixes + detailQuery;
             var constraint = 'VALUES ?id { <' + id + '> } . ';
@@ -216,8 +237,8 @@
                 return $q.reject('Not found');
             });
         }
-        
-        
+
+
         function getFacets() {
             var facetsCopy = angular.copy(facets);
             return $q.when(facetsCopy);
@@ -251,7 +272,7 @@
 
         function getSortClass(sortBy, numeric) {
             var sort = $location.search().sortBy || '?birthDate';
-            var cls = numeric ? 'glyphicon-sort-by-order' : 'glyphicon-sort-by-alphabet';
+            var cls = numeric ? 'icon-sort-by-past' : 'icon-sort-by-alphabet';
 
             if (sort === sortBy) {
                 if ($location.search().desc) {

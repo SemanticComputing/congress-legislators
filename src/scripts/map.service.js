@@ -25,7 +25,7 @@
         this.getSortClass = getSortClass;
         // Get the events of a single person.
         this.getEvents = getEvents;
-        
+
         /* Implementation */
 
 
@@ -46,10 +46,10 @@
         ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ' +
         ' PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ' +
         ' PREFIX gvp: <http://vocab.getty.edu/ontology#> ';
-        
+
         // The query for the results.
         // ?id is bound to the event URI.
-        var query = 
+        var query =
         ' SELECT DISTINCT * WHERE {' +
         '  { ' +
         '    <RESULT_SET> ' +
@@ -89,7 +89,7 @@
     	'  } ' +
     	' } ORDER BY ?time__start DESC(?time__end)';
 
-        
+
         // The SPARQL endpoint URL
         var endpointConfig = {
             'endpointUrl': SPARQL_ENDPOINT_URL,
@@ -133,14 +133,14 @@
             // console.log(qry.replace('<RESULT_SET>', constraint));
             return endpoint.getObjects(qry.replace('<RESULT_SET>', constraint))
             .then(function(events) {
-            	
+
                 if (events.length) {
                     return events;
                 }
                 return $q.reject('No events found');
             });
         }
-        
+
         /**
         function getPerson(id) {
             var qry = prefixes + query;

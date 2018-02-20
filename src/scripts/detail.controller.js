@@ -11,20 +11,20 @@
 
     /* @ngInject */
     function DetailController($stateParams, $uibModal, _, nbfService) {
-    	
+
         var vm = this;
-        
+
         vm.openPage = openPage;
-        
+
         init();
-        
+
         function init() {
             nbfService.getPerson($stateParams.personId).then(function(person) {
                 vm.person = person;
                 return person;
             }).catch(handleError);
         }
-        
+
         function openPage() {
             $uibModal.open({
                 component: 'registerPageModal',

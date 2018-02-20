@@ -86,8 +86,7 @@
                 gender: {
                     facetId: 'gender',
                     predicate: '<http://schema.org/gender>',
-                    name: 'Gender',
-                    enabled: true 
+                    name: 'Gender'
                 },
                 occupation: {
                     facetId: 'occupation',
@@ -127,7 +126,7 @@
 
         // The query for the results.
         // ?id is bound to the person URI.
-        var query = 
+        var query =
     		'SELECT DISTINCT ?id ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude WHERE { ' +
     		'  { <RESULT_SET> } ' +
     		'  VALUES (?evt_place ?evt_time ?class) { ' +

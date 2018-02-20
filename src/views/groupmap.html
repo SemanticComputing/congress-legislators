@@ -7,8 +7,8 @@
       {{ vm.error }}
     </div>
     <div class="container-fluid text-center" ng-show="vm.people">
-    On the map people's <span style="color:#777fff">birth</span> and <span style="color:#ff4141">death</span> places are shown. 
-    The illustration is made based on the selections made in facets on the left. 
+    On the map people's <span style="color:#002868">birth</span> and <span style="color:#BF0A30">death</span> places are shown. 
+    The illustration is made based on the selections made in facets on the left.
     <div class="col-md-4 pull-md-4 col-lg-3">
 		<div>
 			<br/>By the birth year of people
@@ -19,15 +19,15 @@
     </div>
     <div class="container-fluid thumbnail">
     	<div class="col-md-8 col-lg-9">
-    	
+
 		   <ui-gmap-google-map id="ui-gmap-google-map" center='vm.map.center' zoom='vm.map.zoom'>
-	        	<ui-gmap-marker ng-repeat="marker in vm.markers" 
-	        		coords="marker" 
-	        		idkey="marker.id" 
-	        		options="marker.options" 
+	        	<ui-gmap-marker ng-repeat="marker in vm.markers"
+	        		coords="marker"
+	        		idkey="marker.id"
+	        		options="marker.options"
 	        	></ui-gmap-marker>
 	        </ui-gmap-google-map>
-	        
+
 	      </div>
       </div>
     </div>

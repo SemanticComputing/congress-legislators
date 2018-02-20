@@ -19,6 +19,22 @@
     function CardsController($scope, $location, $state, $uibModal, _, nbfService,
             FacetHandler, facetUrlStateHandlerService) {
 
+              /*
+                $scope.minRangeSlider = {
+                    minValue: (new Date()).getFullYear()-300,
+                    maxValue: (new Date()).getFullYear()-250,
+                    options: {
+                        floor: 1720,
+                        ceil: (new Date()).getFullYear(),
+                        step: 10,
+                        draggableRange: true,
+                        onEnd: function () {
+                            fetchResults({ constraint: vm.previousSelections });
+                        }
+                    }
+                };
+              */
+
         var vm = this;
 
         var nextPageNo;
@@ -110,6 +126,8 @@
             vm.isLoadingResults = true;
             vm.people = [];
             vm.error = undefined;
+            /* facetSelections.minYear = $scope.minRangeSlider.minValue;
+            facetSelections.maxYear = $scope.minRangeSlider.maxValue; */
 
             var updateId = _.uniqueId();
             latestUpdate = updateId;

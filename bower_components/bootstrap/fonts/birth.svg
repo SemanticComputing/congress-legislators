@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="birth" horiz-adv-x="1000" >
+<font-face font-family="birth" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="death" unicode="&#xe600;" d="M128-143v988h144v-988h-144z m0 840h-128l0-144h128v144z m272 0h-128v-144h128v144z" horiz-adv-x="400" />
+
+<glyph glyph-name="born" unicode="&#xe601;" d="M275 616c-19-36-70-52-109-36-29 13-49 42-51 72-3 62 73 103 37 168-3 4-6 9-6 14-2 22 35 6 44 1 17-9 35-27 48-42 23-28 35-57 42-91 6-29 9-60-5-86z m-146-711c0 0 11-48 71-48s71 49 71 49v647c0 0-33-16-71-16s-71 16-71 16v-648z" horiz-adv-x="400" />
+</font>
+</defs>
+</svg>

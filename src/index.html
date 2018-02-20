@@ -14,6 +14,7 @@
   <!-- endbuild -->
   <!-- build:css({.,src}) styles/facetedsearch.css -->
   <link rel="stylesheet" href="styles/facetedsearch.css">
+  <link rel="stylesheet" href="styles/specific.css">
   <!-- endbuild -->
 
 </head>
@@ -74,6 +75,32 @@
   <script src="scripts/visu2.controller.js"></script>
   <script src="scripts/visu.service.js"></script>
   <!-- endbuild -->
+
+  <div id="page-top" class="glyphicon glyphicon-chevron-up fade-in"></div>
+
+  <script>
+  function getScrolled() {
+   return ( window.pageYOffset !== undefined ) ? window.pageYOffset: document.documentElement.scrollTop;
+  }
+
+  var topButton = document.getElementById( 'page-top' );
+
+  window.onscroll = function() {
+    ( getScrolled() > 500 ) ? topButton.classList.add( 'fade-in' ): topButton.classList.remove( 'fade-in' );
+  };
+
+  function scrollToTop() {
+    var scrolled = getScrolled();
+    window.scrollTo( 0, Math.floor( scrolled / 2 ) );
+    if ( scrolled > 0 ) {
+      window.setTimeout( scrollToTop, 40 );
+    }
+  };
+
+  topButton.onclick = function() {
+    scrollToTop();
+  };
+  </script>
 
 </body>
 </html>

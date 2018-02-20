@@ -9,7 +9,7 @@
 
     /* eslint-disable angular/no-service-method */
     angular.module('facetApp')
-    
+
     /*
     * Controller for the results view.
     */
@@ -33,8 +33,8 @@
                 }
             }
         };
-        
-        
+
+
         var vm = this;
         vm.map = { center: { latitude: 40, longitude: -90 }, zoom: 4 };
         vm.markers = [];
@@ -44,7 +44,7 @@
         vm.getSortClass = groupmapService.getSortClass;
 
         vm.people = [];
-        
+
         var initListener = $scope.$on('sf-initial-constraints', function(event, config) {
             updateResults(event, config);
             initListener();
@@ -80,7 +80,7 @@
 
         var latestPageUpdate;
         function nextPage() {
-            
+
         }
 
         function isScrollDisabled() {
@@ -109,7 +109,7 @@
             vm.error = undefined;
             facetSelections.minYear = $scope.minRangeSlider.minValue;
             facetSelections.maxYear = $scope.minRangeSlider.maxValue;
-            
+
             var updateId = _.uniqueId();
             latestUpdate = updateId;
 
@@ -123,16 +123,16 @@
             vm.isLoadingResults = false;
             vm.error = error;
         }
-        
+
         function processEvents(events, vm) {
-        	
+
         	var places = {};
-        	
+
         	events.forEach( function(event) {
-        		
+
         		if (!event.class) event.class = "event";
         		event.class = event.class.toLowerCase();
-        		
+
         		//	count by place uris
         		var key=event.class+event.place.uri;
         		if (!places.hasOwnProperty(key)) {
@@ -140,7 +140,7 @@
         		}
         		places[key]['count']+=1;
         	});
-        	
+
         	vm.markers = [];
         	var i = 0;
         	for (var x in places) {
@@ -148,22 +148,22 @@
         		var m = generateMarker(place.latitude, place.longitude, ++i, place.type, 5.0*Math.sqrt(place.count));
         		vm.markers.push(m);
         	}
-        	
+
         	var bounds = new google.maps.LatLngBounds();
-        	
+
         	// scale the years to get a coordinate on the timeline:
-        	
+
         	var map = document.getElementById('ui-gmap-google-map');
         	if (map && map.fitBounds) { map.fitBounds(bounds); }
         	return events;
         }
-        
-        
+
+
         function generateMarker(lat, lon, id, type, r) {
         	if (!r) r=5.0;
         	var ICONCOLORS = {
-    				"death":	"#ff4141",
-    				"birth":	"#777fff",
+            "death":	"#f3224e",
+            "birth":	"#0045b5",
     				"spouse":	"#c3b981",
     				"child":	"#7f6780",
     				"career":	"#999999",
@@ -181,7 +181,7 @@
 							scale: 1.0,
 							anchor: new google.maps.Point(0,0),
 							fillColor: ICONCOLORS[type],
-							fillOpacity: 0.6,
+							fillOpacity: 0.5,
 							strokeOpacity: 0.2,
 							strokeWeight: 1,
 							labelOrigin: new google.maps.Point(0, 0)
@@ -191,6 +191,6 @@
         	};
         	return m;
         }
-        
+
     }
 })();

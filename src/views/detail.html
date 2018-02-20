@@ -16,8 +16,9 @@
             <div class="row">
               <div class="col-xs-12">
                 <p ng-if="(vm.person.birthPlace || vm.person.birthDate || vm.person.deathDate)">
-                <span ng-if="(vm.person.birthPlace || vm.person.birthDate)">&#8727;&nbsp;{{ vm.person.birthPlace }} {{ vm.person.birthDate }}</span>
-                <span ng-if="(vm.person.deathPlace || vm.person.deathDate)">&dagger;&nbsp;{{ vm.person.deathPlace }}</span>
+                <span ng-if="(vm.person.birthPlace || vm.person.birthDate)"><span class="birth icon-born"></span>&nbsp;{{ vm.person.birthPlace }} {{ vm.person.birthDate }}</span>
+                <br>
+                <span ng-if="(vm.person.deathPlace || vm.person.deathDate)"><span class="birth icon-death"></span>&nbsp;{{ vm.person.deathPlace }}</span>
                 <span ng-if=vm.person.deathDate>{{ vm.person.deathDate }}</span>
                 </p>
               </div>
@@ -25,7 +26,7 @@
                 <p>{{ vm.person.occupation | castArray | join:', ' }}</p>
               </div>
               <div class="col-xs-12 icon-menu">
-                <a title="Data" class="" ng-href="{{ vm.person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
+                <a title="Data" class="" ng-href="{{ vm.person.id }}"><span class="bio icon-data" aria-hidden="true"></span></a>
               </div>
             </div>
             <div class="row">
@@ -44,13 +45,12 @@
              </div>
              <div ng-if="vm.person.committee" class="row padded-row">
               <div class="col-xs-12"><h4>Member of committees:</h4></div>
-              <p>{{ vm.person.committee.label | castArray | join:', ' }}</p>
-            </div>
-
-            <div ng-if="vm.person.description" class="entry-text text-left">
-              <hr />
-              <p>{{ vm.person.description }}</p>
-            </div>
+              <p style="white-space: pre-line;">{{ vm.person.committee.label }}</p>
+              
+              <div ng-if="vm.person.description" class="entry-text text-left">
+                <hr />
+                <p>{{ vm.person.description }}</p>
+              </div>
 
           </div>
         </div>

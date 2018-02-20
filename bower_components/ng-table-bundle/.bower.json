@@ -1,0 +1,34 @@
+{
+  "name": "ng-table-bundle",
+  "description": "Simple table with sorting and filtering on AngularJS",
+  "version": "4.0.0",
+  "main": [
+    "ng-table.js",
+    "ng-table.css"
+  ],
+  "authors": [
+    "Vitalii Savchuk <esvit666@gmail.com>"
+  ],
+  "license": "BSD",
+  "keywords": [
+    "angular",
+    "table",
+    "data",
+    "grid",
+    "directive"
+  ],
+  "ignore": [],
+  "dependencies": {
+    "angular": "^1.5.13"
+  },
+  "homepage": "https://github.com/greenek/bower-ng-table",
+  "_release": "4.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.0.0",
+    "commit": "332307ed699108541f52af886f97e5ce931923c6"
+  },
+  "_source": "https://github.com/greenek/bower-ng-table.git",
+  "_target": "^4.0.0",
+  "_originalSource": "ng-table-bundle"
+}

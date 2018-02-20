@@ -1,22 +1,65 @@
 <a href="" ng-click="vm.removeFacetSelections()">Remove all selections</a>
+
+      <!-- Following facets divided in 2 rows (4 × 4)to avoid layout misaligning -->
+
 <div class="facets">
-  <seco-jena-text-facet data-options="vm.facets.entryText"></seco-jena-text-facet>
-  <div class="show-facets row">
-    <div class="col-xs-12">
-      <button class="btn btn-default pull-right visible-xs-block visible-sm-block"
-        ng-click="show = !show">{{ show ? 'Hide the facets' : 'Show the facets' }}</button>
+  <div class="row">
+
+    <div class="col-md-3 pull-md-3 col-lg-3">
+      <seco-jena-text-facet data-options="vm.facets.entryText"></seco-jena-text-facet>
+
+      <div class="show-facets row">
+        <div class="col-xs-12">
+          <button class="btn btn-default pull-right visible-xs-block visible-sm-block" ng-click="show = !show">{{ show ? 'Hide all facets' : 'Show all facets' }}</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hideable-facets" ng-class="{ 'hidden-sm hidden-xs': !show }">
+
+      <!--  <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet> -->
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.familyName"></seco-basic-facet>
+      </div>
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.givenName"></seco-basic-facet>
+      </div>
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.gender"></seco-basic-facet>
+      </div>
+
     </div>
   </div>
-  <div class="hideable-facets" ng-class="{ 'hidden-sm hidden-xs': !show }">
-    <seco-checkbox-facet data-options="vm.facets.link"></seco-checkbox-facet>
-    <!--  <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet> -->
-    <seco-basic-facet data-options="vm.facets.familyName"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.givenName"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.gender"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.memberOf"></seco-basic-facet>
+</div>
+
+
+<div class="facets">
+  <div class="row">
+    <div class="hideable-facets" ng-class="{ 'hidden-sm hidden-xs': !show }">
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.memberOf"></seco-basic-facet>
+      </div>
+
+      <!-- <div class="col-md-3 pull-md-3 col-lg-3">
     <seco-basic-facet data-options="vm.facets.state"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.birthYear"></seco-basic-facet>
-    <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet>
-    <seco-hierarchy-facet data-options="vm.facets.birthPlace"></seco-hierarchy-facet>
-     </div>
+</div> -->
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.occupation"></seco-basic-facet>
+      </div>
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-hierarchy-facet data-options="vm.facets.birthPlace"></seco-hierarchy-facet>
+      </div>
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-checkbox-facet data-options="vm.facets.link"></seco-checkbox-facet>
+      </div>
+
+    </div>
+  </div>
 </div>

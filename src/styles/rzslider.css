@@ -1,6 +1,6 @@
-/*! angularjs-slider - v6.4.1 - 
- (c) Rafal Zajac <rzajac@gmail.com>, Valentin Hervieu <valentin@hervieu.me>, Jussi Saarivirta <jusasi@gmail.com>, Angelin Sirbu <angelin.sirbu@gmail.com> - 
- https://github.com/angular-slider/angularjs-slider - 
+/*! angularjs-slider - v6.4.1 -
+ (c) Rafal Zajac <rzajac@gmail.com>, Valentin Hervieu <valentin@hervieu.me>, Jussi Saarivirta <jusasi@gmail.com>, Angelin Sirbu <angelin.sirbu@gmail.com> -
+ https://github.com/angular-slider/angularjs-slider -
  2017-11-17 */
 .rzslider {
   position: relative;
@@ -93,7 +93,7 @@
 
 .rzslider .rz-selection {
   z-index: 2;
-  background: #ff4141;
+  background: #BF0A30;
   border-radius: 2px;
 }
 
@@ -103,7 +103,7 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
-  background-color: #777fff;
+  background-color: #002868;
   border-radius: 16px;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .rzslider .rz-pointer.rz-active:after {
-  background-color: #451aff;
+  background-color: #BF0A30;
 }
 
 .rzslider .rz-bubble {

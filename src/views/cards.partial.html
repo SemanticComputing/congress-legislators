@@ -4,7 +4,7 @@
   infinite-scroll-distance='0'>
   <div class="row">
     <div ng-repeat="person in vm.people" class="person-container">
-      <div class="col-xs-12 col-sm-12 person-panel col-md-4 col-lg-3">
+      <div class="col-xs-12 col-sm-12 person-panel col-md-3 col-lg-2">
         <div class="thumbnail">
           <a ui-sref="person.detail({ personId: person.id })">
             <div class="person-profile-img vertical-center">
@@ -19,21 +19,24 @@
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-12">
                   <p ng-if="::(person.birthPlace || person.birthDate || person.deathDate)">
-                    &#8727;&nbsp;<span ng-if="::person.birthPlace">{{ ::person.birthPlace }}</span>
-                    {{ ::person.birthDate }}
-                    <span ng-if=::person.deathDate>&dagger;&nbsp;{{ ::person.deathPlace }}&nbsp;{{ ::person.deathDate }}</span>
+                    <span class="birth icon-born"></span>&nbsp;<span ng-if="::person.birthPlace">{{ ::person.birthPlace }}</span>{{ ::person.birthDate }}
+                    <span ng-if=::person.deathDate><span class="birth icon-death"></span>&nbsp;{{ ::person.deathPlace }}&nbsp;{{ ::person.deathDate }}</span>
                   </p>
                 </div>
                 <div ng-if="::person.occupation" class="col-xs-12">
                   <p>{{ ::person.occupation | castArray | join:', ' }}</p>
                 </div>
+
+                <!-- Glyphicon Section-->
                 <div class="col-xs-12 icon-menu">
                 	<a title="Näytä matrikkeliteksti" ng-attr-title="{{ showText ? 'Piilota matrikkeliteksti' : 'Näytä matrikkeliteksti' }}" href=""
-                    ng-click="showText = !showText"><span class="glyphicon" ng-class="{ 'glyphicon-collapse-down': !showText, 'glyphicon-collapse-up': showText }" aria-hidden="true"></span></a>
+                    ng-click="showText = !showText"><span class="bio" ng-class="{ 'icon-bio-down': !showText, 'icon-bio-up': showText }" aria-hidden="true"></span></a>
 
-                  <a title="Data" class="" ng-href="{{ ::person.id }}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span></a>
+                <a title="Data" class="" ng-href="{{ ::person.id }}"><span class="bio icon-data" aria-hidden="true"></span></a>
                 </div>
               </div>
+                <!---->
+
               <div class="row">
                 <div ng-if="::person.hasAchievements" class="col-xs-6">
                   <a href="" class="link" ng-click="vm.getAchievements(person)"
@@ -104,8 +107,8 @@
           </div>
         </div>
       </div>
-      <div class="clearfix visible-lg-block" ng-if="($index + 1) % 4 == 0"></div>
-      <div class="clearfix visible-md-block" ng-if="($index + 1) % 3 == 0"></div>
+      <div class="clearfix visible-lg-block" ng-if="($index + 1) % 6 == 0"></div>
+      <div class="clearfix visible-md-block" ng-if="($index + 1) % 4 == 0"></div>
       <div class="clearfix visible-sm-block" ng-if="($index + 1) % 1 == 0"></div>
       <div class="clearfix visible-xs-block" ng-if="($index + 1) % 1 == 0"></div>
     </div>

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-sm-12" ng-show="!vm.person && !vm.error">
       <img class="loading-img" src="images/loading-lg.gif"></img>
@@ -8,12 +8,12 @@
     </div>
     <div class="container-fluid text-center" ng-show="vm.person">
       <h1>{{ vm.person.givenName }} {{ vm.person.familyName }}</h1>
-    
+
     <div class="container-fluid thumbnail">
-    
+
 	    <div>
 		    <div id="labelcontainer" class="col-sm-4 col-md-2 text-center" ng-show="vm.person">
-		    	
+
 				<p ng-repeat="event in ::vm.events"
 					class="{{event.class}}"
 					ng-mouseenter="vm.focusEvent(event)"
@@ -23,31 +23,31 @@
 				</p>
 			</div>
 		</div>
-		
+
 		<div class="col-sm-12 col-md-10 text-center ">
 		   <ui-gmap-google-map id="ui-gmap-google-map" center='vm.map.center' zoom='vm.map.zoom'>
-	        	<ui-gmap-marker ng-repeat="marker in vm.markers" 
+	        	<ui-gmap-marker ng-repeat="marker in vm.markers"
 	        		coords="marker"
 	        		idkey="marker.id"
 	        		options="marker.options"
 	        	></ui-gmap-marker>
 	        </ui-gmap-google-map>
-	        
+
 	        <svg id="timelinecontainer" viewBox="-15,-7,120,27" preserveAspectRatio="none" version="1.0" x="0" y="0" width="900" height="180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				  	<line ng-repeat="line in ::vm.mainline.lines" ng-attr-x1="{{ line.x1 }}" ng-attr-x2="{{ line.x2 }}" ng-attr-y1="{{ line.y1 }}" ng-attr-y2="{{ line.y2 }}">
 				  	</line>
-				  	
+
 				  	<text ng-repeat="text in ::vm.mainline.texts" ng-attr-x="{{ text.x }}" ng-attr-y="{{ text.y }}">
 				  	{{ text.year }}
 				  	</text>
 				  	<path ng-repeat="event in vm.events"
 				  		ng-mouseenter="vm.focusEvent(event)"
-				  		ng-mouseleave="vm.unfocusEvent(event)" 
-				  		class="{{ event.class }}" 
+				  		ng-mouseleave="vm.unfocusEvent(event)"
+				  		class="{{ event.class }}"
 				  		ng-attr-d="{{ event.path }}">
 				  	</path>
-				  	
-			  		
+
+
 		  	</svg>
 			<p>
 				<span>{{ vm.currentEvent }}</span>

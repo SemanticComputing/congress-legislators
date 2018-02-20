@@ -1,28 +1,39 @@
-<div class="container-fluid">
+<div class="container">
+
   <div class="row">
     <div class="col-md-2 col-sm-2 col-xs-2 vcenter push-xs-2">
-      <!-- <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> -->
-    </div><!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
- --><div class="col-xs-9 col-md-8 col-lg-9 vcenter push-xs-9">
+  <!-- <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> -->
+</div><!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
+--><div class="col-xs-9 col-md-9 col-lg-9 vcenter push-xs-9 toptext">
       <div ng-include="'views/description.partial.html'"></div>
     </div>
-    <div class="col-md-4 pull-md-4 col-lg-3">
+
+  <!--  <div class="col-md-12 pull-md-12 col-lg-12">
+      <br/>BIRTH YEAR
+          <rzslider rz-slider-model="minRangeSlider.minValue" rz-slider-high="minRangeSlider.maxValue" rz-slider-options="minRangeSlider.options">
+        </rzslider>
+    </div> -->
+
+    <div class="col-md-12 pull-md-12 col-lg-12">
+    <!--
+    <div class="col-md-4 pull-md-4 col-lg-3"> -->
       <div ng-include="'views/facets.partial.html'"></div>
     </div>
-    <div class="col-md-8 col-lg-9">
-      <b>Order:</b>
+
+<div class="col-md-12 pull-md-12 col-lg-12">
+<div class="sort-custom">
+      <b class="subject">Sort by</b>
       <span class="sort">
-        <a href="" ng-click="vm.sortBy('?birthDate')">By Time</a>
-        <span ng-class="vm.getSortClass('?birthDate', true)" class="glyphicon" aria-hidden="true"></span>
-      </span>
-      <span class="sort">
-        <a href="" ng-click="vm.sortBy('?familyName')">By Family Name</a>
-        <span ng-class="vm.getSortClass('?familyName')" class="glyphicon" aria-hidden="true"></span>
-      </span>
-      <span class="sort">
-        <a href="" ng-click="vm.sortBy('?givenName')">By First Name</a>
+        <a href="" ng-click="vm.sortBy('?birthDate')">Birthdate</a>
+        <span ng-class="vm.getSortClass('?birthDate', true)" class="glyphicon" aria-hidden="true"></span>&emsp;&emsp;&emsp;
+
+        <a href="" ng-click="vm.sortBy('?familyName')">Family Name</a>
+        <span ng-class="vm.getSortClass('?familyName')" class="glyphicon" aria-hidden="true"></span>&emsp;&emsp;&emsp;
+
+        <a href="" ng-click="vm.sortBy('?givenName')">First Name</a>
         <span ng-class="vm.getSortClass('?givenName')" class="glyphicon" aria-hidden="true"></span>
       </span>
+</div>
       <div ng-include="'views/cards.partial.html'"></div>
     </div>
   </div>

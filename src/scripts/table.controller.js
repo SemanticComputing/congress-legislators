@@ -19,6 +19,23 @@
     function TableController($scope, $state, $uibModal, _, RESULTS_PER_PAGE,
     		nbfService, NgTableParams, FacetHandler, facetUrlStateHandlerService) {
 
+          ///// Range slider config
+            $scope.minRangeSlider = {
+                minValue: (new Date()).getFullYear()-300,
+                maxValue: (new Date()).getFullYear()-250,
+                options: {
+                    floor: 1720,
+                    ceil: (new Date()).getFullYear(),
+                    step: 10,
+                    draggableRange: true,
+                    onEnd: function () {
+                        fetchResults({ constraint: vm.previousSelections });
+                    }
+                }
+            };
+          /////
+
+
         var vm = this;
 
         vm.openPage = openPage;
@@ -72,7 +89,7 @@
 
         function getData(params) {
             vm.isLoadingResults = true;
-
+            console.log(vm.pager)
             return vm.pager.getPage(params.page() - 1, params.count())
             .then(function(page) {
                 return vm.pager.getTotalCount().then(function(count) {
@@ -94,6 +111,10 @@
 
         function fetchResults(facetSelections) {
             vm.isLoadingResults = true;
+            /////
+            facetSelections.minYear = $scope.minRangeSlider.minValue;
+            facetSelections.maxYear = $scope.minRangeSlider.maxValue;
+            /////
 
             nbfService.getResults(facetSelections)
             .then(function(pager) {

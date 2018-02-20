@@ -18,7 +18,7 @@ a.no-style {
 }
 
 .vcenter {
-  display: inline-block;
+  /*display: inline-block;*/
   vertical-align: middle;
   float: none;
 }
@@ -110,8 +110,8 @@ a.no-style {
 }
 
 .person-profile-img img {
-  height: 250px;
-  max-width: 250px;
+  height: auto;
+  width: 250px;
 }
 
 .vertical-center {
