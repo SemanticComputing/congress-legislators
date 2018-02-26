@@ -374,6 +374,18 @@
                 predicate: '<http://schema.org/memberOf>',
                 name: 'Political Party',
                 enabled: true
+            },
+            type: {
+                facetId: 'type',
+                predicate: '<http://ldf.fi/congress/type>',
+                name: 'Type of Congress',
+                enabled: true
+            },
+            congress_number: {
+                facetId: 'congress_number',
+                predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
+                name: 'Number of Congress',
+                enabled: true
             }
         };
 
@@ -414,6 +426,8 @@
         '  	OPTIONAL { ?id schema:gender ?gender . }' +
         '  	OPTIONAL { ?id schema:image ?images . }' +
         '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
+        '	OPTIONAL { ?id congress:type ?type . }' +
+        ' OPTIONAL { ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . }' +
         ' }';
 
         //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
@@ -422,20 +436,20 @@
             '  { ' +
             '    <RESULT_SET> ' +
             '  } ' +
-            '  	OPTIONAL { ?id schema:familyName ?familyName . }' +
+            '   OPTIONAL { ?id schema:familyName ?familyName . }' +
             '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
-            '  	OPTIONAL { ?id schema:description ?description . }' +
+            '  OPTIONAL { ?id schema:description ?description . }' +
             '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
             '  OPTIONAL { ?id schema:birthPlace/rdfs:label ?birthPlace . }   ' +
             '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
             '  OPTIONAL { ?id schema:deathPlace/rdfs:label ?deathPlace . }   ' +
             '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
             '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
-            '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
-            '   OPTIONAL { ?id congress:twitter ?twitter . }' +
+            '  OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
+            '  OPTIONAL { ?id congress:twitter ?twitter . }' +
             '  OPTIONAL { ?id schema:gender ?gender . }' +
-            '  	OPTIONAL { ?id schema:image ?images . }' +
-            '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
+            '  OPTIONAL { ?id schema:image ?images . }' +
+            '  OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
             '  OPTIONAL { ?id congress:bioguide_id ?committee__id .' +
             '  ?mship congress:bioguide_id ?committee__id ;' +
             '  congress:committee ?committee__label ;' +
@@ -446,7 +460,6 @@
             '  FILTER (str(?altLabel) = str(?committee__label)). ' +
               '}'+
             '}';
-
 
         // The SPARQL endpoint URL
         var endpointConfig = {
@@ -504,7 +517,6 @@
                 return $q.reject('Not found');
             });
         }
-
 
         function getFacets() {
             var facetsCopy = angular.copy(facets);
@@ -2953,14 +2965,14 @@ angular.module('facetApp').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('views/detail.html',
-    "<div class=\"col-sm-12 col-md-8 text-center\" ng-show=\"vm.person\"> <div class=\"col-sm-12\" ng-show=\"!vm.person && !vm.error\"> <img class=\"loading-img\" src=\"images/loading-lg.gif\"> </div> <h1>{{ vm.person.givenName }} {{ vm.person.familyName }}</h1> <div class=\"thumbnail\"> <div class=\"person-profile-img\"> <div class=\"row\"> <div class=\"col-sm-12 text-center\"> <img ng-repeat=\"img in vm.person.images\" class=\"person-img img img-responsive\" ng-src=\"{{ img }}\"> </div> </div> </div> <div class=\"caption\"> <div class=\"visible-caption\"> <div class=\"row\"> <div class=\"col-xs-12\"> <p ng-if=\"(vm.person.birthPlace || vm.person.birthDate || vm.person.deathDate)\"> <span ng-if=\"(vm.person.birthPlace || vm.person.birthDate)\"><span class=\"birth icon-born\"></span>&nbsp;{{ vm.person.birthPlace }} {{ vm.person.birthDate }}</span> <br> <span ng-if=\"(vm.person.deathPlace || vm.person.deathDate)\"><span class=\"birth icon-death\"></span>&nbsp;{{ vm.person.deathPlace }}</span> <span ng-if=\"vm.person.deathDate\">{{ vm.person.deathDate }}</span> </p> </div> <div ng-if=\"vm.person.occupation\" class=\"col-xs-12\"> <p>{{ vm.person.occupation | castArray | join:', ' }}</p> </div> <div class=\"col-xs-12 icon-menu\"> <a title=\"Data\" class=\"\" ng-href=\"{{ vm.person.id }}\"><span class=\"bio icon-data\" aria-hidden=\"true\"></span></a> </div> </div> <div class=\"row\"> <div ng-if=\"vm.person.wikipedia\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.wikipedia }}\">Wikipedia</a> </div><div ng-if=\"vm.person.wikidata\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.wikidata }}\">Wikidata</a> </div> <div ng-if=\"vm.person.dbpedia\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.dbpedia }}\">DBpedia</a> </div> <div ng-if=\"vm.person.twitter\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.twitter }}\">Twitter</a> </div> </div> </div> <div ng-if=\"vm.person.committee\" class=\"row padded-row\"> <div class=\"col-xs-12\"><h4>Member of committees:</h4></div> <p style=\"white-space: pre-line\">{{ vm.person.committee.label }}</p> <div ng-if=\"vm.person.description\" class=\"entry-text text-left\"> <hr> <p>{{ vm.person.description }}</p> </div> </div> </div> </div> </div> <div class=\"col-md-4 text-left\" ng-if=\"vm.person.similar\"> <h3>Similar persons</h3> <img ng-if=\"!vm.person.similar\" class=\"loading-img\" src=\"images/loading-lg.gif\"> <div class=\"col-sm-6\" ng-repeat=\"person in vm.person.similar\"> <a ui-sref=\"person.detail({ personId: person.prs })\">{{ person.label }}</a> </div> </div>  "
+    "<div class=\"col-sm-12 col-md-8 text-center\" ng-show=\"vm.person\"> <div class=\"col-sm-12\" ng-show=\"!vm.person && !vm.error\"> <img class=\"loading-img\" src=\"images/loading-lg.gif\"> </div> <h1>{{ vm.person.givenName }} {{ vm.person.familyName }}</h1> <div class=\"thumbnail\"> <div class=\"person-profile-img\"> <div class=\"row\"> <div class=\"col-sm-12 text-center\"> <img ng-repeat=\"img in vm.person.images\" class=\"person-img img img-responsive\" ng-src=\"{{ img }}\"> </div> </div> </div> <div class=\"caption\"> <div class=\"visible-caption\"> <div class=\"row\"> <div class=\"col-xs-12\"> <p ng-if=\"(vm.person.birthPlace || vm.person.birthDate || vm.person.deathDate)\"> <span ng-if=\"(vm.person.birthPlace || vm.person.birthDate)\"><span class=\"birth icon-born\"></span>&nbsp;{{ vm.person.birthPlace }} {{ vm.person.birthDate }}</span> <br> <span ng-if=\"(vm.person.deathPlace || vm.person.deathDate)\"><span class=\"birth icon-death\"></span>&nbsp;{{ vm.person.deathPlace }}</span> <span ng-if=\"vm.person.deathDate\">{{ vm.person.deathDate }}</span> </p> </div> <div ng-if=\"vm.person.occupation\" class=\"col-xs-12\"> <p>{{ vm.person.occupation | castArray | join:', ' }}</p> </div> <div class=\"col-xs-12 icon-menu\"> <a title=\"Data\" class=\"\" ng-href=\"{{ vm.person.id }}\"><span class=\"bio icon-data\" aria-hidden=\"true\"></span></a> </div> </div> <div class=\"row\"> <div ng-if=\"vm.person.wikipedia\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.wikipedia }}\">Wikipedia</a> </div><div ng-if=\"vm.person.wikidata\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.wikidata }}\">Wikidata</a> </div> <div ng-if=\"vm.person.dbpedia\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.dbpedia }}\">DBpedia</a> </div> <div ng-if=\"vm.person.twitter\" class=\"col-xs-6 col-xs-offset-3\"> <a ng-href=\"{{ vm.person.twitter }}\">Twitter</a> </div> </div> </div> <div ng-if=\"vm.person.committee\" class=\"row padded-row\"> <div class=\"col-xs-12\"><h4>Member of committees:</h4></div> <p style=\"white-space: pre-line\">{{ vm.person.committee.label }}</p> </div> <div ng-if=\"vm.person.description\" class=\"entry-text text-left\"> <hr> <p>{{ vm.person.description }}</p> </div> </div> </div> </div> <div class=\"col-md-4 text-left\" ng-if=\"vm.person.similar\"> <h3>Similar persons</h3> <img ng-if=\"!vm.person.similar\" class=\"loading-img\" src=\"images/loading-lg.gif\"> <div class=\"col-sm-6\" ng-repeat=\"person in vm.person.similar\"> <a ui-sref=\"person.detail({ personId: person.prs })\">{{ person.label }}</a> </div> </div>  "
   );
 
 
   $templateCache.put('views/facets.partial.html',
     "<a href=\"\" ng-click=\"vm.removeFacetSelections()\">Remove all selections</a> <!-- Following facets divided in 2 rows (4 × 4)to avoid layout misaligning --> <div class=\"facets\"> <div class=\"row\"> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-jena-text-facet data-options=\"vm.facets.entryText\"></seco-jena-text-facet> <div class=\"show-facets row\"> <div class=\"col-xs-12\"> <button class=\"btn btn-default pull-right visible-xs-block visible-sm-block\" ng-click=\"show = !show\">{{ show ? 'Hide all facets' : 'Show all facets' }}</button> </div> </div> </div> <div class=\"hideable-facets\" ng-class=\"{ 'hidden-sm hidden-xs': !show }\"> <!--  <seco-basic-facet data-options=\"vm.facets.occupation\"></seco-basic-facet> --> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.familyName\"></seco-basic-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.givenName\"></seco-basic-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.gender\"></seco-basic-facet> </div> </div> </div> </div> <div class=\"facets\"> <div class=\"row\"> <div class=\"hideable-facets\" ng-class=\"{ 'hidden-sm hidden-xs': !show }\"> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.memberOf\"></seco-basic-facet> </div> <!-- <div class=\"col-md-3 pull-md-3 col-lg-3\">\n" +
     "    <seco-basic-facet data-options=\"vm.facets.state\"></seco-basic-facet>\n" +
-    "</div> --> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.occupation\"></seco-basic-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-hierarchy-facet data-options=\"vm.facets.birthPlace\"></seco-hierarchy-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-checkbox-facet data-options=\"vm.facets.link\"></seco-checkbox-facet> </div> </div> </div> </div>"
+    "</div> --> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.occupation\"></seco-basic-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-hierarchy-facet data-options=\"vm.facets.birthPlace\"></seco-hierarchy-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-checkbox-facet data-options=\"vm.facets.link\"></seco-checkbox-facet> </div> </div> </div> </div> <div class=\"facets\"> <div class=\"row\"> <div class=\"hideable-facets\" ng-class=\"{ 'hidden-sm hidden-xs': !show }\"> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.type\"></seco-basic-facet> </div> <div class=\"col-md-3 pull-md-3 col-lg-3\"> <seco-basic-facet data-options=\"vm.facets.congress_number\"></seco-basic-facet> </div> </div> </div> </div>"
   );
 
 

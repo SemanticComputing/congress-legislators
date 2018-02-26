@@ -107,6 +107,18 @@
                 predicate: '<http://schema.org/memberOf>',
                 name: 'Political Party',
                 enabled: true
+            },
+            type: {
+                facetId: 'type',
+                predicate: '<http://ldf.fi/congress/type>',
+                name: 'Type of Congress',
+                enabled: true
+            },
+            congress_number: {
+                facetId: 'congress_number',
+                predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
+                name: 'Number of Congress',
+                enabled: true
             }
         };
 
@@ -147,6 +159,8 @@
         '  	OPTIONAL { ?id schema:gender ?gender . }' +
         '  	OPTIONAL { ?id schema:image ?images . }' +
         '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
+        '	OPTIONAL { ?id congress:type ?type . }' +
+        ' OPTIONAL { ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . }' +
         ' }';
 
         //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
@@ -155,20 +169,20 @@
             '  { ' +
             '    <RESULT_SET> ' +
             '  } ' +
-            '  	OPTIONAL { ?id schema:familyName ?familyName . }' +
+            '   OPTIONAL { ?id schema:familyName ?familyName . }' +
             '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
-            '  	OPTIONAL { ?id schema:description ?description . }' +
+            '  OPTIONAL { ?id schema:description ?description . }' +
             '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
             '  OPTIONAL { ?id schema:birthPlace/rdfs:label ?birthPlace . }   ' +
             '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
             '  OPTIONAL { ?id schema:deathPlace/rdfs:label ?deathPlace . }   ' +
             '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
             '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
-            '   OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
-            '   OPTIONAL { ?id congress:twitter ?twitter . }' +
+            '  OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
+            '  OPTIONAL { ?id congress:twitter ?twitter . }' +
             '  OPTIONAL { ?id schema:gender ?gender . }' +
-            '  	OPTIONAL { ?id schema:image ?images . }' +
-            '	OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
+            '  OPTIONAL { ?id schema:image ?images . }' +
+            '  OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
             '  OPTIONAL { ?id congress:bioguide_id ?committee__id .' +
             '  ?mship congress:bioguide_id ?committee__id ;' +
             '  congress:committee ?committee__label ;' +
@@ -179,7 +193,6 @@
             '  FILTER (str(?altLabel) = str(?committee__label)). ' +
               '}'+
             '}';
-
 
         // The SPARQL endpoint URL
         var endpointConfig = {
@@ -237,7 +250,6 @@
                 return $q.reject('Not found');
             });
         }
-
 
         function getFacets() {
             var facetsCopy = angular.copy(facets);

@@ -63,3 +63,19 @@
     </div>
   </div>
 </div>
+
+<div class="facets">
+  <div class="row">
+    <div class="hideable-facets" ng-class="{ 'hidden-sm hidden-xs': !show }">
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.type"></seco-basic-facet>
+      </div>
+
+      <div class="col-md-3 pull-md-3 col-lg-3">
+        <seco-basic-facet data-options="vm.facets.congress_number"></seco-basic-facet>
+      </div>
+
+    </div>
+  </div>
+</div>
