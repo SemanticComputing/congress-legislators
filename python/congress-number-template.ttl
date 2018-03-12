@@ -10,7 +10,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :n{puri}	a :CongressNumber ;
-	:congress_number "{congress_number}" ;
+	:congress_number {congress_number} ;
 	:icpsr_id "{icpsr_id}" ;
 	:state_code "{state_code}" ;
 	:congressional_district_number "{congressional_district_number}" ;
