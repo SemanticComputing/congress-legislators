@@ -163,6 +163,7 @@
         ' OPTIONAL { ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . }' +
         ' }';
 
+        
         //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
         var detailQuery =
             'SELECT DISTINCT * WHERE {' +
