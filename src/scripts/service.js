@@ -115,7 +115,7 @@
             type: {
                 facetId: 'type',
                 predicate: '<http://ldf.fi/congress/type>',
-                name: 'Type of Congress',
+                name: 'Chamber',
                 enabled: true
             },
             congress_number: {

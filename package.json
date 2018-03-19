@@ -42,6 +42,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "angularjs-slider": "^6.4.0"
+    "angularjs-slider": "^6.4.0",
+    "eslint": "^4.18.1",
+    "eslint-plugin-angular": "^3.2.0"
   }
 }
