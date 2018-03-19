@@ -1,35 +1,44 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12" ng-show="!vm.people && !vm.error">
+    <div class="col-sm-12" ng-show="!vm.markers && !vm.error">
       <img class="loading-img" src="images/loading-lg.gif"></img>
     </div>
     <div uib-alert ng-if="vm.error">
       {{ vm.error }}
     </div>
-    <div class="container-fluid text-center" ng-show="vm.people">
-    On the map people's <span style="color:#002868">birth</span> and <span style="color:#BF0A30">death</span> places are shown. 
+    <div class="text-center">
+    On the map people's <b><span style="color:#0045b5">BIRTH</span></b> and <b><span style="color:#f3224e">DEATH</span></b> places are shown.
     The illustration is made based on the selections made in facets on the left.
+    <div class="container-fluid thumbnail">
     <div class="col-md-4 pull-md-4 col-lg-3">
-		<div>
-			<br/>By the birth year of people
-            <rzslider rz-slider-model="minRangeSlider.minValue" rz-slider-high="minRangeSlider.maxValue" rz-slider-options="minRangeSlider.options"></rzslider>
-        </div>
-
+      <div id="sl-2">
+		  <seco-slider-facet data-options="vm.facets.slider"></seco-slider-facet>
+      </div>
       <div ng-include="'views/mapfacets.partial.html'"></div>
     </div>
-    <div class="container-fluid thumbnail">
     	<div class="col-md-8 col-lg-9">
-
 		   <ui-gmap-google-map id="ui-gmap-google-map" center='vm.map.center' zoom='vm.map.zoom'>
+
+         <ui-gmap-window
+           id="ui-gmap-window"
+           show="vm.window.show"
+           options="vm.window"
+           templateUrl="'views/groupmap.popup.html'"
+                   templateParameter="vm"
+               closeClick="vm.closeWindow">
+               <span></span>
+           </ui-gmap-window>
+
 	        	<ui-gmap-marker ng-repeat="marker in vm.markers"
 	        		coords="marker"
 	        		idkey="marker.id"
 	        		options="marker.options"
+              click="marker.onClick()"
 	        	></ui-gmap-marker>
 	        </ui-gmap-google-map>
 
 	      </div>
-      </div>
     </div>
   </div>
+</div>
 </div>

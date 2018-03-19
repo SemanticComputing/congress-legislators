@@ -1,0 +1,10 @@
+<div class='map-popup'>
+    <div id="popupcontainer" class="col-sm-4 col-md-2 text-center">
+        <h4 ng-show="parameter.place_label">{{ parameter.place_label }}</h4>
+        <ul class="list-group row list-group-persons ng-scope" id="popupcontainer2">
+	        <li class="list-group-item col-xs-6 ng-scope" ng-show="parameter.people" ng-repeat="person in parameter.people">
+				<a ui-sref="person.detail({ personId: person.uri })">{{ person.label }}</a>
+	        </li>
+		</ul>
+	</div>
+</div>

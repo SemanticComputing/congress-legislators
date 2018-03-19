@@ -9,7 +9,7 @@
 
     /* @ngInject */
     function groupmapService($q, $location, _, FacetResultHandler, SPARQL_ENDPOINT_URL,
-            AdvancedSparqlService, personMapperService) {
+            AdvancedSparqlService, personMapperService, numericFacetMapperService) {
 
         /* Public API */
 
@@ -36,6 +36,12 @@
                     facetId: 'entryText',
                     graph: '<http://ldf.fi/congress/people>',
                     name: 'Search',
+                    enabled: true
+                },
+                slider: {
+                    facetId: 'slider',
+                    name: 'Timeline: 1st (1789) - 115th (2018) Congresses',
+                    predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                     enabled: true
                 },
                 link: {
@@ -92,12 +98,11 @@
                     facetId: 'occupation',
                     predicate: '<http://schema.org/hasOccupation>',
                     name: 'Occupation',
-                    enabled: true
                 },
                state: {
                     facetId: 'state',
                     predicate: '<http://schema.org/state>',
-                    name: 'State',
+                    name: 'Representing State',
                     enabled: true
                 },
                 memberOf: {
@@ -105,6 +110,18 @@
                     predicate: '<http://schema.org/memberOf>',
                     name: 'Political Party',
                     enabled: true
+                },
+                type: {
+                    facetId: 'type',
+                    predicate: '<http://ldf.fi/congress/type>',
+                    name: 'Type of Congress',
+                    enabled: true
+                },
+                congress_number: {
+                    facetId: 'congress_number',
+                    predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
+                    name: 'Serving Record of the Period',
+                    mapper: numericFacetMapperService
                 }
             };
 
@@ -127,21 +144,28 @@
         // The query for the results.
         // ?id is bound to the person URI.
         var query =
-    		'SELECT DISTINCT ?id ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude WHERE { ' +
+    		'SELECT DISTINCT ?id ?person__name ?place__label ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude ?congress_number WHERE { ' +
     		'  { <RESULT_SET> } ' +
     		'  VALUES (?evt_place ?evt_time ?class) { ' +
-    		'  	(schema:deathPlace schema:deathDate "Birth"@en) ' +
+    		'  	(schema:birthPlace schema:birthDate "Birth"@en) ' +
     		'  	(schema:deathPlace schema:deathDate "Death"@en) ' +
     		'	} ' +
     		' ' +
+    		'  OPTIONAL { ?id schema:familyName ?familyName . } ' +
+    		'  OPTIONAL { ?id schema:givenName ?givenName . } ' +
+    		'  BIND (CONCAT(?givenName, " ",?familyName) AS ?person__name) ' +
+        ' ' +
+        ' ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . ' +
     		'   ?id ?evt_place ?place__uri ; ' +
     		'  		?evt_time ?time__start ; ' +
     		'    	?evt_time ?time__end . ' +
-    		'  	FILTER (<STARTYEAR><=year(?time__start) && year(?time__start)<=<ENDYEAR>) ' +
     		'  BIND (RAND() AS ?rand) ' +
-    		'  ?place__uri geo:lat ?place__latitude ; geo:long ?place__longitude . ' +
+    		'  ?place__uri geo:lat ?place__latitude ;  ' +
+    		'  geo:long ?place__longitude ; ' +
+    		'  rdfs:label ?place__label . ' +
     		'} ORDER BY ?rand ' +
-    		'LIMIT 1000 ';
+    		'LIMIT 500 ';
+        console.log(query);
 
         // The SPARQL endpoint URL
         var endpointConfig = {
@@ -152,7 +176,7 @@
         var facetOptions = {
             endpointUrl: endpointConfig.endpointUrl,
             rdfClass: '<http://schema.org/Person>',
-            constraint: '',
+            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/givenName> ?givenName . ?id <http://schema.org/birthDate> ?birthDate . ',
             preferredLang : 'en',
             noSelectionString: '-- no selection --'
         };
@@ -173,11 +197,10 @@
         var endpoint = new AdvancedSparqlService(endpointConfig, personMapperService);
 
         function getResults(facetSelections) {
-        	var q = prefixes+query.replace("<RESULT_SET>", facetSelections.constraint.join(' '))
-        		.replace("<STARTYEAR>",facetSelections.minYear)
-        		.replace("<ENDYEAR>",facetSelections.maxYear);
+        	var q = prefixes + query.replace("<RESULT_SET>", facetSelections.constraint.join(' '));
         	return endpoint.getObjectsNoGrouping(q);
         }
+
 
         function getFacets() {
             var facetsCopy = angular.copy(facets);
@@ -189,7 +212,7 @@
         }
 
         function updateSortBy(sortBy) {
-            var sort = $location.search().sortBy || '?ordinal';
+            var sort = $location.search().sortBy || '?birthDate';
             if (sort === sortBy) {
                 $location.search('desc', $location.search().desc ? null : true);
             }
@@ -199,7 +222,7 @@
         function getSortBy() {
             var sortBy = $location.search().sortBy;
             if (!_.isString(sortBy)) {
-                sortBy = '?ordinal';
+                sortBy = '?birthDate';
             }
             var sort;
             if ($location.search().desc) {
@@ -207,12 +230,12 @@
             } else {
                 sort = sortBy;
             }
-            return sortBy === '?ordinal' ? sort : sort + ' ?ordinal';
+            return sortBy === '?birthDate' ? sort : sort + ' ?birthDate';
         }
 
         function getSortClass(sortBy, numeric) {
-            var sort = $location.search().sortBy || '?ordinal';
-            var cls = numeric ? 'glyphicon-sort-by-order' : 'glyphicon-sort-by-alphabet';
+            var sort = $location.search().sortBy || '?birthDate';
+            var cls = numeric ? 'icon-sort-by-past' : 'icon-sort-by-alphabet';
 
             if (sort === sortBy) {
                 if ($location.search().desc) {

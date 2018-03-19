@@ -38,6 +38,12 @@
                 name: 'Search',
                 enabled: true
             },
+            slider: {
+                facetId: 'slider',
+                name: 'Timeline: 1st (1789) - 115th (2018) Congresses',
+                predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
+                enabled: true
+            },
             link: {
                 facetId: 'link',
                 choices: [
@@ -83,7 +89,6 @@
                 name: 'Place of Birth',
                 hierarchy: '<http://schema.org/containedInPlace>',
                 depth: 5,
-                enabled: true
             },
             gender: {
                 facetId: 'gender',
@@ -94,12 +99,11 @@
                 facetId: 'occupation',
                 predicate: '<http://schema.org/hasOccupation>',
                 name: 'Occupation',
-                enabled: true
             },
            state: {
                 facetId: 'state',
                 predicate: '<http://schema.org/state>',
-                name: 'State',
+                name: 'Representing State',
                 enabled: true
             },
             memberOf: {
@@ -117,8 +121,7 @@
             congress_number: {
                 facetId: 'congress_number',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
-                name: 'Number of Congress',
-                enabled: true,
+                name: 'Serving Record of the Period',
                 mapper: numericFacetMapperService
             }
         };
@@ -164,34 +167,34 @@
         ' OPTIONAL { ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . }' +
         ' }';
 
-        
+
         //	the query for single person pages, e.g. http://localhost:9000/#!/http:~2F~2Fldf.fi~2Fcongress~2Fp1045
         var detailQuery =
             'SELECT DISTINCT * WHERE {' +
             '  { ' +
             '    <RESULT_SET> ' +
             '  } ' +
-            '   OPTIONAL { ?id schema:familyName ?familyName . }' +
-            '  OPTIONAL { ?id schema:givenName ?givenName . } 	' +
-            '  OPTIONAL { ?id schema:description ?description . }' +
-            '  OPTIONAL { ?id schema:birthDate ?birthDate . }   ' +
-            '  OPTIONAL { ?id schema:birthPlace/rdfs:label ?birthPlace . }   ' +
-            '  OPTIONAL { ?id schema:deathDate ?deathDate . }   ' +
-            '  OPTIONAL { ?id schema:deathPlace/rdfs:label ?deathPlace . }   ' +
-            '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . }  	' +
-            '  OPTIONAL { ?id congress:wikidata ?wikidata . }  	' +
-            '  OPTIONAL { ?id congress:dbpedia_id ?dbpedia . }' +
-            '  OPTIONAL { ?id congress:twitter ?twitter . }' +
-            '  OPTIONAL { ?id schema:gender ?gender . }' +
-            '  OPTIONAL { ?id schema:image ?images . }' +
-            '  OPTIONAL { ?id schema:hasOccupation ?occupation . }' +
-            '  OPTIONAL { ?id congress:bioguide_id ?committee__id .' +
-            '  ?mship congress:bioguide_id ?committee__id ;' +
-            '  congress:committee ?committee__label ;' +
+            '  OPTIONAL { ?id schema:familyName ?familyName . } ' +
+            '  OPTIONAL { ?id schema:givenName ?givenName . } ' +
+            '  OPTIONAL { ?id schema:description ?description . } ' +
+            '  OPTIONAL { ?id schema:birthDate ?birthDate . } ' +
+            '  OPTIONAL { ?id schema:birthPlace/rdfs:label ?birthPlace . } ' +
+            '  OPTIONAL { ?id schema:deathDate ?deathDate . } ' +
+            '  OPTIONAL { ?id schema:deathPlace/rdfs:label ?deathPlace . } ' +
+            '  OPTIONAL { ?id congress:wikipedia_id ?wikipedia . } ' +
+            '  OPTIONAL { ?id congress:wikidata ?wikidata . } ' +
+            '  OPTIONAL { ?id congress:dbpedia_id ?dbpedia . } ' +
+            '  OPTIONAL { ?id congress:twitter ?twitter . } ' +
+            '  OPTIONAL { ?id schema:gender ?gender . } ' +
+            '  OPTIONAL { ?id schema:image ?images . } ' +
+            '  OPTIONAL { ?id schema:hasOccupation ?occupation . } ' +
+            '  OPTIONAL { ?id congress:bioguide_id ?committee__id . ' +
+            '  ?mship congress:bioguide_id ?committee__id ; ' +
+            '  congress:committee ?committee__label ; ' +
             '  schema:memberOf ?committee__memberOf. ' +
-            '  ?congress skos:prefLabel ?prefLabel;' +
-            '  skos:altLabel ?altLabel.' +
-            '  FILTER regex(str(?congress), "/go").' +
+            '  ?congress skos:prefLabel ?prefLabel; ' +
+            '  skos:altLabel ?altLabel. ' +
+            '  FILTER regex(str(?congress), "/go"). ' +
             '  FILTER (str(?altLabel) = str(?committee__label)). ' +
               '}'+
             '}';
@@ -228,18 +231,6 @@
         function getResults(facetSelections) {
             return resultHandler.getResults(facetSelections, getSortBy());
         }
-
-      /*
-          function getResults(facetSelections) {
-          console.log(facetSelections.constraint)
-          var dateConstraint = ' OPTIONAL { ?id schema:birthDate ?date .}  FILTER (<STARTYEAR><=year(?date) && year(?date)<=<ENDYEAR>) '
-          .replace("<STARTYEAR>",facetSelections.minYear)
-          .replace("<ENDYEAR>",facetSelections.maxYear);
-
-         facetSelections.constraint.push(dateConstraint);
-         return resultHandler.getResults(facetSelections, getSortBy());
-         }
-      */
 
         function getPerson(id) {
         	var qry = prefixes + detailQuery;
