@@ -95,13 +95,13 @@
             abstract: true
         })
         .state('visualizations.visu', {
-            url: '/visualisointi',
+            url: '/visualizations',
             templateUrl: 'views/visu.html',
             controller: 'VisuController',
             controllerAs: 'vm'
         })
         .state('visualizations.visu2', {
-            url: '/visualisointi2',
+            url: '/visualizations2',
             templateUrl: 'views/visu2.html',
             controller: 'VisuController2',
             controllerAs: 'vm'

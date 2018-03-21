@@ -8,21 +8,16 @@
     .service('visuService', visuService);
 
     /* @ngInject */
-    function visuService($q, $location, _, AdvancedSparqlService,
-            objectMapperService, SPARQL_ENDPOINT_URL) {
+    function visuService($q, $location, _, FacetResultHandler, SPARQL_ENDPOINT_URL,
+            AdvancedSparqlService, personMapperService, numericFacetMapperService) {
 
         /* Public API */
 
         // Get the results based on facet selections.
         // Return a promise.
-        this.getAge = getAge;
-        this.getMarriageAge = getMarriageAge;
-        this.getFirstChildAge = getFirstChildAge;
-        this.getNumberOfChildren = getNumberOfChildren;
-        this.getNumberOfSpouses = getNumberOfSpouses;
-        
         this.getResults = getResults;
-        
+        this.getResults1 = getResults1;
+
         // Get the facets.
         // Return a promise (because of translation).
         this.getFacets = getFacets;
@@ -34,8 +29,14 @@
         var facets = {
             entryText: {
                 facetId: 'entryText',
-                graph: '<http://ldf.fi/nbf/people>',
-                name: 'Haku',
+                graph: '<http://ldf.fi/congress/people>',
+                name: 'Search',
+                enabled: true
+            },
+            slider: {
+                facetId: 'slider',
+                name: 'Timeline: 1st (1789) - 115th (2018) Congresses',
+                predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                 enabled: true
             },
             link: {
@@ -43,373 +44,140 @@
                 choices: [
                     {
                         id: 'wikipedia',
-                        pattern: '?id <http://ldf.fi/nbf/wikipedia> [] .',
+                        pattern: '?id <http://ldf.fi/congress/wikipedia_id> [] .',
                         label: 'Wikipedia'
+                    },{
+                        id: 'dbpedia',
+                        pattern: '?id <http://ldf.fi/congress/dbpedia_id> [] .',
+                        label: 'DBpedia'
                     },
                     {
-                        id: 'wikidata',
-                        pattern: '?id <http://ldf.fi/nbf/wikidata> [] .',
-                        label: 'Wikidata'
-                    },
-                    {
-                        id: 'sotasampo',
-                        pattern: '?id <http://ldf.fi/nbf/warsampo> [] .',
-                        label: 'Sotasampo'
-                    },
-                    {
-                        id: 'norssit',
-                        pattern: '?id <http://ldf.fi/nbf/norssi> [] .',
-                        label: 'Norssit'
-                    },
-                    {
-                        id: 'kirjasampo',
-                        pattern: '?id <http://ldf.fi/nbf/kirjasampo> [] . ',
-                        label: 'Kirjasampo'
-                    },
-                    {
-                        id: 'blf',
-                        pattern: '?id <http://ldf.fi/nbf/blf> [] .',
-                        label: 'BLF'
-                    },
-                    {
-                        id: 'ulan',
-                        pattern: '?id <http://ldf.fi/nbf/ulan> [] .',
-                        label: 'ULAN'
-                    },
-                    {
-                        id: 'viaf',
-                        pattern: '?id <http://ldf.fi/nbf/viaf> [] .',
-                        label: 'VIAF'
-                    },
-                    {
-                        id: 'genicom',
-                        pattern: '?id <http://ldf.fi/nbf/genicom> [] .',
-                        label: 'Geni.com'
-                    },
-                    {
-                        id: 'website',
-                        pattern: '?id <http://ldf.fi/nbf/website> [] .',
-                        label: 'Kotisivu'
-                    },
-                    {
-                        id: 'eduskunta',
-                        pattern: '?id <http://ldf.fi/nbf/eduskunta> [] .',
-                        label: 'Eduskunta'
+                        id: 'twitter',
+                        pattern: '?id <http://ldf.fi/congress/twitter> [] .',
+                        label: 'Twitter'
                     }
                 ],
                 enabled: true,
-                name: 'Linkit'
-            },
-            period: {
-                facetId: 'period',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/<http://ldf.fi/nbf/has_period>/<http://www.w3.org/2004/02/skos/core#prefLabel>',
-                name: 'Ajanjakso',
-                enabled: true
+                name: 'Links'
             },
             familyName: {
                 facetId: 'familyName',
-                predicate: '<http://www.w3.org/2008/05/skos-xl#prefLabel>/<http://schema.org/familyName>',
-                name: 'Sukunimi'
+                predicate: '<http://schema.org/familyName>',
+                name: 'Family Name'
             },
-            dataset: {
-                facetId: 'dataset',
-                predicate: '<http://purl.org/dc/terms/source>',
-                name: 'Tietokanta'
+            givenName: {
+                facetId: 'givenName',
+                predicate: '<http://schema.org/givenName>',
+                name: 'First Name'
             },
-            birthYear: {
-                facetId: 'birthYear',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life>/<http://ldf.fi/nbf/time>',
-                name: 'Synnyinaika',
-                enabled: true
+            birthDate: {
+                facetId: 'birthDate',
+                predicate: '<http://schema.org/birthDate>',
             },
-            place: {
-                facetId: 'place',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/(^<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life>|^<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of>)/<http://ldf.fi/nbf/place>/<http://www.w3.org/2004/02/skos/core#prefLabel>',
-                name: 'Paikkakunta',
-                enabled: true
+            deathDate: {
+                facetId: 'deathDate',
+                predicate: '<http://schema.org/deathDate>',
             },
-            deathYear: {
-                facetId: 'birthYear',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of>/<http://ldf.fi/nbf/time>',
-                name: 'Kuolinaika',
-                enabled: true
-            },
-            title: {
-                facetId: 'title',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://ldf.fi/schema/bioc/inheres_in>/<http://ldf.fi/nbf/has_title>',
-                name: 'Arvo tai ammatti',
-                hierarchy: '<http://www.w3.org/2004/02/skos/core#broader>',
-                depth: 3,
-                enabled: true
-            },
-            company: {
-                facetId: 'company',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/^<http://ldf.fi/schema/bioc/inheres_in>/<http://ldf.fi/nbf/related_company>',
-                name: 'Yritys tai yhteisö',
-                enabled: true
-            },
-            category: {
-                facetId: 'category',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/<http://ldf.fi/nbf/has_category>',
-                name: 'Kategoria',
-                enabled: true
+            birthPlace: {
+                facetId: 'birthPlace',
+                predicate: '<http://schema.org/birthPlace>',
+                name: 'Place of Birth',
+                hierarchy: '<http://schema.org/containedInPlace>',
+                depth: 5,
             },
             gender: {
                 facetId: 'gender',
-                predicate: '<http://xmlns.com/foaf/0.1/focus>/<http://ldf.fi/nbf/sukupuoli>',
-                name: 'Sukupuoli',
+                predicate: '<http://schema.org/gender>',
+                name: 'Gender'
+            },
+            occupation: {
+                facetId: 'occupation',
+                predicate: '<http://schema.org/hasOccupation>',
+                name: 'Occupation',
+            },
+           state: {
+                facetId: 'state',
+                predicate: '<http://schema.org/state>',
+                name: 'Representing State',
                 enabled: true
+            },
+            memberOf: {
+                facetId: 'memberOf',
+                predicate: '<http://schema.org/memberOf>',
+                name: 'Political Party',
+                enabled: true
+            },
+            type: {
+                facetId: 'type',
+                predicate: '<http://ldf.fi/congress/type>',
+                name: 'Chamber',
+                enabled: true
+            },
+            congress_number: {
+                facetId: 'congress_number',
+                predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
+                name: 'Serving Record of the Period',
+                mapper: numericFacetMapperService
             }
         };
 
+
         //	TODO: query for a certain title, here "maisteri": http://yasgui.org/short/SJbyBeseM
         var prefixes =
-        	'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ' +
-        	'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ' +
-        	'PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ' +
-        	'PREFIX bioc:  <http://ldf.fi/schema/bioc/>  ' +
-        	'PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  ' +
-        	'PREFIX schema: <http://schema.org/>  ' +
-        	'PREFIX skos:  <http://www.w3.org/2004/02/skos/core#>  ' +
-        	'PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>  ' +
-        	'PREFIX	nbf:	<http://ldf.fi/nbf/>  ' +
-        	'PREFIX	categories:	<http://ldf.fi/nbf/categories/>  ' +
-        	'PREFIX	gvp:	<http://vocab.getty.edu/ontology#>	 ' +
-        	'PREFIX crm:   <http://www.cidoc-crm.org/cidoc-crm/>  ' +
-        	'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  ' +
-        	'PREFIX dcterms: <http://purl.org/dc/terms/>  ' +
-        	'PREFIX foaf: <http://xmlns.com/foaf/0.1/>  ' +
-        	'PREFIX gvp: <http://vocab.getty.edu/ontology#> ' +
-        	'PREFIX	relations:	<http://ldf.fi/nbf/relations/> ' +
-        	'PREFIX	sources:	<http://ldf.fi/nbf/sources/> ';
+        ' PREFIX owl: <http://www.w3.org/2002/07/owl#> ' +
+        ' PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ' +
+        ' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ' +
+        ' PREFIX schema: <http://schema.org/> ' +
+        ' PREFIX dct: <http://purl.org/dc/terms/> ' +
+        ' PREFIX skos: <http://www.w3.org/2004/02/skos/core#> ' +
+        ' PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#> ' +
+        ' PREFIX xml: <http://www.w3.org/XML/1998/namespace> ' +
+        ' PREFIX congress: <http://ldf.fi/congress/> ' +
+        ' PREFIX foaf: <http://xmlns.com/foaf/0.1/> ' +
+        ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ' +
+        ' PREFIX wdt: <http://www.wikidata.org/prop/direct/> ' +
+        ' PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> ' +
+        ' PREFIX wd_ent: <http://www.wikidata.org/entity/> ';
+
 
         // The query for the results.
-        // ?id is bound to the norssit URI.
+        // ?id is bound to the person URI.
         var query = prefixes +
-        	' SELECT distinct ?occupation ?education ?organization ?eduorganization ?id ' +
-            '  WHERE {' +
-            '  	 { <RESULT_SET> } ' +
-        	'  { ?evt bioc:education_inheres_in ?id ; bioc:relates_to_title/skos:prefLabel ?education . ' +
-        	'    OPTIONAL { ?evt bioc:relates_to ?org .' +
-        	'	 	?org a schema:EducationalOrganization ; skos:prefLabel ?eduorganization }' +
-        	'  }' +
-        	'  UNION' +
-        	'  { ?evt bioc:title_inheres_in ?id ;' +
-        	'     	bioc:relates_to_title ?cls .' +
-        	'    FILTER (?cls != bioc:Title)' +
-        	'    ?cls skos:prefLabel ?occupation .' +
-        	'    OPTIONAL { ?evt bioc:relates_to/skos:prefLabel ?organization }' +
-        	'  }' +
-        	'}';
-            
-       var queryAge = prefixes +
-       'SELECT ?value (count(?value) AS ?count) WHERE { ' +
-       ' { <RESULT_SET> } ' +
-	   	' ' +
-	   	'  ?id foaf:focus/^crm:P100_was_death_of/nbf:time [ gvp:estStart ?time ; gvp:estEnd ?time2 ] ; ' +
-	   	'  	foaf:focus/^crm:P98_brought_into_life/nbf:time [ gvp:estStart ?birth ; gvp:estEnd ?birth2 ] ' +
-	   	'  BIND (xsd:integer(0.5*(year(?time)+year(?time2)-year(?birth)-year(?birth2))) AS ?value) ' +
-	   	'  FILTER (-1<?value && ?value<120) ' +
-	   	'} GROUP BY ?value  ORDER BY ?value ';
-       
-       var queryMarriageAge = prefixes +
-       'SELECT ?value (count(?value) AS ?count) ' +
-	   	'WHERE { ' +
-	   	'  { ' +
-	   	'    SELECT distinct ?id (min(?age) AS ?value) WHERE { ' +
-	   	'    { <RESULT_SET> } ' +
-	   	'    VALUES ?rel { relations:Spouse } ' +
-	   	'    ?id bioc:has_family_relation [ a ?rel ;  nbf:time/gvp:estStart ?time ] ; 	 ' +
-	   	'        foaf:focus/^crm:P98_brought_into_life/nbf:time/gvp:estStart ?birth . ' +
-	   	'    BIND (year(?time)-year(?birth) AS ?age) ' +
-	   	'    FILTER (13<?age && ?age<120) ' +
-	   	'    } GROUP BY ?id  } ' +
-	   	'} GROUP BY ?value ORDER BY ?value ';
-       
-       var queryMarriageAgeAverage = prefixes +
-       'SELECT ?value (count(?value) AS ?count) WHERE { ' +
-       ' { <RESULT_SET> } ' +
-	   	' ' +
-	   	'  VALUES ?rel { relations:Spouse } ' +
-	   	'  ?id bioc:has_family_relation [ a ?rel ;  nbf:time/gvp:estStart ?time ] ; ' +
-	   	'   	foaf:focus/^crm:P98_brought_into_life/nbf:time/gvp:estStart ?birth . ' +
-	   	'  BIND (year(?time)-year(?birth) AS ?value) ' +
-	   	'  FILTER (13<?value && ?value<120) ' +
-	   	'} GROUP BY ?value ORDER BY ?value ';
-		    
-       var queryFirstChildAge = prefixes +
-       'SELECT ?value (count(?value) AS ?count) ' +
-	   	'WHERE { ' +
-	   	'  { ' +
-	   	'    SELECT distinct ?id (min(?age) AS ?value) WHERE { ' +
-	   	'    { <RESULT_SET> } ' +
-	   	'    VALUES ?rel { relations:Child relations:Son relations:Daughter } ' +
-	   	'    ?id bioc:has_family_relation [ a ?rel ;  nbf:time/gvp:estStart ?time ] ; 	 ' +
-	   	'        foaf:focus/^crm:P98_brought_into_life/nbf:time/gvp:estStart ?birth . ' +
-	   	'    BIND (year(?time)-year(?birth) AS ?age) ' +
-	   	'    FILTER (13<?age && ?age<120) ' +
-	   	'    } GROUP BY ?id  } ' +
-	   	'} GROUP BY ?value ORDER BY ?value ';
-       
-       var queryAverageChildAge = prefixes +
-       'SELECT ?age (count(?age) AS ?count) WHERE { ' +
-       ' { <RESULT_SET> } ' +
-	   	' ' +
-	   	'  VALUES ?rel { relations:Child relations:Son relations:Daughter } ' +
-	   	'  ?id bioc:has_family_relation [ a ?rel ;  nbf:time/gvp:estStart ?time ] ; ' +
-	   	'   	foaf:focus/^crm:P98_brought_into_life/nbf:time/gvp:estStart ?birth . ' +
-	   	'  BIND (year(?time)-year(?birth) AS ?age) ' +
-	   	'  FILTER (13<?age && ?age<120) ' +
-	   	'} GROUP BY ?age ORDER BY ?age ';
-       
-       var queryNumberOfChildren = prefixes +
-   	' SELECT ?value (count(?id) AS ?count) ' +
-	'WHERE { ' +
-	'  { ' +
-	'  SELECT ?id (count(?rel) AS ?value) ' +
-	'  WHERE { ' +
-	'    { <RESULT_SET> } ' +
-	'    VALUES ?rel { relations:Child relations:Son relations:Daughter }  ' +
-	'    ?id bioc:has_family_relation/a ?rel . ' +
-	'    } GROUP BY ?id } ' +
-	'  UNION ' +
-	'  { ' +
-	'    { <RESULT_SET> } ' +
-	'  ?id dcterms:source sources:source1 ; ' +
-	'    foaf:focus/nbf:has_biography/nbf:has_paragraph/nbf:id "2"^^xsd:integer . ' +
-	'  FILTER not exists { ?id bioc:has_family_relation [ a relations:Child ]} ' +
-	'  BIND (0 AS ?value) ' +
-	'  } ' +
-	'} GROUP BY ?value ORDER BY ?value ';
-		   
-       var queryNumberOfSpouses = prefixes +
-       'SELECT ?value (count(?id) AS ?count) WHERE { ' +
-		'  SELECT ?id (count(?rel) AS ?value) WHERE { ' +
-		'    { <RESULT_SET> } ' +
-		'    VALUES ?rel { relations:Spouse } ' +
-		'    ?id bioc:has_family_relation/a ?rel . ' +
-		'  } GROUP BY ?id ' +
-		'} GROUP BY ?value ORDER BY ?value ';
-       
-      /**
-        var queryTopTitles = prefixes + 
-	    	' SELECT ?label ?year (count (distinct ?id) AS ?count) ' +
-	    	' WHERE { ' +
-	    	'    { ' +
-	    	'    SELECT ?class (count (distinct ?id) AS ?no) ' +
-	    	'    WHERE { ' +
-	    	'      ?class rdfs:subClassOf+ bioc:Title . ' +
-	    	'      ?evt bioc:relates_to_title ?class ; ' +
-	    	'           bioc:title_inheres_in ?id . ' +
-	    	'        { <RESULT_SET> } ' +
-	    	'    } GROUP BY ?class ORDER BY desc(?no) LIMIT 5 ' +
-	    	'    } ' +
-	    	'    ?class skos:prefLabel ?label . ' +
-	    	'    ?evt bioc:relates_to_title ?class ; ' +
-	    	'         bioc:title_inheres_in ?id ; ' +
-	    	'         schema:startDate ?date . ' +
-	    	'    { <RESULT_SET> } ' +
-	    	' 	 BIND (floor(year(?date)/10)*10 AS ?year)' +
-	    	'  } GROUP BY ?label ?year ORDER by ?year ';
-        
-        var queryTopOrgs = prefixes + 
-	        'SELECT ?label ?year (count (distinct ?id) AS ?count) ' +
-	    	'  WHERE { ' +
-	    	'    { ' +
-	    	'    SELECT ?org (count (distinct ?id) AS ?no) ' +
-	    	'    WHERE { ' +
-	    	'  	   ?evt bioc:title_inheres_in ?id ; ' +
-            '      		bioc:relates_to ?org . ' +
-            '		?org a foaf:Organization . ' +
-	    	'      { <RESULT_SET> } ' +
-	    	'    } GROUP BY ?org ORDER BY desc(?no) LIMIT 5 ' +
-	    	'    } ' +
-	    	'    ?org skos:prefLabel ?label . ' +
-	    	'    ?evt bioc:title_inheres_in ?id ; ' +
-	    	'    	  bioc:relates_to ?org; ' +
-	    	'         schema:startDate ?date . ' +
-	    	'    { <RESULT_SET> } ' +
-	    	' 	 BIND (floor(year(?date)/10)*10 AS ?year)' +
-	    	'  } GROUP BY ?label ?year ORDER by ?year ';
-	    
-        var queryTopSchools = prefixes + 
-	        ' SELECT ?label ?year (count (distinct ?id) AS ?count) ' +
-	    	' WHERE { ' +
-	    	'    { ' +
-	    	'    SELECT ?org (count (distinct ?id) AS ?no) ' +
-	    	'    WHERE { ' +
-	    	'  	   ?evt bioc:education_inheres_in ?id ; ' +
-	        '      		bioc:relates_to ?org . ' +
-	        ' 	   ?org a schema:EducationalOrganization ' +	
-	    	'      { <RESULT_SET> } ' +
-	    	'    } GROUP BY ?org ORDER BY desc(?no) LIMIT 5 ' +
-	    	'    } ' +
-	    	'    ?org skos:prefLabel ?label .' +
-	    	'    ?evt bioc:education_inheres_in ?id ; ' +
-	    	'    	  bioc:relates_to ?org; ' +
-	    	'         schema:startDate ?date . ' +
-	    	'    { <RESULT_SET> } ' +
-	    	' 	 BIND (floor(year(?date)/10)*10 AS ?year)' +
-	    	' } GROUP BY ?label ?year ORDER by ?year ';
-    
-        */
-       
+        ' SELECT ?id ?occupation ?memberOf ?place ' +
+        ' WHERE {' +
+        '  { <RESULT_SET> } ' +
+        ' ?id a schema:Person ;' +
+        ' schema:hasOccupation ?occupation ;' +
+        ' schema:memberOf ?memberOf ;' +
+        ' ?evt_place ?place__uri. ' +
+        ' ?place__uri rdfs:label ?place__label. ' +
+        ' BIND(?place__label AS ?place). ' +
+        ' }';
+
         // The SPARQL endpoint URL
         var endpointUrl = SPARQL_ENDPOINT_URL;
 
         var facetOptions = {
-            endpointUrl: endpointUrl,
-            rdfClass: '<http://ldf.fi/nbf/PersonConcept>',
-            preferredLang : 'fi'
+          endpointUrl: endpointUrl,
+          rdfClass: '<http://schema.org/Person>',
+          preferredLang : 'en',
         };
 
-        var endpoint = new AdvancedSparqlService(endpointUrl, objectMapperService);
-        
-        
-        function getMarriageAge(facetSelections) {
-        	var cons = facetSelections.constraint.join(' '),
-        		q = queryMarriageAge.replace("<RESULT_SET>", cons);
-        	return endpoint.getObjectsNoGrouping(q) ;
+        var endpoint = new AdvancedSparqlService(endpointUrl, personMapperService);
+
+
+        function getResults1(facetSelections) {
+        	var q = query.replace("<RESULT_SET>", facetSelections.constraint.join(' '));
+        	return endpoint.getObjectsNoGrouping(q);
         }
-        
-        function getFirstChildAge(facetSelections) {
-        	var cons = facetSelections.constraint.join(' '),
-    			q = queryFirstChildAge.replace("<RESULT_SET>", cons);
-        	return endpoint.getObjectsNoGrouping(q) ;
-	    }
-        
-        function getAge(facetSelections) {
-        	var cons = facetSelections.constraint.join(' '),
-        		q = queryAge.replace("<RESULT_SET>", cons);
-        	// console.log(q);
-        	return endpoint.getObjectsNoGrouping(q) ;
-        }
-        
-        function getNumberOfChildren(facetSelections) {
-        	var cons = facetSelections.constraint.join(' '),
-    			q = queryNumberOfChildren.replace(/<RESULT_SET>/g, cons);
-        	return endpoint.getObjectsNoGrouping(q) ;
-        }
-        
-        function getNumberOfSpouses(facetSelections) {
-        	var cons = facetSelections.constraint.join(' '),
-    			q = queryNumberOfSpouses.replace("<RESULT_SET>", cons);
-        	return endpoint.getObjectsNoGrouping(q) ;
-        }
-        
-        
+
         function getResults(facetSelections) {
         	var promises = [
-            	this.getAge(facetSelections),
-            	this.getMarriageAge(facetSelections),
-            	this.getFirstChildAge(facetSelections),
-            	this.getNumberOfChildren(facetSelections),
-            	this.getNumberOfSpouses(facetSelections)
+            	this.getResults1(facetSelections)
             ];
         	return $q.all(promises);
         }
-        
-        
+
         function getFacets() {
             var facetsCopy = angular.copy(facets);
             return $q.when(facetsCopy);

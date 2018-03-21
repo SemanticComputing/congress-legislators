@@ -11,10 +11,10 @@
     /* ngInject */
     function eventMapperService($sce, _, objectMapperService) {
         EventMapper.prototype.postProcess = postProcess;
-        
+
         var proto = Object.getPrototypeOf(objectMapperService);
         EventMapper.prototype = angular.extend({}, proto, PersonMapper.prototype);
-        
+
         return new EventMapper();
 
         function EventMapper() {
