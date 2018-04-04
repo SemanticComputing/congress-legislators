@@ -1,0 +1,8 @@
+<div class="modal-header">
+    <h3>People</h3>
+    <ul class="list-group row list-group-persons ng-scope" id="popupcontainer2">
+        <li class="list-group-item col-xs-6 ng-scope" ng-show="vm.people" ng-repeat="person in vm.people">
+			<a ui-sref="person.detail({ personId: person.uri })">{{ person.name }}</a>
+        </li>
+	</ul>
+</div>

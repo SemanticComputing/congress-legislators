@@ -17,6 +17,9 @@
         // Return a promise.
         this.getResults = getResults;
         this.getResults1 = getResults1;
+        this.getResultsPage1 = getResultsPage1;
+        this.getResultsRecord =  getResultsRecord;
+        this.getResultsServe =  getResultsServe;
 
         // Get the facets.
         // Return a promise (because of translation).
@@ -146,13 +149,41 @@
         ' SELECT ?id ?occupation ?memberOf ?place ' +
         ' WHERE {' +
         '  { <RESULT_SET> } ' +
-        ' ?id a schema:Person ;' +
-        ' schema:hasOccupation ?occupation ;' +
-        ' schema:memberOf ?memberOf ;' +
+        ' VALUES (?evt_place ?evt_time ?class) ' +
+        ' { (schema:birthPlace schema:birthDate "Birth"@en) } ' +
+        ' ?id a schema:Person;' +
+        ' schema:hasOccupation ?occupation;' +
+        ' schema:memberOf ?memberOf;' +
         ' ?evt_place ?place__uri. ' +
         ' ?place__uri rdfs:label ?place__label. ' +
         ' BIND(?place__label AS ?place). ' +
-        ' }';
+        ' } ' +
+        ' GROUP BY ?id ?occupation ?memberOf ?place ';
+
+        var queryResultsRecord = prefixes +
+        ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
+        ' WHERE{ ' +
+        '  { <RESULT_SET> } ' +
+        ' OPTIONAL { ?id schema:familyName ?familyName . } ' +
+        ' OPTIONAL { ?id schema:givenName ?givenName . } ' +
+        ' BIND (CONCAT(?givenName, " ",?familyName) AS ?id__name) ' +
+        ' ?id schema:birthDate ?birthDate; ' +
+        ' schema:deathDate ?deathDate. ' +
+        ' BIND (xsd:integer(year(?deathDate)-year(?birthDate)) AS ?value)  ' +
+        ' FILTER (0<?value && ?value<121) ' +
+        ' } ORDER BY ?value ?familyName ?givenName ';
+
+        var queryResultsServe = prefixes +
+        ' SELECT DISTINCT (?id AS ?id__uri) ?id__name (count (DISTINCT ?congress_number) as ?value)  ' +
+        ' WHERE{ ' +
+        '  { <RESULT_SET> } ' +
+        ' ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . ' +
+        ' ?id schema:familyName ?familyName .  ' +
+        ' ?id schema:givenName ?givenName .  ' +
+        ' BIND (CONCAT(?givenName, " ",?familyName) AS ?id__name)  ' +
+        ' }  ' +
+        ' GROUP BY ?value ?id__name ?id' +
+        ' HAVING (0<?value && ?value < 31) ';
 
         // The SPARQL endpoint URL
         var endpointUrl = SPARQL_ENDPOINT_URL;
@@ -171,7 +202,28 @@
         	return endpoint.getObjectsNoGrouping(q);
         }
 
+        function getResultsRecord(facetSelections) {
+          var cons = facetSelections.constraint.join(' '),
+          q = queryResultsRecord.replace("<RESULT_SET>", cons);
+          return endpoint.getObjectsNoGrouping(q) ;
+        }
+
+        function getResultsServe(facetSelections) {
+          var cons = facetSelections.constraint.join(' '),
+          q = queryResultsServe.replace("<RESULT_SET>", cons);
+          return endpoint.getObjectsNoGrouping(q) ;
+        }
+
         function getResults(facetSelections) {
+        	var promises = [
+            	this.getResults1(facetSelections),
+              this.getResultsRecord(facetSelections),
+              this.getResultsServe(facetSelections)
+            ];
+        	return $q.all(promises);
+        }
+
+        function getResultsPage1(facetSelections) {
         	var promises = [
             	this.getResults1(facetSelections)
             ];

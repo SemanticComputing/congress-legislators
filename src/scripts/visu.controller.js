@@ -24,7 +24,7 @@
         vm.startYear = [];
         vm.topTitles = [];
         vm.topOrgs = [];
-		vm.removeFacetSelections = removeFacetSelections;
+		    vm.removeFacetSelections = removeFacetSelections;
 
 		google.charts.load('current', {packages: ['corechart', 'line', 'sankey']});
 
@@ -63,6 +63,7 @@
               google.charts.setOnLoadCallback(function () { drawPieChart('memberOf', 'Political Party', 'chart_memberOf'); });
             	google.charts.setOnLoadCallback(function () { drawPieChart('occupation', 'Occupation', 'chart_occupation'); });
               google.charts.setOnLoadCallback(function () { drawPieChart('place', 'Place of Birth', 'chart_place'); });
+              //google.charts.setOnLoadCallback(function () { drawPieChart('count', 'Serving Record of the Period', 'chart_count'); });
             	google.charts.setOnLoadCallback(drawSankeyChart);
             	return;
 	         });
@@ -219,7 +220,7 @@
             var updateId = _.uniqueId();
             latestUpdate = updateId;
 
-            return visuService.getResults(facetSelections).then(function(res) {
+            return visuService.getResultsPage1(facetSelections).then(function(res) {
             	if (latestUpdate !== updateId) {
                     return;
                 }
