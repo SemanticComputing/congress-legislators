@@ -20,6 +20,7 @@
         this.getResultsPage1 = getResultsPage1;
         this.getResultsRecord =  getResultsRecord;
         this.getResultsServe =  getResultsServe;
+      //  this.getCommitteeMember =  getCommitteeMember;
 
         // Get the facets.
         // Return a promise (because of translation).
@@ -121,7 +122,9 @@
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                 name: 'Serving Record of the Period',
                 mapper: numericFacetMapperService
-            }
+            },
+
+
         };
 
 
@@ -146,19 +149,31 @@
         // The query for the results.
         // ?id is bound to the person URI.
         var query = prefixes +
-        ' SELECT ?id ?occupation ?memberOf ?place ' +
-        ' WHERE {' +
+        ' SELECT DISTINCT ?id ?occupation ?memberOf ?place ?committee ' +
+        ' WHERE{ ' +
         '  { <RESULT_SET> } ' +
-        ' VALUES (?evt_place ?evt_time ?class) ' +
+        ' {VALUES (?evt_place ?evt_time ?class) ' +
         ' { (schema:birthPlace schema:birthDate "Birth"@en) } ' +
-        ' ?id a schema:Person;' +
-        ' schema:hasOccupation ?occupation;' +
-        ' schema:memberOf ?memberOf;' +
+        ' ?id a schema:Person; ' +
         ' ?evt_place ?place__uri. ' +
         ' ?place__uri rdfs:label ?place__label. ' +
-        ' BIND(?place__label AS ?place). ' +
+        ' BIND(?place__label AS ?place).} ' +
+        ' UNION ' +
+        ' {  ?id congress:bioguide_id ?committee__id . ' +
+        ' ?mship congress:bioguide_id ?committee__id ; ' +
+        ' congress:committee ?committee__label. ' +
+        ' FILTER regex(str(?id), "/p") . ' +
+        ' ?mship congress:committee/^skos:altLabel/skos:prefLabel ?prefLabel. ' +
+        ' BIND (CONCAT( str(?prefLabel)," (", str(?committee__label),")") AS ?committee). ' +
         ' } ' +
-        ' GROUP BY ?id ?occupation ?memberOf ?place ';
+        ' UNION  { ' +
+        ' ?id schema:memberOf ?memberOf. ' +
+        ' } ' +
+        ' UNION  { ' +
+        ' ?id schema:hasOccupation ?occupation. ' +
+        ' } ' +
+        ' } ' +
+        ' GROUP BY ?id ?occupation ?memberOf ?place ?committee ' ;
 
         var queryResultsRecord = prefixes +
         ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
@@ -184,6 +199,23 @@
         ' }  ' +
         ' GROUP BY ?value ?id__name ?id' +
         ' HAVING (0<?value && ?value < 31) ';
+/*
+        var queryCommitteeMember = prefixes +
+        ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
+        ' WHERE{ ' +
+        '  { <RESULT_SET> } '
+        ' id schema:familyName ?familyName . ' +
+        ' ?id schema:givenName ?givenName . ' +
+        ' BIND (CONCAT(?givenName, " ",?familyName) AS ?id__name) ' +
+        ' ?id congress:bioguide_id ?committee__id . ' +
+        ' ?mship congress:bioguide_id ?committee__id ; ' +
+        ' congress:committee ?committee__label. ' +
+        ' ?congress skos:prefLabel ?prefLabel; ' +
+        ' skos:altLabel ?altLabel. ' +
+        ' FILTER (str(?altLabel) = str(?committee__label)). ' +
+        ' BIND (CONCAT(?altLabel, " (",?prefLabel,")") AS ?value) ' +
+        ' }  ';
+        */
 
         // The SPARQL endpoint URL
         var endpointUrl = SPARQL_ENDPOINT_URL;
@@ -214,11 +246,18 @@
           return endpoint.getObjectsNoGrouping(q) ;
         }
 
+/*        function getCommitteeMember(facetSelections) {
+          var cons = facetSelections.constraint.join(' '),
+          q = queryCommitteeMember.replace("<RESULT_SET>", cons);
+          return endpoint.getObjectsNoGrouping(q) ;
+        } */
+
         function getResults(facetSelections) {
         	var promises = [
             	this.getResults1(facetSelections),
               this.getResultsRecord(facetSelections),
               this.getResultsServe(facetSelections)
+          //   this.getCommitteeMember(facetSelections)
             ];
         	return $q.all(promises);
         }

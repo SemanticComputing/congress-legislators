@@ -63,7 +63,7 @@
               google.charts.setOnLoadCallback(function () { drawPieChart('memberOf', 'Political Party', 'chart_memberOf'); });
             	google.charts.setOnLoadCallback(function () { drawPieChart('occupation', 'Occupation', 'chart_occupation'); });
               google.charts.setOnLoadCallback(function () { drawPieChart('place', 'Place of Birth', 'chart_place'); });
-              //google.charts.setOnLoadCallback(function () { drawPieChart('count', 'Serving Record of the Period', 'chart_count'); });
+              google.charts.setOnLoadCallback(function () { drawPieChart('committee', 'Committees', 'chart_committee'); });
             	google.charts.setOnLoadCallback(drawSankeyChart);
             	return;
 	         });

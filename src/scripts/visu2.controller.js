@@ -77,7 +77,7 @@
             		drawYearChart(vm.ResultsServe, [1,31], 'Longevity of service (serving record)', 'chart_ResultsServe')
             		});
             	google.charts.setOnLoadCallback(function () {
-            		drawYearChart(vm.numberOfSpouses, [1,7], 'Puolisoiden lukumäärä', 'chart_numberOfSpouses')
+            		drawChart(vm.CommitteeMember, 'Member', 'chart_CommitteeMember')
             		});
 
             	return;
@@ -147,6 +147,44 @@
 				});
 
 		}
+
+/*
+    function drawChart(res, label, target) {
+
+      var persons = new Array(range[1]-range[0]+1);
+      for (var i=0; i<persons.length; i++) persons[i] = [];
+
+      for (var i=0; i<res.length; i++) {
+        var ob = res[i];
+        persons[parseInt(ob.value)].push(ob.id);
+      }
+
+      var arr=[];
+      for (var i=0; i<persons.length; i++) {
+        arr[i] = [i, persons[i].length];
+      }
+
+      var
+
+        data = new google.visualization.DataTable(),
+
+        tree = new google.visualization.ColumnChart(document.getElementById(target));
+
+          data.addColumn('number', 'Age');
+          data.addColumn('number', 'Number of people');
+
+      data.addRows(arr);
+      chart.draw(data, options);
+
+      google.visualization.events.addListener(chart, 'select', function() {
+          var sel = chart.getSelection();
+          vm.people = persons[sel[0].row];
+          vm.showForm();
+        });
+
+    }
+*/
+
 
 		function ticksByRange(range) {
 			var ticks = [],
@@ -256,7 +294,7 @@
             vm.people = [];
             vm.ResultsRecord = [];
             vm.ResultsServe = [];
-            vm.numberOfSpouses = [];
+            //vm.CommitteeMember = [];
             //vm.topSchools = [];
             vm.error = undefined;
 
@@ -272,7 +310,7 @@
                 vm.people = [0];
                 vm.ResultsRecord = res[1];
                 vm.ResultsServe = res[2];
-                vm.numberOfSpouses = res[3];
+                //vm.CommitteeMember = res[3];
                 return res;
             }).catch(handleError);
         }
