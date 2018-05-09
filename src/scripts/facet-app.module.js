@@ -91,6 +91,25 @@
             controller: 'CardsController',
             controllerAs: 'vm',
         })
+        .state('comparison', {
+          abstract: true,
+          templateUrl: 'views/cards.comparison.template.html',
+        })
+        .state('comparison.cards', {
+          url: '/comparison',
+          views: {
+            left: {
+              templateUrl: 'views/cards-comparison.html',
+              controller: 'CardsController',
+              controllerAs: 'vm',
+            },
+            right: {
+              templateUrl: 'views/cards-comparison.html',
+              controller: 'CardsController',
+              controllerAs: 'vm',
+            }
+          }
+        })
         .state('visualizations', {
             abstract: true
         })

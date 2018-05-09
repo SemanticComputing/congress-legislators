@@ -35,7 +35,7 @@
 
 		vm.removeFacetSelections = removeFacetSelections;
 
-		google.charts.load('current', {packages: ['corechart', 'line']});
+		google.charts.load('current', {packages: ['corechart', 'line', 'treemap']});
 
         var initListener = $scope.$on('sf-initial-constraints', function(event, config) {
             updateResults(event, config);
@@ -76,10 +76,7 @@
             	google.charts.setOnLoadCallback(function () {
             		drawYearChart(vm.ResultsServe, [1,31], 'Longevity of service (serving record)', 'chart_ResultsServe')
             		});
-            	google.charts.setOnLoadCallback(function () {
-            		drawChart(vm.CommitteeMember, 'Member', 'chart_CommitteeMember')
-            		});
-
+              google.charts.setOnLoadCallback(drawTreeMap);
             	return;
 	         });
         }
@@ -269,6 +266,51 @@
 			return res;
 		}
 
+
+
+    function drawTreeMap() {
+
+          var col 	= 'memberOf',
+            col2 	= 'type',
+            col3 	= 'count';
+
+          var data = new google.visualization.DataTable();
+              data.addColumn('string', col);
+              data.addColumn('string', col2);
+              data.addColumn('number', col3);
+              //data.addRows(arr);
+              data.addRows(
+                [
+                ['Senator', null, 2],
+                ['Minority', 'Senator', 3],
+                ['Democrat', 'Senator', 1],
+                ['Adams', 'Senator', 1],
+                ['Majority', 'Senator', 2]
+                ] )
+
+              var options = {
+                  title: 'Correlation between the Chamber and Political Party',
+                  backgroundColor: {
+                    fill: 'transparent'
+                  },
+                  tree: {
+                   minColor: '#f00',
+                   midColor: '#ddd',
+                   maxColor: '#0d0',
+                   headerHeight: 15,
+                   fontColor: 'black',
+                   showScale: true,
+                   showTooltips: true
+                  },
+              };
+
+              // Instantiates and draws our chart, passing in some options.
+              var chart = new google.visualization.TreeMap(document.getElementById('chart_treemap'));
+              chart.draw(data, options);
+        }
+
+
+
 		function countProperties(data, prop) {
 			var res = {};
 			$.each(data, function( i, value ) {
@@ -294,6 +336,7 @@
             vm.people = [];
             vm.ResultsRecord = [];
             vm.ResultsServe = [];
+            vm.ResultsBelong = [];
             //vm.CommitteeMember = [];
             //vm.topSchools = [];
             vm.error = undefined;
@@ -310,6 +353,7 @@
                 vm.people = [0];
                 vm.ResultsRecord = res[1];
                 vm.ResultsServe = res[2];
+                vm.ResultsBelong = res[3];
                 //vm.CommitteeMember = res[3];
                 return res;
             }).catch(handleError);

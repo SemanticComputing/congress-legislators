@@ -21,9 +21,6 @@
         var vm = this;
 
         vm.people = [];
-        vm.startYear = [];
-        vm.topTitles = [];
-        vm.topOrgs = [];
 		    vm.removeFacetSelections = removeFacetSelections;
 
 		google.charts.load('current', {packages: ['corechart', 'line', 'sankey']});
@@ -64,12 +61,10 @@
             	google.charts.setOnLoadCallback(function () { drawPieChart('occupation', 'Occupation', 'chart_occupation'); });
               google.charts.setOnLoadCallback(function () { drawPieChart('place', 'Place of Birth', 'chart_place'); });
               google.charts.setOnLoadCallback(function () { drawPieChart('committee', 'Committees', 'chart_committee'); });
-            	google.charts.setOnLoadCallback(drawSankeyChart);
+              google.charts.setOnLoadCallback(drawSankeyChart);
             	return;
 	         });
         }
-
-
 
         function drawPieChart(prop, label, target) {
 
@@ -81,105 +76,105 @@
             chart.draw(data, options);
         }
 
+        function drawSankeyChart() {
+        			//	TODO: check with options giving only a few (less < 5) results:
+        			var prop 	= 'memberOf',
+        				prop2 	= 'type',
+        				res 	= {},
+        				res2	= {},
+        				N = 10;
+
+        			$.each(vm.people, function( i, value ) {
+        				if (value.hasOwnProperty(prop) && value.hasOwnProperty(prop2)) {
+        					var y=value[prop],
+        						y2=value[prop2];
+
+        					if (res.hasOwnProperty(y)) {
+        						res[y] += 1;
+        					} else {
+        						res[y] = 1;
+        					}
+
+        					if (res2.hasOwnProperty(y2)) {
+        						res2[y2] += 1;
+        					} else {
+        						res2[y2] = 1;
+        					}
+        				}
+        			});
+
+        			res = $.map( res, function( value, key ) { return [[key, value]]; })
+        				.sort(function(a, b){ return b[1]-a[1] });
+
+        			res2 = $.map( res2, function( value, key ) { return [[key, value]];})
+        				.sort(function(a, b){ return b[1]-a[1] });
+
+        			var sear = {},
+        				sear2 = {};
+
+        			$.each(res,  function( i, value ) {
+        				sear[value[0]] = {
+        						index: (i<N-1 ? i : N-1)
+        						}
+        				});
 
 
-		function drawSankeyChart() {
-			//	TODO: check with options giving only a few (less < 5) results:
-			var prop 	= 'education',
-				prop2 	= 'eduorganization',
-				res 	= {},
-				res2	= {},
-				N = 10;
-
-			$.each(vm.people, function( i, value ) {
-				if (value.hasOwnProperty(prop) && value.hasOwnProperty(prop2)) {
-					var y=value[prop],
-						y2=value[prop2];
-
-					if (res.hasOwnProperty(y)) {
-						res[y] += 1;
-					} else {
-						res[y] = 1;
-					}
-
-					if (res2.hasOwnProperty(y2)) {
-						res2[y2] += 1;
-					} else {
-						res2[y2] = 1;
-					}
-				}
-			});
-
-			res = $.map( res, function( value, key ) { return [[key, value]]; })
-				.sort(function(a, b){ return b[1]-a[1] });
-
-			res2 = $.map( res2, function( value, key ) { return [[key, value]];})
-				.sort(function(a, b){ return b[1]-a[1] });
-
-			var sear = {},
-				sear2 = {};
-
-			$.each(res,  function( i, value ) {
-				sear[value[0]] = {
-						index: (i<N-1 ? i : N-1)
-						}
-				});
+        			$.each(res2, function( i, value ) {
+        				sear2[value[0]] = {
+        						index: (i<N-1 ? i : N-1)
+        						}
+        				});
 
 
-			$.each(res2, function( i, value ) {
-				sear2[value[0]] = {
-						index: (i<N-1 ? i : N-1)
-						}
-				});
+        			var arr = $.map(new Array(Math.min(N,res.length)), function(i,v) {
+        				return [ $.map(new Array(Math.min(N,res2.length)), function(i,v) {return 0;}) ];
+        				});
+
+        			$.each(vm.people, function( i, value ) {
+        				if (value.hasOwnProperty(prop) && value.hasOwnProperty(prop2)) {
+        					var y = value[prop], y2 = value[prop2];
+        					arr[sear[y]['index']][sear2[y2]['index']] += 1;
+        				}
+        			});
+
+        			var arr2 = [];
+        			for (var i=0; i<arr.length; i++) {
+        				for (var j=0; j<arr[i].length; j++) {
+        					arr2.push( [
+        						j<N-1 ? res2[j][0] : '(Other)',
+        						i<N-1 ? res[i][0] : '(Other)',
+        						arr[i][j] ] );
+        				}
+        			}
+
+        			var data = new google.visualization.DataTable();
+        	        data.addColumn('string', prop2);
+        	        data.addColumn('string', prop);
+        	        data.addColumn('number', 'Weight');
+        	        data.addRows(arr2);
 
 
-			var arr = $.map(new Array(Math.min(N,res.length)), function(i,v) {
-				return [ $.map(new Array(Math.min(N,res2.length)), function(i,v) {return 0;}) ];
-				});
+        	        // Sets chart options.
+        	        var options = {
+        	        		title: 'Correlation between the Chamber and Political Party',
+        	        		sankey: {
+        	        			node: 	{
+        	        	        	label: {
+        	        	        		fontSize: 14,
+        	        	                color: '#000',
+        	        	                bold: true },
+        	        	        labelPadding: 12
+        	        	        }
+        	        		},
+        	        };
 
-			$.each(vm.people, function( i, value ) {
-				if (value.hasOwnProperty(prop) && value.hasOwnProperty(prop2)) {
-					var y = value[prop], y2 = value[prop2];
-					arr[sear[y]['index']][sear2[y2]['index']] += 1;
-				}
-			});
+        	        // Instantiates and draws our chart, passing in some options.
+        	        var chart = new google.visualization.Sankey(document.getElementById('chart_sankey'));
+        	        chart.draw(data, options);
 
-			var arr2 = [];
-			for (var i=0; i<arr.length; i++) {
-				for (var j=0; j<arr[i].length; j++) {
-					arr2.push( [
-						j<N-1 ? res2[j][0] : 'muu laitos',
-						i<N-1 ? res[i][0] : 'muu arvo',
-						arr[i][j] ] );
-				}
-			}
-
-			var data = new google.visualization.DataTable();
-	        data.addColumn('string', prop2);
-	        data.addColumn('string', prop);
-	        data.addColumn('number', 'Weight');
-	        data.addRows(arr2);
+        		}
 
 
-	        // Sets chart options.
-	        var options = {
-	        		title: 'Otsikko',
-	        		sankey: {
-	        			node: 	{
-	        	        	label: {
-	        	        		fontSize: 14,
-	        	                color: '#000',
-	        	                bold: true },
-	        	        labelPadding: 12
-	        	        }
-	        		},
-	        };
-
-	        // Instantiates and draws our chart, passing in some options.
-	        var chart = new google.visualization.Sankey(document.getElementById('chart_sankey'));
-	        chart.draw(data, options);
-
-		}
 
 
 		function countByProperty(data, prop) {
@@ -212,9 +207,6 @@
         function fetchResults(facetSelections) {
             vm.isLoadingResults = true;
             vm.people = [];
-            vm.years = [];
-            vm.topTitles = [];
-            vm.topOrgs = [];
             vm.error = undefined;
 
             var updateId = _.uniqueId();

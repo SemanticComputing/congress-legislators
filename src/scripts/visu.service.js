@@ -20,6 +20,7 @@
         this.getResultsPage1 = getResultsPage1;
         this.getResultsRecord =  getResultsRecord;
         this.getResultsServe =  getResultsServe;
+        this.getResultsBelong =  getResultsBelong;
       //  this.getCommitteeMember =  getCommitteeMember;
 
         // Get the facets.
@@ -149,7 +150,7 @@
         // The query for the results.
         // ?id is bound to the person URI.
         var query = prefixes +
-        ' SELECT DISTINCT ?id ?occupation ?memberOf ?place ?committee ' +
+        ' SELECT DISTINCT ?id ?occupation ?type ?memberOf ?place ?committee ' +
         ' WHERE{ ' +
         '  { <RESULT_SET> } ' +
         ' {VALUES (?evt_place ?evt_time ?class) ' +
@@ -167,13 +168,14 @@
         ' BIND (CONCAT( str(?prefLabel)," (", str(?committee__label),")") AS ?committee). ' +
         ' } ' +
         ' UNION  { ' +
-        ' ?id schema:memberOf ?memberOf. ' +
+        ' ?id congress:type ?type;' +
+        ' schema:memberOf ?memberOf.' +
         ' } ' +
         ' UNION  { ' +
         ' ?id schema:hasOccupation ?occupation. ' +
         ' } ' +
         ' } ' +
-        ' GROUP BY ?id ?occupation ?memberOf ?place ?committee ' ;
+        ' GROUP BY ?id ?occupation ?type ?memberOf ?place ?committee ' ;
 
         var queryResultsRecord = prefixes +
         ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
@@ -199,6 +201,15 @@
         ' }  ' +
         ' GROUP BY ?value ?id__name ?id' +
         ' HAVING (0<?value && ?value < 31) ';
+
+        var queryResultsBelong = prefixes +
+        ' SELECT DISTINCT ?type ?memberOf (count (?memberOf) as ?count)' +
+        ' WHERE {' +
+        ' ?id congress:type ?type;' +
+        ' schema:memberOf ?memberOf.' +
+        ' } ' +
+        ' GROUP BY ?type ?memberOf ?count';
+
 /*
         var queryCommitteeMember = prefixes +
         ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
@@ -246,6 +257,12 @@
           return endpoint.getObjectsNoGrouping(q) ;
         }
 
+        function getResultsBelong(facetSelections) {
+          var cons = facetSelections.constraint.join(' '),
+          q = queryResultsBelong.replace("<RESULT_SET>", cons);
+          return endpoint.getObjectsNoGrouping(q) ;
+        }
+
 /*        function getCommitteeMember(facetSelections) {
           var cons = facetSelections.constraint.join(' '),
           q = queryCommitteeMember.replace("<RESULT_SET>", cons);
@@ -256,7 +273,8 @@
         	var promises = [
             	this.getResults1(facetSelections),
               this.getResultsRecord(facetSelections),
-              this.getResultsServe(facetSelections)
+              this.getResultsServe(facetSelections),
+              this.getResultsBelong(facetSelections)
           //   this.getCommitteeMember(facetSelections)
             ];
         	return $q.all(promises);

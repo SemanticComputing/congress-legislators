@@ -1,6 +1,7 @@
 /* Navigation bar */
 .navbar {
     border-radius: 0px;
+    margin-bottom: 0px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -19,7 +20,7 @@ h2,
 .h2,
 h3,
 .h3 {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .toptext  {
@@ -229,6 +230,7 @@ a#remove  {
     padding: 0.3em 0.8em;
     border: solid 1px #d3d3d3;
     margin-bottom: 0px;
+    background-color: #FFFFFF;
 }
 
 @media screen and (max-width:767px) {
@@ -261,4 +263,9 @@ div#sl-2  {
 
 h4  {
     white-space: pre-wrap;
+}
+
+#compare {
+background:linear-gradient(90deg, #b2bed1 0%, #b2bed1 50%, #ebb5c0 50%, #ebb5c0 100%);
+/* background:linear-gradient(to right, #e5e9ef 0%, #f8e6ea 100%);*/
 }

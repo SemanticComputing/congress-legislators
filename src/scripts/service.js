@@ -110,18 +110,20 @@
                 facetId: 'memberOf',
                 predicate: '<http://schema.org/memberOf>',
                 name: 'Political Party',
+                                chart: true,
                 enabled: true
             },
             type: {
                 facetId: 'type',
                 predicate: '<http://ldf.fi/congress/type>',
                 name: 'Chamber',
+                                chart: true,
                 enabled: true
             },
             congress_number: {
                 facetId: 'congress_number',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
-                name: 'Serving Record of the Period',
+                name: 'Longevity of Service',
                 mapper: numericFacetMapperService
             }
         };
