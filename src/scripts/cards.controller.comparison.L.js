@@ -13,10 +13,10 @@
     /*
     * Controller for the results view.
     */
-    .controller('CardsController', CardsController);
+    .controller('CardsControllerComparisonL', CardsControllerComparisonL);
 
     /* @ngInject */
-    function CardsController($scope, $location, $state, $uibModal, _, congressService,
+    function CardsControllerComparisonL($scope, $location, $state, $uibModal, _, comparisonServiceL,
             FacetHandler, facetUrlStateHandlerService) {
 
               /*
@@ -45,7 +45,7 @@
         vm.isScrollDisabled = isScrollDisabled;
         vm.removeFacetSelections = removeFacetSelections;
         vm.sortBy = sortBy;
-        vm.getSortClass = congressService.getSortClass;
+        vm.getSortClass = comparisonServiceL.getSortClass;
 
         vm.people = [];
 
@@ -55,7 +55,7 @@
         });
         $scope.$on('sf-facet-constraints', updateResults);
 
-        congressService.getFacets().then(function(facets) {
+        comparisonServiceL.getFacets().then(function(facets) {
             vm.facets = facets;
             vm.facetOptions = getFacetOptions();
             vm.facetOptions.scope = $scope;
@@ -77,7 +77,7 @@
         }
 
         function getFacetOptions() {
-            var options = congressService.getFacetOptions();
+            var options = comparisonServiceL.getFacetOptions();
             options.initialState = facetUrlStateHandlerService.getFacetValuesFromUrlParams();
             return options;
         }
@@ -107,7 +107,7 @@
         }
 
         function sortBy(sortBy) {
-        	congressService.updateSortBy(sortBy);
+        	comparisonServiceL.updateSortBy(sortBy);
             return fetchResults({ constraint: vm.previousSelections });
         }
 
@@ -133,7 +133,7 @@
             latestUpdate = updateId;
 
             nextPageNo = 0;
-            congressService.getResults(facetSelections)
+            comparisonServiceL.getResults(facetSelections)
             .then(function(pager) {
                 return pager.getMaxPageNo().then(function(no) {
                     return [pager, no];

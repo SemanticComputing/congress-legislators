@@ -5,10 +5,10 @@
     /* eslint-disable angular/no-service-method */
     angular.module('facetApp')
 
-    .service('congressService', congressService);
+    .service('comparisonServiceR', comparisonServiceR);
 
     /* @ngInject */
-    function congressService($q, $location, _, FacetResultHandler, SPARQL_ENDPOINT_URL,
+    function comparisonServiceR($q, $location, _, FacetResultHandler, SPARQL_ENDPOINT_URL,
             AdvancedSparqlService, personMapperService, numericFacetMapperService) {
 
         /* Public API */
@@ -93,12 +93,14 @@
             gender: {
                 facetId: 'gender',
                 predicate: '<http://schema.org/gender>',
-                name: 'Gender'
+                name: 'Gender',
+                chart: true
             },
             occupation: {
                 facetId: 'occupation',
                 predicate: '<http://schema.org/hasOccupation>',
                 name: 'Occupation',
+                chart: true
             },
            state: {
                 facetId: 'state',
@@ -110,20 +112,21 @@
                 facetId: 'memberOf',
                 predicate: '<http://schema.org/memberOf>',
                 name: 'Political Party',
-                                chart: true,
+                chart: true,
                 enabled: true
             },
             type: {
                 facetId: 'type',
                 predicate: '<http://ldf.fi/congress/type>',
                 name: 'Chamber',
-                                chart: true,
+                chart: true,
                 enabled: true
             },
             congress_number: {
                 facetId: 'congress_number',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                 name: 'Longevity of Service',
+                chart: true,
                 mapper: numericFacetMapperService
             }
         };
@@ -210,7 +213,7 @@
         var facetOptions = {
             endpointUrl: endpointConfig.endpointUrl,
             rdfClass: '<http://schema.org/Person>',
-            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/givenName> ?givenName . ?id <http://schema.org/birthDate> ?birthDate . ',
+            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/givenName> ?givenName . ?id <http://schema.org/birthDate> ?birthDate . ?id <http://schema.org/memberOf> ?memberOf . FILTER CONTAINS (?memberOf, "Republican") ',
             preferredLang : 'en',
             noSelectionString: '-- No selection --'
         };

@@ -17,7 +17,7 @@
 
     /* @ngInject */
     function TableController($scope, $state, $uibModal, _, RESULTS_PER_PAGE,
-    		nbfService, NgTableParams, FacetHandler, facetUrlStateHandlerService) {
+    		congressService, NgTableParams, FacetHandler, facetUrlStateHandlerService) {
 
           ///// Range slider config
             $scope.minRangeSlider = {
@@ -41,7 +41,7 @@
         vm.openPage = openPage;
         vm.removeFacetSelections = removeFacetSelections;
         vm.sortBy = sortBy;
-        vm.getSortClass = nbfService.getSortClass;
+        vm.getSortClass = congressService.getSortClass;
 
         var initListener = $scope.$on('sf-initial-constraints', function(event, config) {
             updateResults(event, config);
@@ -49,7 +49,7 @@
         });
         $scope.$on('sf-facet-constraints', updateResults);
 
-        nbfService.getFacets().then(function(facets) {
+        congressService.getFacets().then(function(facets) {
             vm.facets = facets;
             vm.facetOptions = getFacetOptions();
             vm.facetOptions.scope = $scope;
@@ -82,7 +82,7 @@
         }
 
         function getFacetOptions() {
-            var options = nbfService.getFacetOptions();
+            var options = congressService.getFacetOptions();
             options.initialState = facetUrlStateHandlerService.getFacetValuesFromUrlParams();
             return options;
         }
@@ -116,7 +116,7 @@
             facetSelections.maxYear = $scope.minRangeSlider.maxValue;
             /////
 
-            nbfService.getResults(facetSelections)
+            congressService.getResults(facetSelections)
             .then(function(pager) {
                 vm.pager = pager;
                 if (vm.tableParams) {
@@ -129,7 +129,7 @@
         }
 
         function sortBy(sortBy) {
-        	nbfService.updateSortBy(sortBy);
+        	congressService.updateSortBy(sortBy);
             return fetchResults({ constraint: vm.previousSelections });
         }
     }

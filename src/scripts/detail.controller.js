@@ -10,7 +10,7 @@
     .controller('DetailController', DetailController);
 
     /* @ngInject */
-    function DetailController($stateParams, $uibModal, _, nbfService) {
+    function DetailController($stateParams, $uibModal, _, congressService) {
 
         var vm = this;
 
@@ -19,7 +19,7 @@
         init();
 
         function init() {
-            nbfService.getPerson($stateParams.personId).then(function(person) {
+            congressService.getPerson($stateParams.personId).then(function(person) {
                 vm.person = person;
                 return person;
             }).catch(handleError);

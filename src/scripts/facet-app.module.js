@@ -35,6 +35,10 @@
         $urlRouterProvider.when('', '/grid');
     })
 
+    .config(function($urlRouterProvider){
+        $urlRouterProvider.when('', '/comparison');
+    })
+
     .service('authInterceptor', function ($q, $state) {
         this.responseError = function(response) {
             if (response.status == 401) {
@@ -100,12 +104,12 @@
           views: {
             left: {
               templateUrl: 'views/cards-comparison.html',
-              controller: 'CardsController',
+              controller: 'CardsControllerComparisonL',
               controllerAs: 'vm',
             },
             right: {
               templateUrl: 'views/cards-comparison.html',
-              controller: 'CardsController',
+              controller: 'CardsControllerComparisonR',
               controllerAs: 'vm',
             }
           }
