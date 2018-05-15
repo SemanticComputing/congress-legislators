@@ -110,7 +110,41 @@
             right: {
               templateUrl: 'views/cards-comparison.html',
               controller: 'CardsControllerComparisonR',
+              controllerAs: 'vm'
+            }
+          }
+        })
+        .state('comparison2', {
+          abstract: true,
+          templateUrl: 'views/cards.comparison.template-stats.html',
+        })
+        .state('comparison2.cards2', {
+          url: '/comparison2',
+          views: {
+            "left@comparison2": {
+              templateUrl: 'views/cards-comparison2.L.html',
+              controller: 'VisuControllerL',
               controllerAs: 'vm',
+            },
+            "right@comparison2": {
+              templateUrl: 'views/cards-comparison2.R.html',
+              controller: 'VisuControllerR',
+              controllerAs: 'vm',
+            }
+          }
+        })
+        .state('comparison2.cards3', {
+          url: '/comparison3',
+          views: {
+            "left@comparison2": {
+              templateUrl: 'views/cards-comparison3.L.html',
+              controller: 'VisuController2L',
+              controllerAs: 'vm',
+            },
+            "right@comparison2": {
+              templateUrl: 'views/cards-comparison3.R.html',
+              controller: 'VisuController2R',
+              controllerAs: 'vm'
             }
           }
         })

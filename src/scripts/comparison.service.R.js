@@ -111,7 +111,7 @@
             memberOf: {
                 facetId: 'memberOf',
                 predicate: '<http://schema.org/memberOf>',
-                name: 'Political Party',
+                name: 'Republican Party',
                 chart: true,
                 enabled: true
             },
@@ -125,7 +125,7 @@
             congress_number: {
                 facetId: 'congress_number',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
-                name: 'Longevity of Service',
+                name: 'Number per Congress',
                 chart: true,
                 mapper: numericFacetMapperService
             }

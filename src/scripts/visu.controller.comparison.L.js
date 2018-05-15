@@ -12,10 +12,10 @@
     /*
     * Controller for the results view.
     */
-    .controller('VisuController', VisuController);
+    .controller('VisuControllerL', VisuControllerL);
 
     /* @ngInject */
-    function VisuController($scope, $location, $q, $state, $uibModal, _,  visuService,
+    function VisuControllerL($scope, $location, $q, $state, _, visucomserviceL,
             FacetHandler, facetUrlStateHandlerService) {
 
         var vm = this;
@@ -31,7 +31,7 @@
         });
         $scope.$on('sf-facet-constraints', updateResults);
 
-        visuService.getFacets().then(function(facets) {
+        visucomserviceL.getFacets().then(function(facets) {
             vm.facets = facets;
             vm.facetOptions = getFacetOptions();
             vm.facetOptions.scope = $scope;
@@ -43,7 +43,7 @@
         }
 
         function getFacetOptions() {
-            var options = visuService.getFacetOptions();
+            var options = visucomserviceL.getFacetOptions();
             options.initialState = facetUrlStateHandlerService.getFacetValuesFromUrlParams();
             return options;
         }
@@ -70,7 +70,7 @@
 
         	var arr = countByProperty(vm.people, prop),
 	        	data = google.visualization.arrayToDataTable( [[label, 'Number']].concat(arr)),
-            	options = { title: label },
+            	options = { title: label, backgroundColor: '#b2bed1'},
             	chart = new google.visualization.PieChart(document.getElementById(target));
 
             chart.draw(data, options);
@@ -212,7 +212,7 @@
             var updateId = _.uniqueId();
             latestUpdate = updateId;
 
-            return visuService.getResultsPage1(facetSelections).then(function(res) {
+            return visucomserviceL.getResultsPage1(facetSelections).then(function(res) {
             	if (latestUpdate !== updateId) {
                     return;
                 }

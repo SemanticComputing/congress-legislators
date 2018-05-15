@@ -1,0 +1,25 @@
+<div id="compare">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6 vcenter push-xs-2">
+        <!-- <img src="images/SKB.svg" class="norssi-logo center-block img img-responsive" /> -->
+      </div>
+      <!-- DO NOT REMOVE THIS COMMENT, IT IS A HACK
+-->
+      <div class="col-xs-9 col-md-9 col-lg-9 vcenter push-xs-9 toptext">
+        <div ng-include="'views/description.comparison.partial.html'"></div>
+      </div>
+
+
+      <div class="col-md-6 pull-md-6 col-lg-6">
+        <div ui-view="left"></div>
+      </div>
+
+      <div class="col-md-6 pull-md-6 col-lg-6">
+        <div ui-view="right"></div>
+      </div>
+
+    </div>
+  </div>
+</div>

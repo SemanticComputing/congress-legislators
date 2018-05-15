@@ -12,10 +12,10 @@
     /*
     * Controller for the results view.
     */
-    .controller('VisuController', VisuController);
+    .controller('VisuControllerR', VisuControllerR);
 
     /* @ngInject */
-    function VisuController($scope, $location, $q, $state, $uibModal, _,  visuService,
+    function VisuControllerR($scope, $location, $q, $state, _, visucomserviceR,
             FacetHandler, facetUrlStateHandlerService) {
 
         var vm = this;
@@ -31,7 +31,7 @@
         });
         $scope.$on('sf-facet-constraints', updateResults);
 
-        visuService.getFacets().then(function(facets) {
+        visucomserviceR.getFacets().then(function(facets) {
             vm.facets = facets;
             vm.facetOptions = getFacetOptions();
             vm.facetOptions.scope = $scope;
@@ -43,7 +43,7 @@
         }
 
         function getFacetOptions() {
-            var options = visuService.getFacetOptions();
+            var options = visucomserviceR.getFacetOptions();
             options.initialState = facetUrlStateHandlerService.getFacetValuesFromUrlParams();
             return options;
         }
@@ -57,10 +57,10 @@
             vm.previousSelections = _.clone(facetSelections.constraint);
             facetUrlStateHandlerService.updateUrlParams(facetSelections);
             return fetchResults(facetSelections).then(function (people) {
-              google.charts.setOnLoadCallback(function () { drawPieChart('memberOf', 'Political Party', 'chart_memberOf'); });
-            	google.charts.setOnLoadCallback(function () { drawPieChart('occupation', 'Occupation', 'chart_occupation'); });
-              google.charts.setOnLoadCallback(function () { drawPieChart('place', 'Place of Birth', 'chart_place'); });
-              google.charts.setOnLoadCallback(function () { drawPieChart('committee', 'Committees', 'chart_committee'); });
+              google.charts.setOnLoadCallback(function () { drawPieChart('memberOf', 'Political Party', 'chart_memberOf_2'); });
+            	google.charts.setOnLoadCallback(function () { drawPieChart('occupation', 'Occupation', 'chart_occupation_2'); });
+              google.charts.setOnLoadCallback(function () { drawPieChart('place', 'Place of Birth', 'chart_place_2'); });
+              google.charts.setOnLoadCallback(function () { drawPieChart('committee', 'Committees', 'chart_committee_2'); });
               google.charts.setOnLoadCallback(drawSankeyChart);
             	return;
 	         });
@@ -70,7 +70,7 @@
 
         	var arr = countByProperty(vm.people, prop),
 	        	data = google.visualization.arrayToDataTable( [[label, 'Number']].concat(arr)),
-            	options = { title: label },
+            	options = { title: label, backgroundColor: '#ebb5c0'},
             	chart = new google.visualization.PieChart(document.getElementById(target));
 
             chart.draw(data, options);
@@ -169,7 +169,7 @@
         	        };
 
         	        // Instantiates and draws our chart, passing in some options.
-        	        var chart = new google.visualization.Sankey(document.getElementById('chart_sankey'));
+        	        var chart = new google.visualization.Sankey(document.getElementById('chart_sankey_2'));
         	        chart.draw(data, options);
 
         		}
@@ -212,7 +212,7 @@
             var updateId = _.uniqueId();
             latestUpdate = updateId;
 
-            return visuService.getResultsPage1(facetSelections).then(function(res) {
+            return visucomserviceR.getResultsPage1(facetSelections).then(function(res) {
             	if (latestUpdate !== updateId) {
                     return;
                 }

@@ -10,5 +10,14 @@
       <li ui-sref-active="active"><a ui-sref="visualizations.visu2"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Statistics (graphs)</a></li>
     </ul>
   </li>
-  <li ui-sref-active="active"><a ui-sref="comparison.cards"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Comparison</a></li>
+  <li class="dropdown" ui-sref-active="{'active': 'comparisons.**'}">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="" id="statistics"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Comparisons<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li ui-sref-active="active"><a ui-sref="comparison.cards"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Comparison (Grid)</a></li>
+
+      <li ui-sref-active="active"><a ui-sref="comparison2.cards2"><span class="glyphicon glyphicon glyphicon-record" aria-hidden="true"></span> Comparison (charts)</a></li>
+
+      <li ui-sref-active="active"><a ui-sref="comparison2.cards3"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Comparison (graphs)</a></li>
+    </ul>
+</li>
 </ul>
