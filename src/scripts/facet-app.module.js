@@ -39,6 +39,14 @@
         $urlRouterProvider.when('', '/comparison');
     })
 
+    .config(function($urlRouterProvider){
+        $urlRouterProvider.when('', '/comparison2');
+    })
+
+    .config(function($urlRouterProvider){
+        $urlRouterProvider.when('', '/comparison3');
+    })
+
     .service('authInterceptor', function ($q, $state) {
         this.responseError = function(response) {
             if (response.status == 401) {
@@ -103,12 +111,12 @@
           url: '/comparison',
           views: {
             left: {
-              templateUrl: 'views/cards-comparison.html',
+              templateUrl: 'views/cards-comparison.L.html',
               controller: 'CardsControllerComparisonL',
               controllerAs: 'vm',
             },
             right: {
-              templateUrl: 'views/cards-comparison.html',
+              templateUrl: 'views/cards-comparison.R.html',
               controller: 'CardsControllerComparisonR',
               controllerAs: 'vm'
             }

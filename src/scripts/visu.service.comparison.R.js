@@ -40,7 +40,7 @@
             },
             slider: {
                 facetId: 'slider',
-                name: 'Timeline: 1st (1789) - 115th (2018) Congresses',
+                name: 'Timeline: 33th (1854) - 115th (2018) Congresses',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                 enabled: true
             },
@@ -238,7 +238,7 @@
           endpointUrl: endpointUrl,
           rdfClass: '<http://schema.org/Person>',
           preferredLang : 'en',
-          constraint: '?id <http://schema.org/memberOf> ?memberOf . FILTER CONTAINS (?memberOf, "Republican") ',
+          constraint: '?id <http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number> ?congress_number . ?id <http://schema.org/memberOf> ?memberOf . FILTER (?memberOf="Republican"^^xsd:string) FILTER (32<?congress_number) ',
         };
 
         var endpoint = new AdvancedSparqlService(endpointUrl, personMapperService);

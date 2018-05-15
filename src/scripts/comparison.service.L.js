@@ -40,7 +40,7 @@
             },
             slider: {
                 facetId: 'slider',
-                name: 'Timeline: 1st (1789) - 115th (2018) Congresses',
+                name: 'Timeline: 20st (1828) - 115th (2018) Congresses',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                 enabled: true
             },
@@ -214,7 +214,7 @@
         var facetOptions = {
             endpointUrl: endpointConfig.endpointUrl,
             rdfClass: '<http://schema.org/Person>',
-            constraint: '?id <http://schema.org/familyName> ?familyName . ?id <http://schema.org/givenName> ?givenName . ?id <http://schema.org/birthDate> ?birthDate . ?id <http://schema.org/memberOf> ?memberOf . FILTER CONTAINS (?memberOf, "Democrat")',
+            constraint: '?id <http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number> ?congress_number . ?id <http://schema.org/memberOf> ?memberOf . FILTER (?memberOf="Democrat"^^xsd:string) FILTER (19<?congress_number) ',
             preferredLang : 'en',
             noSelectionString: '-- No selection --'
         };
