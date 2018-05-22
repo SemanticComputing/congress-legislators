@@ -78,8 +78,8 @@
 
         function drawSankeyChart() {
         			//	TODO: check with options giving only a few (less < 5) results:
-        			var prop 	= 'memberOf',
-        				prop2 	= 'type',
+              var prop 	= 'type',
+        				prop2 	= 'memberOf',
         				res 	= {},
         				res2	= {},
         				N = 10;

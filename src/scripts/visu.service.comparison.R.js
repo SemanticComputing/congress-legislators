@@ -20,7 +20,6 @@
         this.getResultsPage1 = getResultsPage1;
         this.getResultsRecord =  getResultsRecord;
         this.getResultsServe =  getResultsServe;
-        this.getResultsBelong =  getResultsBelong;
       //  this.getCommitteeMember =  getCommitteeMember;
 
         // Get the facets.
@@ -205,14 +204,6 @@
         ' GROUP BY ?value ?id__name ?id' +
         ' HAVING (0<?value && ?value < 31) ';
 
-        var queryResultsBelong = prefixes +
-        ' SELECT DISTINCT ?type ?memberOf (count (?memberOf) as ?count)' +
-        ' WHERE {' +
-        ' ?id congress:type ?type;' +
-        ' schema:memberOf ?memberOf.' +
-        ' } ' +
-        ' GROUP BY ?type ?memberOf ?count';
-
 /*
         var queryCommitteeMember = prefixes +
         ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
@@ -238,7 +229,12 @@
           endpointUrl: endpointUrl,
           rdfClass: '<http://schema.org/Person>',
           preferredLang : 'en',
-          constraint: '?id <http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number> ?congress_number . ?id <http://schema.org/memberOf> ?memberOf . FILTER (?memberOf="Republican"^^xsd:string) FILTER (32<?congress_number) ',
+          constraint: '?id '+
+          '<http://ldf.fi/congress/icpsr_id>/'+
+          '^<http://ldf.fi/congress/icpsr_id>/'+
+          '<http://ldf.fi/congress/congress_number> ?congress_number . '+
+          '?id <http://schema.org/memberOf> ?memberOf . '+
+          'FILTER (?memberOf="Republican"^^xsd:string) . FILTER (32<?congress_number) '
         };
 
         var endpoint = new AdvancedSparqlService(endpointUrl, personMapperService);
@@ -261,12 +257,6 @@
           return endpoint.getObjectsNoGrouping(q) ;
         }
 
-        function getResultsBelong(facetSelections) {
-          var cons = facetSelections.constraint.join(' '),
-          q = queryResultsBelong.replace("<RESULT_SET>", cons);
-          return endpoint.getObjectsNoGrouping(q) ;
-        }
-
 /*        function getCommitteeMember(facetSelections) {
           var cons = facetSelections.constraint.join(' '),
           q = queryCommitteeMember.replace("<RESULT_SET>", cons);
@@ -277,8 +267,7 @@
         	var promises = [
             	this.getResults1(facetSelections),
               this.getResultsRecord(facetSelections),
-              this.getResultsServe(facetSelections),
-              this.getResultsBelong(facetSelections)
+              this.getResultsServe(facetSelections)
           //   this.getCommitteeMember(facetSelections)
             ];
         	return $q.all(promises);

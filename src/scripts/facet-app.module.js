@@ -118,6 +118,21 @@
             right: {
               templateUrl: 'views/cards-comparison.R.html',
               controller: 'CardsControllerComparisonR',
+              controllerAs: 'vm',
+            }
+          }
+        })
+        .state('comparison.cards1', {
+          url: '/comparison1',
+          views: {
+            "left@comparison": {
+              templateUrl: 'views/groupmap.comparison.L.html',
+              controller: 'GroupmapControllerL',
+              controllerAs: 'vm',
+            },
+            "right@comparison": {
+              templateUrl: 'views/groupmap.comparison.R.html',
+              controller: 'GroupmapControllerR',
               controllerAs: 'vm'
             }
           }

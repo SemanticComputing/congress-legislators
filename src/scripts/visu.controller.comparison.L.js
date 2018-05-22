@@ -61,6 +61,7 @@
             	google.charts.setOnLoadCallback(function () { drawPieChart('occupation', 'Occupation', 'chart_occupation'); });
               google.charts.setOnLoadCallback(function () { drawPieChart('place', 'Place of Birth', 'chart_place'); });
               google.charts.setOnLoadCallback(function () { drawPieChart('committee', 'Committees', 'chart_committee'); });
+              google.charts.setOnLoadCallback(function () { drawPieChart('label', 'Religion', 'chart_label'); });
               google.charts.setOnLoadCallback(drawSankeyChart);
             	return;
 	         });
@@ -78,8 +79,8 @@
 
         function drawSankeyChart() {
         			//	TODO: check with options giving only a few (less < 5) results:
-        			var prop 	= 'memberOf',
-        				prop2 	= 'type',
+        			var prop 	= 'type',
+        				prop2 	= 'memberOf',
         				res 	= {},
         				res2	= {},
         				N = 10;

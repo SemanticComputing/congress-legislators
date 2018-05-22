@@ -35,7 +35,7 @@
 
 		vm.removeFacetSelections = removeFacetSelections;
 
-		google.charts.load('current', {packages: ['corechart', 'line', 'treemap']});
+		google.charts.load('current', {packages: ['corechart', 'line']});
 
         var initListener = $scope.$on('sf-initial-constraints', function(event, config) {
             updateResults(event, config);
@@ -76,7 +76,6 @@
             	google.charts.setOnLoadCallback(function () {
             		drawYearChart(vm.ResultsServe, [1,31], 'Longevity of service (serving record)', 'chart_ResultsServe_2')
             		});
-              google.charts.setOnLoadCallback(drawTreeMap);
             	return;
 	         });
         }
@@ -292,7 +291,6 @@
             vm.people = [];
             vm.ResultsRecord = [];
             vm.ResultsServe = [];
-            vm.ResultsBelong = [];
             //vm.CommitteeMember = [];
             //vm.topSchools = [];
             vm.error = undefined;
@@ -309,7 +307,6 @@
                 vm.people = [0];
                 vm.ResultsRecord = res[1];
                 vm.ResultsServe = res[2];
-                vm.ResultsBelong = res[3];
                 //vm.CommitteeMember = res[3];
                 return res;
             }).catch(handleError);

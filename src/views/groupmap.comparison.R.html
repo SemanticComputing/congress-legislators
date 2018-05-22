@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12" ng-show="!vm.markers && !vm.error">
+      <img class="loading-img" src="images/loading-lg.gif"></img>
+    </div>
+    <div uib-alert ng-if="vm.error">
+      {{ vm.error }}
+    </div>
+<div id="map-right">
+    <div class="container-fluid thumbnail">
+      <div ng-include="'views/facets.comparison.partial.R.html'"></div>
+      <div class="text-center">
+      On the map member's <b><span style="color:#0045b5">BIRTH</span></b> and <b><span style="color:#f3224e">DEATH</span></b> places are shown.
+      The illustration is made based on the selections made in timeline and facets above.
+    	<div class="col-md-12 pull-md-12 col-lg-12">
+		   <ui-gmap-google-map id="ui-gmap-google-map" center='vm.map.center' zoom='vm.map.zoom'>
+
+         <ui-gmap-window
+           id="ui-gmap-window"
+           show="vm.window.show"
+           options="vm.window"
+           templateUrl="'views/groupmap.popup.html'"
+                   templateParameter="vm"
+               closeClick="vm.closeWindow">
+               <span></span>
+           </ui-gmap-window>
+
+	        	<ui-gmap-marker ng-repeat="marker in vm.markers"
+	        		coords="marker"
+	        		idkey="marker.id"
+	        		options="marker.options"
+              click="marker.onClick()"
+	        	></ui-gmap-marker>
+	        </ui-gmap-google-map>
+
+	      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

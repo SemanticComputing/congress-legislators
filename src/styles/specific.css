@@ -270,6 +270,11 @@ background:linear-gradient(90deg, #b2bed1 0%, #b2bed1 50%, #ebb5c0 50%, #ebb5c0 
 /* background:linear-gradient(to right, #e5e9ef 0%, #f8e6ea 100%);*/
 }
 
+.thumbnail {
+background-color: rgba(0, 0, 0, 0) !important;
+border: none !important;
+}
+
 /*
 #left {
   float: left;

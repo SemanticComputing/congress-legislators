@@ -20,8 +20,7 @@
         this.getResultsPage1 = getResultsPage1;
         this.getResultsRecord =  getResultsRecord;
         this.getResultsServe =  getResultsServe;
-        this.getResultsBelong =  getResultsBelong;
-      //  this.getCommitteeMember =  getCommitteeMember;
+        this.getResultsSpouse =  getResultsSpouse;
 
         // Get the facets.
         // Return a promise (because of translation).
@@ -147,13 +146,16 @@
         ' PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ' +
         ' PREFIX wdt: <http://www.wikidata.org/prop/direct/> ' +
         ' PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> ' +
-        ' PREFIX wd_ent: <http://www.wikidata.org/entity/> ';
-
+        ' PREFIX wd_ent: <http://www.wikidata.org/entity/> ' +
+        ' PREFIX db: <http://dbpedia.org/> ' +
+        ' PREFIX dbo: <http://dbpedia.org/ontology/> ' +
+        ' PREFIX dbr: <http://dbpedia.org/resource/> ' +
+        ' PREFIX dbp: <http://dbpedia.org/property/> ' ;
 
         // The query for the results.
         // ?id is bound to the person URI.
         var query = prefixes +
-        ' SELECT DISTINCT ?id ?occupation ?type ?memberOf ?place ?committee ' +
+        ' SELECT DISTINCT ?id ?occupation ?type ?memberOf ?place ?committee' +
         ' WHERE{ ' +
         '  { <RESULT_SET> } ' +
         ' {VALUES (?evt_place ?evt_time ?class) ' +
@@ -178,7 +180,7 @@
         ' ?id schema:hasOccupation ?occupation. ' +
         ' } ' +
         ' } ' +
-        ' GROUP BY ?id ?occupation ?type ?memberOf ?place ?committee ' ;
+        ' GROUP BY ?id ?occupation ?type ?memberOf ?place ?committee' ;
 
         var queryResultsRecord = prefixes +
         ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
@@ -205,31 +207,20 @@
         ' GROUP BY ?value ?id__name ?id' +
         ' HAVING (0<?value && ?value < 31) ';
 
-        var queryResultsBelong = prefixes +
-        ' SELECT DISTINCT ?type ?memberOf (count (?memberOf) as ?count)' +
-        ' WHERE {' +
-        ' ?id congress:type ?type;' +
-        ' schema:memberOf ?memberOf.' +
-        ' } ' +
-        ' GROUP BY ?type ?memberOf ?count';
-
-/*
-        var queryCommitteeMember = prefixes +
-        ' SELECT DISTINCT (?id AS ?id__uri) ?id__name ?value ' +
-        ' WHERE{ ' +
-        '  { <RESULT_SET> } '
-        ' id schema:familyName ?familyName . ' +
+        var queryResultsSpouse = prefixes +
+        ' SELECT DISTINCT (?id AS ?id__uri) ?id__name (COUNT (DISTINCT ?spouse) AS ?value) ' +
+        ' WHERE { ' +
+        '  { <RESULT_SET> } ' +
+        ' ?id schema:familyName ?familyName . ' +
         ' ?id schema:givenName ?givenName . ' +
         ' BIND (CONCAT(?givenName, " ",?familyName) AS ?id__name) ' +
-        ' ?id congress:bioguide_id ?committee__id . ' +
-        ' ?mship congress:bioguide_id ?committee__id ; ' +
-        ' congress:committee ?committee__label. ' +
-        ' ?congress skos:prefLabel ?prefLabel; ' +
-        ' skos:altLabel ?altLabel. ' +
-        ' FILTER (str(?altLabel) = str(?committee__label)). ' +
-        ' BIND (CONCAT(?altLabel, " (",?prefLabel,")") AS ?value) ' +
-        ' }  ';
-        */
+        ' ?id congress:dbpedia_id ?dbpedia_id. ' +
+        ' SERVICE <http://dbpedia.org/sparql> ' +
+        ' { ' +
+        ' OPTIONAL {?dbpedia_id dbo:spouse ?spouse.} ' +
+        ' } ' +
+        ' } ' +
+        ' GROUP BY ?id__name ?id ?value ' ;
 
         // The SPARQL endpoint URL
         var endpointUrl = SPARQL_ENDPOINT_URL;
@@ -238,11 +229,15 @@
           endpointUrl: endpointUrl,
           rdfClass: '<http://schema.org/Person>',
           preferredLang : 'en',
-          constraint: '?id <http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number> ?congress_number . ?id <http://schema.org/memberOf> ?memberOf . FILTER (?memberOf="Democrat"^^xsd:string) FILTER (19<?congress_number) ',
+          constraint: '?id '+
+          '<http://ldf.fi/congress/icpsr_id>/'+
+          '^<http://ldf.fi/congress/icpsr_id>/'+
+          '<http://ldf.fi/congress/congress_number> ?congress_number . '+
+          '?id <http://schema.org/memberOf> ?memberOf . '+
+          'FILTER (?memberOf="Democrat"^^xsd:string) . FILTER (19<?congress_number) '
         };
 
         var endpoint = new AdvancedSparqlService(endpointUrl, personMapperService);
-
 
         function getResults1(facetSelections) {
         	var q = query.replace("<RESULT_SET>", facetSelections.constraint.join(' '));
@@ -261,25 +256,18 @@
           return endpoint.getObjectsNoGrouping(q) ;
         }
 
-        function getResultsBelong(facetSelections) {
+        function getResultsSpouse(facetSelections) {
           var cons = facetSelections.constraint.join(' '),
-          q = queryResultsBelong.replace("<RESULT_SET>", cons);
+          q = queryResultsSpouse.replace("<RESULT_SET>", cons);
           return endpoint.getObjectsNoGrouping(q) ;
         }
-
-/*        function getCommitteeMember(facetSelections) {
-          var cons = facetSelections.constraint.join(' '),
-          q = queryCommitteeMember.replace("<RESULT_SET>", cons);
-          return endpoint.getObjectsNoGrouping(q) ;
-        } */
 
         function getResults(facetSelections) {
         	var promises = [
             	this.getResults1(facetSelections),
               this.getResultsRecord(facetSelections),
               this.getResultsServe(facetSelections),
-              this.getResultsBelong(facetSelections)
-          //   this.getCommitteeMember(facetSelections)
+              this.getResultsSpouse(facetSelections)
             ];
         	return $q.all(promises);
         }

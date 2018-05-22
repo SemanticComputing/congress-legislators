@@ -76,14 +76,16 @@
             	google.charts.setOnLoadCallback(function () {
             		drawYearChart(vm.ResultsServe, [1,31], 'Longevity of service (serving record)', 'chart_ResultsServe')
             		});
-              google.charts.setOnLoadCallback(drawTreeMap);
+              google.charts.setOnLoadCallback(function () {
+              	drawYearChart(vm.ResultsSpouse, [1,3], 'Married person (with spouse)', 'chart_ResultsSpouse')
+              	});
             	return;
 	         });
         }
 
 
 		function drawYearChart(res, range, label, target) {
-
+console.log(res);
       var persons = new Array(range[1]-range[0]+1);
 			for (var i=0; i<persons.length; i++) persons[i] = [];
 
@@ -145,44 +147,6 @@
 				});
 
 		}
-
-/*
-    function drawChart(res, label, target) {
-
-      var persons = new Array(range[1]-range[0]+1);
-      for (var i=0; i<persons.length; i++) persons[i] = [];
-
-      for (var i=0; i<res.length; i++) {
-        var ob = res[i];
-        persons[parseInt(ob.value)].push(ob.id);
-      }
-
-      var arr=[];
-      for (var i=0; i<persons.length; i++) {
-        arr[i] = [i, persons[i].length];
-      }
-
-      var
-
-        data = new google.visualization.DataTable(),
-
-        tree = new google.visualization.ColumnChart(document.getElementById(target));
-
-          data.addColumn('number', 'Age');
-          data.addColumn('number', 'Number of people');
-
-      data.addRows(arr);
-      chart.draw(data, options);
-
-      google.visualization.events.addListener(chart, 'select', function() {
-          var sel = chart.getSelection();
-          vm.people = persons[sel[0].row];
-          vm.showForm();
-        });
-
-    }
-*/
-
 
 		function ticksByRange(range) {
 			var ticks = [],
@@ -293,9 +257,7 @@
             vm.people = [];
             vm.ResultsRecord = [];
             vm.ResultsServe = [];
-            vm.ResultsBelong = [];
-            //vm.CommitteeMember = [];
-            //vm.topSchools = [];
+            vm.ResultsSpouse = [];
             vm.error = undefined;
 
             var updateId = _.uniqueId();
@@ -310,8 +272,7 @@
                 vm.people = [0];
                 vm.ResultsRecord = res[1];
                 vm.ResultsServe = res[2];
-                vm.ResultsBelong = res[3];
-                //vm.CommitteeMember = res[3];
+                vm.ResultsSpouse = res[3];
                 return res;
             }).catch(handleError);
         }
