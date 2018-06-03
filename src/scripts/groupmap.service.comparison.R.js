@@ -40,7 +40,7 @@
                 },
                 slider: {
                     facetId: 'slider',
-                    name: 'Timeline: 1st (1789) - 115th (2018) Congresses',
+                name: 'Timeline: 33th (1854) - 115th (2018) Congresses',
                     predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
                     enabled: true
                 },
@@ -164,7 +164,7 @@
     		'  geo:long ?place__longitude ; ' +
     		'  rdfs:label ?place__label . ' +
     		'} ORDER BY ?rand ' +
-    		'LIMIT 500 ';
+    		'LIMIT 1500 ';
         console.log(query);
 
         // The SPARQL endpoint URL

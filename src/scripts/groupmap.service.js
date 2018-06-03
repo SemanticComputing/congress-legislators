@@ -164,7 +164,7 @@
     		'  geo:long ?place__longitude ; ' +
     		'  rdfs:label ?place__label . ' +
     		'} ORDER BY ?rand ' +
-    		'LIMIT 500 ';
+    		'LIMIT 1000 ';
         console.log(query);
 
         // The SPARQL endpoint URL

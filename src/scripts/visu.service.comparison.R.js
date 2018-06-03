@@ -124,7 +124,7 @@
             congress_number: {
                 facetId: 'congress_number',
                 predicate: '<http://ldf.fi/congress/icpsr_id>/^<http://ldf.fi/congress/icpsr_id>/<http://ldf.fi/congress/congress_number>',
-                name: 'Number per Congress',
+                name: 'Serving Congress',
                 chart: true,
                 mapper: numericFacetMapperService
             }
