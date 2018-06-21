@@ -4,18 +4,38 @@
 }
 
 .map-popup {
-	overflow-x: hidden;
 }
 
 .list-group-item {
-	max-height: 40px;	
+	max-height: 40px;
 }
 
 #popupcontainer2 {
-	width: 		595px;
+	width: 		590px;
 	max-height: 500px;
 	overflow-y: scroll;
 	text-align: left;
 	font-size: 	14px;
 	padding: 	15px;
+}
+
+#popupcontainer_comparison {
+	width: 		300px;
+	text-align: left;
+}
+
+.map-popup {
+}
+
+.list-group-item {
+	max-height: 40px;
+}
+
+#popupcontainer_comparison2 {
+	width: 		300px;
+	max-height: 300px;
+	overflow-y: scroll;
+	text-align: left;
+	font-size: 	12px;
+	padding: 	13px;
 }

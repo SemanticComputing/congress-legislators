@@ -20,12 +20,12 @@
             FacetHandler, facetUrlStateHandlerService, EVENT_FACET_CHANGED) {
 
         var vm = this;
-        vm.map = { center: { latitude: 40, longitude: -90 }, zoom: 4 };
+        vm.map = { center: { latitude: 40, longitude: -95 }, zoom: 4 };
         vm.markers = [];
         vm.window = { show: false,
     position: {
       lat: 40,
-      lng: -90}
+      lng: -95}
 };
 
 vm.showWindow = function() {
@@ -199,8 +199,8 @@ vm.closeWindow = function() {
             "onClick": function () {
 
               vm.place_label = label;
-              if (type=="death") vm.place_label += "\nas a place of death";
-              else if (type=="birth") vm.place_label += "\nas a place of birth";
+              if (type=="death") vm.place_label += "\nas a place of DEATH";
+              else if (type=="birth") vm.place_label += "\nas a place of BIRTH";
 
               var arr = [];
               for (var p in people) {

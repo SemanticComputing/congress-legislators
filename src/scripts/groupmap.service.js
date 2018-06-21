@@ -144,18 +144,15 @@
         // The query for the results.
         // ?id is bound to the person URI.
         var query =
-    		'SELECT DISTINCT ?id ?person__name ?place__label ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude ?congress_number WHERE { ' +
+    		'SELECT DISTINCT ?person__name ?id ?place__label ?time__start ?time__end ?class ?place__uri ?place__latitude ?place__longitude WHERE { ' +
     		'  { <RESULT_SET> } ' +
     		'  VALUES (?evt_place ?evt_time ?class) { ' +
     		'  	(schema:birthPlace schema:birthDate "Birth"@en) ' +
     		'  	(schema:deathPlace schema:deathDate "Death"@en) ' +
     		'	} ' +
-    		' ' +
     		'  OPTIONAL { ?id schema:familyName ?familyName . } ' +
     		'  OPTIONAL { ?id schema:givenName ?givenName . } ' +
     		'  BIND (CONCAT(?givenName, " ",?familyName) AS ?person__name) ' +
-        ' ' +
-        ' ?id congress:icpsr_id/^congress:icpsr_id/congress:congress_number ?congress_number . ' +
     		'   ?id ?evt_place ?place__uri ; ' +
     		'  		?evt_time ?time__start ; ' +
     		'    	?evt_time ?time__end . ' +
@@ -163,8 +160,8 @@
     		'  ?place__uri geo:lat ?place__latitude ;  ' +
     		'  geo:long ?place__longitude ; ' +
     		'  rdfs:label ?place__label . ' +
-    		'} ORDER BY ?rand ' +
-    		'LIMIT 1000 ';
+    		'} ORDER BY ?person__name ' +
+    		'LIMIT 800 ';
         console.log(query);
 
         // The SPARQL endpoint URL
