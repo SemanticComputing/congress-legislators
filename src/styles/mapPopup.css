@@ -20,7 +20,7 @@
 }
 
 #popupcontainer_comparison {
-	width: 		300px;
+	width: 		400px;
 	text-align: left;
 }
 
@@ -32,10 +32,10 @@
 }
 
 #popupcontainer_comparison2 {
-	width: 		300px;
-	max-height: 300px;
+	width: 		400px;
+	max-height: 350px;
 	overflow-y: scroll;
 	text-align: left;
 	font-size: 	12px;
-	padding: 	13px;
+	padding: 	16px;
 }
