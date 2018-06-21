@@ -4,6 +4,7 @@
 }
 
 .map-popup {
+		overflow-x: hidden;
 }
 
 .list-group-item {
@@ -25,6 +26,7 @@
 }
 
 .map-popup {
+		overflow-x: hidden;
 }
 
 .list-group-item {
