@@ -199,8 +199,8 @@ vm.closeWindow = function() {
             "onClick": function () {
 
               vm.place_label = label;
-              if (type=="death") vm.place_label += "\nas a place of death";
-              else if (type=="birth") vm.place_label += "\nas a place of birth";
+              if (type=="death") vm.place_label += "\nas a place of DEATH";
+              else if (type=="birth") vm.place_label += "\nas a place of BIRTH";
 
               var arr = [];
               for (var p in people) {
