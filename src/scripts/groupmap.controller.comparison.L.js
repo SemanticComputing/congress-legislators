@@ -1,6 +1,7 @@
 /*
  * Semantic faceted search
  *
+ 
  */
 
 (function() {
