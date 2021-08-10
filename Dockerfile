@@ -1,4 +1,4 @@
-FROM secoresearch/fuseki
+FROM secoresearch/fuseki:3.12.0
 
 COPY --chown=9008 ttl/people /tmp/people
 COPY --chown=9008 ttl/places /tmp/places
