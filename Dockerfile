@@ -1,4 +1,4 @@
-FROM secoresearch/fuseki:3.12.0
+FROM secoresearch/fuseki
 
 COPY --chown=9008 ttl/people /tmp/people
 COPY --chown=9008 ttl/places /tmp/places
@@ -10,5 +10,4 @@ RUN $TDBLOADER --graph=http://ldf.fi/congress/people /tmp/people.ttl \
 	&& $TDBLOADER --graph=http://ldf.fi/congress/places /tmp/places.ttl \
 	&& $TEXTINDEXER \
 	&& $TDBSTATS --graph urn:x-arq:UnionGraph > /tmp/stats.opt \
-	&& mv /tmp/stats.opt /fuseki-base/databases/tdb/ \
-	&& rm -r /tmp/*
+	&& mv /tmp/stats.opt /fuseki-base/databases/tdb/
